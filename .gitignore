@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets — never commit API keys (Gemini, Groq, HF, etc.)
+.env
+*.key
+
+# Data — download locally per data/README.md
+# (keep the folder, its docs, and the small MedAESQA methods reference)
+data/*
+!data/.gitkeep
+!data/README.md
+!data/MedAESQA_methods_M1-M30.xlsx
+
+# Model checkpoints / vector indexes
+*.ckpt
+*.pt
+*.faiss
+chroma/
