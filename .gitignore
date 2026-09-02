@@ -19,6 +19,33 @@ data/*
 !data/.gitkeep
 !data/README.md
 !data/MedAESQA_methods_M1-M30.xlsx
+# Track the MTSamples annotation infrastructure, but continue ignoring filled
+# annotations because they contain source text whose redistribution is restricted.
+!data/ANNOTATION_WORKFLOW.md
+!data/validate_annotations.py
+!data/annotation_templates/
+!data/annotation_templates/**
+!data/annotations/
+data/annotations/*
+!data/annotations/scratch/
+data/annotations/scratch/*
+!data/annotations/scratch/.gitkeep
+!data/annotations/dev/
+data/annotations/dev/*
+!data/annotations/dev/independent/
+data/annotations/dev/independent/*
+!data/annotations/dev/independent/.gitkeep
+!data/annotations/dev/adjudicated/
+data/annotations/dev/adjudicated/*
+!data/annotations/dev/adjudicated/.gitkeep
+!data/annotations/test/
+data/annotations/test/*
+!data/annotations/test/independent/
+data/annotations/test/independent/*
+!data/annotations/test/independent/.gitkeep
+!data/annotations/test/adjudicated/
+data/annotations/test/adjudicated/*
+!data/annotations/test/adjudicated/.gitkeep
 
 # Model checkpoints / vector indexes
 *.ckpt

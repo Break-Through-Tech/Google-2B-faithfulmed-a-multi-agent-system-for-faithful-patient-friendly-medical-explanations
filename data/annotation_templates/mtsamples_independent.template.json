@@ -1,0 +1,21 @@
+{
+  "example_id": "",
+  "source_url": "",
+  "website_specialty": "",
+  "split": "",
+  "primary_content_type": "",
+  "secondary_content_types": [],
+  "selection_mode": "",
+  "source_text": "",
+  "annotator_id": "",
+  "facts": [
+    {
+      "fact_id": "",
+      "fact_text": "",
+      "fact_type": "",
+      "source_sentence": ""
+    }
+  ],
+  "annotation_notes": "",
+  "needs_adjudication": false
+}

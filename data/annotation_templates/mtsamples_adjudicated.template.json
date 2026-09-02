@@ -1,0 +1,26 @@
+{
+  "example_id": "",
+  "source_dataset": "MTSamples",
+  "parent_document_id": "",
+  "source_url": "",
+  "website_specialty": "",
+  "split": "",
+  "primary_content_type": "",
+  "secondary_content_types": [],
+  "selection_mode": "",
+  "included_sections": [],
+  "source_text": "",
+  "independent_annotators": [],
+  "adjudicator_id": "",
+  "annotation_version": "1.0",
+  "frozen": false,
+  "gold_facts": [
+    {
+      "fact_id": "",
+      "fact_text": "",
+      "fact_type": "",
+      "source_sentence": ""
+    }
+  ],
+  "adjudication_notes": ""
+}
