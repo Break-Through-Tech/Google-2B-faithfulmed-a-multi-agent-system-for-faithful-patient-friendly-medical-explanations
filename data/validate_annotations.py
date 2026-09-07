@@ -10,7 +10,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 from collections import defaultdict
 from dataclasses import dataclass
@@ -23,34 +22,22 @@ FACT_TYPES = {"diagnosis", "medication", "lab_value", "procedure", "instruction"
 SPLITS = {"scratch", "dev", "test"}
 SELECTION_MODES = {"entire_report", "self_contained_passage"}
 
-COMMON_SOURCE_FIELDS = {
+COMMON_FIELDS = {
     "example_id",
     "source_url",
-    "website_specialty",
-    "split",
     "primary_content_type",
-    "secondary_content_types",
     "selection_mode",
     "source_text",
-}
-INDEPENDENT_FIELDS = COMMON_SOURCE_FIELDS | {
-    "annotator_id",
     "facts",
-    "annotation_notes",
-    "needs_adjudication",
 }
-ADJUDICATED_FIELDS = COMMON_SOURCE_FIELDS | {
-    "source_dataset",
-    "parent_document_id",
-    "included_sections",
-    "independent_annotators",
-    "adjudicator_id",
-    "annotation_version",
-    "frozen",
-    "gold_facts",
+INDEPENDENT_REQUIRED_FIELDS = COMMON_FIELDS | {
+    "annotation_notes",
+}
+INDEPENDENT_ALLOWED_FIELDS = INDEPENDENT_REQUIRED_FIELDS | {"annotator_id"}
+ADJUDICATED_FIELDS = COMMON_FIELDS | {
     "adjudication_notes",
 }
-FACT_FIELDS = {"fact_id", "fact_text", "fact_type", "source_sentence"}
+FACT_FIELDS = {"fact_id", "fact_text", "fact_type", "source_evidence"}
 
 
 @dataclass(frozen=True)
@@ -78,9 +65,13 @@ def add_error(errors: list[str], path: Path, message: str) -> None:
 
 
 def require_fields(
-    data: dict[str, Any], allowed: set[str], path: Path, errors: list[str]
+    data: dict[str, Any],
+    required: set[str],
+    allowed: set[str],
+    path: Path,
+    errors: list[str],
 ) -> None:
-    missing = sorted(allowed - data.keys())
+    missing = sorted(required - data.keys())
     extra = sorted(data.keys() - allowed)
     if missing:
         add_error(errors, path, f"missing required field(s): {', '.join(missing)}")
@@ -116,32 +107,6 @@ def require_enum(
         add_error(errors, path, f"{field} must be one of: {values}")
 
 
-def validate_string_array(
-    data: dict[str, Any],
-    field: str,
-    path: Path,
-    errors: list[str],
-    *,
-    allowed: set[str] | None = None,
-    minimum: int = 0,
-) -> None:
-    value = data.get(field)
-    if not isinstance(value, list):
-        add_error(errors, path, f"{field} must be an array")
-        return
-    if len(value) < minimum:
-        add_error(errors, path, f"{field} must contain at least {minimum} item(s)")
-    if any(not isinstance(item, str) or not item.strip() for item in value):
-        add_error(errors, path, f"{field} items must be nonempty strings")
-        return
-    if len(value) != len(set(value)):
-        add_error(errors, path, f"{field} must not contain duplicates")
-    if allowed is not None:
-        invalid = sorted(set(value) - allowed)
-        if invalid:
-            add_error(errors, path, f"{field} has invalid value(s): {', '.join(invalid)}")
-
-
 def validate_facts(
     data: dict[str, Any], field: str, path: Path, errors: list[str], minimum: int
 ) -> None:
@@ -154,7 +119,7 @@ def validate_facts(
 
     seen_ids: set[str] = set()
     source_text = data.get("source_text")
-    normalized_source = (
+    normalized_source_text = (
         normalize_whitespace(source_text) if isinstance(source_text, str) else ""
     )
     for index, fact in enumerate(facts):
@@ -169,7 +134,7 @@ def validate_facts(
         if extra:
             add_error(errors, path, f"{label} has unexpected field(s): {', '.join(extra)}")
 
-        for key in ("fact_id", "fact_text", "source_sentence"):
+        for key in ("fact_id", "fact_text"):
             value = fact.get(key)
             if not isinstance(value, str) or not value.strip():
                 add_error(errors, path, f"{label}.{key} must be a nonempty string")
@@ -184,57 +149,64 @@ def validate_facts(
             values = ", ".join(sorted(FACT_TYPES))
             add_error(errors, path, f"{label}.fact_type must be one of: {values}")
 
-        source_sentence = fact.get("source_sentence")
-        if isinstance(source_sentence, str) and source_sentence.strip():
-            normalized_sentence = normalize_whitespace(source_sentence)
-            if normalized_sentence not in normalized_source:
+        evidence = fact.get("source_evidence")
+        if not isinstance(evidence, list):
+            add_error(errors, path, f"{label}.source_evidence must be an array")
+            continue
+        if not evidence:
+            add_error(errors, path, f"{label}.source_evidence must not be empty")
+        if any(not isinstance(span, str) or not span.strip() for span in evidence):
+            add_error(
+                errors,
+                path,
+                f"{label}.source_evidence items must be nonempty strings",
+            )
+            continue
+        if len(evidence) != len(set(evidence)):
+            add_error(errors, path, f"{label}.source_evidence must not contain duplicates")
+        for evidence_index, span in enumerate(evidence):
+            if normalize_whitespace(span) not in normalized_source_text:
                 add_error(
                     errors,
                     path,
-                    f"{label}.source_sentence does not appear in source_text "
-                    "after whitespace normalization",
+                    f"{label}.source_evidence[{evidence_index}] does not appear in "
+                    "source_text after whitespace normalization",
                 )
 
 
 def classify(data: dict[str, Any], path: Path, errors: list[str]) -> str | None:
-    has_facts = "facts" in data
-    has_gold = "gold_facts" in data
-    if has_facts == has_gold:
+    has_independent_notes = "annotation_notes" in data
+    has_adjudication_notes = "adjudication_notes" in data
+    if has_independent_notes == has_adjudication_notes:
         add_error(
             errors,
             path,
-            "must contain exactly one of facts (independent) or gold_facts (adjudicated)",
+            "must contain exactly one of annotation_notes (independent) or "
+            "adjudication_notes (adjudicated)",
         )
         return None
-    return "independent" if has_facts else "adjudicated"
+    return "independent" if has_independent_notes else "adjudicated"
 
 
-def validate_source_metadata(
-    data: dict[str, Any], kind: str, path: Path, errors: list[str]
-) -> None:
+def validate_common_fields(data: dict[str, Any], path: Path, errors: list[str]) -> None:
     for field in (
         "example_id",
         "source_url",
-        "website_specialty",
         "source_text",
     ):
         require_nonempty_string(data, field, path, errors)
-    require_enum(data, "split", SPLITS, path, errors)
     require_enum(data, "primary_content_type", CONTENT_TYPES, path, errors)
-    validate_string_array(
-        data, "secondary_content_types", path, errors, allowed=CONTENT_TYPES
-    )
     require_enum(data, "selection_mode", SELECTION_MODES, path, errors)
-    if kind == "adjudicated":
-        require_nonempty_string(data, "parent_document_id", path, errors)
-        if data.get("source_dataset") != "MTSamples":
-            add_error(errors, path, 'source_dataset must equal "MTSamples"')
-        validate_string_array(data, "included_sections", path, errors)
+
+
+def infer_split(path: Path) -> str | None:
+    return next((part for part in reversed(path.parts) if part in SPLITS), None)
 
 
 def validate_location(record: Record, errors: list[str]) -> None:
-    split = record.data.get("split")
-    if not isinstance(split, str) or split not in SPLITS:
+    split = infer_split(record.path)
+    if split is None:
+        add_error(errors, record.path, "annotation path must be under scratch, dev, or test")
         return
 
     parent = record.path.parent
@@ -256,40 +228,43 @@ def validate_location(record: Record, errors: list[str]) -> None:
 
 def validate_record(record: Record, errors: list[str]) -> None:
     data, path, kind = record.data, record.path, record.kind
-    allowed = INDEPENDENT_FIELDS if kind == "independent" else ADJUDICATED_FIELDS
-    require_fields(data, allowed, path, errors)
-    validate_source_metadata(data, kind, path, errors)
+    if kind == "independent":
+        require_fields(
+            data,
+            INDEPENDENT_REQUIRED_FIELDS,
+            INDEPENDENT_ALLOWED_FIELDS,
+            path,
+            errors,
+        )
+    else:
+        require_fields(data, ADJUDICATED_FIELDS, ADJUDICATED_FIELDS, path, errors)
+    validate_common_fields(data, path, errors)
 
     example_id = data.get("example_id")
     if kind == "independent":
-        require_nonempty_string(data, "annotator_id", path, errors)
+        if "annotator_id" in data:
+            require_nonempty_string(data, "annotator_id", path, errors)
         require_string(data, "annotation_notes", path, errors)
-        if not isinstance(data.get("needs_adjudication"), bool):
-            add_error(errors, path, "needs_adjudication must be a boolean")
         validate_facts(data, "facts", path, errors, 1)
         annotator_id = data.get("annotator_id")
-        if isinstance(example_id, str) and isinstance(annotator_id, str):
-            expected_name = f"{example_id}_{annotator_id}.json"
-            if path.name != expected_name:
-                add_error(errors, path, f"independent filename must be {expected_name}")
+        if isinstance(example_id, str):
+            if isinstance(annotator_id, str) and annotator_id:
+                expected_name = f"{example_id}_{annotator_id}.json"
+                if path.name != expected_name:
+                    add_error(errors, path, f"independent filename must be {expected_name}")
+            elif not path.stem.startswith(f"{example_id}_"):
+                add_error(
+                    errors,
+                    path,
+                    f"independent filename must start with {example_id}_",
+                )
     else:
-        validate_string_array(
-            data, "independent_annotators", path, errors, minimum=2
-        )
-        require_nonempty_string(data, "adjudicator_id", path, errors)
         require_string(data, "adjudication_notes", path, errors)
-        version = data.get("annotation_version")
-        if not isinstance(version, str) or re.fullmatch(r"[0-9]+\.[0-9]+", version) is None:
-            add_error(errors, path, "annotation_version must use major.minor format")
-        if not isinstance(data.get("frozen"), bool):
-            add_error(errors, path, "frozen must be a boolean")
-        validate_facts(data, "gold_facts", path, errors, 1)
+        validate_facts(data, "facts", path, errors, 1)
         if isinstance(example_id, str):
             expected_name = f"{example_id}_gold.json"
             if path.name != expected_name:
                 add_error(errors, path, f"adjudicated filename must be {expected_name}")
-        if data.get("split") == "test" and data.get("frozen") is not True:
-            add_error(errors, path, "adjudicated test annotation must have frozen=true")
 
     validate_location(record, errors)
 
@@ -332,7 +307,7 @@ def check_independent_pairs(records: list[Record], errors: list[str]) -> None:
     for record in records:
         data = record.data
         if record.kind == "independent":
-            split = data.get("split")
+            split = infer_split(record.path)
             example_id = data.get("example_id")
             if (
                 isinstance(split, str)
@@ -342,11 +317,15 @@ def check_independent_pairs(records: list[Record], errors: list[str]) -> None:
                 groups[(split, example_id)].append(record)
 
     for (split, example_id), group in sorted(groups.items()):
-        annotators = {
-            record.data.get("annotator_id")
-            for record in group
-            if isinstance(record.data.get("annotator_id"), str)
-        }
+        annotators: set[str] = set()
+        for record in group:
+            annotator_id = record.data.get("annotator_id")
+            if isinstance(annotator_id, str) and annotator_id:
+                annotators.add(annotator_id)
+                continue
+            example_id_prefix = f"{record.data.get('example_id')}_"
+            if record.path.stem.startswith(example_id_prefix):
+                annotators.add(record.path.stem[len(example_id_prefix) :])
         if len(annotators) < 2:
             add_error(
                 errors,
@@ -356,27 +335,27 @@ def check_independent_pairs(records: list[Record], errors: list[str]) -> None:
             )
 
 
-def check_parent_split_leakage(records: list[Record], errors: list[str]) -> None:
-    parents_by_split: dict[str, set[str]] = {"dev": set(), "test": set()}
-    path_by_parent: dict[tuple[str, str], Path] = {}
+def check_source_split_leakage(records: list[Record], errors: list[str]) -> None:
+    urls_by_split: dict[str, set[str]] = {"dev": set(), "test": set()}
+    path_by_url: dict[tuple[str, str], Path] = {}
     for record in records:
-        split = record.data.get("split")
-        parent_id = record.data.get("parent_document_id")
+        split = infer_split(record.path)
+        source_url = record.data.get("source_url")
         if (
             isinstance(split, str)
-            and split in parents_by_split
-            and isinstance(parent_id, str)
-            and parent_id
+            and split in urls_by_split
+            and isinstance(source_url, str)
+            and source_url
         ):
-            parents_by_split[split].add(parent_id)
-            path_by_parent.setdefault((split, parent_id), record.path)
+            urls_by_split[split].add(source_url)
+            path_by_url.setdefault((split, source_url), record.path)
 
-    for parent_id in sorted(parents_by_split["dev"] & parents_by_split["test"]):
-        path = path_by_parent[("test", parent_id)]
+    for source_url in sorted(urls_by_split["dev"] & urls_by_split["test"]):
+        path = path_by_url[("test", source_url)]
         add_error(
             errors,
             path,
-            f"parent_document_id {parent_id!r} appears in both dev and test",
+            f"source_url {source_url!r} appears in both dev and test",
         )
 
 
@@ -416,7 +395,7 @@ def main() -> int:
         global_errors: list[str] = []
         global_records = load_records(global_paths, global_errors)
         errors.extend(global_errors)
-        check_parent_split_leakage(global_records, errors)
+        check_source_split_leakage(global_records, errors)
 
     if errors:
         for error in sorted(set(errors)):

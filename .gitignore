@@ -19,8 +19,8 @@ data/*
 !data/.gitkeep
 !data/README.md
 !data/MedAESQA_methods_M1-M30.xlsx
-# Track the MTSamples annotation infrastructure, but continue ignoring filled
-# annotations because they contain source text whose redistribution is restricted.
+# Track the MTSamples annotation infrastructure and development independent
+# annotations. Continue ignoring filled annotations in the other splits.
 !data/ANNOTATION_WORKFLOW.md
 !data/validate_annotations.py
 !data/annotation_templates/
@@ -33,7 +33,7 @@ data/annotations/scratch/*
 !data/annotations/dev/
 data/annotations/dev/*
 !data/annotations/dev/independent/
-data/annotations/dev/independent/*
+!data/annotations/dev/independent/**
 !data/annotations/dev/independent/.gitkeep
 !data/annotations/dev/adjudicated/
 data/annotations/dev/adjudicated/*
