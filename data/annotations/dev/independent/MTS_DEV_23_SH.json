@@ -1,0 +1,154 @@
+{
+  "example_id": "MTS_DEV_23",
+  "source_url": "https://www.mtsamples.com",
+  "primary_content_type": "instructions",
+  "selection_mode": "entire_report",
+  "source_text": "CHIEF COMPLAINT: Abdominal pain.\n\nHISTORY OF PRESENT ILLNESS: The patient is a 71-year-old female patient of Dr. X. The patient presented to the emergency room last evening with approximately 7- to 8-day history of abdominal pain which has been persistent. She was seen 3 to 4 days ago at ABC ER and underwent evaluation and discharged and had a CT scan at that time and she was told it was \"normal.\" She was given oral antibiotics of Cipro and Flagyl. She has had no nausea and vomiting, but has had persistent associated anorexia. She is passing flatus, but had some obstipation symptoms with the last bowel movement two days ago. She denies any bright red blood per rectum and no history of recent melena. Her last colonoscopy was approximately 5 years ago with Dr. Y. She has had no definite fevers or chills and no history of jaundice. The patient denies any significant recent weight loss.\n\nPAST MEDICAL HISTORY: Significant for history of atrial fibrillation, under good control and now in normal sinus rhythm and on metoprolol and also on Premarin hormone replacement.\n\nPAST SURGICAL HISTORY: Significant for cholecystectomy, appendectomy, and hysterectomy. She has a long history of known grade 4 bladder prolapse and she has been seen in the past by Dr. Chip Winkel, I believe that he has not been re-consulted.\n\nALLERGIES: SHE IS ALLERGIC OR SENSITIVE TO MACRODANTIN.\n\nSOCIAL HISTORY: She does not drink or smoke.\n\nREVIEW OF SYSTEMS: Otherwise negative for any recent febrile illnesses, chest pains or shortness of breath.\n\nPHYSICAL EXAMINATION:\nGENERAL: The patient is an elderly thin white female, very pleasant, in no acute distress.\nVITAL SIGNS: Her temperature is 98.8 and vital signs are all stable, within normal limits.\nHEENT: Head is grossly atraumatic and normocephalic. Sclerae are anicteric. The conjunctivae are non-injected.\nNECK: Supple.\nCHEST: Clear.\nHEART: Regular rate and rhythm.\nABDOMEN: Generally nondistended and soft. She is focally tender in the left lower quadrant to deep palpation with a palpable fullness or mass and focally tender, but no rebound tenderness. There is no CVA or flank tenderness, although some very minimal left flank tenderness.\nPELVIC: Currently deferred, but has history of grade 4 urinary bladder prolapse.\nEXTREMITIES: Grossly and neurovascularly intact.\n\nLABORATORY VALUES: White blood cell count is 5.3, hemoglobin 12.8, and platelet count normal. Alkaline phosphatase elevated at 184. Liver function tests otherwise normal. Electrolytes normal. Glucose 134, BUN 4, and creatinine 0.7.\n\nDIAGNOSTIC STUDIES: EKG shows normal sinus rhythm.\n\nIMPRESSION AND PLAN: A 71-year-old female with greater than one-week history of abdominal pain now more localized to the left lower quadrant. Currently is a nonacute abdomen. The working diagnosis would be sigmoid diverticulitis. She does have a history in the distant past of sigmoid diverticulitis. I would recommend a repeat stat CT scan of the abdomen and pelvis and keep the patient nothing by mouth. The patient was seen 5 years ago by Dr. Y in Colorectal Surgery. We will consult her also for evaluation. The patient will need repeat colonoscopy in the near future and be kept nothing by mouth now empirically. The case was discussed with the patient's primary care physician, Dr. X. Again, currently there is no indication for acute surgical intervention on today's date, although the patient will need close observation and further diagnostic workup.",
+  "facts": [
+    {
+      "fact_id": "MTS_DEV_23_F01",
+      "fact_text": "The patient presented with a chief complaint of persistent abdominal pain for 7 to 8 days.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "CHIEF COMPLAINT: Abdominal pain.",
+        "The patient presented to the emergency room last evening with approximately 7- to 8-day history of abdominal pain which has been persistent."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F02",
+      "fact_text": "The patient was evaluated 3 to 4 days ago at ABC ER, had a normal CT scan, and was discharged on oral Cipro and Flagyl.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "She was seen 3 to 4 days ago at ABC ER and underwent evaluation and discharged and had a CT scan at that time and she was told it was \"normal.\"",
+        "She was given oral antibiotics of Cipro and Flagyl."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F03",
+      "fact_text": "The patient reports persistent anorexia and obstipation symptoms with her last bowel movement two days ago, but denies nausea, vomiting, hematochezia, melena, fevers, chills, jaundice, or significant weight loss.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She has had no nausea and vomiting, but has had persistent associated anorexia.",
+        "She is passing flatus, but had some obstipation symptoms with the last bowel movement two days ago.",
+        "She denies any bright red blood per rectum and no history of recent melena.",
+        "She has had no definite fevers or chills and no history of jaundice.",
+        "The patient denies any significant recent weight loss."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F04",
+      "fact_text": "The patient's last colonoscopy was approximately 5 years ago with Dr. Y.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Her last colonoscopy was approximately 5 years ago with Dr. Y."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F05",
+      "fact_text": "Past medical history includes controlled atrial fibrillation in normal sinus rhythm, managed on metoprolol and Premarin.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "PAST MEDICAL HISTORY: Significant for history of atrial fibrillation, under good control and now in normal sinus rhythm and on metoprolol and also on Premarin hormone replacement."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F06",
+      "fact_text": "Past surgical history includes cholecystectomy, appendectomy, hysterectomy, and known grade 4 bladder prolapse.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "PAST SURGICAL HISTORY: Significant for cholecystectomy, appendectomy, and hysterectomy.",
+        "She has a long history of known grade 4 bladder prolapse"
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F07",
+      "fact_text": "The patient is allergic or sensitive to Macrodantin.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ALLERGIES: SHE IS ALLERGIC OR SENSITIVE TO MACRODANTIN."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F08",
+      "fact_text": "The patient does not drink or smoke.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "SOCIAL HISTORY: She does not drink or smoke."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F09",
+      "fact_text": "Vital signs showed a temperature of 98.8 and stable measurements within normal limits.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Her temperature is 98.8 and vital signs are all stable, within normal limits."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F10",
+      "fact_text": "Abdominal exam revealed focal tenderness in the left lower quadrant to deep palpation with a palpable fullness or mass and minimal left flank tenderness without rebound tenderness.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ABDOMEN: Generally nondistended and soft.",
+        "She is focally tender in the left lower quadrant to deep palpation with a palpable fullness or mass and focally tender, but no rebound tenderness.",
+        "There is no CVA or flank tenderness, although some very minimal left flank tenderness."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F11",
+      "fact_text": "Laboratory results showed WBC 5.3, hemoglobin 12.8, normal platelets, elevated alkaline phosphatase at 184, normal LFTs and electrolytes, glucose 134, BUN 4, and creatinine 0.7.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "LABORATORY VALUES: White blood cell count is 5.3, hemoglobin 12.8, and platelet count normal.",
+        "Alkaline phosphatase elevated at 184.",
+        "Liver function tests otherwise normal.",
+        "Electrolytes normal.",
+        "Glucose 134, BUN 4, and creatinine 0.7."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F12",
+      "fact_text": "An EKG demonstrated normal sinus rhythm.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "DIAGNOSTIC STUDIES: EKG shows normal sinus rhythm."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F13",
+      "fact_text": "The working diagnosis is sigmoid diverticulitis, with a distant past history of the same condition.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The working diagnosis would be sigmoid diverticulitis.",
+        "She does have a history in the distant past of sigmoid diverticulitis."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F14",
+      "fact_text": "Recommendations include ordering a repeat stat CT scan of the abdomen and pelvis and keeping the patient NPO empirically.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "I would recommend a repeat stat CT scan of the abdomen and pelvis and keep the patient nothing by mouth.",
+        "and be kept nothing by mouth now empirically."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F15",
+      "fact_text": "Plan includes consulting Dr. Y in Colorectal Surgery and scheduling a repeat colonoscopy in the near future.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient was seen 5 years ago by Dr. Y in Colorectal Surgery. We will consult her also for evaluation.",
+        "The patient will need repeat colonoscopy in the near future"
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_23_F16",
+      "fact_text": "There is no indication for acute surgical intervention today, but the patient requires close observation and further diagnostic workup.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Again, currently there is no indication for acute surgical intervention on today's date, although the patient will need close observation and further diagnostic workup."
+      ]
+    }
+  ],
+  "annotation_notes": "Categorized primary_content_type as instructions given the heavy clinical focus on management directives (NPO status, stat CT order, surgical consultation, repeat colonoscopy, and close monitoring)."
+}

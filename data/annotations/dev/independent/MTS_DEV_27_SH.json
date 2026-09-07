@@ -1,0 +1,88 @@
+{
+  "example_id": "MTS_DEV_27",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=92-Lab+Medicine+%2D+Pathology&Sample=1664-Lung+Biopsy+Pathology+Report",
+  "primary_content_type": "lab_values",
+  "selection_mode": "entire_report",
+  "source_text": "CLINICAL HISTORY: A 48-year-old smoker found to have a right upper lobe mass on chest x-ray and is being evaluated for chest pain. PET scan demonstrated a mass in the right upper lobe and also a mass in the right lower lobe, which were also identified by CT scan. The lower lobe mass was approximately 1 cm in diameter and the upper lobe mass was 4 cm to 5 cm in diameter. The patient was referred for surgical treatment.\n\nSPECIMEN:\nA. Lung, wedge biopsy right lower lobe\nB. Lung, resection right upper lobe\nC. Lymph node, biopsy level 2 and 4\nD. Lymph node, biopsy level 7 subcarinal\n\nFINAL DIAGNOSIS:\nA. Wedge biopsy of right lower lobe showing: Adenocarcinoma, Grade 2, Measuring 1 cm in diameter with invasion of the overlying pleura and with free resection margin.\n\nB. Right upper lobe lung resection showing: Adenocarcinoma, grade 2, measuring 4 cm in diameter with invasion of the overlying pleura and with free bronchial margin. Two (2) hilar lymph nodes with no metastatic tumor.\nC. Lymph node biopsy at level 2 and 4 showing seven (7) lymph nodes with anthracosis and no metastatic tumor.\nD. Lymph node biopsy, level 7 subcarinal showing (5) lymph nodes with anthracosis and no metastatic tumor.\n\nCOMMENT: The morphology of the tumor seen in both lobes is similar and we feel that the smaller tumor involving the right lower lobe is most likely secondary to transbronchial spread from the main tumor involving the right upper lobe. This suggestion is supported by the fact that no obvious vascular or lymphatic invasion is demonstrated and adjacent to the smaller tumor, there is isolated nests of tumor cells within the air spaces. Furthermore, immunoperoxidase stain for Ck-7, CK-20 and TTF are performed on both the right lower and right upper lobe nodule. The immunohistochemical results confirm the lung origin of both tumors and we feel that the tumor involving the right lower lobe is due to transbronchial spread from the larger tumor nodule involving the right upper lobe.",
+  "facts": [
+    {
+      "fact_id": "MTS_DEV_27_F01",
+      "fact_text": "The patient is a 48-year-old smoker evaluated for chest pain after a chest X-ray revealed a right upper lobe mass.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "A 48-year-old smoker found to have a right upper lobe mass on chest x-ray and is being evaluated for chest pain."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_27_F02",
+      "fact_text": "PET and CT scans identified a right upper lobe mass measuring 4 to 5 cm in diameter and a right lower lobe mass measuring approximately 1 cm in diameter.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "PET scan demonstrated a mass in the right upper lobe and also a mass in the right lower lobe, which were also identified by CT scan.",
+        "The lower lobe mass was approximately 1 cm in diameter and the upper lobe mass was 4 cm to 5 cm in diameter."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_27_F03",
+      "fact_text": "The patient was referred for surgical treatment.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient was referred for surgical treatment."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_27_F04",
+      "fact_text": "Surgical specimens included a right lower lobe lung wedge biopsy, a right upper lobe lung resection, level 2 and 4 lymph node biopsies, and level 7 subcarinal lymph node biopsy.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "SPECIMEN:\nA. Lung, wedge biopsy right lower lobe\nB. Lung, resection right upper lobe\nC. Lymph node, biopsy level 2 and 4\nD. Lymph node, biopsy level 7 subcarinal"
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_27_F05",
+      "fact_text": "Wedge biopsy of the right lower lobe demonstrated a 1 cm Grade 2 adenocarcinoma with pleural invasion and free resection margins.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "A. Wedge biopsy of right lower lobe showing: Adenocarcinoma, Grade 2, Measuring 1 cm in diameter with invasion of the overlying pleura and with free resection margin."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_27_F06",
+      "fact_text": "Right upper lobe lung resection demonstrated a 4 cm Grade 2 adenocarcinoma with pleural invasion, free bronchial margins, and two hilar lymph nodes negative for metastatic tumor.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "B. Right upper lobe lung resection showing: Adenocarcinoma, grade 2, measuring 4 cm in diameter with invasion of the overlying pleura and with free bronchial margin.",
+        "Two (2) hilar lymph nodes with no metastatic tumor."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_27_F07",
+      "fact_text": "Biopsies of level 2 and 4 lymph nodes (7 nodes) and level 7 subcarinal lymph nodes (5 nodes) showed anthracosis without metastatic tumor.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "C. Lymph node biopsy at level 2 and 4 showing seven (7) lymph nodes with anthracosis and no metastatic tumor.",
+        "D. Lymph node biopsy, level 7 subcarinal showing (5) lymph nodes with anthracosis and no metastatic tumor."
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_27_F08",
+      "fact_text": "Immunohistochemical staining for CK-7, CK-20, and TTF confirmed lung origin for both tumors.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Furthermore, immunoperoxidase stain for Ck-7, CK-20 and TTF are performed on both the right lower and right upper lobe nodule.",
+        "The immunohistochemical results confirm the lung origin of both tumors"
+      ]
+    },
+    {
+      "fact_id": "MTS_DEV_27_F09",
+      "fact_text": "Pathology findings suggest the right lower lobe tumor is secondary to transbronchial spread from the primary right upper lobe tumor.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The morphology of the tumor seen in both lobes is similar and we feel that the smaller tumor involving the right lower lobe is most likely secondary to transbronchial spread from the main tumor involving the right upper lobe.",
+        "This suggestion is supported by the fact that no obvious vascular or lymphatic invasion is demonstrated and adjacent to the smaller tumor, there is isolated nests of tumor cells within the air spaces.",
+        "and we feel that the tumor involving the right lower lobe is due to transbronchial spread from the larger tumor nodule involving the right upper lobe."
+      ]
+    }
+  ],
+  "annotation_notes": "Categorized primary_content_type as lab_values because the entire report is a surgical pathology pathology/histology result report detailing biopsy and resection tumor grading, margins, immunohistochemistry, and lymph node examinations."
+}
