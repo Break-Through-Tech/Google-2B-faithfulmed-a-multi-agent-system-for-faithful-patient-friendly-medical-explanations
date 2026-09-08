@@ -28,7 +28,7 @@
         "fact_id",
         "fact_text",
         "fact_type",
-        "source_sentence"
+        "source_evidence"
       ],
       "properties": {
         "fact_id": {
@@ -50,33 +50,30 @@
             "instruction"
           ]
         },
-        "source_sentence": {
-          "type": "string",
-          "minLength": 1
+        "source_evidence": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "One or more exact supporting spans from source_text.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
         }
       }
     },
-    "sourceMetadata": {
+    "commonProperties": {
       "type": "object",
       "required": [
         "example_id",
         "source_url",
-        "website_specialty",
-        "split",
         "primary_content_type",
-        "secondary_content_types",
         "selection_mode",
-        "source_text"
+        "source_text",
+        "facts"
       ],
       "properties": {
         "example_id": {
-          "type": "string",
-          "minLength": 1
-        },
-        "source_dataset": {
-          "const": "MTSamples"
-        },
-        "parent_document_id": {
           "type": "string",
           "minLength": 1
         },
@@ -84,27 +81,8 @@
           "type": "string",
           "minLength": 1
         },
-        "website_specialty": {
-          "type": "string",
-          "minLength": 1
-        },
-        "split": {
-          "type": "string",
-          "enum": [
-            "scratch",
-            "dev",
-            "test"
-          ]
-        },
         "primary_content_type": {
           "$ref": "#/$defs/contentType"
-        },
-        "secondary_content_types": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/$defs/contentType"
-          }
         },
         "selection_mode": {
           "type": "string",
@@ -113,24 +91,25 @@
             "self_contained_passage"
           ]
         },
-        "included_sections": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "minLength": 1
-          }
-        },
         "source_text": {
           "type": "string",
           "minLength": 1
+        },
+        "facts": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Fact IDs must be unique within the array; validate_annotations.py enforces property-level uniqueness.",
+          "items": {
+            "$ref": "#/$defs/fact"
+          }
         }
       }
     },
     "independentAnnotation": {
       "allOf": [
         {
-          "$ref": "#/$defs/sourceMetadata"
+          "$ref": "#/$defs/commonProperties"
         },
         {
           "type": "object",
@@ -138,44 +117,26 @@
           "required": [
             "example_id",
             "source_url",
-            "website_specialty",
-            "split",
             "primary_content_type",
-            "secondary_content_types",
             "selection_mode",
             "source_text",
-            "annotator_id",
             "facts",
-            "annotation_notes",
-            "needs_adjudication"
+            "annotation_notes"
           ],
           "properties": {
             "example_id": true,
             "source_url": true,
-            "website_specialty": true,
-            "split": true,
             "primary_content_type": true,
-            "secondary_content_types": true,
             "selection_mode": true,
             "source_text": true,
+            "facts": true,
             "annotator_id": {
               "type": "string",
-              "minLength": 1
-            },
-            "facts": {
-              "type": "array",
-              "minItems": 1,
-              "uniqueItems": true,
-              "description": "Fact IDs must be unique within the array; validate_annotations.py enforces property-level uniqueness.",
-              "items": {
-                "$ref": "#/$defs/fact"
-              }
+              "minLength": 1,
+              "description": "Optional in the template; recommended for saved independent annotations."
             },
             "annotation_notes": {
               "type": "string"
-            },
-            "needs_adjudication": {
-              "type": "boolean"
             }
           }
         }
@@ -184,96 +145,31 @@
     "adjudicatedAnnotation": {
       "allOf": [
         {
-          "$ref": "#/$defs/sourceMetadata"
+          "$ref": "#/$defs/commonProperties"
         },
         {
           "type": "object",
           "additionalProperties": false,
           "required": [
             "example_id",
-            "source_dataset",
-            "parent_document_id",
             "source_url",
-            "website_specialty",
-            "split",
             "primary_content_type",
-            "secondary_content_types",
             "selection_mode",
-            "included_sections",
             "source_text",
-            "independent_annotators",
-            "adjudicator_id",
-            "annotation_version",
-            "frozen",
-            "gold_facts",
+            "facts",
             "adjudication_notes"
           ],
           "properties": {
             "example_id": true,
-            "source_dataset": true,
-            "parent_document_id": true,
             "source_url": true,
-            "website_specialty": true,
-            "split": true,
             "primary_content_type": true,
-            "secondary_content_types": true,
             "selection_mode": true,
-            "included_sections": true,
             "source_text": true,
-            "independent_annotators": {
-              "type": "array",
-              "minItems": 2,
-              "uniqueItems": true,
-              "items": {
-                "type": "string",
-                "minLength": 1
-              }
-            },
-            "adjudicator_id": {
-              "type": "string",
-              "minLength": 1
-            },
-            "annotation_version": {
-              "type": "string",
-              "pattern": "^[0-9]+\\.[0-9]+$"
-            },
-            "frozen": {
-              "type": "boolean"
-            },
-            "gold_facts": {
-              "type": "array",
-              "minItems": 1,
-              "uniqueItems": true,
-              "description": "Fact IDs must be unique within the array; validate_annotations.py enforces property-level uniqueness.",
-              "items": {
-                "$ref": "#/$defs/fact"
-              }
-            },
+            "facts": true,
             "adjudication_notes": {
               "type": "string"
             }
-          },
-          "allOf": [
-            {
-              "if": {
-                "properties": {
-                  "split": {
-                    "const": "test"
-                  }
-                },
-                "required": [
-                  "split"
-                ]
-              },
-              "then": {
-                "properties": {
-                  "frozen": {
-                    "const": true
-                  }
-                }
-              }
-            }
-          ]
+          }
         }
       ]
     }

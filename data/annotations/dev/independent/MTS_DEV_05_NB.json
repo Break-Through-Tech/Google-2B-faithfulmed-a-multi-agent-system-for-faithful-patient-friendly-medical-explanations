@@ -1,0 +1,469 @@
+{
+  "example_id": "MTS_DEV_05",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=6-Cardiovascular+%2F+Pulmonary&Sample=1597-Abnormal+Echocardiogram",
+  "primary_content_type": "lab_values",
+  "selection_mode": "entire_report",
+  "source_text": "REASON FOR CONSULTATION: Abnormal echocardiogram findings and followup. Shortness of breath, congestive heart failure, and valvular insufficiency.\n\nHISTORY OF PRESENT ILLNESS: The patient is an 86-year-old female admitted for evaluation of abdominal pain and bloody stools. The patient has colitis and also diverticulitis, undergoing treatment. During the hospitalization, the patient complains of shortness of breath, which is worsening. The patient underwent an echocardiogram, which shows severe mitral regurgitation and also large pleural effusion. This consultation is for further evaluation in this regard. As per the patient, she is an 86-year-old female, has limited activity level. She has been having shortness of breath for many years. She also was told that she has a heart murmur, which was not followed through on a regular basis.\n\nCORONARY RISK FACTORS: History of hypertension, no history of diabetes mellitus, nonsmoker, cholesterol status unclear, no prior history of coronary artery disease, and family history noncontributory.\n\nFAMILY HISTORY: Nonsignificant.\n\nPAST SURGICAL HISTORY: No major  surgery.\n\nMEDICATIONS: Presently on Lasix, potassium supplementation, Levaquin, hydralazine 10 mg b.i.d., antibiotic treatments, and thyroid supplementation.\n\nALLERGIES: AMBIEN, CARDIZEM, AND IBUPROFEN.\n\nPERSONAL HISTORY: She is a nonsmoker. Does not consume alcohol. No history of recreational drug use.\n\nPAST MEDICAL HISTORY: Basically GI pathology with diverticulitis, colitis, hypothyroidism, arthritis, questionable hypertension, no prior history of coronary artery disease, and heart murmur.\n\nREVIEW OF SYSTEMS\nCONSTITUTIONAL: Weakness, fatigue, and tiredness.\n\nHEENT: History of cataract, blurred vision, and hearing impairment.\nCARDIOVASCULAR: Shortness of breath and heart murmur. No coronary artery disease.\nRESPIRATORY: Shortness of breath. No pneumonia or valley fever.\nGASTROINTESTINAL: No nausea, vomiting, hematemesis, or melena.\nUROLOGICAL: No frequency or urgency.\nMUSCULOSKELETAL: Arthritis and severe muscle weakness.\nSKIN: Nonsignificant.\nNEUROLOGICAL: No TIA or CVA. No seizure disorder.\nENDOCRINE/HEMATOLOGICAL: As above.\n\nPHYSICAL EXAMINATION\nVITAL SIGNS: Pulse of 84, blood pressure of 168/74, afebrile, and respiratory rate 16 per minute.\nHEENT/NECK: Head is atraumatic and normocephalic. Neck veins flat. No significant carotid bruits appreciated.\nLUNGS: Air entry bilaterally fair. No obvious rales or wheezes.\nHEART: PMI displaced. S1, S2 with systolic murmur at the precordium, grade 2/6.\nABDOMEN: Soft and nontender.\nEXTREMITIES: Chronic skin changes. Feeble pulses distally. No clubbing or cyanosis.\n\nDIAGNOSTIC DATA: EKG: Normal sinus rhythm. No acute ST-T changes.\n\nEchocardiogram report was reviewed.\n\nLABORATORY DATA: H&H 13 and 39. BUN and creatinine within normal limits. Potassium within normal limits. BNP 9290.\n\nIMPRESSION:\n1. The patient admitted for gastrointestinal pathology, under working treatment.\n2. History of prior heart murmur with echocardiogram findings as above. Basically revealed normal left ventricular function with left atrial enlargement, large pleural effusion, and severe mitral regurgitation and tricuspid regurgitation.\n\nRECOMMENDATIONS:\n1. From cardiac standpoint, conservative treatment. Possibility of a transesophageal echocardiogram to assess valvular insufficiency adequately well discussed extensively.\n\n2. After extensive discussion, given her age 86, limited activity level, and no intention of undergoing any treatment in this regard from a surgical standpoint, the patient does not wish to proceed with a transesophageal echocardiogram.\n3. Based on the above findings, we will treat her medically with ACE inhibitors and diuretics and see how she fares. She has a normal LV function.",
+  "annotator_id": "NB",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The reason for consultation included abnormal echocardiogram findings and follow-up.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "REASON FOR CONSULTATION: Abnormal echocardiogram findings and followup."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The reason for consultation included shortness of breath, congestive heart failure, and valvular insufficiency.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "REASON FOR CONSULTATION: Abnormal echocardiogram findings and followup.",
+        "Shortness of breath, congestive heart failure, and valvular insufficiency."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient was admitted for evaluation of abdominal pain and bloody stools.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient is an 86-year-old female admitted for evaluation of abdominal pain and bloody stools."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient has colitis and diverticulitis and was undergoing treatment.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient has colitis and also diverticulitis, undergoing treatment."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "During the hospitalization, the patient reported worsening shortness of breath.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "During the hospitalization, the patient complains of shortness of breath, which is worsening."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient underwent an echocardiogram that showed severe mitral regurgitation and a large pleural effusion.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient underwent an echocardiogram, which shows severe mitral regurgitation and also large pleural effusion."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient had a limited activity level.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "As per the patient, she is an 86-year-old female, has limited activity level."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient had experienced shortness of breath for many years.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She has been having shortness of breath for many years."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient had previously been told that she had a heart murmur, which was not followed regularly.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "As per the patient, she is an 86-year-old female, has limited activity level.",
+        "She also was told that she has a heart murmur, which was not followed through on a regular basis."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient's coronary risk factors listed a history of hypertension.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "CORONARY RISK FACTORS: History of hypertension, no history of diabetes mellitus, nonsmoker, cholesterol status unclear, no prior history of coronary artery disease, and family history noncontributory."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient had no history of diabetes mellitus or coronary artery disease",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "CORONARY RISK FACTORS: History of hypertension, no history of diabetes mellitus, nonsmoker, cholesterol status unclear, no prior history of coronary artery disease, and family history noncontributory."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient's cholesterol status was unclear.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "CORONARY RISK FACTORS: History of hypertension, no history of diabetes mellitus, nonsmoker, cholesterol status unclear, no prior history of coronary artery disease, and family history noncontributory."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient is a nonsmoker.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "CORONARY RISK FACTORS: History of hypertension, no history of diabetes mellitus, nonsmoker, cholesterol status unclear, no prior history of coronary artery disease, and family history noncontributory."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient had no history of major surgery.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "PAST SURGICAL HISTORY: No major surgery."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient was currently taking Lasix.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "MEDICATIONS: Presently on Lasix, potassium supplementation, Levaquin, hydralazine 10 mg b.i.d., antibiotic treatments, and thyroid supplementation."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The patient was currently receiving potassium supplementation.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "MEDICATIONS: Presently on Lasix, potassium supplementation, Levaquin, hydralazine 10 mg b.i.d., antibiotic treatments, and thyroid supplementation."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The patient was currently taking Levaquin.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "MEDICATIONS: Presently on Lasix, potassium supplementation, Levaquin, hydralazine 10 mg b.i.d., antibiotic treatments, and thyroid supplementation."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The patient was currently taking hydralazine 10 mg twice daily.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "MEDICATIONS: Presently on Lasix, potassium supplementation, Levaquin, hydralazine 10 mg b.i.d., antibiotic treatments, and thyroid supplementation."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient was currently receiving antibiotic treatments.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "MEDICATIONS: Presently on Lasix, potassium supplementation, Levaquin, hydralazine 10 mg b.i.d., antibiotic treatments, and thyroid supplementation."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The patient was currently receiving thyroid supplementation.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "MEDICATIONS: Presently on Lasix, potassium supplementation, Levaquin, hydralazine 10 mg b.i.d., antibiotic treatments, and thyroid supplementation."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "The patient had reported allergies to Ambien, Cardizem, and ibuprofen.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ALLERGIES: AMBIEN, CARDIZEM, AND IBUPROFEN."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "The patient's past medical history included hypothyroidism.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "PAST MEDICAL HISTORY: Basically GI pathology with diverticulitis, colitis, hypothyroidism, arthritis, questionable hypertension, no prior history of coronary artery disease, and heart murmur."
+      ]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The patient's past medical history included arthritis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "PAST MEDICAL HISTORY: Basically GI pathology with diverticulitis, colitis, hypothyroidism, arthritis, questionable hypertension, no prior history of coronary artery disease, and heart murmur."
+      ]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "The patient's past medical history described her hypertension as questionable.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "PAST MEDICAL HISTORY: Basically GI pathology with diverticulitis, colitis, hypothyroidism, arthritis, questionable hypertension, no prior history of coronary artery disease, and heart murmur."
+      ]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "The patient reported weakness, fatigue, and tiredness.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "CONSTITUTIONAL: Weakness, fatigue, and tiredness."
+      ]
+    },
+    {
+      "fact_id": "F26",
+      "fact_text": "The patient had a history of cataract, blurred vision, and hearing impairment.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HEENT: History of cataract, blurred vision, and hearing impairment."
+      ]
+    },
+    {
+      "fact_id": "F27",
+      "fact_text": "The patient had no pneumonia or valley fever.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "RESPIRATORY: Shortness of breath.",
+        "No pneumonia or valley fever."
+      ]
+    },
+    {
+      "fact_id": "F28",
+      "fact_text": "The patient reported no nausea, vomiting, hematemesis, or melena.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "GASTROINTESTINAL: No nausea, vomiting, hematemesis, or melena."
+      ]
+    },
+    {
+      "fact_id": "F29",
+      "fact_text": "The patient reported no urinary frequency or urgency.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "UROLOGICAL: No frequency or urgency."
+      ]
+    },
+    {
+      "fact_id": "F30",
+      "fact_text": "The patient had arthritis and severe muscle weakness.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "MUSCULOSKELETAL: Arthritis and severe muscle weakness."
+      ]
+    },
+    {
+      "fact_id": "F31",
+      "fact_text": "The patient had no transient ischemic attack or cerebrovascular accident.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "NEUROLOGICAL: No TIA or CVA."
+      ]
+    },
+    {
+      "fact_id": "F32",
+      "fact_text": "The patient had no seizure disorder.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No seizure disorder."
+      ]
+    },
+    {
+      "fact_id": "F33",
+      "fact_text": "The patient's pulse was 84.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Pulse of 84, blood pressure of 168/74, afebrile, and respiratory rate 16 per minute."
+      ]
+    },
+    {
+      "fact_id": "F34",
+      "fact_text": "The patient's blood pressure was 168/74.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Pulse of 84, blood pressure of 168/74, afebrile, and respiratory rate 16 per minute."
+      ]
+    },
+    {
+      "fact_id": "F35",
+      "fact_text": "The patient was afebrile.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Pulse of 84, blood pressure of 168/74, afebrile, and respiratory rate 16 per minute."
+      ]
+    },
+    {
+      "fact_id": "F36",
+      "fact_text": "The patient's respiratory rate was 16 per minute.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Pulse of 84, blood pressure of 168/74, afebrile, and respiratory rate 16 per minute."
+      ]
+    },
+    {
+      "fact_id": "F37",
+      "fact_text": "The patient's head was atraumatic and normocephalic.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HEENT/NECK: Head is atraumatic and normocephalic."
+      ]
+    },
+    {
+      "fact_id": "F38",
+      "fact_text": "The patient's neck veins were flat, with no significant carotid bruits appreciated.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Neck veins flat.",
+        "No significant carotid bruits appreciated."
+      ]
+    },
+    {
+      "fact_id": "F39",
+      "fact_text": "Air entry in the patient's lungs was fair bilaterally, without obvious rales or wheezes.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "LUNGS: Air entry bilaterally fair.",
+        "No obvious rales or wheezes."
+      ]
+    },
+    {
+      "fact_id": "F40",
+      "fact_text": "The patient's point of maximal impulse was displaced.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HEART: PMI displaced."
+      ]
+    },
+    {
+      "fact_id": "F41",
+      "fact_text": "The patient had a grade 2/6 systolic murmur at the precordium.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "S1, S2 with systolic murmur at the precordium, grade 2/6."
+      ]
+    },
+    {
+      "fact_id": "F42",
+      "fact_text": "The patient's abdomen was soft and nontender.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ABDOMEN: Soft and nontender."
+      ]
+    },
+    {
+      "fact_id": "F43",
+      "fact_text": "The patient's extremities had chronic skin changes and feeble distal pulses.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "EXTREMITIES: Chronic skin changes.",
+        "Feeble pulses distally."
+      ]
+    },
+    {
+      "fact_id": "F44",
+      "fact_text": "The patient had no clubbing or cyanosis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No clubbing or cyanosis."
+      ]
+    },
+    {
+      "fact_id": "F45",
+      "fact_text": "The patient's EKG showed normal sinus rhythm without acute ST-T changes.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "DIAGNOSTIC DATA: EKG: Normal sinus rhythm.",
+        "No acute ST-T changes."
+      ]
+    },
+    {
+      "fact_id": "F46",
+      "fact_text": "The patient's H&H values were 13 and 39.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "LABORATORY DATA: H&H 13 and 39."
+      ]
+    },
+    {
+      "fact_id": "F47",
+      "fact_text": "The patient's BUN and creatinine were within normal limits.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "BUN and creatinine within normal limits."
+      ]
+    },
+    {
+      "fact_id": "F48",
+      "fact_text": "The patient's potassium was within normal limits.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Potassium within normal limits."
+      ]
+    },
+    {
+      "fact_id": "F49",
+      "fact_text": "The patient's BNP was 9290.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "BNP 9290."
+      ]
+    },
+    {
+      "fact_id": "F50",
+      "fact_text": "The echocardiogram revealed normal left ventricular function with left atrial enlargement.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "History of prior heart murmur with echocardiogram findings as above.",
+        "Basically revealed normal left ventricular function with left atrial enlargement, large pleural effusion, and severe mitral regurgitation and tricuspid regurgitation."
+      ]
+    },
+    {
+      "fact_id": "F51",
+      "fact_text": "The echocardiogram revealed a large pleural effusion.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "History of prior heart murmur with echocardiogram findings as above.",
+        "Basically revealed normal left ventricular function with left atrial enlargement, large pleural effusion, and severe mitral regurgitation and tricuspid regurgitation."
+      ]
+    },
+    {
+      "fact_id": "F52",
+      "fact_text": "The echocardiogram revealed severe mitral regurgitation and tricuspid regurgitation.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "History of prior heart murmur with echocardiogram findings as above.",
+        "Basically revealed normal left ventricular function with left atrial enlargement, large pleural effusion, and severe mitral regurgitation and tricuspid regurgitation."
+      ]
+    },
+    {
+      "fact_id": "F53",
+      "fact_text": "Conservative treatment was recommended from a cardiac standpoint.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "From cardiac standpoint, conservative treatment."
+      ]
+    },
+    {
+      "fact_id": "F54",
+      "fact_text": "The possibility of a transesophageal echocardiogram to assess the patient's valvular insufficiency was discussed extensively.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Possibility of a transesophageal echocardiogram to assess valvular insufficiency adequately well discussed extensively."
+      ]
+    },
+    {
+      "fact_id": "F55",
+      "fact_text": "Given her age, limited activity level, and lack of intention to undergo related surgical treatment, the patient did not wish to proceed with a transesophageal echocardiogram.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "After extensive discussion, given her age 86, limited activity level, and no intention of undergoing any treatment in this regard from a surgical standpoint, the patient does not wish to proceed with a transesophageal echocardiogram."
+      ]
+    },
+    {
+      "fact_id": "F56",
+      "fact_text": "The plan was to treat the patient medically with ACE inhibitors and diuretics and monitor how she responded.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Based on the above findings, we will treat her medically with ACE inhibitors and diuretics and see how she fares."
+      ]
+    }
+  ],
+  "annotation_notes": ""
+}
