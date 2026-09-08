@@ -1,0 +1,187 @@
+{
+  "example_id": "MTS_DEV_024",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=98-General+Medicine&Sample=1843-Anemia+-+Consult",
+  "primary_content_type": "lab_values",
+  "selection_mode": "entire_report",
+  "source_text": "DIAGNOSIS: Refractory anemia that is transfusion dependent.\n\nCHIEF COMPLAINT: I needed a blood transfusion.\n\nHISTORY: The patient is a 78-year-old gentleman with no substantial past medical history except for diabetes. He denies any comorbid complications of the diabetes including kidney disease, heart disease, stroke, vision loss, or neuropathy. At this time, he has been admitted for anemia with hemoglobin of 7.1 and requiring transfusion. He reports that he has no signs or symptom of bleeding and had a blood transfusion approximately two months ago and actually several weeks before that blood transfusion, he had a transfusion for anemia. He has been placed on B12, oral iron, and Procrit. At this time, we are asked to evaluate him for further causes and treatment for his anemia. He denies any constitutional complaints except for fatigue, malaise, and some dyspnea. He has no adenopathy that he reports. No fevers, night sweats, bone pain, rash, arthralgias, or myalgias.\n\nPAST MEDICAL HISTORY: Diabetes.\n\nPAST SURGICAL HISTORY: Hernia repair.\n\nALLERGIES: He has no allergies.\n\nMEDICATIONS: Listed in the chart and include Coumadin, Lasix, metformin, folic acid, diltiazem, B12, Prevacid, and Feosol.\n\nSOCIAL HISTORY: He is a tobacco user. He does not drink. He lives alone, but has family and social support to look on him.\n\nFAMILY HISTORY: Negative for blood or cancer disorders according to the patient.\n\nPHYSICAL EXAMINATION:\nGENERAL: He is an elderly gentleman in no acute distress. He is sitting up in bed eating his breakfast. He is alert and oriented and answering questions appropriately.\n\nVITAL SIGNS: Blood pressure of 110/60, pulse of 99, respiratory rate of 14, and temperature of 97.4. He is 69 inches tall and weighs 174 pounds.\nHEENT: Sclerae show mild arcus senilis in the right. Left is clear. Pupils are equally round and reactive to light. Extraocular movements are intact. Oropharynx is clear.\nNECK: Supple. Trachea is midline. No jugular venous pressure distention is noted. No adenopathy in the cervical, supraclavicular, or axillary areas.\nCHEST: Clear.\nHEART: Regular rate and rhythm.\nABDOMEN: Soft and nontender. There may be some fullness in the left upper quadrant, although I do not appreciate a true spleen with inspiration.\nEXTREMITIES: No clubbing, but there is some edema, but no cyanosis.\nNEUROLOGIC: Noncontributory.\nDERMATOLOGIC: Noncontributory.\nCARDIOVASCULAR: Noncontributory.\n\nIMPRESSION: At this time is refractory anemia, which is transfusion dependent. He is on B12, iron, folic acid, and Procrit. There are no sign or symptom of blood loss and a recent esophagogastroduodenoscopy, which was negative. His creatinine was 1. My impression at this time is that he probably has an underlying myelodysplastic syndrome or bone marrow failure. His creatinine on this hospitalization was up slightly to 1.6 and this may contribute to his anemia.\n\nRECOMMENDATIONS: At this time, my recommendation for the patient is that he undergoes further serologic evaluation with reticulocyte count, serum protein, and electrophoresis, LDH, B12, folate, erythropoietin level, and he should undergo a bone marrow aspiration and biopsy. I have discussed the procedure in detail which the patient. I have discussed the risks, benefits, and successes of that treatment and usefulness of the bone marrow and predicting his cause of refractory anemia and further therapeutic interventions, which might be beneficial to him. He is willing to proceed with the studies I have described to him. We will order an ultrasound of his abdomen because of the possible fullness of the spleen, and I will probably see him in follow up after this hospitalization.\n\nAs always, we greatly appreciate being able to participate in the care of your patient. We appreciate the consultation of the patient.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient had refractory anemia that was transfusion dependent.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "DIAGNOSIS: Refractory anemia that is transfusion dependent."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient had diabetes.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "PAST MEDICAL HISTORY: Diabetes."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient's hemoglobin was 7.1.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "At this time, he has been admitted for anemia with hemoglobin of 7.1 and requiring transfusion."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient required a blood transfusion for anemia.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "At this time, he has been admitted for anemia with hemoglobin of 7.1 and requiring transfusion."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient had a blood transfusion approximately two months ago.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "He reports that he has no signs or symptom of bleeding and had a blood transfusion approximately two months ago and actually several weeks before that blood transfusion, he had a transfusion for anemia."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient had another blood transfusion several weeks before the transfusion approximately two months ago for anemia.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "He reports that he has no signs or symptom of bleeding and had a blood transfusion approximately two months ago and actually several weeks before that blood transfusion, he had a transfusion for anemia."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient had been placed on B12, oral iron, and Procrit.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "He has been placed on B12, oral iron, and Procrit."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient reported fatigue, malaise, and some dyspnea.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "He denies any constitutional complaints except for fatigue, malaise, and some dyspnea."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient was taking Coumadin, Lasix, metformin, folic acid, diltiazem, B12, Prevacid, and Feosol.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "MEDICATIONS: Listed in the chart and include Coumadin, Lasix, metformin, folic acid, diltiazem, B12, Prevacid, and Feosol."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient's blood pressure was 110/60.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Blood pressure of 110/60, pulse of 99, respiratory rate of 14, and temperature of 97.4."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient's pulse was 99.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Blood pressure of 110/60, pulse of 99, respiratory rate of 14, and temperature of 97.4."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient's respiratory rate was 14.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Blood pressure of 110/60, pulse of 99, respiratory rate of 14, and temperature of 97.4."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient's temperature was 97.4.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Blood pressure of 110/60, pulse of 99, respiratory rate of 14, and temperature of 97.4."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient's creatinine was 1.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "His creatinine was 1."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "A recent esophagogastroduodenoscopy was negative.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "There are no sign or symptom of blood loss and a recent esophagogastroduodenoscopy, which was negative."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The patient probably had an underlying myelodysplastic syndrome or bone marrow failure.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "My impression at this time is that he probably has an underlying myelodysplastic syndrome or bone marrow failure."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The patient's creatinine on this hospitalization was 1.6 and this may contribute to his anemia.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "His creatinine on this hospitalization was up slightly to 1.6 and this may contribute to his anemia."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The patient was recommended to undergo further serologic evaluation with reticulocyte count, serum protein and electrophoresis, LDH, B12, folate, and erythropoietin level.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "At this time, my recommendation for the patient is that he undergoes further serologic evaluation with reticulocyte count, serum protein, and electrophoresis, LDH, B12, folate, erythropoietin level, and he should undergo a bone marrow aspiration and biopsy."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient was recommended to undergo a bone marrow aspiration and biopsy.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "He should undergo a bone marrow aspiration and biopsy."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The patient agreed to proceed with the described studies.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "He is willing to proceed with the studies I have described to him."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "An ultrasound of the patient's abdomen was ordered because of possible fullness of the spleen.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "We will order an ultrasound of his abdomen because of the possible fullness of the spleen."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "The patient was to be seen in follow-up after the hospitalization.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "I will probably see him in follow up after this hospitalization."
+      ]
+    }
+  ],
+  "annotation_notes": "The entire clinical report was selected for annotation. Advertisements and webpage metadata were excluded from source_text. The report's primary content type is diagnosis because the central focus is evaluation of refractory, transfusion-dependent anemia and the suspected underlying cause. Uncertainty in the suspected myelodysplastic syndrome or bone marrow failure was preserved using 'probably.' Physical examination findings, social history, family history, and other non-actionable findings were not annotated because they do not fit the approved fact types. The source states creatinine as 1 and later 1.6; both values were preserved exactly as reported."
+}
+

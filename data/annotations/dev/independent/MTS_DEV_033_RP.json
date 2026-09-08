@@ -1,0 +1,132 @@
+{
+  "example_id": "MTS_DEV_033",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=97-Consult+-+History+and+Phy.&Sample=298-Dietary+Consult+-+1",
+  "primary_content_type": "instructions",
+  "selection_mode": "entire_report",
+  "source_text": "SUBJECTIVE: His brother, although he is a vegetarian, has elevated cholesterol and he is on medication to lower it. The patient started improving his diet when he received the letter explaining his lipids are elevated. He is consuming less cappuccino, quiche, crescents, candy from vending machines, etc. He has started packing his lunch three to four times per week instead of eating out so much. He is exercising six to seven days per week by swimming, biking, running, lifting weights one and a half to two and a half hours each time. He is in training for a triathlon. He says he is already losing weight due to his efforts.\n\nOBJECTIVE: Height: 6 foot 2 inches. Weight: 204 pounds on 03/07/05. Ideal body weight: 190 pounds, plus or minus ten percent. He is 107 percent standard of midpoint ideal body weight. BMI: 26.189. A 48-year-old male. Lab on 03/15/05: Cholesterol: 251. LDL: 166. VLDL: 17. HDL: 68. Triglycerides: 87. I explained to the patient the dietary guidelines to help improve his lipids. I recommend a 26 to 51 to 77 fat grams per day for a 10 to 20 to 30 percent fat level of 2,300 calories since he is interested in losing weight. I went over the printed information sheet on lowering your cholesterol and that was given to him along with a booklet on the same topic to read. I encouraged him to continue as he is doing.\n\nASSESSMENT: Basal energy expenditure 1960 x 1.44 activity factor is approximately 2,800 calories. His 24-hour recall shows he is making many positive changes already to lower his fat and cholesterol intake. He needs to continue as he is doing. He verbalized understanding and seemed receptive.\n\nPLAN: The patient plans to recheck his lipids through Dr. XYZ I gave him my phone number and he is to call me if he has any further questions regarding his diet.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient's height was 6 foot 2 inches.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Height: 6 foot 2 inches."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient's weight was 204 pounds on 03/07/05.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Weight: 204 pounds on 03/07/05."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient's ideal body weight was 190 pounds, plus or minus ten percent.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Ideal body weight: 190 pounds, plus or minus ten percent."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient's BMI was 26.189.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "BMI: 26.189."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient's cholesterol was 251 on 03/15/05.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Lab on 03/15/05: Cholesterol: 251."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient's LDL was 166 on 03/15/05.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Lab on 03/15/05: Cholesterol: 251. LDL: 166."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient's VLDL was 17 on 03/15/05.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VLDL: 17."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient's HDL was 68 on 03/15/05.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "HDL: 68."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient's triglycerides were 87 on 03/15/05.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Triglycerides: 87."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The recommended dietary intake was 26 to 51 to 77 fat grams per day for a 10 to 20 to 30 percent fat level of 2,300 calories.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "I recommend a 26 to 51 to 77 fat grams per day for a 10 to 20 to 30 percent fat level of 2,300 calories since he is interested in losing weight."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient was given information sheets and a booklet on lowering cholesterol to read.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "I went over the printed information sheet on lowering your cholesterol and that was given to him along with a booklet on the same topic to read."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient was encouraged to continue his current efforts to improve his diet and lower his fat and cholesterol intake.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "I encouraged him to continue as he is doing.",
+        "His 24-hour recall shows he is making many positive changes already to lower his fat and cholesterol intake. He needs to continue as he is doing."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient's basal energy expenditure was approximately 2,800 calories based on a 1960 expenditure and a 1.44 activity factor.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Basal energy expenditure 1960 x 1.44 activity factor is approximately 2,800 calories."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient planned to recheck his lipids through Dr. XYZ.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient plans to recheck his lipids through Dr. XYZ"
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient was instructed to call the dietitian if he had further questions regarding his diet.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "I gave him my phone number and he is to call me if he has any further questions regarding his diet."
+      ]
+    }
+  ],
+  "annotation_notes": "Primary content type is instructions because the report is primarily a dietary consultation containing dietary recommendations and follow-up plans. The report also contains multiple lipid and body measurements, which are captured as lab_value facts. The patient's current exercise, food choices, and weight-loss efforts were not annotated as instructions because they describe current behavior rather than recommendations. The statement about the patient's brother's elevated cholesterol and medication was not annotated because it concerns the brother rather than the patient."
+}
+

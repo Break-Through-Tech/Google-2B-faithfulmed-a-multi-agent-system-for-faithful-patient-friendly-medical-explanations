@@ -1,0 +1,91 @@
+{
+  "example_id": "MTS_DEV_019",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=95-Radiology&Sample=1585-Biophysical+Profile+%2D+1",
+  "primary_content_type": "lab_values",
+  "selection_mode": "entire_report",
+  "source_text": "HISTORY: Advanced maternal age and hypertension.\n\nFINDINGS: There is a single live intrauterine pregnancy with a vertex lie, posterior placenta, and adequate amniotic fluid. The amniotic fluid index is 23.2 cm. Estimated gestational age based on prior ultrasound is 36 weeks 4 four days with an estimated date of delivery of 03/28/08. Based on fetal measurements obtained today, estimated fetal weight is 3249 plus or minus 396 g, 7 pounds 3 ounces plus or minus 14 ounces, which places the fetus in the 66th percentile for the estimated gestational age. Fetal heart motion at a rate of 156 beats per minute is documented. The cord Doppler ratio is normal at 2.2. The biophysical profile score, assessing fetal breathing movement, gross body movement, fetal tone, and qualitative amniotic fluid volume is 8/8.\n\nIMPRESSION:\n1. Single live intrauterine pregnancy in vertex presentation with an estimated gestational age of 36 weeks 4 days and established due date of 03/28/08.\n2. Biophysical profile (BPP) score 8/8.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The amniotic fluid index was 23.2 cm.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The amniotic fluid index is 23.2 cm."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The estimated gestational age based on a prior ultrasound was 36 weeks 4 four days.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Estimated gestational age based on prior ultrasound is 36 weeks 4 four days with an estimated date of delivery of 03/28/08."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The estimated date of delivery was 03/28/08.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Estimated gestational age based on prior ultrasound is 36 weeks 4 four days with an estimated date of delivery of 03/28/08."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The estimated fetal weight was 3249 plus or minus 396 g.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Based on fetal measurements obtained today, estimated fetal weight is 3249 plus or minus 396 g, 7 pounds 3 ounces plus or minus 14 ounces, which places the fetus in the 66th percentile for the estimated gestational age."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The estimated fetal weight was 7 pounds 3 ounces plus or minus 14 ounces.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Based on fetal measurements obtained today, estimated fetal weight is 3249 plus or minus 396 g, 7 pounds 3 ounces plus or minus 14 ounces, which places the fetus in the 66th percentile for the estimated gestational age."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The estimated fetal weight was at the 66th percentile for the estimated gestational age.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Based on fetal measurements obtained today, estimated fetal weight is 3249 plus or minus 396 g, 7 pounds 3 ounces plus or minus 14 ounces, which places the fetus in the 66th percentile for the estimated gestational age."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "Fetal heart motion was documented at a rate of 156 beats per minute.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Fetal heart motion at a rate of 156 beats per minute is documented."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The cord Doppler ratio was normal at 2.2.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The cord Doppler ratio is normal at 2.2."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The biophysical profile score was 8/8.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The biophysical profile score, assessing fetal breathing movement, gross body movement, fetal tone, and qualitative amniotic fluid volume is 8/8."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The pregnancy was a single live intrauterine pregnancy in vertex presentation.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Single live intrauterine pregnancy in vertex presentation with an estimated gestational age of 36 weeks 4 days and established due date of 03/28/08."
+      ]
+    }
+  ],
+  "annotation_notes": "The primary content type is lab_values because the report is primarily a fetal ultrasound and biophysical profile documenting measurements and test results. The source states '36 weeks 4 four days'; this wording was preserved rather than silently corrected."
+}
+
