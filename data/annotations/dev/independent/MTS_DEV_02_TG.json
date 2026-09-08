@@ -1,0 +1,100 @@
+{
+  "example_id": "MTS_DEV_02",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=77-Rheumatology&Sample=1206-Oligoarticular+Arthritis+%2D+1",
+  "primary_content_type": "medications",
+  "selection_mode": "self_contained_passage",
+  "source_text": "ASSESSMENT: This is a 17-year-old male with oligoarticular arthritis. He is HLA-B27 negative.\n\nPLAN: In terms of the plan, I discussed with him what things he should be taking and the fact that since he has persistent symptoms, he should be on medication every day. I am going to switch him to Indocin 75 mg SR just to give more sustained effect to his joints, and if he does not respond to this or continue with the symptoms, we may need to get an MRI. We will see him back in three months. He was evaluated by our physical therapist, who gave him some recommendations in terms of exercise for his lower extremities. Future plans for A may include physical therapy and more stronger medications as well as imaging studies with an MRI. Today he received his flu shot. Discussed this with A and his aunt and they had no further questions.",
+  "annotator_id": "TG",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient was assessed as having oligoarticular arthritis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "This is a 17-year-old male with oligoarticular arthritis."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient was HLA-B27 negative.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "He is HLA-B27 negative."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "Because the patient has persistent symptoms, he should take medication every day.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "In terms of the plan, I discussed with him what things he should be taking and the fact that since he has persistent symptoms, he should be on medication every day."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient's medication will be switched to Indocin 75 mg SR to provide a more sustained effect to his joints.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "I am going to switch him to Indocin 75 mg SR just to give more sustained effect to his joints, and if he does not respond to this or continue with the symptoms, we may need to get an MRI."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "If the patient does not respond to Indocin 75 mg SR or continues to have symptoms, an MRI may be needed.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "I am going to switch him to Indocin 75 mg SR just to give more sustained effect to his joints, and if he does not respond to this or continue with the symptoms, we may need to get an MRI."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient will return for follow-up in three months.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "We will see him back in three months."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "A physical therapist gave the patient exercise recommendations for his lower extremities.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "He was evaluated by our physical therapist, who gave him some recommendations in terms of exercise for his lower extremities."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "Future plans may include physical therapy.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Future plans for A may include physical therapy and more stronger medications as well as imaging studies with an MRI."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "Future plans may include stronger medications.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Future plans for A may include physical therapy and more stronger medications as well as imaging studies with an MRI."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "Future plans may include MRI imaging studies.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Future plans for A may include physical therapy and more stronger medications as well as imaging studies with an MRI."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient received a flu shot that day.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Today he received his flu shot."
+      ]
+    }
+  ],
+  "annotation_notes": "The Assessment and Plan were selected as a coherent self-contained passage because they contain the diagnosis and the treatment-management content needed to understand the medication change, while excluding a long physical examination and unrelated measurements. Primary content type is medications because the plan emphasizes daily medication use and switching to Indocin 75 mg SR. Future physical therapy, stronger medications, and MRI were split into separate facts to preserve one independently checkable claim per fact. Needs adjudication, including whether HLA-B27 negative is best mapped to lab_value and whether vaccination is best mapped to procedure.",
+  "needs_adjudication": true
+}

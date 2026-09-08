@@ -1,0 +1,84 @@
+{
+  "example_id": "MTS_DEV_21",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=77-Rheumatology&Sample=1208-Discoid+Lupus",
+  "primary_content_type": "medications",
+  "selection_mode": "self_contained_passage",
+  "source_text": "ASSESSMENT: She is 12-year-old with discoid lupus on the control with optimal regimen. We are going to switch her to Protopic at night, especially in the face. Continue on Plaquenil, get some laboratories and wait for the results. Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up. Future plans will be depending on whether or not she evolves into a full-blown lupus. I discussed the plan with her mother and they had no further questions.",
+  "annotator_id": "TG",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient was assessed as having discoid lupus under control with the current regimen.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She is 12-year-old with discoid lupus on the control with optimal regimen."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient will be switched to Protopic at night, especially on the face.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "We are going to switch her to Protopic at night, especially in the face."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient will continue Plaquenil.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Continue on Plaquenil, get some laboratories and wait for the results."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "Laboratory tests will be obtained and the results awaited.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Continue on Plaquenil, get some laboratories and wait for the results."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "A diet evaluation was planned that day because of weight gain and acanthosis nigricans.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient had weight gain.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient had acanthosis nigricans.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient will return for follow-up in about three months.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "Future plans will depend on whether the patient develops full-blown lupus.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Future plans will be depending on whether or not she evolves into a full-blown lupus."
+      ]
+    }
+  ],
+  "annotation_notes": "The Assessment was selected as a coherent self-contained passage because it directly states the discoid lupus assessment and the medication-management plan while avoiding a lengthy physical examination and laboratory section that would dilute the primary content type. Primary content type is medications because the passage explicitly switches treatment to Protopic and continues Plaquenil. Symptoms/findings that do not cleanly fit another allowed fact_type are retained under diagnosis rather than discarded. Needs adjudication, including the mapping of weight gain and acanthosis nigricans to diagnosis and the future-plan statement to instruction.",
+  "needs_adjudication": true
+}

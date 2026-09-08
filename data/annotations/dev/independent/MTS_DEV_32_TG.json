@@ -1,0 +1,116 @@
+{
+  "example_id": "MTS_DEV_32",
+  "source_url": "https://mtsamples.com/site/pages/sample.asp?Sample=647-Discharge+Summary+-+1&Type=89-Discharge+Summary",
+  "primary_content_type": "medications",
+  "selection_mode": "self_contained_passage",
+  "source_text": "CONDITION ON DISCHARGE: Stable. ACTIVITY: As tolerated. DIET: Low-fat, low-salt, cardiac diet. DISCHARGE INSTRUCTIONS: Take medications regularly. PT, OT, speech therapist to evaluate and treat at Siskin Rehab Hospital. Continue Cipro for an additional two days for UTI. DISCHARGE MEDICATIONS: Cipro 250 mg, one tablet p.o. b.i.d. for an additional two days. Aggrenox, one tablet p.o. b.i.d. Docusate sodium 100 mg, one cap p.o. b.i.d. Zocor 20 mg, one tablet p.o. at bedtime. Prevacid 30 mg p.o. once a day. FOLLOW UP: The patient needs to follow up with Rehabilitation Hospital after discharge. The patient can call the Clinic for a follow-up appointment or find a primary care physician.",
+  "annotator_id": "TG",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient was stable at discharge.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "CONDITION ON DISCHARGE: Stable."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient may perform activity as tolerated.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "ACTIVITY: As tolerated."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient was instructed to follow a low-fat, low-salt cardiac diet.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "DIET: Low-fat, low-salt, cardiac diet."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient was instructed to take medications regularly.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "DISCHARGE INSTRUCTIONS: Take medications regularly."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "PT, OT, and a speech therapist were to evaluate and treat the patient at Siskin Rehab Hospital.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "PT, OT, speech therapist to evaluate and treat at Siskin Rehab Hospital."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient was instructed to continue Cipro for an additional two days for UTI.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Continue Cipro for an additional two days for UTI."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "Cipro was prescribed at 250 mg, one tablet p.o. b.i.d. for an additional two days.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Cipro 250 mg, one tablet p.o. b.i.d. for an additional two days."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "Aggrenox was prescribed as one tablet p.o. b.i.d.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Aggrenox, one tablet p.o. b.i.d."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "Docusate sodium was prescribed at 100 mg, one capsule p.o. b.i.d.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Docusate sodium 100 mg, one cap p.o. b.i.d."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "Zocor was prescribed at 20 mg, one tablet p.o. at bedtime.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Zocor 20 mg, one tablet p.o. at bedtime."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "Prevacid was prescribed at 30 mg p.o. once a day.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Prevacid 30 mg p.o. once a day."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient was instructed to follow up with Rehabilitation Hospital after discharge.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient needs to follow up with Rehabilitation Hospital after discharge."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient could call the Clinic for a follow-up appointment or find a primary care physician.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient can call the Clinic for a follow-up appointment or find a primary care physician."
+      ]
+    }
+  ],
+  "annotation_notes": "Needs adjudication. Symptoms, findings, allergies, negative findings, and clinical-status statements that do not cleanly fit another allowed fact_type are retained under diagnosis rather than discarded. This mapping should be reviewed during adjudication. Primary content type medications is based on the selected discharge passage, which contains five explicitly specified discharge medication regimens.",
+  "needs_adjudication": true
+}

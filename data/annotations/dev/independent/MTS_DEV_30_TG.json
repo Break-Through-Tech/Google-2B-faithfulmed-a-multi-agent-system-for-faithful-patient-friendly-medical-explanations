@@ -1,0 +1,116 @@
+{
+  "example_id": "MTS_DEV_30",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Sample=267-Adenoidectomy&Type=100-ENT+-+Otolaryngology",
+  "primary_content_type": "procedures",
+  "selection_mode": "entire_report",
+  "source_text": "ADENOIDECTOMY\nPROCEDURE: The patient was brought into the operating room suite, anesthesia administered via endotracheal tube. Following this the patient was draped in standard fashion. The Crowe-Davis mouth gag was inserted in the oral cavity. The palate and tonsils were inspected, the palate was suspended with a red rubber catheter passed through the right nostril. Following this, the mirror was used to visualize the adenoid pad and an adenoid curet was seated against the vomer. The adenoid pad was removed without difficulty. The nasopharynx was packed. Following this, the nasopharynx was unpacked, several discrete bleeding sites were gently coagulated with electrocautery and the nasopharynx and oral cavity were irrigated. The Crowe-Davis was released. The patient tolerated the procedure without difficulty and was in stable condition on transfer to recovery.",
+  "annotator_id": "TG",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "An adenoidectomy was performed.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "ADENOIDECTOMY"
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "Anesthesia was administered via endotracheal tube.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient was brought into the operating room suite, anesthesia administered via endotracheal tube."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The Crowe-Davis mouth gag was inserted into the oral cavity.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The Crowe-Davis mouth gag was inserted in the oral cavity."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The palate and tonsils were inspected.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The palate and tonsils were inspected, the palate was suspended with a red rubber catheter passed through the right nostril."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The palate was suspended with a red rubber catheter passed through the right nostril.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The palate and tonsils were inspected, the palate was suspended with a red rubber catheter passed through the right nostril."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The adenoid pad was visualized with a mirror.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Following this, the mirror was used to visualize the adenoid pad and an adenoid curet was seated against the vomer."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "An adenoid curet was seated against the vomer.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Following this, the mirror was used to visualize the adenoid pad and an adenoid curet was seated against the vomer."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The adenoid pad was removed without difficulty.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The adenoid pad was removed without difficulty."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The nasopharynx was packed and subsequently unpacked.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The nasopharynx was packed. Following this, the nasopharynx was unpacked, several discrete bleeding sites were gently coagulated with electrocautery and the nasopharynx and oral cavity were irrigated."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "Several discrete bleeding sites were gently coagulated with electrocautery.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Following this, the nasopharynx was unpacked, several discrete bleeding sites were gently coagulated with electrocautery and the nasopharynx and oral cavity were irrigated."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The nasopharynx and oral cavity were irrigated.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Following this, the nasopharynx was unpacked, several discrete bleeding sites were gently coagulated with electrocautery and the nasopharynx and oral cavity were irrigated."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient tolerated the procedure without difficulty.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient tolerated the procedure without difficulty and was in stable condition on transfer to recovery."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient was in stable condition on transfer to recovery.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient tolerated the procedure without difficulty and was in stable condition on transfer to recovery."
+      ]
+    }
+  ],
+  "annotation_notes": "Needs adjudication. Symptoms, findings, allergies, negative findings, and clinical-status statements that do not cleanly fit another allowed fact_type are retained under diagnosis rather than discarded. This mapping should be reviewed during adjudication.",
+  "needs_adjudication": true
+}

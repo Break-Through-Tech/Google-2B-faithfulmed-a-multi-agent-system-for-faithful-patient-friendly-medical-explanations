@@ -1,0 +1,116 @@
+{
+  "example_id": "MTS_DEV_25",
+  "source_url": "https://mtsamples.com/site/pages/sample.asp?Sample=2771-ESRD+-+Discharge+Summary&Type=89-Discharge+Summary",
+  "primary_content_type": "instructions",
+  "selection_mode": "self_contained_passage",
+  "source_text": "DISCHARGE INSTRUCTIONS: The patient is discharged with instructions to seek medical attention if he develops fevers, chills, nausea, vomiting, decreased urine output, or other concerns. He is discharged on a low-potassium diet with activity as tolerated. He may shower; however, he is to undergo no underwater soaking activities for approximately two weeks. The patient will be followed up in the Transplant Clinic tomorrow, at which time his labs will be rechecked. The patient's Prograf levels at the time of discharge are pending; however, given that his Prograf dose was decreased, he will be followed tomorrow at the Renal Transplant Clinic.",
+  "annotator_id": "TG",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient was instructed to seek medical attention for fevers.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient is discharged with instructions to seek medical attention if he develops fevers, chills, nausea, vomiting, decreased urine output, or other concerns."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient was instructed to seek medical attention for chills.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient is discharged with instructions to seek medical attention if he develops fevers, chills, nausea, vomiting, decreased urine output, or other concerns."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient was instructed to seek medical attention for nausea.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient is discharged with instructions to seek medical attention if he develops fevers, chills, nausea, vomiting, decreased urine output, or other concerns."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient was instructed to seek medical attention for vomiting.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient is discharged with instructions to seek medical attention if he develops fevers, chills, nausea, vomiting, decreased urine output, or other concerns."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient was instructed to seek medical attention for decreased urine output.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient is discharged with instructions to seek medical attention if he develops fevers, chills, nausea, vomiting, decreased urine output, or other concerns."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient was discharged on a low-potassium diet.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "He is discharged on a low-potassium diet with activity as tolerated."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient may perform activity as tolerated.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "He is discharged on a low-potassium diet with activity as tolerated."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient may shower but is to undergo no underwater soaking activities for approximately two weeks.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "He may shower; however, he is to undergo no underwater soaking activities for approximately two weeks."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient was to follow up in the Transplant Clinic the next day.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient will be followed up in the Transplant Clinic tomorrow, at which time his labs will be rechecked."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient's labs were to be rechecked at the next-day Transplant Clinic visit.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient will be followed up in the Transplant Clinic tomorrow, at which time his labs will be rechecked."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient's Prograf level was pending at discharge.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The patient's Prograf levels at the time of discharge are pending; however, given that his Prograf dose was decreased, he will be followed tomorrow at the Renal Transplant Clinic."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient's Prograf dose had been decreased.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "The patient's Prograf levels at the time of discharge are pending; however, given that his Prograf dose was decreased, he will be followed tomorrow at the Renal Transplant Clinic."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient was to be followed the next day at the Renal Transplant Clinic.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient's Prograf levels at the time of discharge are pending; however, given that his Prograf dose was decreased, he will be followed tomorrow at the Renal Transplant Clinic."
+      ]
+    }
+  ],
+  "annotation_notes": "Needs adjudication. Symptoms, findings, allergies, negative findings, and clinical-status statements that do not cleanly fit another allowed fact_type need to be double checked. I am also not sure whether I should include the showering and no soaking instructions because they are not clinical",
+  "needs_adjudication": true
+}

@@ -1,0 +1,148 @@
+{
+  "example_id": "MTS_DEV_28",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Sample=1995-Exercise+Stress+Test+-+1&Type=6-Cardiovascular+%2F+Pulmonary",
+  "primary_content_type": "lab_values",
+  "selection_mode": "self_contained_passage",
+  "source_text": "The patient is a 44-year-old woman with rheumatoid arthritis admitted with chest pain. MI has been ruled out. REST ECHO: EF 60%. No wall motion abnormalities. EKG shows normal sinus rhythm with mild ST depressions. The patient exercised for 7 minutes 30 seconds on a standard Bruce protocol, exceeding target heart rate; no angina nor significant ECG changes seen. Peak stress echo imaging shows EF of 75%, no regional wall motion abnormalities. Resting systolic blood pressure was approximately 152 mmHg with appropriate response to exercise. No dysrhythmias were noted. IMPRESSION: Negative exercise ECG/echocardiogram stress evaluation for inducible ischemia in excess of target heart rate. Resting hypertension with appropriate response of blood pressure to exercise. There were no complications of the procedure.",
+  "annotator_id": "TG",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient has rheumatoid arthritis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient is a 44-year-old woman with rheumatoid arthritis admitted with chest pain."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient was admitted with chest pain.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient is a 44-year-old woman with rheumatoid arthritis admitted with chest pain."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "Myocardial infarction had been ruled out.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "MI has been ruled out."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "Resting ejection fraction was 60%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "REST ECHO: EF 60%."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "There were no resting wall motion abnormalities.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No wall motion abnormalities."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "EKG showed normal sinus rhythm with mild ST depressions.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "EKG shows normal sinus rhythm with mild ST depressions."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient exercised for 7 minutes 30 seconds on a standard Bruce protocol.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The patient exercised for 7 minutes 30 seconds on a standard Bruce protocol, exceeding target heart rate; no angina nor significant ECG changes seen."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient exceeded the target heart rate.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The patient exercised for 7 minutes 30 seconds on a standard Bruce protocol, exceeding target heart rate; no angina nor significant ECG changes seen."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "No angina occurred during exercise.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient exercised for 7 minutes 30 seconds on a standard Bruce protocol, exceeding target heart rate; no angina nor significant ECG changes seen."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "No significant ECG changes were seen during exercise.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient exercised for 7 minutes 30 seconds on a standard Bruce protocol, exceeding target heart rate; no angina nor significant ECG changes seen."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "Peak stress ejection fraction was 75%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Peak stress echo imaging shows EF of 75%, no regional wall motion abnormalities."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "No regional wall motion abnormalities were seen at peak stress.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Peak stress echo imaging shows EF of 75%, no regional wall motion abnormalities."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "Resting systolic blood pressure was approximately 152 mmHg.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Resting systolic blood pressure was approximately 152 mmHg with appropriate response to exercise."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "No dysrhythmias were noted.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No dysrhythmias were noted."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The exercise ECG/echocardiogram stress evaluation was negative for inducible ischemia in excess of target heart rate.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "IMPRESSION: Negative exercise ECG/echocardiogram stress evaluation for inducible ischemia in excess of target heart rate."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "Resting hypertension showed an appropriate blood-pressure response to exercise.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Resting hypertension with appropriate response of blood pressure to exercise."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "There were no complications of the procedure.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "There were no complications of the procedure."
+      ]
+    }
+  ],
+  "annotation_notes": "Needs adjudication. Symptoms, findings, allergies, negative findings, and clinical-status statements that do not cleanly fit another allowed fact_type are retained under diagnosis rather than discarded. This mapping should be reviewed during adjudication. Primary content type lab_values is specifically flagged for adjudication because the passage is also a diagnostic procedure report.",
+  "needs_adjudication": true
+}
