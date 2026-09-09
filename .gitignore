@@ -47,6 +47,8 @@ data/annotations/test/independent/*
 data/annotations/test/adjudicated/*
 !data/annotations/test/adjudicated/.gitkeep
 
+!data/PLABA_DEV.json
+
 # Model checkpoints / vector indexes
 *.ckpt
 *.pt
