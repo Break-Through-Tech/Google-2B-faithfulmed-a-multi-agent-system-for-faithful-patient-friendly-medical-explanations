@@ -1,190 +1,263 @@
 {
-  "example_id": "MTS_DEV_14_BR",
+  "example_id": "MTS_DEV_14",
   "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=68-Physical+Medicine+%2D+Rehab&Sample=1632-Physical+Therapy+%2D+Osteoarthritis",
   "primary_content_type": "instructions",
   "selection_mode": "self_contained_passage",
-  "source_text": "SUBJECTIVE: The patient reports that when seated and at rest, her knee pain is 0/10. The patient states that with active motion of the left knee, the pain in the anterior portion increases to 5/10. PATIENT'S GOAL: To transfer better and walk 5 feet from her bed to the couch. INSPECTION: The right knee has a large 8-inch long and very wide tight scar with adhesions to the underlying connective tissue due to her patellar fracture and  surgery following an MVA in 1990, bilateral knees are very large due to obesity. There are no scars, bruising or increased temperature noted in the left knee. RANGE OF MOTION: Active and passive range of motion of the right knee is 0 to 90 degrees and the left knee, 0 to 85 degrees. Pain is elicited during active range of motion of the left knee. PALPATION: Palpation to the left knee elicits pain around the patellar tendon and to each side of this area. FUNCTIONAL MOBILITY: The patient reports that she transfers with standby to contact-guard assist in the home from her bed to her wheelchair and return. The patient is able to stand modified independent from wheelchair level and tolerates at least 15 seconds of standing prior to needing to sit down due to the left knee pain. ASSESSMENT: The patient is a 58-year-old female with left knee osteoarthritis. Examination indicates deficits in pain, muscle endurance, and functional mobility. The patient would benefit from skilled physical therapy to address these impairments. TREATMENT PLAN: The patient will be seen two times per week for an initial 4 weeks with re-assessment at that time for an additional 4 weeks if needed. INTERVENTIONS INCLUDE: 1. Modalities including electrical stimulation, ultrasound, heat, and ice. 2. Therapeutic exercise. 3. Functional mobility training. 4. Gait training. LONG-TERM GOALS TO BE ACHIEVED IN 4 WEEKS: 1. The patient is to have increased endurance in bilateral lower extremities as demonstrated by being able to perform 20 repetitions of all lower extremity exercises in seated and supine positions with minimum 2-pound weight. 2. The patient is to perform standby assist transfer using a pickup walker. 3. The patient is to demonstrate 4 steps of ambulation using forward and backward using a pickup walker or front-wheeled walker. 4. The patient is to report maximum 3/10 pain with weightbearing of 2 minutes in the left knee. LONG-TERM GOALS TO BE ACHIEVED IN 8 WEEKS: 1. The patient is to be independent with the home exercise program. 2. The patient is to tolerate 20 reps of standing exercises with pain maximum of 3/10. 3. The patient is to ambulate 20 feet with the most appropriate assistive device.",
+  "source_text": "SUBJECTIVE: The patient reports that when seated and at rest, her knee pain is 0/10. The patient states that with active motion of the left knee, the pain in the anterior portion increases to 5/10. PATIENT'S GOAL: To transfer better and walk 5 feet from her bed to the couch. INSPECTION: The right knee has a large 8-inch long and very wide tight scar with adhesions to the underlying connective tissue due to her patellar fracture and surgery following an MVA in 1990, bilateral knees are very large due to obesity. There are no scars, bruising or increased temperature noted in the left knee. RANGE OF MOTION: Active and passive range of motion of the right knee is 0 to 90 degrees and the left knee, 0 to 85 degrees. Pain is elicited during active range of motion of the left knee. PALPATION: Palpation to the left knee elicits pain around the patellar tendon and to each side of this area. FUNCTIONAL MOBILITY: The patient reports that she transfers with standby to contact-guard assist in the home from her bed to her wheelchair and return. The patient is able to stand modified independent from wheelchair level and tolerates at least 15 seconds of standing prior to needing to sit down due to the left knee pain. ASSESSMENT: The patient is a 58-year-old female with left knee osteoarthritis. Examination indicates deficits in pain, muscle endurance, and functional mobility. The patient would benefit from skilled physical therapy to address these impairments. TREATMENT PLAN: The patient will be seen two times per week for an initial 4 weeks with re-assessment at that time for an additional 4 weeks if needed. INTERVENTIONS INCLUDE: 1. Modalities including electrical stimulation, ultrasound, heat, and ice. 2. Therapeutic exercise. 3. Functional mobility training. 4. Gait training. LONG-TERM GOALS TO BE ACHIEVED IN 4 WEEKS: 1. The patient is to have increased endurance in bilateral lower extremities as demonstrated by being able to perform 20 repetitions of all lower extremity exercises in seated and supine positions with minimum 2-pound weight. 2. The patient is to perform standby assist transfer using a pickup walker. 3. The patient is to demonstrate 4 steps of ambulation using forward and backward using a pickup walker or front-wheeled walker. 4. The patient is to report maximum 3/10 pain with weightbearing of 2 minutes in the left knee. LONG-TERM GOALS TO BE ACHIEVED IN 8 WEEKS: 1. The patient is to be independent with the home exercise program. 2. The patient is to tolerate 20 reps of standing exercises with pain maximum of 3/10. 3. The patient is to ambulate 20 feet with the most appropriate assistive device.",
   "facts": [
     {
       "fact_id": "F1",
       "fact_text": "The patient reports that she has no knee pain when seated and at rest.",
       "fact_type": "diagnosis",
-      "source_evidence": ["The patient reports that when seated and at rest, her knee pain is 0/10."]
+      "source_evidence": [
+        "The patient reports that when seated and at rest, her knee pain is 0/10."
+      ]
     },
     {
       "fact_id": "F2",
       "fact_text": "The patient reports that her knee pain increases to 5/10 when her left knee is in active motion.",
       "fact_type": "diagnosis",
-      "source_evidence": ["The patient states that with active motion of the left knee, the pain in the anterior portion increases to 5/10."]
+      "source_evidence": [
+        "The patient states that with active motion of the left knee, the pain in the anterior portion increases to 5/10."
+      ]
     },
     {
       "fact_id": "F3",
       "fact_text": "The patient's goal is to transfer better and walk 5 feet from her bed to the couch.",
       "fact_type": "diagnosis",
-      "source_evidence": ["PATIENT'S GOAL: To transfer better and walk 5 feet from her bed to the couch."]
+      "source_evidence": [
+        "PATIENT'S GOAL: To transfer better and walk 5 feet from her bed to the couch."
+      ]
     },
     {
       "fact_id": "F4",
       "fact_text": "The patient's right knee has an 8-inch long, very wide tight scar.",
       "fact_type": "diagnosis",
-      "source_evidence": ["The right knee has a large 8-inch long and very wide tight scar with adhesions to the underlying connective tissue due to her patellar fracture and  surgery following an MVA in 1990, bilateral knees are very large due to obesity."]
+      "source_evidence": [
+        "The right knee has a large 8-inch long and very wide tight scar with adhesions to the underlying connective tissue due to her patellar fracture and surgery following an MVA in 1990, bilateral knees are very large due to obesity."
+      ]
     },
     {
       "fact_id": "F5",
       "fact_text": "The patient's scar on her right knee has adhesions to the underlying tissue due to her patellar fracture and surgery in 1990.",
       "fact_type": "diagnosis",
-      "source_evidence": ["The right knee has a large 8-inch long and very wide tight scar with adhesions to the underlying connective tissue due to her patellar fracture and  surgery following an MVA in 1990, bilateral knees are very large due to obesity."]
+      "source_evidence": [
+        "The right knee has a large 8-inch long and very wide tight scar with adhesions to the underlying connective tissue due to her patellar fracture and surgery following an MVA in 1990, bilateral knees are very large due to obesity."
+      ]
     },
     {
       "fact_id": "F6",
       "fact_text": "The patient had previous surgery in 1990 following a car accident.",
       "fact_type": "diagnosis",
-      "source_evidence": ["The right knee has a large 8-inch long and very wide tight scar with adhesions to the underlying connective tissue due to her patellar fracture and  surgery following an MVA in 1990, bilateral knees are very large due to obesity."]
+      "source_evidence": [
+        "The right knee has a large 8-inch long and very wide tight scar with adhesions to the underlying connective tissue due to her patellar fracture and surgery following an MVA in 1990, bilateral knees are very large due to obesity."
+      ]
     },
     {
       "fact_id": "F7",
       "fact_text": "The patient's bilateral knees are very alrge due to obestity.",
       "fact_type": "diagnosis",
-      "source_evidence": ["The right knee has a large 8-inch long and very wide tight scar with adhesions to the underlying connective tissue due to her patellar fracture and  surgery following an MVA in 1990, bilateral knees are very large due to obesity."]
+      "source_evidence": [
+        "The right knee has a large 8-inch long and very wide tight scar with adhesions to the underlying connective tissue due to her patellar fracture and surgery following an MVA in 1990, bilateral knees are very large due to obesity."
+      ]
     },
     {
       "fact_id": "F8",
       "fact_text": "The patient has no scars, bruising, or increased temperate in her left knee.",
       "fact_type": "diagnosis",
-      "source_evidence": ["There are no scars, bruising or increased temperature noted in the left knee."]
+      "source_evidence": [
+        "There are no scars, bruising or increased temperature noted in the left knee."
+      ]
     },
     {
       "fact_id": "F9",
       "fact_text": "The patient has active and passive range of motion of 0 to 90 degrees in her right knee.",
       "fact_type": "diagnosis",
-      "source_evidence": ["Active and passive range of motion of the right knee is 0 to 90 degrees and the left knee, 0 to 85 degrees."]
+      "source_evidence": [
+        "Active and passive range of motion of the right knee is 0 to 90 degrees and the left knee, 0 to 85 degrees."
+      ]
     },
     {
       "fact_id": "F10",
       "fact_text": "The patient has active and passive range of motion of 0 to 85 degrees in her left knee.",
       "fact_type": "diagnosis",
-      "source_evidence": ["Active and passive range of motion of the right knee is 0 to 90 degrees and the left knee, 0 to 85 degrees."]
+      "source_evidence": [
+        "Active and passive range of motion of the right knee is 0 to 90 degrees and the left knee, 0 to 85 degrees."
+      ]
     },
     {
       "fact_id": "F11",
       "fact_text": "The patient experiences pain during movement of the left knee.",
       "fact_type": "diagnosis",
-      "source_evidence": ["Pain is elicited during active range of motion of the left knee."]
+      "source_evidence": [
+        "Pain is elicited during active range of motion of the left knee."
+      ]
     },
     {
       "fact_id": "F12",
       "fact_text": "Pressing on the patient's left knee causes pain around the patellar tendon and on the side of the knee.",
       "fact_type": "diagnosis",
-      "source_evidence": ["Palpation to the left knee elicits pain around the patellar tendon and to each side of this area."]
+      "source_evidence": [
+        "Palpation to the left knee elicits pain around the patellar tendon and to each side of this area."
+      ]
     },
     {
       "fact_id": "F13",
       "fact_text": "The patient transfers from her bed to her wheelchair with standby to contact-guard assist in her home.",
       "fact_type": "diagnosis",
-      "source_evidence": ["The patient reports that she transfers with standby to contact-guard assist in the home from her bed to her wheelchair and return."]
+      "source_evidence": [
+        "The patient reports that she transfers with standby to contact-guard assist in the home from her bed to her wheelchair and return."
+      ]
     },
     {
       "fact_id": "F14",
       "fact_text": "The patient can tolerate standing independent from wheelchair level for at least 15 seconds before needing to sit down due to her left knee pain.",
       "fact_type": "diagnosis",
-      "source_evidence": ["The patient is able to stand modified independent from wheelchair level and tolerates at least 15 seconds of standing prior to needing to sit down due to the left knee pain."]
+      "source_evidence": [
+        "The patient is able to stand modified independent from wheelchair level and tolerates at least 15 seconds of standing prior to needing to sit down due to the left knee pain."
+      ]
     },
     {
       "fact_id": "F15",
       "fact_text": "The patient is a 58-year-old female with osteoarthritis in her left knee.",
       "fact_type": "diagnosis",
-      "source_evidence": ["The patient is a 58-year-old female with left knee osteoarthritis."]
+      "source_evidence": [
+        "The patient is a 58-year-old female with left knee osteoarthritis."
+      ]
     },
     {
       "fact_id": "F16",
       "fact_text": "The patient's examinations indicate deficits in pain, muscle endurance, and functional mobility.",
       "fact_type": "diagnosis",
-      "source_evidence": ["Examination indicates deficits in pain, muscle endurance, and functional mobility."]
+      "source_evidence": [
+        "Examination indicates deficits in pain, muscle endurance, and functional mobility."
+      ]
     },
     {
       "fact_id": "F17",
       "fact_text": "The patient would benefit from skilled physical therapy to address her deficit in pain, muscle endurance, and functional mobility.",
       "fact_type": "instruction",
-      "source_evidence": ["Examination indicates deficits in pain, muscle endurance, and functional mobility.", "The patient would benefit from skilled physical therapy to address these impairments."]
+      "source_evidence": [
+        "Examination indicates deficits in pain, muscle endurance, and functional mobility.",
+        "The patient would benefit from skilled physical therapy to address these impairments."
+      ]
     },
     {
       "fact_id": "F18",
       "fact_text": "The patient will be seen twice a week for the first 4 weeks.",
       "fact_type": "instruction",
-      "source_evidence": ["The patient will be seen two times per week for an initial 4 weeks with re-assessment at that time for an additional 4 weeks if needed."]
+      "source_evidence": [
+        "The patient will be seen two times per week for an initial 4 weeks with re-assessment at that time for an additional 4 weeks if needed."
+      ]
     },
     {
       "fact_id": "F19",
       "fact_text": "After the first 4 weeks, the patient will be reassesed for an additional 4 weeks if needed.",
       "fact_type": "instruction",
-      "source_evidence": ["The patient will be seen two times per week for an initial 4 weeks with re-assessment at that time for an additional 4 weeks if needed."]
+      "source_evidence": [
+        "The patient will be seen two times per week for an initial 4 weeks with re-assessment at that time for an additional 4 weeks if needed."
+      ]
     },
     {
       "fact_id": "F20",
       "fact_text": "Procedures include electrical stimulation, ultrasound, heat, and ice.",
       "fact_type": "procedure",
-      "source_evidence": ["INTERVENTIONS INCLUDE:", "1. Modalities including electrical stimulation, ultrasound, heat, and ice."]
+      "source_evidence": [
+        "INTERVENTIONS INCLUDE:",
+        "1. Modalities including electrical stimulation, ultrasound, heat, and ice."
+      ]
     },
     {
       "fact_id": "F21",
       "fact_text": "The patient will do therapeutic exercise.",
       "fact_type": "instruction",
-      "source_evidence": ["INTERVENTIONS INCLUDE:", "2. Therapeutic exercise."]
+      "source_evidence": [
+        "INTERVENTIONS INCLUDE:",
+        "2. Therapeutic exercise."
+      ]
     },
     {
       "fact_id": "F22",
       "fact_text": "The patient will receive functional mobility training.",
       "fact_type": "instruction",
-      "source_evidence": ["INTERVENTIONS INCLUDE:", "3. Functional mobility training."]
+      "source_evidence": [
+        "INTERVENTIONS INCLUDE:",
+        "3. Functional mobility training."
+      ]
     },
     {
       "fact_id": "F23",
       "fact_text": "The patent will do gait training.",
       "fact_type": "instruction",
-      "source_evidence": ["INTERVENTIONS INCLUDE:", "4. Gait training."]
+      "source_evidence": [
+        "INTERVENTIONS INCLUDE:",
+        "4. Gait training."
+      ]
     },
     {
       "fact_id": "F24",
       "fact_text": "In 4 weeks, the patient will increase endurance in both of her legs by being able to perform 20 repetitions of all leg exercises in a seated supine position wiht a minimum 2-pound weight.",
       "fact_type": "instruction",
-      "source_evidence": ["LONG-TERM GOALS TO BE ACHIEVED IN 4 WEEKS:", "1. The patient is to have increased endurance in bilateral lower extremities as demonstrated by being able to perform 20 repetitions of all lower extremity exercises in seated and supine positions with minimum 2-pound weight."]
+      "source_evidence": [
+        "LONG-TERM GOALS TO BE ACHIEVED IN 4 WEEKS:",
+        "1. The patient is to have increased endurance in bilateral lower extremities as demonstrated by being able to perform 20 repetitions of all lower extremity exercises in seated and supine positions with minimum 2-pound weight."
+      ]
     },
     {
       "fact_id": "F25",
       "fact_text": "In 4 weeks, the patient will perform a transfer using a pickup walker.",
       "fact_type": "instruction",
-      "source_evidence": ["LONG-TERM GOALS TO BE ACHIEVED IN 4 WEEKS:", "2. The patient is to perform standby assist transfer using a pickup walker."]
+      "source_evidence": [
+        "LONG-TERM GOALS TO BE ACHIEVED IN 4 WEEKS:",
+        "2. The patient is to perform standby assist transfer using a pickup walker."
+      ]
     },
     {
       "fact_id": "F26",
       "fact_text": "In 4 weeks, the patient will walk 4 steps forward or backward using a pickup walker or a front-wheeled walker.",
       "fact_type": "instruction",
-      "source_evidence": ["LONG-TERM GOALS TO BE ACHIEVED IN 4 WEEKS:", "3. The patient is to demonstrate 4 steps of ambulation using forward and backward using a pickup walker or front-wheeled walker."]
+      "source_evidence": [
+        "LONG-TERM GOALS TO BE ACHIEVED IN 4 WEEKS:",
+        "3. The patient is to demonstrate 4 steps of ambulation using forward and backward using a pickup walker or front-wheeled walker."
+      ]
     },
     {
       "fact_id": "F27",
       "fact_text": "In 4 weeks, the patient will report a maximum of 3/10 pain when standing for 2 minutes on the left knee.",
       "fact_type": "instruction",
-      "source_evidence": ["LONG-TERM GOALS TO BE ACHIEVED IN 4 WEEKS:", "4. The patient is to report maximum 3/10 pain with weightbearing of 2 minutes in the left knee."]
+      "source_evidence": [
+        "LONG-TERM GOALS TO BE ACHIEVED IN 4 WEEKS:",
+        "4. The patient is to report maximum 3/10 pain with weightbearing of 2 minutes in the left knee."
+      ]
     },
     {
       "fact_id": "F28",
       "fact_text": "In 8 weeks, the patient will be independent with a home exercise program.",
       "fact_type": "instruction",
-      "source_evidence": ["LONG-TERM GOALS TO BE ACHIEVED IN 8 WEEKS:", "1. The patient is to be independent with the home exercise program."]
+      "source_evidence": [
+        "LONG-TERM GOALS TO BE ACHIEVED IN 8 WEEKS:",
+        "1. The patient is to be independent with the home exercise program."
+      ]
     },
     {
       "fact_id": "F29",
       "fact_text": "In 8 weeks, the patient will tolerate 20 repitions of standing exerciseswith a maximum pain of 3/10.",
       "fact_type": "instruction",
-      "source_evidence": ["LONG-TERM GOALS TO BE ACHIEVED IN 8 WEEKS:", "2. The patient is to tolerate 20 reps of standing exercises with pain maximum of 3/10."]
+      "source_evidence": [
+        "LONG-TERM GOALS TO BE ACHIEVED IN 8 WEEKS:",
+        "2. The patient is to tolerate 20 reps of standing exercises with pain maximum of 3/10."
+      ]
     },
     {
       "fact_id": "F30",
       "fact_text": "In 8 weeks, the patient will walk 20 feet with an appropriate assistive device.",
       "fact_type": "instruction",
-      "source_evidence": ["LONG-TERM GOALS TO BE ACHIEVED IN 8 WEEKS:", "3. The patient is to ambulate 20 feet with the most appropriate assistive device."]
+      "source_evidence": [
+        "LONG-TERM GOALS TO BE ACHIEVED IN 8 WEEKS:",
+        "3. The patient is to ambulate 20 feet with the most appropriate assistive device."
+      ]
     }
   ],
-  "annotation_notes": ""
+  "annotation_notes": "",
+  "annotator_id": "BR"
 }

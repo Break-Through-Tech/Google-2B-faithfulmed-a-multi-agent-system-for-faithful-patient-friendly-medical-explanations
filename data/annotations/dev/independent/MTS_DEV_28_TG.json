@@ -143,6 +143,5 @@
       ]
     }
   ],
-  "annotation_notes": "Needs adjudication. Symptoms, findings, allergies, negative findings, and clinical-status statements that do not cleanly fit another allowed fact_type are retained under diagnosis rather than discarded. This mapping should be reviewed during adjudication. Primary content type lab_values is specifically flagged for adjudication because the passage is also a diagnostic procedure report.",
-  "needs_adjudication": true
+  "annotation_notes": "Needs adjudication. Symptoms, findings, allergies, negative findings, and clinical-status statements that do not cleanly fit another allowed fact_type are retained under diagnosis rather than discarded. This mapping should be reviewed during adjudication. Primary content type lab_values is specifically flagged for adjudication because the passage is also a diagnostic procedure report."
 }

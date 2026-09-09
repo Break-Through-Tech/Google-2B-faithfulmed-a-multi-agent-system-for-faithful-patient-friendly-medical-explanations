@@ -79,6 +79,5 @@
       ]
     }
   ],
-  "annotation_notes": "The Assessment was selected as a coherent self-contained passage because it directly states the discoid lupus assessment and the medication-management plan while avoiding a lengthy physical examination and laboratory section that would dilute the primary content type. Primary content type is medications because the passage explicitly switches treatment to Protopic and continues Plaquenil. Symptoms/findings that do not cleanly fit another allowed fact_type are retained under diagnosis rather than discarded. Needs adjudication, including the mapping of weight gain and acanthosis nigricans to diagnosis and the future-plan statement to instruction.",
-  "needs_adjudication": true
+  "annotation_notes": "The Assessment was selected as a coherent self-contained passage because it directly states the discoid lupus assessment and the medication-management plan while avoiding a lengthy physical examination and laboratory section that would dilute the primary content type. Primary content type is medications because the passage explicitly switches treatment to Protopic and continues Plaquenil. Symptoms/findings that do not cleanly fit another allowed fact_type are retained under diagnosis rather than discarded. Needs adjudication, including the mapping of weight gain and acanthosis nigricans to diagnosis and the future-plan statement to instruction."
 }

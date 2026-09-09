@@ -111,6 +111,5 @@
       ]
     }
   ],
-  "annotation_notes": "Needs adjudication. Symptoms, findings, allergies, negative findings, and clinical-status statements that do not cleanly fit another allowed fact_type are retained under diagnosis rather than discarded. This mapping should be reviewed during adjudication. Primary content type medications is based on the selected discharge passage, which contains five explicitly specified discharge medication regimens.",
-  "needs_adjudication": true
+  "annotation_notes": "Needs adjudication. Symptoms, findings, allergies, negative findings, and clinical-status statements that do not cleanly fit another allowed fact_type are retained under diagnosis rather than discarded. This mapping should be reviewed during adjudication. Primary content type medications is based on the selected discharge passage, which contains five explicitly specified discharge medication regimens."
 }

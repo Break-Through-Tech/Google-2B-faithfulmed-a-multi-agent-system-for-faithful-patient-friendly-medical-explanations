@@ -111,6 +111,5 @@
       ]
     }
   ],
-  "annotation_notes": "Needs adjudication. Symptoms, findings, allergies, negative findings, and clinical-status statements that do not cleanly fit another allowed fact_type need to be double checked. I am also not sure whether I should include the showering and no soaking instructions because they are not clinical",
-  "needs_adjudication": true
+  "annotation_notes": "Needs adjudication. Symptoms, findings, allergies, negative findings, and clinical-status statements that do not cleanly fit another allowed fact_type need to be double checked. I am also not sure whether I should include the showering and no soaking instructions because they are not clinical"
 }

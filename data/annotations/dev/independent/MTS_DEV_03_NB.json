@@ -1,0 +1,552 @@
+{
+  "example_id": "MTS_DEV_03",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=98-General+Medicine&Sample=1283-Congestion+%26+Fever+%2D+2%2Dmonth%2Dold",
+  "primary_content_type": "lab_values",
+  "selection_mode": "entire_report",
+  "source_text": "CHIEF COMPLAINT: A 2-month-old female with 1-week history of congestion and fever x2 days. HISTORY OF PRESENT ILLNESS: The patient is a previously healthy 2-month-old female, who has had a cough and congestion for the past week. The mother has also reported irregular breathing, which she describes as being rapid breathing associated with retractions. The mother states that the cough is at times paroxysmal and associated with posttussive emesis. The patient has had short respiratory pauses following the coughing events. The patient's temperature has ranged between 102 and 104. She has had a decreased oral intake and decreased wet diapers. The brother is also sick with URI symptoms, and the patient has had no diarrhea. The mother reports that she has begun to regurgitate after her feedings. She did not do this previously. MEDICATIONS: None. SMOKING EXPOSURE: None. IMMUNIZATIONS: None. DIET: Similac 4 ounces every 2 to 3 hours. ALLERGIES: No known drug allergies. PAST MEDICAL HISTORY: The patient delivered at term. Birth weight was 6 pounds 1 ounce. Postnatal complications: Neonatal Jaundice. The patient remained in the hospital for 3 days. The in utero ultrasounds were reported to be normal. PRIOR HOSPITALIZATIONS: None. FAMILY/SOCIAL HISTORY: Family history is positive for asthma and diabetes. There is also positive family history of renal disease on the father's side of the family. DEVELOPMENT: Normal. The patient tests normal on the newborn hearing screen. REVIEW OF SYSTEMS: GENERAL: The patient has had fever, there have been no chills. SKIN: No rashes. HEENT: Mild congestion x1 week. Cough, at times paroxysmal, no cyanosis. The patient turns red in the face during coughing episodes, posttussive emesis. CARDIOVASCULAR: No cyanosis. GI: Posttussive emesis, decreased oral intake. GU: Decreased urinary output. ORTHO: No current issues. NEUROLOGIC: No change in mental status. ENDOCRINE: There is no history of weight loss. DEVELOPMENT: No loss of developmental milestones. PHYSICAL EXAMINATION: VITAL SIGNS: Weight is 4.8 kg, temperature 100.4, heart rate is 140, respiratory rate 30, and saturations 100%. GENERAL: This is a well-appearing infant in no acute distress. HEENT: Shows anterior fontanelle to be open and flat. Pupils are equal and reactive to light with red reflex. Nares are patent. Oral mucosa is moist. Posterior pharynx is clear. Hard palate is intact. Normal gingiva. HEART: Regular rate and rhythm without murmur. LUNGS: A few faint rales. No retractions. No stridor. No wheezing on examination. Mild tachypnea. EXTREMITIES: Warm, good perfusion. No hip clicks. NEUROLOGIC: The patient is alert. Normal tone throughout. Deep tendon reflexes are 2+/4. No clonus. SKIN: Normal. LABORATORY DATA: CBC shows a white count of 12.4, hemoglobin 10.1, platelet count 611,000; 38 segs 3 bands, 42 lymphocytes, and 10 monocytes. Electrolytes were within normal limits. C-reactive protein 0.3. Chest x-ray shows no acute disease with the exception of a small density located in the retrocardiac area on the posterior view. UA shows 10 to 25 bacteria. ASSESSMENT/PLAN: This is a 2-month-old, who presents with fever, paroxysmal cough and episodes of respiratory distress. The patient is currently stable in the emergency room. We will admit the patient to the pediatric floor. We will send out pertussis PCR. We will also follow results of urine culture and that the urine dip shows 10 to 25 bacteria. The patient will be followed up for signs of sepsis, apnea, urinary tract infection, and pneumonia. We will wait for a radiology reading on the chest x-ray to determine if the density seen on the lateral film is a normal variant or represents pathology.",
+  "annotator_id": "NB",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient has had a cough and congestion for the past week.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient is a previously healthy 2-month-old female, who has had a cough and congestion for the past week."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient's mother reported irregular breathing described as rapid breathing with retractions.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The mother has also reported irregular breathing, which she describes as being rapid breathing associated with retractions."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient's cough is sometimes paroxysmal and associated with posttussive emesis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The mother states that the cough is at times paroxysmal and associated with posttussive emesis."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient has had short respiratory pauses following coughing events.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient has had short respiratory pauses following the coughing events."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient's temperature has ranged between 102 and 104.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The patient's temperature has ranged between 102 and 104."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient has had decreased oral intake and decreased wet diapers.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She has had a decreased oral intake and decreased wet diapers."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient's brother is also sick with URI symptoms.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The brother is also sick with URI symptoms, and the patient has had no diarrhea."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient has had no diarrhea.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The brother is also sick with URI symptoms, and the patient has had no diarrhea."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient recently began regurgitating after feedings and did not do so previously.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The mother reports that she has begun to regurgitate after her feedings.",
+        "She did not do this previously."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient is taking no medications.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "MEDICATIONS: None."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient has no smoking exposure.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "SMOKING EXPOSURE: None."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient has received no immunizations.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "IMMUNIZATIONS: None."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient receives Similac 4 ounces every 2 to 3 hours.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "DIET: Similac 4 ounces every 2 to 3 hours."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient has no known drug allergies.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ALLERGIES: No known drug allergies."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient's birth weight was 6 pounds 1 ounce.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Birth weight was 6 pounds 1 ounce."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The patient had neonatal jaundice as a postnatal complication.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Postnatal complications: Neonatal Jaundice."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The patient remained in the hospital for 3 days after delivery.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient delivered at term.",
+        "The patient remained in the hospital for 3 days."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The patient's in utero ultrasounds were reported to be normal.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The in utero ultrasounds were reported to be normal."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient has had no prior hospitalizations.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "PRIOR HOSPITALIZATIONS: None."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The family history is positive for asthma and diabetes.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Family history is positive for asthma and diabetes."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "There is a positive family history of renal disease on the patient's father's side.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "There is also positive family history of renal disease on the father's side of the family."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "The patient's development is reported as normal.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "DEVELOPMENT: Normal."
+      ]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The patient tested normal on the newborn hearing screen.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient tests normal on the newborn hearing screen."
+      ]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "The patient has had fever without chills.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "REVIEW OF SYSTEMS: GENERAL: The patient has had fever, there have been no chills."
+      ]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "The patient has no rashes.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "SKIN: No rashes."
+      ]
+    },
+    {
+      "fact_id": "F26",
+      "fact_text": "The patient has no cyanosis associated with the paroxysmal cough.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Cough, at times paroxysmal, no cyanosis."
+      ]
+    },
+    {
+      "fact_id": "F27",
+      "fact_text": "The patient's face turns red during coughing episodes.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient turns red in the face during coughing episodes, posttussive emesis."
+      ]
+    },
+    {
+      "fact_id": "F28",
+      "fact_text": "The patient has had no change in mental status.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "NEUROLOGIC: No change in mental status."
+      ]
+    },
+    {
+      "fact_id": "F29",
+      "fact_text": "The patient has no history of weight loss.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ENDOCRINE: There is no history of weight loss."
+      ]
+    },
+    {
+      "fact_id": "F30",
+      "fact_text": "The patient has had no loss of developmental milestones.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "DEVELOPMENT: No loss of developmental milestones."
+      ]
+    },
+    {
+      "fact_id": "F31",
+      "fact_text": "The patient's weight is 4.8 kg.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Weight is 4.8 kg, temperature 100.4, heart rate is 140, respiratory rate 30, and saturations 100%."
+      ]
+    },
+    {
+      "fact_id": "F32",
+      "fact_text": "The patient's temperature is 100.4.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Weight is 4.8 kg, temperature 100.4, heart rate is 140, respiratory rate 30, and saturations 100%."
+      ]
+    },
+    {
+      "fact_id": "F33",
+      "fact_text": "The patient's heart rate is 140.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Weight is 4.8 kg, temperature 100.4, heart rate is 140, respiratory rate 30, and saturations 100%."
+      ]
+    },
+    {
+      "fact_id": "F34",
+      "fact_text": "The patient's respiratory rate is 30.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Weight is 4.8 kg, temperature 100.4, heart rate is 140, respiratory rate 30, and saturations 100%."
+      ]
+    },
+    {
+      "fact_id": "F35",
+      "fact_text": "The patient's oxygen saturation is 100%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Weight is 4.8 kg, temperature 100.4, heart rate is 140, respiratory rate 30, and saturations 100%."
+      ]
+    },
+    {
+      "fact_id": "F36",
+      "fact_text": "The patient is well appearing and in no acute distress.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "GENERAL: This is a well-appearing infant in no acute distress."
+      ]
+    },
+    {
+      "fact_id": "F37",
+      "fact_text": "The patient's anterior fontanelle was open and flat.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HEENT: Shows anterior fontanelle to be open and flat."
+      ]
+    },
+    {
+      "fact_id": "F38",
+      "fact_text": "The patient's pupils were equal and reactive to light with red reflex.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Pupils are equal and reactive to light with red reflex."
+      ]
+    },
+    {
+      "fact_id": "F39",
+      "fact_text": "The patient's nares were patent.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Nares are patent."
+      ]
+    },
+    {
+      "fact_id": "F40",
+      "fact_text": "The patient's oral mucosa was moist.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Oral mucosa is moist."
+      ]
+    },
+    {
+      "fact_id": "F41",
+      "fact_text": "The patient's posterior pharynx was clear.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Posterior pharynx is clear."
+      ]
+    },
+    {
+      "fact_id": "F42",
+      "fact_text": "The patient's hard palate was intact.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Hard palate is intact."
+      ]
+    },
+    {
+      "fact_id": "F43",
+      "fact_text": "The patient's gingiva was normal.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Normal gingiva."
+      ]
+    },
+    {
+      "fact_id": "F44",
+      "fact_text": "The patient's heart had a regular rate and rhythm without a murmur.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HEART: Regular rate and rhythm without murmur."
+      ]
+    },
+    {
+      "fact_id": "F45",
+      "fact_text": "A few faint rales were present on lung examination.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "LUNGS: A few faint rales."
+      ]
+    },
+    {
+      "fact_id": "F46",
+      "fact_text": "No retractions, stridor, or wheezing were present on examination.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No retractions.",
+        "No stridor.",
+        "No wheezing on examination."
+      ]
+    },
+    {
+      "fact_id": "F47",
+      "fact_text": "Mild tachypnea was present on examination.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Mild tachypnea."
+      ]
+    },
+    {
+      "fact_id": "F48",
+      "fact_text": "The patient's extremities were warm with good perfusion.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "EXTREMITIES: Warm, good perfusion."
+      ]
+    },
+    {
+      "fact_id": "F49",
+      "fact_text": "The patient was alert with normal muscle tone throughout.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "NEUROLOGIC: The patient is alert.",
+        "Normal tone throughout."
+      ]
+    },
+    {
+      "fact_id": "F50",
+      "fact_text": "The patient's deep tendon reflexes were 2+/4.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Deep tendon reflexes are 2+/4."
+      ]
+    },
+    {
+      "fact_id": "F51",
+      "fact_text": "The patient's skin examination was normal.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "SKIN: Normal."
+      ]
+    },
+    {
+      "fact_id": "F52",
+      "fact_text": "The patient's white blood cell count was 12.4.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "CBC shows a white count of 12.4, hemoglobin 10.1, platelet count 611,000; 38 segs 3 bands, 42 lymphocytes, and 10 monocytes."
+      ]
+    },
+    {
+      "fact_id": "F53",
+      "fact_text": "The patient's hemoglobin was 10.1.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "CBC shows a white count of 12.4, hemoglobin 10.1, platelet count 611,000; 38 segs 3 bands, 42 lymphocytes, and 10 monocytes."
+      ]
+    },
+    {
+      "fact_id": "F54",
+      "fact_text": "The patient's platelet count was 611,000.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "CBC shows a white count of 12.4, hemoglobin 10.1, platelet count 611,000; 38 segs 3 bands, 42 lymphocytes, and 10 monocytes."
+      ]
+    },
+    {
+      "fact_id": "F55",
+      "fact_text": "The CBC differential reports 38 segs, 3 bands, 42 lymphocytes, and 10 monocytes.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "CBC shows a white count of 12.4, hemoglobin 10.1, platelet count 611,000; 38 segs 3 bands, 42 lymphocytes, and 10 monocytes."
+      ]
+    },
+    {
+      "fact_id": "F56",
+      "fact_text": "The patient's electrolytes were within normal limits.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Electrolytes were within normal limits."
+      ]
+    },
+    {
+      "fact_id": "F57",
+      "fact_text": "The patient's C-reactive protein was 0.3.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "C-reactive protein 0.3."
+      ]
+    },
+    {
+      "fact_id": "F58",
+      "fact_text": "The chest x-ray showed no acute disease except for a small density in the retrocardiac area on the posterior view.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Chest x-ray shows no acute disease with the exception of a small density located in the retrocardiac area on the posterior view."
+      ]
+    },
+    {
+      "fact_id": "F59",
+      "fact_text": "The urinalysis showed 10 to 25 bacteria.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "UA shows 10 to 25 bacteria."
+      ]
+    },
+    {
+      "fact_id": "F60",
+      "fact_text": "The patient presented with fever, paroxysmal cough, and episodes of respiratory distress.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ASSESSMENT/PLAN: This is a 2-month-old, who presents with fever, paroxysmal cough and episodes of respiratory distress."
+      ]
+    },
+    {
+      "fact_id": "F61",
+      "fact_text": "The patient was currently stable in the emergency room.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient is currently stable in the emergency room."
+      ]
+    },
+    {
+      "fact_id": "F62",
+      "fact_text": "The patient will be admitted to the pediatric floor.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "We will admit the patient to the pediatric floor."
+      ]
+    },
+    {
+      "fact_id": "F63",
+      "fact_text": "A pertussis PCR will be sent.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "We will send out pertussis PCR."
+      ]
+    },
+    {
+      "fact_id": "F64",
+      "fact_text": "The urine culture results will be followed.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "We will also follow results of urine culture and that the urine dip shows 10 to 25 bacteria."
+      ]
+    },
+    {
+      "fact_id": "F65",
+      "fact_text": "The urine dip showed 10 to 25 bacteria.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "We will also follow results of urine culture and that the urine dip shows 10 to 25 bacteria."
+      ]
+    },
+    {
+      "fact_id": "F66",
+      "fact_text": "The patient will be monitored for signs of sepsis, apnea, urinary tract infection, and pneumonia.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient will be followed up for signs of sepsis, apnea, urinary tract infection, and pneumonia."
+      ]
+    },
+    {
+      "fact_id": "F67",
+      "fact_text": "The team will wait for a radiology reading to determine whether the density seen on the lateral chest x-ray film is a normal variant or represents pathology.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "We will wait for a radiology reading on the chest x-ray to determine if the density seen on the lateral film is a normal variant or represents pathology."
+      ]
+    }
+  ],
+  "annotation_notes": ""
+}

@@ -3,10 +3,10 @@
   "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=18-Dermatology&Sample=289-Dermatitis+%2D+SOAP",
   "primary_content_type": "medications",
   "selection_mode": "entire_report",
-  "source_text": "SUBJECTIVE: This is a 29-year-old Vietnamese female, established patient of dermatology, last seen in our office on 07/13/04. She comes in today as a referral from ABC, D.O. for a reevaluation of her hand eczema. I have treated her with Aristocort cream, Cetaphil cream, increased moisturizing cream and lotion, and wash her hands in Cetaphil cleansing lotion. She comes in today for reevaluation because she is flaring. Her hands are very dry, they are cracked, she has been washing with soap. She states that the Cetaphil cleansing lotion apparently is causing some burning and pain because of the fissures in her skin. She has been wearing some gloves also apparently. The patient is single. She is unemployed.\n\nFAMILY, SOCIAL, AND ALLERGY HISTORY: The patient has asthma, sinus, hives, and history of psoriasis. No known drug allergies.\n\nMEDICATIONS: The patient is a nonsmoker. No bad sunburns or blood pressure problems in the past.\n\nCURRENT MEDICATIONS: Claritin and Zyrtec p.r.n.\n\nPHYSICAL EXAMINATION: The patient has very dry, cracked hands bilaterally.\n\nIMPRESSION: Hand dermatitis.\n\nTREATMENT:\n1. Discussed further treatment with the patient and her interpreter.\n2. Apply Aristocort ointment 0.1% and equal part of Polysporin ointment t.i.d. and p.r.n. itch.\n3. Discontinue hot soapy water and wash her hands with Cetaphil cleansing lotion.\n4. Keflex 500 mg b.i.d. times two weeks with one refill. Return in one month if not better; otherwise, on a p.r.n. basis and send Dr. XYZ a letter on this office visit.",
+  "source_text": "SUBJECTIVE: This is a 29-year-old Vietnamese female, established patient of dermatology, last seen in our office on 07/13/04. She comes in today as a referral from ABC, D.O. for a reevaluation of her hand eczema. I have treated her with Aristocort cream, Cetaphil cream, increased moisturizing cream and lotion, and wash her hands in Cetaphil cleansing lotion. She comes in today for reevaluation because she is flaring. Her hands are very dry, they are cracked, she has been washing with soap. She states that the Cetaphil cleansing lotion apparently is causing some burning and pain because of the fissures in her skin. She has been wearing some gloves also apparently. The patient is single. She is unemployed. FAMILY, SOCIAL, AND ALLERGY HISTORY: The patient has asthma, sinus, hives, and history of psoriasis. No known drug allergies. MEDICATIONS: The patient is a nonsmoker. No bad sunburns or blood pressure problems in the past. CURRENT MEDICATIONS: Claritin and Zyrtec p.r.n. PHYSICAL EXAMINATION: The patient has very dry, cracked hands bilaterally. IMPRESSION: Hand dermatitis. TREATMENT: 1. Discussed further treatment with the patient and her interpreter. 2. Apply Aristocort ointment 0.1% and equal part of Polysporin ointment t.i.d. and p.r.n. itch. 3. Discontinue hot soapy water and wash her hands with Cetaphil cleansing lotion. 4. Keflex 500 mg b.i.d. times two weeks with one refill. Return in one month if not better; otherwise, on a p.r.n. basis and send Dr. XYZ a letter on this office visit.",
   "facts": [
     {
-      "fact_id": "MTS_DEV_17_F01",
+      "fact_id": "F1",
       "fact_text": "The patient is a 29-year-old Vietnamese female, dermatology patient, last seen on 07/13/04.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -14,7 +14,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F02",
+      "fact_id": "F2",
       "fact_text": "The patient came in as a referral from ABC, D.O. for a reevaluation of her hand eczema.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F03",
+      "fact_id": "F3",
       "fact_text": "The patient was previously treated with Aristocort cream, Cetaphil cream, increased moisturizing cream and lotion, and hand washing with Cetaphil cleansing lotion.",
       "fact_type": "medication",
       "source_evidence": [
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F04",
+      "fact_id": "F4",
       "fact_text": "The patient is experiencing a flare-up with very dry, cracked hands after washing with soap.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F05",
+      "fact_id": "F5",
       "fact_text": "The patient states that Cetaphil cleansing lotion is causing burning and pain due to skin fissures.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F06",
+      "fact_id": "F6",
       "fact_text": "The patient has apparently been wearing gloves.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F07",
+      "fact_id": "F7",
       "fact_text": "The patient is single and unemployed.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F08",
+      "fact_id": "F8",
       "fact_text": "The patient has asthma, sinus issues, hives, and history of psoriasis.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F09",
+      "fact_id": "F9",
       "fact_text": "The patient has no known drug allergies.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F10",
+      "fact_id": "F10",
       "fact_text": "The patient is a nonsmoker and has no history of bad sunburns or blood pressure problems.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F11",
+      "fact_id": "F11",
       "fact_text": "The patient's current medications are Claritin and Zyrtec as needed.",
       "fact_type": "medication",
       "source_evidence": [
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F12",
+      "fact_id": "F12",
       "fact_text": "Physical examination showed very dry, cracked hands bilaterally.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F13",
+      "fact_id": "F13",
       "fact_text": "The assessment impression is hand dermatitis.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F14",
+      "fact_id": "F14",
       "fact_text": "Further treatment was discussed with the patient and her interpreter.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F15",
+      "fact_id": "F15",
       "fact_text": "The patient was instructed to apply Aristocort ointment 0.1% and equal part Polysporin ointment three times daily and as needed for itching.",
       "fact_type": "medication",
       "source_evidence": [
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F16",
+      "fact_id": "F16",
       "fact_text": "The patient was instructed to discontinue hot soapy water and wash hands with Cetaphil cleansing lotion.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F17",
+      "fact_id": "F17",
       "fact_text": "The patient was prescribed Keflex 500 mg twice daily for two weeks with one refill.",
       "fact_type": "medication",
       "source_evidence": [
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "fact_id": "MTS_DEV_17_F18",
+      "fact_id": "F18",
       "fact_text": "The patient was instructed to return in one month if not better, or otherwise as needed, and a letter will be sent to Dr. XYZ regarding the visit.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -153,5 +153,6 @@
       ]
     }
   ],
-  "annotation_notes": "Medications selected as primary content type due to multiple topical and oral treatments, current medications, and past medication history."
+  "annotation_notes": "Medications selected as primary content type due to multiple topical and oral treatments, current medications, and past medication history.",
+  "annotator_id": "SH"
 }

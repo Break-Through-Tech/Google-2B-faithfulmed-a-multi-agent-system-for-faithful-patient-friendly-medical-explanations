@@ -1,5 +1,5 @@
 {
-  "example_id": "MTS_DEV_12_BR",
+  "example_id": "MTS_DEV_12",
   "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=98-General+Medicine&Sample=1251-Right+Hand+Laceration",
   "primary_content_type": "lab_values",
   "selection_mode": "entire_report",
@@ -9,212 +9,289 @@
       "fact_id": "F1",
       "fact_text": "The patient is a 19-year-old male.",
       "fact_type": "diagnosis",
-      "source_evidence": ["The patient is a 19-year-old male who was involved in a fight approximately an hour prior to his ED presentation."]
+      "source_evidence": [
+        "The patient is a 19-year-old male who was involved in a fight approximately an hour prior to his ED presentation."
+      ]
     },
     {
       "fact_id": "F2",
       "fact_text": "The patient was invovled in a fight around an hour before arriving at the emergency department.",
       "fact_type": "diagnosis",
-      "source_evidence": ["The patient is a 19-year-old male who was involved in a fight approximately an hour prior to his ED presentation."]
+      "source_evidence": [
+        "The patient is a 19-year-old male who was involved in a fight approximately an hour prior to his ED presentation."
+      ]
     },
     {
       "fact_id": "F3",
       "fact_text": "The patient punched a guy in the face a few times.",
       "fact_type": "diagnosis",
-      "source_evidence": ["He punched a guy few times on the face, might be the mouth and then punched a drinking glass, breaking it and lacerating his right hand."]
+      "source_evidence": [
+        "He punched a guy few times on the face, might be the mouth and then punched a drinking glass, breaking it and lacerating his right hand."
+      ]
     },
     {
       "fact_id": "F4",
       "fact_text": "The patient punched a drinking glass, breaking it, and cutting his right hand.",
       "fact_type": "diagnosis",
-      "source_evidence": ["He punched a guy few times on the face, might be the mouth and then punched a drinking glass, breaking it and lacerating his right hand."]
+      "source_evidence": [
+        "He punched a guy few times on the face, might be the mouth and then punched a drinking glass, breaking it and lacerating his right hand."
+      ]
     },
     {
       "fact_id": "F5",
       "fact_text": "The patient has three cuts on his right hand.",
       "fact_type": "diagnosis",
-      "source_evidence": ["He has three lacerations on his right hand."]
+      "source_evidence": [
+        "He has three lacerations on his right hand."
+      ]
     },
     {
       "fact_id": "F6",
       "fact_text": "The patient's wounds were cleaned thoroughly using tap water and was Superglued and guazed.",
       "fact_type": "procedure",
-      "source_evidence": ["His wound was cleaned out thoroughly with tap water, and one of the navy corpsman tried to use Superglue and gauze to repair it."]
+      "source_evidence": [
+        "His wound was cleaned out thoroughly with tap water, and one of the navy corpsman tried to use Superglue and gauze to repair it."
+      ]
     },
     {
       "fact_id": "F7",
       "fact_text": "Although there were attempts at repairing the wounds, it continues to bleed.",
       "fact_type": "diagnosis",
-      "source_evidence": ["His wound was cleaned out thoroughly with tap water, and one of the navy corpsman tried to use Superglue and gauze to repair it.", "However, it continues to bleed and he is here for evaluation."]
+      "source_evidence": [
+        "His wound was cleaned out thoroughly with tap water, and one of the navy corpsman tried to use Superglue and gauze to repair it.",
+        "However, it continues to bleed and he is here for evaluation."
+      ]
     },
     {
       "fact_id": "F8",
       "fact_text": "The patient has significant asthma and acne history.",
       "fact_type": "diagnosis",
-      "source_evidence": ["PAST MEDICATION HISTORY: Significant for asthma and acne."]
+      "source_evidence": [
+        "PAST MEDICATION HISTORY: Significant for asthma and acne."
+      ]
     },
     {
       "fact_id": "F9",
       "fact_text": "The patient takes accutane and no other medication.",
       "fact_type": "medication",
-      "source_evidence": ["CURRENT MEDICATIONS: Accutane and takes no other medications."]
+      "source_evidence": [
+        "CURRENT MEDICATIONS: Accutane and takes no other medications."
+      ]
     },
     {
       "fact_id": "F10",
       "fact_text": "The patient's tetanus shot is up-to-date.",
       "fact_type": "diagnosis",
-      "source_evidence": ["TETANUS STATUS: Up-to-date."]
+      "source_evidence": [
+        "TETANUS STATUS: Up-to-date."
+      ]
     },
     {
       "fact_id": "F11",
       "fact_text": "The patient drank alcohol today, but has no history of alcohol or drug abuse.",
       "fact_type": "diagnosis",
-      "source_evidence": ["He has been drinking alcohol today, but has no history of alcohol or drug abuse."]
+      "source_evidence": [
+        "He has been drinking alcohol today, but has no history of alcohol or drug abuse."
+      ]
     },
     {
       "fact_id": "F12",
       "fact_text": "The patient is well, does not have a fever, and has no motor or sensory complaints of tingling in the hand.",
       "fact_type": "diagnosis",
-      "source_evidence": ["Otherwise well.", "No febrile illness.", "No motor or sensory complaints of any sort or paresthesias in the hand."]
+      "source_evidence": [
+        "Otherwise well.",
+        "No febrile illness.",
+        "No motor or sensory complaints of any sort or paresthesias in the hand."
+      ]
     },
     {
       "fact_id": "F13",
       "fact_text": "The patient is not in distress, is alert and oriented, and has a clear and appropriate mental status.",
       "fact_type": "diagnosis",
-      "source_evidence": ["He is in no apparent distress.", "He is alert and oriented x3.", "Mental status is clear and appropriate."]
+      "source_evidence": [
+        "He is in no apparent distress.",
+        "He is alert and oriented x3.",
+        "Mental status is clear and appropriate."
+      ]
     },
     {
       "fact_id": "F14",
       "fact_text": "The patient's temperature is 98.3 degrees.",
       "fact_type": "lab_value",
-      "source_evidence": ["Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."]
+      "source_evidence": [
+        "Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."
+      ]
     },
     {
       "fact_id": "F15",
       "fact_text": "The patient's hear rate is 100.",
       "fact_type": "lab_value",
-      "source_evidence": ["Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."]
+      "source_evidence": [
+        "Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."
+      ]
     },
     {
       "fact_id": "F16",
       "fact_text": "The patient's breathing rate is 18 breaths per minute.",
       "fact_type": "lab_value",
-      "source_evidence": ["Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."]
+      "source_evidence": [
+        "Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."
+      ]
     },
     {
       "fact_id": "F17",
       "fact_text": "The patient's blood pressure is 161/98.",
       "fact_type": "lab_value",
-      "source_evidence": ["Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."]
+      "source_evidence": [
+        "Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."
+      ]
     },
     {
       "fact_id": "F18",
       "fact_text": "The patient's oxygen saturation is 99%, which is normal.",
       "fact_type": "lab_value",
-      "source_evidence": ["Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."]
+      "source_evidence": [
+        "Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."
+      ]
     },
     {
       "fact_id": "F19",
       "fact_text": "The patient's right hand has three cuts over the MCP joint, an irregular shaped cut over the fifth MCP and foruth and third half wounds.",
       "fact_type": "diagnosis",
-      "source_evidence": ["Right hand, he has three lacerations all over the MCP joint of his right hand, irregular shaped over the fifth MCP and then over the fourth and third half wound, similarly the lacerations."]
+      "source_evidence": [
+        "Right hand, he has three lacerations all over the MCP joint of his right hand, irregular shaped over the fifth MCP and then over the fourth and third half wound, similarly the lacerations."
+      ]
     },
     {
       "fact_id": "F20",
       "fact_text": "All of the patient's cuts are around 4 cm long.",
       "fact_type": "diagnosis",
-      "source_evidence": ["All total approximately 4 cm in length. "]
+      "source_evidence": [
+        "All total approximately 4 cm in length."
+      ]
     },
     {
       "fact_id": "F21",
       "fact_text": "There are no foreign objects in the cuts.",
       "fact_type": "diagnosis",
-      "source_evidence": ["I see no foreign bodies, just capillary refills less than 2 seconds."]
+      "source_evidence": [
+        "I see no foreign bodies, just capillary refills less than 2 seconds."
+      ]
     },
     {
       "fact_id": "F22",
       "fact_text": "It takes 2 seconds for color to return to the tissue bed.",
       "fact_type": "diagnosis",
-      "source_evidence": ["I see no foreign bodies, just capillary refills less than 2 seconds."]
+      "source_evidence": [
+        "I see no foreign bodies, just capillary refills less than 2 seconds."
+      ]
     },
     {
       "fact_id": "F23",
       "fact_text": "The patient's radial pulse is in tact.",
       "fact_type": "diagnosis",
-      "source_evidence": ["Radial pulses intact. "]
+      "source_evidence": [
+        "Radial pulses intact."
+      ]
     },
     {
       "fact_id": "F24",
       "fact_text": "The patient's right hand has full range of motion with no deformitites.",
       "fact_type": "diagnosis",
-      "source_evidence": ["There is full range of motion with no gross deformities."]
+      "source_evidence": [
+        "There is full range of motion with no gross deformities."
+      ]
     },
     {
       "fact_id": "F25",
       "fact_text": "There is no significant swelling in the back of the patient's hand.",
       "fact_type": "diagnosis",
-      "source_evidence": ["No significant amount of edema associated with these in the dorsum of the hand."]
+      "source_evidence": [
+        "No significant amount of edema associated with these in the dorsum of the hand."
+      ]
     },
     {
       "fact_id": "F26",
       "fact_text": "The X-rays show no bone fractures or bony abnormalities on the patient.",
       "fact_type": "diagnosis",
-      "source_evidence": ["X-rays shows no open fracture or bony abnormality."]
+      "source_evidence": [
+        "X-rays shows no open fracture or bony abnormality."
+      ]
     },
     {
       "fact_id": "F27",
       "fact_text": "The patient received 1% Xylocaine.",
       "fact_type": "medication",
-      "source_evidence": ["The patient was anesthetized with 1% Xylocaine."]
+      "source_evidence": [
+        "The patient was anesthetized with 1% Xylocaine."
+      ]
     },
     {
       "fact_id": "F28",
       "fact_text": "The patient's wounds were thoroughly washed with at least 2 liters of tap water.",
       "fact_type": "procedure",
-      "source_evidence": ["Wounds were thoroughly irrigated with tap water with at least 2 liters."]
+      "source_evidence": [
+        "Wounds were thoroughly irrigated with tap water with at least 2 liters."
+      ]
     },
     {
       "fact_id": "F29",
       "fact_text": "The patient's wounds were repaired with 16 simple sutures and 1 horizontal mattress suture.",
       "fact_type": "procedure",
-      "source_evidence": ["They were repaired with simple sutures of 4-0 Ethilon, total of 17 sutures, 16 of which were simple, one is a horizontal mattress."]
+      "source_evidence": [
+        "They were repaired with simple sutures of 4-0 Ethilon, total of 17 sutures, 16 of which were simple, one is a horizontal mattress."
+      ]
     },
     {
       "fact_id": "F30",
       "fact_text": "The patient was given 875 mg of Augmentin by mouth.",
       "fact_type": "medication",
-      "source_evidence": ["The patient was given Augmentin 875 mg p.o. due to the possibility of human bite wound."]
+      "source_evidence": [
+        "The patient was given Augmentin 875 mg p.o. due to the possibility of human bite wound."
+      ]
     },
     {
       "fact_id": "F31",
       "fact_text": "The patient will take 875 mg of Augmentin by mouth twice a day for 7 days.",
       "fact_type": "medication",
-      "source_evidence": ["The patient will be given Augmentin 875 mg 1 p.o. b.i.d. for 7 days."]
+      "source_evidence": [
+        "The patient will be given Augmentin 875 mg 1 p.o. b.i.d. for 7 days."
+      ]
     },
     {
       "fact_id": "F32",
       "fact_text": "The patient will be prescribed with Vicoprofen because of his inability to tolerate Tylenol due to Accutane.",
       "fact_type": "instruction",
-      "source_evidence": ["He will be given a prescription of Vicoprofen as he is unable to tolerate the Tylenol due to his Accutane."]
+      "source_evidence": [
+        "He will be given a prescription of Vicoprofen as he is unable to tolerate the Tylenol due to his Accutane."
+      ]
     },
     {
       "fact_id": "F33",
       "fact_text": "The patient will take 1 Vicoprofen by mouth every 6 hours or as needed.",
       "fact_type": "medication",
-      "source_evidence": ["He will be given a prescription of Vicoprofen as he is unable to tolerate the Tylenol due to his Accutane.", "He will take 1 p.o. every 6 hours or as needed, #12."]
+      "source_evidence": [
+        "He will be given a prescription of Vicoprofen as he is unable to tolerate the Tylenol due to his Accutane.",
+        "He will take 1 p.o. every 6 hours or as needed, #12."
+      ]
     },
     {
       "fact_id": "F34",
       "fact_text": "The patient will return for removal of his sutures in 8 days.",
       "fact_type": "instruction",
-      "source_evidence": ["He will follow up for suture removal in 8 days."]
+      "source_evidence": [
+        "He will follow up for suture removal in 8 days."
+      ]
     },
     {
       "fact_id": "F35",
       "fact_text": "The patient should return immediately for reevaluation if he experiences any signs of infection",
       "fact_type": "instruction",
-      "source_evidence": ["Should he develop any signs of infection, he will come immediately here for reevaluation."]
+      "source_evidence": [
+        "Should he develop any signs of infection, he will come immediately here for reevaluation."
+      ]
     }
   ],
-  "annotation_notes": ""
+  "annotation_notes": "",
+  "annotator_id": "BR"
 }
