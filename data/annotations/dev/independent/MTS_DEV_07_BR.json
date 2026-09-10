@@ -1,0 +1,191 @@
+{
+  "example_id": "MTS_DEV_07",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=17-Dentistry&Sample=1629-Bone+Impacted+Tooth+Removal",
+  "primary_content_type": "procedures",
+  "selection_mode": "entire_report",
+  "source_text": "PREOPERATIVE DIAGNOSIS: Dentigerous cyst, left mandible associated with full bone impacted wisdom tooth #17. POSTOPERATIVE DIAGNOSIS: Dentigerous cyst, left mandible associated with full bone impacted wisdom tooth #17. PROCEDURE: Removal of benign cyst and extraction of full bone impacted tooth #17. ANESTHESIA: General anesthesia with nasal endotracheal intubation. SPECIMEN: Cyst and section tooth #17. ESTIMATED BLOOD LOSS: 10 mL. FLUIDS: 1200 of Lactated Ringer's. COMPLICATIONS: None. CONDITION: The patient was extubated and transported to the PACU in good condition. Breathing spontaneously. INDICATION FOR PROCEDURE: The patient is a 38-year-old Caucasian male who was referred to clinic to evaluate a cyst in his left mandible. Preoperatively, a biopsy of the cyst was obtained and it was noted to be a benign dentigerous cyst. After evaluation of the location of the cyst and the impacted wisdom tooth approximately the inferior border of the mandible, it was determined that the patient would benefit from removal of the cyst and removal of tooth #17 under general anesthesia in the operating room. Risks, benefits, and alternatives of treatment were thoroughly discussed with the patient and consent was obtained. DESCRIPTION OF PROCEDURE: The patient was taken to the operating room #1 at Hospital and laid in the supine fashion on the operating room table. As stated, general anesthesia was induced with IV anesthetics and maintained with nasal endotracheal intubation and inhalation anesthetics. The patient was prepped and draped in usual oro-maxillofacial surgery fashion. Approximately, #6 mL of 2% lidocaine with 1:100,000 epinephrine was injected in the usual nerve block fashion. After waiting appropriate time for local anesthesia to take effect, a moistened Ray-Tec sponge was placed in the posterior pharynx. Peridex mouth rinse was used to prep the oral cavity. This was removed with suction. Using a #15 blade a sagittal split osteotomy incision was made along the left ramus. A full-thickness mucoperiosteal flap was elevated and the crest of the bone was identified where the crown had super-erupted since the biopsy 6 weeks earlier. Using a Hall drill, a buccal osteotomy was developed, the tooth was sectioned in half, fractured with an elevator and delivered in two pieces. Using a double-ended curette, the remainder of the cystic lining was removed from the left mandible and sent to pathology with the tooth for review. The area was irrigated with copious amounts of sterile water and closed with 3-0 chromic gut suture. The throat pack was removed. The procedure was then determined to be over, and the patient was extubated, breathing spontaneously, and transported to the PACU in good condition.",
+  "annotator_id": "BR",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient has a dentigerous cyst in their left mandible that is associated with their full bone impacted wisdom tooth #17.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["PREOPERATIVE DIAGNOSIS: Dentigerous cyst, left mandible associated with full bone impacted wisdom tooth #17."]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient's benign cyst will be removed along with an extraction of their full bone impacted tooth #17.",
+      "fact_type": "instruction",
+      "source_evidence": ["PROCEDURE: Removal of benign cyst and extraction of full bone impacted tooth #17."]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient received general anesthesia with nasal endotracheal intubation.",
+      "fact_type": "procedure",
+      "source_evidence": ["General anesthesia with nasal endotracheal intubation."]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The specimen consists of the patient's cyst and section tooth #17.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["SPECIMEN: Cyst and section tooth #17."]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient lost around 10 mL of blood.",
+      "fact_type": "lab_value",
+      "source_evidence": ["ESTIMATED BLOOD LOSS: 10 mL."]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient received 1200 of Lactated Ringer's.",
+      "fact_type": "medication",
+      "source_evidence": ["FLUIDS: 1200 of Lactated Ringer's."]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "There were no complications.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["COMPLICATIONS: None."]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient was extubated and was breathing spontaneously.",
+      "fact_type": "procedure",
+      "source_evidence": ["The patient was extubated and transported to the PACU in good condition. Breathing spontaneously."]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient is a 38-year-old Caucasian male.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["The patient is a 38-year-old Caucasian male who was referred to clinic to evaluate a cyst in his left mandible."]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "Before the procedure, a biopsy was done on the patient's cyst and it was noted to be a benign dentigerous cyst.",
+      "fact_type": "procedure",
+      "source_evidence": ["Preoperatively, a biopsy of the cyst was obtained and it was noted to be a benign dentigerous cyst."]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "Due to the location of the cyst and the impacted wisdom tooth, it was determined that the patient would benefit from having both removed at the same time.",
+      "fact_type": "instruction",
+      "source_evidence": ["After evaluation of the location of the cyst and the impacted wisdom tooth approximately the inferior border of the mandible, it was determined that the patient would benefit from removal of the cyst and removal of tooth #17 under general anesthesia in the operating room."]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The risks, benefits, and alternatives of this procedure were discussed with the patient and consent was obtained.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["Risks, benefits, and alternatives of treatment were thoroughly discussed with the patient and consent was obtained."]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient was laid in a supine position on the operating table.",
+      "fact_type": "procedure",
+      "source_evidence": ["The patient was taken to the operating room #1 at Hospital and laid in the supine fashion on the operating room table."]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient was induced with general anesthesia through IV anesthetics and maintained with nasal endotracheal intubation and inhalation anesthetics.",
+      "fact_type": "procedure",
+      "source_evidence": ["As stated, general anesthesia was induced with IV anesthetics and maintained with nasal endotracheal intubation and inhalation anesthetics."]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient was prepped and draped in an oro-maxillofacial surgery fashion.",
+      "fact_type": "procedure",
+      "source_evidence": ["The patient was prepped and draped in usual oro-maxillofacial surgery fashion."]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The patient was injected with 6 mL of 2% lidocaine with 1:100,000 epinephrine in the usual nerve block fashion.",
+      "fact_type": "medication",
+      "source_evidence": ["Approximately, #6 mL of 2% lidocaine with 1:100,000 epinephrine was injected in the usual nerve block fashion."]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "After the local anesthesia took effect, a moistened Ray-Tec sponge was placed on the patient's posterior pharynx.",
+      "fact_type": "procedure",
+      "source_evidence": ["After waiting appropriate time for local anesthesia to take effect, a moistened Ray-Tec sponge was placed in the posterior pharynx."]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "Peridex mouth rinse was used to prep the patient's oral cavity and was removed with suction.",
+      "fact_type": "procedure",
+      "source_evidence": ["Peridex mouth rinse was used to prep the oral cavity.", "This was removed with suction."]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "A sagittal split osteotomy incision was made along the left ramus using a #15 blade.",
+      "fact_type": "procedure",
+      "source_evidence": ["Using a #15 blade a sagittal split osteotomy incision was made along the left ramus."]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "A full-thickness mucoperiosteal flap was elevated.",
+      "fact_type": "procedure",
+      "source_evidence": ["A full-thickness mucoperiosteal flap was elevated and the crest of the bone was identified where the crown had super-erupted since the biopsy 6 weeks earlier."]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "The crest of the patient's bone was identified where the crown had super-erupted since the biopsy 6 week earlier.",
+      "fact_type": "procedure",
+      "source_evidence": ["A full-thickness mucoperiosteal flap was elevated and the crest of the bone was identified where the crown had super-erupted since the biopsy 6 weeks earlier."]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "A buccal osteotomy was developed and the tooth was sectioned in half using a Hall drill and fractured with an elevator and delivered in 2 pieces.",
+      "fact_type": "procedure",
+      "source_evidence": ["Using a Hall drill, a buccal osteotomy was developed, the tooth was sectioned in half, fractured with an elevator and delivered in two pieces."]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The remainder of the cystic lining ws removed from the left mandible using a double-ended curette.",
+      "fact_type": "procedure",
+      "source_evidence": ["Using a double-ended curette, the remainder of the cystic lining was removed from the left mandible and sent to pathology with the tooth for review."]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "The remainder of the cystic lining was sent to pathology with the tooth for review.",
+      "fact_type": "instruction",
+      "source_evidence": ["Using a double-ended curette, the remainder of the cystic lining was removed from the left mandible and sent to pathology with the tooth for review."]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "The area of the procedure was irrigated with a large quantity of sterile water.",
+      "fact_type": "procedure",
+      "source_evidence": ["The area was irrigated with copious amounts of sterile water and closed with 3-0 chromic gut suture."]
+    },
+    {
+      "fact_id": "F26",
+      "fact_text": "The area of the procedure was closed with a 3-0 chromic gut suture.",
+      "fact_type": "procedure",
+      "source_evidence": ["The area was irrigated with copious amounts of sterile water and closed with 3-0 chromic gut suture."]
+    },
+    {
+      "fact_id": "F27",
+      "fact_text": "The patient's throat pack was removed.",
+      "fact_type": "procedure",
+      "source_evidence": ["The throat pack was removed."]
+    },
+    {
+      "fact_id": "F28",
+      "fact_text": "The procedure was determiend to be over.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["The throat pack was removed. The procedure was then determined to be over, and the patient was extubated, breathing spontaneously, and transported to the PACU in good condition."]
+    },
+    {
+      "fact_id": "F29",
+      "fact_text": "The patient was extubated and breathing spontaneously.",
+      "fact_type": "procedure",
+      "source_evidence": ["The throat pack was removed. The procedure was then determined to be over, and the patient was extubated, breathing spontaneously, and transported to the PACU in good condition."]
+    },
+    {
+      "fact_id": "F29",
+      "fact_text": "The patient was transported to the PACU in good condition.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["The throat pack was removed. The procedure was then determined to be over, and the patient was extubated, breathing spontaneously, and transported to the PACU in good condition."]
+    }
+  ],
+  "annotation_notes": ""
+}

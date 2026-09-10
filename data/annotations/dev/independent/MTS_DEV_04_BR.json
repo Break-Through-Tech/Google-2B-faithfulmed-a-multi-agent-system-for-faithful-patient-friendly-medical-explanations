@@ -1,0 +1,275 @@
+{
+  "example_id": "MTS_DEV_04",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=72-Psychiatry+%2F+Psychology&Sample=2758-Agitation+%2D+ER+Visit",
+  "primary_content_type": "procedures",
+  "selection_mode": "entire_report",
+  "source_text": "CHIEF COMPLAINT: Agitation. HISTORY OF PRESENT ILLNESS: This is a 91-year-old female who was brought in by family. Apparently, she was complaining that she felt she might have been poisoned at her care facility. The daughter who accompanied the patient states that she does not think anything is actually wrong, but she became extremely agitated and she thinks that is the biggest problem with the patient right now. The patient apparently had a little bit of dry heaves, but no actual vomiting. She had just finished eating dinner. No one else in the facility has been ill. PAST MEDICAL HISTORY: Remarkable for previous abdominal surgeries. She has a pacemaker. She has a history of recent collarbone fracture. REVIEW OF SYSTEMS: Very difficult to get from the patient herself. She seems to deny any significant pain or discomfort, but really seems not particularly intent on letting me know what is bothering her. She initially stated that everything was wrong, but could not specify any specific complaints. Denies chest pain, back pain, or abdominal pain. Denies any extremity symptoms or complaints. SOCIAL HISTORY: The patient is a nonsmoker. She is accompanied here with daughter who brought her over here. They were visiting the patient when this episode occurred. MEDICATIONS: Please see list. ALLERGIES: NONE. PHYSICAL EXAMINATION: VITAL SIGNS: The patient is afebrile, actually has a very normal vital signs including normal pulse oximetry at 99% on room air. GENERAL: The patient is an elderly frail looking little lady lying on the gurney. She is awake, alert, and not really wanted to answer most of the questions I asked her. She does have a tremor with her mouth, which the daughter states has been there for \"many years\". HEENT: Eye exam is unremarkable. Oral mucosa is still moist and well hydrated. Posterior pharynx is clear. NECK: Supple. LUNGS: Actually clear with good breath sounds. There are no wheezes, no rales, or rhonchi. Good air movement. CARDIAC: Without murmur. ABDOMEN: Soft. I do not elicit any tenderness. There is no abdominal distention. Bowel sounds are present in all quadrants. SKIN: Skin is without rash or petechiae. There is no cyanosis. EXTREMITIES: No evidence of any trauma to the extremities. EMERGENCY DEPARTMENT COURSE: I had a long discussion with the family and they would like the patient receive something for agitation, so she was given 0.5 mg of Ativan intramuscularly. After about half an hour, I came back to talk to the patient and the family, the patient states that she feels better. Family states she seems more calm. They do not want to pursue any further workup at this time. IMPRESSION: ACUTE EPISODE OF AGITATION. PLAN: At this time, I had reviewed the patient's records and it is not particularly enlightening as to what could have triggered off this episode. The patient herself has good vital signs. She does not seem to have any specific acute process going on and seemed to feel comfortable after the Ativan was given, a small quantity was given to the patient. Family and daughter specifically did not want to pursue any workup at this point, which at this point I think is reasonable and we will have her follow up with ABC. She is discharged in stable condition.",
+  "annotator_id": "BR",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient's complaint was about agitation.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["CHIEF COMPLAINT: Agitation."]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient is a 91-year-old female brought by her family.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["This is a 91-year-old female who was brought in by family."]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient complained that she thought she might've been poisoned at her care facility.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["Apparently, she was complaining that she felt she might have been poisoned at her care facility."]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient's daughter claimed that she doesn't think there is anything wrong.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["The daughter who accompanied the patient states that she does not think anything is actually wrong, but she became extremely agitated and she thinks that is the biggest problem with the patient right now."]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient's daughter claimed that the patient was extremely agitated, which is the patient's biggest problem right now.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["The daughter who accompanied the patient states that she does not think anything is actually wrong, but she became extremely agitated and she thinks that is the biggest problem with the patient right now."]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient had a bit of dry heaves, but did not vomit.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["The patient apparently had a little bit of dry heaves, but no actual vomiting."]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "No one else at the patient's care facility has been ill.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["No one else in the facility has been ill."]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient previously had abdominal surgeries.",
+      "fact_type": "procedure",
+      "source_evidence": ["Remarkable for previous abdominal surgeries."]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient has a pacemaker.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["She has a pacemaker."]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient recently had a collarbone fracture.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["She has a history of recent collarbone fracture."]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "A review of the patient's systems was difficult to get from her.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["REVIEW OF SYSTEMS: Very difficult to get from the patient herself."]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient denies signification pain or discomfort.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["She seems to deny any significant  pain or discomfort, but really seems not particularly intent on letting me know what is bothering her."]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient does not seem to want to let them know what is bothering her.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["She seems to deny any significant  pain or discomfort, but really seems not particularly intent on letting me know what is bothering her."]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient initially stated that everything was wrong, but would not specify any complaints.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["She initially stated that everything was wrong, but could not specify any specific complaints."]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient denies chest pain, back pain, and abdominal pain along with any extremity symptoms or complaints.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["Denies chest pain, back pain, or abdominal pain.", " Denies any extremity symptoms or complaints."]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The patient does not smoke.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["The patient is a nonsmoker."]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The patient has no allergies.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["ALLERGIES: NONE."]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The patient is afebrile.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["The patient is afebrile, actually has a very normal vital signs including normal pulse oximetry at 99% on room air."]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient has normal vital signs including a normal pulse oximetry of 99% on room air.",
+      "fact_type": "lab_value",
+      "source_evidence": ["The patient is afebrile, actually has a very normal vital signs including normal pulse oximetry at 99% on room air."]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The patient is elderly and frail looking.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["The patient is an elderly frail looking little lady lying on the gurney."]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "The patient is awake, alert, and did not really want to answer questions.",
+      "fact_type": "diagnosis",
+      "source_evidence": [" She is awake, alert, and not really wanted to answer most of the questions I asked her."]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "The patient has a mouth tremor that her daughter claims she has had for \"many years\".",
+      "fact_type": "diagnosis",
+      "source_evidence": ["She does have a tremor with her mouth, which the daughter states has been there for \"many years\"."]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The patient's eye exam is unremarkable.",
+      "fact_type": "procedure",
+      "source_evidence": ["Eye exam is unremarkable."]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "The patient's oral mucosa is moist and well hydrated.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["Oral mucosa is still moist and well hydrated."]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "The patient's posterior pharynx is clear.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["Posterior pharynx is clear."]
+    },
+    {
+      "fact_id": "F26",
+      "fact_text": "The patient's neck is supple.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["NECK: Supple."]
+    },
+    {
+      "fact_id": "F27",
+      "fact_text": "The patient's lungs are clear with good breath sounds and air movement and no wheezes, no rales, nor rhonchi.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["LUNGS: Actually clear with good breath sounds.", "There are no wheezes, no rales, or rhonchi.", "Good air movement."]
+    },
+    {
+      "fact_id": "F28",
+      "fact_text": "The patient has no cardiac murmur.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["CARDIAC: Without murmur."]
+    },
+    {
+      "fact_id": "F29",
+      "fact_text": "The patient's abdomen is soft and has no tenderness.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["ABDOMEN: Soft.", "I do not elicit any tenderness."]
+    },
+    {
+      "fact_id": "F30",
+      "fact_text": "The patient has no abdominal distention.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["There is no abdominal distention."]
+    },
+    {
+      "fact_id": "F31",
+      "fact_text": "Bowel sounds are present in all of the patient's quadrants.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["Bowel sounds are present in all quadrants."]
+    },
+    {
+      "fact_id": "F32",
+      "fact_text": "The patient's skin has no rash, petechiae, or cyanosis.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["Skin is without rash or petechiae.", "There is no cyanosis."]
+    },
+    {
+      "fact_id": "F33",
+      "fact_text": "There is no evidence of traume to the patient's extremities.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["No evidence of any trauma to the extremities."]
+    },
+    {
+      "fact_id": "F34",
+      "fact_text": "The patient was given 0.5 mg of Ativan intramuscularly for agitiation at the request of the patient's family.",
+      "fact_type": "medication",
+      "source_evidence": ["I had a long discussion with the family and they would like the patient receive something for agitation, so she was given 0.5 mg of Ativan intramuscularly."]
+    },
+    {
+      "fact_id": "F35",
+      "fact_text": "After around half an hour, the patient states that she feels better.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["After about half an hour, I came back to talk to the patient and the family, the patient states that she feels better."]
+    },
+    {
+      "fact_id": "F36",
+      "fact_text": "The patient's family states that she is more calm and do not want any further workup for the patient.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["Family states she seems more calm.", "They do not want to pursue any further workup at this time."]
+    },
+    {
+      "fact_id": "F37",
+      "fact_text": "The impression was acute episode of agitation.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["IMPRESSION: ACUTE EPISODE OF AGITATION."]
+    },
+    {
+      "fact_id": "F38",
+      "fact_text": "According to the patient's records, it is not enlightening as to what triggered the episode of agitation.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["IMPRESSION: ACUTE EPISODE OF AGITATION.", "At this time, I had reviewed the patient's records and it is not particularly enlightening as to what could have triggered off this episode."]
+    },
+    {
+      "fact_id": "F39",
+      "fact_text": "The patient has good vital signs.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["The patient herself has good vital signs."]
+    },
+    {
+      "fact_id": "F40",
+      "fact_text": "The patient doesn't seem to have an acute process going on.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["She does not seem to have any specific acute process going on and seemed to feel comfortable after the Ativan was given, a small quantity was given to the patient."]
+    },
+    {
+      "fact_id": "F41",
+      "fact_text": "The patient seemed to feel comfortable after being given a small quantity of Ativan.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["She does not seem to have any specific acute process going on and seemed to feel comfortable after the Ativan was given, a small quantity was given to the patient."]
+    },
+    {
+      "fact_id": "F42",
+      "fact_text": "The patient's family, specifically her daughter, did not want any more workup to be done.",
+      "fact_type": "instruction",
+      "source_evidence": ["Family and daughter specifically did not want to pursue any workup at this point, which at this point I think is reasonable and we will have her follow up with ABC."]
+    },
+    {
+      "fact_id": "F43",
+      "fact_text": "The patient will have a follow up with ABC.",
+      "fact_type": "instruction",
+      "source_evidence": ["Family and daughter specifically did not want to pursue any workup at this point, which at this point I think is reasonable and we will have her follow up with ABC."]
+    },
+    {
+      "fact_id": "F44",
+      "fact_text": "The patient was discharged in a stable condition.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["She is discharged in stable condition."]
+    }
+  ],
+  "annotation_notes": ""
+}
