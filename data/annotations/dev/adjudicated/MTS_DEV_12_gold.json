@@ -1,0 +1,367 @@
+{
+  "example_id": "MTS_DEV_12",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=98-General+Medicine&Sample=1251-Right+Hand+Laceration",
+  "primary_content_type": "lab_values",
+  "selection_mode": "entire_report",
+  "source_text": "HISTORY: The patient is a 19-year-old male who was involved in a fight approximately an hour prior to his ED presentation. He punched a guy few times on the face, might be the mouth and then punched a drinking glass, breaking it and lacerating his right hand. He has three lacerations on his right hand. His wound was cleaned out thoroughly with tap water, and one of the navy corpsman tried to use Superglue and gauze to repair it. However, it continues to bleed and he is here for evaluation. PAST MEDICATION HISTORY: Significant for asthma and acne. CURRENT MEDICATIONS: Accutane and takes no other medications. TETANUS STATUS: Up-to-date. SOCIAL HISTORY: He is a nonsmoker. He has been drinking alcohol today, but has no history of alcohol or drug abuse. REVIEW OF SYSTEMS: Otherwise well. No febrile illness. No motor or sensory complaints of any sort or paresthesias in the hand. PHYSICAL EXAM: GENERAL: He is in no apparent distress. He is alert and oriented x3. Mental status is clear and appropriate. VITALS SIGNS: Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal. EXTREMITIES: Right hand, he has three lacerations all over the MCP joint of his right hand, irregular shaped over the fifth MCP and then over the fourth and third half wound, similarly the lacerations. All total approximately 4 cm in length. I see no foreign bodies, just capillary refills less than 2 seconds. Radial pulses intact. There is full range of motion with no gross deformities. No significant amount of edema associated with these in the dorsum of the hand. STUDIES: X-rays shows no open fracture or bony abnormality. EMERGENCY DEPARTMENT COURSE: The patient was anesthetized with 1% Xylocaine. Wounds were thoroughly irrigated with tap water with at least 2 liters. They were repaired with simple sutures of 4-0 Ethilon, total of 17 sutures, 16 of which were simple, one is a horizontal mattress. The patient was given Augmentin 875 mg p.o. due to the possibility of human bite wound. ASSESSMENT: RIGHT HAND LACERATIONS, SIMPLE X3, REPAIRED AS DESCRIBED. NO SIGNS OF BONY ABNORMALITY OR FOREIGN BODY. PLAN: The patient will be given Augmentin 875 mg 1 p.o. b.i.d. for 7 days. He will be given a prescription of Vicoprofen as he is unable to tolerate the Tylenol due to his Accutane. He will take 1 p.o. every 6 hours or as needed, #12. He will follow up for suture removal in 8 days. Should he develop any signs of infection, he will come immediately here for reevaluation. He is discharged in stable condition.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient was invovled in a fight around an hour before arriving at the emergency department.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient is a 19-year-old male who was involved in a fight approximately an hour prior to his ED presentation."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient punched another guy in the face a few times, possibly in the mouth.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "He punched a guy few times on the face, might be the mouth and then punched a drinking glass, breaking it and lacerating his right hand."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient punched a drinking glass, breaking it, and cutting his right hand.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "He punched a guy few times on the face, might be the mouth and then punched a drinking glass, breaking it and lacerating his right hand."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient had three lacerations on his right hand.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "He has three lacerations on his right hand."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient's right-hand wound was thoroughly cleaned with tap water before presentation.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "He has three lacerations on his right hand.",
+        "His wound was cleaned out thoroughly with tap water, and one of the navy corpsman tried to use Superglue and gauze to repair it."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "A navy corpsman attempted to repair the patient's right-hand wound using Superglue and gauze.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "He has three lacerations on his right hand.",
+        "His wound was cleaned out thoroughly with tap water, and one of the navy corpsman tried to use Superglue and gauze to repair it."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The right-hand wound continued to bleed after the attempted repair.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "His wound was cleaned out thoroughly with tap water, and one of the navy corpsman tried to use Superglue and gauze to repair it.",
+        "However, it continues to bleed and he is here for evaluation."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient's medical history is significant for asthma.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "PAST MEDICATION HISTORY: Significant for asthma and acne."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient's medical history is significant for acne.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "PAST MEDICATION HISTORY: Significant for asthma and acne."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient currently takes Accutane and no other medications.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "CURRENT MEDICATIONS: Accutane and takes no other medications."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient's tetanus shot is up-to-date.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "TETANUS STATUS: Up-to-date."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient is a nonsmoker.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "SOCIAL HISTORY: He is a nonsmoker."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient had been drinking alcohol on the day of presentation but had no history of alcohol or drug abuse.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "He has been drinking alcohol today, but has no history of alcohol or drug abuse."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient is well.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Otherwise well."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient had no febrile illness.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No febrile illness."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The patient had no motor or sensory complaints or paresthesias in the hand.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No motor or sensory complaints of any sort or paresthesias in the hand."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The patient was in no apparent distress.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "PHYSICAL EXAM: GENERAL: He is in no apparent distress."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The patient was alert and oriented x3.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "He is alert and oriented x3."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient's mental status was clear and appropriate.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Mental status is clear and appropriate."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The patient's temperature was 98.3.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITALS SIGNS: Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "The patient's heart rate was 100.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITALS SIGNS: Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "The patient's respiratory rate was 18.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITALS SIGNS: Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."
+      ]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The patient's blood pressure was 161/98.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITALS SIGNS: Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."
+      ]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "The patient's oxygen saturation was 99% on room air by pulse oximetry and was described as normal.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITALS SIGNS: Temperature is 98.3, heart rate 100, respirations 18, blood pressure 161/98, oxygen saturation 99% on room air by pulse oximetry, which is normal."
+      ]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "The three right-hand lacerations were located over the MCP joints, including irregularly shaped lacerations over the fifth, fourth, and third MCP areas.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "EXTREMITIES: Right hand, he has three lacerations all over the MCP joint of his right hand, irregular shaped over the fifth MCP and then over the fourth and third half wound, similarly the lacerations."
+      ]
+    },
+    {
+      "fact_id": "F26",
+      "fact_text": "The three right-hand lacerations measured approximately 4 cm in total length.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "EXTREMITIES: Right hand, he has three lacerations all over the MCP joint of his right hand, irregular shaped over the fifth MCP and then over the fourth and third half wound, similarly the lacerations.",
+        "All total approximately 4 cm in length."
+      ]
+    },
+    {
+      "fact_id": "F27",
+      "fact_text": "No foreign bodies were seen in the right-hand wounds.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "EXTREMITIES: Right hand, he has three lacerations all over the MCP joint of his right hand, irregular shaped over the fifth MCP and then over the fourth and third half wound, similarly the lacerations.",
+        "I see no foreign bodies, just capillary refills less than 2 seconds."
+      ]
+    },
+    {
+      "fact_id": "F28",
+      "fact_text": "Capillary refill in the right hand was less than 2 seconds.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "EXTREMITIES: Right hand, he has three lacerations all over the MCP joint of his right hand, irregular shaped over the fifth MCP and then over the fourth and third half wound, similarly the lacerations.",
+        "I see no foreign bodies, just capillary refills less than 2 seconds."
+      ]
+    },
+    {
+      "fact_id": "F29",
+      "fact_text": "The patient's radial pulses were intact.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Radial pulses intact."
+      ]
+    },
+    {
+      "fact_id": "F30",
+      "fact_text": "The right hand had full range of motion without gross deformities.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "EXTREMITIES: Right hand, he has three lacerations all over the MCP joint of his right hand, irregular shaped over the fifth MCP and then over the fourth and third half wound, similarly the lacerations.",
+        "There is full range of motion with no gross deformities."
+      ]
+    },
+    {
+      "fact_id": "F31",
+      "fact_text": "There was no significant edema associated with the lacerations on the dorsum of the right hand.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "EXTREMITIES: Right hand, he has three lacerations all over the MCP joint of his right hand, irregular shaped over the fifth MCP and then over the fourth and third half wound, similarly the lacerations.",
+        "No significant amount of edema associated with these in the dorsum of the hand."
+      ]
+    },
+    {
+      "fact_id": "F32",
+      "fact_text": "Right-hand x-rays showed no open fracture or bony abnormality.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "He has three lacerations on his right hand.",
+        "STUDIES: X-rays shows no open fracture or bony abnormality."
+      ]
+    },
+    {
+      "fact_id": "F33",
+      "fact_text": "The patient received 1% Xylocaine.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "The patient was anesthetized with 1% Xylocaine."
+      ]
+    },
+    {
+      "fact_id": "F34",
+      "fact_text": "The patient's right-hand wounds were thoroughly irrigated with at least 2 liters of tap water.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "He has three lacerations on his right hand.",
+        "Wounds were thoroughly irrigated with tap water with at least 2 liters."
+      ]
+    },
+    {
+      "fact_id": "F35",
+      "fact_text": "The patient's right-hand wounds were repaired with 17 sutures of 4-0 Ethilon: 16 simple sutures and one horizontal mattress suture.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "He has three lacerations on his right hand.",
+        "Wounds were thoroughly irrigated with tap water with at least 2 liters.",
+        "They were repaired with simple sutures of 4-0 Ethilon, total of 17 sutures, 16 of which were simple, one is a horizontal mattress."
+      ]
+    },
+    {
+      "fact_id": "F36",
+      "fact_text": "The patient was given Augmentin 875 mg by mouth because of the possibility of a human bite wound.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "The patient was given Augmentin 875 mg p.o. due to the possibility of human bite wound."
+      ]
+    },
+    {
+      "fact_id": "F37",
+      "fact_text": "The assessment was three simple right-hand lacerations repaired as described.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ASSESSMENT: RIGHT HAND LACERATIONS, SIMPLE X3, REPAIRED AS DESCRIBED."
+      ]
+    },
+    {
+      "fact_id": "F38",
+      "fact_text": "The patient was prescribed Augmentin 875 mg, 1 tablet by mouth, twice a day for 7 days.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "PLAN: The patient will be given Augmentin 875 mg 1 p.o. b.i.d. for 7 days."
+      ]
+    },
+    {
+      "fact_id": "F39",
+      "fact_text": "The patient was prescribed Vicoprofen because the report states that he was unable to tolerate Tylenol due to Accutane.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "He will be given a prescription of Vicoprofen as he is unable to tolerate the Tylenol due to his Accutane."
+      ]
+    },
+    {
+      "fact_id": "F40",
+      "fact_text": "The patient was instructed to take 1 Vicoprofen by mouth every 6 hours or as needed, with 12 supplied.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "He will be given a prescription of Vicoprofen as he is unable to tolerate the Tylenol due to his Accutane.",
+        "He will take 1 p.o. every 6 hours or as needed, #12."
+      ]
+    },
+    {
+      "fact_id": "F41",
+      "fact_text": "The patient was instructed to follow up for suture removal in 8 days.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "He will follow up for suture removal in 8 days."
+      ]
+    },
+    {
+      "fact_id": "F42",
+      "fact_text": "The patient was instructed to return immediately for reevaluation if he developed any signs of infection.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Should he develop any signs of infection, he will come immediately here for reevaluation."
+      ]
+    },
+    {
+      "fact_id": "F43",
+      "fact_text": "The patient was discharged in stable condition.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "He is discharged in stable condition."
+      ]
+    }
+  ],
+  "annotation_notes": ""
+}

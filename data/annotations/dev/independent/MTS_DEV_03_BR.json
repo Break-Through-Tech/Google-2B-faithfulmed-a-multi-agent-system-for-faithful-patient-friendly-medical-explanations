@@ -45,7 +45,7 @@
       "fact_text": "The patient's temperature has been between 102 and 104.",
       "fact_type": "lab_value",
       "source_evidence": [
-        "he patient's temperature has ranged between 102 and 104."
+        "The patient's temperature has ranged between 102 and 104."
       ]
     },
     {

@@ -7,6 +7,14 @@
   "facts": [
     {
       "fact_id": "F1",
+      "fact_text": "Informed consent was obtained from the patient.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Informed consent was obtained from the patient."
+      ]
+    },
+    {
+      "fact_id": "F2",
       "fact_text": "The palm side of the patient's wrist was prepared with Betadine and alcohol.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -14,7 +22,7 @@
       ]
     },
     {
-      "fact_id": "F2",
+      "fact_id": "F3",
       "fact_text": "The patient's wrist was rested at a 45 degree angle on top of a rolled-up towel.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -22,71 +30,86 @@
       ]
     },
     {
-      "fact_id": "F3",
-      "fact_text": "The doctor identified the palmaris longus tendon and distal wrist crease and marked them.",
+      "fact_id": "F4",
+      "fact_text": "The patient's palmaris longus tendon and distal wrist crease were identified and marked.",
       "fact_type": "procedure",
       "source_evidence": [
         "The palmaris longus tendon was identified and marked and so was the distal wrist crease."
       ]
     },
     {
-      "fact_id": "F4",
-      "fact_text": "The doctor inserted the patient's carpal tunnel using a 25 gauge needle approximately 1/2 in the direction of the distal wrist crease and inner side of the palmaris longus tendon.",
-      "fact_type": "lab_value",
+      "fact_id": "F5",
+      "fact_text": "A 25 gauge needle was used to enter the left carpal tunnel approximately 1/2 inch proximal to the distal wrist crease and ulnar to the palmaris longus tendon.",
+      "fact_type": "procedure",
       "source_evidence": [
+        "The volar aspect of the left wrist was prepared with Betadine and alcohol and rested at a 45 degree angle on a rolled-up towel.",
         "A 25 gauge needle was used to enter the carpal tunnel, approximately 1/2 inch proximal to the distal wrist crease and ulnar to the palmaris longus tendon."
       ]
     },
     {
-      "fact_id": "F5",
-      "fact_text": "The patient experienced skin tingling sensations in the median nerve area.",
-      "fact_type": "procedure",
+      "fact_id": "F6",
+      "fact_text": "Paresthesias were elicited in the median nerve distribution during the left carpal tunnel procedure.",
+      "fact_type": "diagnosis",
       "source_evidence": [
+        "The volar aspect of the left wrist was prepared with Betadine and alcohol and rested at a 45 degree angle on a rolled-up towel.",
         "Paresthesias were elicited in the median nerve distribution."
       ]
     },
     {
-      "fact_id": "F6",
-      "fact_text": "The needle was withdrawn from the patient was and then reinserted slightly sideways without the cause of skin tingling sensations.",
+      "fact_id": "F7",
+      "fact_text": "The needle was withdrawn and reinserted slightly laterally without eliciting further paresthesias.",
       "fact_type": "procedure",
       "source_evidence": [
+        "Paresthesias were elicited in the median nerve distribution.",
         "The needle was withdrawn and reinserted slightly laterally without elicitation of further paresthesias."
       ]
     },
     {
-      "fact_id": "F7",
-      "fact_text": "The needle was inserted through the patient's carpal tunnel without difficulty.",
+      "fact_id": "F8",
+      "fact_text": "The needle was advanced through the patient's left carpal tunnel without difficulty.",
       "fact_type": "procedure",
       "source_evidence": [
+        "The volar aspect of the left wrist was prepared with Betadine and alcohol and rested at a 45 degree angle on a rolled-up towel.",
         "The needle was advanced through the carpal tunnel without any difficulty."
       ]
     },
     {
-      "fact_id": "F8",
-      "fact_text": "The doctor injected the patient with 1 mL of triamcinolone after aspirating.",
+      "fact_id": "F9",
+      "fact_text": "After aspiration, 1 mL of triamcinolone was injected into the left carpal tunnel.",
       "fact_type": "medication",
       "source_evidence": [
+        "The volar aspect of the left wrist was prepared with Betadine and alcohol and rested at a 45 degree angle on a rolled-up towel.",
+        "The needle was advanced through the carpal tunnel without any difficulty.",
         "1 mL of triamcinolone was injected after aspiration."
       ]
     },
     {
-      "fact_id": "F9",
-      "fact_text": "The injected medication flowed freely without difficulty.",
+      "fact_id": "F10",
+      "fact_text": "The medication flowed freely without difficulty during the left carpal tunnel injection.",
       "fact_type": "procedure",
       "source_evidence": [
+        "1 mL of triamcinolone was injected after aspiration.",
         "The medications flowed freely without any difficulty."
       ]
     },
     {
-      "fact_id": "F10",
-      "fact_text": "The same procedure was done to the right wrist, using 1 mL of triamcinolone with no cause of skin tingling sensations.",
+      "fact_id": "F11",
+      "fact_text": "The same injection procedure was performed on the right wrist using 1 mL of triamcinolone.",
       "fact_type": "medication",
       "source_evidence": [
         "The same procedure was then done to the right wrist also using 1 mL of triamcinolone with no elucidation of paresthesias."
       ]
     },
     {
-      "fact_id": "F11",
+      "fact_id": "F12",
+      "fact_text": "No paresthesias were elicited during the right wrist procedure.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The same procedure was then done to the right wrist also using 1 mL of triamcinolone with no elucidation of paresthesias."
+      ]
+    },
+    {
+      "fact_id": "F13",
       "fact_text": "After the procedure was finished, the patient clenched and unclenched their fingers on both hands for 2 minutes to distribute the medication.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -94,15 +117,23 @@
       ]
     },
     {
-      "fact_id": "F12",
-      "fact_text": "There were no complications throughout the procedure and the patient experienced good relief of their symptoms after the procedure.",
+      "fact_id": "F14",
+      "fact_text": "There were no complications throughout the procedure.",
       "fact_type": "diagnosis",
       "source_evidence": [
         "There were no complications throughout the procedure and good relief of symptoms following the procedure."
       ]
     },
     {
-      "fact_id": "F13",
+      "fact_id": "F15",
+      "fact_text": "The patient experienced good relief of symptoms following the procedure.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "There were no complications throughout the procedure and good relief of symptoms following the procedure."
+      ]
+    },
+    {
+      "fact_id": "F16",
       "fact_text": "The patient was asked to report of any redness, swelling, inflammation, or fevers after the procedure.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -110,14 +141,13 @@
       ]
     },
     {
-      "fact_id": "F14",
-      "fact_text": "The patient was asked to restrict the use of their wrists for the next 24 hours.",
+      "fact_id": "F17",
+      "fact_text": "The patient was instructed to restrict use of the * extremity for the next 24 hours.",
       "fact_type": "instruction",
       "source_evidence": [
         "The patient has been asked to restrict the use of the * extremity for the next 24 hours."
       ]
     }
   ],
-  "annotation_notes": "",
-  "annotator_id": "BR"
+  "annotation_notes": ""
 }
