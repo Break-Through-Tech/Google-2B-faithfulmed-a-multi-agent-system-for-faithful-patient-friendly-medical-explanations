@@ -36,8 +36,7 @@ data/annotations/dev/*
 !data/annotations/dev/independent/**
 !data/annotations/dev/independent/.gitkeep
 !data/annotations/dev/adjudicated/
-data/annotations/dev/adjudicated/*
-!data/annotations/dev/adjudicated/.gitkeep
+!data/annotations/dev/adjudicated/**
 !data/annotations/test/
 data/annotations/test/*
 !data/annotations/test/independent/

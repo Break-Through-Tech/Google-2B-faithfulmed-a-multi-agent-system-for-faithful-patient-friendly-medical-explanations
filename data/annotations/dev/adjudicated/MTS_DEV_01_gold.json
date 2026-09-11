@@ -1,0 +1,216 @@
+{
+  "example_id": "MTS_DEV_01",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=3-Allergy+%2F+Immunology&Sample=386-Allergic+Rhinitis",
+  "primary_content_type": "medications",
+  "selection_mode": "entire_report",
+  "source_text": "SUBJECTIVE: This 23-year-old white female presents with complaint of allergies. She used to have allergies when she lived in Seattle but she thinks they are worse here. In the past, she has tried Claritin, and Zyrtec. Both worked for short time but then seemed to lose effectiveness. She has used Allegra also. She used that last summer and she began using it again two weeks ago. It does not appear to be working very well. She has used over-the-counter sprays but no prescription nasal sprays. She does have asthma but doest not require daily medication for this and does not think it is flaring up. MEDICATIONS: Her only medication currently is Ortho Tri-Cyclen and the Allegra. ALLERGIES: She has no known medicine allergies. OBJECTIVE: Vitals: Weight was 130 pounds and blood pressure 124/78. HEENT: Her throat was mildly erythematous without exudate. Nasal mucosa was erythematous and swollen. Only clear drainage was seen. TMs were clear. Neck: Supple without adenopathy. Lungs: Clear. ASSESSMENT: Allergic rhinitis. PLAN: 1. She will try Zyrtec instead of Allegra again. Another option will be to use loratadine. She does not think she has prescription coverage so that might be cheaper. 2. Samples of Nasonex two sprays in each nostril given for three weeks. A prescription was written as well.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient presents with a complaint of allergies.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "SUBJECTIVE: This 23-year-old white female presents with complaint of allergies."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient previously had allergies while living in Seattle but thinks they are worse in her current location.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She used to have allergies when she lived in Seattle but she thinks they are worse here."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient previously tried Claritin and Zyrtec; both worked briefly but then seemed to lose effectiveness.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "In the past, she has tried Claritin, and Zyrtec.",
+        "Both worked for short time but then seemed to lose effectiveness."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient used Allegra during the previous summer and restarted it two weeks ago.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "She has used Allegra also.",
+        "She used that last summer and she began using it again two weeks ago."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "Allegra does not appear to be working well for the patient.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "She has used Allegra also.",
+        "It does not appear to be working very well."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient has used over-the-counter sprays but has not used prescription nasal sprays.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "She has used over-the-counter sprays but no prescription nasal sprays."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient has asthma.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She does have asthma but doest not require daily medication for this and does not think it is flaring up."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient does not require daily medication for asthma.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She does have asthma but doest not require daily medication for this and does not think it is flaring up."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient does not think her asthma is flaring up.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She does have asthma but doest not require daily medication for this and does not think it is flaring up."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient's current medications are Ortho Tri-Cyclen and Allegra.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "MEDICATIONS: Her only medication currently is Ortho Tri-Cyclen and the Allegra."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient has no known medication allergies.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ALLERGIES: She has no known medicine allergies."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient's weight was 130 pounds.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "OBJECTIVE: Vitals: Weight was 130 pounds and blood pressure 124/78."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient's blood pressure was 124/78.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "OBJECTIVE: Vitals: Weight was 130 pounds and blood pressure 124/78."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient's throat was mildly erythematous without exudate.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HEENT: Her throat was mildly erythematous without exudate."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient's nasal mucosa was erythematous and swollen.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Nasal mucosa was erythematous and swollen."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "Only clear nasal drainage was observed.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Nasal mucosa was erythematous and swollen.",
+        "Only clear drainage was seen."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The patient's tympanic membranes were clear.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "TMs were clear."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The patient's neck was supple without adenopathy.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Neck: Supple without adenopathy."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient's lungs were clear.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Lungs: Clear."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The patient was assessed as having allergic rhinitis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ASSESSMENT: Allergic rhinitis."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "The patient will try Zyrtec again instead of Allegra.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "She will try Zyrtec instead of Allegra again."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "Loratadine was identified as another medication option.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Another option will be to use loratadine."
+      ]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The patient does not think she has prescription coverage and believes loratadine might be cheaper.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Another option will be to use loratadine.",
+        "She does not think she has prescription coverage so that might be cheaper."
+      ]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "The patient was given Nasonex samples with directions to use two sprays in each nostril for three weeks.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Samples of Nasonex two sprays in each nostril given for three weeks."
+      ]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "A prescription for Nasonex was also written.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Samples of Nasonex two sprays in each nostril given for three weeks.",
+        "A prescription was written as well."
+      ]
+    }
+  ],
+  "adjudication_notes": ""
+}

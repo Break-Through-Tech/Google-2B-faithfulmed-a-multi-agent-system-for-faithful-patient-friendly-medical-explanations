@@ -1,0 +1,170 @@
+{
+  "example_id": "MTS_DEV_08",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=66-Pediatrics+%2D+Neonatal&Sample=286-Atopic+Eczema",
+  "primary_content_type": "medications",
+  "selection_mode": "entire_report",
+  "source_text": "SUBJECTIVE: This 1+ year, black female, new patient in dermatology, sent in for consult from ABC Practice for initial evaluation of a lifelong history of atopic eczema. The patient's mom is from Tanzania. The patient has been treated with Elidel cream b.i.d. for six months but apparently this has stopped working now and it seems to make her more dry and plus she has been using some Johnson's Baby Oil on her. The patient is a well-developed baby. Appears stated age. Overall health is good. FAMILY, SOCIAL, AND ALLERGY HISTORY: The patient has eczema and a positive atopic family history. No psoriasis. No known drug allergies. CURRENT MEDICATIONS: None. PHYSICAL EXAMINATION: The patient has eczematous changes today on her face, trunk, and extremities. IMPRESSION: Atopic eczema. TREATMENT: 1. Discussed condition and treatment with Mom. 2. Continue bathing twice a week. 3. Discontinue hot soapy water. 4. Discontinue Elidel for now. 5. Add Aristocort cream 0.25%, Polysporin ointment, Aquaphor b.i.d. and p.r.n. itch. We will see her in one month if not better otherwise on a p.r.n. basis. Send a letter to ABC Practice program.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient was sent by ABC Practice for an initial dermatology evaluation of a lifelong history of atopic eczema.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "SUBJECTIVE: This 1+ year, black female, new patient in dermatology, sent in for consult from ABC Practice for initial evaluation of a lifelong history of atopic eczema."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient had been treated with Elidel cream twice daily for six months.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "The patient has been treated with Elidel cream b.i.d. for six months but apparently this has stopped working now and it seems to make her more dry and plus she has been using some Johnson's Baby Oil on her."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "Elidel cream had apparently stopped working and seemed to make the patient drier.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "The patient has been treated with Elidel cream b.i.d. for six months but apparently this has stopped working now and it seems to make her more dry and plus she has been using some Johnson's Baby Oil on her."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient had been using Johnson's Baby Oil.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "The patient has been treated with Elidel cream b.i.d. for six months but apparently this has stopped working now and it seems to make her more dry and plus she has been using some Johnson's Baby Oil on her."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient was described as a well-developed baby.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient is a well-developed baby."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient's overall health was described as good.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Overall health is good."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient had eczema.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "FAMILY, SOCIAL, AND ALLERGY HISTORY: The patient has eczema and a positive atopic family history."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient had a positive family history of atopy.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "FAMILY, SOCIAL, AND ALLERGY HISTORY: The patient has eczema and a positive atopic family history."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient did not have psoriasis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No psoriasis."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient had no known drug allergies.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No known drug allergies."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The current-medications section reported no current medications.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "CURRENT MEDICATIONS: None."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient had eczematous changes on her face, trunk, and extremities.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "PHYSICAL EXAMINATION: The patient has eczematous changes today on her face, trunk, and extremities."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The clinical impression was atopic eczema.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "IMPRESSION: Atopic eczema."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient's condition and treatment were discussed with her mother.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Discussed condition and treatment with Mom."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient was instructed to continue bathing twice a week.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Continue bathing twice a week."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The patient was instructed to discontinue hot soapy water.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Discontinue hot soapy water."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The patient was instructed to discontinue Elidel for the time being.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Discontinue Elidel for now."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The patient's treatment plan states: 'Add Aristocort cream 0.25%, Polysporin ointment, Aquaphor b.i.d. and p.r.n. itch.'",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Add Aristocort cream 0.25%, Polysporin ointment, Aquaphor b.i.d. and p.r.n. itch."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient was to be seen again in one month if she was not better; otherwise, follow-up would be as needed.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "We will see her in one month if not better otherwise on a p.r.n. basis."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "A letter was to be sent to the ABC Practice program.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Send a letter to ABC Practice program."
+      ]
+    }
+  ],
+  "adjudication_notes": ""
+}
