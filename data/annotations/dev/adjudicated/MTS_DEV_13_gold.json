@@ -23,6 +23,14 @@
     },
     {
       "fact_id": "F3",
+      "fact_text": "The patient is a 14-month-old Caucasian boy.",
+      "fact_type": "demographic",
+      "source_evidence": [
+        "HOSPITAL COURSE: This is a 14-month-old baby boy Caucasian who came in with presumptive diagnosis of Kawasaki with fever for more than 5 days and conjunctivitis, mild arthritis with edema, rash, resolving and with elevated neutrophils and thrombocytosis, elevated CRP and ESR."
+      ]
+    },
+    {
+      "fact_id": "F4",
       "fact_text": "The patient initially presented with a presumptive diagnosis of Kawasaki disease.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -30,7 +38,7 @@
       ]
     },
     {
-      "fact_id": "F4",
+      "fact_id": "F5",
       "fact_text": "The patient had fever for more than 5 days.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -38,7 +46,7 @@
       ]
     },
     {
-      "fact_id": "F5",
+      "fact_id": "F6",
       "fact_text": "The patient presented with conjunctivitis.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -46,7 +54,7 @@
       ]
     },
     {
-      "fact_id": "F6",
+      "fact_id": "F7",
       "fact_text": "The patient presented with mild arthritis and edema.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -54,7 +62,7 @@
       ]
     },
     {
-      "fact_id": "F7",
+      "fact_id": "F8",
       "fact_text": "The patient presented with a resolving rash.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -62,7 +70,7 @@
       ]
     },
     {
-      "fact_id": "F8",
+      "fact_id": "F9",
       "fact_text": "The patient had elevated neutrophils.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -70,7 +78,7 @@
       ]
     },
     {
-      "fact_id": "F9",
+      "fact_id": "F10",
       "fact_text": "The patient had thrombocytosis.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -78,7 +86,7 @@
       ]
     },
     {
-      "fact_id": "F10",
+      "fact_id": "F11",
       "fact_text": "The patient had elevated CRP.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -86,7 +94,7 @@
       ]
     },
     {
-      "fact_id": "F11",
+      "fact_id": "F12",
       "fact_text": "The patient had elevated ESR.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -94,7 +102,7 @@
       ]
     },
     {
-      "fact_id": "F12",
+      "fact_id": "F13",
       "fact_text": "When the patient was sent to the hospital, he had a fever of 102 degrees.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -102,7 +110,7 @@
       ]
     },
     {
-      "fact_id": "F13",
+      "fact_id": "F14",
       "fact_text": "After evaluation, the patient was started on high-dose aspirin based on the criteria.",
       "fact_type": "medication",
       "source_evidence": [
@@ -110,7 +118,7 @@
       ]
     },
     {
-      "fact_id": "F14",
+      "fact_id": "F15",
       "fact_text": "After evaluation, the patient was started on IVIG based on the criteria.",
       "fact_type": "medication",
       "source_evidence": [
@@ -118,7 +126,7 @@
       ]
     },
     {
-      "fact_id": "F15",
+      "fact_id": "F16",
       "fact_text": "The patient received an echocardiogram with a negative result.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -126,7 +134,7 @@
       ]
     },
     {
-      "fact_id": "F16",
+      "fact_id": "F17",
       "fact_text": "The patient received an IVIG once.",
       "fact_type": "medication",
       "source_evidence": [
@@ -134,7 +142,7 @@
       ]
     },
     {
-      "fact_id": "F17",
+      "fact_id": "F18",
       "fact_text": "Between 12 hours of the IVIG, the patient's fever spiked again.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -142,7 +150,7 @@
       ]
     },
     {
-      "fact_id": "F18",
+      "fact_id": "F19",
       "fact_text": "The patient received a second IVIG.",
       "fact_type": "medication",
       "source_evidence": [
@@ -150,7 +158,7 @@
       ]
     },
     {
-      "fact_id": "F19",
+      "fact_id": "F20",
       "fact_text": "Ater receiving the second IVIG, the aptient's fever did not spike anymore.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -158,7 +166,7 @@
       ]
     },
     {
-      "fact_id": "F20",
+      "fact_id": "F21",
       "fact_text": "By the day of discharge, the patient's fever and rash had completely resolved.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -166,7 +174,7 @@
       ]
     },
     {
-      "fact_id": "F21",
+      "fact_id": "F22",
       "fact_text": "By the day of discharge, the patient had no conjunctivitis or redness of the mucous membranes.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -174,7 +182,7 @@
       ]
     },
     {
-      "fact_id": "F22",
+      "fact_id": "F23",
       "fact_text": "The patient was taking good p.o. before discharge.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -182,7 +190,7 @@
       ]
     },
     {
-      "fact_id": "F23",
+      "fact_id": "F24",
       "fact_text": "With a very close followup and cardiac followup, the patient will be sent home.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -190,7 +198,7 @@
       ]
     },
     {
-      "fact_id": "F24",
+      "fact_id": "F25",
       "fact_text": "The patient will be able to move freely after discharge.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -198,7 +206,7 @@
       ]
     },
     {
-      "fact_id": "F25",
+      "fact_id": "F26",
       "fact_text": "The patient will be able to eat by mouth as freely.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -206,7 +214,7 @@
       ]
     },
     {
-      "fact_id": "F26",
+      "fact_id": "F27",
       "fact_text": "The patient will receive a high dose of 340 mg of aspirin every 6 hours for 1 day upon discharge.",
       "fact_type": "medication",
       "source_evidence": [
@@ -214,7 +222,7 @@
       ]
     },
     {
-      "fact_id": "F27",
+      "fact_id": "F28",
       "fact_text": "After the first day, the patient will receive a low dose of 40 mg of aspirin once a day for 14 days.",
       "fact_type": "medication",
       "source_evidence": [
@@ -222,7 +230,7 @@
       ]
     },
     {
-      "fact_id": "F28",
+      "fact_id": "F29",
       "fact_text": "The patient will also receive 15 mg of Prevacid by mouth to prevent his GI from aspirin.",
       "fact_type": "medication",
       "source_evidence": [
@@ -230,7 +238,7 @@
       ]
     },
     {
-      "fact_id": "F29",
+      "fact_id": "F30",
       "fact_text": "The patient should be followed up by his primary doctor in 2 to 3 days.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -238,7 +246,7 @@
       ]
     },
     {
-      "fact_id": "F30",
+      "fact_id": "F31",
       "fact_text": "The patient should follow up with cardiology for an echocardiogram in 4 to 6 weeks.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -246,7 +254,7 @@
       ]
     },
     {
-      "fact_id": "F31",
+      "fact_id": "F32",
       "fact_text": "Because of IVIG, the patient was instructed not to receive any vaccine in less than 11 months, with the source specifically mentioning live-virus vaccines.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -254,7 +262,7 @@
       ]
     },
     {
-      "fact_id": "F32",
+      "fact_id": "F33",
       "fact_text": "If the patient develops any rashes or fevers, they should go to their primary care doctor as soon as possible.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -262,5 +270,5 @@
       ]
     }
   ],
-  "annotation_notes": ""
+  "adjudication_notes": ""
 }

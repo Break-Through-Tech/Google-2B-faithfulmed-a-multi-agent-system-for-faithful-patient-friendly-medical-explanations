@@ -32,6 +32,14 @@
     },
     {
       "fact_id": "F4",
+      "fact_text": "The patient is a 66-year-old African-American male.",
+      "fact_type": "demographic",
+      "source_evidence": [
+        "INDICATIONS FOR PROCEDURE: The patient is a 66-year-old African-American male who has been in the intensive care unit for over a month with bilateral chest tubes for chronic draining pleural effusions with serous drainage."
+      ]
+    },
+    {
+      "fact_id": "F5",
       "fact_text": "The patient had been in the intensive care unit for over a month.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -39,7 +47,7 @@
       ]
     },
     {
-      "fact_id": "F5",
+      "fact_id": "F6",
       "fact_text": "The patient had bilateral chest tubes for chronic draining pleural effusions with serous drainage.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -47,7 +55,7 @@
       ]
     },
     {
-      "fact_id": "F6",
+      "fact_id": "F7",
       "fact_text": "A decision was made to remove both of the patient's chest tubes.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -55,7 +63,7 @@
       ]
     },
     {
-      "fact_id": "F7",
+      "fact_id": "F8",
       "fact_text": "Because of the fistulous tracts, the patient's chest-tube wounds required closure with sutures.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -63,7 +71,7 @@
       ]
     },
     {
-      "fact_id": "F8",
+      "fact_id": "F9",
       "fact_text": "The patient agreed to proceed with the chest-tube removal and wound closure.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -72,7 +80,7 @@
       ]
     },
     {
-      "fact_id": "F9",
+      "fact_id": "F10",
       "fact_text": "The patient was prepared and draped at the bedside over both chest-tube sites.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -80,7 +88,7 @@
       ]
     },
     {
-      "fact_id": "F10",
+      "fact_id": "F11",
       "fact_text": "Pressure was applied over both of the patient's chest-tube sites.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -89,7 +97,7 @@
       ]
     },
     {
-      "fact_id": "F11",
+      "fact_id": "F12",
       "fact_text": "The skin at the chest-tube sites was closed with interrupted #3-0 Ethilon sutures.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -98,7 +106,7 @@
       ]
     },
     {
-      "fact_id": "F12",
+      "fact_id": "F13",
       "fact_text": "The skin was cleansed, and Vaseline occlusive dressings were applied over the chest-tube sites.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -107,7 +115,7 @@
       ]
     },
     {
-      "fact_id": "F13",
+      "fact_id": "F14",
       "fact_text": "The same wound-closure and dressing procedure was performed on the other chest-tube site.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -117,7 +125,7 @@
       ]
     },
     {
-      "fact_id": "F14",
+      "fact_id": "F15",
       "fact_text": "Both chest tubes were removed during full inspiration.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -125,7 +133,7 @@
       ]
     },
     {
-      "fact_id": "F15",
+      "fact_id": "F16",
       "fact_text": "The patient's vital signs remained stable throughout the procedure.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -133,7 +141,7 @@
       ]
     },
     {
-      "fact_id": "F16",
+      "fact_id": "F17",
       "fact_text": "The patient will remain in the intensive care unit for continued monitoring.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -141,5 +149,5 @@
       ]
     }
   ],
-  "annotation_notes": ""
+  "adjudication_notes": ""
 }

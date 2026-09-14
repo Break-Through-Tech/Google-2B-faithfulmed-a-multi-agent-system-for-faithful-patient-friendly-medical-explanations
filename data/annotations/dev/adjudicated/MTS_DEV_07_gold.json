@@ -87,6 +87,14 @@
     },
     {
       "fact_id": "F11",
+      "fact_text": "The patient is a 38-year-old Caucasian male.",
+      "fact_type": "demographic",
+      "source_evidence": [
+        "INDICATION FOR PROCEDURE: The patient is a 38-year-old Caucasian male who was referred to clinic to evaluate a cyst in his left mandible."
+      ]
+    },
+    {
+      "fact_id": "F12",
       "fact_text": "The patient was referred to the clinic for evaluation of a cyst in the left mandible.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -94,7 +102,7 @@
       ]
     },
     {
-      "fact_id": "F12",
+      "fact_id": "F13",
       "fact_text": "A preoperative biopsy of the left mandibular cyst identified it as a benign dentigerous cyst.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -103,7 +111,7 @@
       ]
     },
     {
-      "fact_id": "F13",
+      "fact_id": "F14",
       "fact_text": "After evaluating the cyst and impacted wisdom tooth near the inferior border of the mandible, it was determined that the patient would benefit from removal of the cyst and tooth #17 under general anesthesia in the operating room.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -111,7 +119,7 @@
       ]
     },
     {
-      "fact_id": "F14",
+      "fact_id": "F15",
       "fact_text": "The risks, benefits, and treatment alternatives were thoroughly discussed with the patient, and consent was obtained.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -119,7 +127,7 @@
       ]
     },
     {
-      "fact_id": "F15",
+      "fact_id": "F16",
       "fact_text": "The patient was taken to operating room #1 at Hospital and placed supine on the operating-room table.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -127,7 +135,7 @@
       ]
     },
     {
-      "fact_id": "F16",
+      "fact_id": "F17",
       "fact_text": "General anesthesia was induced with intravenous anesthetics and maintained with nasal endotracheal intubation and inhalation anesthetics.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -135,7 +143,7 @@
       ]
     },
     {
-      "fact_id": "F17",
+      "fact_id": "F18",
       "fact_text": "The patient was prepared and draped in the usual oro-maxillofacial surgery fashion.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -143,7 +151,7 @@
       ]
     },
     {
-      "fact_id": "F18",
+      "fact_id": "F19",
       "fact_text": "Approximately #6 mL of 2% lidocaine with 1:100,000 epinephrine was injected using the usual nerve-block technique.",
       "fact_type": "medication",
       "source_evidence": [
@@ -151,7 +159,7 @@
       ]
     },
     {
-      "fact_id": "F19",
+      "fact_id": "F20",
       "fact_text": "After allowing time for the local anesthesia to take effect, a moistened Ray-Tec sponge was placed in the posterior pharynx.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -160,7 +168,7 @@
       ]
     },
     {
-      "fact_id": "F20",
+      "fact_id": "F21",
       "fact_text": "Peridex mouth rinse was used to prepare the oral cavity and was then removed with suction.",
       "fact_type": "medication",
       "source_evidence": [
@@ -169,7 +177,7 @@
       ]
     },
     {
-      "fact_id": "F21",
+      "fact_id": "F22",
       "fact_text": "A sagittal split osteotomy incision was made along the left ramus using a #15 blade.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -177,7 +185,7 @@
       ]
     },
     {
-      "fact_id": "F22",
+      "fact_id": "F23",
       "fact_text": "A full-thickness mucoperiosteal flap was elevated.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -185,7 +193,7 @@
       ]
     },
     {
-      "fact_id": "F23",
+      "fact_id": "F24",
       "fact_text": "The bone crest was identified where the crown had super-erupted since the biopsy six weeks earlier.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -193,7 +201,7 @@
       ]
     },
     {
-      "fact_id": "F24",
+      "fact_id": "F25",
       "fact_text": "A Hall drill was used to develop a buccal osteotomy.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -201,7 +209,7 @@
       ]
     },
     {
-      "fact_id": "F25",
+      "fact_id": "F26",
       "fact_text": "Impacted tooth #17 was sectioned in half, fractured with an elevator, and delivered in two pieces.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -210,7 +218,7 @@
       ]
     },
     {
-      "fact_id": "F26",
+      "fact_id": "F27",
       "fact_text": "The remaining cystic lining was removed from the left mandible using a double-ended curette.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -218,7 +226,7 @@
       ]
     },
     {
-      "fact_id": "F27",
+      "fact_id": "F28",
       "fact_text": "The removed cystic lining and tooth #17 were sent to pathology for review.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -227,7 +235,7 @@
       ]
     },
     {
-      "fact_id": "F28",
+      "fact_id": "F29",
       "fact_text": "The operative area was irrigated with copious amounts of sterile water.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -235,7 +243,7 @@
       ]
     },
     {
-      "fact_id": "F29",
+      "fact_id": "F30",
       "fact_text": "The operative area was closed with 3-0 chromic gut suture.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -243,7 +251,7 @@
       ]
     },
     {
-      "fact_id": "F30",
+      "fact_id": "F31",
       "fact_text": "The throat pack was removed.",
       "fact_type": "procedure",
       "source_evidence": [

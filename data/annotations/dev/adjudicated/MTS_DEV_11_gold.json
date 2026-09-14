@@ -15,6 +15,14 @@
     },
     {
       "fact_id": "F2",
+      "fact_text": "The patient is a 56-year-old man.",
+      "fact_type": "demographic",
+      "source_evidence": [
+        "CLINICAL INFORMATION: This patient is a 56-year-old gentleman who had symptoms of obstructive sleep apnea with snoring, hypertension."
+      ]
+    },
+    {
+      "fact_id": "F3",
       "fact_text": "The patient had symptoms of obstructive sleep apnea with snoring.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -22,7 +30,7 @@
       ]
     },
     {
-      "fact_id": "F3",
+      "fact_id": "F4",
       "fact_text": "The patient had hypertension.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -30,7 +38,7 @@
       ]
     },
     {
-      "fact_id": "F4",
+      "fact_id": "F5",
       "fact_text": "The sleep study was performed on 01/24/06.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -38,7 +46,7 @@
       ]
     },
     {
-      "fact_id": "F5",
+      "fact_id": "F6",
       "fact_text": "During the sleep study, the patient weighed 191 pounds.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -46,15 +54,15 @@
       ]
     },
     {
-      "fact_id": "F6",
+      "fact_id": "F7",
       "fact_text": "During the sleep study, the patient was five feet and seven inches tall.",
-      "fact_type": "lab_Value",
+      "fact_type": "lab_value",
       "source_evidence": [
         "The patient weighed 191 pounds, five feet, seven inches tall."
       ]
     },
     {
-      "fact_id": "F7",
+      "fact_id": "F8",
       "fact_text": "The patient estimated that it took about 15 minutes to fall asleep.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -62,7 +70,7 @@
       ]
     },
     {
-      "fact_id": "F8",
+      "fact_id": "F9",
       "fact_text": "The patient estimated to have slept for six and a half hours.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -70,7 +78,7 @@
       ]
     },
     {
-      "fact_id": "F9",
+      "fact_id": "F10",
       "fact_text": "The patient reported having some dreams.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -78,7 +86,7 @@
       ]
     },
     {
-      "fact_id": "F10",
+      "fact_id": "F11",
       "fact_text": "The patient reported not waking up, but described the sleep as less refreshing.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -87,7 +95,7 @@
       ]
     },
     {
-      "fact_id": "F11",
+      "fact_id": "F12",
       "fact_text": "The patient was sleepy in the morning.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -95,7 +103,7 @@
       ]
     },
     {
-      "fact_id": "F12",
+      "fact_id": "F13",
       "fact_text": "An all-night polysomnogram was recorded with a Compumedics E Series digital polysomnograph.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -103,7 +111,7 @@
       ]
     },
     {
-      "fact_id": "F13",
+      "fact_id": "F14",
       "fact_text": "After preparing the patient's scalp, Ag/AgCl electrodes were applied according to the International 10-20 System.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -111,7 +119,7 @@
       ]
     },
     {
-      "fact_id": "F14",
+      "fact_id": "F15",
       "fact_text": "The EEG was monitored from C4-A1, C3-A2, O2-A1 and O2-A1.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -119,7 +127,7 @@
       ]
     },
     {
-      "fact_id": "F15",
+      "fact_id": "F16",
       "fact_text": "EOG and EMG were continuously monitored using electrodes at the outer canthi and chin, respectively.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -127,7 +135,7 @@
       ]
     },
     {
-      "fact_id": "F16",
+      "fact_id": "F17",
       "fact_text": "The patient's nasal and oral airlow were monitored with a triple port Thermistor.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -135,7 +143,7 @@
       ]
     },
     {
-      "fact_id": "F17",
+      "fact_id": "F18",
       "fact_text": "Respiratory effort was measured using piezoelectric technology with abdominal and thoracic belts.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -143,7 +151,7 @@
       ]
     },
     {
-      "fact_id": "F18",
+      "fact_id": "F19",
       "fact_text": "The patient's blood oxygen saturation was continuously monitored by pulse oximetry.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -151,7 +159,7 @@
       ]
     },
     {
-      "fact_id": "F19",
+      "fact_id": "F20",
       "fact_text": "Heart rate and rhythm were monitored by surface electrocardiography.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -159,7 +167,7 @@
       ]
     },
     {
-      "fact_id": "F20",
+      "fact_id": "F21",
       "fact_text": "Anterior tibialis EMG was studied using surface-mounted electrodes placed 5 cm apart on both legs.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -167,7 +175,7 @@
       ]
     },
     {
-      "fact_id": "F21",
+      "fact_id": "F22",
       "fact_text": "The patient's body position and snoring level were also monitored.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -175,7 +183,7 @@
       ]
     },
     {
-      "fact_id": "F22",
+      "fact_id": "F23",
       "fact_text": "The technical quality of the sleep study was good.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -183,7 +191,7 @@
       ]
     },
     {
-      "fact_id": "F23",
+      "fact_id": "F24",
       "fact_text": "The total recording time was 406 minutes.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -191,7 +199,7 @@
       ]
     },
     {
-      "fact_id": "F24",
+      "fact_id": "F25",
       "fact_text": "The total sleep time was 365 minutes.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -199,7 +207,7 @@
       ]
     },
     {
-      "fact_id": "F25",
+      "fact_id": "F26",
       "fact_text": "The measured sleep latency was 25.5 minutes.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -207,7 +215,7 @@
       ]
     },
     {
-      "fact_id": "F26",
+      "fact_id": "F27",
       "fact_text": "The REM latency was 49 minutes.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -215,7 +223,7 @@
       ]
     },
     {
-      "fact_id": "F27",
+      "fact_id": "F28",
       "fact_text": "An unidentified electrophysiologic measurement was reported as 90%.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -223,7 +231,7 @@
       ]
     },
     {
-      "fact_id": "F28",
+      "fact_id": "F29",
       "fact_text": "The report states that sleep latency measured 86%.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -231,7 +239,7 @@
       ]
     },
     {
-      "fact_id": "F29",
+      "fact_id": "F30",
       "fact_text": "The patient spent 10% of the time awake in bed.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -239,7 +247,7 @@
       ]
     },
     {
-      "fact_id": "F30",
+      "fact_id": "F31",
       "fact_text": "Stage I sleep was reported as 3.8.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -247,7 +255,7 @@
       ]
     },
     {
-      "fact_id": "F31",
+      "fact_id": "F32",
       "fact_text": "Stage II sleep was reported as 50.5.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -255,7 +263,7 @@
       ]
     },
     {
-      "fact_id": "F32",
+      "fact_id": "F33",
       "fact_text": "Stage III sleep was 14%.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -263,7 +271,7 @@
       ]
     },
     {
-      "fact_id": "F33",
+      "fact_id": "F34",
       "fact_text": "REM sleep was 21.7%.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -271,7 +279,7 @@
       ]
     },
     {
-      "fact_id": "F34",
+      "fact_id": "F35",
       "fact_text": "The patient had relatively good sleep architecture except for excessive waking.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -279,7 +287,7 @@
       ]
     },
     {
-      "fact_id": "F35",
+      "fact_id": "F36",
       "fact_text": "The total number of apnea/hypopnea events was 75.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -287,7 +295,7 @@
       ]
     },
     {
-      "fact_id": "F36",
+      "fact_id": "F37",
       "fact_text": "The report states that the age index was 12.3 per hour.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -295,7 +303,7 @@
       ]
     },
     {
-      "fact_id": "F37",
+      "fact_id": "F38",
       "fact_text": "The patient's REM age index was 15 per hour.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -303,7 +311,7 @@
       ]
     },
     {
-      "fact_id": "F38",
+      "fact_id": "F39",
       "fact_text": "The total number of arousals was 101.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -311,7 +319,7 @@
       ]
     },
     {
-      "fact_id": "F39",
+      "fact_id": "F40",
       "fact_text": "The arousal index was 15.6 per hour.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -319,7 +327,7 @@
       ]
     },
     {
-      "fact_id": "F40",
+      "fact_id": "F41",
       "fact_text": "Oxygen saturation decreased to 88%.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -327,7 +335,7 @@
       ]
     },
     {
-      "fact_id": "F41",
+      "fact_id": "F42",
       "fact_text": "The longest event was a 35 second hypopnea with an FiO2 of 94%.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -335,7 +343,7 @@
       ]
     },
     {
-      "fact_id": "F42",
+      "fact_id": "F43",
       "fact_text": "The total number of limb movements was 92.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -343,7 +351,7 @@
       ]
     },
     {
-      "fact_id": "F43",
+      "fact_id": "F44",
       "fact_text": "The PRM index was 15.1 per hour.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -351,7 +359,7 @@
       ]
     },
     {
-      "fact_id": "F44",
+      "fact_id": "F45",
       "fact_text": "The PRM arousal index was 8.9 per hour.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -359,7 +367,7 @@
       ]
     },
     {
-      "fact_id": "F45",
+      "fact_id": "F46",
       "fact_text": "The patient's sleeping heart rate ranged from 60 to 64 per minute.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -367,7 +375,7 @@
       ]
     },
     {
-      "fact_id": "F46",
+      "fact_id": "F47",
       "fact_text": "The patient's awake heart rate ranged from 70 to 78 per minute.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -375,7 +383,7 @@
       ]
     },
     {
-      "fact_id": "F47",
+      "fact_id": "F48",
       "fact_text": "The conclusion was obstructive sleep apnea syndrome with moderately loud snoring and a significant apnea/hypopnea index.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -383,7 +391,7 @@
       ]
     },
     {
-      "fact_id": "F48",
+      "fact_id": "F49",
       "fact_text": "Overnight polysomnography was documented under Axis B.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -391,7 +399,7 @@
       ]
     },
     {
-      "fact_id": "F49",
+      "fact_id": "F50",
       "fact_text": "Hypertension was documented under Axis C.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -399,7 +407,7 @@
       ]
     },
     {
-      "fact_id": "F50",
+      "fact_id": "F51",
       "fact_text": "The patient should return for a nasal CPAP titration.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -407,7 +415,7 @@
       ]
     },
     {
-      "fact_id": "F51",
+      "fact_id": "F52",
       "fact_text": "The report states that untreated sleep apnea may lead to chronic hypertension, which may have cardiovascular consequences.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -415,7 +423,7 @@
       ]
     },
     {
-      "fact_id": "F52",
+      "fact_id": "F53",
       "fact_text": "The report states that excessive daytime sleepiness, dysfunction, and memory loss may also occur.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -423,5 +431,5 @@
       ]
     }
   ],
-  "annotation_notes": ""
+  "adjudication_notes": ""
 }

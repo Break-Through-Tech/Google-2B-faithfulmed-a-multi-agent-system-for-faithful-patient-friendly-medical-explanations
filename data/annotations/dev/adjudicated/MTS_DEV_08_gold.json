@@ -7,6 +7,14 @@
   "facts": [
     {
       "fact_id": "F1",
+      "fact_text": "The patient is described as a 1+ year, Black female.",
+      "fact_type": "demographic",
+      "source_evidence": [
+        "SUBJECTIVE: This 1+ year, black female, new patient in dermatology, sent in for consult from ABC Practice for initial evaluation of a lifelong history of atopic eczema."
+      ]
+    },
+    {
+      "fact_id": "F2",
       "fact_text": "The patient was sent by ABC Practice for an initial dermatology evaluation of a lifelong history of atopic eczema.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -14,7 +22,7 @@
       ]
     },
     {
-      "fact_id": "F2",
+      "fact_id": "F3",
       "fact_text": "The patient had been treated with Elidel cream twice daily for six months.",
       "fact_type": "medication",
       "source_evidence": [
@@ -22,7 +30,7 @@
       ]
     },
     {
-      "fact_id": "F3",
+      "fact_id": "F4",
       "fact_text": "Elidel cream had apparently stopped working and seemed to make the patient drier.",
       "fact_type": "medication",
       "source_evidence": [
@@ -30,7 +38,7 @@
       ]
     },
     {
-      "fact_id": "F4",
+      "fact_id": "F5",
       "fact_text": "The patient had been using Johnson's Baby Oil.",
       "fact_type": "medication",
       "source_evidence": [
@@ -38,7 +46,7 @@
       ]
     },
     {
-      "fact_id": "F5",
+      "fact_id": "F6",
       "fact_text": "The patient was described as a well-developed baby.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -46,7 +54,7 @@
       ]
     },
     {
-      "fact_id": "F6",
+      "fact_id": "F7",
       "fact_text": "The patient's overall health was described as good.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -54,7 +62,7 @@
       ]
     },
     {
-      "fact_id": "F7",
+      "fact_id": "F8",
       "fact_text": "The patient had eczema.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -62,7 +70,7 @@
       ]
     },
     {
-      "fact_id": "F8",
+      "fact_id": "F9",
       "fact_text": "The patient had a positive family history of atopy.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -70,7 +78,7 @@
       ]
     },
     {
-      "fact_id": "F9",
+      "fact_id": "F10",
       "fact_text": "The patient did not have psoriasis.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -78,7 +86,7 @@
       ]
     },
     {
-      "fact_id": "F10",
+      "fact_id": "F11",
       "fact_text": "The patient had no known drug allergies.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -86,7 +94,7 @@
       ]
     },
     {
-      "fact_id": "F11",
+      "fact_id": "F12",
       "fact_text": "The current-medications section reported no current medications.",
       "fact_type": "medication",
       "source_evidence": [
@@ -94,7 +102,7 @@
       ]
     },
     {
-      "fact_id": "F12",
+      "fact_id": "F13",
       "fact_text": "The patient had eczematous changes on her face, trunk, and extremities.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -102,7 +110,7 @@
       ]
     },
     {
-      "fact_id": "F13",
+      "fact_id": "F14",
       "fact_text": "The clinical impression was atopic eczema.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -110,7 +118,7 @@
       ]
     },
     {
-      "fact_id": "F14",
+      "fact_id": "F15",
       "fact_text": "The patient's condition and treatment were discussed with her mother.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -118,7 +126,7 @@
       ]
     },
     {
-      "fact_id": "F15",
+      "fact_id": "F16",
       "fact_text": "The patient was instructed to continue bathing twice a week.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -126,7 +134,7 @@
       ]
     },
     {
-      "fact_id": "F16",
+      "fact_id": "F17",
       "fact_text": "The patient was instructed to discontinue hot soapy water.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -134,7 +142,7 @@
       ]
     },
     {
-      "fact_id": "F17",
+      "fact_id": "F18",
       "fact_text": "The patient was instructed to discontinue Elidel for the time being.",
       "fact_type": "medication",
       "source_evidence": [
@@ -142,7 +150,7 @@
       ]
     },
     {
-      "fact_id": "F18",
+      "fact_id": "F19",
       "fact_text": "The patient's treatment plan states: 'Add Aristocort cream 0.25%, Polysporin ointment, Aquaphor b.i.d. and p.r.n. itch.'",
       "fact_type": "medication",
       "source_evidence": [
@@ -150,7 +158,7 @@
       ]
     },
     {
-      "fact_id": "F19",
+      "fact_id": "F20",
       "fact_text": "The patient was to be seen again in one month if she was not better; otherwise, follow-up would be as needed.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -158,7 +166,7 @@
       ]
     },
     {
-      "fact_id": "F20",
+      "fact_id": "F21",
       "fact_text": "A letter was to be sent to the ABC Practice program.",
       "fact_type": "instruction",
       "source_evidence": [

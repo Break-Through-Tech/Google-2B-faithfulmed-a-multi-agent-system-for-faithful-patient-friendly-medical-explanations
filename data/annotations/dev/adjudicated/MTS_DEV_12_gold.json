@@ -7,6 +7,14 @@
   "facts": [
     {
       "fact_id": "F1",
+      "fact_text": "The patient is a 19-year-old male.",
+      "fact_type": "demographic",
+      "source_evidence": [
+        "HISTORY: The patient is a 19-year-old male who was involved in a fight approximately an hour prior to his ED presentation."
+      ]
+    },
+    {
+      "fact_id": "F2",
       "fact_text": "The patient was invovled in a fight around an hour before arriving at the emergency department.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -14,7 +22,7 @@
       ]
     },
     {
-      "fact_id": "F2",
+      "fact_id": "F3",
       "fact_text": "The patient punched another guy in the face a few times, possibly in the mouth.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -22,7 +30,7 @@
       ]
     },
     {
-      "fact_id": "F3",
+      "fact_id": "F4",
       "fact_text": "The patient punched a drinking glass, breaking it, and cutting his right hand.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -30,7 +38,7 @@
       ]
     },
     {
-      "fact_id": "F4",
+      "fact_id": "F5",
       "fact_text": "The patient had three lacerations on his right hand.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -38,7 +46,7 @@
       ]
     },
     {
-      "fact_id": "F5",
+      "fact_id": "F6",
       "fact_text": "The patient's right-hand wound was thoroughly cleaned with tap water before presentation.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -47,7 +55,7 @@
       ]
     },
     {
-      "fact_id": "F6",
+      "fact_id": "F7",
       "fact_text": "A navy corpsman attempted to repair the patient's right-hand wound using Superglue and gauze.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -56,7 +64,7 @@
       ]
     },
     {
-      "fact_id": "F7",
+      "fact_id": "F8",
       "fact_text": "The right-hand wound continued to bleed after the attempted repair.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -65,7 +73,7 @@
       ]
     },
     {
-      "fact_id": "F8",
+      "fact_id": "F9",
       "fact_text": "The patient's medical history is significant for asthma.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -73,7 +81,7 @@
       ]
     },
     {
-      "fact_id": "F9",
+      "fact_id": "F10",
       "fact_text": "The patient's medical history is significant for acne.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -81,7 +89,7 @@
       ]
     },
     {
-      "fact_id": "F10",
+      "fact_id": "F11",
       "fact_text": "The patient currently takes Accutane and no other medications.",
       "fact_type": "medication",
       "source_evidence": [
@@ -89,7 +97,7 @@
       ]
     },
     {
-      "fact_id": "F11",
+      "fact_id": "F12",
       "fact_text": "The patient's tetanus shot is up-to-date.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -97,7 +105,7 @@
       ]
     },
     {
-      "fact_id": "F12",
+      "fact_id": "F13",
       "fact_text": "The patient is a nonsmoker.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -105,7 +113,7 @@
       ]
     },
     {
-      "fact_id": "F13",
+      "fact_id": "F14",
       "fact_text": "The patient had been drinking alcohol on the day of presentation but had no history of alcohol or drug abuse.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -113,7 +121,7 @@
       ]
     },
     {
-      "fact_id": "F14",
+      "fact_id": "F15",
       "fact_text": "The patient is well.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -121,7 +129,7 @@
       ]
     },
     {
-      "fact_id": "F15",
+      "fact_id": "F16",
       "fact_text": "The patient had no febrile illness.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -129,7 +137,7 @@
       ]
     },
     {
-      "fact_id": "F16",
+      "fact_id": "F17",
       "fact_text": "The patient had no motor or sensory complaints or paresthesias in the hand.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -137,7 +145,7 @@
       ]
     },
     {
-      "fact_id": "F17",
+      "fact_id": "F18",
       "fact_text": "The patient was in no apparent distress.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -145,7 +153,7 @@
       ]
     },
     {
-      "fact_id": "F18",
+      "fact_id": "F19",
       "fact_text": "The patient was alert and oriented x3.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -153,7 +161,7 @@
       ]
     },
     {
-      "fact_id": "F19",
+      "fact_id": "F20",
       "fact_text": "The patient's mental status was clear and appropriate.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -161,7 +169,7 @@
       ]
     },
     {
-      "fact_id": "F20",
+      "fact_id": "F21",
       "fact_text": "The patient's temperature was 98.3.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -169,7 +177,7 @@
       ]
     },
     {
-      "fact_id": "F21",
+      "fact_id": "F22",
       "fact_text": "The patient's heart rate was 100.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -177,7 +185,7 @@
       ]
     },
     {
-      "fact_id": "F22",
+      "fact_id": "F23",
       "fact_text": "The patient's respiratory rate was 18.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -185,7 +193,7 @@
       ]
     },
     {
-      "fact_id": "F23",
+      "fact_id": "F24",
       "fact_text": "The patient's blood pressure was 161/98.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -193,7 +201,7 @@
       ]
     },
     {
-      "fact_id": "F24",
+      "fact_id": "F25",
       "fact_text": "The patient's oxygen saturation was 99% on room air by pulse oximetry and was described as normal.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -201,7 +209,7 @@
       ]
     },
     {
-      "fact_id": "F25",
+      "fact_id": "F26",
       "fact_text": "The three right-hand lacerations were located over the MCP joints, including irregularly shaped lacerations over the fifth, fourth, and third MCP areas.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -209,7 +217,7 @@
       ]
     },
     {
-      "fact_id": "F26",
+      "fact_id": "F27",
       "fact_text": "The three right-hand lacerations measured approximately 4 cm in total length.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -218,7 +226,7 @@
       ]
     },
     {
-      "fact_id": "F27",
+      "fact_id": "F28",
       "fact_text": "No foreign bodies were seen in the right-hand wounds.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -227,7 +235,7 @@
       ]
     },
     {
-      "fact_id": "F28",
+      "fact_id": "F29",
       "fact_text": "Capillary refill in the right hand was less than 2 seconds.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -236,7 +244,7 @@
       ]
     },
     {
-      "fact_id": "F29",
+      "fact_id": "F30",
       "fact_text": "The patient's radial pulses were intact.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -244,7 +252,7 @@
       ]
     },
     {
-      "fact_id": "F30",
+      "fact_id": "F31",
       "fact_text": "The right hand had full range of motion without gross deformities.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -253,7 +261,7 @@
       ]
     },
     {
-      "fact_id": "F31",
+      "fact_id": "F32",
       "fact_text": "There was no significant edema associated with the lacerations on the dorsum of the right hand.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -262,7 +270,7 @@
       ]
     },
     {
-      "fact_id": "F32",
+      "fact_id": "F33",
       "fact_text": "Right-hand x-rays showed no open fracture or bony abnormality.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -271,7 +279,7 @@
       ]
     },
     {
-      "fact_id": "F33",
+      "fact_id": "F34",
       "fact_text": "The patient received 1% Xylocaine.",
       "fact_type": "medication",
       "source_evidence": [
@@ -279,7 +287,7 @@
       ]
     },
     {
-      "fact_id": "F34",
+      "fact_id": "F35",
       "fact_text": "The patient's right-hand wounds were thoroughly irrigated with at least 2 liters of tap water.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -288,7 +296,7 @@
       ]
     },
     {
-      "fact_id": "F35",
+      "fact_id": "F36",
       "fact_text": "The patient's right-hand wounds were repaired with 17 sutures of 4-0 Ethilon: 16 simple sutures and one horizontal mattress suture.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -298,7 +306,7 @@
       ]
     },
     {
-      "fact_id": "F36",
+      "fact_id": "F37",
       "fact_text": "The patient was given Augmentin 875 mg by mouth because of the possibility of a human bite wound.",
       "fact_type": "medication",
       "source_evidence": [
@@ -306,7 +314,7 @@
       ]
     },
     {
-      "fact_id": "F37",
+      "fact_id": "F38",
       "fact_text": "The assessment was three simple right-hand lacerations repaired as described.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -314,7 +322,7 @@
       ]
     },
     {
-      "fact_id": "F38",
+      "fact_id": "F39",
       "fact_text": "The patient was prescribed Augmentin 875 mg, 1 tablet by mouth, twice a day for 7 days.",
       "fact_type": "medication",
       "source_evidence": [
@@ -322,7 +330,7 @@
       ]
     },
     {
-      "fact_id": "F39",
+      "fact_id": "F40",
       "fact_text": "The patient was prescribed Vicoprofen because the report states that he was unable to tolerate Tylenol due to Accutane.",
       "fact_type": "medication",
       "source_evidence": [
@@ -330,7 +338,7 @@
       ]
     },
     {
-      "fact_id": "F40",
+      "fact_id": "F41",
       "fact_text": "The patient was instructed to take 1 Vicoprofen by mouth every 6 hours or as needed, with 12 supplied.",
       "fact_type": "medication",
       "source_evidence": [
@@ -339,7 +347,7 @@
       ]
     },
     {
-      "fact_id": "F41",
+      "fact_id": "F42",
       "fact_text": "The patient was instructed to follow up for suture removal in 8 days.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -347,7 +355,7 @@
       ]
     },
     {
-      "fact_id": "F42",
+      "fact_id": "F43",
       "fact_text": "The patient was instructed to return immediately for reevaluation if he developed any signs of infection.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -355,7 +363,7 @@
       ]
     },
     {
-      "fact_id": "F43",
+      "fact_id": "F44",
       "fact_text": "The patient was discharged in stable condition.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -363,5 +371,5 @@
       ]
     }
   ],
-  "annotation_notes": ""
+  "adjudication_notes": ""
 }

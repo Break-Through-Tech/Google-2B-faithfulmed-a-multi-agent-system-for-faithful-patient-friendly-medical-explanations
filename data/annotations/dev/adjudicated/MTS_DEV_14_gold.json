@@ -15,6 +15,15 @@
     },
     {
       "fact_id": "F2",
+      "fact_text": "The patient is a 58-year-old female.",
+      "fact_type": "demographic",
+      "source_evidence": [
+        "HISTORY: The patient is a 58-year-old female, referred to therapy due to left knee osteoarthritis.",
+        "ASSESSMENT: The patient is a 58-year-old female with left knee osteoarthritis."
+      ]
+    },
+    {
+      "fact_id": "F3",
       "fact_text": "The patient was referred to therapy for left knee osteoarthritis.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -22,7 +31,7 @@
       ]
     },
     {
-      "fact_id": "F3",
+      "fact_id": "F4",
       "fact_text": "Approximately 2 years earlier, the patient fell to the ground and subsequently had blood clots in the knee area.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -30,7 +39,7 @@
       ]
     },
     {
-      "fact_id": "F4",
+      "fact_id": "F5",
       "fact_text": "Following the incident, the patient was transferred from the hospital to a nursing home and lived there for 1 year.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -39,7 +48,7 @@
       ]
     },
     {
-      "fact_id": "F5",
+      "fact_id": "F6",
       "fact_text": "Before the incident, the patient walked independently throughout her home using a pickup walker.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -48,7 +57,7 @@
       ]
     },
     {
-      "fact_id": "F6",
+      "fact_id": "F7",
       "fact_text": "Since the incident, the patient has been unable to walk and the report states that she has only been performing transverse.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -57,7 +66,7 @@
       ]
     },
     {
-      "fact_id": "F7",
+      "fact_id": "F8",
       "fact_text": "The patient's primary concern is left knee pain, and she wants to walk short distances in her home again.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -65,7 +74,7 @@
       ]
     },
     {
-      "fact_id": "F8",
+      "fact_id": "F9",
       "fact_text": "The patient has a history of high blood pressure.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -73,7 +82,7 @@
       ]
     },
     {
-      "fact_id": "F9",
+      "fact_id": "F10",
       "fact_text": "The patient has obesity.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -81,7 +90,7 @@
       ]
     },
     {
-      "fact_id": "F10",
+      "fact_id": "F11",
       "fact_text": "The patient had a right patellar fracture treated with a pin in 1990.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -89,7 +98,7 @@
       ]
     },
     {
-      "fact_id": "F11",
+      "fact_id": "F12",
       "fact_text": "The patient has a history of blood clots.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -97,7 +106,7 @@
       ]
     },
     {
-      "fact_id": "F12",
+      "fact_id": "F13",
       "fact_text": "The patient takes Naproxen.",
       "fact_type": "medication",
       "source_evidence": [
@@ -105,7 +114,7 @@
       ]
     },
     {
-      "fact_id": "F13",
+      "fact_id": "F14",
       "fact_text": "The patient takes Plavix.",
       "fact_type": "medication",
       "source_evidence": [
@@ -113,7 +122,7 @@
       ]
     },
     {
-      "fact_id": "F14",
+      "fact_id": "F15",
       "fact_text": "The patient takes a stool softener.",
       "fact_type": "medication",
       "source_evidence": [
@@ -121,7 +130,7 @@
       ]
     },
     {
-      "fact_id": "F15",
+      "fact_id": "F16",
       "fact_text": "The patient reports having a knee x-ray in 2007 and being diagnosed with osteoarthritis.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -129,7 +138,7 @@
       ]
     },
     {
-      "fact_id": "F16",
+      "fact_id": "F17",
       "fact_text": "The patient's knee pain is 0/10 when she is seated and at rest.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -137,7 +146,7 @@
       ]
     },
     {
-      "fact_id": "F17",
+      "fact_id": "F18",
       "fact_text": "The patient reports that her knee pain increases to 5/10 when her left knee is in active motion.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -145,7 +154,7 @@
       ]
     },
     {
-      "fact_id": "F18",
+      "fact_id": "F19",
       "fact_text": "The patient's goal is to transfer better and walk 5 feet from her bed to the couch.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -153,7 +162,7 @@
       ]
     },
     {
-      "fact_id": "F19",
+      "fact_id": "F20",
       "fact_text": "The patient's right knee has an 8-inch long, very wide tight scar.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -161,7 +170,7 @@
       ]
     },
     {
-      "fact_id": "F20",
+      "fact_id": "F21",
       "fact_text": "The patient's scar on her right knee has adhesions to the underlying tissue due to her patellar fracture and surgery in 1990.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -169,7 +178,7 @@
       ]
     },
     {
-      "fact_id": "F21",
+      "fact_id": "F22",
       "fact_text": "The right-knee scar resulted from the patient's patellar fracture and surgery following a car accident in 1990.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -177,7 +186,7 @@
       ]
     },
     {
-      "fact_id": "F22",
+      "fact_id": "F23",
       "fact_text": "Both knees are very large due to obesity.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -185,7 +194,7 @@
       ]
     },
     {
-      "fact_id": "F23",
+      "fact_id": "F24",
       "fact_text": "The patient has no scars, bruising, or increased temperate in her left knee.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -193,7 +202,7 @@
       ]
     },
     {
-      "fact_id": "F24",
+      "fact_id": "F25",
       "fact_text": "The patient has active and passive range of motion of 0 to 90 degrees in her right knee.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -201,7 +210,7 @@
       ]
     },
     {
-      "fact_id": "F25",
+      "fact_id": "F26",
       "fact_text": "The patient has active and passive range of motion of 0 to 85 degrees in her left knee.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -209,7 +218,7 @@
       ]
     },
     {
-      "fact_id": "F26",
+      "fact_id": "F27",
       "fact_text": "The patient experiences pain during movement of the left knee.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -217,7 +226,7 @@
       ]
     },
     {
-      "fact_id": "F27",
+      "fact_id": "F28",
       "fact_text": "Pressing on the patient's left knee causes pain around the patellar tendon and on the side of the knee.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -225,7 +234,7 @@
       ]
     },
     {
-      "fact_id": "F28",
+      "fact_id": "F29",
       "fact_text": "At home, the patient transfers between her bed and wheelchair with standby to contact-guard assistance.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -233,7 +242,7 @@
       ]
     },
     {
-      "fact_id": "F29",
+      "fact_id": "F30",
       "fact_text": "The patient can stand at a modified-independent level from her wheelchair.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -241,7 +250,7 @@
       ]
     },
     {
-      "fact_id": "F30",
+      "fact_id": "F31",
       "fact_text": "The patient can tolerate at least 15 seconds of standing before needing to sit because of left knee pain.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -249,7 +258,7 @@
       ]
     },
     {
-      "fact_id": "F31",
+      "fact_id": "F32",
       "fact_text": "The patient's examinations indicate deficits in pain, muscle endurance, and functional mobility.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -257,7 +266,7 @@
       ]
     },
     {
-      "fact_id": "F32",
+      "fact_id": "F33",
       "fact_text": "Skilled physical therapy was recommended to address the patient's deficit in pain, muscle endurance, and functional mobility.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -266,7 +275,7 @@
       ]
     },
     {
-      "fact_id": "F33",
+      "fact_id": "F34",
       "fact_text": "The patient will receive physical therapy two times per week for an initial 4 weeks.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -274,7 +283,7 @@
       ]
     },
     {
-      "fact_id": "F34",
+      "fact_id": "F35",
       "fact_text": "The patient will be reassessed after the initial 4 weeks for an additional 4 weeks of therapy if needed.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -282,7 +291,7 @@
       ]
     },
     {
-      "fact_id": "F35",
+      "fact_id": "F36",
       "fact_text": "Planned treatment modalities include electrical stimulation, ultrasound, heat, and ice.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -290,7 +299,7 @@
       ]
     },
     {
-      "fact_id": "F36",
+      "fact_id": "F37",
       "fact_text": "Therapeutic exercise is included in the treatment plan.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -298,7 +307,7 @@
       ]
     },
     {
-      "fact_id": "F37",
+      "fact_id": "F38",
       "fact_text": "Functional mobility training is included in the treatment plan.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -306,7 +315,7 @@
       ]
     },
     {
-      "fact_id": "F38",
+      "fact_id": "F39",
       "fact_text": "Gait training is included in the treatment plan.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -314,7 +323,7 @@
       ]
     },
     {
-      "fact_id": "F39",
+      "fact_id": "F40",
       "fact_text": "Within 4 weeks, the patient is expected to demonstrate increased endurance in both lower extremities by performing 20 repetitions of all lower-extremity exercises in seated and supine positions with a minimum 2-pound weight.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -322,7 +331,7 @@
       ]
     },
     {
-      "fact_id": "F40",
+      "fact_id": "F41",
       "fact_text": "Within 4 weeks, the patient is expected to perform a standby-assist transfer using a pickup walker.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -330,7 +339,7 @@
       ]
     },
     {
-      "fact_id": "F41",
+      "fact_id": "F42",
       "fact_text": "Within 4 weeks, the patient is expected to demonstrate 4 forward and backward steps using a pickup walker or front-wheeled walker.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -338,7 +347,7 @@
       ]
     },
     {
-      "fact_id": "F42",
+      "fact_id": "F43",
       "fact_text": "Within 4 weeks, the patient is expected to report a maximum left-knee pain level of 3/10 with 2 minutes of weightbearing.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -346,7 +355,7 @@
       ]
     },
     {
-      "fact_id": "F43",
+      "fact_id": "F44",
       "fact_text": "Within 8 weeks, the patient is expected to be independent with the home exercise program.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -354,7 +363,7 @@
       ]
     },
     {
-      "fact_id": "F44",
+      "fact_id": "F45",
       "fact_text": "Within 8 weeks, the patient is expected to tolerate 20 repetitions of standing exercises with a maximum pain level of 3/10.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -362,7 +371,7 @@
       ]
     },
     {
-      "fact_id": "F45",
+      "fact_id": "F46",
       "fact_text": "Within 8 weeks, the patient is expected to walk 20 feet using the most appropriate assistive device.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -370,7 +379,7 @@
       ]
     },
     {
-      "fact_id": "F46",
+      "fact_id": "F47",
       "fact_text": "The prognosis for achieving the stated goals was fair to good.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -378,7 +387,7 @@
       ]
     },
     {
-      "fact_id": "F47",
+      "fact_id": "F48",
       "fact_text": "The treatment plan was discussed with the patient, and she agreed to it.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -387,5 +396,5 @@
       ]
     }
   ],
-  "annotation_notes": ""
+  "adjudication_notes": ""
 }

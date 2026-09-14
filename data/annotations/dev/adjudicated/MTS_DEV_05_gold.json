@@ -42,6 +42,15 @@
     },
     {
       "fact_id": "F5",
+      "fact_text": "The patient is an 86-year-old female.",
+      "fact_type": "demographic",
+      "source_evidence": [
+        "HISTORY OF PRESENT ILLNESS: The patient is an 86-year-old female admitted for evaluation of abdominal pain and bloody stools.",
+        "As per the patient, she is an 86-year-old female, has limited activity level."
+      ]
+    },
+    {
+      "fact_id": "F6",
       "fact_text": "The patient was admitted for evaluation of abdominal pain.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -49,7 +58,7 @@
       ]
     },
     {
-      "fact_id": "F6",
+      "fact_id": "F7",
       "fact_text": "The patient was admitted for evaluation of bloody stools.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -57,7 +66,7 @@
       ]
     },
     {
-      "fact_id": "F7",
+      "fact_id": "F8",
       "fact_text": "The patient had colitis and was undergoing treatment.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -65,7 +74,7 @@
       ]
     },
     {
-      "fact_id": "F8",
+      "fact_id": "F9",
       "fact_text": "The patient had diverticulitis and was undergoing treatment.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -73,7 +82,7 @@
       ]
     },
     {
-      "fact_id": "F9",
+      "fact_id": "F10",
       "fact_text": "During the hospitalization, the patient reported worsening shortness of breath.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -81,7 +90,7 @@
       ]
     },
     {
-      "fact_id": "F10",
+      "fact_id": "F11",
       "fact_text": "An echocardiogram showed severe mitral regurgitation.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -89,7 +98,7 @@
       ]
     },
     {
-      "fact_id": "F11",
+      "fact_id": "F12",
       "fact_text": "An echocardiogram showed a large pleural effusion.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -97,7 +106,7 @@
       ]
     },
     {
-      "fact_id": "F12",
+      "fact_id": "F13",
       "fact_text": "The patient had a limited activity level.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -105,7 +114,7 @@
       ]
     },
     {
-      "fact_id": "F13",
+      "fact_id": "F14",
       "fact_text": "The patient had experienced shortness of breath for many years.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -113,7 +122,7 @@
       ]
     },
     {
-      "fact_id": "F14",
+      "fact_id": "F15",
       "fact_text": "The patient had previously been told that she had a heart murmur, which was not followed regularly.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -121,7 +130,7 @@
       ]
     },
     {
-      "fact_id": "F15",
+      "fact_id": "F16",
       "fact_text": "The patient's coronary risk factors listed a history of hypertension.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -129,7 +138,7 @@
       ]
     },
     {
-      "fact_id": "F16",
+      "fact_id": "F17",
       "fact_text": "The patient had no history of diabetes mellitus or coronary artery disease",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -137,7 +146,7 @@
       ]
     },
     {
-      "fact_id": "F17",
+      "fact_id": "F18",
       "fact_text": "The patient's cholesterol status was unclear.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -145,7 +154,7 @@
       ]
     },
     {
-      "fact_id": "F18",
+      "fact_id": "F19",
       "fact_text": "The patient is a nonsmoker.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -153,7 +162,7 @@
       ]
     },
     {
-      "fact_id": "F19",
+      "fact_id": "F20",
       "fact_text": "The patient had no history of major surgery.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -161,7 +170,7 @@
       ]
     },
     {
-      "fact_id": "F20",
+      "fact_id": "F21",
       "fact_text": "The patient was currently taking Lasix.",
       "fact_type": "medication",
       "source_evidence": [
@@ -169,7 +178,7 @@
       ]
     },
     {
-      "fact_id": "F21",
+      "fact_id": "F22",
       "fact_text": "The patient was currently receiving potassium supplementation.",
       "fact_type": "medication",
       "source_evidence": [
@@ -177,7 +186,7 @@
       ]
     },
     {
-      "fact_id": "F22",
+      "fact_id": "F23",
       "fact_text": "The patient was currently taking Levaquin.",
       "fact_type": "medication",
       "source_evidence": [
@@ -185,7 +194,7 @@
       ]
     },
     {
-      "fact_id": "F23",
+      "fact_id": "F24",
       "fact_text": "The patient was currently taking hydralazine 10 mg twice daily.",
       "fact_type": "medication",
       "source_evidence": [
@@ -193,7 +202,7 @@
       ]
     },
     {
-      "fact_id": "F24",
+      "fact_id": "F25",
       "fact_text": "The patient was currently receiving antibiotic treatments.",
       "fact_type": "medication",
       "source_evidence": [
@@ -201,7 +210,7 @@
       ]
     },
     {
-      "fact_id": "F25",
+      "fact_id": "F26",
       "fact_text": "The patient was currently receiving thyroid supplementation.",
       "fact_type": "medication",
       "source_evidence": [
@@ -209,7 +218,7 @@
       ]
     },
     {
-      "fact_id": "F26",
+      "fact_id": "F27",
       "fact_text": "The patient had reported allergies to Ambien, Cardizem, and ibuprofen.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -217,7 +226,7 @@
       ]
     },
     {
-      "fact_id": "F27",
+      "fact_id": "F28",
       "fact_text": "The patient did not consume alcohol.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -225,7 +234,7 @@
       ]
     },
     {
-      "fact_id": "F28",
+      "fact_id": "F29",
       "fact_text": "The patient had no history of recreational drug use.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -233,7 +242,7 @@
       ]
     },
     {
-      "fact_id": "F29",
+      "fact_id": "F30",
       "fact_text": "The patient's past medical history included hypothyroidism.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -241,7 +250,7 @@
       ]
     },
     {
-      "fact_id": "F30",
+      "fact_id": "F31",
       "fact_text": "The patient's past medical history included arthritis.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -249,7 +258,7 @@
       ]
     },
     {
-      "fact_id": "F31",
+      "fact_id": "F32",
       "fact_text": "The patient's past medical history described her hypertension as questionable.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -257,7 +266,7 @@
       ]
     },
     {
-      "fact_id": "F32",
+      "fact_id": "F33",
       "fact_text": "The patient reported weakness.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -265,7 +274,7 @@
       ]
     },
     {
-      "fact_id": "F33",
+      "fact_id": "F34",
       "fact_text": "The patient reported fatigue.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -273,7 +282,7 @@
       ]
     },
     {
-      "fact_id": "F34",
+      "fact_id": "F35",
       "fact_text": "The patient reported tiredness.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -281,7 +290,7 @@
       ]
     },
     {
-      "fact_id": "F35",
+      "fact_id": "F36",
       "fact_text": "The patient had a history of cataract.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -289,7 +298,7 @@
       ]
     },
     {
-      "fact_id": "F36",
+      "fact_id": "F37",
       "fact_text": "The patient had blurred vision.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -297,7 +306,7 @@
       ]
     },
     {
-      "fact_id": "F37",
+      "fact_id": "F38",
       "fact_text": "The patient had hearing impairment.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -305,7 +314,7 @@
       ]
     },
     {
-      "fact_id": "F38",
+      "fact_id": "F39",
       "fact_text": "The patient had no pneumonia.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -313,7 +322,7 @@
       ]
     },
     {
-      "fact_id": "F39",
+      "fact_id": "F40",
       "fact_text": "The patient had no valley fever.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -321,7 +330,7 @@
       ]
     },
     {
-      "fact_id": "F40",
+      "fact_id": "F41",
       "fact_text": "The patient reported no nausea.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -329,7 +338,7 @@
       ]
     },
     {
-      "fact_id": "F41",
+      "fact_id": "F42",
       "fact_text": "The patient reported no vomiting.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -337,7 +346,7 @@
       ]
     },
     {
-      "fact_id": "F42",
+      "fact_id": "F43",
       "fact_text": "The patient reported no hematemesis.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -345,7 +354,7 @@
       ]
     },
     {
-      "fact_id": "F43",
+      "fact_id": "F44",
       "fact_text": "The patient reported no melena.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -353,7 +362,7 @@
       ]
     },
     {
-      "fact_id": "F44",
+      "fact_id": "F45",
       "fact_text": "The patient reported no urinary frequency.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -361,7 +370,7 @@
       ]
     },
     {
-      "fact_id": "F45",
+      "fact_id": "F46",
       "fact_text": "The patient reported no urinary urgency.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -369,7 +378,7 @@
       ]
     },
     {
-      "fact_id": "F46",
+      "fact_id": "F47",
       "fact_text": "The patient had severe muscle weakness.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -377,7 +386,7 @@
       ]
     },
     {
-      "fact_id": "F47",
+      "fact_id": "F48",
       "fact_text": "The patient had no transient ischemic attack.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -385,7 +394,7 @@
       ]
     },
     {
-      "fact_id": "F48",
+      "fact_id": "F49",
       "fact_text": "The patient had no cerebrovascular accident.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -393,7 +402,7 @@
       ]
     },
     {
-      "fact_id": "F49",
+      "fact_id": "F50",
       "fact_text": "The patient had no seizure disorder.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -401,7 +410,7 @@
       ]
     },
     {
-      "fact_id": "F50",
+      "fact_id": "F51",
       "fact_text": "The patient's pulse was 84.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -409,7 +418,7 @@
       ]
     },
     {
-      "fact_id": "F51",
+      "fact_id": "F52",
       "fact_text": "The patient's blood pressure was 168/74.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -417,7 +426,7 @@
       ]
     },
     {
-      "fact_id": "F52",
+      "fact_id": "F53",
       "fact_text": "The patient was afebrile.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -425,7 +434,7 @@
       ]
     },
     {
-      "fact_id": "F53",
+      "fact_id": "F54",
       "fact_text": "The patient's respiratory rate was 16 per minute.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -433,7 +442,7 @@
       ]
     },
     {
-      "fact_id": "F54",
+      "fact_id": "F55",
       "fact_text": "The patient's head was atraumatic.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -441,7 +450,7 @@
       ]
     },
     {
-      "fact_id": "F55",
+      "fact_id": "F56",
       "fact_text": "The patient's head was normocephalic.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -449,7 +458,7 @@
       ]
     },
     {
-      "fact_id": "F56",
+      "fact_id": "F57",
       "fact_text": "The patient's neck veins were flat.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -457,7 +466,7 @@
       ]
     },
     {
-      "fact_id": "F57",
+      "fact_id": "F58",
       "fact_text": "No significant carotid bruits were appreciated.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -465,7 +474,7 @@
       ]
     },
     {
-      "fact_id": "F58",
+      "fact_id": "F59",
       "fact_text": "Air entry in the patient's lungs was fair bilaterally.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -473,7 +482,7 @@
       ]
     },
     {
-      "fact_id": "F59",
+      "fact_id": "F60",
       "fact_text": "No obvious rales were heard.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -481,7 +490,7 @@
       ]
     },
     {
-      "fact_id": "F60",
+      "fact_id": "F61",
       "fact_text": "No obvious wheezes were heard.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -489,7 +498,7 @@
       ]
     },
     {
-      "fact_id": "F61",
+      "fact_id": "F62",
       "fact_text": "The patient's point of maximal impulse was displaced.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -497,7 +506,7 @@
       ]
     },
     {
-      "fact_id": "F62",
+      "fact_id": "F63",
       "fact_text": "The patient had a grade 2/6 systolic murmur at the precordium.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -505,7 +514,7 @@
       ]
     },
     {
-      "fact_id": "F63",
+      "fact_id": "F64",
       "fact_text": "The patient's abdomen was soft and nontender.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -513,7 +522,7 @@
       ]
     },
     {
-      "fact_id": "F64",
+      "fact_id": "F65",
       "fact_text": "The patient's extremities had chronic skin changes.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -521,7 +530,7 @@
       ]
     },
     {
-      "fact_id": "F65",
+      "fact_id": "F66",
       "fact_text": "The patient's distal pulses were feeble.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -529,7 +538,7 @@
       ]
     },
     {
-      "fact_id": "F66",
+      "fact_id": "F67",
       "fact_text": "The patient had no clubbing.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -537,7 +546,7 @@
       ]
     },
     {
-      "fact_id": "F67",
+      "fact_id": "F68",
       "fact_text": "The patient had no cyanosis.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -545,7 +554,7 @@
       ]
     },
     {
-      "fact_id": "F68",
+      "fact_id": "F69",
       "fact_text": "The patient's EKG showed normal sinus rhythm.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -553,7 +562,7 @@
       ]
     },
     {
-      "fact_id": "F69",
+      "fact_id": "F70",
       "fact_text": "The patient's EKG showed no acute ST-T changes.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -562,7 +571,7 @@
       ]
     },
     {
-      "fact_id": "F70",
+      "fact_id": "F71",
       "fact_text": "The patient's H&H values were reported as 13 and 39.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -570,7 +579,7 @@
       ]
     },
     {
-      "fact_id": "F71",
+      "fact_id": "F72",
       "fact_text": "The patient's BUN was within normal limits.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -578,7 +587,7 @@
       ]
     },
     {
-      "fact_id": "F72",
+      "fact_id": "F73",
       "fact_text": "The patient's creatinine was within normal limits.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -586,7 +595,7 @@
       ]
     },
     {
-      "fact_id": "F73",
+      "fact_id": "F74",
       "fact_text": "The patient's potassium was within normal limits.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -594,7 +603,7 @@
       ]
     },
     {
-      "fact_id": "F74",
+      "fact_id": "F75",
       "fact_text": "The patient's BNP was 9290.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -602,7 +611,7 @@
       ]
     },
     {
-      "fact_id": "F75",
+      "fact_id": "F76",
       "fact_text": "The echocardiogram revealed normal left ventricular function.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -611,7 +620,7 @@
       ]
     },
     {
-      "fact_id": "F76",
+      "fact_id": "F77",
       "fact_text": "The echocardiogram revealed left atrial enlargement.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -620,7 +629,7 @@
       ]
     },
     {
-      "fact_id": "F77",
+      "fact_id": "F78",
       "fact_text": "The echocardiogram revealed tricuspid regurgitation.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -629,7 +638,7 @@
       ]
     },
     {
-      "fact_id": "F78",
+      "fact_id": "F79",
       "fact_text": "Conservative treatment was recommended from a cardiac standpoint.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -637,7 +646,7 @@
       ]
     },
     {
-      "fact_id": "F79",
+      "fact_id": "F80",
       "fact_text": "The possibility of a transesophageal echocardiogram to assess the patient's valvular insufficiency was discussed extensively.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -645,7 +654,7 @@
       ]
     },
     {
-      "fact_id": "F80",
+      "fact_id": "F81",
       "fact_text": "Given her age, limited activity level, and lack of intention to undergo related surgical treatment, the patient did not wish to proceed with a transesophageal echocardiogram.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -653,7 +662,7 @@
       ]
     },
     {
-      "fact_id": "F81",
+      "fact_id": "F82",
       "fact_text": "The plan was to treat the patient medically with ACE inhibitors.",
       "fact_type": "medication",
       "source_evidence": [
@@ -661,7 +670,7 @@
       ]
     },
     {
-      "fact_id": "F82",
+      "fact_id": "F83",
       "fact_text": "The plan was to treat the patient medically with diuretics.",
       "fact_type": "medication",
       "source_evidence": [
@@ -669,7 +678,7 @@
       ]
     },
     {
-      "fact_id": "F83",
+      "fact_id": "F84",
       "fact_text": "The plan included monitoring how the patient responded to medical treatment.",
       "fact_type": "instruction",
       "source_evidence": [
