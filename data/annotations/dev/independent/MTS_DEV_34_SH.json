@@ -7,71 +7,146 @@
   "facts": [
     {
       "fact_id": "MTS_DEV_34_F01",
-      "fact_text": "The patient is a 48-year-old black male with stage IV chronic kidney disease likely secondary to HIV nephropathy who presents for clinic follow-up [cite: HISTORY OF PRESENT ILLNESS: This is a 48-year-old black male with stage IV chronic kidney disease, likely secondary to HIV nephropathy who presents to clinic for followup having missed prior clinic appointments.]."
+      "fact_text": "The patient is a 48-year-old black male with stage IV chronic kidney disease likely secondary to HIV nephropathy who presents for clinic follow-up.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HISTORY OF PRESENT ILLNESS: This is a 48-year-old black male with stage IV chronic kidney disease, likely secondary to HIV nephropathy who presents to clinic for followup having missed prior clinic appointments."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F02",
-      "fact_text": "The patient has been compliant with his 3-drug antiretroviral therapy with a CD4 count of 350 in March 2008 [cite: Since that time, he has been very compliant with treatment for his HIV and is seeing Dr. Y in our Infectious Disease Clinic. He is currently on three-drug antiretroviral therapy. His last CD4 count in 03/2008 was 350.]."
+      "fact_text": "The patient has been compliant with his 3-drug antiretroviral therapy with a CD4 count of 350 in March 2008.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Since that time, he has been very compliant with treatment for his HIV and is seeing Dr. Y in our Infectious Disease Clinic. He is currently on three-drug antiretroviral therapy. His last CD4 count in 03/2008 was 350."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F03",
-      "fact_text": "A right upper extremity AV fistula was placed in late 2006 and appears ready to use on examination [cite: The patient has an AV fistula that was placed in late 2006., ACCESS: He has a right forearm AV fistula with an audible bruit and a palpable thrill. There is no sign of stenosis. The vascular access looks like it is ready to use.]."
+      "fact_text": "A right upper extremity AV fistula was placed in late 2006 and appears ready to use on examination.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient has an AV fistula that was placed in late 2006.",
+        "ACCESS: He has a right forearm AV fistula with an audible bruit and a palpable thrill. There is no sign of stenosis. The vascular access looks like it is ready to use."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F04",
-      "fact_text": "The patient reports difficulty sleeping despite taking Ambien, sleeping only about two hours before waking [cite: The only complaint that the patient has at this time is some difficulty sleeping. He was given Ambien by his primary care doctor, but this has not helped significantly with his difficulty sleeping. He says that he has trouble getting to sleep. The Ambien will allow him to sleep for about two hours, and then he is awake again.]."
+      "fact_text": "The patient reports difficulty sleeping despite taking Ambien, sleeping only about two hours before waking.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The only complaint that the patient has at this time is some difficulty sleeping. He was given Ambien by his primary care doctor, but this has not helped significantly with his difficulty sleeping. He says that he has trouble getting to sleep. The Ambien will allow him to sleep for about two hours, and then he is awake again."
+      ]
     },
     {
-      "fact_id": "MTS_DEV_2008_F05",
-      "fact_text": "Past medical history includes stage IV CKD, HIV, hyperlipidemia, hypertension, secondary hyperparathyroidism, right brachial plexus palsy, and recent lower back pain status post lumbar steroid injection [cite: PAST MEDICAL HISTORY:\n1. Stage IV chronic kidney disease with most recent GFR of 22.\n2. HIV diagnosed in 09/2006 with the most recent CD4 count of 350 in 03/2008.\n3. Hyperlipidemia.\n4. Hypertension.\n5. Secondary hyperparathyroidism., 7. History of a right brachial plexus palsy.\n8. Recent lower back pain, status post lumbar steroid injection.]."
+      "fact_id": "MTS_DEV_34_F05",
+      "fact_text": "Past medical history includes stage IV CKD, HIV, hyperlipidemia, hypertension, secondary hyperparathyroidism, right brachial plexus palsy, and recent lower back pain status post lumbar steroid injection.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "PAST MEDICAL HISTORY:\n1. Stage IV chronic kidney disease with most recent GFR of 22.\n2. HIV diagnosed in 09/2006 with the most recent CD4 count of 350 in 03/2008.\n3. Hyperlipidemia.\n4. Hypertension.\n5. Secondary hyperparathyroidism.\n\n6. Status post right upper extremity AV fistula in the fall of 2006.\n7. History of a right brachial plexus palsy.\n8. Recent lower back pain, status post lumbar steroid injection."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F06",
-      "fact_text": "The patient reports that Vitamin D causes headaches."
+      "fact_text": "The patient reports that Vitamin D causes headaches.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ALLERGIES: HE SAYS THAT VITAMIN D HAS CAUSED HEADACHES."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F07",
-      "fact_text": "Current outpatient medications include Kaletra daily, Epivir daily, Ziagen b.i.d., Lasix 20 mg b.i.d., Valsartan 20 mg b.i.d., and Ambien 10 mg q.h.s.."
+      "fact_text": "Current outpatient medications include Kaletra daily, Epivir daily, Ziagen b.i.d., Lasix 20 mg b.i.d., Valsartan 20 mg b.i.d., and Ambien 10 mg q.h.s.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "MEDICATIONS:\n1. Kaletra daily.\n2. Epivir one daily.\n3. Ziagen two daily.\n\n4. Lasix 20 mg b.i.d.\n5. Valsartan 20 mg b.i.d.\n6. Ambien 10 mg q.h.s."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F08",
-      "fact_text": "Social history is notable for smoking 1 pack of cigarettes daily for 28 years and employment at a local butcher shop sales counter."
+      "fact_text": "Social history is notable for smoking 1 pack of cigarettes daily for 28 years and employment at a local butcher shop sales counter.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "SOCIAL HISTORY: He lives here in ABCD. He is employed at the sales counter of a local butcher shop. He continues to smoke one pack of cigarettes daily, as he has for the past 28 years."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F09",
-      "fact_text": "Vital signs reveal weight 191 lbs, temperature 97.1, pulse 94, and elevated blood pressure measuring 173/97 (automatic) and 180/90 (manual)."
+      "fact_text": "Vital signs reveal weight 191 lbs, temperature 97.1, pulse 94, and elevated blood pressure measuring 173/97 (automatic) and 180/90 (manual).",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Weight is 191 pounds. His temperature is 97.1. Pulse is 94. Blood pressure by automatic cuff 173/97, by manual cuff 180/90."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F10",
-      "fact_text": "Laboratory studies showed elevated BUN 49, elevated creatinine 4.3 (GFR 19), elevated potassium 5.9, decreased bicarbonate 18, elevated PTH 448, elevated total cholesterol 234, and LDL 159 [cite: LABS: Sodium was 140, potassium 5.9, chloride 114, bicarbonate 18. BUN is 49, creatinine 4.3. GFR is 19., Calcium 9.1., phosphorus 4.7, PTH of 448., Total cholesterol 234, triglycerides 140, LDL 159, HDL 47.]."
+      "fact_text": "Laboratory studies showed elevated BUN 49, elevated creatinine 4.3 (GFR 19), elevated potassium 5.9, decreased bicarbonate 18, elevated PTH 448, elevated total cholesterol 234, and LDL 159.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "LABS: Sodium was 140, potassium 5.9, chloride 114, bicarbonate 18. BUN is 49, creatinine 4.3. GFR is 19.",
+        "Calcium 9.1., phosphorus 4.7, PTH of 448.",
+        "Total cholesterol 234, triglycerides 140, LDL 159, HDL 47."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F11",
-      "fact_text": "The patient will be referred to dialysis teaching classes, evaluated for kidney transplant, and instructed to continue exercising his right forearm [cite: RECOMMENDATIONS:\n1. Renal., I am going to touch base with the dialysis educator and try to get The patient in to the dialysis teaching classes., I have encouraged him to continue to exercise his right forearm. I am also going to contact the transplant coordinator and see if he can be evaluated for possible transplant.]."
+      "fact_text": "The patient will be referred to dialysis teaching classes, evaluated for kidney transplant, and instructed to continue exercising his right forearm.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "RECOMMENDATIONS:\n1. Renal.",
+        "I am going to touch base with the dialysis educator and try to get The patient in to the dialysis teaching classes.",
+        "I have encouraged him to continue to exercise his right forearm. I am also going to contact the transplant coordinator and see if he can be evaluated for possible transplant."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F12",
-      "fact_text": "Labetalol 100 mg b.i.d. was added for hypertension with a target blood pressure of less than 130/80."
+      "fact_text": "Labetalol 100 mg b.i.d. was added for hypertension with a target blood pressure of less than 130/80.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "2. Hypertension. I have added labetolol 100 mg b.i.d. to his antihypertensive regimen.",
+        "Goal blood pressure would be less than 130/80."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F13",
-      "fact_text": "Valsartan was decreased to 20 mg daily and a low-potassium diet was ordered due to hyperkalemia, with a plan to recheck potassium in one week."
+      "fact_text": "Valsartan was decreased to 20 mg daily and a low-potassium diet was ordered due to hyperkalemia, with a plan to recheck potassium in one week.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "3. Hyperkalemia. I am going to instruct him in a low-potassium diet and decrease his valsartan to 20 mg daily. I will have him return in one week to recheck his potassium."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F14",
-      "fact_text": "PhosLo 800 mg t.i.d. with meals was added for elevated PTH, avoiding calcium-containing phosphate binders [cite: 4. Bone metabolism. His PTH is elevated and I am going to add PhosLo 800 mg t.i.d. with meals. His corrected calcium is 9.7, and I would like to avoid calcium-containing phosphate bonders in this situation.]."
+      "fact_text": "PhosLo 800 mg t.i.d. with meals was added for elevated PTH, avoiding calcium-containing phosphate binders.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "4. Bone metabolism. His PTH is elevated and I am going to add PhosLo 800 mg t.i.d. with meals. His corrected calcium is 9.7, and I would like to avoid calcium-containing phosphate bonders in this situation."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F15",
-      "fact_text": "Sodium bicarbonate 650 mg 3 tablets t.i.d. was initiated for metabolic acidosis (bicarbonate 18)."
+      "fact_text": "Sodium bicarbonate 650 mg 3 tablets t.i.d. was initiated for metabolic acidosis (bicarbonate 18).",
+      "fact_type": "medication",
+      "source_evidence": [
+        "5. Acid base. His bicarbonate is 18 and I will initiate the sodium bicarbonate 650 mg three tablets t.i.d."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F16",
-      "fact_text": "The patient was counseled on smoking cessation and maintaining HAART compliance to optimize transplant candidacy [cite: 9. Transplant candidacy., I have instructed him to try to stop smoking. This is for making him a better candidate. I have also encouraged him to continue to be compliant with his antiretroviral therapies as this would be a requirement for transplant.]."
+      "fact_text": "The patient was counseled on smoking cessation and maintaining HAART compliance to optimize transplant candidacy.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "9. Transplant candidacy.",
+        "I have instructed him to try to stop smoking. This is for making him a better candidate. I have also encouraged him to continue to be compliant with his antiretroviral therapies as this would be a requirement for transplant."
+      ]
     },
     {
       "fact_id": "MTS_DEV_34_F17",
-      "fact_text": "The patient is scheduled to return to the clinic in one month."
+      "fact_text": "The patient is scheduled to return to the clinic in one month.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "DISPOSITION: The patient is to return to clinic in one month's time."
+      ]
     }
   ],
   "annotation_notes": "Categorized primary_content_type as instructions due to the detailed multi-system clinical plan and medical instructions (medication adjustments, lab rechecks, low-potassium diet, transplant evaluation, and dialysis education)."
