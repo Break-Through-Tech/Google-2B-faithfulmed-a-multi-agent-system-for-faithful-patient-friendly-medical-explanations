@@ -1,0 +1,99 @@
+{
+  "example_id": "MTS_DEV_40",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=95-Radiology&Sample=1039-Renal+Ultrasound",
+  "primary_content_type": "lab_values",
+  "selection_mode": "entire_report",
+  "source_text": "EXAM: Renal ultrasound.\n\nHISTORY: Renal failure, neurogenic bladder, status-post cystectomy.\n\nTECHNIQUE: Multiple ultrasonographic images of the kidneys were obtained in the transverse and longitudinal planes.\n\nCOMPARISON: Most recently obtained mm/dd/yy.\n\nFINDINGS: The right kidney measures 12 x 5.2 x 4.6 cm and the left kidney measures 12.2 x 6.2 x 4.4 cm. The imaged portions of the kidneys fail to demonstrate evidence of mass, hydronephrosis or calculus. There is no evidence of cortical thinning.\n\nIncidentally there is a rounded low-attenuation mass within the inferior aspect of the right lobe of the liver measuring 2.1 x 1.5 x 1.9 cm which has suggestion of some peripheral blood flow.\n\nIMPRESSION:\n1. No evidence of hydronephrosis.\n2. Mass within the right lobe of the liver. The patient apparently has a severe iodine allergy. Further evaluation with MRI is recommended.\n3. The results of this examination were given to XXX in Dr. XXX office on mm/dd/yy at XXX",
+  "annotator_id": "SC",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The exam performed was a renal ultrasound.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "EXAM: Renal ultrasound."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient has a history of renal failure.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HISTORY: Renal failure, neurogenic bladder, status-post cystectomy."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient has a history of neurogenic bladder.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HISTORY: Renal failure, neurogenic bladder, status-post cystectomy."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient is status-post cystectomy.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "HISTORY: Renal failure, neurogenic bladder, status-post cystectomy."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The right kidney measures 12 x 5.2 x 4.6 cm.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The right kidney measures 12 x 5.2 x 4.6 cm and the left kidney measures 12.2 x 6.2 x 4.4 cm."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The left kidney measures 12.2 x 6.2 x 4.4 cm.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The right kidney measures 12 x 5.2 x 4.6 cm and the left kidney measures 12.2 x 6.2 x 4.4 cm."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The imaged portions of the kidneys fail to demonstrate evidence of mass, hydronephrosis, or calculus.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The imaged portions of the kidneys fail to demonstrate evidence of mass, hydronephrosis or calculus."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "There is no evidence of cortical thinning.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "There is no evidence of cortical thinning."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "There is an incidental rounded low-attenuation mass within the inferior aspect of the right lobe of the liver measuring 2.1 x 1.5 x 1.9 cm, which has suggestion of some peripheral blood flow.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Incidentally there is a rounded low-attenuation mass within the inferior aspect of the right lobe of the liver measuring 2.1 x 1.5 x 1.9 cm which has suggestion of some peripheral blood flow."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient apparently has a severe iodine allergy.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient apparently has a severe iodine allergy."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "Further evaluation of the liver mass with MRI is recommended.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Further evaluation with MRI is recommended."
+      ]
+    }
+  ],
+  "annotation_notes": "primary_content_type is lab_values because this is a renal ultrasound report consisting of organ measurements and imaging findings. No demographics (age/sex) are stated. The exam type (F1) and 'status-post cystectomy' (F4) were typed procedure; imaging measurements and findings were typed lab_value; the iodine allergy (F10) was typed diagnosis to match the MTS_DEV_01_gold precedent for allergy status, with the report's 'apparently' uncertainty preserved. Impression item 1 ('No evidence of hydronephrosis') restates the FINDINGS and was not recorded as a separate fact to avoid duplication (captured within F7). The TECHNIQUE sentence (imaging method) and the anonymized logistics (COMPARISON date 'mm/dd/yy'; impression item 3 reporting that results were communicated to 'XXX in Dr. XXX office on mm/dd/yy') were excluded as methodology/logistics containing only placeholder values."
+}

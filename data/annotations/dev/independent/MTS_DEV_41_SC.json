@@ -1,0 +1,140 @@
+{
+  "example_id": "MTS_DEV_41",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=24-Gastroenterology&Sample=217-Colonoscopy+%2D+1",
+  "primary_content_type": "procedures",
+  "selection_mode": "entire_report",
+  "source_text": "INDICATION: Rectal bleeding, constipation, abnormal CT scan, rule out inflammatory bowel disease.\n\nPREMEDICATION: See procedure nurse NCS form.\n\nPROCEDURE: After informed consent was obtained, the patient was placed in the left lateral position and the above medications were titrated with adequate sedation. Monitoring was provided throughout the entire procedure. Digital rectal exam was performed revealing normal sphincter tone and no external hemorrhoids. The Pentax video colonoscope was inserted into rectum and advanced under direct visualization, without difficulty, to the cecum, where the cecal strap, appendiceal orifice, and the ileocecal valve were identified. The quality of the preparation was good. The colonoscope was then withdrawn while carefully examining the mucosa.\n\nThe colonic mucosa appeared normal with normal vascularity and haustral markings. No masses, polyps, AVM/s or diverticula were seen. On retroflexed view in the rectum, there are small internal hemorrhoids.\n\nThe endoscope was removed and the procedure terminated. The patient tolerated the procedure well without complications.\n\nIMPRESSION:\n1. Small internal hemorrhoids.\n2. Otherwise normal colonoscopy.\n\nPLAN: Continue fiber, increase to two tablets twice a day for a total of four tablets. Also try NuLev.\n\nFOLLOWUP: In the office in approximately four weeks if her symptoms do not resolve.",
+  "annotator_id": "SC",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "An indication for the colonoscopy was rectal bleeding.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "INDICATION: Rectal bleeding, constipation, abnormal CT scan, rule out inflammatory bowel disease."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "An indication for the colonoscopy was constipation.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "INDICATION: Rectal bleeding, constipation, abnormal CT scan, rule out inflammatory bowel disease."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "An indication for the colonoscopy was an abnormal CT scan.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "INDICATION: Rectal bleeding, constipation, abnormal CT scan, rule out inflammatory bowel disease."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The colonoscopy was performed to rule out inflammatory bowel disease.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "INDICATION: Rectal bleeding, constipation, abnormal CT scan, rule out inflammatory bowel disease."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "After informed consent was obtained, the patient was placed in the left lateral position and sedated, with monitoring provided throughout the procedure.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "After informed consent was obtained, the patient was placed in the left lateral position and the above medications were titrated with adequate sedation.",
+        "Monitoring was provided throughout the entire procedure."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "A digital rectal exam revealed normal sphincter tone and no external hemorrhoids.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Digital rectal exam was performed revealing normal sphincter tone and no external hemorrhoids."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "A Pentax video colonoscope was inserted into the rectum and advanced without difficulty to the cecum, where the cecal strap, appendiceal orifice, and ileocecal valve were identified.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The Pentax video colonoscope was inserted into rectum and advanced under direct visualization, without difficulty, to the cecum, where the cecal strap, appendiceal orifice, and the ileocecal valve were identified."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The quality of the bowel preparation was good.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The quality of the preparation was good."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The colonic mucosa appeared normal with normal vascularity and haustral markings.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The colonic mucosa appeared normal with normal vascularity and haustral markings."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "No masses, polyps, AVMs, or diverticula were seen.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No masses, polyps, AVM/s or diverticula were seen."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "On retroflexed view in the rectum, there are small internal hemorrhoids.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "On retroflexed view in the rectum, there are small internal hemorrhoids."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient tolerated the procedure well without complications.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient tolerated the procedure well without complications."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The overall impression was an otherwise normal colonoscopy.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Otherwise normal colonoscopy."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The plan is to continue fiber, increasing to two tablets twice a day for a total of four tablets.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Continue fiber, increase to two tablets twice a day for a total of four tablets."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The plan is to also try NuLev.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Also try NuLev."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "Follow-up is planned in the office in approximately four weeks if the patient's symptoms do not resolve.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "In the office in approximately four weeks if her symptoms do not resolve."
+      ]
+    }
+  ],
+  "annotation_notes": "primary_content_type is procedures because this is a colonoscopy operative note documenting the procedure, its findings, and the post-procedure plan. No explicit demographics are stated; the only sex cue is the pronoun 'her' in the follow-up, which was not recorded as a demographic fact since there is no explicit age/sex statement and inferring it is not allowed. Procedure actions and outcome typed procedure (F5, F7, F8, F12); exam/endoscopic findings typed diagnosis; the 'abnormal CT scan' indication typed lab_value (F3). The digital rectal exam is a performed exam whose finding (F6) was typed diagnosis to match the exam-finding precedent; this procedure-vs-diagnosis typing is a judgment call for adjudication. Impression item 1 ('Small internal hemorrhoids') restates the endoscopic finding (F11) and was not duplicated; impression item 2 recorded as the overall conclusion (F13). Negation preserved in F10 ('No masses, polyps, AVM/s or diverticula') and uncertainty in F4 ('rule out inflammatory bowel disease'). PREMEDICATION ('See procedure nurse NCS form') excluded as a logistics reference."
+}
