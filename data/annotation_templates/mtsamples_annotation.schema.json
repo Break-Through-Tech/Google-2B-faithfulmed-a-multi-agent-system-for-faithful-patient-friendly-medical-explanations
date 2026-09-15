@@ -43,6 +43,7 @@
         "fact_type": {
           "type": "string",
           "enum": [
+            "demographics",
             "diagnosis",
             "medication",
             "lab_value",

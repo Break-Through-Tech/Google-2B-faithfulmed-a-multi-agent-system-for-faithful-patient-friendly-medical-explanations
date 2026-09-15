@@ -1,0 +1,179 @@
+{
+  "example_id": "MTS_DEV_06",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=46-Ophthalmology&Sample=2509-Ahmed+Shunt+Placement",
+  "primary_content_type": "procedures",
+  "selection_mode": "entire_report",
+  "source_text": "PROCEDURE IN DETAIL: While in the holding area, the patient received a peripheral IV from the nursing staff. In addition, pilocarpine 1% was placed into the operative eye, two times, separated by 10 minutes. The patient was wheeled to the operating suite where the anesthesia team established peripheral monitoring lines. Through the IV, the patient received IV sedation in the form of propofol and once somnolent from this, a retrobulbar block was administrated consisting of 2% Xylocaine plain. Approximately 3 mL were administered. The patient then underwent a Betadine prep with respect to the face, lens, lashes, and eye. During the draping process, care was taken to isolate the lashes. A Vicryl traction suture was placed through the superior cornea and the eye was reflected downward to expose the superior temporal conjunctiva. Approximately 8 to 10 mm posterior to limbus, the conjunctiva was incised and dissected forward to the limbus. Blunt dissection was carried out in the superotemporal quadrant. Next, a 2 x 3-mm scleral flap was outlined that was one-half scleral depth in thickness. This flap was cut forward to clear cornea using a crescent blade. The Ahmed shunt was then primed and placed in the superior temporal quadrant and it was sutured in place with two 8-0 nylon sutures. The knots were trimmed. The tube was then cut to an appropriate length to enter the anterior chamber. The anterior chamber was then entered after a paracentesis wound had been made temporally. A trabeculectomy was done and then the tube was threaded through the trabeculectomy site. The tube was sutured in place with a multi-wrapped 8-0 nylon suture. The scleral flap was then sutured in place with two 10-0 nylon sutures. The knots were trimmed, rotated and buried. A scleral patch was then placed of an appropriate size over the two. It was sutured in place with interrupted 8-0 nylon sutures. The knots were trimmed. The overlying conjunctiva was then closed with a running 8-0 Vicryl suture with a BV needle. The anterior chamber was filled with Viscoat to keep it deep as the eye was somewhat soft. A good flow was established with irrigation into the anterior chamber. Homatropine, Econopred, and Vigamox drops were placed into the eye. A patch and shield were placed over the eye after removing the draping and the speculum. The patient tolerated the procedure well. He was taken to the recovery in good condition. He will be seen in followup in the office tomorrow.",
+  "annotator_id": "BR",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient received a peripheral IV from the nursing staff.",
+      "fact_type": "procedure",
+      "source_evidence": ["While in the holding area, the patient received a peripheral IV from the nursing staff."]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "Pilocarpine 1% was placed into the patients operative eye twice, 10 minutes apart.",
+      "fact_type": "medication",
+      "source_evidence": ["In addition, pilocarpine 1% was placed into the operative eye, two times, separated by 10 minutes."]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The anesthesia team established peripheral monitoring lines on the patient.",
+      "fact_type": "procedure",
+      "source_evidence": ["The patient was wheeled to the operating suite where the anesthesia team established peripheral monitoring lines."]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient received propofol as IV sedation through the IV.",
+      "fact_type": "mediaction",
+      "source_evidence": ["Through the IV, the patient received IV sedation in the form of propofol and once somnolent from this, a retrobulbar block was administrated consisting of 2% Xylocaine plain."]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "Once the patient was drowsy/sleepy, a retrobulbar block of around 3 mL of 2% Xylocaine plain was administrated to the patient.",
+      "fact_type": "mediaction",
+      "source_evidence": ["Through the IV, the patient received IV sedation in the form of propofol and once somnolent from this, a retrobulbar block was administrated consisting of 2% Xylocaine plain.", "Approximately 3 mL were administered."]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient underwent Betadine prep on the face, lens, lashes, and eye.",
+      "fact_type": "procedure",
+      "source_evidence": ["The patient then underwent a Betadine prep with respect to the face, lens, lashes, and eye."]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The lashes were isolated during the draping process.",
+      "fact_type": "procedure",
+      "source_evidence": ["During the draping process, care was taken to isolate the lashes."]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "A Vicryl traction suture was placed through the patient's superior cornea and the eye was reflected downward to expose the superior temporal conjunctiva.",
+      "fact_type": "procedure",
+      "source_evidence": ["A Vicryl traction suture was placed through the superior cornea and the eye was reflected downward to expose the superior temporal conjunctiva."]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient's conjunctiva was incised and dissected forward to the limbus at around 8 to 10 mm posterior to the limbus.",
+      "fact_type": "procedure",
+      "source_evidence": ["Approximately 8 to 10 mm posterior to limbus, the conjunctiva was incised and dissected forward to the limbus."]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "Blunt dissection was performed out in the patient's superotemporal quadrant.",
+      "fact_type": "procedure",
+      "source_evidence": ["Blunt dissection was carried out in the superotemporal quadrant."]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "A 2x3-mm scleral flap was outlined that was one-half sceral depth thick.",
+      "fact_type": "procedure",
+      "source_evidence": ["Next, a 2 x 3-mm scleral flap was outlined that was one-half scleral depth in thickness."]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The scleral flap was cut forward using a crescent blade to clear the cornea.",
+      "fact_type": "procedure",
+      "source_evidence": ["Next, a 2 x 3-mm scleral flap was outlined that was one-half scleral depth in thickness.", "This flap was cut forward to clear cornea using a crescent blade."]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "An Ahmed shunt was primed and placed in the patient's superior temporal quadrant.",
+      "fact_type": "procedure",
+      "source_evidence": ["The Ahmed shunt was then primed and placed in the superior temporal quadrant and it was sutured in place with two 8-0 nylon sutures."]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The Ahmed shunt was sutured in place with 2 8-0 nylon sutures and the knots were trimmed.",
+      "fact_type": "procedure",
+      "source_evidence": ["The Ahmed shunt was then primed and placed in the superior temporal quadrant and it was sutured in place with two 8-0 nylon sutures.", "The knots were trimmed."]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The tube was cut to an appropriate length to enter the anterior chamber.",
+      "fact_type": "procedure",
+      "source_evidence": ["The tube was then cut to an appropriate length to enter the anterior chamber."]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "After a paracentesis wound was temporally made, the anterior chamber was entered.",
+      "fact_type": "procedure",
+      "source_evidence": ["The anterior chamber was then entered after a paracentesis wound had been made temporally."]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "A trabeculectomy was done on the patient.",
+      "fact_type": "procedure",
+      "source_evidence": ["A trabeculectomy was done and then the tube was threaded through the trabeculectomy site."]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The tube was threaded through the trabeculectomy site.",
+      "fact_type": "procedure",
+      "source_evidence": ["A trabeculectomy was done and then the tube was threaded through the trabeculectomy site."]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The tube was sutured in place using a multi-wrapped 8-0 nylon suture.",
+      "fact_type": "procedure",
+      "source_evidence": ["The tube was sutured in place with a multi-wrapped 8-0 nylon suture."]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The scleral flap was sutured in place using 2 10-0 nylon sutures and the knots were trimmed, rotated, and buried.",
+      "fact_type": "procedure",
+      "source_evidence": ["The scleral flap was then sutured in place with two 10-0 nylon sutures.", "The knots were trimmed, rotated and buried."]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "A scleral patch was placed and sutured in place using interrupted 8-0 nylon sutures and the knots were trimmed.",
+      "fact_type": "procedure",
+      "source_evidence": ["A scleral patch was then placed of an appropriate size over the two.", "It was sutured in place with interrupted 8-0 nylon sutures.", "The knots were trimmed."]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "The overlying conjuctiva was closed using a running 8-0 suture and a BV needle.",
+      "fact_type": "procedure",
+      "source_evidence": ["he overlying conjunctiva was then closed with a running 8-0 Vicryl suture with a BV needle."]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The patient's anterior chamber was filled with Viscoat to keep it deep.",
+      "fact_type": "procedure",
+      "source_evidence": ["he anterior chamber was filled with Viscoat to keep it deep as the eye was somewhat soft."]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "A good flow was established with irrigation into the patient's anterior chamber.",
+      "fact_type": "procedure",
+      "source_evidence": ["A good flow was established with irrigation into the anterior chamber."]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "Homatropine, Econopred, and Vigamox drops were placed into the patient's eye.",
+      "fact_type": "medication",
+      "source_evidence": ["Homatropine, Econopred, and Vigamox drops were placed into the eye."]
+    },
+    {
+      "fact_id": "F26",
+      "fact_text": "After removing the draping and the speculum, a patch and shield were placed over the patient's eye.",
+      "fact_type": "procedure",
+      "source_evidence": ["A patch and shield were placed over the eye after removing the draping and the speculum."]
+    },
+    {
+      "fact_id": "F27",
+      "fact_text": "The patient tolerated the procedure well and was taken to recovery in good condition.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["The patient tolerated the procedure well.", "He was taken to the recovery in good condition."]
+    },
+    {
+      "fact_id": "F28",
+      "fact_text": "The patient will have a followup in the office tomorrow.",
+      "fact_type": "instruction",
+      "source_evidence": ["He will be seen in followup in the office tomorrow."]
+    }
+  ],
+  "annotation_notes": ""
+}

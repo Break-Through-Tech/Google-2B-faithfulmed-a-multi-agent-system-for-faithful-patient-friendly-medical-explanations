@@ -18,7 +18,14 @@ from typing import Any, Iterable
 
 
 CONTENT_TYPES = {"lab_values", "medications", "procedures", "instructions"}
-FACT_TYPES = {"diagnosis", "medication", "lab_value", "procedure", "instruction"}
+FACT_TYPES = {
+    "demographics",
+    "diagnosis",
+    "medication",
+    "lab_value",
+    "procedure",
+    "instruction",
+}
 SPLITS = {"scratch", "dev", "test"}
 SELECTION_MODES = {"entire_report", "self_contained_passage"}
 

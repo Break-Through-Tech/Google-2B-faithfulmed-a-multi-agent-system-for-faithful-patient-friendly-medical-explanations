@@ -36,8 +36,7 @@ data/annotations/dev/*
 !data/annotations/dev/independent/**
 !data/annotations/dev/independent/.gitkeep
 !data/annotations/dev/adjudicated/
-data/annotations/dev/adjudicated/*
-!data/annotations/dev/adjudicated/.gitkeep
+!data/annotations/dev/adjudicated/**
 !data/annotations/test/
 data/annotations/test/*
 !data/annotations/test/independent/
@@ -46,6 +45,8 @@ data/annotations/test/independent/*
 !data/annotations/test/adjudicated/
 data/annotations/test/adjudicated/*
 !data/annotations/test/adjudicated/.gitkeep
+
+!data/PLABA_DEV.json
 
 # Model checkpoints / vector indexes
 *.ckpt

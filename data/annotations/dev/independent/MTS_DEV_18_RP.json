@@ -1,0 +1,76 @@
+{
+  "example_id": "MTS_DEV_18",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=66-Pediatrics+%2D+Neonatal&Sample=440-Well%2DChild+Check+%2D+1",
+  "primary_content_type": "procedures",
+  "selection_mode": "entire_report",
+  "source_text": "CHIEF COMPLAINT: Well-child check. HISTORY OF PRESENT ILLNESS: This is a 12-month-old female here with her mother for a well-child check. Mother states she has been doing well. She is concerned about drainage from her left eye. Mother states she was diagnosed with a blocked tear duct on that side shortly after birth, and normally she has crusted secretions every morning. She states it is worse when the child gets a cold. She has been using massaging when she can remember to do so. The patient is drinking whole milk without problems. She is using solid foods three times a day. She sleeps well without problems. Her bowel movements are regular without problems. She does not attend daycare. DEVELOPMENTAL ASSESSMENT: Social: She can feed herself with fingers. She is comforted by parent's touch. She is able to separate and explore. Fine motor: She scribbles. She has a pincer grasp. She can drink from a cup. Language: She says dada. She says one to two other words and she indicates her wants. Gross motor: She can stand alone. She cruises. She walks alone. She stoops and recovers. PHYSICAL EXAMINATION: General: She is alert, in no distress. Vital signs: Weight: 25th percentile. Height: 25th percentile. Head circumference: 50th percentile. HEENT: Normocephalic, atraumatic. Pupils are equal, round, and reactive to light. Left eye with watery secretions and crusted lashes. Conjunctiva is clear. TMs are clear bilaterally. Nares are patent. Mild nasal congestion present. Oropharynx is clear. Neck: Supple. Lungs: Clear to auscultation. Heart: Regular. No murmur. Abdomen: Soft. Positive bowel sounds. No masses. No hepatosplenomegaly. GU: Female external genitalia. Extremities: Symmetrical. Femoral pulses are 2+ bilaterally. Full range of motion of all extremities. Neurologic: Grossly intact. Skin: Normal turgor. Testing: Hearing and vision assessments grossly normal. ASSESSMENT: 1. Well child. 2. Left lacrimal duct stenosis. PLAN: MMR #1 and Varivax #1 today. VIS statements given to Mother after discussion. Evaluation and treatment as needed with Dr. XYZ with respect to the blocked tear duct. Anticipatory guidance for age. She is to return to the office in three months.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient was assessed as a well child.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ASSESSMENT: 1. Well child."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient was diagnosed with left lacrimal duct stenosis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ASSESSMENT:",
+        "2. Left lacrimal duct stenosis."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient received MMR vaccine dose #1.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "PLAN: MMR #1 and Varivax #1 today."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient received Varivax vaccine dose #1.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "PLAN: MMR #1 and Varivax #1 today."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient's hearing and vision assessments were grossly normal.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Testing: Hearing and vision assessments grossly normal."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient was to receive evaluation and treatment as needed with Dr. XYZ for the blocked tear duct.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Evaluation and treatment as needed with Dr. XYZ with respect to the blocked tear duct."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient was given anticipatory guidance appropriate for her age.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Anticipatory guidance for age."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient was instructed to return to the office in three months.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "She is to return to the office in three months."
+      ]
+    }
+  ],
+  "annotation_notes": "The primary content type is procedures because the report documents a well-child examination with hearing and vision assessments and administration of MMR and Varivax vaccines. Developmental and physical examination findings that do not fit the approved fact types were not separately annotated. The blocked tear duct is captured as the explicitly stated diagnosis of left lacrimal duct stenosis.",
+  "annotator_id": "RP"
+}
