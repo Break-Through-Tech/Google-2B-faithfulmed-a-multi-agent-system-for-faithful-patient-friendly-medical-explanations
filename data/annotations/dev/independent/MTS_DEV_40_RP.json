@@ -1,0 +1,123 @@
+{
+  "example_id": "MTS_DEV_40",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=95-Radiology&Sample=1039-Renal+Ultrasound",
+  "primary_content_type": "lab_values",
+  "selection_mode": "entire_report",
+  "source_text": "EXAM: Renal ultrasound.\n\nHISTORY: Renal failure, neurogenic bladder, status-post cystectomy.\n\nTECHNIQUE: Multiple ultrasonographic images of the kidneys were obtained in the transverse and longitudinal planes.\n\nCOMPARISON: Most recently obtained mm/dd/yy.\n\nFINDINGS: The right kidney measures 12 x 5.2 x 4.6 cm and the left kidney measures 12.2 x 6.2 x 4.4 cm. The imaged portions of the kidneys fail to demonstrate evidence of mass, hydronephrosis or calculus. There is no evidence of cortical thinning.\n\nIncidentally there is a rounded low-attenuation mass within the inferior aspect of the right lobe of the liver measuring 2.1 x 1.5 x 1.9 cm which has suggestion of some peripheral blood flow.\n\nIMPRESSION:\n1. No evidence of hydronephrosis.\n2. Mass within the right lobe of the liver. The patient apparently has a severe iodine allergy. Further evaluation with MRI is recommended.\n3. The results of this examination were given to XXX in Dr. XXX office on mm/dd/yy at XXX",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient has renal failure.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HISTORY: Renal failure, neurogenic bladder, status-post cystectomy."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient has a neurogenic bladder.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HISTORY: Renal failure, neurogenic bladder, status-post cystectomy."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient is status-post cystectomy.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "HISTORY: Renal failure, neurogenic bladder, status-post cystectomy."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The right kidney measures 12 x 5.2 x 4.6 cm.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The right kidney measures 12 x 5.2 x 4.6 cm and the left kidney measures 12.2 x 6.2 x 4.4 cm."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The left kidney measures 12.2 x 6.2 x 4.4 cm.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The right kidney measures 12 x 5.2 x 4.6 cm and the left kidney measures 12.2 x 6.2 x 4.4 cm."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The imaged portions of the kidneys show no evidence of a mass.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The imaged portions of the kidneys fail to demonstrate evidence of mass, hydronephrosis or calculus."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The imaged portions of the kidneys show no evidence of hydronephrosis.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The imaged portions of the kidneys fail to demonstrate evidence of mass, hydronephrosis or calculus."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The imaged portions of the kidneys show no evidence of calculus.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The imaged portions of the kidneys fail to demonstrate evidence of mass, hydronephrosis or calculus."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "There is no evidence of cortical thinning of the kidneys.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "There is no evidence of cortical thinning."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "There is a rounded low-attenuation mass within the inferior aspect of the right lobe of the liver.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Incidentally there is a rounded low-attenuation mass within the inferior aspect of the right lobe of the liver measuring 2.1 x 1.5 x 1.9 cm which has suggestion of some peripheral blood flow."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The right hepatic lobe mass measures 2.1 x 1.5 x 1.9 cm.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Incidentally there is a rounded low-attenuation mass within the inferior aspect of the right lobe of the liver measuring 2.1 x 1.5 x 1.9 cm which has suggestion of some peripheral blood flow."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The right hepatic lobe mass has suggestion of some peripheral blood flow.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Incidentally there is a rounded low-attenuation mass within the inferior aspect of the right lobe of the liver measuring 2.1 x 1.5 x 1.9 cm which has suggestion of some peripheral blood flow."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient apparently has a severe iodine allergy.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient apparently has a severe iodine allergy."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "Further evaluation of the right hepatic lobe mass with MRI is recommended.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Further evaluation with MRI is recommended."
+      ]
+    }
+  ],
+  "annotation_notes": "Primary content type is lab_values because this is a renal ultrasound report centered on imaging findings and measurements. The incidental right hepatic lobe mass is included because it is a clinically significant imaging finding documented in the report. The report states that the mass is low-attenuation and has a suggestion of peripheral blood flow, without assigning a specific diagnosis, so no additional diagnosis is inferred. The word 'apparently' is preserved in the fact concerning severe iodine allergy. The recommendation for MRI is annotated as an instruction. The communication of results to XXX in Dr. XXX's office is not separately annotated because it does not contain a clinical fact, result, or patient-care instruction."
+}
+

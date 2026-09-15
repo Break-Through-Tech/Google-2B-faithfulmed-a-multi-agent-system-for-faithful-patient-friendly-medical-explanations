@@ -1,0 +1,368 @@
+{
+  "example_id": "MTS_DEV_37",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=98-General+Medicine&Sample=1494-Antibiotic+Management+Consult",
+  "primary_content_type": "medications",
+  "selection_mode": "entire_report",
+  "source_text": "REASON FOR CONSULTATION: Antibiotic management for a right foot ulcer and possible osteomyelitis.\n\nHISTORY OF PRESENT ILLNESS: The patient is a 68-year-old Caucasian male with past medical history of diabetes mellitus. He was doing fairly well until last week while mowing the lawn, he injured his right foot. He presented to the Hospital Emergency Room. Cultures taken from the wound on 06/25/2008, were reported positive for methicillin-sensitive Staphylococcus aureus (MSSA). The patient was started on intravenous antibiotic therapy with Levaquin and later on that was changed to oral formulation. The patient underwent debridement of the wound on 07/29/2008. Apparently, MRI and a bone scan was performed at that facility, which was reported negative for osteomyelitis. The patient was then referred to the wound care center at General Hospital. From there, he has been admitted to Long-Term Acute Care Facility for wound care with wound VAC placement. On exam, he has a lacerated wound on the plantar aspect of the right foot, which extends from the second metatarsal area to the fifth metatarsal area, closed with the area of the head of these bones. The wound itself is deep and stage IV and with exam of her gloved finger in my opinion, the third metatarsal bone is palpable, which leads to the clinical diagnosis of osteomyelitis. The patient has serosanguineous drainage in this wound and it tracks under the skin in all directions except distal.\n\nPAST MEDICAL HISTORY: Positive for:\n1. Diabetes mellitus.\n2. Osteomyelitis of the right fifth toe, which was treated with intravenous antibiotic therapy for 6 weeks about 5 years back.\n\nFAMILY HISTORY: Positive for mother passing away in her late 60s from heart attack, father had liver cancer, and passed away from that. One of his children suffers from hypothyroidism, 2 grandchildren has cerebral palsy secondary to being prematurely born.\n\nALLERGIES: No known drug allergies.\n\nREVIEW OF SYSTEMS: Positive findings of the foot that have been mentioned above. All other systems reviewed were negative.\n\nPHYSICAL EXAMINATION:\nGeneral: A 68-year-old Caucasian male who was not in any acute hemodynamic distress at present.\nVital Signs: Show a maximum recorded temperature of 98, pulse is rating between 67 to 80 per minute, respiratory rate is 20 per minute, blood pressure is varying between 137/63 to 169/75.\nHEENT: Pupils equal, round, reactive to light. Extraocular movements intact. Head is normocephalic. External ear exam is normal.\nNeck: Supple. There is no palpable lymphadenopathy.\nCardiovascular: Regular rate and rhythm of the heart without any appreciable murmur, rub or gallop.\nLungs: Clear to auscultation and percussion bilaterally.\nAbdomen: Soft, nontender, and nondistended without any organomegaly and bowel sounds are positive. There is no palpable lymphadenopathy in the inguinal and femoral area.\nExtremities: There is no cyanosis, clubbing or edema. There is no peripheral stigmata of endocarditis. On the plantar aspect of the distal part of the right foot, the patient has a lacerated wound, which extends from the second metatarsal area to the fifth metatarsal area. Tracking under the skin is palpable with a gloved finger in all direction except the distal one. On the proximal tracking, the area of the wound, the third metatarsal bone is palpable. Therefore, clinically, the patient has diagnoses of osteomyelitis.\nCentral nervous system: The patient is alert, oriented x3. Cranial nerves II through XII are intact. There is no focal deficit appreciated.\n\nLABORATORY DATA: No laboratory or radiological data is available at present in the chart.\n\nIMPRESSION/PLAN: A 68-year-old Caucasian male with history of diabetes mellitus who had an accidental lawn mower-associated injury on the right foot. He has undergone debridement on 07/29/2008. Culture results from the debridement procedure are not available. Wound cultures from 07/25/2008 showed methicillin-sensitive Staphylococcus aureus.\n\nFrom the Infectious Disease point of view, the patient has the following problems, and I would recommend following treatments strategy.\n\n1. Right foot infected ulcer with clinical evidence of osteomyelitis. Even if the MRI and bone scan are negative, the treatment should be guided with diagnosis on clinical counts in my opinion. Cultures have been reported positive for methicillin-sensitive Staphylococcus aureus. Therefore, I would discontinue the current antibiotic regimen of oral Levaquin, Zyvox, and intravenous Zosyn, and start the patient on intravenous Ancef 2 g q.8 h. We will need to continue this treatment for 6 weeks for treatment of osteomyelitis and deep wound infection. I would also recommend continuation of wound care and wound VAC placement that would start tomorrow. We will get a PICC line placed to complete the 6-week course of intravenous antibiotic therapy.\n2. We would check labs including CBC with differential, chemistry 7 panel, LFTs, ESR, and C-reactive protein levels every Monday and chemistry 7 panel and CBC every Thursday for the duration of antibiotic therapy.\n3. I will continue to monitor wound healing 2 to 3 times a week. Wound care will be managed by the wound care team at the Long-Term Acute Care Facility.\n4. The treatment plan was discussed in detail with the patient and his daughter who was visiting him when I saw him.\n5. Other medical problems will continue to be followed and treated by Dr. X's group during this hospitalization.\n6. I appreciate the opportunity of participating in this patient's care. If you have any questions please feel free to call me at any time. I will continue to follow the patient along with you for the next few days during this hospitalization. We would also try to get the results of the deep wound cultures from 07/29/2008, MRI, and bone scan from Hospital.",
+  "annotator_id": "SC",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The reason for the consultation is antibiotic management for a right foot ulcer and possible osteomyelitis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "REASON FOR CONSULTATION: Antibiotic management for a right foot ulcer and possible osteomyelitis."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient is a 68-year-old Caucasian male.",
+      "fact_type": "demographics",
+      "source_evidence": [
+        "The patient is a 68-year-old Caucasian male with past medical history of diabetes mellitus."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient has a past medical history of diabetes mellitus.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient is a 68-year-old Caucasian male with past medical history of diabetes mellitus."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient injured his right foot last week while mowing the lawn.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "He was doing fairly well until last week while mowing the lawn, he injured his right foot."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "Cultures taken from the wound on 06/25/2008 were reported positive for methicillin-sensitive Staphylococcus aureus (MSSA).",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Cultures taken from the wound on 06/25/2008, were reported positive for methicillin-sensitive Staphylococcus aureus (MSSA)."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient was started on intravenous antibiotic therapy with Levaquin, which was later changed to an oral formulation.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "The patient was started on intravenous antibiotic therapy with Levaquin and later on that was changed to oral formulation."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient underwent debridement of the wound on 07/29/2008.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient underwent debridement of the wound on 07/29/2008."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "An MRI and a bone scan were performed and were reported negative for osteomyelitis.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Apparently, MRI and a bone scan was performed at that facility, which was reported negative for osteomyelitis."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient has been admitted to a Long-Term Acute Care Facility for wound care with wound VAC placement.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "From there, he has been admitted to Long-Term Acute Care Facility for wound care with wound VAC placement."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "On exam, the patient has a deep, stage IV lacerated wound on the plantar aspect of the right foot, extending from the second metatarsal area to the fifth metatarsal area.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "On exam, he has a lacerated wound on the plantar aspect of the right foot, which extends from the second metatarsal area to the fifth metatarsal area, closed with the area of the head of these bones.",
+        "The wound itself is deep and stage IV and with exam of her gloved finger in my opinion, the third metatarsal bone is palpable, which leads to the clinical diagnosis of osteomyelitis."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The third metatarsal bone is palpable within the wound, which leads to a clinical diagnosis of osteomyelitis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The wound itself is deep and stage IV and with exam of her gloved finger in my opinion, the third metatarsal bone is palpable, which leads to the clinical diagnosis of osteomyelitis."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The wound has serosanguineous drainage and tracks under the skin in all directions except distal.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "On exam, he has a lacerated wound on the plantar aspect of the right foot, which extends from the second metatarsal area to the fifth metatarsal area, closed with the area of the head of these bones.",
+        "The patient has serosanguineous drainage in this wound and it tracks under the skin in all directions except distal."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient has a past medical history of osteomyelitis of the right fifth toe, which was treated with intravenous antibiotic therapy for 6 weeks about 5 years ago.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Osteomyelitis of the right fifth toe, which was treated with intravenous antibiotic therapy for 6 weeks about 5 years back."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient's mother died in her late 60s from a heart attack.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "FAMILY HISTORY: Positive for mother passing away in her late 60s from heart attack, father had liver cancer, and passed away from that."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient's father had liver cancer and died from it.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "FAMILY HISTORY: Positive for mother passing away in her late 60s from heart attack, father had liver cancer, and passed away from that."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "One of the patient's children has hypothyroidism.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "One of his children suffers from hypothyroidism, 2 grandchildren has cerebral palsy secondary to being prematurely born."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "Two of the patient's grandchildren have cerebral palsy secondary to premature birth.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "One of his children suffers from hypothyroidism, 2 grandchildren has cerebral palsy secondary to being prematurely born."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The patient has no known drug allergies.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ALLERGIES: No known drug allergies."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "On review of systems, the only positive findings were of the foot; all other systems reviewed were negative.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Positive findings of the foot that have been mentioned above.",
+        "All other systems reviewed were negative."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The patient was not in acute hemodynamic distress.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "General: A 68-year-old Caucasian male who was not in any acute hemodynamic distress at present."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "The patient's maximum recorded temperature was 98.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Vital Signs: Show a maximum recorded temperature of 98, pulse is rating between 67 to 80 per minute, respiratory rate is 20 per minute, blood pressure is varying between 137/63 to 169/75."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "The patient's pulse ranged between 67 and 80 per minute.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Vital Signs: Show a maximum recorded temperature of 98, pulse is rating between 67 to 80 per minute, respiratory rate is 20 per minute, blood pressure is varying between 137/63 to 169/75."
+      ]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The patient's respiratory rate was 20 per minute.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Vital Signs: Show a maximum recorded temperature of 98, pulse is rating between 67 to 80 per minute, respiratory rate is 20 per minute, blood pressure is varying between 137/63 to 169/75."
+      ]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "The patient's blood pressure varied between 137/63 and 169/75.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Vital Signs: Show a maximum recorded temperature of 98, pulse is rating between 67 to 80 per minute, respiratory rate is 20 per minute, blood pressure is varying between 137/63 to 169/75."
+      ]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "HEENT exam showed pupils equal, round, and reactive to light, extraocular movements intact, head normocephalic, and normal external ear exam.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HEENT: Pupils equal, round, reactive to light.",
+        "Extraocular movements intact.",
+        "Head is normocephalic.",
+        "External ear exam is normal."
+      ]
+    },
+    {
+      "fact_id": "F26",
+      "fact_text": "The neck was supple with no palpable lymphadenopathy.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Neck: Supple.",
+        "There is no palpable lymphadenopathy."
+      ]
+    },
+    {
+      "fact_id": "F27",
+      "fact_text": "The cardiovascular exam showed a regular rate and rhythm without any appreciable murmur, rub, or gallop.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Cardiovascular: Regular rate and rhythm of the heart without any appreciable murmur, rub or gallop."
+      ]
+    },
+    {
+      "fact_id": "F28",
+      "fact_text": "The lungs were clear to auscultation and percussion bilaterally.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Lungs: Clear to auscultation and percussion bilaterally."
+      ]
+    },
+    {
+      "fact_id": "F29",
+      "fact_text": "The abdomen was soft, nontender, and nondistended without organomegaly, with positive bowel sounds and no palpable lymphadenopathy in the inguinal and femoral area.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Abdomen: Soft, nontender, and nondistended without any organomegaly and bowel sounds are positive.",
+        "There is no palpable lymphadenopathy in the inguinal and femoral area."
+      ]
+    },
+    {
+      "fact_id": "F30",
+      "fact_text": "The extremities showed no cyanosis, clubbing, or edema, and no peripheral stigmata of endocarditis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Extremities: There is no cyanosis, clubbing or edema.",
+        "There is no peripheral stigmata of endocarditis."
+      ]
+    },
+    {
+      "fact_id": "F31",
+      "fact_text": "On central nervous system exam, the patient was alert and oriented x3, with cranial nerves II through XII intact and no focal deficit.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Central nervous system: The patient is alert, oriented x3.",
+        "Cranial nerves II through XII are intact.",
+        "There is no focal deficit appreciated."
+      ]
+    },
+    {
+      "fact_id": "F32",
+      "fact_text": "No laboratory or radiological data is available at present in the chart.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "LABORATORY DATA: No laboratory or radiological data is available at present in the chart."
+      ]
+    },
+    {
+      "fact_id": "F33",
+      "fact_text": "Culture results from the debridement procedure are not available.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Culture results from the debridement procedure are not available."
+      ]
+    },
+    {
+      "fact_id": "F34",
+      "fact_text": "Wound cultures from 07/25/2008 showed methicillin-sensitive Staphylococcus aureus.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Wound cultures from 07/25/2008 showed methicillin-sensitive Staphylococcus aureus."
+      ]
+    },
+    {
+      "fact_id": "F35",
+      "fact_text": "The patient is assessed as having a right foot infected ulcer with clinical evidence of osteomyelitis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Right foot infected ulcer with clinical evidence of osteomyelitis."
+      ]
+    },
+    {
+      "fact_id": "F36",
+      "fact_text": "The current antibiotic regimen of oral Levaquin, Zyvox, and intravenous Zosyn will be discontinued.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Therefore, I would discontinue the current antibiotic regimen of oral Levaquin, Zyvox, and intravenous Zosyn, and start the patient on intravenous Ancef 2 g q.8 h."
+      ]
+    },
+    {
+      "fact_id": "F37",
+      "fact_text": "The patient will be started on intravenous Ancef 2 g every 8 hours.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Therefore, I would discontinue the current antibiotic regimen of oral Levaquin, Zyvox, and intravenous Zosyn, and start the patient on intravenous Ancef 2 g q.8 h."
+      ]
+    },
+    {
+      "fact_id": "F38",
+      "fact_text": "The antibiotic treatment is to continue for 6 weeks for treatment of osteomyelitis and deep wound infection.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Therefore, I would discontinue the current antibiotic regimen of oral Levaquin, Zyvox, and intravenous Zosyn, and start the patient on intravenous Ancef 2 g q.8 h.",
+        "We will need to continue this treatment for 6 weeks for treatment of osteomyelitis and deep wound infection."
+      ]
+    },
+    {
+      "fact_id": "F39",
+      "fact_text": "Continuation of wound care and wound VAC placement is recommended, to start tomorrow.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "I would also recommend continuation of wound care and wound VAC placement that would start tomorrow."
+      ]
+    },
+    {
+      "fact_id": "F40",
+      "fact_text": "A PICC line will be placed to complete the 6-week course of intravenous antibiotic therapy.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "We will get a PICC line placed to complete the 6-week course of intravenous antibiotic therapy."
+      ]
+    },
+    {
+      "fact_id": "F41",
+      "fact_text": "Labs including CBC with differential, chemistry 7 panel, LFTs, ESR, and C-reactive protein will be checked every Monday, and a chemistry 7 panel and CBC every Thursday, for the duration of antibiotic therapy.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "We would check labs including CBC with differential, chemistry 7 panel, LFTs, ESR, and C-reactive protein levels every Monday and chemistry 7 panel and CBC every Thursday for the duration of antibiotic therapy."
+      ]
+    },
+    {
+      "fact_id": "F42",
+      "fact_text": "Wound healing will be monitored 2 to 3 times a week, and wound care will be managed by the wound care team at the Long-Term Acute Care Facility.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "I will continue to monitor wound healing 2 to 3 times a week.",
+        "Wound care will be managed by the wound care team at the Long-Term Acute Care Facility."
+      ]
+    },
+    {
+      "fact_id": "F43",
+      "fact_text": "The treatment plan was discussed in detail with the patient and his daughter.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The treatment plan was discussed in detail with the patient and his daughter who was visiting him when I saw him."
+      ]
+    }
+  ],
+  "annotation_notes": "The source reports an MSSA wound culture dated 06/25/2008 in the history and another MSSA wound culture dated 07/25/2008 in the impression/plan; both dates are preserved. The MRI and bone scan were reported negative for osteomyelitis, while the clinician diagnosed osteomyelitis based on palpable bone; both statements are preserved."
+}

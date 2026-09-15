@@ -1,0 +1,250 @@
+{
+  "example_id": "MTS_DEV_18",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=66-Pediatrics+%2D+Neonatal&Sample=440-Well%2DChild+Check+%2D+1",
+  "primary_content_type": "procedures",
+  "selection_mode": "entire_report",
+  "source_text": "CHIEF COMPLAINT: Well-child check. HISTORY OF PRESENT ILLNESS: This is a 12-month-old female here with her mother for a well-child check. Mother states she has been doing well. She is concerned about drainage from her left eye. Mother states she was diagnosed with a blocked tear duct on that side shortly after birth, and normally she has crusted secretions every morning. She states it is worse when the child gets a cold. She has been using massaging when she can remember to do so. The patient is drinking whole milk without problems. She is using solid foods three times a day. She sleeps well without problems. Her bowel movements are regular without problems. She does not attend daycare. DEVELOPMENTAL ASSESSMENT: Social: She can feed herself with fingers. She is comforted by parent's touch. She is able to separate and explore. Fine motor: She scribbles. She has a pincer grasp. She can drink from a cup. Language: She says dada. She says one to two other words and she indicates her wants. Gross motor: She can stand alone. She cruises. She walks alone. She stoops and recovers. PHYSICAL EXAMINATION: General: She is alert, in no distress. Vital signs: Weight: 25th percentile. Height: 25th percentile. Head circumference: 50th percentile. HEENT: Normocephalic, atraumatic. Pupils are equal, round, and reactive to light. Left eye with watery secretions and crusted lashes. Conjunctiva is clear. TMs are clear bilaterally. Nares are patent. Mild nasal congestion present. Oropharynx is clear. Neck: Supple. Lungs: Clear to auscultation. Heart: Regular. No murmur. Abdomen: Soft. Positive bowel sounds. No masses. No hepatosplenomegaly. GU: Female external genitalia. Extremities: Symmetrical. Femoral pulses are 2+ bilaterally. Full range of motion of all extremities. Neurologic: Grossly intact. Skin: Normal turgor. Testing: Hearing and vision assessments grossly normal. ASSESSMENT: 1. Well child. 2. Left lacrimal duct stenosis. PLAN: MMR #1 and Varivax #1 today. VIS statements given to Mother after discussion. Evaluation and treatment as needed with Dr. XYZ with respect to the blocked tear duct. Anticipatory guidance for age. She is to return to the office in three months.",
+  "annotator_id": "SC",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient is a 12-month-old female presenting with her mother for a well-child check.",
+      "fact_type": "demographics",
+      "source_evidence": [
+        "This is a 12-month-old female here with her mother for a well-child check."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The mother is concerned about drainage from the patient's left eye.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She is concerned about drainage from her left eye."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient was diagnosed with a blocked tear duct on the left side shortly after birth, normally has crusted secretions every morning, and it is worse when the child gets a cold.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Mother states she was diagnosed with a blocked tear duct on that side shortly after birth, and normally she has crusted secretions every morning.",
+        "She states it is worse when the child gets a cold."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The mother has been massaging the tear duct when she can remember to do so.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "She has been using massaging when she can remember to do so."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient is drinking whole milk without problems, eating solid foods three times a day, sleeping well, and having regular bowel movements.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient is drinking whole milk without problems.",
+        "She is using solid foods three times a day.",
+        "She sleeps well without problems.",
+        "Her bowel movements are regular without problems."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "On social developmental assessment, the patient can feed herself with fingers, is comforted by parent's touch, and is able to separate and explore.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She can feed herself with fingers.",
+        "She is comforted by parent's touch.",
+        "She is able to separate and explore."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "On fine motor developmental assessment, the patient scribbles, has a pincer grasp, and can drink from a cup.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She scribbles.",
+        "She has a pincer grasp.",
+        "She can drink from a cup."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "On language developmental assessment, the patient says dada, says one to two other words, and indicates her wants.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She says dada.",
+        "She says one to two other words and she indicates her wants."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "On gross motor developmental assessment, the patient can stand alone, cruises, walks alone, and stoops and recovers.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She can stand alone.",
+        "She cruises.",
+        "She walks alone.",
+        "She stoops and recovers."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "On general exam, the patient is alert and in no distress.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She is alert, in no distress."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient's weight is at the 25th percentile.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Weight: 25th percentile."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient's height is at the 25th percentile.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Height: 25th percentile."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient's head circumference is at the 50th percentile.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Head circumference: 50th percentile."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "HEENT exam showed the patient is normocephalic and atraumatic, with pupils equal, round, and reactive to light.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Normocephalic, atraumatic.",
+        "Pupils are equal, round, and reactive to light."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The left eye has watery secretions and crusted lashes, with a clear conjunctiva.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Left eye with watery secretions and crusted lashes.",
+        "Conjunctiva is clear."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The tympanic membranes are clear bilaterally, nares are patent, mild nasal congestion is present, and the oropharynx is clear.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "TMs are clear bilaterally.",
+        "Nares are patent.",
+        "Mild nasal congestion present.",
+        "Oropharynx is clear."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The neck is supple, the lungs are clear to auscultation, and the heart is regular with no murmur.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Neck: Supple.",
+        "Lungs: Clear to auscultation.",
+        "Heart: Regular. No murmur."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The abdomen is soft with positive bowel sounds, no masses, and no hepatosplenomegaly.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Abdomen: Soft. Positive bowel sounds. No masses. No hepatosplenomegaly."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient has female external genitalia, symmetrical extremities, femoral pulses 2+ bilaterally, and full range of motion of all extremities.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "GU: Female external genitalia.",
+        "Extremities: Symmetrical.",
+        "Femoral pulses are 2+ bilaterally.",
+        "Full range of motion of all extremities."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "Neurologic exam is grossly intact and skin has normal turgor.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Neurologic: Grossly intact.",
+        "Skin: Normal turgor."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "Hearing and vision assessments are grossly normal.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Testing: Hearing and vision assessments grossly normal."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "The patient is assessed as a well child.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "1. Well child."
+      ]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The patient is assessed as having left lacrimal duct stenosis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "2. Left lacrimal duct stenosis."
+      ]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "MMR #1 and Varivax #1 were given today.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "PLAN: MMR #1 and Varivax #1 today."
+      ]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "Evaluation and treatment as needed with Dr. XYZ is planned with respect to the blocked tear duct.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Evaluation and treatment as needed with Dr. XYZ with respect to the blocked tear duct."
+      ]
+    },
+    {
+      "fact_id": "F26",
+      "fact_text": "Anticipatory guidance for age was provided.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Anticipatory guidance for age."
+      ]
+    },
+    {
+      "fact_id": "F27",
+      "fact_text": "The patient is to return to the office in three months.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "She is to return to the office in three months."
+      ]
+    }
+  ],
+  "annotation_notes": "primary_content_type is procedures; the visit's key intervention is immunization (MMR #1 and Varivax #1). The immunizations (F24) were typed procedure to match that content-type rationale, though vaccines could alternatively be typed medication; flag for adjudication. Developmental milestones and physical-exam findings were typed diagnosis (using diagnosis broadly for clinical findings/status, consistent with existing gold files); growth percentiles typed lab_value. The tear-duct massage (F4) was typed instruction as a home-care action. Excluded and flagged for adjudication: 'She does not attend daycare' (social history) and 'VIS statements given to Mother after discussion' (documentation logistics). Negations preserved (e.g., 'No murmur', 'No masses. No hepatosplenomegaly')."
+}

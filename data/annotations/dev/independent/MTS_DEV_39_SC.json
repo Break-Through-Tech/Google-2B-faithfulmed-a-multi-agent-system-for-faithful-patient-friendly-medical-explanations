@@ -1,0 +1,133 @@
+{
+  "example_id": "MTS_DEV_39",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=6-Cardiovascular+%2F+Pulmonary&Sample=236-Pulmonary+Function+Test+%2D+1",
+  "primary_content_type": "lab_values",
+  "selection_mode": "entire_report",
+  "source_text": "HISTORY: Smoking history 50-pack years of smoking.\n\nINDICATION: Dyspnea.\n\nPROCEDURE: FVC was 59%. FEV1 was 45%. FEV1/FVC ratio was 52%. The predicted was 67%. FEF 25/75% was 22%, improved about 400-cc, which represents 89% improvement with bronchodilator. SVC was 91%. Inspiratory capacity was 70%. Residual volume was 225% of its predicted. Total lung capacity was 128%.\n\nIMPRESSION:\n1. Moderate obstructive lung disease with some improvement with bronchodilator indicating bronchospastic element.\n2. Probably there is some restrictive element because of fibrosis. The reason for that is that the inspiratory capacity was limited and the total lung capacity did not increase to the same extent as the residual volume and expiratory residual volume.\n3. Diffusion capacity was not measured. The flow volume loop was consistent with the above.",
+  "annotator_id": "SC",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient has a 50-pack-year smoking history.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HISTORY: Smoking history 50-pack years of smoking."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The indication for the pulmonary function test was dyspnea.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "INDICATION: Dyspnea."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "FVC was 59%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "FVC was 59%."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "FEV1 was 45%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "FEV1 was 45%."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The FEV1/FVC ratio was 52%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "FEV1/FVC ratio was 52%."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The predicted was 67%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The predicted was 67%."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "FEF 25/75% was 22%, improved about 400-cc, which represents an 89% improvement with bronchodilator.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "FEF 25/75% was 22%, improved about 400-cc, which represents 89% improvement with bronchodilator."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "SVC was 91%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "SVC was 91%."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "Inspiratory capacity was 70%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Inspiratory capacity was 70%."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "Residual volume was 225% of its predicted.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Residual volume was 225% of its predicted."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "Total lung capacity was 128%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Total lung capacity was 128%."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The impression is moderate obstructive lung disease with some improvement with bronchodilator, indicating a bronchospastic element.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Moderate obstructive lung disease with some improvement with bronchodilator indicating bronchospastic element."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "There is probably some restrictive element because of fibrosis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Probably there is some restrictive element because of fibrosis."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "Diffusion capacity was not measured.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Diffusion capacity was not measured."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The flow volume loop was consistent with the reported moderate obstructive lung disease and probable restrictive element.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Moderate obstructive lung disease with some improvement with bronchodilator indicating bronchospastic element.",
+        "Probably there is some restrictive element because of fibrosis.",
+        "The flow volume loop was consistent with the above."
+      ]
+    }
+  ],
+  "annotation_notes": "The source states 'The predicted was 67%' without identifying which parameter the value refers to; that ambiguity is preserved."
+}
