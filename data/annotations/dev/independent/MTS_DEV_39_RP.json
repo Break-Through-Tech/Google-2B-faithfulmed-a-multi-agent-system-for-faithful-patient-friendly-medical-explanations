@@ -1,0 +1,171 @@
+{
+  "example_id": "MTS_DEV_39",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=6-Cardiovascular+%2F+Pulmonary&Sample=236-Pulmonary+Function+Test+%2D+1",
+  "primary_content_type": "lab_values",
+  "selection_mode": "entire_report",
+  "source_text": "HISTORY: Smoking history 50-pack years of smoking.\n\nINDICATION: Dyspnea.\n\nPROCEDURE: FVC was 59%. FEV1 was 45%. FEV1/FVC ratio was 52%. The predicted was 67%. FEF 25/75% was 22%, improved about 400-cc, which represents 89% improvement with bronchodilator. SVC was 91%. Inspiratory capacity was 70%. Residual volume was 225% of its predicted. Total lung capacity was 128%.\n\nIMPRESSION:\n1. Moderate obstructive lung disease with some improvement with bronchodilator indicating bronchospastic element.\n2. Probably there is some restrictive element because of fibrosis. The reason for that is that the inspiratory capacity was limited and the total lung capacity did not increase to the same extent as the residual volume and expiratory residual volume.\n3. Diffusion capacity was not measured. The flow volume loop was consistent with the above.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient has a smoking history of 50 pack-years.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Smoking history 50-pack years of smoking."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The indication for the pulmonary function test is dyspnea.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "INDICATION: Dyspnea."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "Forced vital capacity (FVC) was 59%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "FVC was 59%."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "Forced expiratory volume in one second (FEV1) was 45%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "FEV1 was 45%."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The FEV1/FVC ratio was 52%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "FEV1/FVC ratio was 52%."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The predicted value was 67%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The predicted was 67%."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "Forced expiratory flow at 25% to 75% of pulmonary volume (FEF 25/75%) was 22%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "FEF 25/75% was 22%, improved about 400-cc, which represents 89% improvement with bronchodilator."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "FEF 25/75% improved by about 400 cc with bronchodilator.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "FEF 25/75% was 22%, improved about 400-cc, which represents 89% improvement with bronchodilator."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "FEF 25/75% improvement with bronchodilator was 89%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "FEF 25/75% was 22%, improved about 400-cc, which represents 89% improvement with bronchodilator."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "Slow vital capacity (SVC) was 91%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "SVC was 91%."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "Inspiratory capacity was 70%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Inspiratory capacity was 70%."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "Residual volume was 225% of its predicted value.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Residual volume was 225% of its predicted."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "Total lung capacity was 128%.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Total lung capacity was 128%."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The pulmonary function test showed moderate obstructive lung disease.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Moderate obstructive lung disease with some improvement with bronchodilator indicating bronchospastic element."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The obstructive lung disease showed some improvement with bronchodilator, indicating a bronchospastic element.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Moderate obstructive lung disease with some improvement with bronchodilator indicating bronchospastic element."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "There was probably some restrictive element because of fibrosis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Probably there is some restrictive element because of fibrosis."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The inspiratory capacity was limited.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The reason for that is that the inspiratory capacity was limited and the total lung capacity did not increase to the same extent as the residual volume and expiratory residual volume."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The total lung capacity did not increase to the same extent as the residual volume and expiratory residual volume.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The reason for that is that the inspiratory capacity was limited and the total lung capacity did not increase to the same extent as the residual volume and expiratory residual volume."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "Diffusion capacity was not measured.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Diffusion capacity was not measured."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The flow volume loop was consistent with the reported findings.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The flow volume loop was consistent with the above."
+      ]
+    }
+  ],
+  "annotation_notes": "Primary content type is lab_values because this is a pulmonary function test report centered on measured respiratory values and their interpretation. The report documents obstructive lung disease with some bronchodilator response and states that there was probably a restrictive element because of fibrosis. The word 'probably' is preserved to reflect the report's uncertainty. The reported smoking history and dyspnea indication are included as clinically relevant context. Medical abbreviations in fact_text are expanded while source_evidence remains exact. No outside interpretation was added."
+}
+

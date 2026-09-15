@@ -1,0 +1,187 @@
+{
+  "example_id": "MTS_DEV_42",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=46-Ophthalmology&Sample=1958-Cataract+Extraction",
+  "primary_content_type": "procedures",
+  "selection_mode": "entire_report",
+  "source_text": "PROCEDURE PERFORMED: Cataract extraction with lens implantation, right eye.\n\nDESCRIPTION OF PROCEDURE: The patient was brought to the operating room. The patient was identified and the correct operative site was also identified. A retrobulbar block using 5 ml of 2% lidocaine without epinephrine was done after adequate anesthetic was assured, and the eye was massaged to reduce risk of bleeding. The patient was prepped and draped in the usual fashion. A lid speculum was applied.\n\nA groove incision at the 12 o'clock position was made with a 5700 blade. This was beveled anteriorly in a lamellar fashion using the crescent knife. Then the anterior chamber was entered with a slit knife. The chamber was deepened with Viscoat. Then a paracentesis at the 3 o'clock position was created using a super sharp blade. A cystitome was used to nick the anterior capsule and then the capsulotomy was completed with capsulorrhexis forceps. Hydrodissection was employed using BSS on a blunt 27-gauge needle.\n\nThe phaco tip was then introduced into the eye, and the eye was divided into 4 grooves. Then a second instrument was used, a Sinskey hook, to crack these grooves, and the individual quadrants were brought into the central zone and phacoemulsified. I/A proceeded without difficulty using the irrigation/aspiration cannula. The capsule was felt to be clear and intact. The capsular bag was then expanded with ProVisc.\n\nThe internal corneal wound was increased using the slit knife. The lens was inspected and found to be free of defects, folded, and easily inserted into the capsular bag, and unfolded. A corneal light shield was then used as the wound was sutured with a figure-of-eight 10-0 nylon suture. Then the Viscoat was removed using I/A, and the suture drawn up and tied.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "Cataract extraction with lens implantation was performed on the right eye.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "PROCEDURE PERFORMED: Cataract extraction with lens implantation, right eye."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "A retrobulbar block using 5 mL of 2% lidocaine without epinephrine was administered.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A retrobulbar block using 5 ml of 2% lidocaine without epinephrine was done after adequate anesthetic was assured, and the eye was massaged to reduce risk of bleeding."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The eye was massaged after the retrobulbar block to reduce the risk of bleeding.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A retrobulbar block using 5 ml of 2% lidocaine without epinephrine was done after adequate anesthetic was assured, and the eye was massaged to reduce risk of bleeding."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "A groove incision was made at the 12 o'clock position using a 5700 blade.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A groove incision at the 12 o'clock position was made with a 5700 blade."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The groove incision was beveled anteriorly in a lamellar fashion using a crescent knife.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "This was beveled anteriorly in a lamellar fashion using the crescent knife."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The anterior chamber was entered with a slit knife.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Then the anterior chamber was entered with a slit knife."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The anterior chamber was deepened with Viscoat.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The chamber was deepened with Viscoat."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "A paracentesis was created at the 3 o'clock position using a super sharp blade.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Then a paracentesis at the 3 o'clock position was created using a super sharp blade."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The anterior capsule was nicked with a cystitome and the capsulotomy was completed with capsulorrhexis forceps.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A cystitome was used to nick the anterior capsule and then the capsulotomy was completed with capsulorrhexis forceps."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "Hydrodissection was performed using BSS on a blunt 27-gauge needle.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Hydrodissection was employed using BSS on a blunt 27-gauge needle."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The eye was divided into four grooves using the phaco tip.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The phaco tip was then introduced into the eye, and the eye was divided into 4 grooves."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "A Sinskey hook was used to crack the four grooves and bring the individual quadrants into the central zone for phacoemulsification.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Then a second instrument was used, a Sinskey hook, to crack these grooves, and the individual quadrants were brought into the central zone and phacoemulsified."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The individual lens quadrants were phacoemulsified.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Then a second instrument was used, a Sinskey hook, to crack these grooves, and the individual quadrants were brought into the central zone and phacoemulsified."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "Irrigation and aspiration proceeded without difficulty using an irrigation/aspiration cannula.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "I/A proceeded without difficulty using the irrigation/aspiration cannula."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The capsule was clear and intact.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The capsule was felt to be clear and intact."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The capsular bag was expanded with ProVisc.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The capsular bag was then expanded with ProVisc."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The internal corneal wound was increased using a slit knife.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The internal corneal wound was increased using the slit knife."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The lens was inspected and found to be free of defects.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The lens was inspected and found to be free of defects, folded, and easily inserted into the capsular bag, and unfolded."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The lens was folded, inserted into the capsular bag, and unfolded.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The lens was inspected and found to be free of defects, folded, and easily inserted into the capsular bag, and unfolded."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The corneal wound was sutured with a figure-of-eight 10-0 nylon suture.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A corneal light shield was then used as the wound was sutured with a figure-of-eight 10-0 nylon suture."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "Viscoat was removed using irrigation and aspiration.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Then the Viscoat was removed using I/A, and the suture drawn up and tied."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "The suture was drawn up and tied.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Then the Viscoat was removed using I/A, and the suture drawn up and tied."
+      ]
+    }
+  ],
+  "annotation_notes": "Primary content type is procedures because the report documents a cataract extraction with lens implantation and provides the operative steps. Procedural details, anesthesia, medications/materials used during the procedure, and relevant operative findings are included. The capsule was reported as clear and intact, and the implanted lens was reported to be free of defects. Abbreviations such as I/A are expanded in fact_text while source_evidence remains exact. No outside clinical interpretation was added."
+}
+
