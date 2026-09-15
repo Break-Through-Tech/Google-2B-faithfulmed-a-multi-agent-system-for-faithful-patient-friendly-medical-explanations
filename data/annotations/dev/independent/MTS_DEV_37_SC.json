@@ -8,18 +8,18 @@
   "facts": [
     {
       "fact_id": "F1",
-      "fact_text": "The patient is a 68-year-old Caucasian male.",
-      "fact_type": "demographics",
-      "source_evidence": [
-        "The patient is a 68-year-old Caucasian male with past medical history of diabetes mellitus."
-      ]
-    },
-    {
-      "fact_id": "F2",
       "fact_text": "The reason for the consultation is antibiotic management for a right foot ulcer and possible osteomyelitis.",
       "fact_type": "diagnosis",
       "source_evidence": [
         "REASON FOR CONSULTATION: Antibiotic management for a right foot ulcer and possible osteomyelitis."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient is a 68-year-old Caucasian male.",
+      "fact_type": "demographics",
+      "source_evidence": [
+        "The patient is a 68-year-old Caucasian male with past medical history of diabetes mellitus."
       ]
     },
     {
@@ -65,7 +65,7 @@
     {
       "fact_id": "F8",
       "fact_text": "An MRI and a bone scan were performed and were reported negative for osteomyelitis.",
-      "fact_type": "lab_value",
+      "fact_type": "procedure",
       "source_evidence": [
         "Apparently, MRI and a bone scan was performed at that facility, which was reported negative for osteomyelitis."
       ]
@@ -100,6 +100,7 @@
       "fact_text": "The wound has serosanguineous drainage and tracks under the skin in all directions except distal.",
       "fact_type": "diagnosis",
       "source_evidence": [
+        "On exam, he has a lacerated wound on the plantar aspect of the right foot, which extends from the second metatarsal area to the fifth metatarsal area, closed with the area of the head of these bones.",
         "The patient has serosanguineous drainage in this wound and it tracks under the skin in all directions except distal."
       ]
     },
@@ -113,6 +114,38 @@
     },
     {
       "fact_id": "F14",
+      "fact_text": "The patient's mother died in her late 60s from a heart attack.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "FAMILY HISTORY: Positive for mother passing away in her late 60s from heart attack, father had liver cancer, and passed away from that."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient's father had liver cancer and died from it.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "FAMILY HISTORY: Positive for mother passing away in her late 60s from heart attack, father had liver cancer, and passed away from that."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "One of the patient's children has hypothyroidism.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "One of his children suffers from hypothyroidism, 2 grandchildren has cerebral palsy secondary to being prematurely born."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "Two of the patient's grandchildren have cerebral palsy secondary to premature birth.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "One of his children suffers from hypothyroidism, 2 grandchildren has cerebral palsy secondary to being prematurely born."
+      ]
+    },
+    {
+      "fact_id": "F18",
       "fact_text": "The patient has no known drug allergies.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -120,7 +153,7 @@
       ]
     },
     {
-      "fact_id": "F15",
+      "fact_id": "F19",
       "fact_text": "On review of systems, the only positive findings were of the foot; all other systems reviewed were negative.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -129,7 +162,15 @@
       ]
     },
     {
-      "fact_id": "F16",
+      "fact_id": "F20",
+      "fact_text": "The patient was not in acute hemodynamic distress.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "General: A 68-year-old Caucasian male who was not in any acute hemodynamic distress at present."
+      ]
+    },
+    {
+      "fact_id": "F21",
       "fact_text": "The patient's maximum recorded temperature was 98.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -137,7 +178,7 @@
       ]
     },
     {
-      "fact_id": "F17",
+      "fact_id": "F22",
       "fact_text": "The patient's pulse ranged between 67 and 80 per minute.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -145,7 +186,7 @@
       ]
     },
     {
-      "fact_id": "F18",
+      "fact_id": "F23",
       "fact_text": "The patient's respiratory rate was 20 per minute.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -153,7 +194,7 @@
       ]
     },
     {
-      "fact_id": "F19",
+      "fact_id": "F24",
       "fact_text": "The patient's blood pressure varied between 137/63 and 169/75.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -161,23 +202,27 @@
       ]
     },
     {
-      "fact_id": "F20",
+      "fact_id": "F25",
       "fact_text": "HEENT exam showed pupils equal, round, and reactive to light, extraocular movements intact, head normocephalic, and normal external ear exam.",
       "fact_type": "diagnosis",
       "source_evidence": [
-        "HEENT: Pupils equal, round, reactive to light. Extraocular movements intact. Head is normocephalic. External ear exam is normal."
+        "HEENT: Pupils equal, round, reactive to light.",
+        "Extraocular movements intact.",
+        "Head is normocephalic.",
+        "External ear exam is normal."
       ]
     },
     {
-      "fact_id": "F21",
+      "fact_id": "F26",
       "fact_text": "The neck was supple with no palpable lymphadenopathy.",
       "fact_type": "diagnosis",
       "source_evidence": [
-        "Neck: Supple. There is no palpable lymphadenopathy."
+        "Neck: Supple.",
+        "There is no palpable lymphadenopathy."
       ]
     },
     {
-      "fact_id": "F22",
+      "fact_id": "F27",
       "fact_text": "The cardiovascular exam showed a regular rate and rhythm without any appreciable murmur, rub, or gallop.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -185,7 +230,7 @@
       ]
     },
     {
-      "fact_id": "F23",
+      "fact_id": "F28",
       "fact_text": "The lungs were clear to auscultation and percussion bilaterally.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -193,31 +238,35 @@
       ]
     },
     {
-      "fact_id": "F24",
+      "fact_id": "F29",
       "fact_text": "The abdomen was soft, nontender, and nondistended without organomegaly, with positive bowel sounds and no palpable lymphadenopathy in the inguinal and femoral area.",
       "fact_type": "diagnosis",
       "source_evidence": [
-        "Abdomen: Soft, nontender, and nondistended without any organomegaly and bowel sounds are positive. There is no palpable lymphadenopathy in the inguinal and femoral area."
+        "Abdomen: Soft, nontender, and nondistended without any organomegaly and bowel sounds are positive.",
+        "There is no palpable lymphadenopathy in the inguinal and femoral area."
       ]
     },
     {
-      "fact_id": "F25",
+      "fact_id": "F30",
       "fact_text": "The extremities showed no cyanosis, clubbing, or edema, and no peripheral stigmata of endocarditis.",
       "fact_type": "diagnosis",
       "source_evidence": [
-        "Extremities: There is no cyanosis, clubbing or edema. There is no peripheral stigmata of endocarditis."
+        "Extremities: There is no cyanosis, clubbing or edema.",
+        "There is no peripheral stigmata of endocarditis."
       ]
     },
     {
-      "fact_id": "F26",
+      "fact_id": "F31",
       "fact_text": "On central nervous system exam, the patient was alert and oriented x3, with cranial nerves II through XII intact and no focal deficit.",
       "fact_type": "diagnosis",
       "source_evidence": [
-        "Central nervous system: The patient is alert, oriented x3. Cranial nerves II through XII are intact. There is no focal deficit appreciated."
+        "Central nervous system: The patient is alert, oriented x3.",
+        "Cranial nerves II through XII are intact.",
+        "There is no focal deficit appreciated."
       ]
     },
     {
-      "fact_id": "F27",
+      "fact_id": "F32",
       "fact_text": "No laboratory or radiological data is available at present in the chart.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -225,7 +274,7 @@
       ]
     },
     {
-      "fact_id": "F28",
+      "fact_id": "F33",
       "fact_text": "Culture results from the debridement procedure are not available.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -233,7 +282,15 @@
       ]
     },
     {
-      "fact_id": "F29",
+      "fact_id": "F34",
+      "fact_text": "Wound cultures from 07/25/2008 showed methicillin-sensitive Staphylococcus aureus.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Wound cultures from 07/25/2008 showed methicillin-sensitive Staphylococcus aureus."
+      ]
+    },
+    {
+      "fact_id": "F35",
       "fact_text": "The patient is assessed as having a right foot infected ulcer with clinical evidence of osteomyelitis.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -241,7 +298,7 @@
       ]
     },
     {
-      "fact_id": "F30",
+      "fact_id": "F36",
       "fact_text": "The current antibiotic regimen of oral Levaquin, Zyvox, and intravenous Zosyn will be discontinued.",
       "fact_type": "medication",
       "source_evidence": [
@@ -249,7 +306,7 @@
       ]
     },
     {
-      "fact_id": "F31",
+      "fact_id": "F37",
       "fact_text": "The patient will be started on intravenous Ancef 2 g every 8 hours.",
       "fact_type": "medication",
       "source_evidence": [
@@ -257,23 +314,24 @@
       ]
     },
     {
-      "fact_id": "F32",
+      "fact_id": "F38",
       "fact_text": "The antibiotic treatment is to continue for 6 weeks for treatment of osteomyelitis and deep wound infection.",
       "fact_type": "medication",
       "source_evidence": [
+        "Therefore, I would discontinue the current antibiotic regimen of oral Levaquin, Zyvox, and intravenous Zosyn, and start the patient on intravenous Ancef 2 g q.8 h.",
         "We will need to continue this treatment for 6 weeks for treatment of osteomyelitis and deep wound infection."
       ]
     },
     {
-      "fact_id": "F33",
+      "fact_id": "F39",
       "fact_text": "Continuation of wound care and wound VAC placement is recommended, to start tomorrow.",
-      "fact_type": "instruction",
+      "fact_type": "procedure",
       "source_evidence": [
         "I would also recommend continuation of wound care and wound VAC placement that would start tomorrow."
       ]
     },
     {
-      "fact_id": "F34",
+      "fact_id": "F40",
       "fact_text": "A PICC line will be placed to complete the 6-week course of intravenous antibiotic therapy.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -281,7 +339,7 @@
       ]
     },
     {
-      "fact_id": "F35",
+      "fact_id": "F41",
       "fact_text": "Labs including CBC with differential, chemistry 7 panel, LFTs, ESR, and C-reactive protein will be checked every Monday, and a chemistry 7 panel and CBC every Thursday, for the duration of antibiotic therapy.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -289,14 +347,22 @@
       ]
     },
     {
-      "fact_id": "F36",
+      "fact_id": "F42",
       "fact_text": "Wound healing will be monitored 2 to 3 times a week, and wound care will be managed by the wound care team at the Long-Term Acute Care Facility.",
       "fact_type": "instruction",
       "source_evidence": [
         "I will continue to monitor wound healing 2 to 3 times a week.",
         "Wound care will be managed by the wound care team at the Long-Term Acute Care Facility."
       ]
+    },
+    {
+      "fact_id": "F43",
+      "fact_text": "The treatment plan was discussed in detail with the patient and his daughter.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The treatment plan was discussed in detail with the patient and his daughter who was visiting him when I saw him."
+      ]
     }
   ],
-  "annotation_notes": "primary_content_type is medications because the consult is centered on antibiotic management: the plan discontinues the current regimen (oral Levaquin, Zyvox, IV Zosyn) and starts IV Ancef 2 g q.8h for a 6-week course, with lab monitoring tied to the antibiotic therapy. Recorded as stated but not resolved (attribution only): the wound culture date is given as 06/25/2008 in the HPI (F5) but as 07/25/2008 in the Impression/Plan ('Wound cultures from 07/25/2008 showed methicillin-sensitive Staphylococcus aureus.'); recorded the culture result once using the HPI date and flagging the discrepancy here. Note also the report's own uncertainty: MRI and bone scan were reported negative for osteomyelitis (F8), yet osteomyelitis is a clinical diagnosis based on a palpable bone (F11) — both preserved without resolving. The imaging result (F8) and the 'no data available' statements (F27, F28) were typed lab_value, consistent with how the team has classed radiology/lab results; imaging-result typing is a judgment call for adjudication. Allergy status (F14) typed as diagnosis to match the precedent in MTS_DEV_01_gold. Family history (mother, father, children, grandchildren) was NOT recorded as facts because it does not map to an approved fact_type; flag for adjudication. Encounter/logistics statements (ER presentation, referral to the wound care center, plan discussed with patient/daughter, coverage by Dr. X's group, obtaining outside records) were also excluded as non-clinical."
+  "annotation_notes": "The source reports an MSSA wound culture dated 06/25/2008 in the history and another MSSA wound culture dated 07/25/2008 in the impression/plan; both dates are preserved. The MRI and bone scan were reported negative for osteomyelitis, while the clinician diagnosed osteomyelitis based on palpable bone; both statements are preserved."
 }

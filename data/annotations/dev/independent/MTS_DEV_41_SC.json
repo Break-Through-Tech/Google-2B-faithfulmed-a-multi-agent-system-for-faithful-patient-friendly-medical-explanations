@@ -25,7 +25,7 @@
     {
       "fact_id": "F3",
       "fact_text": "An indication for the colonoscopy was an abnormal CT scan.",
-      "fact_type": "lab_value",
+      "fact_type": "procedure",
       "source_evidence": [
         "INDICATION: Rectal bleeding, constipation, abnormal CT scan, rule out inflammatory bowel disease."
       ]
@@ -73,6 +73,14 @@
     },
     {
       "fact_id": "F9",
+      "fact_text": "The colonoscope was withdrawn while the mucosa was carefully examined.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The colonoscope was then withdrawn while carefully examining the mucosa."
+      ]
+    },
+    {
+      "fact_id": "F10",
       "fact_text": "The colonic mucosa appeared normal with normal vascularity and haustral markings.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -80,7 +88,7 @@
       ]
     },
     {
-      "fact_id": "F10",
+      "fact_id": "F11",
       "fact_text": "No masses, polyps, AVMs, or diverticula were seen.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -88,7 +96,7 @@
       ]
     },
     {
-      "fact_id": "F11",
+      "fact_id": "F12",
       "fact_text": "On retroflexed view in the rectum, there are small internal hemorrhoids.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -96,7 +104,15 @@
       ]
     },
     {
-      "fact_id": "F12",
+      "fact_id": "F13",
+      "fact_text": "The endoscope was removed and the procedure was terminated.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The endoscope was removed and the procedure terminated."
+      ]
+    },
+    {
+      "fact_id": "F14",
       "fact_text": "The patient tolerated the procedure well without complications.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -104,7 +120,7 @@
       ]
     },
     {
-      "fact_id": "F13",
+      "fact_id": "F15",
       "fact_text": "The overall impression was an otherwise normal colonoscopy.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -112,7 +128,7 @@
       ]
     },
     {
-      "fact_id": "F14",
+      "fact_id": "F16",
       "fact_text": "The plan is to continue fiber, increasing to two tablets twice a day for a total of four tablets.",
       "fact_type": "medication",
       "source_evidence": [
@@ -120,7 +136,7 @@
       ]
     },
     {
-      "fact_id": "F15",
+      "fact_id": "F17",
       "fact_text": "The plan is to also try NuLev.",
       "fact_type": "medication",
       "source_evidence": [
@@ -128,13 +144,13 @@
       ]
     },
     {
-      "fact_id": "F16",
+      "fact_id": "F18",
       "fact_text": "Follow-up is planned in the office in approximately four weeks if the patient's symptoms do not resolve.",
       "fact_type": "instruction",
       "source_evidence": [
-        "In the office in approximately four weeks if her symptoms do not resolve."
+        "FOLLOWUP: In the office in approximately four weeks if her symptoms do not resolve."
       ]
     }
   ],
-  "annotation_notes": "primary_content_type is procedures because this is a colonoscopy operative note documenting the procedure, its findings, and the post-procedure plan. No explicit demographics are stated; the only sex cue is the pronoun 'her' in the follow-up, which was not recorded as a demographic fact since there is no explicit age/sex statement and inferring it is not allowed. Procedure actions and outcome typed procedure (F5, F7, F8, F12); exam/endoscopic findings typed diagnosis; the 'abnormal CT scan' indication typed lab_value (F3). The digital rectal exam is a performed exam whose finding (F6) was typed diagnosis to match the exam-finding precedent; this procedure-vs-diagnosis typing is a judgment call for adjudication. Impression item 1 ('Small internal hemorrhoids') restates the endoscopic finding (F11) and was not duplicated; impression item 2 recorded as the overall conclusion (F13). Negation preserved in F10 ('No masses, polyps, AVM/s or diverticula') and uncertainty in F4 ('rule out inflammatory bowel disease'). PREMEDICATION ('See procedure nurse NCS form') excluded as a logistics reference."
+  "annotation_notes": ""
 }

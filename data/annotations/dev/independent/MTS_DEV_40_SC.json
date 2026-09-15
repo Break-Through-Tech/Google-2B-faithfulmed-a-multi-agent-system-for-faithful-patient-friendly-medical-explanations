@@ -40,6 +40,14 @@
     },
     {
       "fact_id": "F5",
+      "fact_text": "Multiple transverse and longitudinal ultrasonographic images of the kidneys were obtained.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "TECHNIQUE: Multiple ultrasonographic images of the kidneys were obtained in the transverse and longitudinal planes."
+      ]
+    },
+    {
+      "fact_id": "F6",
       "fact_text": "The right kidney measures 12 x 5.2 x 4.6 cm.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -47,7 +55,7 @@
       ]
     },
     {
-      "fact_id": "F6",
+      "fact_id": "F7",
       "fact_text": "The left kidney measures 12.2 x 6.2 x 4.4 cm.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -55,31 +63,47 @@
       ]
     },
     {
-      "fact_id": "F7",
+      "fact_id": "F8",
       "fact_text": "The imaged portions of the kidneys fail to demonstrate evidence of mass, hydronephrosis, or calculus.",
-      "fact_type": "lab_value",
+      "fact_type": "procedure",
       "source_evidence": [
         "The imaged portions of the kidneys fail to demonstrate evidence of mass, hydronephrosis or calculus."
       ]
     },
     {
-      "fact_id": "F8",
+      "fact_id": "F9",
       "fact_text": "There is no evidence of cortical thinning.",
-      "fact_type": "lab_value",
+      "fact_type": "procedure",
       "source_evidence": [
         "There is no evidence of cortical thinning."
       ]
     },
     {
-      "fact_id": "F9",
-      "fact_text": "There is an incidental rounded low-attenuation mass within the inferior aspect of the right lobe of the liver measuring 2.1 x 1.5 x 1.9 cm, which has suggestion of some peripheral blood flow.",
+      "fact_id": "F10",
+      "fact_text": "An incidental rounded low-attenuation mass was seen within the inferior aspect of the right lobe of the liver.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Incidentally there is a rounded low-attenuation mass within the inferior aspect of the right lobe of the liver measuring 2.1 x 1.5 x 1.9 cm which has suggestion of some peripheral blood flow."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The liver mass measures 2.1 x 1.5 x 1.9 cm.",
       "fact_type": "lab_value",
       "source_evidence": [
         "Incidentally there is a rounded low-attenuation mass within the inferior aspect of the right lobe of the liver measuring 2.1 x 1.5 x 1.9 cm which has suggestion of some peripheral blood flow."
       ]
     },
     {
-      "fact_id": "F10",
+      "fact_id": "F12",
+      "fact_text": "The liver mass has suggestion of some peripheral blood flow.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Incidentally there is a rounded low-attenuation mass within the inferior aspect of the right lobe of the liver measuring 2.1 x 1.5 x 1.9 cm which has suggestion of some peripheral blood flow."
+      ]
+    },
+    {
+      "fact_id": "F13",
       "fact_text": "The patient apparently has a severe iodine allergy.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -87,13 +111,14 @@
       ]
     },
     {
-      "fact_id": "F11",
+      "fact_id": "F14",
       "fact_text": "Further evaluation of the liver mass with MRI is recommended.",
-      "fact_type": "instruction",
+      "fact_type": "procedure",
       "source_evidence": [
+        "Mass within the right lobe of the liver.",
         "Further evaluation with MRI is recommended."
       ]
     }
   ],
-  "annotation_notes": "primary_content_type is lab_values because this is a renal ultrasound report consisting of organ measurements and imaging findings. No demographics (age/sex) are stated. The exam type (F1) and 'status-post cystectomy' (F4) were typed procedure; imaging measurements and findings were typed lab_value; the iodine allergy (F10) was typed diagnosis to match the MTS_DEV_01_gold precedent for allergy status, with the report's 'apparently' uncertainty preserved. Impression item 1 ('No evidence of hydronephrosis') restates the FINDINGS and was not recorded as a separate fact to avoid duplication (captured within F7). The TECHNIQUE sentence (imaging method) and the anonymized logistics (COMPARISON date 'mm/dd/yy'; impression item 3 reporting that results were communicated to 'XXX in Dr. XXX office on mm/dd/yy') were excluded as methodology/logistics containing only placeholder values."
+  "annotation_notes": ""
 }
