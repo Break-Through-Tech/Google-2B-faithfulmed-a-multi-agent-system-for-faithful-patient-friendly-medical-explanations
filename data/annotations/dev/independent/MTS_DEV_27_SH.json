@@ -85,5 +85,5 @@
     }
   ],
   "annotation_notes": "Categorized primary_content_type as lab_values because the entire report is a surgical pathology pathology/histology result report detailing biopsy and resection tumor grading, margins, immunohistochemistry, and lymph node examinations.",
-  "annotator_id": "SH"
+ 
 }
