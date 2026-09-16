@@ -1,0 +1,198 @@
+{
+  "example_id": "MTS_DEV_42",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=46-Ophthalmology&Sample=1958-Cataract+Extraction",
+  "primary_content_type": "procedures",
+  "selection_mode": "entire_report",
+  "source_text": "PROCEDURE PERFORMED: Cataract extraction with lens implantation, right eye.\n\nDESCRIPTION OF PROCEDURE: The patient was brought to the operating room. The patient was identified and the correct operative site was also identified. A retrobulbar block using 5 ml of 2% lidocaine without epinephrine was done after adequate anesthetic was assured, and the eye was massaged to reduce risk of bleeding. The patient was prepped and draped in the usual fashion. A lid speculum was applied.\n\nA groove incision at the 12 o'clock position was made with a 5700 blade. This was beveled anteriorly in a lamellar fashion using the crescent knife. Then the anterior chamber was entered with a slit knife. The chamber was deepened with Viscoat. Then a paracentesis at the 3 o'clock position was created using a super sharp blade. A cystitome was used to nick the anterior capsule and then the capsulotomy was completed with capsulorrhexis forceps. Hydrodissection was employed using BSS on a blunt 27-gauge needle.\n\nThe phaco tip was then introduced into the eye, and the eye was divided into 4 grooves. Then a second instrument was used, a Sinskey hook, to crack these grooves, and the individual quadrants were brought into the central zone and phacoemulsified. I/A proceeded without difficulty using the irrigation/aspiration cannula. The capsule was felt to be clear and intact. The capsular bag was then expanded with ProVisc.\n\nThe internal corneal wound was increased using the slit knife. The lens was inspected and found to be free of defects, folded, and easily inserted into the capsular bag, and unfolded. A corneal light shield was then used as the wound was sutured with a figure-of-eight 10-0 nylon suture. Then the Viscoat was removed using I/A, and the suture drawn up and tied.\n\nThe 0.2 ml of gentamicin was injected subconjunctivally. Maxitrol ointment was instilled into the conjunctival sac. The eye was covered with a double patch and shield, and the patient was discharged.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The procedure performed was a cataract extraction with lens implantation of the right eye.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "PROCEDURE PERFORMED: Cataract extraction with lens implantation, right eye."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient was brought to the operating room.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient was brought to the operating room."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient and the correct operative site were identified.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient was identified and the correct operative site was also identified."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "A retrobulbar block was performed using 5 ml of 2% lidocaine without epinephrine.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "A retrobulbar block using 5 ml of 2% lidocaine without epinephrine was done after adequate anesthetic was assured, and the eye was massaged to reduce risk of bleeding."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The eye was massaged to reduce the risk of bleeding.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A retrobulbar block using 5 ml of 2% lidocaine without epinephrine was done after adequate anesthetic was assured, and the eye was massaged to reduce risk of bleeding."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient was prepped and draped in the usual fashion and a lid speculum was applied.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient was prepped and draped in the usual fashion.",
+        "A lid speculum was applied."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "A groove incision at the 12 o'clock position was made with a 5700 blade and beveled anteriorly in a lamellar fashion using the crescent knife.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A groove incision at the 12 o'clock position was made with a 5700 blade.",
+        "This was beveled anteriorly in a lamellar fashion using the crescent knife."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The anterior chamber was entered with a slit knife and deepened with Viscoat.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Then the anterior chamber was entered with a slit knife.",
+        "The chamber was deepened with Viscoat."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "A paracentesis at the 3 o'clock position was created using a super sharp blade.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Then a paracentesis at the 3 o'clock position was created using a super sharp blade."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "A cystitome was used to nick the anterior capsule, and the capsulotomy was completed with capsulorrhexis forceps.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A cystitome was used to nick the anterior capsule and then the capsulotomy was completed with capsulorrhexis forceps."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "Hydrodissection was employed using BSS on a blunt 27-gauge needle.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Hydrodissection was employed using BSS on a blunt 27-gauge needle."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The phaco tip was introduced into the eye and the eye was divided into 4 grooves.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The phaco tip was then introduced into the eye, and the eye was divided into 4 grooves."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "A Sinskey hook was used to crack the grooves, and the individual quadrants were brought into the central zone and phacoemulsified.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The phaco tip was then introduced into the eye, and the eye was divided into 4 grooves.",
+        "Then a second instrument was used, a Sinskey hook, to crack these grooves, and the individual quadrants were brought into the central zone and phacoemulsified."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "Irrigation/aspiration (I/A) proceeded without difficulty using the irrigation/aspiration cannula.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "I/A proceeded without difficulty using the irrigation/aspiration cannula."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The capsule was felt to be clear and intact.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The capsule was felt to be clear and intact."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The capsular bag was expanded with ProVisc.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The capsular bag was then expanded with ProVisc."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The internal corneal wound was increased using the slit knife.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The internal corneal wound was increased using the slit knife."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The lens was inspected, found to be free of defects, folded, easily inserted into the capsular bag, and unfolded.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The lens was inspected and found to be free of defects, folded, and easily inserted into the capsular bag, and unfolded."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "A corneal light shield was used as the wound was sutured with a figure-of-eight 10-0 nylon suture.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A corneal light shield was then used as the wound was sutured with a figure-of-eight 10-0 nylon suture."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The Viscoat was removed using I/A, and the suture was drawn up and tied.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Then the Viscoat was removed using I/A, and the suture drawn up and tied."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "0.2 ml of gentamicin was injected subconjunctivally.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "The 0.2 ml of gentamicin was injected subconjunctivally."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "Maxitrol ointment was instilled into the conjunctival sac.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Maxitrol ointment was instilled into the conjunctival sac."
+      ]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The eye was covered with a double patch and shield, and the patient was discharged.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The eye was covered with a double patch and shield, and the patient was discharged."
+      ]
+    }
+  ],
+  "adjudication_notes": "Adjudicated from SC (Person 1) and RP (Person 2). The two annotations agree closely on the operative steps of the cataract extraction with lens implantation of the right eye. SC's version was used as the base because it also captured the post-operative medications that RP omitted: 0.2 ml subconjunctival gentamicin and Maxitrol ointment to the conjunctival sac, plus the final dressing and discharge -- all explicitly stated and retained. Type decisions: the retrobulbar block is typed medication to preserve the anesthetic agent and dose (5 ml of 2% lidocaine without epinephrine); RP typed it procedure -- either is defensible. Subconjunctival gentamicin and Maxitrol are typed medication. The single intra-operative finding ('capsule clear and intact') is typed diagnosis; RP typed it lab_value. SC kept the lens-handling as one fact where RP split 'free of defects' from the folding/insertion; the combined fact loses no information. Laterality (right eye) and all exact quantities preserved (5 ml 2% lidocaine, 0.2 ml gentamicin, 27-gauge needle, 4 grooves, 10-0 nylon suture); 'without epinephrine' preserved. Routine patient/operative-site identification is included as stated; flag if the team prefers to omit safety-checklist steps."
+}
