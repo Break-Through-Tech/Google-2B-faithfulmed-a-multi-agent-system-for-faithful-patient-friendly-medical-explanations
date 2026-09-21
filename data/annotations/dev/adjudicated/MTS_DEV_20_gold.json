@@ -31,22 +31,6 @@
     },
     {
       "fact_id": "F4",
-      "fact_text": "The patient currently is not taking any medication for her sinuses.",
-      "fact_type": "medication",
-      "source_evidence": [
-        "She currently is not taking any medication for her sinuses."
-      ]
-    },
-    {
-      "fact_id": "F5",
-      "fact_text": "The patient reports problems with balance and possible hearing loss or ear popping and fullness.",
-      "fact_type": "diagnosis",
-      "source_evidence": [
-        "She also has noted that she is having some problems with her balance and possible hearing loss or at least ear popping and fullness."
-      ]
-    },
-    {
-      "fact_id": "F6",
       "fact_text": "An audiogram showed mild high frequency sensorineural hearing loss, normal tympanometry, and normal speech discrimination.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -54,7 +38,7 @@
       ]
     },
     {
-      "fact_id": "F7",
+      "fact_id": "F5",
       "fact_text": "The patient tried topical nasal corticosteroid therapy without much improvement.",
       "fact_type": "medication",
       "source_evidence": [
@@ -62,7 +46,7 @@
       ]
     },
     {
-      "fact_id": "F8",
+      "fact_id": "F6",
       "fact_text": "The patient tried Allegra without much improvement and believes Allegra may have worsened her balance problems.",
       "fact_type": "medication",
       "source_evidence": [
@@ -70,7 +54,7 @@
       ]
     },
     {
-      "fact_id": "F9",
+      "fact_id": "F7",
       "fact_text": "The patient notes her dizziness is worse with quick positional changes, but denies ear fullness, pressure, humming, buzzing, or roaring.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -78,23 +62,7 @@
       ]
     },
     {
-      "fact_id": "F10",
-      "fact_text": "The patient denies any previous history of sinus surgery or nasal injury.",
-      "fact_type": "procedure",
-      "source_evidence": [
-        "She denies any previous history of sinus surgery or nasal injury."
-      ]
-    },
-    {
-      "fact_id": "F11",
-      "fact_text": "The patient believes she has some degree of allergy symptoms.",
-      "fact_type": "diagnosis",
-      "source_evidence": [
-        "She believes she has some degree of allergy symptoms."
-      ]
-    },
-    {
-      "fact_id": "F12",
+      "fact_id": "F8",
       "fact_text": "The patient's past medical history includes seasonal allergies, possible food allergies, chronic sinusitis, hypertension, and a history of weight change.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -102,7 +70,7 @@
       ]
     },
     {
-      "fact_id": "F13",
+      "fact_id": "F9",
       "fact_text": "The patient's past surgical history includes lower extremity vein stripping, tonsillectomy, and adenoidectomy.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -110,15 +78,7 @@
       ]
     },
     {
-      "fact_id": "F14",
-      "fact_text": "The patient's family history is strong for heart disease and alcoholism.",
-      "fact_type": "diagnosis",
-      "source_evidence": [
-        "FAMILY HISTORY: Strong for heart disease and alcoholism."
-      ]
-    },
-    {
-      "fact_id": "F15",
+      "fact_id": "F10",
       "fact_text": "The patient's current medication is DynaCirc.",
       "fact_type": "medication",
       "source_evidence": [
@@ -126,7 +86,7 @@
       ]
     },
     {
-      "fact_id": "F16",
+      "fact_id": "F11",
       "fact_text": "Egg-based products cause hives for the patient.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -134,24 +94,7 @@
       ]
     },
     {
-      "fact_id": "F17",
-      "fact_text": "The patient previously smoked one-half pack of cigarettes a day for about 20 years and currently does not smoke.",
-      "fact_type": "diagnosis",
-      "source_evidence": [
-        "SOCIAL HISTORY: The patient used to smoke cigarettes for about 20 years, one-half pack a day.",
-        "She currently does not, which was encouraged to continue."
-      ]
-    },
-    {
-      "fact_id": "F18",
-      "fact_text": "The patient rarely drinks alcohol-containing beverages.",
-      "fact_type": "diagnosis",
-      "source_evidence": [
-        "She rarely drinks any alcohol-containing beverages."
-      ]
-    },
-    {
-      "fact_id": "F19",
+      "fact_id": "F12",
       "fact_text": "The patient's blood pressure was 136/74.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -159,7 +102,7 @@
       ]
     },
     {
-      "fact_id": "F20",
+      "fact_id": "F13",
       "fact_text": "The patient's pulse was 84.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -167,7 +110,7 @@
       ]
     },
     {
-      "fact_id": "F21",
+      "fact_id": "F14",
       "fact_text": "The patient's temperature was 98.4.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -175,7 +118,7 @@
       ]
     },
     {
-      "fact_id": "F22",
+      "fact_id": "F15",
       "fact_text": "The patient's weight was 180 pounds and height was 5 feet 3 inches.",
       "fact_type": "lab_value",
       "source_evidence": [
@@ -183,7 +126,7 @@
       ]
     },
     {
-      "fact_id": "F23",
+      "fact_id": "F16",
       "fact_text": "During Hallpike examination, the patient subjectively reported dizziness twice when sitting upright, but no nystagmus or orthostatic hypotension was observed.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -193,7 +136,7 @@
       ]
     },
     {
-      "fact_id": "F24",
+      "fact_id": "F17",
       "fact_text": "Physical examination showed intact tympanic membranes with no signs of middle ear effusion or ear canal inflammation.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -202,7 +145,7 @@
       ]
     },
     {
-      "fact_id": "F25",
+      "fact_id": "F18",
       "fact_text": "Nasal exam showed congestion, turbinate hypertrophy, no acute sinusitis signs, and a midline septum slightly deviated to the left.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -213,7 +156,7 @@
       ]
     },
     {
-      "fact_id": "F26",
+      "fact_id": "F19",
       "fact_text": "Throat examination showed clear postnasal drip, good oral hygiene, no masses or lesions, and vocal cords moving well to midline.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -224,7 +167,7 @@
       ]
     },
     {
-      "fact_id": "F27",
+      "fact_id": "F20",
       "fact_text": "Fiberoptic nasopharyngoscopy identified turbinate hypertrophy and nasal septum deviation to the left, more significant posteriorly.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -232,7 +175,7 @@
       ]
     },
     {
-      "fact_id": "F28",
+      "fact_id": "F21",
       "fact_text": "The impression includes probable allergic rhinitis and chronic sinusitis, subjective dizziness of uncertain etiology, inferior turbinate hypertrophy, and nasal septum deformity.",
       "fact_type": "diagnosis",
       "source_evidence": [
@@ -243,7 +186,7 @@
       ]
     },
     {
-      "fact_id": "F29",
+      "fact_id": "F22",
       "fact_text": "An electronystagmography (ENG) was ordered to evaluate vestibular function.",
       "fact_type": "procedure",
       "source_evidence": [
@@ -251,7 +194,7 @@
       ]
     },
     {
-      "fact_id": "F30",
+      "fact_id": "F23",
       "fact_text": "The patient was prescribed Veramyst nasal spray two sprays each nostril daily, up to twice daily if symptoms worsen.",
       "fact_type": "medication",
       "source_evidence": [
@@ -259,7 +202,7 @@
       ]
     },
     {
-      "fact_id": "F31",
+      "fact_id": "F24",
       "fact_text": "A Medrol Dosepak was prescribed as directed.",
       "fact_type": "medication",
       "source_evidence": [
@@ -267,7 +210,7 @@
       ]
     },
     {
-      "fact_id": "F32",
+      "fact_id": "F25",
       "fact_text": "The patient was instructed to use nasal saline irrigation twice daily.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -275,7 +218,7 @@
       ]
     },
     {
-      "fact_id": "F33",
+      "fact_id": "F26",
       "fact_text": "Clarinex 5 mg daily was recommended.",
       "fact_type": "medication",
       "source_evidence": [
@@ -283,7 +226,7 @@
       ]
     },
     {
-      "fact_id": "F34",
+      "fact_id": "F27",
       "fact_text": "The patient will follow up after her ENG examination for further evaluation and treatment recommendations.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -291,7 +234,7 @@
       ]
     },
     {
-      "fact_id": "F35",
+      "fact_id": "F28",
       "fact_text": "The patient was instructed to pursue an emergency room visit if she experiences acute changes in balance or dizziness.",
       "fact_type": "instruction",
       "source_evidence": [
@@ -299,5 +242,5 @@
       ]
     }
   ],
-  "annotation_notes": "Medications selected as primary content type due to multiple new prescriptions, past failed trial medications, and current hypertension medication. Omitted greeting/closing courtesy lines from factual extraction.",
+  "adjudication_notes": "Assigned fact types for all facts, removed redundant facts, family history was also removed because it is not relevant to the patient's diagnosis."
 }
