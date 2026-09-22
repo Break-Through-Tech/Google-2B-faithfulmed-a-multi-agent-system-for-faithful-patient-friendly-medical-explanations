@@ -1,0 +1,258 @@
+{
+  "example_id": "MTS_DEV_27",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=92-Lab+Medicine+%2D+Pathology&Sample=1664-Lung+Biopsy+Pathology+Report",
+  "primary_content_type": "lab_values",
+  "selection_mode": "entire_report",
+  "source_text": "CLINICAL HISTORY: A 48-year-old smoker found to have a right upper lobe mass on chest x-ray and is being evaluated for chest pain. PET scan demonstrated a mass in the right upper lobe and also a mass in the right lower lobe, which were also identified by CT scan. The lower lobe mass was approximately 1 cm in diameter and the upper lobe mass was 4 cm to 5 cm in diameter. The patient was referred for surgical treatment.\n\nSPECIMEN:\nA. Lung, wedge biopsy right lower lobe\nB. Lung, resection right upper lobe\nC. Lymph node, biopsy level 2 and 4\nD. Lymph node, biopsy level 7 subcarinal\n\nFINAL DIAGNOSIS:\nA. Wedge biopsy of right lower lobe showing: Adenocarcinoma, Grade 2, Measuring 1 cm in diameter with invasion of the overlying pleura and with free resection margin.\n\nB. Right upper lobe lung resection showing: Adenocarcinoma, grade 2, measuring 4 cm in diameter with invasion of the overlying pleura and with free bronchial margin. Two (2) hilar lymph nodes with no metastatic tumor.\nC. Lymph node biopsy at level 2 and 4 showing seven (7) lymph nodes with anthracosis and no metastatic tumor.\nD. Lymph node biopsy, level 7 subcarinal showing (5) lymph nodes with anthracosis and no metastatic tumor.\n\nCOMMENT: The morphology of the tumor seen in both lobes is similar and we feel that the smaller tumor involving the right lower lobe is most likely secondary to transbronchial spread from the main tumor involving the right upper lobe. This suggestion is supported by the fact that no obvious vascular or lymphatic invasion is demonstrated and adjacent to the smaller tumor, there is isolated nests of tumor cells within the air spaces. Furthermore, immunoperoxidase stain for Ck-7, CK-20 and TTF are performed on both the right lower and right upper lobe nodule. The immunohistochemical results confirm the lung origin of both tumors and we feel that the tumor involving the right lower lobe is due to transbronchial spread from the larger tumor nodule involving the right upper lobe.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "A chest x-ray identified a right upper lobe mass.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "A 48-year-old smoker found to have a right upper lobe mass on chest x-ray and is being evaluated for chest pain."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "A PET scan demonstrated a mass in the right upper lobe.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "PET scan demonstrated a mass in the right upper lobe and also a mass in the right lower lobe, which were also identified by CT scan."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "A PET scan demonstrated a mass in the right lower lobe.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "PET scan demonstrated a mass in the right upper lobe and also a mass in the right lower lobe, which were also identified by CT scan."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The right upper and right lower lobe masses were also identified by CT scan.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "PET scan demonstrated a mass in the right upper lobe and also a mass in the right lower lobe, which were also identified by CT scan."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The right lower lobe mass was approximately 1 cm in diameter.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The lower lobe mass was approximately 1 cm in diameter and the upper lobe mass was 4 cm to 5 cm in diameter."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The right upper lobe mass was 4 cm to 5 cm in diameter.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The lower lobe mass was approximately 1 cm in diameter and the upper lobe mass was 4 cm to 5 cm in diameter."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient was referred for surgical treatment.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "The patient was referred for surgical treatment."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "A wedge biopsy of the right lower lobe was obtained.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A. Lung, wedge biopsy right lower lobe"
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "A right upper lobe lung resection was performed.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "B. Lung, resection right upper lobe"
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "Level 2 and 4 lymph nodes were biopsied.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "C. Lymph node, biopsy level 2 and 4"
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "A level 7 subcarinal lymph node biopsy was performed.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "D. Lymph node, biopsy level 7 subcarinal"
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The right lower lobe wedge biopsy showed grade 2 adenocarcinoma.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "A. Wedge biopsy of right lower lobe showing: Adenocarcinoma, Grade 2, Measuring 1 cm in diameter with invasion of the overlying pleura and with free resection margin."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The right lower lobe adenocarcinoma measured 1 cm in diameter.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "A. Wedge biopsy of right lower lobe showing: Adenocarcinoma, Grade 2, Measuring 1 cm in diameter with invasion of the overlying pleura and with free resection margin."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The right lower lobe adenocarcinoma invaded the overlying pleura.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "A. Wedge biopsy of right lower lobe showing: Adenocarcinoma, Grade 2, Measuring 1 cm in diameter with invasion of the overlying pleura and with free resection margin."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The right lower lobe wedge biopsy had a free resection margin.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "A. Wedge biopsy of right lower lobe showing: Adenocarcinoma, Grade 2, Measuring 1 cm in diameter with invasion of the overlying pleura and with free resection margin."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The right upper lobe lung resection showed grade 2 adenocarcinoma.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "B. Right upper lobe lung resection showing: Adenocarcinoma, grade 2, measuring 4 cm in diameter with invasion of the overlying pleura and with free bronchial margin. Two (2) hilar lymph nodes with no metastatic tumor."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The right upper lobe adenocarcinoma measured 4 cm in diameter.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "B. Right upper lobe lung resection showing: Adenocarcinoma, grade 2, measuring 4 cm in diameter with invasion of the overlying pleura and with free bronchial margin. Two (2) hilar lymph nodes with no metastatic tumor."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The right upper lobe adenocarcinoma invaded the overlying pleura.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "B. Right upper lobe lung resection showing: Adenocarcinoma, grade 2, measuring 4 cm in diameter with invasion of the overlying pleura and with free bronchial margin. Two (2) hilar lymph nodes with no metastatic tumor."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The right upper lobe lung resection had a free bronchial margin.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "B. Right upper lobe lung resection showing: Adenocarcinoma, grade 2, measuring 4 cm in diameter with invasion of the overlying pleura and with free bronchial margin. Two (2) hilar lymph nodes with no metastatic tumor."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "Two hilar lymph nodes showed no metastatic tumor.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Two (2) hilar lymph nodes with no metastatic tumor."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "Seven level 2 and 4 lymph nodes showed anthracosis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "C. Lymph node biopsy at level 2 and 4 showing seven (7) lymph nodes with anthracosis and no metastatic tumor."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "Seven level 2 and 4 lymph nodes showed no metastatic tumor.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "C. Lymph node biopsy at level 2 and 4 showing seven (7) lymph nodes with anthracosis and no metastatic tumor."
+      ]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "Five level 7 subcarinal lymph nodes showed anthracosis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "D. Lymph node biopsy, level 7 subcarinal showing (5) lymph nodes with anthracosis and no metastatic tumor."
+      ]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "Five level 7 subcarinal lymph nodes showed no metastatic tumor.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "D. Lymph node biopsy, level 7 subcarinal showing (5) lymph nodes with anthracosis and no metastatic tumor."
+      ]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "The tumors in the right upper and right lower lobes have similar morphology.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The morphology of the tumor seen in both lobes is similar and we feel that the smaller tumor involving the right lower lobe is most likely secondary to transbronchial spread from the main tumor involving the right upper lobe."
+      ]
+    },
+    {
+      "fact_id": "F26",
+      "fact_text": "The smaller right lower lobe tumor is considered most likely secondary to transbronchial spread from the main right upper lobe tumor.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The morphology of the tumor seen in both lobes is similar and we feel that the smaller tumor involving the right lower lobe is most likely secondary to transbronchial spread from the main tumor involving the right upper lobe."
+      ]
+    },
+    {
+      "fact_id": "F27",
+      "fact_text": "No obvious vascular invasion is demonstrated.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "This suggestion is supported by the fact that no obvious vascular or lymphatic invasion is demonstrated and adjacent to the smaller tumor, there is isolated nests of tumor cells within the air spaces."
+      ]
+    },
+    {
+      "fact_id": "F28",
+      "fact_text": "No obvious lymphatic invasion is demonstrated.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "This suggestion is supported by the fact that no obvious vascular or lymphatic invasion is demonstrated and adjacent to the smaller tumor, there is isolated nests of tumor cells within the air spaces."
+      ]
+    },
+    {
+      "fact_id": "F29",
+      "fact_text": "Isolated nests of tumor cells are present within the air spaces adjacent to the smaller tumor.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "This suggestion is supported by the fact that no obvious vascular or lymphatic invasion is demonstrated and adjacent to the smaller tumor, there is isolated nests of tumor cells within the air spaces."
+      ]
+    },
+    {
+      "fact_id": "F30",
+      "fact_text": "Immunoperoxidase stains for Ck-7, CK-20, and TTF were performed on both the right lower and right upper lobe nodules.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Furthermore, immunoperoxidase stain for Ck-7, CK-20 and TTF are performed on both the right lower and right upper lobe nodule."
+      ]
+    },
+    {
+      "fact_id": "F31",
+      "fact_text": "The immunohistochemical results confirm the lung origin of both tumors.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The immunohistochemical results confirm the lung origin of both tumors and we feel that the tumor involving the right lower lobe is due to transbronchial spread from the larger tumor nodule involving the right upper lobe."
+      ]
+    }
+  ],
+  "adjudication_notes": "Resolved concerns. The interpretation that the right lower lobe tumor is most likely due to transbronchial spread from the right upper lobe tumor was preserved as an uncertain diagnostic assessment rather than stated as a definitive fact."
+}

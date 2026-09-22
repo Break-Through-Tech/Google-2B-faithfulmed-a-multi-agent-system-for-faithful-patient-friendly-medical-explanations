@@ -1,0 +1,370 @@
+ {
+  "example_id": "MTS_DEV_34",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=41-Nephrology&Sample=1658-Chronic+Kidney+Disease+%2D+Consult",
+  "primary_content_type": "instructions",
+  "selection_mode": "self_contained_passage",
+  "source_text": "LABS: Sodium was 140, potassium 5.9, chloride 114, bicarbonate 18. BUN is 49, creatinine 4.3. GFR is 19. Albumin 3.2. Protein 7. AST 17, ALT 16, alkaline phosphatase 106. Total bilirubin 0.4. Calcium 9.1., phosphorus 4.7, PTH of 448. The corrected calcium was 9.7. WBC is 8.9, hemoglobin 13.4, platelet 226. Total cholesterol 234, triglycerides 140, LDL 159, HDL 47. His ferritin is 258, iron is 55, and percent sat is 24.\n\nIMPRESSION: This is a 48-year-old black male with stage IV chronic kidney disease likely secondary to HIV nephropathy, although there is no history of renal biopsy, who has been noncompliant with the Renal Clinic and presents today for followup at the recommendation of his Infection Disease doctors.\n\nRECOMMENDATIONS:\n1. Renal. His serum creatinine is progressively worsening. His creatinine was 3.2 the last time we saw him in 05/2007 and today is 4.3. This represents a GFR of 19. This is stage IV chronic kidney disease. He does have vascular access and this appears to be ready to use. He is having some difficulty sleeping and it is possible that this represents some early signs of uremia. Otherwise, he has no signs or symptoms of uremia at this time. I am going to touch base with the dialysis educator and try to get The patient in to the dialysis teaching classes. He has already received some literature for the dialysis teaching, but has not yet enrolled in the classes. I have encouraged him to continue to exercise his right forearm. I am also going to contact the transplant coordinator and see if he can be evaluated for possible transplant. Given his progression of his chronic kidney disease, I will anticipate that he will need to start dialysis soon.\n2. Hypertension. I have added labetolol 100 mg b.i.d. to his antihypertensive regimen. He shows no signs at this point of volume overload, although if he does demonstrate this in the future, his Lasix could be increased. Goal blood pressure would be less than 130/80.\n3. Hyperkalemia. I am going to instruct him in a low-potassium diet and decrease his valsartan to 20 mg daily. I will have him return in one week to recheck his potassium. If his potassium continues to remain elevated, he may require initiation of dialysis for this.\n4. Bone metabolism. His PTH is elevated and I am going to add PhosLo 800 mg t.i.d. with meals. His corrected calcium is 9.7, and I would like to avoid calcium-containing phosphate bonders in this situation.\n5. Acid base. His bicarbonate is 18 and I will initiate the sodium bicarbonate 650 mg three tablets t.i.d.\n6. Anemia. His hemoglobin is at goal for this stage of chronic kidney disease. His iron stores are adequate.\n7. Nutrition. His albumin is 3.2 and this is fairly close to his baseline over the past several months.\n8. HIV. His most recent CD4 count is 350. He has been very compliant, it seems, with his antiretroviral therapy. He has followup with Dr. Y.\n9. Transplant candidacy. I have informed the patient that he may indeed be a candidate for transplant, although he is likely to need dialysis before he could be transplanted. I have instructed him to try to stop smoking. This is for making him a better candidate. I have also encouraged him to continue to be compliant with his antiretroviral therapies as this would be a requirement for transplant.\n\nDISPOSITION: The patient is to return to clinic in one month's time.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "Sodium was 140.",
+      "fact_type": "lab_value",
+      "source_evidence": ["Sodium was 140"]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "Potassium was 5.9.",
+      "fact_type": "lab_value",
+      "source_evidence": ["potassium 5.9"]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "Chloride was 114.",
+      "fact_type": "lab_value",
+      "source_evidence": ["chloride 114"]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "Bicarbonate was 18.",
+      "fact_type": "lab_value",
+      "source_evidence": ["bicarbonate 18"]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "BUN was 49.",
+      "fact_type": "lab_value",
+      "source_evidence": ["BUN is 49"]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "Creatinine was 4.3.",
+      "fact_type": "lab_value",
+      "source_evidence": ["creatinine 4.3"]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "GFR was 19.",
+      "fact_type": "lab_value",
+      "source_evidence": ["GFR is 19"]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "Albumin was 3.2.",
+      "fact_type": "lab_value",
+      "source_evidence": ["Albumin 3.2"]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "Protein was 7.",
+      "fact_type": "lab_value",
+      "source_evidence": ["Protein 7"]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "AST was 17.",
+      "fact_type": "lab_value",
+      "source_evidence": ["AST 17"]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "ALT was 16.",
+      "fact_type": "lab_value",
+      "source_evidence": ["ALT 16"]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "Alkaline phosphatase was 106.",
+      "fact_type": "lab_value",
+      "source_evidence": ["alkaline phosphatase 106"]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "Total bilirubin was 0.4.",
+      "fact_type": "lab_value",
+      "source_evidence": ["Total bilirubin 0.4"]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "Calcium was 9.1.",
+      "fact_type": "lab_value",
+      "source_evidence": ["Calcium 9.1"]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "Phosphorus was 4.7.",
+      "fact_type": "lab_value",
+      "source_evidence": ["phosphorus 4.7"]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "PTH was 448.",
+      "fact_type": "lab_value",
+      "source_evidence": ["PTH of 448"]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "Corrected calcium was 9.7.",
+      "fact_type": "lab_value",
+      "source_evidence": ["The corrected calcium was 9.7"]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "WBC was 8.9.",
+      "fact_type": "lab_value",
+      "source_evidence": ["WBC is 8.9"]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "Hemoglobin was 13.4.",
+      "fact_type": "lab_value",
+      "source_evidence": ["hemoglobin 13.4"]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "Platelet count was 226.",
+      "fact_type": "lab_value",
+      "source_evidence": ["platelet 226"]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "Total cholesterol was 234.",
+      "fact_type": "lab_value",
+      "source_evidence": ["Total cholesterol 234"]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "Triglycerides were 140.",
+      "fact_type": "lab_value",
+      "source_evidence": ["triglycerides 140"]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "LDL was 159.",
+      "fact_type": "lab_value",
+      "source_evidence": ["LDL 159"]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "HDL was 47.",
+      "fact_type": "lab_value",
+      "source_evidence": ["HDL 47"]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "Ferritin was 258.",
+      "fact_type": "lab_value",
+      "source_evidence": ["His ferritin is 258"]
+    },
+    {
+      "fact_id": "F26",
+      "fact_text": "Iron was 55.",
+      "fact_type": "lab_value",
+      "source_evidence": ["iron is 55"]
+    },
+    {
+      "fact_id": "F27",
+      "fact_text": "Percent saturation was 24.",
+      "fact_type": "lab_value",
+      "source_evidence": ["percent sat is 24"]
+    },
+    {
+      "fact_id": "F28",
+      "fact_text": "The patient has stage IV chronic kidney disease.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["This is stage IV chronic kidney disease."]
+    },
+    {
+      "fact_id": "F29",
+      "fact_text": "The stage IV chronic kidney disease is considered likely secondary to HIV nephropathy.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["stage IV chronic kidney disease likely secondary to HIV nephropathy, although there is no history of renal biopsy"]
+    },
+    {
+      "fact_id": "F30",
+      "fact_text": "There is no history of renal biopsy.",
+      "fact_type": "procedure",
+      "source_evidence": ["although there is no history of renal biopsy"]
+    },
+    {
+      "fact_id": "F31",
+      "fact_text": "Creatinine has progressively worsened from 3.2 in 05/2007 to 4.3.",
+      "fact_type": "lab_value",
+      "source_evidence": ["His serum creatinine is progressively worsening. His creatinine was 3.2 the last time we saw him in 05/2007 and today is 4.3."]
+    },
+    {
+      "fact_id": "F32",
+      "fact_text": "The patient's vascular access appears ready to use.",
+      "fact_type": "procedure",
+      "source_evidence": ["He does have vascular access and this appears to be ready to use."]
+    },
+    {
+      "fact_id": "F33",
+      "fact_text": "Difficulty sleeping may possibly represent early signs of uremia.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["He is having some difficulty sleeping and it is possible that this represents some early signs of uremia."]
+    },
+    {
+      "fact_id": "F34",
+      "fact_text": "The patient otherwise has no signs or symptoms of uremia at this time.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["Otherwise, he has no signs or symptoms of uremia at this time."]
+    },
+    {
+      "fact_id": "F35",
+      "fact_text": "The patient is to be enrolled in dialysis teaching classes.",
+      "fact_type": "instruction",
+      "source_evidence": ["I am going to touch base with the dialysis educator and try to get The patient in to the dialysis teaching classes."]
+    },
+    {
+      "fact_id": "F36",
+      "fact_text": "The patient was encouraged to continue exercising his right forearm.",
+      "fact_type": "instruction",
+      "source_evidence": ["I have encouraged him to continue to exercise his right forearm."]
+    },
+    {
+      "fact_id": "F37",
+      "fact_text": "The transplant coordinator will be contacted to determine whether the patient can be evaluated for possible transplant.",
+      "fact_type": "instruction",
+      "source_evidence": ["I am also going to contact the transplant coordinator and see if he can be evaluated for possible transplant."]
+    },
+    {
+      "fact_id": "F38",
+      "fact_text": "The clinician anticipates that the patient will need to start dialysis soon.",
+      "fact_type": "instruction",
+      "source_evidence": ["Given his progression of his chronic kidney disease, I will anticipate that he will need to start dialysis soon."]
+    },
+    {
+      "fact_id": "F39",
+      "fact_text": "The patient has hypertension.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["2. Hypertension."]
+    },
+    {
+      "fact_id": "F40",
+      "fact_text": "Labetalol 100 mg twice daily was added to the antihypertensive regimen.",
+      "fact_type": "medication",
+      "source_evidence": ["I have added labetolol 100 mg b.i.d. to his antihypertensive regimen."]
+    },
+    {
+      "fact_id": "F41",
+      "fact_text": "Lasix could be increased if the patient demonstrates volume overload in the future.",
+      "fact_type": "medication",
+      "source_evidence": ["although if he does demonstrate this in the future, his Lasix could be increased."]
+    },
+    {
+      "fact_id": "F42",
+      "fact_text": "The goal blood pressure is less than 130/80.",
+      "fact_type": "instruction",
+      "source_evidence": ["Goal blood pressure would be less than 130/80."]
+    },
+    {
+      "fact_id": "F43",
+      "fact_text": "The patient has hyperkalemia.",
+      "fact_type": "diagnosis",
+      "source_evidence": ["3. Hyperkalemia."]
+    },
+    {
+      "fact_id": "F44",
+      "fact_text": "The patient is to follow a low-potassium diet.",
+      "fact_type": "instruction",
+      "source_evidence": ["I am going to instruct him in a low-potassium diet"]
+    },
+    {
+      "fact_id": "F45",
+      "fact_text": "Valsartan is to be decreased to 20 mg daily.",
+      "fact_type": "medication",
+      "source_evidence": ["decrease his valsartan to 20 mg daily."]
+    },
+    {
+      "fact_id": "F46",
+      "fact_text": "The patient is to return in one week to have his potassium rechecked.",
+      "fact_type": "instruction",
+      "source_evidence": ["I will have him return in one week to recheck his potassium."]
+    },
+    {
+      "fact_id": "F47",
+      "fact_text": "If potassium remains elevated, the patient may require initiation of dialysis.",
+      "fact_type": "instruction",
+      "source_evidence": ["If his potassium continues to remain elevated, he may require initiation of dialysis for this."]
+    },
+    {
+      "fact_id": "F48",
+      "fact_text": "PTH is elevated.",
+      "fact_type": "lab_value",
+      "source_evidence": ["His PTH is elevated"]
+    },
+    {
+      "fact_id": "F49",
+      "fact_text": "PhosLo 800 mg three times daily with meals is to be added.",
+      "fact_type": "medication",
+      "source_evidence": ["I am going to add PhosLo 800 mg t.i.d. with meals."]
+    },
+    {
+      "fact_id": "F50",
+      "fact_text": "The clinician would like to avoid calcium-containing phosphate binders.",
+      "fact_type": "instruction",
+      "source_evidence": ["I would like to avoid calcium-containing phosphate bonders in this situation."]
+    },
+    {
+      "fact_id": "F51",
+      "fact_text": "Sodium bicarbonate 650 mg, three tablets three times daily, is to be initiated.",
+      "fact_type": "medication",
+      "source_evidence": ["I will initiate the sodium bicarbonate 650 mg three tablets t.i.d."]
+    },
+    {
+      "fact_id": "F52",
+      "fact_text": "Hemoglobin is at goal for this stage of chronic kidney disease.",
+      "fact_type": "lab_value",
+      "source_evidence": ["His hemoglobin is at goal for this stage of chronic kidney disease."]
+    },
+    {
+      "fact_id": "F53",
+      "fact_text": "Iron stores are adequate.",
+      "fact_type": "lab_value",
+      "source_evidence": ["His iron stores are adequate."]
+    },
+    {
+      "fact_id": "F54",
+      "fact_text": "Albumin of 3.2 is fairly close to the patient's baseline over the past several months.",
+      "fact_type": "lab_value",
+      "source_evidence": ["His albumin is 3.2 and this is fairly close to his baseline over the past several months."]
+    },
+    {
+      "fact_id": "F55",
+      "fact_text": "The most recent CD4 count is 350.",
+      "fact_type": "lab_value",
+      "source_evidence": ["His most recent CD4 count is 350."]
+    },
+    {
+      "fact_id": "F56",
+      "fact_text": "The patient has follow-up with Dr. Y.",
+      "fact_type": "instruction",
+      "source_evidence": ["He has followup with Dr. Y."]
+    },
+    {
+      "fact_id": "F57",
+      "fact_text": "The patient may be a candidate for transplant, although he is likely to need dialysis before transplantation.",
+      "fact_type": "procedure",
+      "source_evidence": ["he may indeed be a candidate for transplant, although he is likely to need dialysis before he could be transplanted."]
+    },
+    {
+      "fact_id": "F58",
+      "fact_text": "The patient was instructed to try to stop smoking to improve his transplant candidacy.",
+      "fact_type": "instruction",
+      "source_evidence": ["I have instructed him to try to stop smoking. This is for making him a better candidate."]
+    },
+    {
+      "fact_id": "F59",
+      "fact_text": "The patient was encouraged to continue complying with his antiretroviral therapies because this would be required for transplant.",
+      "fact_type": "instruction",
+      "source_evidence": ["I have also encouraged him to continue to be compliant with his antiretroviral therapies as this would be a requirement for transplant."]
+    },
+    {
+      "fact_id": "F60",
+      "fact_text": "The patient is to return to clinic in one month.",
+      "fact_type": "instruction",
+      "source_evidence": ["The patient is to return to clinic in one month's time."]
+    }
+  ],
+  "adjudication_notes": "Changed to a self-contained passage was selected. The statement that difficulty sleeping may represent early signs of uremia was preserved as uncertain. The statement that the chronic kidney disease is likely secondary to HIV nephropathy was also preserved as uncertain, including the absence of a renal biopsy.",
+}
