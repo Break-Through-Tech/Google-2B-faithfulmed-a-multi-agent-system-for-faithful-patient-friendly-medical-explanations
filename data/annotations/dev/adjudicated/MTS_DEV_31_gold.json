@@ -1,0 +1,147 @@
+{
+  "example_id": "MTS_DEV_31",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Sample=2435-Aortogram+-+Leg+claudication.&Type=6-Cardiovascular+%2F+Pulmonary",
+  "primary_content_type": "procedures",
+  "selection_mode": "self_contained_passage",
+  "source_text": "PREPROCEDURE DIAGNOSIS: Left leg claudication. POSTPROCEDURE DIAGNOSIS: Left leg claudication. OPERATION PERFORMED: Aortogram with bilateral, segmental lower extremity run off. ANESTHESIA: Conscious sedation. The patient was taken to the Angio Suite and placed supine. Both groins were prepped. Local anesthesia was administered in the common femoral artery and, using ultrasound guidance, the common femoral artery was accessed. A guidewire was threaded followed by a 4-French sheath. A 4-French Omni flush catheter was placed. Contrast was administered to identify the level of the renal artery and an aortogram was performed. The catheter was pulled down to the aortic bifurcation and a timed run-off view of both legs was performed. Because of a very abnormal and delayed run-off in the left leg, an isolated left lower-extremity angiogram was performed.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "Left leg claudication was the preprocedure and postprocedure diagnosis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "PREPROCEDURE DIAGNOSIS: Left leg claudication.",
+        "POSTPROCEDURE DIAGNOSIS: Left leg claudication."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "An aortogram with bilateral, segmental lower-extremity run-off was performed.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "OPERATION PERFORMED: Aortogram with bilateral, segmental lower extremity run off."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "Conscious sedation was used.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "ANESTHESIA: Conscious sedation."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient was taken to the Angio Suite.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient was taken to the Angio Suite and placed supine."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient was placed in the supine position.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient was taken to the Angio Suite and placed supine."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "Both of the patient's groins were prepared for the procedure.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Both groins were prepped."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "Local anesthesia was administered in the common femoral artery.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Local anesthesia was administered in the common femoral artery and, using ultrasound guidance, the common femoral artery was accessed."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The common femoral artery was accessed using ultrasound guidance.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Local anesthesia was administered in the common femoral artery and, using ultrasound guidance, the common femoral artery was accessed."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "A guidewire was threaded.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A guidewire was threaded followed by a 4-French sheath."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "A 4-French sheath was placed after the guidewire was threaded.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A guidewire was threaded followed by a 4-French sheath."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "A 4-French Omni flush catheter was placed.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "A 4-French Omni flush catheter was placed."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "Contrast was administered to identify the level of the renal artery.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Contrast was administered to identify the level of the renal artery and an aortogram was performed."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "An aortogram was performed.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Contrast was administered to identify the level of the renal artery and an aortogram was performed."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The catheter was pulled down to the aortic bifurcation.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The catheter was pulled down to the aortic bifurcation and a timed run-off view of both legs was performed."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "A timed run-off view of both legs was performed.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The catheter was pulled down to the aortic bifurcation and a timed run-off view of both legs was performed."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The run-off in the left leg was very abnormal and delayed.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Because of a very abnormal and delayed run-off in the left leg, an isolated left lower-extremity angiogram was performed."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "An isolated left lower-extremity angiogram was performed because of the very abnormal and delayed run-off in the left leg.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Because of a very abnormal and delayed run-off in the left leg, an isolated left lower-extremity angiogram was performed."
+      ]
+    }
+  ],
+  "annotation_notes": " The self-contained passage was retained because it includes the diagnoses, procedure performed, anesthesia, key procedural steps, relevant finding, and additional angiogram prompted by that finding. Procedures remains the primary content type because the passage primarily documents the performance of an aortogram and lower-extremity angiographic imaging. Each independently checkable procedural action was recorded as a separate fact while preserving the complete original sentence as source evidence. The identical preprocedure and postprocedure diagnosis of left leg claudication was recorded once, with both diagnosis statements retained as supporting evidence. Local anesthesia and contrast administration were mapped to procedure because they are documented as procedural interventions without a named medication, dose, or medication regimen. The abnormal and delayed left-leg run-off was mapped to diagnosis as a clinical imaging finding without a more specific approved fact type. No demographic facts were added because the passage contains no explicit demographic information."
+}
