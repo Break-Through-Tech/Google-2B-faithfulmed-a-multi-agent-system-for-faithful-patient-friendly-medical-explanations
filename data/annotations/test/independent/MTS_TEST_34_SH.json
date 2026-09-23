@@ -1,0 +1,153 @@
+{
+  "example_id": "MTS_TEST_34",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=41-Nephrology&Sample=1658-Chronic+Kidney+Disease+%2D+Consult",
+  "primary_content_type": "instruction",
+  "selection_mode": "self_contained_passage",
+  "source_text": "LABS: Sodium was 140, potassium 5.9, chloride 114, bicarbonate 18. BUN is 49, creatinine 4.3. GFR is 19. Albumin 3.2. Protein 7. AST 17, ALT 16, alkaline phosphatase 106. Total bilirubin 0.4. Calcium 9.1., phosphorus 4.7, PTH of 448. The corrected calcium was 9.7. WBC is 8.9, hemoglobin 13.4, platelet 226. Total cholesterol 234, triglycerides 140, LDL 159, HDL 47. His ferritin is 258, iron is 55, and percent sat is 24.\n\nIMPRESSION: This is a 48-year-old black male with stage IV chronic kidney disease likely secondary to HIV nephropathy, although there is no history of renal biopsy, who has been noncompliant with the Renal Clinic and presents today for followup at the recommendation of his Infection Disease doctors.\n\nRECOMMENDATIONS:\n1. Renal. His serum creatinine is progressively worsening. His creatinine was 3.2 the last time we saw him in 05/2007 and today is 4.3. This represents a GFR of 19. This is stage IV chronic kidney disease. He does have vascular access and this appears to be ready to use. He is having some difficulty sleeping and it is possible that this represents some early signs of uremia. Otherwise, he has no signs or symptoms of uremia at this time. I am going to touch base with the dialysis educator and try to get The patient in to the dialysis teaching classes. He has already received some literature for the dialysis teaching, but has not yet enrolled in the classes. I have encouraged him to continue to exercise his right forearm. I am also going to contact the transplant coordinator and see if he can be evaluated for possible transplant. Given his progression of his chronic kidney disease, I will anticipate that he will need to start dialysis soon.\n2. Hypertension. I have added labetolol 100 mg b.i.d. to his antihypertensive regimen. He shows no signs at this point of volume overload, although if he does demonstrate this in the future, his Lasix could be increased. Goal blood pressure would be less than 130/80.\n3. Hyperkalemia. I am going to instruct him in a low-potassium diet and decrease his valsartan to 20 mg daily. I will have him return in one week to recheck his potassium. If his potassium continues to remain elevated, he may require initiation of dialysis for this.\n4. Bone metabolism. His PTH is elevated and I am going to add PhosLo 800 mg t.i.d. with meals. His corrected calcium is 9.7, and I would like to avoid calcium-containing phosphate bonders in this situation.\n5. Acid base. His bicarbonate is 18 and I will initiate the sodium bicarbonate 650 mg three tablets t.i.d.\n6. Anemia. His hemoglobin is at goal for this stage of chronic kidney disease. His iron stores are adequate.\n7. Nutrition. His albumin is 3.2 and this is fairly close to his baseline over the past several months.\n8. HIV. His most recent CD4 count is 350. He has been very compliant, it seems, with his antiretroviral therapy. He has followup with Dr. Y.\n9. Transplant candidacy. I have informed the patient that he may indeed be a candidate for transplant, although he is likely to need dialysis before he could be transplanted. I have instructed him to try to stop smoking. This is for making him a better candidate. I have also encouraged him to continue to be compliant with his antiretroviral therapies as this would be a requirement for transplant.\n\nDISPOSITION: The patient is to return to clinic in one month's time.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient is a 48-year-old black male with stage IV chronic kidney disease likely secondary to HIV nephropathy who presents for clinic follow-up.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HISTORY OF PRESENT ILLNESS: This is a 48-year-old black male with stage IV chronic kidney disease, likely secondary to HIV nephropathy who presents to clinic for followup having missed prior clinic appointments."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient has been compliant with his 3-drug antiretroviral therapy with a CD4 count of 350 in March 2008.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Since that time, he has been very compliant with treatment for his HIV and is seeing Dr. Y in our Infectious Disease Clinic. He is currently on three-drug antiretroviral therapy. His last CD4 count in 03/2008 was 350."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "A right upper extremity AV fistula was placed in late 2006 and appears ready to use on examination.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient has an AV fistula that was placed in late 2006.",
+        "ACCESS: He has a right forearm AV fistula with an audible bruit and a palpable thrill. There is no sign of stenosis. The vascular access looks like it is ready to use."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient reports difficulty sleeping despite taking Ambien, sleeping only about two hours before waking.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The only complaint that the patient has at this time is some difficulty sleeping. He was given Ambien by his primary care doctor, but this has not helped significantly with his difficulty sleeping. He says that he has trouble getting to sleep. The Ambien will allow him to sleep for about two hours, and then he is awake again."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "Past medical history includes stage IV CKD, HIV, hyperlipidemia, hypertension, secondary hyperparathyroidism, right brachial plexus palsy, and recent lower back pain status post lumbar steroid injection.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "PAST MEDICAL HISTORY: 1. Stage IV chronic kidney disease with most recent GFR of 22. 2. HIV diagnosed in 09/2006 with the most recent CD4 count of 350 in 03/2008. 3. Hyperlipidemia. 4. Hypertension. 5. Secondary hyperparathyroidism. 6. Status post right upper extremity AV fistula in the fall of 2006. 7. History of a right brachial plexus palsy. 8. Recent lower back pain, status post lumbar steroid injection."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient reports that Vitamin D causes headaches.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ALLERGIES: HE SAYS THAT VITAMIN D HAS CAUSED HEADACHES."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "Current outpatient medications include Kaletra daily, Epivir daily, Ziagen b.i.d., Lasix 20 mg b.i.d., Valsartan 20 mg b.i.d., and Ambien 10 mg q.h.s.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "MEDICATIONS: 1. Kaletra daily. 2. Epivir one daily. 3. Ziagen two daily. 4. Lasix 20 mg b.i.d. 5. Valsartan 20 mg b.i.d. 6. Ambien 10 mg q.h.s."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "Social history is notable for smoking 1 pack of cigarettes daily for 28 years and employment at a local butcher shop sales counter.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "SOCIAL HISTORY: He lives here in ABCD. He is employed at the sales counter of a local butcher shop. He continues to smoke one pack of cigarettes daily, as he has for the past 28 years."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "Vital signs reveal weight 191 lbs, temperature 97.1, pulse 94, and elevated blood pressure measuring 173/97 (automatic) and 180/90 (manual).",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Weight is 191 pounds. His temperature is 97.1. Pulse is 94. Blood pressure by automatic cuff 173/97, by manual cuff 180/90."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "Laboratory studies showed elevated BUN 49, elevated creatinine 4.3 (GFR 19), elevated potassium 5.9, decreased bicarbonate 18, elevated PTH 448, elevated total cholesterol 234, and LDL 159.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "LABS: Sodium was 140, potassium 5.9, chloride 114, bicarbonate 18. BUN is 49, creatinine 4.3. GFR is 19.",
+        "Calcium 9.1., phosphorus 4.7, PTH of 448.",
+        "Total cholesterol 234, triglycerides 140, LDL 159, HDL 47."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient will be referred to dialysis teaching classes, evaluated for kidney transplant, and instructed to continue exercising his right forearm.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "RECOMMENDATIONS: 1. Renal.",
+        "I am going to touch base with the dialysis educator and try to get The patient in to the dialysis teaching classes.",
+        "I have encouraged him to continue to exercise his right forearm. I am also going to contact the transplant coordinator and see if he can be evaluated for possible transplant."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "Labetalol 100 mg b.i.d. was added for hypertension with a target blood pressure of less than 130/80.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "2. Hypertension. I have added labetolol 100 mg b.i.d. to his antihypertensive regimen.",
+        "Goal blood pressure would be less than 130/80."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "Valsartan was decreased to 20 mg daily and a low-potassium diet was ordered due to hyperkalemia, with a plan to recheck potassium in one week.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "3. Hyperkalemia. I am going to instruct him in a low-potassium diet and decrease his valsartan to 20 mg daily. I will have him return in one week to recheck his potassium."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "PhosLo 800 mg t.i.d. with meals was added for elevated PTH, avoiding calcium-containing phosphate binders.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "4. Bone metabolism. His PTH is elevated and I am going to add PhosLo 800 mg t.i.d. with meals. His corrected calcium is 9.7, and I would like to avoid calcium-containing phosphate bonders in this situation."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "Sodium bicarbonate 650 mg 3 tablets t.i.d. was initiated for metabolic acidosis (bicarbonate 18).",
+      "fact_type": "medication",
+      "source_evidence": [
+        "5. Acid base. His bicarbonate is 18 and I will initiate the sodium bicarbonate 650 mg three tablets t.i.d."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The patient was counseled on smoking cessation and maintaining HAART compliance to optimize transplant candidacy.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "9. Transplant candidacy.",
+        "I have instructed him to try to stop smoking. This is for making him a better candidate. I have also encouraged him to continue to be compliant with his antiretroviral therapies as this would be a requirement for transplant."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The patient is scheduled to return to the clinic in one month.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "DISPOSITION: The patient is to return to clinic in one month's time."
+      ]
+    }
+  ],
+  "annotation_notes": "Categorized primary_content_type as instructions due to the detailed multi-system clinical plan and medical instructions (medication adjustments, lab rechecks, low-potassium diet, transplant evaluation, and dialysis education)."
+}

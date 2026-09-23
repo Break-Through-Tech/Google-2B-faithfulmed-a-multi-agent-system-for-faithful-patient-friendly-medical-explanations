@@ -17,7 +17,7 @@ from pathlib import Path
 from typing import Any, Iterable
 
 
-CONTENT_TYPES = {"lab_values", "medications", "procedures", "instructions"}
+CONTENT_TYPES = {"lab_value", "medication", "procedure", "instruction"}
 FACT_TYPES = {
     "demographics",
     "diagnosis",
@@ -217,13 +217,6 @@ def validate_location(record: Record, errors: list[str]) -> None:
         return
 
     parent = record.path.parent
-    if split == "scratch":
-        if parent.name != "scratch":
-            add_error(errors, record.path, "scratch annotation must be directly in scratch/")
-        if record.kind != "independent":
-            add_error(errors, record.path, "scratch/ accepts independent annotations only")
-        return
-
     expected_leaf = "independent" if record.kind == "independent" else "adjudicated"
     if parent.name != expected_leaf or parent.parent.name != split:
         add_error(
@@ -296,8 +289,16 @@ def load_records(paths: Iterable[Path], errors: list[str]) -> list[Record]:
 
 def json_files(path: Path) -> list[Path]:
     if path.is_file():
-        return [path] if path.suffix.lower() == ".json" else []
-    return list(path.rglob("*.json"))
+        return (
+            [path]
+            if path.suffix.lower() == ".json" and not path.name.endswith("_manifest.json")
+            else []
+        )
+    return [
+        candidate
+        for candidate in path.rglob("*.json")
+        if not candidate.name.endswith("_manifest.json")
+    ]
 
 
 def find_annotations_root(path: Path) -> Path | None:
@@ -318,7 +319,7 @@ def check_independent_pairs(records: list[Record], errors: list[str]) -> None:
             example_id = data.get("example_id")
             if (
                 isinstance(split, str)
-                and split in {"dev", "test"}
+                and split in SPLITS
                 and isinstance(example_id, str)
             ):
                 groups[(split, example_id)].append(record)
@@ -343,7 +344,7 @@ def check_independent_pairs(records: list[Record], errors: list[str]) -> None:
 
 
 def check_source_split_leakage(records: list[Record], errors: list[str]) -> None:
-    urls_by_split: dict[str, set[str]] = {"dev": set(), "test": set()}
+    urls_by_split: dict[str, set[str]] = {split: set() for split in SPLITS}
     path_by_url: dict[tuple[str, str], Path] = {}
     for record in records:
         split = infer_split(record.path)
@@ -357,13 +358,15 @@ def check_source_split_leakage(records: list[Record], errors: list[str]) -> None
             urls_by_split[split].add(source_url)
             path_by_url.setdefault((split, source_url), record.path)
 
-    for source_url in sorted(urls_by_split["dev"] & urls_by_split["test"]):
-        path = path_by_url[("test", source_url)]
-        add_error(
-            errors,
-            path,
-            f"source_url {source_url!r} appears in both dev and test",
-        )
+    split_pairs = (("scratch", "dev"), ("scratch", "test"), ("dev", "test"))
+    for first, second in split_pairs:
+        for source_url in sorted(urls_by_split[first] & urls_by_split[second]):
+            path = path_by_url[(second, source_url)]
+            add_error(
+                errors,
+                path,
+                f"source_url {source_url!r} appears in both {first} and {second}",
+            )
 
 
 def parse_args() -> argparse.Namespace:
@@ -396,8 +399,8 @@ def main() -> int:
     # Leakage needs both sets even when the user validates only dev or test.
     annotations_root = find_annotations_root(target)
     if annotations_root is not None:
-        global_paths = json_files(annotations_root / "dev") + json_files(
-            annotations_root / "test"
+        global_paths = sum(
+            (json_files(annotations_root / split) for split in sorted(SPLITS)), []
         )
         global_errors: list[str] = []
         global_records = load_records(global_paths, global_errors)

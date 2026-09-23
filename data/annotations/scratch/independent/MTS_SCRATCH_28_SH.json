@@ -1,0 +1,114 @@
+{
+  "example_id": "MTS_SCRATCH_28",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Sample=1995-Exercise+Stress+Test+-+1&Type=6-Cardiovascular+%2F+Pulmonary",
+  "primary_content_type": "lab_value",
+  "selection_mode": "entire_report",
+  "source_text": "The patient is a pleasant 44-year-old woman with a history of rheumatoid arthritis admitted to the hospital with chest pain. MI has been ruled out. She has been referred for an exercise echocardiogram.\n\nInformed written consent has been obtained from the patient. I explained the procedure to her prior to initiation of such. The appropriate time-out procedure as per Medical Center protocol was performed prior to the procedure being begun while the patient was actively participating with appropriate identification of the patient, procedure, physician, documentation, position. There were no safety concerns noted by staff nor myself.\n\nREST ECHO: EF 60%. No wall motion abnormalities. EKG shows normal sinus rhythm with mild ST depressions. The patient exercised for 7 minutes 30 seconds on a standard Bruce protocol, exceeding target heart rate; no angina nor significant ECG changes seen. Peak stress echo imaging shows EF of 75%, no regional wall motion abnormalities. There was resting hypertension noted, systolic of approximately 152 mmHg with appropriate response of blood pressure to exercise. No dysrhythmias noted.\n\nIMPRESSION:\n1. Negative exercise ECG/echocardiogram stress evaluation for inducible ischemia in excess of target heart rate.\n2. Resting hypertension with appropriate response of blood pressure to exercise.\n\nThese results have been discussed with the patient. Other management as per the hospital-based internal medicine service.\n\nTo be clear, there were no complications of this procedure.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient is a 44-year-old woman with a history of rheumatoid arthritis admitted with chest pain.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient is a pleasant 44-year-old woman with a history of rheumatoid arthritis admitted to the hospital with chest pain."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "Myocardial infarction was ruled out prior to referral for an exercise echocardiogram.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "MI has been ruled out. She has been referred for an exercise echocardiogram."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "Informed written consent was obtained and the procedure was explained to the patient.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Informed written consent has been obtained from the patient. I explained the procedure to her prior to initiation of such."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "A standard safety time-out procedure was performed with active patient participation and no safety concerns noted.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The appropriate time-out procedure as per Medical Center protocol was performed prior to the procedure being begun while the patient was actively participating with appropriate identification of the patient, procedure, physician, documentation, position. There were no safety concerns noted by staff nor myself."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "Resting echocardiogram showed an ejection fraction of 60% with no wall motion abnormalities.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "REST ECHO: EF 60%. No wall motion abnormalities."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "Resting EKG showed normal sinus rhythm with mild ST depressions.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "EKG shows normal sinus rhythm with mild ST depressions."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient exercised for 7 minutes 30 seconds on a standard Bruce protocol, exceeding target heart rate with no angina or significant ECG changes.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The patient exercised for 7 minutes 30 seconds on a standard Bruce protocol, exceeding target heart rate; no angina nor significant ECG changes seen."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "Peak stress echocardiogram showed an ejection fraction of 75% with no regional wall motion abnormalities.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Peak stress echo imaging shows EF of 75%, no regional wall motion abnormalities."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "Resting systolic blood pressure was approximately 152 mmHg with an appropriate response to exercise and no dysrhythmias.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "There was resting hypertension noted, systolic of approximately 152 mmHg with appropriate response of blood pressure to exercise. No dysrhythmias noted."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The stress evaluation was negative for inducible ischemia in excess of target heart rate.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "1. Negative exercise ECG/echocardiogram stress evaluation for inducible ischemia in excess of target heart rate."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient exhibited resting hypertension with an appropriate blood pressure response to exercise.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "2. Resting hypertension with appropriate response of blood pressure to exercise."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "Results were discussed with the patient and further management remains with internal medicine.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "These results have been discussed with the patient. Other management as per the hospital-based internal medicine service."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "There were no complications during or after the procedure.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "To be clear, there were no complications of this procedure."
+      ]
+    }
+  ],
+  "annotation_notes": "Adjudication and rationale: Updated selection_mode to 'entire_report' since I believe it's the whole text we have taken. Mapped clinical symptoms, test interpretations, and status findings that lack a dedicated type to 'diagnosis'. Retained primary_content_type as 'lab_values' as it represents diagnostic procedure measurement data."
+}

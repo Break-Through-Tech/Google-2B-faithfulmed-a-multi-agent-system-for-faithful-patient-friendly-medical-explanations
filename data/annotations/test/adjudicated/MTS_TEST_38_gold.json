@@ -1,0 +1,140 @@
+{
+  "example_id": "MTS_TEST_38",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=92-Lab+Medicine+%2D+Pathology&Sample=907-Pathology+%2D+Prostate",
+  "primary_content_type": "lab_value",
+  "selection_mode": "entire_report",
+  "source_text": "SPECIMENS:\n1. Pelvis-right pelvic obturator node.\n2. Pelvis-left pelvic obturator node.\n3. Prostate.\n\nPOST-OPERATIVE DIAGNOSIS: Adenocarcinoma of prostate, erectile dysfunction.\n\nDIAGNOSTIC OPINION:\n1. Adenocarcinoma, Gleason score 9, with tumor extension to periprostatic tissue, margin involvement, and tumor invasion to seminal vesicle, prostate.\n2. No evidence of metastatic carcinoma, right pelvic obturator lymph node.\n3. Metastatic adenocarcinoma, left obturator lymph node; see description.\n\nCLINICAL HISTORY: None listed.\n\nGROSS DESCRIPTION:\nSpecimen #1 labeled \"right pelvic obturator lymph nodes\" consists of two portions of adipose tissue measuring 2.5 x 1x 0.8 cm and 2.5 x 1x 0.5 cm. There are two lymph nodes measuring 1 x 0.7 cm and 0.5 x 0.5 cm. The entire specimen is cut into several portions and totally embedded.\nSpecimen #2 labeled \"left pelvic obturation lymph nodes\" consists of an adipose tissue measuring 4 x 2 x 1 cm. There are two lymph nodes measuring 1.3 x 0.8 cm and 1 x 0.6 cm. The entire specimen is cut into 1 cm. The entire specimen is cut into several portions and totally embedded.\nSpecimen #3 labeled \"prostate\" consists of a prostate. It measures 5 x 4.5 x 4 cm. The external surface shows very small portion of seminal vesicles attached in both sides with tumor induration. External surface also shows tumor induration especially in right side. External surface is stained with green ink. The cut surface shows diffuse tumor induration especially in right side. The tumor appears to extend to excision margin. Multiple representative sections are made.\n\nMICROSCOPIC DESCRIPTION:\nSection #1 reveals lymph node. There is no evidence of metastatic carcinoma.\nSection #2 reveals lymph node with tumor metastasis in section of large lymph node as well as section of small lymph node.\nSection #3 reveals adenocarcinoma of prostate. Gleason's score 9 (5+4). The tumor shows extension to periprostatic tissue as well as margin involvement. Seminal vesicle attached to prostate tissue shows tumor invasion. Dr. XXX reviewed the above case. His opinion agrees with the above diagnosis.\n\nSUMMARY:\nA. Adenocarcinoma of prostate, Gleason's score 9, with both lobe involvement and seminal vesicle involvement (T3b).\nB. There is lymph node metastasis (N1).\nC. Distant metastasis cannot be assessed (MX).\nD. Excision margin is positive and there is tumor extension to periprostatic tissue.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The specimens examined were a right pelvic obturator node, a left pelvic obturator node, and the prostate.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Pelvis-right pelvic obturator node.",
+        "Pelvis-left pelvic obturator node.",
+        "Prostate."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The post-operative diagnosis is adenocarcinoma of the prostate and erectile dysfunction.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "POST-OPERATIVE DIAGNOSIS: Adenocarcinoma of prostate, erectile dysfunction."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The prostate shows adenocarcinoma, Gleason score 9, with tumor extension to periprostatic tissue, margin involvement, and tumor invasion into the seminal vesicle.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Adenocarcinoma, Gleason score 9, with tumor extension to periprostatic tissue, margin involvement, and tumor invasion to seminal vesicle, prostate."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "There is no evidence of metastatic carcinoma in the right pelvic obturator lymph node.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No evidence of metastatic carcinoma, right pelvic obturator lymph node."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "There is metastatic adenocarcinoma in the left obturator lymph node.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Metastatic adenocarcinoma, left obturator lymph node; see description."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "Specimen #1 (right pelvic obturator lymph nodes) consisted of two portions of adipose tissue measuring 2.5 x 1x 0.8 cm and 2.5 x 1x 0.5 cm, containing two lymph nodes measuring 1 x 0.7 cm and 0.5 x 0.5 cm.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Specimen #1 labeled \"right pelvic obturator lymph nodes\" consists of two portions of adipose tissue measuring 2.5 x 1x 0.8 cm and 2.5 x 1x 0.5 cm.",
+        "There are two lymph nodes measuring 1 x 0.7 cm and 0.5 x 0.5 cm."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "Specimen #2 (left pelvic obturator lymph nodes) consisted of adipose tissue measuring 4 x 2 x 1 cm, containing two lymph nodes measuring 1.3 x 0.8 cm and 1 x 0.6 cm.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Specimen #2 labeled \"left pelvic obturation lymph nodes\" consists of an adipose tissue measuring 4 x 2 x 1 cm.",
+        "There are two lymph nodes measuring 1.3 x 0.8 cm and 1 x 0.6 cm."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "Specimen #3 (prostate) measured 5 x 4.5 x 4 cm.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Specimen #3 labeled \"prostate\" consists of a prostate.",
+        "It measures 5 x 4.5 x 4 cm."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The prostate showed tumor induration of the external and cut surfaces, especially on the right side, with seminal vesicles attached on both sides showing tumor induration.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The external surface shows very small portion of seminal vesicles attached in both sides with tumor induration.",
+        "External surface also shows tumor induration especially in right side.",
+        "The cut surface shows diffuse tumor induration especially in right side."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The tumor appears to extend to the excision margin.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The tumor appears to extend to excision margin."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "Microscopically, Section #2 (lymph node) showed tumor metastasis in both the large lymph node and the small lymph node.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Section #2 reveals lymph node with tumor metastasis in section of large lymph node as well as section of small lymph node."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "Microscopically, Section #3 showed adenocarcinoma of the prostate with a Gleason's score of 9 (5+4), tumor extension to periprostatic tissue, margin involvement, and seminal vesicle invasion.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Section #3 reveals adenocarcinoma of prostate.",
+        "Gleason's score 9 (5+4).",
+        "The tumor shows extension to periprostatic tissue as well as margin involvement.",
+        "Seminal vesicle attached to prostate tissue shows tumor invasion."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "Summary staging: adenocarcinoma of the prostate, Gleason's score 9, with both lobe involvement and seminal vesicle involvement (T3b).",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Adenocarcinoma of prostate, Gleason's score 9, with both lobe involvement and seminal vesicle involvement (T3b)."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "There is lymph node metastasis (N1).",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "There is lymph node metastasis (N1)."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "Distant metastasis cannot be assessed (MX).",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Distant metastasis cannot be assessed (MX)."
+      ]
+    }
+  ],
+  "adjudication_notes": "Adjudicated from SC (Person 1) and RP (Person 2). The annotators agreed on the core pathology: prostate adenocarcinoma Gleason 9 (5+4) with periprostatic extension, positive/involved margin, seminal vesicle invasion, both-lobe involvement (T3b), lymph node metastasis (N1), distant metastasis not assessable (MX), no metastatic carcinoma in the right obturator node, and metastasis in the left obturator node. SC additionally recorded the gross specimen list and specimen measurements (lymph node and prostate sizes) and the gross tumor-induration findings; these were retained because they are explicit measurements/findings and useful for a lab_values gold. The post-operative-diagnosis fact was reworded to include adenocarcinoma of the prostate (not only erectile dysfunction) to match the source line. Type usage follows SC: tumor findings/diagnoses are typed diagnosis and specimen sizes lab_value; RP typed some pathology results lab_value -- a lab_value-vs-diagnosis convention the team may wish to standardize for pathology reports. Negation ('no evidence of metastatic carcinoma') and uncertainty ('cannot be assessed', MX) preserved; all measurements copied verbatim including irregular spacing."
+}

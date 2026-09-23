@@ -1,0 +1,179 @@
+{
+  "example_id": "MTS_TEST_41",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=24-Gastroenterology&Sample=217-Colonoscopy+%2D+1",
+  "primary_content_type": "procedure",
+  "selection_mode": "entire_report",
+  "source_text": "INDICATION: Rectal bleeding, constipation, abnormal CT scan, rule out inflammatory bowel disease.\n\nPREMEDICATION: See procedure nurse NCS form.\n\nPROCEDURE: After informed consent was obtained, the patient was placed in the left lateral position and the above medications were titrated with adequate sedation. Monitoring was provided throughout the entire procedure. Digital rectal exam was performed revealing normal sphincter tone and no external hemorrhoids. The Pentax video colonoscope was inserted into rectum and advanced under direct visualization, without difficulty, to the cecum, where the cecal strap, appendiceal orifice, and the ileocecal valve were identified. The quality of the preparation was good. The colonoscope was then withdrawn while carefully examining the mucosa.\n\nThe colonic mucosa appeared normal with normal vascularity and haustral markings. No masses, polyps, AVM/s or diverticula were seen. On retroflexed view in the rectum, there are small internal hemorrhoids.\n\nThe endoscope was removed and the procedure terminated. The patient tolerated the procedure well without complications.\n\nIMPRESSION:\n1. Small internal hemorrhoids.\n2. Otherwise normal colonoscopy.\n\nPLAN: Continue fiber, increase to two tablets twice a day for a total of four tablets. Also try NuLev.\n\nFOLLOWUP: In the office in approximately four weeks if her symptoms do not resolve.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The indication for the colonoscopy was rectal bleeding, constipation, an abnormal CT scan, and to rule out inflammatory bowel disease.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Rectal bleeding, constipation, abnormal CT scan, rule out inflammatory bowel disease."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "Informed consent was obtained before the colonoscopy.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "After informed consent was obtained, the patient was placed in the left lateral position and the above medications were titrated with adequate sedation."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient received adequate sedation during the colonoscopy.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "After informed consent was obtained, the patient was placed in the left lateral position and the above medications were titrated with adequate sedation."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "Monitoring was provided throughout the entire colonoscopy.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Monitoring was provided throughout the entire procedure."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "Digital rectal examination showed normal sphincter tone.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Digital rectal exam was performed revealing normal sphincter tone and no external hemorrhoids."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "Digital rectal examination showed no external hemorrhoids.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Digital rectal exam was performed revealing normal sphincter tone and no external hemorrhoids."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The Pentax video colonoscope was advanced to the cecum without difficulty.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The Pentax video colonoscope was inserted into rectum and advanced under direct visualization, without difficulty, to the cecum, where the cecal strap, appendiceal orifice, and the ileocecal valve were identified."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The cecal strap, appendiceal orifice, and ileocecal valve were identified during the colonoscopy.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The Pentax video colonoscope was inserted into rectum and advanced under direct visualization, without difficulty, to the cecum, where the cecal strap, appendiceal orifice, and the ileocecal valve were identified."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The quality of the colonoscopy preparation was good.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The quality of the preparation was good."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The colonic mucosa appeared normal with normal vascularity and haustral markings.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "The colonic mucosa appeared normal with normal vascularity and haustral markings."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "No colonic masses were seen.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "No masses, polyps, AVM/s or diverticula were seen."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "No colonic polyps were seen.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "No masses, polyps, AVM/s or diverticula were seen."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "No arteriovenous malformations were seen.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "No masses, polyps, AVM/s or diverticula were seen."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "No colonic diverticula were seen.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "No masses, polyps, AVM/s or diverticula were seen."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "Small internal hemorrhoids were seen on retroflexed view in the rectum.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "On retroflexed view in the rectum, there are small internal hemorrhoids."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The patient tolerated the colonoscopy well without complications.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "The patient tolerated the procedure well without complications."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The final impression was small internal hemorrhoids.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "1. Small internal hemorrhoids."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The final impression was an otherwise normal colonoscopy.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "2. Otherwise normal colonoscopy."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient was instructed to continue fiber and increase to two tablets twice a day for a total of four tablets.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Continue fiber, increase to two tablets twice a day for a total of four tablets."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The patient was instructed to also try NuLev.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Also try NuLev."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "The patient should follow up in the office in approximately four weeks if symptoms do not resolve.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "In the office in approximately four weeks if her symptoms do not resolve."
+      ]
+    }
+  ],
+  "annotation_notes": "Primary content type is procedures because the report is centered on a colonoscopy procedure and its findings. The indication, procedural findings, final impression, and post-procedure instructions are included. The report states that there were small internal hemorrhoids and was otherwise normal. The phrase 'rule out inflammatory bowel disease' is preserved as an indication rather than treated as a diagnosis. 'AVM/s' is expanded to arteriovenous malformations in fact_text based on the clinical context, while source_evidence remains exact. No outside diagnosis or interpretation was added."
+}
+

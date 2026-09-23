@@ -1,0 +1,83 @@
+{
+  "example_id": "MTS_TEST_02",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=77-Rheumatology&Sample=1206-Oligoarticular+Arthritis+%2D+1",
+  "primary_content_type": "medication",
+  "selection_mode": "entire_report",
+  "source_text": "HISTORY: A is here for a follow up appointment at our Pediatric Rheumatology Clinic as well as the CCS Clinic. A is a 17-year-old male with oligoarticular arthritis of his right knee. He had a joint injection back in 03/2007 and since then he has been doing relatively well. He is taking Indocin only as needed even though he said he has pain regularly, and he said that his knee has not changed since the beginning, but he said he only takes the medicine when he has pain, which is not every day, but almost every day. He denies any swelling more than what it was before, and he denies any other joints are affected at this moment. Denies any fevers or any rashes.\n\nPHYSICAL EXAMINATION: On physical examination, his temperature is 98.6, weight is 104.6 kg; which is 4.4 kg less than before, 108/70 is his blood pressure, weight is 91.0 kg, and his pulse is 80. He is alert, active, and oriented in no distress. He has no facial rashes, no lymphadenopathy, no alopecia. Funduscopic examination is within normal limit. He has no cataracts and symmetric pupils to light and accommodation. His chest is clear to auscultation. The heart has a regular rhythm with no murmur. The abdomen is soft and nontender with no : visceromegaly. Musculoskeletal examination showed good range of motion of all his upper extremities with no swelling or tenderness. Lower extremities: He still has some weakness of the knees, hip areas, and the calf muscles. He does have minus/plus swelling of the right knee with a very hypermobile patella. There is no limitation in his range of motion, and the swelling is very minimal with some mild tenderness.\n\nIn terms of his laboratories, they were not done today.\n\nASSESSMENT: This is a 17-year-old male with oligoarticular arthritis. He is HLA-B27 negative.\n\nPLAN: In terms of the plan, I discussed with him what things he should be taking and the fact that since he has persistent symptoms, he should be on medication every day. I am going to switch him to Indocin 75 mg SR just to give more sustained effect to his joints, and if he does not respond to this or continue with the symptoms, we may need to get an MRI. We will see him back in three months. He was evaluated by our physical therapist, who gave him some recommendations in terms of exercise for his lower extremities. Future plans for A may include physical therapy and more stronger medications as well as imaging studies with an MRI. Today he received his flu shot. Discussed this with A and his aunt and they had no further questions.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient is a 17-year-old male presenting for follow-up for oligoarticular arthritis of his right knee, status post joint injection in March 2007.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HISTORY: A is here for a follow up appointment at our Pediatric Rheumatology Clinic as well as the CCS Clinic. A is a 17-year-old male with oligoarticular arthritis of his right knee. He had a joint injection back in 03/2007 and since then he has been doing relatively well."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient reports taking Indocin as needed almost daily for regular right knee pain, without increase in swelling, involvement of other joints, fevers, or rashes.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "He is taking Indocin only as needed even though he said he has pain regularly, and he said that his knee has not changed since the beginning, but he said he only takes the medicine when he has pain, which is not every day, but almost every day. He denies any swelling more than what it was before, and he denies any other joints are affected at this moment. Denies any fevers or any rashes."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "Physical examination vitals reveal temperature 98.6, blood pressure 108/70, and pulse 80.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "On physical examination, his temperature is 98.6, weight is 104.6 kg; which is 4.4 kg less than before, 108/70 is his blood pressure, weight is 91.0 kg, and his pulse is 80."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "Musculoskeletal examination reveals weakness in the knees, hip areas, and calf muscles, minimal swelling and mild tenderness of the right knee, a hypermobile patella, and full range of motion.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Musculoskeletal examination showed good range of motion of all his upper extremities with no swelling or tenderness. Lower extremities: He still has some weakness of the knees, hip areas, and the calf muscles. He does have minus/plus swelling of the right knee with a very hypermobile patella. There is no limitation in his range of motion, and the swelling is very minimal with some mild tenderness."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "Assessment notes 17-year-old male with oligoarticular arthritis who is HLA-B27 negative.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ASSESSMENT: This is a 17-year-old male with oligoarticular arthritis. He is HLA-B27 negative."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient is switched to Indocin 75 mg SR daily for sustained effect given persistent symptoms.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "In terms of the plan, I discussed with him what things he should be taking and the fact that since he has persistent symptoms, he should be on medication every day. I am going to switch him to Indocin 75 mg SR just to give more sustained effect to his joints, and if he does not respond to this or continue with the symptoms, we may need to get an MRI."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient received a flu shot during the visit.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Today he received his flu shot."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient was evaluated by physical therapy and received lower extremity exercise recommendations.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "He was evaluated by our physical therapist, who gave him some recommendations in terms of exercise for his lower extremities."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "Plan includes potential MRI, formal physical therapy, or stronger medications if symptoms persist, with follow-up scheduled in three months.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "and if he does not respond to this or continue with the symptoms, we may need to get an MRI. We will see him back in three months.",
+        "Future plans for A may include physical therapy and more stronger medications as well as imaging studies with an MRI."
+      ]
+    }
+  ],
+  "annotation_notes": "Categorized primary_content_type as medications due to the focus on medication transition."
+}

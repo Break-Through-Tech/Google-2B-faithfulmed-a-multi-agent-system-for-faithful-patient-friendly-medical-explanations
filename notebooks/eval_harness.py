@@ -72,9 +72,6 @@ if __name__ == "__main__":
     print("Readability demo:", readability_scores(demo))
     print("Meets <=8th grade:", meets_readability_target(demo))
 
-    # Tiny agreement demo (replace with real Verifier vs. human labels):
-    print("Agreement demo:", verifier_agreement([1, 1, 0, 1, 0], [1, 0, 0, 1, 0]))
-
     try:
         data = load_medaesqa()
         print(f"Loaded MedAESQA: {len(data)} questions.")

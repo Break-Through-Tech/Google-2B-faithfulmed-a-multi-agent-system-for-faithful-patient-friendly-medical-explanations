@@ -1,0 +1,146 @@
+{
+  "example_id": "MTS_TEST_02",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=77-Rheumatology&Sample=1206-Oligoarticular+Arthritis+%2D+1",
+  "primary_content_type": "medication",
+  "selection_mode": "entire_report",
+  "source_text": "HISTORY: A is here for a follow up appointment at our Pediatric Rheumatology Clinic as well as the CCS Clinic. A is a 17-year-old male with oligoarticular arthritis of his right knee. He had a joint injection back in 03/2007 and since then he has been doing relatively well. He is taking Indocin only as needed even though he said he has pain regularly, and he said that his knee has not changed since the beginning, but he said he only takes the medicine when he has pain, which is not every day, but almost every day. He denies any swelling more than what it was before, and he denies any other joints are affected at this moment. Denies any fevers or any rashes.\n\nPHYSICAL EXAMINATION: On physical examination, his temperature is 98.6, weight is 104.6 kg; which is 4.4 kg less than before, 108/70 is his blood pressure, weight is 91.0 kg, and his pulse is 80. He is alert, active, and oriented in no distress. He has no facial rashes, no lymphadenopathy, no alopecia. Funduscopic examination is within normal limit. He has no cataracts and symmetric pupils to light and accommodation. His chest is clear to auscultation. The heart has a regular rhythm with no murmur. The abdomen is soft and nontender with no : visceromegaly. Musculoskeletal examination showed good range of motion of all his upper extremities with no swelling or tenderness. Lower extremities: He still has some weakness of the knees, hip areas, and the calf muscles. He does have minus/plus swelling of the right knee with a very hypermobile patella. There is no limitation in his range of motion, and the swelling is very minimal with some mild tenderness.\n\nIn terms of his laboratories, they were not done today.\n\nASSESSMENT: This is a 17-year-old male with oligoarticular arthritis. He is HLA-B27 negative.\n\nPLAN: In terms of the plan, I discussed with him what things he should be taking and the fact that since he has persistent symptoms, he should be on medication every day. I am going to switch him to Indocin 75 mg SR just to give more sustained effect to his joints, and if he does not respond to this or continue with the symptoms, we may need to get an MRI. We will see him back in three months. He was evaluated by our physical therapist, who gave him some recommendations in terms of exercise for his lower extremities. Future plans for A may include physical therapy and more stronger medications as well as imaging studies with an MRI. Today he received his flu shot. Discussed this with A and his aunt and they had no further questions.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient is a 17-year-old male.",
+      "fact_type": "demographics",
+      "source_evidence": [
+        "A is a 17-year-old male with oligoarticular arthritis of his right knee."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient has oligoarticular arthritis of his right knee.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "A is a 17-year-old male with oligoarticular arthritis of his right knee."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient had a joint injection in 03/2007.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "He had a joint injection back in 03/2007 and since then he has been doing relatively well."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient takes Indocin as needed when he has pain, which occurs almost every day.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "He is taking Indocin only as needed even though he said he has pain regularly, and he said that his knee has not changed since the beginning, but he said he only takes the medicine when he has pain, which is not every day, but almost every day."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient's temperature was 98.6.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "On physical examination, his temperature is 98.6, weight is 104.6 kg; which is 4.4 kg less than before, 108/70 is his blood pressure, weight is 91.0 kg, and his pulse is 80."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient's blood pressure was 108/70.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "On physical examination, his temperature is 98.6, weight is 104.6 kg; which is 4.4 kg less than before, 108/70 is his blood pressure, weight is 91.0 kg, and his pulse is 80."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient's pulse was 80.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "On physical examination, his temperature is 98.6, weight is 104.6 kg; which is 4.4 kg less than before, 108/70 is his blood pressure, weight is 91.0 kg, and his pulse is 80."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient was HLA-B27 negative.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "He is HLA-B27 negative."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient should take medication every day because he has persistent symptoms.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "In terms of the plan, I discussed with him what things he should be taking and the fact that since he has persistent symptoms, he should be on medication every day."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient's medication will be switched to Indocin 75 mg SR to provide a more sustained effect to his joints.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "I am going to switch him to Indocin 75 mg SR just to give more sustained effect to his joints, and if he does not respond to this or continue with the symptoms, we may need to get an MRI."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "If the patient does not respond or continues to have symptoms, an MRI may be needed.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "I am going to switch him to Indocin 75 mg SR just to give more sustained effect to his joints, and if he does not respond to this or continue with the symptoms, we may need to get an MRI."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient will return for follow-up in three months.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "We will see him back in three months."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient received exercise recommendations for his lower extremities from a physical therapist.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "He was evaluated by our physical therapist, who gave him some recommendations in terms of exercise for his lower extremities."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "Future plans may include physical therapy.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Future plans for A may include physical therapy and more stronger medications as well as imaging studies with an MRI."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "Future plans may include stronger medications.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Future plans for A may include physical therapy and more stronger medications as well as imaging studies with an MRI."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "Future plans may include MRI imaging studies.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Future plans for A may include physical therapy and more stronger medications as well as imaging studies with an MRI."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The patient received a flu shot that day.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "Today he received his flu shot."
+      ]
+    }
+  ],
+  "adjudication_notes": "The source contains conflicting weight values of 104.6 kg and 91.0 kg in the same sentence. Because the report does not provide enough information to determine which value is intended, neither weight was included in the adjudicated fact set."
+}

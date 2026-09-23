@@ -1,0 +1,164 @@
+{
+  "example_id": "MTS_TEST_16",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=18-Dermatology&Sample=288-Acne+%2D+SOAP",
+  "primary_content_type": "medication",
+  "selection_mode": "entire_report",
+  "source_text": "SUBJECTIVE: The patient is a 49-year-old white female, established patient to Dermatology, last seen in the office on 08/10/2004. She comes in today for reevaluation of her acne plus she has had what she calls a rash for the past two months now on her chest, stomach, neck, and back. On examination, this is a flaring of her acne with small folliculitis lesions. The patient has been taking amoxicillin 500 mg b.i.d. and using Tazorac cream 0.1, and her face is doing well, but she has been out of her medicine now for three days also. She has also been getting photofacials at Healing Waters and was wondering about what we could offer as far as cosmetic procedures and skin care products, etc. The patient is married. She is a secretary. FAMILY, SOCIAL, AND ALLERGY HISTORY: She has hay fever, eczema, sinus, and hives. She has no melanoma or skin cancers or psoriasis. Her mother had oral cancer. The patient is a nonsmoker. No blood tests. Had some sunburn in the past. She is on benzoyl peroxide and Daypro. CURRENT MEDICATIONS: Lexapro, Effexor, Ditropan, aspirin, vitamins. PHYSICAL EXAMINATION: The patient is well developed, appears stated age. Overall health is good. She has a couple of acne lesions, one on her face and neck but there are a lot of small folliculitis-like lesions on her abdomen, chest, and back. IMPRESSION: Acne with folliculitis. TREATMENT: 1. Discussed condition and treatment with the patient. 2. Continue the amoxicillin 500 mg two at bedtime. 3. Add Septra DS every morning with extra water. 4. Continue the Tazorac cream 0.1; it is okay to use on back and chest also. 5. Referred to ABC clinic for an aesthetic consult. Return in two months for followup evaluation of her acne.",
+  "annotator_id": "SC",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient is a 49-year-old white female.",
+      "fact_type": "demographics",
+      "source_evidence": [
+        "The patient is a 49-year-old white female, established patient to Dermatology, last seen in the office on 08/10/2004."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient presents for reevaluation of her acne and reports a rash for the past two months on her chest, stomach, neck, and back.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She comes in today for reevaluation of her acne plus she has had what she calls a rash for the past two months now on her chest, stomach, neck, and back."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "On examination, there is a flaring of her acne with small folliculitis lesions.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "On examination, this is a flaring of her acne with small folliculitis lesions."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient has been taking amoxicillin 500 mg b.i.d. and using Tazorac cream 0.1, and her face is doing well.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "The patient has been taking amoxicillin 500 mg b.i.d. and using Tazorac cream 0.1, and her face is doing well, but she has been out of her medicine now for three days also."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient has been out of her medicine for three days.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "The patient has been taking amoxicillin 500 mg b.i.d. and using Tazorac cream 0.1, and her face is doing well, but she has been out of her medicine now for three days also."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient has been getting photofacials at Healing Waters.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "She has also been getting photofacials at Healing Waters and was wondering about what we could offer as far as cosmetic procedures and skin care products, etc."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient has hay fever, eczema, sinus, and hives.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She has hay fever, eczema, sinus, and hives."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient has no melanoma, skin cancers, or psoriasis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She has no melanoma or skin cancers or psoriasis."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient had some sunburn in the past.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Had some sunburn in the past."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient is on benzoyl peroxide and Daypro.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "She is on benzoyl peroxide and Daypro."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient's current medications are Lexapro, Effexor, Ditropan, aspirin, and vitamins.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "CURRENT MEDICATIONS: Lexapro, Effexor, Ditropan, aspirin, vitamins."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "On physical examination, the patient is well developed, appears her stated age, and her overall health is good.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "The patient is well developed, appears stated age.",
+        "Overall health is good."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient has a couple of acne lesions, one on her face and neck, but many small folliculitis-like lesions on her abdomen, chest, and back.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She has a couple of acne lesions, one on her face and neck but there are a lot of small folliculitis-like lesions on her abdomen, chest, and back."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The impression is acne with folliculitis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "IMPRESSION: Acne with folliculitis."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient is to continue the amoxicillin 500 mg, two at bedtime.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Continue the amoxicillin 500 mg two at bedtime."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "Septra DS is to be added every morning with extra water.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Add Septra DS every morning with extra water."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The patient is to continue the Tazorac cream 0.1, and it is okay to use on the back and chest as well.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Continue the Tazorac cream 0.1; it is okay to use on back and chest also."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The patient was referred to ABC clinic for an aesthetic consult.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Referred to ABC clinic for an aesthetic consult."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient is to return in two months for follow-up evaluation of her acne.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Return in two months for followup evaluation of her acne."
+      ]
+    }
+  ],
+  "annotation_notes": "primary_content_type is medications because current medications and medication changes (amoxicillin, Tazorac, adding Septra DS, benzoyl peroxide, Daypro, and the psychiatric/other current meds) dominate the note. Age/sex/race captured as demographics per the team's Sept 11 ruling. Excluded as non-typeable and flagged for adjudication: social history (married, secretary, nonsmoker) and family history (mother had oral cancer). The terse 'No blood tests.' statement was not recorded as a fact because its meaning is unclear out of context (whether no blood tests were done or ordered); flag for adjudication. Photofacials (F6) typed procedure. Negation preserved in F8 ('no melanoma or skin cancers or psoriasis')."
+}

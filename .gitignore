@@ -13,6 +13,9 @@ env/
 .env
 *.key
 
+# Generated evaluation artifacts
+eval_results/
+
 # Data — download locally per data/README.md
 # (keep the folder, its docs, and the small MedAESQA methods reference)
 data/*
@@ -27,9 +30,14 @@ data/*
 !data/annotation_templates/**
 !data/annotations/
 data/annotations/*
+!data/annotations/mtsamples_split_manifest.json
 !data/annotations/scratch/
 data/annotations/scratch/*
 !data/annotations/scratch/.gitkeep
+!data/annotations/scratch/adjudicated/
+!data/annotations/scratch/adjudicated/**
+!data/annotations/scratch/independent/
+!data/annotations/scratch/independent/**
 !data/annotations/dev/
 data/annotations/dev/*
 !data/annotations/dev/independent/
@@ -40,10 +48,10 @@ data/annotations/dev/*
 !data/annotations/test/
 data/annotations/test/*
 !data/annotations/test/independent/
-data/annotations/test/independent/*
+!data/annotations/test/independent/**
 !data/annotations/test/independent/.gitkeep
 !data/annotations/test/adjudicated/
-data/annotations/test/adjudicated/*
+!data/annotations/test/adjudicated/**
 !data/annotations/test/adjudicated/.gitkeep
 
 !data/PLABA_DEV.json

@@ -15,10 +15,10 @@
     "contentType": {
       "type": "string",
       "enum": [
-        "lab_values",
-        "medications",
-        "procedures",
-        "instructions"
+        "lab_value",
+        "medication",
+        "procedure",
+        "instruction"
       ]
     },
     "fact": {

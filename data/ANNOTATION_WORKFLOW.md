@@ -24,8 +24,8 @@ menus, advertising, cookie notices, search controls, related-content links,
 headers and footers, user comments, and other webpage chrome. Do not include
 identifiers or content outside the de-identified dataset record.
 
-Scratch work belongs directly in `data/annotations/scratch/`. Development and
-test independent files belong in their respective `independent/` directories.
+Scratch, development, and test files belong in their respective `adjudicated/`
+and `independent/` directories.
 
 ## Adjudication and freezing
 
@@ -42,7 +42,7 @@ change it.
 {
   "example_id": "SYNTHETIC_DEMO_001",
   "source_url": "https://example.invalid/synthetic-demo",
-  "primary_content_type": "instructions",
+  "primary_content_type": "instruction",
   "selection_mode": "entire_report",
   "source_text": "Instructions: Place the blue folder on Shelf 3 by Friday, June 5. Do not remove the label.",
   "facts": [

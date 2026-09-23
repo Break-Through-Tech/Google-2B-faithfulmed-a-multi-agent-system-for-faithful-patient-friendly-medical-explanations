@@ -1,0 +1,751 @@
+{
+  "seed": 42,
+  "content_type_aliases": {
+    "lab_values": "lab_value",
+    "medications": "medication",
+    "procedures": "procedure",
+    "instructions": "instruction",
+    "lab_value": "lab_value",
+    "medication": "medication",
+    "procedure": "procedure",
+    "instruction": "instruction"
+  },
+  "approved_quotas": {
+    "lab_value": {
+      "scratch": 1,
+      "dev": 2,
+      "test": 8
+    },
+    "medication": {
+      "scratch": 1,
+      "dev": 2,
+      "test": 7
+    },
+    "procedure": {
+      "scratch": 1,
+      "dev": 2,
+      "test": 8
+    },
+    "instruction": {
+      "scratch": 1,
+      "dev": 2,
+      "test": 7
+    }
+  },
+  "entries": [
+    {
+      "original_example_id": "MTS_DEV_01",
+      "new_example_id": "MTS_TEST_01",
+      "primary_content_type": "medication",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_01_gold.json",
+      "new_gold_filename": "MTS_TEST_01_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_01_BR.json",
+        "MTS_DEV_01_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_01_BR.json",
+        "MTS_TEST_01_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_02",
+      "new_example_id": "MTS_TEST_02",
+      "primary_content_type": "medication",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_02_gold.json",
+      "new_gold_filename": "MTS_TEST_02_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_02_SH.json",
+        "MTS_DEV_02_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_02_SH.json",
+        "MTS_TEST_02_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_03",
+      "new_example_id": "MTS_TEST_03",
+      "primary_content_type": "instruction",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_03_gold.json",
+      "new_gold_filename": "MTS_TEST_03_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_03_BR.json",
+        "MTS_DEV_03_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_03_BR.json",
+        "MTS_TEST_03_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_04",
+      "new_example_id": "MTS_DEV_04",
+      "primary_content_type": "procedure",
+      "original_split": "dev",
+      "new_split": "dev",
+      "original_gold_filename": "MTS_DEV_04_gold.json",
+      "new_gold_filename": "MTS_DEV_04_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_04_BR.json",
+        "MTS_DEV_04_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_DEV_04_BR.json",
+        "MTS_DEV_04_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_05",
+      "new_example_id": "MTS_TEST_05",
+      "primary_content_type": "lab_value",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_05_gold.json",
+      "new_gold_filename": "MTS_TEST_05_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_05_BR.json",
+        "MTS_DEV_05_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_05_BR.json",
+        "MTS_TEST_05_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_06",
+      "new_example_id": "MTS_TEST_06",
+      "primary_content_type": "procedure",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_06_gold.json",
+      "new_gold_filename": "MTS_TEST_06_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_06_BR.json",
+        "MTS_DEV_06_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_06_BR.json",
+        "MTS_TEST_06_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_07",
+      "new_example_id": "MTS_TEST_07",
+      "primary_content_type": "procedure",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_07_gold.json",
+      "new_gold_filename": "MTS_TEST_07_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_07_BR.json",
+        "MTS_DEV_07_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_07_BR.json",
+        "MTS_TEST_07_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_08",
+      "new_example_id": "MTS_DEV_08",
+      "primary_content_type": "medication",
+      "original_split": "dev",
+      "new_split": "dev",
+      "original_gold_filename": "MTS_DEV_08_gold.json",
+      "new_gold_filename": "MTS_DEV_08_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_08_BR.json",
+        "MTS_DEV_08_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_DEV_08_BR.json",
+        "MTS_DEV_08_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_09",
+      "new_example_id": "MTS_TEST_09",
+      "primary_content_type": "lab_value",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_09_gold.json",
+      "new_gold_filename": "MTS_TEST_09_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_09_BR.json",
+        "MTS_DEV_09_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_09_BR.json",
+        "MTS_TEST_09_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_10",
+      "new_example_id": "MTS_TEST_10",
+      "primary_content_type": "procedure",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_10_gold.json",
+      "new_gold_filename": "MTS_TEST_10_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_10_BR.json",
+        "MTS_DEV_10_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_10_BR.json",
+        "MTS_TEST_10_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_11",
+      "new_example_id": "MTS_DEV_11",
+      "primary_content_type": "lab_value",
+      "original_split": "dev",
+      "new_split": "dev",
+      "original_gold_filename": "MTS_DEV_11_gold.json",
+      "new_gold_filename": "MTS_DEV_11_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_11_BR.json",
+        "MTS_DEV_11_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_DEV_11_BR.json",
+        "MTS_DEV_11_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_12",
+      "new_example_id": "MTS_DEV_12",
+      "primary_content_type": "lab_value",
+      "original_split": "dev",
+      "new_split": "dev",
+      "original_gold_filename": "MTS_DEV_12_gold.json",
+      "new_gold_filename": "MTS_DEV_12_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_12_BR.json",
+        "MTS_DEV_12_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_DEV_12_BR.json",
+        "MTS_DEV_12_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_13",
+      "new_example_id": "MTS_SCRATCH_13",
+      "primary_content_type": "medication",
+      "original_split": "dev",
+      "new_split": "scratch",
+      "original_gold_filename": "MTS_DEV_13_gold.json",
+      "new_gold_filename": "MTS_SCRATCH_13_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_13_BR.json",
+        "MTS_DEV_13_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_SCRATCH_13_BR.json",
+        "MTS_SCRATCH_13_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_14",
+      "new_example_id": "MTS_TEST_14",
+      "primary_content_type": "instruction",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_14_gold.json",
+      "new_gold_filename": "MTS_TEST_14_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_14_BR.json",
+        "MTS_DEV_14_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_14_BR.json",
+        "MTS_TEST_14_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_15",
+      "new_example_id": "MTS_TEST_15",
+      "primary_content_type": "procedure",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_15_gold.json",
+      "new_gold_filename": "MTS_TEST_15_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_15_BR.json",
+        "MTS_DEV_15_NB.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_15_BR.json",
+        "MTS_TEST_15_NB.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_16",
+      "new_example_id": "MTS_TEST_16",
+      "primary_content_type": "medication",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_16_gold.json",
+      "new_gold_filename": "MTS_TEST_16_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_16_RP.json",
+        "MTS_DEV_16_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_16_RP.json",
+        "MTS_TEST_16_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_17",
+      "new_example_id": "MTS_DEV_17",
+      "primary_content_type": "medication",
+      "original_split": "dev",
+      "new_split": "dev",
+      "original_gold_filename": "MTS_DEV_17_gold.json",
+      "new_gold_filename": "MTS_DEV_17_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_17_SH.json",
+        "MTS_DEV_17_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_DEV_17_SH.json",
+        "MTS_DEV_17_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_18",
+      "new_example_id": "MTS_DEV_18",
+      "primary_content_type": "procedure",
+      "original_split": "dev",
+      "new_split": "dev",
+      "original_gold_filename": "MTS_DEV_18_gold.json",
+      "new_gold_filename": "MTS_DEV_18_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_18_RP.json",
+        "MTS_DEV_18_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_DEV_18_RP.json",
+        "MTS_DEV_18_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_19",
+      "new_example_id": "MTS_TEST_19",
+      "primary_content_type": "lab_value",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_19_gold.json",
+      "new_gold_filename": "MTS_TEST_19_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_19_RP.json",
+        "MTS_DEV_19_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_19_RP.json",
+        "MTS_TEST_19_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_20",
+      "new_example_id": "MTS_TEST_20",
+      "primary_content_type": "medication",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_20_gold.json",
+      "new_gold_filename": "MTS_TEST_20_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_20_SH.json",
+        "MTS_DEV_20_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_20_SH.json",
+        "MTS_TEST_20_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_21",
+      "new_example_id": "MTS_TEST_21",
+      "primary_content_type": "instruction",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_21_gold.json",
+      "new_gold_filename": "MTS_TEST_21_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_21_SH.json",
+        "MTS_DEV_21_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_21_SH.json",
+        "MTS_TEST_21_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_22",
+      "new_example_id": "MTS_DEV_22",
+      "primary_content_type": "instruction",
+      "original_split": "dev",
+      "new_split": "dev",
+      "original_gold_filename": "MTS_DEV_22_gold.json",
+      "new_gold_filename": "MTS_DEV_22_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_22_RP.json",
+        "MTS_DEV_22_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_DEV_22_RP.json",
+        "MTS_DEV_22_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_23",
+      "new_example_id": "MTS_TEST_23",
+      "primary_content_type": "instruction",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_23_gold.json",
+      "new_gold_filename": "MTS_TEST_23_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_23_SH.json",
+        "MTS_DEV_23_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_23_SH.json",
+        "MTS_TEST_23_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_24",
+      "new_example_id": "MTS_TEST_24",
+      "primary_content_type": "lab_value",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_24_gold.json",
+      "new_gold_filename": "MTS_TEST_24_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_24_RP.json",
+        "MTS_DEV_24_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_24_RP.json",
+        "MTS_TEST_24_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_25",
+      "new_example_id": "MTS_TEST_25",
+      "primary_content_type": "instruction",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_25_gold.json",
+      "new_gold_filename": "MTS_TEST_25_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_25_SH.json",
+        "MTS_DEV_25_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_25_SH.json",
+        "MTS_TEST_25_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_26",
+      "new_example_id": "MTS_TEST_26",
+      "primary_content_type": "instruction",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_26_gold.json",
+      "new_gold_filename": "MTS_TEST_26_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_26_SH.json",
+        "MTS_DEV_26_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_26_SH.json",
+        "MTS_TEST_26_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_27",
+      "new_example_id": "MTS_TEST_27",
+      "primary_content_type": "lab_value",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_27_gold.json",
+      "new_gold_filename": "MTS_TEST_27_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_27_SH.json",
+        "MTS_DEV_27_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_27_SH.json",
+        "MTS_TEST_27_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_28",
+      "new_example_id": "MTS_SCRATCH_28",
+      "primary_content_type": "lab_value",
+      "original_split": "dev",
+      "new_split": "scratch",
+      "original_gold_filename": "MTS_DEV_28_gold.json",
+      "new_gold_filename": "MTS_SCRATCH_28_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_28_SH.json",
+        "MTS_DEV_28_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_SCRATCH_28_SH.json",
+        "MTS_SCRATCH_28_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_29",
+      "new_example_id": "MTS_SCRATCH_29",
+      "primary_content_type": "instruction",
+      "original_split": "dev",
+      "new_split": "scratch",
+      "original_gold_filename": "MTS_DEV_29_gold.json",
+      "new_gold_filename": "MTS_SCRATCH_29_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_29_RP.json",
+        "MTS_DEV_29_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_SCRATCH_29_RP.json",
+        "MTS_SCRATCH_29_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_30",
+      "new_example_id": "MTS_TEST_30",
+      "primary_content_type": "procedure",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_30_gold.json",
+      "new_gold_filename": "MTS_TEST_30_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_30_SH.json",
+        "MTS_DEV_30_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_30_SH.json",
+        "MTS_TEST_30_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_31",
+      "new_example_id": "MTS_SCRATCH_31",
+      "primary_content_type": "procedure",
+      "original_split": "dev",
+      "new_split": "scratch",
+      "original_gold_filename": "MTS_DEV_31_gold.json",
+      "new_gold_filename": "MTS_SCRATCH_31_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_31_SH.json",
+        "MTS_DEV_31_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_SCRATCH_31_SH.json",
+        "MTS_SCRATCH_31_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_32",
+      "new_example_id": "MTS_TEST_32",
+      "primary_content_type": "medication",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_32_gold.json",
+      "new_gold_filename": "MTS_TEST_32_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_32_SH.json",
+        "MTS_DEV_32_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_32_SH.json",
+        "MTS_TEST_32_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_33",
+      "new_example_id": "MTS_DEV_33",
+      "primary_content_type": "instruction",
+      "original_split": "dev",
+      "new_split": "dev",
+      "original_gold_filename": "MTS_DEV_33_gold.json",
+      "new_gold_filename": "MTS_DEV_33_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_33_RP.json",
+        "MTS_DEV_33_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_DEV_33_RP.json",
+        "MTS_DEV_33_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_34",
+      "new_example_id": "MTS_TEST_34",
+      "primary_content_type": "instruction",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_34_gold.json",
+      "new_gold_filename": "MTS_TEST_34_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_34_SH.json",
+        "MTS_DEV_34_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_34_SH.json",
+        "MTS_TEST_34_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_35",
+      "new_example_id": "MTS_TEST_35",
+      "primary_content_type": "procedure",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_35_gold.json",
+      "new_gold_filename": "MTS_TEST_35_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_35_SH.json",
+        "MTS_DEV_35_TG.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_35_SH.json",
+        "MTS_TEST_35_TG.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_36",
+      "new_example_id": "MTS_TEST_36",
+      "primary_content_type": "medication",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_36_gold.json",
+      "new_gold_filename": "MTS_TEST_36_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_36_RP.json",
+        "MTS_DEV_36_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_36_RP.json",
+        "MTS_TEST_36_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_37",
+      "new_example_id": "MTS_TEST_37",
+      "primary_content_type": "medication",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_37_gold.json",
+      "new_gold_filename": "MTS_TEST_37_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_37_RP.json",
+        "MTS_DEV_37_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_37_RP.json",
+        "MTS_TEST_37_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_38",
+      "new_example_id": "MTS_TEST_38",
+      "primary_content_type": "lab_value",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_38_gold.json",
+      "new_gold_filename": "MTS_TEST_38_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_38_RP.json",
+        "MTS_DEV_38_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_38_RP.json",
+        "MTS_TEST_38_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_39",
+      "new_example_id": "MTS_TEST_39",
+      "primary_content_type": "lab_value",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_39_gold.json",
+      "new_gold_filename": "MTS_TEST_39_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_39_RP.json",
+        "MTS_DEV_39_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_39_RP.json",
+        "MTS_TEST_39_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_40",
+      "new_example_id": "MTS_TEST_40",
+      "primary_content_type": "lab_value",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_40_gold.json",
+      "new_gold_filename": "MTS_TEST_40_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_40_RP.json",
+        "MTS_DEV_40_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_40_RP.json",
+        "MTS_TEST_40_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_41",
+      "new_example_id": "MTS_TEST_41",
+      "primary_content_type": "procedure",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_41_gold.json",
+      "new_gold_filename": "MTS_TEST_41_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_41_RP.json",
+        "MTS_DEV_41_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_41_RP.json",
+        "MTS_TEST_41_SC.json"
+      ]
+    },
+    {
+      "original_example_id": "MTS_DEV_42",
+      "new_example_id": "MTS_TEST_42",
+      "primary_content_type": "procedure",
+      "original_split": "dev",
+      "new_split": "test",
+      "original_gold_filename": "MTS_DEV_42_gold.json",
+      "new_gold_filename": "MTS_TEST_42_gold.json",
+      "original_independent_filenames": [
+        "MTS_DEV_42_RP.json",
+        "MTS_DEV_42_SC.json"
+      ],
+      "new_independent_filenames": [
+        "MTS_TEST_42_RP.json",
+        "MTS_TEST_42_SC.json"
+      ]
+    }
+  ]
+}

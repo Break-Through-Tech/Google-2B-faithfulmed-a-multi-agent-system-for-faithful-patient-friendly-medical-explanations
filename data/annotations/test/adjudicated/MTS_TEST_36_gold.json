@@ -1,0 +1,419 @@
+{
+  "example_id": "MTS_TEST_36",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=21-Endocrinology&Sample=227-Diabetes+Mellitus+%2D+SOAP+Note+%2D+1",
+  "primary_content_type": "medication",
+  "selection_mode": "entire_report",
+  "source_text": "CHIEF COMPLAINT: Followup diabetes mellitus, type 1.\n\nSUBJECTIVE: Patient is a 34-year-old male with significant diabetic neuropathy. He has been off on insurance for over a year. Has been using NPH and Regular insulin to maintain his blood sugars. States that he is deathly afraid of having a low blood sugar due to motor vehicle accident he was in several years ago. Reports that his blood sugar dropped too low which caused the accident. Since this point in time, he has been unwilling to let his blood sugars fall within a normal range, for fear of hypoglycemia. Also reports that he regulates his blood sugars with how he feels, rarely checking his blood sugar with a glucometer.\n\nReports that he has been worked up extensively at hospital and was seeing an Endocrinologist at one time. Reports that he had some indications of kidney damage when first diagnosed. His urine microalbumin today is 100. His last hemoglobin A1C drawn at the end of December is 11.9. Reports that at one point, he was on Lantus which worked well and he did not worry about his blood sugars dropping too low. While using Lantus, he was able to get his hemoglobin A1C down to 7. His last CMP shows an elevated alkaline phosphatase level of 168. He denies alcohol or drug use and is a non smoker. Reports he quit drinking 3 years ago. I have discussed with patient that it would be appropriate to do an SGGT and hepatic panel today. Patient also has a history of gastroparesis and impotence. Patient requests Nexium and Viagra, neither of which are covered under the Health Plan.\n\nPatient reports that he was in a scooter accident one week ago, fell off his scooter, hit his head. Was not wearing a helmet. Reports that he did not go to the emergency room and had a headache for several days after this incident. Reports that an ambulance arrived at the scene and he was told he had a scalp laceration and to go into the emergency room. Patient did not comply. Reports that the headache has resolved. Denies any dizziness, nausea, vomiting, or other neurological abnormalities.\n\nPHYSICAL EXAMINATION: WD, WN. Slender, 34-year-old white male. VITAL SIGNS: Blood sugar 145, blood pressure 120/88, heart rate 104, respirations 16. Microalbumin 100. SKIN: There appears to be 2 skin lacerations on the left parietal region of the scalp, each approximately 1 inch long. No signs of infection. Wound is closed with new granulation tissue. Appears to be healing well. HEENT: Normocephalic. PERRLA. EOMI. TMs pearly gray with landmarks present. Nares patent. Throat with no redness or swelling. Nontender sinuses. NECK: Supple. Full ROM. No LAD. CARDIAC: RRR. No murmurs, rubs, or gallops. RESPIRATORY: CTA. ABDOMEN: Soft, nontender. No HSM and no masses. NEURO: Significant for lower extremity numbness throughout. Microfilament test shows more than 3 regions without sensation bilaterally. Bottoms of feet appear calloused and dry. Skin is intact. There is also a small contusion on right shin which appears to be healing, less than 1/2 inch in length and 1 cm in diameter. No signs of infection at this time and appears to be healing. Cranial nerves 2-12 grossly nonfocal. Cerebellar function intact demonstrated through RAM.\n\nASSESSMENT:\n1. Diabetes mellitus, type 1, poorly controlled.\n2. Significant diabetic neuropathy with positive microalbuminuria.\n3. Scalp laceration, secondary to motor vehicle accident, symptoms resolving.\n4. Elevated Alk Phos, etiology unclear.\n\nPLAN:\n1. Diabetes mellitus type 1: We will follow up the elevated alkaline phosphatase with an SGGT and a hepatic function panel. The positive microalbumin is 100 today. He will be placed on a low dose Ace Inhibitor. I will put in a Prior Authorization for Lantus. I have also asked the patient to keep a log of his blood sugars for 2 weeks. Patient agrees to this. We may need to put in a referral to Endocrinology to get him stabilized. Prescription given for Prilosec OTC for GERD symptoms.\n2. Followup scooter accident. Lacerations on scalp and shin appear to be healing. Discussed with patient if there are any signs of heat, swelling, infection to return to clinic. It is extremely important for him to watch these areas as he does not have feeling in the majority of his lower body.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient has type 1 diabetes mellitus, assessed as poorly controlled.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "CHIEF COMPLAINT: Followup diabetes mellitus, type 1.",
+        "Diabetes mellitus, type 1, poorly controlled."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient is a 34-year-old white male.",
+      "fact_type": "demographics",
+      "source_evidence": [
+        "Patient is a 34-year-old male with significant diabetic neuropathy.",
+        "Slender, 34-year-old white male."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient has significant diabetic neuropathy.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Patient is a 34-year-old male with significant diabetic neuropathy."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient has been using NPH and Regular insulin to maintain his blood sugars.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Has been using NPH and Regular insulin to maintain his blood sugars."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient is extremely afraid of hypoglycemia because of a prior motor vehicle accident.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "States that he is deathly afraid of having a low blood sugar due to motor vehicle accident he was in several years ago."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient reports that low blood sugar caused the prior motor vehicle accident.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "States that he is deathly afraid of having a low blood sugar due to motor vehicle accident he was in several years ago.",
+        "Reports that his blood sugar dropped too low which caused the accident."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient has been unwilling to allow his blood sugars to fall within a normal range because of fear of hypoglycemia.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "States that he is deathly afraid of having a low blood sugar due to motor vehicle accident he was in several years ago.",
+        "Reports that his blood sugar dropped too low which caused the accident.",
+        "Since this point in time, he has been unwilling to let his blood sugars fall within a normal range, for fear of hypoglycemia."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient regulates his blood sugars according to how he feels and rarely checks them with a glucometer.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Also reports that he regulates his blood sugars with how he feels, rarely checking his blood sugar with a glucometer."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient reports having had some indications of kidney damage when first diagnosed.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "CHIEF COMPLAINT: Followup diabetes mellitus, type 1.",
+        "Reports that he had some indications of kidney damage when first diagnosed."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient's urine microalbumin today is 100.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "His urine microalbumin today is 100."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient's last hemoglobin A1C, drawn at the end of December, is 11.9.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "His last hemoglobin A1C drawn at the end of December is 11.9."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient was previously on Lantus, which worked well and reduced his concern about low blood sugars.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Reports that at one point, he was on Lantus which worked well and he did not worry about his blood sugars dropping too low."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "While using Lantus, the patient's hemoglobin A1C decreased to 7.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "While using Lantus, he was able to get his hemoglobin A1C down to 7."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient's last comprehensive metabolic panel (CMP) shows an elevated alkaline phosphatase level of 168.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "His last CMP shows an elevated alkaline phosphatase level of 168."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient denies alcohol use, drug use, and smoking.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "He denies alcohol or drug use and is a non smoker."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The patient reports that he quit drinking 3 years ago.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Reports he quit drinking 3 years ago."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The patient has a history of gastroparesis.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Patient also has a history of gastroparesis and impotence."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The patient has a history of impotence.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Patient also has a history of gastroparesis and impotence."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient requests Nexium, which is not covered under the Health Plan.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Patient requests Nexium and Viagra, neither of which are covered under the Health Plan."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The patient requests Viagra, which is not covered under the Health Plan.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Patient requests Nexium and Viagra, neither of which are covered under the Health Plan."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "The patient reports being in a scooter accident one week ago, in which he fell off his scooter and hit his head while not wearing a helmet.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Patient reports that he was in a scooter accident one week ago, fell off his scooter, hit his head.",
+        "Was not wearing a helmet."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "The patient had a headache for several days after the incident, which has since resolved.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Patient reports that he was in a scooter accident one week ago, fell off his scooter, hit his head.",
+        "Reports that he did not go to the emergency room and had a headache for several days after this incident.",
+        "Reports that the headache has resolved."
+      ]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The patient denies any dizziness, nausea, vomiting, or other neurological abnormalities.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Denies any dizziness, nausea, vomiting, or other neurological abnormalities."
+      ]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "The patient's blood sugar was 145.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Blood sugar 145, blood pressure 120/88, heart rate 104, respirations 16."
+      ]
+    },
+    {
+      "fact_id": "F25",
+      "fact_text": "The patient's blood pressure was 120/88.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Blood sugar 145, blood pressure 120/88, heart rate 104, respirations 16."
+      ]
+    },
+    {
+      "fact_id": "F26",
+      "fact_text": "The patient's heart rate was 104.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Blood sugar 145, blood pressure 120/88, heart rate 104, respirations 16."
+      ]
+    },
+    {
+      "fact_id": "F27",
+      "fact_text": "The patient's respirations were 16.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Blood sugar 145, blood pressure 120/88, heart rate 104, respirations 16."
+      ]
+    },
+    {
+      "fact_id": "F28",
+      "fact_text": "Physical examination showed 2 skin lacerations on the left parietal region of the scalp, each approximately 1 inch long.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "There appears to be 2 skin lacerations on the left parietal region of the scalp, each approximately 1 inch long."
+      ]
+    },
+    {
+      "fact_id": "F29",
+      "fact_text": "The scalp wound showed no signs of infection, was closed with new granulation tissue, and appeared to be healing well.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "No signs of infection.",
+        "Wound is closed with new granulation tissue.",
+        "Appears to be healing well."
+      ]
+    },
+    {
+      "fact_id": "F30",
+      "fact_text": "The HEENT exam was normal: normocephalic, PERRLA, EOMI, tympanic membranes pearly gray with landmarks present, nares patent, throat with no redness or swelling, and nontender sinuses.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "HEENT: Normocephalic.",
+        "PERRLA.",
+        "EOMI.",
+        "TMs pearly gray with landmarks present.",
+        "Nares patent.",
+        "Throat with no redness or swelling.",
+        "Nontender sinuses."
+      ]
+    },
+    {
+      "fact_id": "F31",
+      "fact_text": "The neck was supple with full range of motion and no lymphadenopathy.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "NECK: Supple.",
+        "Full ROM.",
+        "No LAD."
+      ]
+    },
+    {
+      "fact_id": "F32",
+      "fact_text": "The cardiac exam showed a regular rate and rhythm with no murmurs, rubs, or gallops.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "CARDIAC: RRR.",
+        "No murmurs, rubs, or gallops."
+      ]
+    },
+    {
+      "fact_id": "F33",
+      "fact_text": "The lungs were clear to auscultation.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "RESPIRATORY: CTA."
+      ]
+    },
+    {
+      "fact_id": "F34",
+      "fact_text": "The abdomen was soft and nontender, with no hepatosplenomegaly and no masses.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "ABDOMEN: Soft, nontender.",
+        "No HSM and no masses."
+      ]
+    },
+    {
+      "fact_id": "F35",
+      "fact_text": "Neurological exam was significant for lower extremity numbness throughout, with a microfilament test showing more than 3 regions without sensation bilaterally.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Significant for lower extremity numbness throughout.",
+        "Microfilament test shows more than 3 regions without sensation bilaterally."
+      ]
+    },
+    {
+      "fact_id": "F36",
+      "fact_text": "The bottoms of the patient's feet appear calloused and dry, with skin intact.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Bottoms of feet appear calloused and dry.",
+        "Skin is intact."
+      ]
+    },
+    {
+      "fact_id": "F37",
+      "fact_text": "There is a small contusion on the right shin, appearing to be healing, less than 1/2 inch in length and 1 cm in diameter, with no signs of infection.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "There is also a small contusion on right shin which appears to be healing, less than 1/2 inch in length and 1 cm in diameter.",
+        "No signs of infection at this time and appears to be healing."
+      ]
+    },
+    {
+      "fact_id": "F38",
+      "fact_text": "Cranial nerves 2 through 12 were grossly nonfocal and cerebellar function was intact.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Cranial nerves 2-12 grossly nonfocal.",
+        "Cerebellar function intact demonstrated through RAM."
+      ]
+    },
+    {
+      "fact_id": "F39",
+      "fact_text": "The scalp laceration is assessed as secondary to a motor vehicle accident, with symptoms resolving.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Scalp laceration, secondary to motor vehicle accident, symptoms resolving."
+      ]
+    },
+    {
+      "fact_id": "F40",
+      "fact_text": "The patient has an elevated alkaline phosphatase (Alk Phos) of unclear etiology.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Elevated Alk Phos, etiology unclear."
+      ]
+    },
+    {
+      "fact_id": "F41",
+      "fact_text": "The plan is to follow up the elevated alkaline phosphatase with an SGGT and a hepatic function panel.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "We will follow up the elevated alkaline phosphatase with an SGGT and a hepatic function panel."
+      ]
+    },
+    {
+      "fact_id": "F42",
+      "fact_text": "The patient will be placed on a low dose Ace Inhibitor.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "He will be placed on a low dose Ace Inhibitor."
+      ]
+    },
+    {
+      "fact_id": "F43",
+      "fact_text": "A Prior Authorization for Lantus will be submitted.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "I will put in a Prior Authorization for Lantus."
+      ]
+    },
+    {
+      "fact_id": "F44",
+      "fact_text": "The patient was asked to keep a log of his blood sugars for 2 weeks.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "I have also asked the patient to keep a log of his blood sugars for 2 weeks."
+      ]
+    },
+    {
+      "fact_id": "F45",
+      "fact_text": "A referral to Endocrinology may be needed to get the patient stabilized.",
+      "fact_type": "procedure",
+      "source_evidence": [
+        "We may need to put in a referral to Endocrinology to get him stabilized."
+      ]
+    },
+    {
+      "fact_id": "F46",
+      "fact_text": "A prescription was given for Prilosec OTC for GERD symptoms.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Prescription given for Prilosec OTC for GERD symptoms."
+      ]
+    },
+    {
+      "fact_id": "F47",
+      "fact_text": "The patient was instructed to return to clinic if there are any signs of heat, swelling, or infection at the healing lacerations.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Discussed with patient if there are any signs of heat, swelling, infection to return to clinic."
+      ]
+    },
+    {
+      "fact_id": "F48",
+      "fact_text": "The patient has positive microalbuminuria.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Significant diabetic neuropathy with positive microalbuminuria."
+      ]
+    }
+  ],
+  "adjudication_notes": "Adjudicated from the SC (Person 1) and RP (Person 2) independent annotations. The two annotators agreed on the diabetes diagnosis, the medication history and changes (NPH/Regular insulin, prior Lantus, ACE inhibitor, Lantus prior authorization, Prilosec), the lab values (microalbumin 100, A1C 11.9, alkaline phosphatase 168, vitals), and the plan. SC captured the report at finer granularity (individual exam findings, the head-injury history, and patient-reported behavior/substance history); these were retained because each is explicitly stated in the source. RP framed diabetic neuropathy together with 'positive microalbuminuria' (assessment item 2); that finding was added as its own fact since SC had not captured it explicitly. Recorded as stated but not resolved (attribution only): the report attributes the head injury to a 'scooter accident' in the subjective but to a 'motor vehicle accident' in assessment item 3; both are kept. Demographics use the 'demographics' type per the team's Sept 11 decision. Substance/social history (denies alcohol/drug use, non-smoker, quit drinking) was included because a contradicting patient-friendly output would be a faithfulness error; it is typed diagnosis for lack of a dedicated type -- flag if the team adds a social_history type."
+}

@@ -1,4 +1,22 @@
-# AI Studio Challenge Project Title
+# FaithfulMed
+
+FaithfulMed is a developing Google ADK multi-agent system for turning medical text into faithful,
+patient-friendly explanations. Each agent lives in `agents/`; `notebooks/adk_pipeline.py` is the
+current integration point while the team experiments with the workflow.
+
+See [the current architecture guide](docs/CURRENT_ARCHITECTURE.md) for agent ownership, independent
+agent usage, Verifier evaluation, dataset limits, and safe commands.
+
+Offline unit tests (no API key and no Gemini call):
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+Running any `run_*` function under `agents/` uses Google ADK, requires `GOOGLE_API_KEY`, and may use
+Gemini API quota. Building the objects in `notebooks/adk_pipeline.py` does not itself call Gemini.
+
+The original team-project template follows below and can be updated as the broader project develops.
 
 > 💡 **Note for the team:** This is just a template. Update the above title with your AI Studio Challenge Project name. Remove all guidance notes and example text in this template and populate this README with your own content. You can work on this README throughout AI Studio, and get feedback from your AI Studio Coach and Challenge Advisor before finalizing it.  
 

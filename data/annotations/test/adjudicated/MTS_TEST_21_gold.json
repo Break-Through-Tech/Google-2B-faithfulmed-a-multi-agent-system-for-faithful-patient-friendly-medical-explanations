@@ -1,0 +1,203 @@
+{
+  "example_id": "MTS_TEST_21",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=77-Rheumatology&Sample=1208-Discoid+Lupus",
+  "primary_content_type": "instruction",
+  "selection_mode": "entire_report",
+  "source_text": "HISTORY: A is 12-year-old female who comes today for follow-up appointment and a CCS visit. She has the diagnosis of discoid lupus and we have been following her for her conditions, her treatments, and also to watch her for any development of her systemic lupus. A has been doing well with just Plaquenil alone and mother said that during the summer, the rash gets brighter, but now that it is getting darker and she is at school, the rash is starting to become lighter again. She has been using her cream, which is hydrocortisone at night and applying it with no problems. She denies any hair losses, denies any decrease in appetite, actually, she has been gaining some weight. She denies any ulcerations in her mouth, eye problems, or any lumps in her body. She denies any fevers or any problems with the urine.\n\nPHYSICAL EXAMINATION:\n\nVITAL SIGNS: Today temperature is 100.1, weight is 73.5 kg, blood pressure is 121/61, height is 158, and pulse is 84.\n\nGENERAL: She is alert, active, and oriented in no distress.\n\nHEENT: She had a head full of hair with no bald spots. She has a macular rash on her cheeks bilaterally with hyperpigmented circles. No scales, no excoriations, and no palpable erythema. Oral mucosa is clear with no ulcerations.\n\n\nNECK: Soft with no masses. She does have acanthosis nigricans on the base of the neck.\n\nCHEST: Clear to auscultation.\n\nHEART: Regular rhythm with no murmur.\n\nABDOMEN: Soft and nontender with no visceromegaly.\n\nMUSCULOSKELETAL: Shows no limitation, swelling, or tenderness in any of her joints.\n\n\nSKIN: Shows a discoid rash with macules approximately 1 cm in diameter in different shapes and size, but most of them are about 1 cm in diameter, which are hyperpigmented. No erythema, no purpura, no petechiae, and no raised borders. They look more like cigarette points. She has this in her upper extremities especially in the forearms and also on her lower extremities, on the legs, but just very few lesions and very light. She has some periungual erythema, as well as some palmar erythema, but this is minimal.\n\nLABORATORY DATA: Laboratories today done, we have a CBC with a white blood cell count of 7.9, hemoglobin is 14.3, platelet count is 321,000, sed rate is only 11, and CMP shows no abnormalities. Pending is antinuclear antibody complement level.\n\nASSESSMENT: She is 12-year-old with discoid lupus on the control with optimal regimen. We are going to switch her to Protopic at night, especially in the face. Continue on Plaquenil, get some laboratories and wait for the results. Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up. Future plans will be depending on whether or not she evolves into a full-blown lupus. I discussed the plan with her mother and they had no further questions.",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient is a 12-year-old female.",
+      "fact_type": "demographics",
+      "source_evidence": [
+        "A is 12-year-old female who comes today for follow-up appointment and a CCS visit."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient has discoid lupus.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She has the diagnosis of discoid lupus and we have been following her for her conditions, her treatments, and also to watch her for any development of her systemic lupus."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient is being monitored for development of systemic lupus.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "She has the diagnosis of discoid lupus and we have been following her for her conditions, her treatments, and also to watch her for any development of her systemic lupus."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "The patient has been doing well with Plaquenil.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "A has been doing well with just Plaquenil alone and mother said that during the summer, the rash gets brighter, but now that it is getting darker and she is at school, the rash is starting to become lighter again."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "The patient uses hydrocortisone cream at night.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "She has been using her cream, which is hydrocortisone at night and applying it with no problems."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient's temperature was 100.1.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Today temperature is 100.1, weight is 73.5 kg, blood pressure is 121/61, height is 158, and pulse is 84."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient's weight was 73.5 kg.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Today temperature is 100.1, weight is 73.5 kg, blood pressure is 121/61, height is 158, and pulse is 84."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient's blood pressure was 121/61.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Today temperature is 100.1, weight is 73.5 kg, blood pressure is 121/61, height is 158, and pulse is 84."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "The patient's height was 158.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Today temperature is 100.1, weight is 73.5 kg, blood pressure is 121/61, height is 158, and pulse is 84."
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "fact_text": "The patient's pulse was 84.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "VITAL SIGNS: Today temperature is 100.1, weight is 73.5 kg, blood pressure is 121/61, height is 158, and pulse is 84."
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "fact_text": "The patient has acanthosis nigricans at the base of the neck.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She does have acanthosis nigricans on the base of the neck."
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "fact_text": "The patient's white blood cell count was 7.9.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "LABORATORY DATA: Laboratories today done, we have a CBC with a white blood cell count of 7.9, hemoglobin is 14.3, platelet count is 321,000, sed rate is only 11, and CMP shows no abnormalities."
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "fact_text": "The patient's hemoglobin was 14.3.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "LABORATORY DATA: Laboratories today done, we have a CBC with a white blood cell count of 7.9, hemoglobin is 14.3, platelet count is 321,000, sed rate is only 11, and CMP shows no abnormalities."
+      ]
+    },
+    {
+      "fact_id": "F14",
+      "fact_text": "The patient's platelet count was 321,000.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "LABORATORY DATA: Laboratories today done, we have a CBC with a white blood cell count of 7.9, hemoglobin is 14.3, platelet count is 321,000, sed rate is only 11, and CMP shows no abnormalities."
+      ]
+    },
+    {
+      "fact_id": "F15",
+      "fact_text": "The patient's sed rate was 11.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "LABORATORY DATA: Laboratories today done, we have a CBC with a white blood cell count of 7.9, hemoglobin is 14.3, platelet count is 321,000, sed rate is only 11, and CMP shows no abnormalities."
+      ]
+    },
+    {
+      "fact_id": "F16",
+      "fact_text": "The patient's CMP showed no abnormalities.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "LABORATORY DATA: Laboratories today done, we have a CBC with a white blood cell count of 7.9, hemoglobin is 14.3, platelet count is 321,000, sed rate is only 11, and CMP shows no abnormalities."
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "fact_text": "The antinuclear antibody and complement level results were pending.",
+      "fact_type": "lab_value",
+      "source_evidence": [
+        "Pending is antinuclear antibody complement level."
+      ]
+    },
+    {
+      "fact_id": "F18",
+      "fact_text": "The patient's discoid lupus was under control with the current regimen.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She is 12-year-old with discoid lupus on the control with optimal regimen."
+      ]
+    },
+    {
+      "fact_id": "F19",
+      "fact_text": "The patient will be switched to Protopic at night, especially on the face.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "We are going to switch her to Protopic at night, especially in the face."
+      ]
+    },
+    {
+      "fact_id": "F20",
+      "fact_text": "The patient will continue Plaquenil.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Continue on Plaquenil, get some laboratories and wait for the results."
+      ]
+    },
+    {
+      "fact_id": "F21",
+      "fact_text": "Laboratory tests will be obtained and the results awaited.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Continue on Plaquenil, get some laboratories and wait for the results."
+      ]
+    },
+    {
+      "fact_id": "F22",
+      "fact_text": "A diet evaluation was planned that day because of weight gain and acanthosis nigricans.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up."
+      ]
+    },
+    {
+      "fact_id": "F23",
+      "fact_text": "The patient will return for follow-up in about 3 months.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up."
+      ]
+    },
+    {
+      "fact_id": "F24",
+      "fact_text": "Future plans will depend on whether the patient develops full-blown lupus.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Future plans will be depending on whether or not she evolves into a full-blown lupus."
+      ]
+    }
+  ],
+  "adjudication_notes": "We ended up using the entire report because the report is focused and manageable and provides relevant history, treatment, laboratory, assessment, and follow-up context. Demographic was used as an approved fact type based on updated advisor guidance. Multi-claim sentences were split into independently checkable facts while retaining the complete original supporting sentence as source evidence. Physical examination findings and symptoms that do not cleanly map to an approved fact type were not forced into diagnosis. Acanthosis nigricans was retained as diagnosis because it is an explicitly named condition and is clinically relevant to the diet evaluation. The source gives the patient's height as 158 without a unit, so no unit was added. Laboratory values were preserved exactly as written without adding units that were not present in the source."
+}
+

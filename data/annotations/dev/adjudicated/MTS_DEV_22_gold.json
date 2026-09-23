@@ -1,7 +1,7 @@
 {
 "example_id": "MTS_DEV_22",
 "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=44-Diets+and+Nutritions&Sample=296-Dietary+Consult+%2D+Weight+Reduction",
-"primary_content_type": "instructions",
+"primary_content_type": "instruction",
 "selection_mode": "entire_report",
 "source_text": "SUBJECTIVE: This is a 56-year-old female who comes in for a dietary consultation for hyperlipidemia, hypertension, gastroesophageal reflux disease and weight reduction. The patient states that her husband has been diagnosed with high blood cholesterol as well. She wants some support with some dietary recommendations to assist both of them in healthier eating. The two of them live alone now, and she is used to cooking for large portions. She is having a hard time adjusting to preparing food for the two of them. She would like to do less food preparation, in fact. She is starting a new job this week. OBJECTIVE: Her reported height is 5 feet 4 inches. Today's weight was 170 pounds. BMI is approximately 29. A diet history was obtained. I instructed the patient on a 1200 calorie meal plan emphasizing low-saturated fat sources with moderate amounts of sodium as well. Information on fast food eating was supplied, and additional information on low-fat eating was also supplied. ASSESSMENT: The patient's basal energy expenditure is estimated at 1361 calories a day. Her total calorie requirement for weight maintenance is estimated at 1759 calories a day. Her diet history reflects that she is making some very healthy food choices on a regular basis. She does emphasize a lot of fruits and vegetables, trying to get a fruit or a vegetable or both at most meals. She also is emphasizing lower fat selections. Her physical activity level is moderate at this time. She is currently walking for 20 minutes four or five days out of the week but at a very moderate pace with a friend. We reviewed the efforts at weight reduction identifying 3500 calories in a pound of body fat and the need to gradually and slowly chip away at this number on a long-term basis for weight reduction. We discussed the need to reduce calories from what her current patterns are and to hopefully increase physical activity slightly as well. We discussed menu selection, as well as food preparation techniques. The patient appears to have been influenced by the current low-carb, high-protein craze and had really limited her food selections based on that. I was able to give her some more room for variety including some moderate portions of potatoes, pasta and even on occasion breading her meat as long as she prepares it in a low-fat fashion which was discussed. PLAN: Recommend the patient increase the intensity and the duration of her physical activity with a goal of 30 minutes five days a week working at a brisk walk. Recommend the patient reduce calories by 500 daily to support a weight loss of one pound a week. This translates into a 1200-calorie meal plan. I encouraged the patient to keep food records in order to better track calories consumed. I recommended low fat selections and especially those that are lower in saturated fats. Emphasis would be placed on moderating portions of meat and having more moderate snacks between meals as well. This was a one-hour consultation. I provided my name and number should additional needs arise.",
 "facts": [
@@ -66,7 +66,8 @@
 "fact_text": "The patient and her husband live alone now.",
 "fact_type": "diagnosis",
 "source_evidence": [
-"The two of them live alone now."
+"The patient states that her husband has been diagnosed with high blood cholesterol as well.",
+"The two of them live alone now, and she is used to cooking for large portions."
 ]
 },
 {
@@ -74,7 +75,8 @@
 "fact_text": "The patient is accustomed to cooking large portions.",
 "fact_type": "diagnosis",
 "source_evidence": [
-"She is used to cooking for large portions."
+"SUBJECTIVE: This is a 56-year-old female who comes in for a dietary consultation for hyperlipidemia, hypertension, gastroesophageal reflux disease and weight reduction.",
+"The two of them live alone now, and she is used to cooking for large portions."
 ]
 },
 {
@@ -146,7 +148,7 @@
 "fact_text": "Information on fast food eating was supplied to the patient.",
 "fact_type": "instruction",
 "source_evidence": [
-"Information on fast food eating was supplied."
+"Information on fast food eating was supplied, and additional information on low-fat eating was also supplied."
 ]
 },
 {
@@ -154,7 +156,7 @@
 "fact_text": "Additional information on low-fat eating was supplied to the patient.",
 "fact_type": "instruction",
 "source_evidence": [
-"Additional information on low-fat eating was also supplied."
+"Information on fast food eating was supplied, and additional information on low-fat eating was also supplied."
 ]
 },
 {
@@ -218,7 +220,7 @@
 "fact_text": "The consultation reviewed that 3500 calories correspond to one pound of body fat.",
 "fact_type": "instruction",
 "source_evidence": [
-"We reviewed the efforts at weight reduction identifying 3500 calories in a pound of body fat."
+"We reviewed the efforts at weight reduction identifying 3500 calories in a pound of body fat and the need to gradually and slowly chip away at this number on a long-term basis for weight reduction."
 ]
 },
 {
@@ -234,7 +236,7 @@
 "fact_text": "The patient was counseled to reduce calories from her current eating patterns.",
 "fact_type": "instruction",
 "source_evidence": [
-"We discussed the need to reduce calories from what her current patterns are."
+"We discussed the need to reduce calories from what her current patterns are and to hopefully increase physical activity slightly as well."
 ]
 },
 {
@@ -266,7 +268,8 @@
 "fact_text": "The patient was counseled that she could include moderate portions of potatoes and pasta.",
 "fact_type": "instruction",
 "source_evidence": [
-"I was able to give her some more room for variety including some moderate portions of potatoes, pasta..."
+"The patient appears to have been influenced by the current low-carb, high-protein craze and had really limited her food selections based on that.",
+"I was able to give her some more room for variety including some moderate portions of potatoes, pasta and even on occasion breading her meat as long as she prepares it in a low-fat fashion which was discussed."
 ]
 },
 {
@@ -274,7 +277,8 @@
 "fact_text": "The patient was counseled that she could occasionally bread her meat as long as it was prepared in a low-fat fashion.",
 "fact_type": "instruction",
 "source_evidence": [
-"and even on occasion breading her meat as long as she prepares it in a low-fat fashion which was discussed."
+"The patient appears to have been influenced by the current low-carb, high-protein craze and had really limited her food selections based on that.",
+"I was able to give her some more room for variety including some moderate portions of potatoes, pasta and even on occasion breading her meat as long as she prepares it in a low-fat fashion which was discussed."
 ]
 },
 {
@@ -282,7 +286,7 @@
 "fact_text": "The patient was recommended to increase the intensity of her physical activity.",
 "fact_type": "instruction",
 "source_evidence": [
-"Recommend the patient increase the intensity and the duration of her physical activity..."
+"PLAN: Recommend the patient increase the intensity and the duration of her physical activity with a goal of 30 minutes five days a week working at a brisk walk."
 ]
 },
 {
@@ -290,7 +294,7 @@
 "fact_text": "The patient was recommended to increase the duration of her physical activity.",
 "fact_type": "instruction",
 "source_evidence": [
-"Recommend the patient increase the intensity and the duration of her physical activity..."
+"PLAN: Recommend the patient increase the intensity and the duration of her physical activity with a goal of 30 minutes five days a week working at a brisk walk."
 ]
 },
 {
@@ -298,7 +302,7 @@
 "fact_text": "The patient was recommended to work toward 30 minutes of physical activity five days a week at a brisk walking pace.",
 "fact_type": "instruction",
 "source_evidence": [
-"with a goal of 30 minutes five days a week working at a brisk walk."
+"PLAN: Recommend the patient increase the intensity and the duration of her physical activity with a goal of 30 minutes five days a week working at a brisk walk."
 ]
 },
 {
@@ -346,7 +350,7 @@
 "fact_text": "The patient was advised to moderate portions of meat.",
 "fact_type": "instruction",
 "source_evidence": [
-"Emphasis would be placed on moderating portions of meat..."
+"Emphasis would be placed on moderating portions of meat and having more moderate snacks between meals as well."
 ]
 },
 {
@@ -354,7 +358,7 @@
 "fact_text": "The patient was advised to have more moderate snacks between meals.",
 "fact_type": "instruction",
 "source_evidence": [
-"...and having more moderate snacks between meals as well."
+"Emphasis would be placed on moderating portions of meat and having more moderate snacks between meals as well."
 ]
 },
 {
@@ -374,5 +378,5 @@
 ]
 }
 ],
-"annotation_notes": "Adjudicated by combining the facts from both annotators and deduplicating overlapping information. The union approach was used, so facts captured by either annotator were retained, including demographics, consultation indications/diagnoses, family and social/context information, dietary history, counseling content, measurements, calculated energy requirements, and recommendations. Facts that were more broadly represented by one annotator were split into individual concrete facts where appropriate. The 1200-calorie meal plan appears in both the initial counseling and final recommendation; both contexts were retained because they represent distinct statements in the report. No facts were intentionally excluded solely because they were outside the primary content type."
+"adjudication_notes": "Adjudicated by combining the facts from both annotators and deduplicating overlapping information. The union approach was used, so facts captured by either annotator were retained, including demographics, consultation indications/diagnoses, family and social/context information, dietary history, counseling content, measurements, calculated energy requirements, and recommendations. Facts that were more broadly represented by one annotator were split into individual concrete facts where appropriate. The 1200-calorie meal plan appears in both the initial counseling and final recommendation; both contexts were retained because they represent distinct statements in the report. No facts were intentionally excluded solely because they were outside the primary content type."
 }

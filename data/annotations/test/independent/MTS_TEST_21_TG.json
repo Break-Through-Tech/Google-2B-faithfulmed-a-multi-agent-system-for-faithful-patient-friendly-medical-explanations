@@ -1,0 +1,83 @@
+{
+  "example_id": "MTS_TEST_21",
+  "source_url": "https://www.mtsamples.com/site/pages/sample.asp?Type=77-Rheumatology&Sample=1208-Discoid+Lupus",
+  "primary_content_type": "medication",
+  "selection_mode": "entire_report",
+  "source_text": "HISTORY: A is 12-year-old female who comes today for follow-up appointment and a CCS visit. She has the diagnosis of discoid lupus and we have been following her for her conditions, her treatments, and also to watch her for any development of her systemic lupus. A has been doing well with just Plaquenil alone and mother said that during the summer, the rash gets brighter, but now that it is getting darker and she is at school, the rash is starting to become lighter again. She has been using her cream, which is hydrocortisone at night and applying it with no problems. She denies any hair losses, denies any decrease in appetite, actually, she has been gaining some weight. She denies any ulcerations in her mouth, eye problems, or any lumps in her body. She denies any fevers or any problems with the urine.\n\nPHYSICAL EXAMINATION:\n\nVITAL SIGNS: Today temperature is 100.1, weight is 73.5 kg, blood pressure is 121/61, height is 158, and pulse is 84.\n\nGENERAL: She is alert, active, and oriented in no distress.\n\nHEENT: She had a head full of hair with no bald spots. She has a macular rash on her cheeks bilaterally with hyperpigmented circles. No scales, no excoriations, and no palpable erythema. Oral mucosa is clear with no ulcerations.\n\n\nNECK: Soft with no masses. She does have acanthosis nigricans on the base of the neck.\n\nCHEST: Clear to auscultation.\n\nHEART: Regular rhythm with no murmur.\n\nABDOMEN: Soft and nontender with no visceromegaly.\n\nMUSCULOSKELETAL: Shows no limitation, swelling, or tenderness in any of her joints.\n\n\nSKIN: Shows a discoid rash with macules approximately 1 cm in diameter in different shapes and size, but most of them are about 1 cm in diameter, which are hyperpigmented. No erythema, no purpura, no petechiae, and no raised borders. They look more like cigarette points. She has this in her upper extremities especially in the forearms and also on her lower extremities, on the legs, but just very few lesions and very light. She has some periungual erythema, as well as some palmar erythema, but this is minimal.\n\nLABORATORY DATA: Laboratories today done, we have a CBC with a white blood cell count of 7.9, hemoglobin is 14.3, platelet count is 321,000, sed rate is only 11, and CMP shows no abnormalities. Pending is antinuclear antibody complement level.\n\nASSESSMENT: She is 12-year-old with discoid lupus on the control with optimal regimen. We are going to switch her to Protopic at night, especially in the face. Continue on Plaquenil, get some laboratories and wait for the results. Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up. Future plans will be depending on whether or not she evolves into a full-blown lupus. I discussed the plan with her mother and they had no further questions.",
+  "annotator_id": "TG",
+  "facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "The patient was assessed as having discoid lupus under control with the current regimen.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "She is 12-year-old with discoid lupus on the control with optimal regimen."
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "The patient will be switched to Protopic at night, especially on the face.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "We are going to switch her to Protopic at night, especially in the face."
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "The patient will continue Plaquenil.",
+      "fact_type": "medication",
+      "source_evidence": [
+        "Continue on Plaquenil, get some laboratories and wait for the results."
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "Laboratory tests will be obtained and the results awaited.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Continue on Plaquenil, get some laboratories and wait for the results."
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "A diet evaluation was planned that day because of weight gain and acanthosis nigricans.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up."
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "fact_text": "The patient had weight gain.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up."
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "fact_text": "The patient had acanthosis nigricans.",
+      "fact_type": "diagnosis",
+      "source_evidence": [
+        "Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up."
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "fact_text": "The patient will return for follow-up in about three months.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Diet evaluation today because of the gaining weight and acanthosis nigricans, and will see her back in about 3 months for follow-up."
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "fact_text": "Future plans will depend on whether the patient develops full-blown lupus.",
+      "fact_type": "instruction",
+      "source_evidence": [
+        "Future plans will be depending on whether or not she evolves into a full-blown lupus."
+      ]
+    }
+  ],
+  "annotation_notes": "The Assessment was selected as a coherent self-contained passage because it directly states the discoid lupus assessment and the medication-management plan while avoiding a lengthy physical examination and laboratory section that would dilute the primary content type. Primary content type is medications because the passage explicitly switches treatment to Protopic and continues Plaquenil. Symptoms/findings that do not cleanly fit another allowed fact_type are retained under diagnosis rather than discarded. Needs adjudication, including the mapping of weight gain and acanthosis nigricans to diagnosis and the future-plan statement to instruction."
+}
