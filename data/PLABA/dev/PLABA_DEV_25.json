@@ -1,0 +1,340 @@
+{
+  "25": {
+  "33080005": {
+    "Title": "Effect of Tocilizumab vs Standard Care on Clinical Worsening in Patients Hospitalized With COVID-19 Pneumonia: A Randomized Clinical Trial",
+    "abstract": {
+      "1": "Importance: The coronavirus disease 2019 (COVID-19) pandemic is threatening billions of people worldwide.",
+      "2": "Tocilizumab has shown promising results in retrospective studies in patients with COVID-19 pneumonia with a good safety profile.",
+      "3": "Objective: To evaluate the effect of early tocilizumab administration vs standard therapy in preventing clinical worsening in patients hospitalized with COVID-19 pneumonia.",
+      "4": "Design, setting, and participants: Prospective, open-label, randomized clinical trial that randomized patients hospitalized between March 31 and June 11, 2020, with COVID-19 pneumonia to receive tocilizumab or standard of care in 24 hospitals in Italy.",
+      "5": "Cases of COVID-19 were confirmed by polymerase chain reaction method with nasopharyngeal swab.",
+      "6": "Eligibility criteria included COVID-19 pneumonia documented by radiologic imaging, partial pressure of arterial oxygen to fraction of inspired oxygen (Pao2/Fio2) ratio between 200 and 300 mm Hg, and an inflammatory phenotype defined by fever and elevated C-reactive protein.",
+      "7": "Interventions: Patients in the experimental arm received intravenous tocilizumab within 8 hours from randomization (8 mg/kg up to a maximum of 800 mg), followed by a second dose after 12 hours.",
+      "8": "Patients in the control arm received supportive care following the protocols of each clinical center until clinical worsening and then could receive tocilizumab as a rescue therapy.",
+      "9": "Main outcome and measures: The primary composite outcome was defined as entry into the intensive care unit with invasive mechanical ventilation, death from all causes, or clinical aggravation documented by the finding of a Pao2/Fio2 ratio less than 150 mm Hg, whichever came first.",
+      "10": "Results: A total of 126 patients were randomized (60 to the tocilizumab group; 66 to the control group).",
+      "11": "The median (interquartile range) age was 60.0 (53.0-72.0) years, and the majority of patients were male (77 of 126, 61.1%).",
+      "12": "Three patients withdrew from the study, leaving 123 patients available for the intention-to-treat analyses.",
+      "13": "Seventeen patients of 60 (28.3%) in the tocilizumab arm and 17 of 63 (27.0%) in the standard care group showed clinical worsening within 14 days since randomization (rate ratio, 1.05; 95% CI, 0.59-1.86).",
+      "14": "Two patients in the experimental group and 1 in the control group died before 30 days from randomization, and 6 and 5 patients were intubated in the 2 groups, respectively.",
+      "15": "The trial was prematurely interrupted after an interim analysis for futility.",
+      "16": "Conclusions and relevance: In this randomized clinical trial of hospitalized adult patients with COVID-19 pneumonia and Pao2/Fio2 ratio between 200 and 300 mm Hg who received tocilizumab, no benefit on disease progression was observed compared with standard care.",
+      "17": "Further blinded, placebo-controlled randomized clinical trials are needed to confirm the results and to evaluate possible applications of tocilizumab in different stages of the disease."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "The COVID-19 pandemic is threatening billions of people worldwide. COVID-19 is a viral, breathing-related disease.",
+        "2": "Tocilizumab, a type of drug called monoclonal antibodies, has shown promising results in recent studies in patients with COVID-19 pneumonia or lung infections. Monoclonal antibodies are medicines that may block the virus that causes COVID-19 from attaching to human cells, making it more difficult for the virus to reproduce.",
+        "3": "The objective of this study is to evaluate the effect of giving tocilizumab early, compared to the standard treatment, to prevent a hospitalized COVID-19 patient with pneumonia from getting worse.",
+        "4": "Patients who are in the hospital with COVID-19 pneumonia are randomly put in groups to receive either tocilizumab or the standard care.",
+        "5": "Cases of COVID-19 are confirmed by taking a swab from inside the back of the nose.",
+        "6": "To be included in the study, patients must have COVID-19 pneumonia confirmed by an x-ray, certain oxygen levels, a fever, and an increase in C-reactive proteins which are created in the liver in response to inflammation (redness and swelling from fighting an infection).",
+        "7": "Patients in the experimental group receive tocilizumab through an IV (medicine is delivered in a vein in the arm) within 8 hours of being randomly placed in the group. A second dose is given after 12 hours.",
+        "8": "Patients in the comparison group receive support care based on hospital standards until the patient's condition worsens, and then they receive tocilizumab.",
+        "9": "The main study observations of interest are 1) going into intensive care units with machines to help breathe, 2) death from all causes, or 3) a worsening of a condition measured by oxygen levels.",
+        "10": "A total of 126 patients are randomly put into the experimental group to receive tocilizumab (60 patients) or in the comparison group (66 patients).",
+        "11": "The average age is 60 years, and most patients (61.1%) are male.",
+        "12": "Three patients dropped out of the study, leaving 123 patients in the study.",
+        "13": "Within 14 days since they were randomly put into groups, 17 out of 60 patients in the tocilizumab (experimental) group and 17 out of 63 patients in the standard (comparison) group have worsening conditions.",
+        "14": "Two patients in the experimental group and 1 in the comparison group died before 30 days after being randomly assigned into groups. Six patients in the experimental group and 5 patients of the other group were intubated (a tube is inserted through the nose or throat to help a person breathe).",
+        "15": "The trial was stopped early after an analysis showed that the experimental group is not likely to show any added benefit than the comparison group.",
+        "16": "This clinical study of adult patients with COVID-19 pneumonia showed no benefit on lessening of the disease in patients receiving tocilizumab when compared to the standard care.",
+        "17": "Additional clinical studies are needed to confirm these results and to evaluate tocilizumab when given at different stages of the disease."
+      }
+    }
+  },
+  "34409778": {
+    "Title": "Effectiveness of Mavrilimumab in Viral Infections Including SARS-CoV-2 Infection - A Brief Review",
+    "abstract": {
+      "1": "Hyperinflammation and cytokine storm has been noted as a poor prognostic factor in patients with severe pneumonia related to coronavirus disease 2019 (COVID-19).",
+      "2": "In COVID-19, pathogenic myeloid cell overactivation is found to be a vital mediator of damage to tissues, hypercoagulability, and the cytokine storm.",
+      "3": "These cytokines unselectively infiltrate various tissues, such as the lungs and heart, and nervous system.",
+      "4": "This cytokine storm can hence cause multi-organ dysfunction and life-threatening complications.",
+      "5": "Mavrilimumab is a monoclonal antibody (mAb) that may be helpful in some cases with COVID-19.",
+      "6": "During an inflammation, Granulocyte-macrophage colony-stimulating factor (GM-CSF) release is crucial to driving both innate and adaptive immune responses.",
+      "7": "The GM-CSF immune response is triggered when an antigen attaches to the host cell and induces the signaling pathway.",
+      "8": "Mavrilimumab antagonizes the action of GM-CSF and decreases the hyperinflammation associated with pneumonia in COVID-19, therefore strengthening the rationale that mavrilimumab when added to the standard protocol of treatment could improve the clinical outcomes in COVID-19 patients, specifically those patients with pneumonia.",
+      "9": "With this review paper, we aim to demonstrate the inhibitory effect of mavrilimumab on cytokine storms in patients with COVID-19 by reviewing published clinical trials and emphasize the importance of extensive future trials."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Patients with severe pneumonia or lung infections related to COVID-19 (a viral breathing-related disease) may also have an overactive immune response and cytokine storm, which is when the immune system floods the body with proteins called cytokines. These events are associated with poor outcomes.",
+        "2": "In COVID-19, excessive activity of immune cells is linked to tissue damage, an increased risk of blood clots, and the cytokine storm.",
+        "3": "The cytokines enter different tissues, such as the lungs and heart, and the nervous system (the spinal cord, brain, and nerves).",
+        "4": "This cytokine storm can cause multiple organs to not work properly and cause life-threatening complications.",
+        "5": "Monoclonal antibodies are medicines that may block the virus that causes COVID-19 from attaching to human cells, making it more difficult for the virus to reproduce. One type of monoclonal antibody that may help some COVID-19 cases is mavrilimumab.",
+        "6": "During inflammation, the release of a GM-CSF, another type of protein that controls the body's immune responses, is necessary for proper immune responses.",
+        "7": "These proteins are triggered when a foreign substance attaches to a cell and creates a path for cells to communicate and pass information.",
+        "8": "Mavrilimumab disrupts the action of GM-CSF and decreases the severe inflammation associated with pneumonia in COVID-19. Therefore, adding mavrilimumab to the standard treatment may improve the condition of COVID-19 patients, especially those with pneumonia.",
+        "9": "This paper reviews data from published studies to show how mavrilimumab can block cytokine storms in patients with COVID-19, and to highlight the importance of future studies."
+      },
+      "adaptation2": {
+        "1": "Hyperinflammation and overproduction of inflammatory molecules is a poor predictor of recovery in patients with severe pneumonia (an infection that inflames air sacs in lungs) related to the viral respiratory disease, coronavirus disease 2019 (COVID-19).",
+        "2": "In COVID-19, disease-causing white blood cell overactivation is a key mediator of damage to tissues, increased blood clots, and inflammatory molecule overproduction.",
+        "3": "These inflammatory molecules invade many body parts like the lungs, heart, and nervous system.",
+        "4": "This overproduction of inflammatory molecules can cause multi-organ damage and life-threatening issues.",
+        "5": "Mavrilimumab is a monoclonal antibody (mAb), which binds to only one site of a foreign organism. It may aid some cases of COVID-19.",
+        "6": "During inflammation, granulocyte-macrophage colony-stimulating factor (GM-CSF) release, release of molecules that activate specific white blood cells, is crucial for an immune response.",
+        "7": "The GM-CSF immune response is triggered when a foreign organism attaches to a cell and activates a signal.",
+        "8": "Mavrilimumab combats the effect of GM-CSF and reduces hyperinflammation linked to pneumonia in COVID-19. This effect stregthens the idea that mavrilimumab, when added to standard treatment, may improve health outcomes in COVID-19 patients, specifically those with pneumonia.",
+        "9": "With this paper, we aim to show how mavrilimumab reduces overproduction of inflammatory molecules in patients with COVID-19."
+      }
+    }
+  },
+  "34521513": {
+    "Title": "Implementation and outcomes of monoclonal antibody infusion for COVID-19 in an inner-city safety net hospital: A South-Bronx experience",
+    "abstract": {
+      "1": "Background: Monoclonal antibody therapy (MAT) is recommended in mild to moderate Coronavirus disease 2019 (COVID-19) patients who are at risk of progressing to severe disease.",
+      "2": "Due to limited data on its outcomes and the logistic challenges in administering the drug, MAT has not been widely used in the United States (US) despite of emergency use authorization (EUA) approval by the Food and Drug Administration (FDA).",
+      "3": "Aim: We aim to study the outcomes of MAT in patients predominantly from ethnic minority groups and the challenges we experienced in implementing the infusion therapy protocol in an inner-city safety-net-hospital in the South Bronx.",
+      "4": "Methods and results: We conducted a retrospective observational study of 49 patients who were offered MAT as per EUA protocol of FDA.",
+      "5": "Patient who met the criteria for MAT and received therapy were included in treatment group (n = 38) and the remaining (n = 11) who declined treatment were included in the control group.",
+      "6": "A majority of patients (76%) in the study group reported symptomatic improvement, the day after infusion.",
+      "7": "There was statistically significant reduction in COVID-19 related hospitalizations (7.8 vs 54.5%, P = < 0.001) mortality (0 vs 18.1%, P value = 0.008) in the treatment group.",
+      "8": "Conclusion: MAT reduced both hospitalization and mortality in this predominantly Hispanic patient population with mild to moderate COVID-19 with high risk factors for disease progression."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Monoclonal antibodies are medicines recommended in mild to moderate COVID-19 patients who are at risk of progressing to a severe stage of the disease. Monoclonal antibodies are medicines that may block the virus that causes COVID-19 (a breathing-related disease) from attaching to human cells, making it more difficult for the virus to reproduce.",
+        "2": "Monoclonal antibodies are not widely used in the United States because there is little data on the impact of these drugs, and it is difficult to give these drugs to patients.",
+        "3": "This study aimed to assess the outcomes of monoclonal antibodies in patients who were mostly from ethnic minority groups and to study the challenges in providing the treatment in an inner-city hospital in the South Bronx.",
+        "4": "Researchers looked at data previously collected from 49 patients who were offered monoclonal antibody medicines.",
+        "5": "The 38 patients who received the monoclonal antibody therapy were put in the treatment group. Eleven people did not want to receive the medicines, so they were made the comparison group.",
+        "6": "A majority of patients (76%) reported improvement in their symptoms the day after receiving the medicine.",
+        "7": "There was a big reduction in hospital stays due to COVID-19 and death in the group that received monoclonal antibody medicines.",
+        "8": "Monoclonal antibody medicines reduced both hospital stays and deaths in this predominantly Hispanic group of patients with mild or moderate COVID-19."
+      }
+    }
+  },
+  "34537363": {
+    "Title": "Influence of treatment with neutralizing monoclonal antibodies on the SARS-CoV-2 nasopharyngeal load and quasispecies",
+    "abstract": {
+      "1": "Objectives: We aimed to evaluate the impact of neutralizing monoclonal antibodies (mAbs) treatment and to determine whether the mAbs selective pressure could facilitate the proliferation of virus variants with spike protein mutations that might attenuate mAb effectiveness.",
+      "2": "Patients and methods: We therefore evaluated the impact of mAbs on the nasopharyngeal (NP) viral load and virus quasispecies of mAb-treated patients using single molecule real time sequencing (Pacific Biosciences).",
+      "3": "The mAbs used were: Bamlanivimab alone (4 patients), Bamlanivimab/Etesevimab (23 patients), and Casirivimab/Imdevimab (5 patients).",
+      "4": "Results: The NP SARS-CoV-2 viral load of mAb-treated patients decreased from 8.2 log10 copies/ml before administration to 4.3 log10 copies/ml 7 days after administration.",
+      "5": "Five immunocompromised patients given Bamlanivimab/Etesevimab were found to have mAbs activity-reducing spike mutations.",
+      "6": "Two patients harbored SARS-CoV-2 variants with a Q493R spike mutation 7 days after administration, as did a third patient 14 days after administration.",
+      "7": "The fourth patient harbored a variant with a Q493K spike mutation 7 days post-treatment, and the fifth patient had a variant with a E484K spike mutation on day 21.",
+      "8": "The emergence of the spike mutation was accompanied by stabilization or rebound of the NP viral load in 3/5 patients.",
+      "9": "Conclusion: Two-m Ab therapy can drive the selection of resistant SARS-CoV-2 variants in immunocompromised patients.",
+      "10": "Patients given mAbs should be closely monitored and measures to limit virus spread reinforced."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "This study aims to evaluate the impact of monoclonal antibodies, medicines that may block the virus that causes COVID-19 (a viral lung infection) from attaching to human cells, making it more difficult for the virus to reproduce. The study also aims to determine if certain monoclonal antibodies can lead to spread of virus variants through mutations that may reduce the effectiveness of monoclonal antibodies.",
+        "2": "Researchers evaluate the impact of monoclonal antibodies on the viral load (quantity of the virus) found in the nose and the number of mutations in patients treated with monoclonal antibodies.",
+        "3": "The monoclonal antibodies used are bamlanivimab alone (in 4 patients), Bamlanivimab/Etesevimab (in 23 patients), and Casirivimab/Imdevimab (in5 patients).",
+        "4": "The viral load in the nose of monoclonal antibodies-treated patients decreased 7 days after the medicines were given.",
+        "5": "Five patients with a weak immune system who were given Bamlanivimab/Etesevimab are found to have reduced mutations that allow the virus to enter cells and cause infection.",
+        "6": "Two patients with coronavirus variants have a mutation that enabled the virus to enter cells 7 days after the medicines are given. The same occurred with a third patient 14 days after the medicines are given.",
+        "7": "The fourth patient with a variant has a mutation 7 days after the medicine is stopped, and the fifth patient has a variant with a mutation on day 21.",
+        "8": "The start of the mutation is connected with a stable or increased viral load in the nose in 3 out of 5 patients.",
+        "9": "In conclusion, two monoclonal antibody drugs can drive the targeting of coronavirus variants in patients with weak immune systems.",
+        "10": "Patients given monoclonal antibody should be closely monitored, and measures to limit virus spread should be strengthened."
+      },
+      "adaptation2": {
+        "1": "We aimed to test the effect of monoclonal antibodies (mAbs), antibodies that bind to only one site of a foreign organism. We determine if mAbs may help grow mutated virus variants that may weaken mAb effectiveness.",
+        "2": "We test the effect of mAbs on the virus species and amount in the upper throat of mAb-treated patients.",
+        "3": "The mAbs used were: Bamlanivimab alone (4 patients), Bamlanivimab/Etesevimab (23 patients), and Casirivimab/Imdevimab (5 patients).",
+        "4": "The amount of SARS-CoV-2 viruses, which cause a respiratory illness, in the upper throats of mAb-treated patients decreased 7 days after treatment.",
+        "5": "Five patients with an impaired immune system and given Bamlanivimab/Etesevimab had mutations that reduced the effect of mAbs.",
+        "6": "Two patients with SARS-CoV-2 variants had a mutations 7 days after treatment, along with a third patient 14 days after treatment.",
+        "7": "The fourth patient had a variant with a mutation 7 days after treatment, along with a fifth patient on day 21.",
+        "8": "The onset of the mutation came with a rebound or stabilization of virus amount in 3/5 patients.",
+        "9": "Two-mAb treatment can lead to resistant SARS-CoV-2 variants in patients with an impaired immune system.",
+        "10": "Patients given mAbs should be monitored and measures to limit virus spread reinforced."
+      }
+    }
+  },
+  "34541573": {
+    "Title": "Potent neutralizing RBD-specific antibody cocktail against SARS-CoV-2 and its mutant",
+    "abstract": {
+      "1": "The ongoing pandemic caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) and its variants has posed a serious global public health emergency.",
+      "2": "Therapeutic interventions or vaccines are urgently needed to treat and prevent the further dissemination of this contagious virus.",
+      "3": "This study described the identification of neutralizing receptor-binding domain (RBD)-specific antibodies from mice through vaccination with a recombinant SARS-CoV-2 RBD.",
+      "4": "RBD-targeted monoclonal antibodies (mAbs) with distinct function and epitope recognition were selected to understand SARS-CoV-2 neutralization.",
+      "5": "High-affinity RBD-specific antibodies exhibited high potency in neutralizing both live and pseudotype SARS-CoV-2 viruses and the SARS-CoV-2 pseudovirus particle containing the spike protein S-RBDV367F mutant (SARS-CoV-2(V367F)).",
+      "6": "These results demonstrated that these antibodies recognize four distinct groups (I-IV) of epitopes on the RBD and that mAbs targeting group I epitope can be used in combination with mAbs recognizing groups II and/or IV epitope to make mAb cocktails against SARS-CoV-2 and its mutants.",
+      "7": "Moreover, structural characterization reveals that groups I, III, and IV epitopes are closely located to an RBD hotspot.",
+      "8": "The identification of RBD-specific antibodies and cocktails may provide an effective therapeutic and prophylactic intervention against SARS-CoV-2 and its isolates."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "The ongoing pandemic of the coronavirus (the virus that causes COVID-19 or the breathing-related infection) and its variants has created a global public health emergency.",
+        "2": "Medical drugs and vaccines are needed to treat and prevent the spread of this contagious virus.",
+        "3": "This study describes how antibodies that are linked to receptor-binding domains (parts of the cell that connect the virus and allow entry to the cell) are identified in mice using a vaccine that includes a small piece of DNA or genetic material to teach the body to fight the infection.",
+        "4": "Monoclonal antibodies are medicines that may block the virus that causes COVID-19 from attaching to human cells, making it more difficult for the virus to reproduce. Certain monoclonal antibodies are selected for the study to understand how the coronavirus can be made ineffective.",
+        "5": "Some antibodies with these receptor-binding domains have a high ability to make the coronavirus ineffective.",
+        "6": "These results show that monoclonal antibodies targeting certain parts of the virus can be used in combination with other monoclonal antibodies medicines against the coronavirus.",
+        "7": "",
+        "8": "The identification of these antibodies linked to receptor-binding domains and the mix of medicines may provide effective treatment and prevention against coronavirus."
+      }
+    }
+  },
+  "34547765": {
+    "Title": "Fc-engineered antibody therapeutics with improved anti-SARS-CoV-2 efficacy",
+    "abstract": {
+      "1": "Monoclonal antibodies (mAbs) with neutralizing activity against SARS-CoV-2 have demonstrated clinical benefit in cases of mild to moderate SARS-CoV-2 infection, substantially reducing the risk for hospitalization and severe disease 1-4.",
+      "2": "Treatment generally requires the administration of high doses of these mAbs with limited efficacy in preventing disease complications or mortality among hospitalized COVID-19 patients 5.",
+      "3": "Here we report the development and evaluation of Fc-optimized anti-SARS-CoV-2 mAbs with superior potency to prevent or treat COVID-19 disease.",
+      "4": "In several animal models of COVID-19 disease we demonstrate that selective engagement of activating FcγRs results in improved efficacy in both preventing and treating disease-induced weight loss and mortality, significantly reducing the dose required to confer full protection upon SARS-CoV-2 challenge and treatment of pre-infected animals.",
+      "5": "Our results highlight the importance of FcγR pathways in driving antibody-mediated antiviral immunity, while excluding any pathogenic or disease-enhancing effects of FcγR engagement of anti-SARS-CoV-2 antibodies upon infection.",
+      "6": "These findings have important implications for the development of Fc-engineered mAbs with optimal Fc effector function and improved clinical efficacy against COVID-19 disease."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Monoclonal antibodies are medicines that can make the coronavirus ineffective and have shown to be beneficial in cases of mild to moderate coronavirus infection, substantially reducing the risk for staying in the hospital and having severe symptoms of the disease. The coronavirus can cause COVID-19, the viral breathing-related infection.",
+        "2": "Treatment usually requires high doses of these monoclonal antibodies with limited ability in preventing complications or death among patients hospitalized with COVID-19.",
+        "3": "This study reports on the development and evaluation of monoclonal antibodies enhanced with the Fc (the part of the antibody that helps interactions with other cells) to prevent or treat COVID-19.",
+        "4": "In several animal studies of COVID-19, researchers show that activating certain parts of the Fc proteins results in improvements in both preventing and treating weight loss and death from the disease. This helps reduce the dose required to gain full protection in animals who are not infected with the coronavirus.",
+        "5": "Results highlight the importance of the Fc proteins in increasing immunity to the virus.",
+        "6": "These findings may influence the development of Fc monoclonal antibodies with improved functions to help strengthen immunity against COVID-19."
+      }
+    }
+  },
+  "34552949": {
+    "Title": "High Efficacy of Therapeutic Equine Hyperimmune Antibodies Against SARS-CoV-2 Variants of Concern",
+    "abstract": {
+      "1": "SARS-CoV-2 variants of concern show reduced neutralization by vaccine-induced and therapeutic monoclonal antibodies; therefore, treatment alternatives are needed.",
+      "2": "We tested therapeutic equine polyclonal antibodies (pAbs) that are being assessed in clinical trials in Costa Rica against five globally circulating variants of concern: alpha, beta, epsilon, gamma and delta, using plaque reduction neutralization assays.",
+      "3": "We show that equine pAbs efficiently neutralize the variants of concern, with inhibitory concentrations in the range of 0.146-1.078 μg/mL, which correspond to extremely low concentrations when compared to pAbs doses used in clinical trials.",
+      "4": "Equine pAbs are an effective, broad coverage, low-cost and a scalable COVID-19 treatment."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Coronavirus variants of concern (variants that are easier to transmit and/or are more severe) show reduced effect from monoclonal antibodies which are drugs that may block the virus that causes COVID-19 (a viral breathing-related disorder) from attaching to human cells, making it more difficult for the virus to reproduce.",
+        "2": "Researchers tested equine or horse-derived polyclonal antibodies (antibody drugs that attack several parts of the COVID-19 virus) that are being tested in clinical trials in Costa Rica against five globally circulating variants of concern: alpha, beta, epsilon, gamma and delta.",
+        "3": "The results show that equine polyclonal antibodies efficiently make the variant of concern ineffective.",
+        "4": "Equine polyclonal antibodies are found to be an effective, low-cost, and accessible COVID-19 treatment for the variants of concern."
+      },
+      "adaptation2": {
+        "1": "Alarming variants of SARS-CoV-2 (a viral respiratory disease) show reduced elimination by vaccine-induced and highly-specific antibodies. Thus, different treatments are needed.",
+        "2": "We tested horse-derived polyclonal antibodies (pAbs), a mixture of antibodies that bind to the same foreign organism. These pAbs are being measured in Costa Rica against five alarming, global variants: alpha, beta, epsilon, gamma, and delta.",
+        "3": "Horse-derived pAbs efficiently treat the concerning variants with much lower dosages than those used in clinical trials.",
+        "4": "Horse-derived pAbs are an effective, broad coverage, low-cost treatment for COVID-19 (a widespread viral respiratory disease)."
+      }
+    }
+  },
+  "34552950": {
+    "Title": "Heterologous Hyperimmune Polyclonal Antibodies Against SARS-CoV-2: A Broad Coverage, Affordable, and Scalable Potential Immunotherapy for COVID-19",
+    "abstract": {
+      "1": "Over 80 mAbs have been shown to block the interaction between the SARS-CoV-2 S1 glycoprotein and its cellular receptor, thus neutralizing virus infectivity in vitro.",
+      "2": "Some of those mAbs demonstrate therapeutic efficacy to curtail viral burden and lung inflammation in animal models.",
+      "3": "The neutralization mechanisms of mAbs against SARS-CoV-2 in vivo are not fully understood, but optimal protection correlates with Fc effector functions.",
+      "4": "Approximately 30 SARS-CoV-2 neutralizing m Abs are undergoing clinical trials in COVID-19 patients.",
+      "5": "Some were granted emergency authorization since they reduced viral load, disease severity, and hospitalization in randomized, controlled phase II clinical trials.",
+      "6": "However, mAbs are unaffordable for healthcare systems in many developing countries due to their high cost (> USD 1,500/vial), meaning that most infected people would not have access to them.",
+      "7": "Another obstacle for COVID-19 therapy with mAbs is the emergence of viral variants harboring changes in the receptor-binding domain (RBD) of the S1 glycoprotein.",
+      "8": "The variants of concern (VoC) exhibit enhanced transmissibility or virulence, circulate worldwide, and include those designated as alpha, beta, epsilon, gamma, and delta, first detected in the UK, South Africa, Brazil, USA, and India, respectively.",
+      "9": "Therapeutic mAbs, and antibodies in the plasma of vaccinated or convalescent individuals, fail to neutralize VoC efficiently."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Over 80 monoclonal antibody medicines have been shown to block the interaction between the coronavirus glycoprotein (a molecule that has a carbohydrate and a protein) and its cell receptor that can send signals, resulting in making the virus ineffective. The coronavirus causes COVID-1, a viral breathing-related disorder, and monoclonal antibodies are medicines that may block the virus that causes COVID-19 from attaching to human cells.",
+        "2": "Some of those monoclonal antibodies show that they work well to reduce the effects of the virus and lung inflammation (redness and swelling in response to infection) in animal studies.",
+        "3": "The process used by monoclonal antibodies to make the virus ineffective in humans and animals is not fully understood, but the best protection is associated with the Fc effector functions, which are the part of the antibody that interacts with other cells.",
+        "4": "Approximately 30 monoclonal antibodies are currently being tested in clinical trials in COVID-19 patients.",
+        "5": "Some are granted emergency authorization (where unapproved medicines may be used) because they reduce the amount of virus in the body, lessen the seriousness of the disease, and reduce hospital stays in clinical trials.",
+        "6": "However, monoclonal antibodies are expensive for healthcare systems in many developing countries, meaning that most infected people would not have access to the medicine.",
+        "7": "Another challenge for COVID-19 medicines that use monoclonal antibodies is the new variants that change cell receptor activity for the glycoprotein.",
+        "8": "The variants of concern are more easily transmitted between people, are found worldwide, and include those designated as alpha, beta, epsilon, gamma, and delta.",
+        "9": "Monoclonal antibody medicines, and antibodies in plasma (the liquid portion of blood) of vaccinated or recovering people, fail to efficiently make the variants of interest ineffective."
+      }
+    }
+  },
+  "34555986": {
+    "Title": "Do we need bamlanivimab? Is etesevimab a key to treating Covid-19?",
+    "abstract": {
+      "1": "Introduction: Treatments for subjects with Covid-19 are required.",
+      "2": "One approach is neutralising monoclonal antibodies.",
+      "3": "Bamlanivimab and etesevimab are monoclonal antibodies to SARS-CoV-2.",
+      "4": "Areas covered: This evaluation is of the phase 3 BLAZE-1 clinical trial, which was of bamlanivimab plus etesevimab in adult ambulatory participants with a risk factor for, and mild to moderate, Covid-19 illness.",
+      "5": "The primary outcome was Covid 19 related hospitalisation of ≥ 24 hours or death from any cause by day 29, and this occurred in 2.1% subjects in the bamlanivimab/etesevimab group, compared to 7.0% in the placebo group.",
+      "6": "Expert opinion: In the pandemic, the attempts by the FDA to shorten approval processes for medicines and by journals to make information available in a timely manner are admirable.",
+      "7": "However, these shortened processes made negotiating the details of BLAZE-1 and producing accurate and critical appraisals difficult.",
+      "8": "It seems to me, that if there are any benefits of bamlanivimab alone in Covid-19, they are not clear-cut.",
+      "9": "Bamlanivimab has limited effects against the beta and gamma variants and is not effective against the delta variant.",
+      "10": "Thus, the benefits of bamlanivimab/etesevimab in the phase 3 of the BLAZE-1 may be solely due to etesevimab, and this needs to be tested."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Treatments for people with COVID-19, a viral breathing-related disorder, are needed.",
+        "2": "One option is to use monoclonal antibodies, which are medicines that may block the virus that causes COVID-19 from attaching to human cells, making it more difficult for the virus to reproduce.",
+        "3": "Bamlanivimab and etesevimab are two types of monoclonal antibodies.",
+        "4": "This evaluation is of the 3rd phase of a clinical study called BLAZE that examines bamlanivimab plus etesevimab in adults.",
+        "5": "The main result researchers look for is COVID-19 related hospital stays that lasted at least 24 hours or death. This result occurred in 2.1% of patients in the bamlanivimab/etesevimab group, compared to 7.0% in the placebo group.",
+        "6": "Based on opinions of experts, the FDA's efforts to shorten the approval process for medicines and for medical journals to make information available is admirable.",
+        "7": "However, these shortened processes make the details of the BLAZE study and producing accurate reviews difficult.",
+        "8": "It seems that if there are any benefits for bamlanivimab alone in COVID-19, they are not clear-cut.",
+        "9": "Bamlanivimab has limited effects against the beta and gamma variants of COVID-19 and is not effective against the delta variant.",
+        "10": "Therefore, the benefits of the bamlanivimab/etesevimab in phase 3 of the BLAZE-1 trial may be solely due to the etesevimab medicine, and this needs to be tested."
+      }
+    }
+  },
+  "34556486": {
+    "Title": "Antibody and cellular therapies for treatment of covid-19: a living systematic review and network meta-analysis",
+    "abstract": {
+      "1": "Objective: To evaluate the efficacy and safety of antiviral antibody therapies and blood products for the treatment of novel coronavirus disease 2019 (covid-19).",
+      "2": "Design: Living systematic review and network meta-analysis, with pairwise meta-analysis for outcomes with insufficient data.",
+      "3": "Data sources: WHO covid-19 database, a comprehensive multilingual source of global covid-19 literature, and six Chinese databases (up to 21 July 2021).",
+      "4": "Study selection: Trials randomising people with suspected, probable, or confirmed covid-19 to antiviral antibody therapies, blood products, or standard care or placebo.",
+      "5": "Paired reviewers determined eligibility of trials independently and in duplicate.",
+      "6": "Methods: After duplicate data abstraction, we performed random effects bayesian meta-analysis, including network meta-analysis for outcomes with sufficient data.",
+      "7": "We assessed risk of bias using a modification of the Cochrane risk of bias 2.0 tool.",
+      "8": "The certainty of the evidence was assessed using the grading of recommendations assessment, development, and evaluation (GRADE) approach.",
+      "9": "We meta-analysed interventions with ≥100 patients randomised or ≥20 events per treatment arm.",
+      "10": "Results: As of 21 July 2021, we identified 47 trials evaluating convalescent plasma (21 trials), intravenous immunoglobulin (IVIg) (5 trials), umbilical cord mesenchymal stem cells (5 trials), bamlanivimab (4 trials), casirivimab-imdevimab (4 trials), bamlanivimab-etesevimab (2 trials), control plasma (2 trials), peripheral blood non-haematopoietic enriched stem cells (2 trials), sotrovimab (1 trial), anti-SARS-CoV-2 IVIg (1 trial), therapeutic plasma exchange (1 trial), XAV-19 polyclonal antibody (1 trial), CT-P59 monoclonal antibody (1 trial) and INM005 polyclonal antibody (1 trial) for the treatment of covid-19.",
+      "11": "Patients with non-severe disease randomised to antiviral monoclonal antibodies had lower risk of hospitalisation than those who received placebo: casirivimab-imdevimab (odds ratio (OR) 0.29 (95% CI 0.17 to 0.47); risk difference (RD) -4.2%; moderate certainty), bamlanivimab (OR 0.24 (0.06 to 0.86); RD -4.1%; low certainty), bamlanivimab-etesevimab (OR 0.31 (0.11 to 0.81); RD -3.8%; low certainty), and sotrovimab (OR 0.17 (0.04 to 0.57); RD -4.8%; low certainty).",
+      "12": "They did not have an important impact on any other outcome.",
+      "13": "There was no notable difference between monoclonal antibodies.",
+      "14": "No other intervention had any meaningful effect on any outcome in patients with non-severe covid-19.",
+      "15": "No intervention, including antiviral antibodies, had an important impact on any outcome in patients with severe or critical covid-19, except casirivimab-imdevimab, which may reduce mortality in patients who are seronegative.",
+      "16": "Conclusion: In patients with non-severe covid-19, casirivimab-imdevimab probably reduces hospitalisation; bamlanivimab-etesevimab, bamlanivimab, and sotrovimab may reduce hospitalisation.",
+      "17": "Convalescent plasma, IVIg, and other antibody and cellular interventions may not confer any meaningful benefit."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "The objective of this paper is to evaluate the performance and safety of antiviral antibody therapies that help the body fight off or prevent a virus and blood products used to treat COVID-19.",
+        "2": "Published data from other studies is summarized on an ongoing basis and compares data from different medicines, including an analysis to fill in the gaps for studies that have limited data.",
+        "3": "The data sources for this summary are the World Health Organization (WHO) COVID-19 and six Chinese databases that store data up to July 21, 2021.",
+        "4": "In clinical trials, people with suspected COVID-19 (person has symptoms and/or exposure to covid but is not tested), probable COVID-19 (person who has tested positive with other tests but not confirmatory test), or confirmed COVID-19 are randomly put into different treatment groups or a placebo, where they receive something that looks like a drug but is not active.",
+        "5": "Two reviewers determine if the different clinical studies will be included in the summary.",
+        "6": "After data are collected from the clinical studies, the data are analyzed.",
+        "7": "",
+        "8": "The confidence that the results in the studies are accurate is graded using an established process.",
+        "9": "Clinical trials with 100 or more patients or 20 or more events per treatment type are analyzed.",
+        "10": "As of July 21st  2021, 47 trials that evaluated different blood products and medicines, including monoclonal antibodies, are found.",
+        "11": "Patients with non-severe disease who receive antiviral monoclonal antibodies (medicines that may block the virus from attaching to human cells) have lower risk of being hospitalized than those who received placebo.",
+        "12": "Antiviral monoclonal antibodies did not have an important impact on any other outcome.",
+        "13": "There is no major difference between monoclonal antibodies.",
+        "14": "No other treatment intervention is found to have any meaningful effect on any outcome in patients with non-severe COVID-19.",
+        "15": "No intervention, including antiviral antibodies, has an important impact on any outcome in patients with severe or critical COVID-19, except casirivimab-imdevimab, which may reduce death in patients who had a negative blood test.",
+        "16": "In conclusion, patients with non-severe COVID-19, the drug casirivimab-imdevimab probably reduces hospital stays; bamlanivimab-etesevimab, bamlanivimab, and sotrovimab may reduce hospitalization.",
+        "17": "Other antibody and cell interventions may not provide any meaningful benefit."
+      },
+      "adaptation2": {
+        "1": "Our objective is to measure the effectiveness and safety of antiviral antibody treatments and substances from blood for treating the new coronavirus disease 2019 (covid-19), a viral respiratory disease.",
+        "2": "",
+        "3": "",
+        "4": "People with suspected, probable, or confirmed covid-19 were randomized to antiviral antibody therapies, substances from blood, or standard care or an inactive placebo.",
+        "5": "",
+        "6": "",
+        "7": "",
+        "8": "",
+        "9": "",
+        "10": "As of 21 July 2021, we identified 47 trials evaluating a variety of substances from blood and antiviral antibody treatments for treating covid-19.",
+        "11": "Patients with non-severe disease given antiviral antibodies had lower risk of hospitalsation than those given the inactive placebo treatment.",
+        "12": "They did not have an important impact on any other outcome.",
+        "13": "There was no notable difference between antibodies.",
+        "14": "No other treatment had a meaningful effect on any outcome in patients with non-severe covid-19.",
+        "15": "No treatment, including antiviral antibodies, had an important effect on any outcome in patients with severe covid-19, except the antibodies casirivimab-imdevimab. These antibodies may reduce risk of death in those who do not make the antibodies naturally.",
+        "16": "In patients with non-severe covid-19, casirivimab-imdevimab likely reduces hospitalisation. Bamlanivimab-etesevimab, bamlanivimab, and sotrovimab may reduce hospitalisation.",
+        "17": "Substances from blood and other antibody treatments may not give any meaningful aid."
+      }
+    }
+  },
+  "question": "When do monoclonal antibodies have to be given for covid?",
+  "question_type": "B"
+  }
+}

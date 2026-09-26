@@ -1,0 +1,346 @@
+{
+  "6": {
+  "16127951": {
+    "Title": "Hyperthyroidism: diagnosis and treatment",
+    "abstract": {
+      "1": "The proper treatment of hyperthyroidism depends on recognition of the signs and symptoms of the disease and determination of the etiology.",
+      "2": "The most common cause of hyperthyroidism is Graves' disease.",
+      "3": "Other common causes include thyroiditis, toxic multinodular goiter, toxic adenomas, and side effects of certain medications.",
+      "4": "The diagnostic workup begins with a thyroid-stimulating hormone level test.",
+      "5": "When test results are uncertain, measuring radionuclide uptake helps distinguish among possible causes.",
+      "6": "When thyroiditis is the cause, symptomatic treatment usually is sufficient because the associated hyperthyroidism is transient.",
+      "7": "Graves' disease, toxic multinodular goiter, and toxic adenoma can be treated with radioactive iodine, antithyroid drugs, or surgery, but in the United States, radioactive iodine is the treatment of choice in patients without contraindications.",
+      "8": "Thyroidectomy is an option when other treatments fail or are contraindicated, or when a goiter is causing compressive symptoms.",
+      "9": "Some new therapies are under investigation.",
+      "10": "Special treatment consideration must be given to patients who are pregnant or breastfeeding, as well as those with Graves' ophthalmopathy or amiodarone-induced hyperthyroidism.",
+      "11": "Patients' desires must be considered when deciding on appropriate therapy, and dose monitoring is essential."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Successfully treating an overactive thyroid depends on identifying the signs and symptoms of the disease and determining the cause.",
+        "2": "Graves' disease, a disease in which infection-preventing cells attack healthy cells, is the most common cause of an overactive thyroid.",
+        "3": "Other common causes of an overactive thyroid include thyroid inflammation, one or more glandular growths making extra thyroid hormone, and side effects of some medications.",
+        "4": "A common test that measures blood levels of hormones that acts as messengers to the thyroid is the first step in a medical exam.",
+        "5": "When results of this test are uncertain, a test to measure thyroid function can be used.",
+        "6": "When the cause is inflammation of the thyroid, treating the symptoms is enough because the overactive thyroid is short-lived.",
+        "7": "Graves' disease and when one or more growths make extra thyroid hormone can be treated with radiation therapy, drugs that block the formation of thyroid hormone, or surgery. In the United States, radiation therapy to shrink the thyroid is preferred unless there is a reason not to do so.",
+        "8": "Thyroid removal is an option when other treatments do not work or should not be used, or when an enlarged thyroid is causing pressure or squeezing.",
+        "9": "New treatments are being studied.",
+        "10": "People who are pregnant or breastfeeding, and people with thyroid eye disease or overactive thyroids caused by amiodarone, a heart medication, must be given special treatment consideration.",
+        "11": "We must factor in what patients want when deciding on treatment. Maintaining a safe and effective dose is very important."
+      }
+    }
+  },
+  "25251231": {
+    "Title": "Thyroiditis: an integrated approach",
+    "abstract": {
+      "1": "Thyroiditis is a general term that encompasses several clinical disorders characterized by inflammation of the thyroid gland.",
+      "2": "The most common is Hashimoto thyroiditis; patients typically present with a nontender goiter, hypothyroidism, and an elevated thyroid peroxidase antibody level.",
+      "3": "Treatment with levothyroxine ameliorates the hypothyroidism and may reduce goiter size.",
+      "4": "Postpartum thyroiditis (occurring within one year of childbirth, miscarriage, or medical abortion) can be short-lived or long-lasting.",
+      "5": "Release of preformed thyroid hormone into the bloodstream may result in hyperthyroidism.",
+      "6": "This may be followed by transient or permanent hypothyroidism as a result of depletion of thyroid hormone stores and destruction of thyroid hormone-producing cells.",
+      "7": "Patients should be monitored for changes in thyroid function.",
+      "8": "Beta blockers can treat symptoms in the initial hyperthyroid phase; in the subsequent hypothyroid phase, levothyroxine should be considered in women with a serum thyroid-stimulating hormone level greater than 10 mIU per L, or in women with a thyroid-stimulating hormone level of 4 to 10 mIU per L who are symptomatic or desire fertility.",
+      "9": "Subacute thyroiditis is a transient thyrotoxic state characterized by anterior neck pain, suppressed thyroid-stimulating hormone, and low radioactive iodine uptake on thyroid scanning.",
+      "10": "Many cases of subacute thyroiditis follow an upper respiratory viral illness, which is thought to trigger an inflammatory destruction of thyroid follicles.",
+      "11": "In most cases, the thyroid gland spontaneously resumes normal thyroid hormone production after several months.",
+      "12": "Treatment with high-dose acetylsalicylic acid or nonsteroidal anti-inflammatory drugs is directed toward relief of thyroid pain."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Thyroiditis refers to medical conditions that include thyroid inflammation.",
+        "2": "The most common type of thyroiditis is Hashimoto thyroiditis. Patients usually have a painless enlarged thyroid, underactive thyroid, and high levels of proteins made by the immune system to fight foreign substances.",
+        "3": "Taking levothyroxine, a thyroid drug, improves underactive thyroid and may decrease thyroid size.",
+        "4": "Short-lived or long-lasting thyroiditis can occur postpartum, within one year of childbirth, miscarriage, or medical abortion.",
+        "5": "Overactive thyroid can be caused by stored thyroid hormone released to the blood.",
+        "6": "Overactive thyroid may be followed by short-term or permanent underactive thyroid.",
+        "7": "Patients should be checked for changes in thyroid function.",
+        "8": "Beta blockers can improve overactive thyroid symptoms. Levothyroxine, a thyroid drug, can improve underactive thyroid symptoms in women with high blood levels of hormones that act as a messenger to the thyroid.",
+        "9": "Subacute thyroiditis is short-lived and characterized by neck pain, low blood levels of hormones that acts as a messenger to the thyroid, and low thyroid function based on a common test.",
+        "10": "Many subacute thyroiditis cases follow colds.",
+        "11": "The thyroid usually returns to normal on its own after many months.",
+        "12": "High-dose aspirin or similar over-the-counter pain relievers can be taken to relieve thyroid pain."
+      },
+      "adaptation2": {
+        "1": "Thyroiditis covers multiple disorders represented by inflammation of the thyroid gland.",
+        "2": "The most common disorder is Hashimoto thyroiditis. Patients have enlarged thyroids, reduced thyroid function, and increased proteins targeting thyroid products.",
+        "3": "Levothyroxine (a thyroid hormone treatment) improves thyroid function and size.",
+        "4": "Post-birth thyroiditis is temporary or lasting thyroid dysfunction occuring within a year of childbirth, miscarriage, or medical abortion.",
+        "5": "Supplemental thyroid hormone release into the blood may cause excess thyroid function.",
+        "6": "Temporary or permanent reduced thryoid function may follow excess thyroid function due to thyroid hormone depletion and destruction of hormone-producing cells.",
+        "7": "Patients should be monitored for changes in thyroid function.",
+        "8": "Beta blockers (common high blood pressure medication) can treat symptoms of the initial phase of excess thyroid function. Levothyroxine should be considered for later phases in women with high thyroid-stimulating hormone levels.",
+        "9": "Subacute or fairly rapid thyroiditis (thyroid inflammation) is a temporary, thyroid-hormone-excess state with frontal neck pain, reduced thyroid-stimulating hormone, and low iodine sensitivity.",
+        "10": "Fairly rapid thyroiditis often follows an upper airway viral illness, thought to trigger inflammatory destruction of thyroid cells.",
+        "11": "In most cases, the thyroid gland suddenly returns to normal after several months.",
+        "12": "High-dose aspirin or nonsteroidal anti-inflammatory drugs help give thyroid pain relief."
+      }
+    }
+  },
+  "26926973": {
+    "Title": "Hyperthyroidism: Diagnosis and Treatment",
+    "abstract": {
+      "1": "Hyperthyroidism is an excessive concentration of thyroid hormones in tissues caused by increased synthesis of thyroid hormones, excessive release of preformed thyroid hormones, or an endogenous or exogenous extrathyroidal source.",
+      "2": "The most common causes of an excessive production of thyroid hormones are Graves disease, toxic multinodular goiter, and toxic adenoma.",
+      "3": "The most common cause of an excessive passive release of thyroid hormones is painless (silent) thyroiditis, although its clinical presentation is the same as with other causes.",
+      "4": "Hyperthyroidism caused by overproduction of thyroid hormones can be treated with antithyroid medications (methimazole and propylthiouracil), radioactive iodine ablation of the thyroid gland, or surgical thyroidectomy.",
+      "5": "Radioactive iodine ablation is the most widely used treatment in the United States.",
+      "6": "The choice of treatment depends on the underlying diagnosis, the presence of contraindications to a particular treatment modality, the severity of hyperthyroidism, and the patient's preference."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Overactive thyroid is when too much thyroid hormone produced, when too much stored thyroid hormone released, or when there are internal or external thyroid hormone sources outside the thyroid.",
+        "2": "The most common causes of too much thyroid hormone made are Graves disease, a disease in which infection-preventing cells attack healthy cells and results in an overactive thyroid, or when one or more glandular growths make extra thyroid hormone.",
+        "3": "The most common causes of too much thyroid hormone released is thyroid inflammation, although the signs are the same as other causes.",
+        "4": "Overactive thyroid can be treated with drugs that block the formation of thyroid hormone, radiation therapy, or surgery to remove the thyroid.",
+        "5": "Radiation therapy is the most widely used treatment in the United States.",
+        "6": "The choice of treatment depends on the diagnosis, reasons not to use a particular method, how serious the overactive thyroid is, and what the patient wants."
+      }
+    }
+  },
+  "27852303": {
+    "Title": "The effects of Nigella sativa on thyroid function, serum Vascular Endothelial Growth Factor (VEGF) - 1, Nesfatin-1 and anthropometric features in patients with Hashimoto's thyroiditis: a randomized controlled trial",
+    "abstract": {
+      "1": "Background: Hashimoto's thyroiditis is an autoimmune disorder and the most common cause of hypothyroidism.",
+      "2": "The use of Nigella sativa, a potent herbal medicine, continues to increase worldwide as an alternative treatment of several chronic diseases including hyperlipidemia, hypertension and type 2 diabetes mellitus (T2DM).",
+      "3": "The aim of the current study was to evaluate the effects of Nigella sativa on thyroid function, serum Vascular Endothelial Growth Factor (VEGF) - 1, Nesfatin-1 and anthropometric features in patients with Hashimoto's thyroiditis.",
+      "4": "Methods: Forty patients with Hashimoto's thyroiditis, aged between 22 and 50 years old, participated in the trial and were randomly allocated into two groups of intervention and control receiving powdered Nigella sativa or placebo daily for 8 weeks.",
+      "5": "Changes in anthropometric variables, dietary intakes, thyroid status, serum VEGF and Nesfatin-1 concentrations after 8 weeks were measured.",
+      "6": "Results: Treatment with Nigella sativa significantly reduced body weight and body mass index (BMI).",
+      "7": "Serum concentrations of thyroid stimulating hormone (TSH) and anti-thyroid peroxidase (anti-TPO) antibodies decreased while serum T3 concentrations increased in Nigella sativa-treated group after 8 weeks.",
+      "8": "There was a significant reduction in serum VEGF concentrations in intervention group.",
+      "9": "None of these changes had been observed in placebo treated group.",
+      "10": "In stepwise multiple regression model, changes in waist to hip ratio (WHR) and thyroid hormones were significant predictors of changes in serum VEGF and Nesgfatin-1 values in Nigella sativa treated group (P < 0.05).",
+      "11": "Conclusions: Our data showed a potent beneficial effect of powdered Nigella sativa in improving thyroid status and anthropometric variables in patients with Hashimoto's thyroiditis.",
+      "12": "Moreover, Nigella sativa significantly reduced serum VEGF concentrations in these patients.",
+      "13": "Considering observed health- promoting effect of this medicinal plant in ameliorating the disease severity, it can be regarded as a useful therapeutic approach in management of Hashimoto's thyroiditis."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Hashimoto's thyroiditis is caused by thyroid cells that are attacked by infection-preventing cells and is the most common cause of an underactive thyroid.",
+        "2": "More people around the world are taking Nigella sativa, a powerful herbal medicine, as a nontraditional way to treat many long-term diseases including high cholesterol, high blood pressure and type 2 diabetes.",
+        "3": "The current study aimed to rate the effects of Nigella sativa on how well the thyroid is working, blood Vascular Endothelial Growth Factor (VEGF) - 1 (a protein that promotes new blood vessels), Nesfatin-1 (a chain of amino acids that affects hunger) and physical body measurements in people with Hashimoto's thyroiditis.",
+        "4": "We randomly split forty people with Hashimoto's thyroiditis and between 22 and 50 years old into two group and gave one group powdered Nigella sativa and the other group sham treatment for 8 weeks.",
+        "5": "We measured changes in physical body measurements, what people ate, thyroid function, blood VEGF and Nefastin-1 levels after 8 weeks.",
+        "6": "Taking Nigella sativa caused lower body weight and body mass index (BMI).",
+        "7": "People taking Nigella sativa had lower blood levels of thyroid-stimulating hormone and antibodies that target the thyroid and higher levels of blood thyroid hormone (T4) after 8 weeks.",
+        "8": "People taking Nigella sativa had lower blood levels of VEGF.",
+        "9": "None of these changes were seen in the group who took the sham treatmentl.",
+        "10": "Based on a statistical model, changes in the ratio of the waist to the hip and thyroid hormones predicted changes in blood VEGF and Nesgfatin-1 levels in the group who took Nigella sativa.",
+        "11": "We concluded that powdered Nigella sativa improved thyroid function and physical body measurements in people with Hashimoto's thyroiditis.",
+        "12": "Nigella sativa lowered blood VEGF levels.",
+        "13": "Nigella sativa can be a useful non-traditional treatment for people with Hashimoto's thyroiditis to make the disease less severe."
+      },
+      "adaptation2": {
+        "1": "Hashimoto's thyroiditis (thyroid inflammation) occurs when immune cells mistakenly attack the body's own healthy cells. It is the most common cause of reduced thyroid function.",
+        "2": "Nigella sativa, a powerful herbal medicine, increases globally as an alternative treatment for many long-lasting diseases like high blood pressure, high blood fat, and type 2 diabetes mellitus (T2DM).",
+        "3": "The current work evaluates how Nigella sativa affects thyroid function, blood protein levels, and physical measurements in those with Hashimoto's thyroid inflammation.",
+        "4": "Forty patients with Hashimoto's thyroid inflammation, aged 22 through 50, were randomly split into two groups receiving powdered Nigella sativa or inactive treatment daily for 8 weeks.",
+        "5": "",
+        "6": "Using an herbal medicine reduced body weight and body mass index.",
+        "7": "Blood levels of thyroid stimulating hormone and anti-thyroid cell proteins decreased while thyroid product levels increased in the Nigella sative-treated group after 8 weeks.",
+        "8": "The treatment group showed reduced blood vessel signaling protein.",
+        "9": "No changes occured in the inactive treatment group.",
+        "10": "Changes in waist to hip ratio and thyroid hormones were linked to changes in certain blood protein levels in the Nigella sative-treated group.",
+        "11": "Nigella sativa may improve thyroid and general health in those with Hashimoto's thyroiditis (thyroid inflammation).",
+        "12": "Also, Nigella sativa (an herbal medicine) reduces blood vessel signaling protein in these patients.",
+        "13": "Due to its health-promoting effect, this medicinal plant can be a useful treatment for Hashimoto's thyroidits."
+      }
+    }
+  },
+  "27981511": {
+    "Title": "The emergence of levothyroxine as a treatment for hypothyroidism",
+    "abstract": {
+      "1": "Objective: To describe the historical refinements, understanding of physiology and clinical outcomes observed with thyroid hormone replacement strategies.",
+      "2": "Methods: A Medline search was initiated using the search terms, levothyroxine, thyroid hormone history, levothyroxine mono therapy, thyroid hormone replacement, combination LT4 therapy, levothyroxine Bioequivalence.",
+      "3": "Pertinent articles of interest were identified by title and where available abstract for further review.",
+      "4": "Additional references were identified in the course of review of the literature identified.",
+      "5": "Results: Physicians have intervened in cases of thyroid dysfunction for more than two millennia.",
+      "6": "Ingestion of animal thyroid derived preparations has been long described but only scientifically documented for the last 130 years.",
+      "7": "Refinements in hormone preparation, pharmaceutical production and regulation continue to this day.",
+      "8": "The literature provides documentation of physiologic, pathologic and clinical outcomes which have been reported and continuously updated.",
+      "9": "Recommendations for effective and safe use of these hormones for reversal of patho-physiology associated with hypothyroidism and the relief of symptoms of hypothyroidism has documented a progressive refinement in our understanding of thyroid hormone use.",
+      "10": "Studies of thyroid hormone metabolism, action and pharmacokinetics have allowed evermore focused recommendations for use in clinical practice.",
+      "11": "Levothyroxine mono-therapy has emerged as the therapy of choice of all recent major guidelines.",
+      "12": "Conclusions: The evolution of thyroid hormone therapies has been significant over an extended period of time.",
+      "13": "Thyroid hormone replacement is very useful in the treatment of those with hypothyroidism.",
+      "14": "All of the most recent guidelines of major endocrine societies recommend levothyroxine mono-therapy for first line use in hypothyroidism."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Our objective is to summarize the history, understanding of how they work, and patient health changes seen with thyroid hormone replacement treatments.",
+        "2": "We searched Medline using the search terms, levothyroxine, thyroid hormone history, levothyroxine mono therapy, thyroid hormone replacement, combination LT4 therapy, levothyroxine Bioequivalence. Both levothyroxine and LT4 are synthetic thryoid hormones.",
+        "3": "We identified important papers by title and abstract to look at more closely when possible.",
+        "4": "We found more references while reading the important papers.",
+        "5": "Doctors have treated overactive and underactive thyroids for more than 2000 years.",
+        "6": "Taking forms of medicine that come from animal thyroid glands has been described for a long time but only written about in scientific papers for the last 130 years.",
+        "7": "Improvements in hormone medication preparation, drug production and drug laws continue to this day.",
+        "8": "Normal body function, disease, and patient health effects are described and updated regularly in scientific papers.",
+        "9": "Using these hormones to successfully and safely undo changes to body function and improve other symptoms of an underactive thyroid shows our improved understanding of their use.",
+        "10": "Better patient care has resulted from studies of thyroid hormone metabolism, how it works, and what the body does to it.",
+        "11": "The use of a single drug, levothyroxine, has become the top thyroid medicine based on recent major guidelines.",
+        "12": "Thyroid hormone treatments have been developed over a long time period.",
+        "13": "Thyroid hormone replacement is very useful in treating an underactive thyroid.",
+        "14": "Levothyroxine is widely accepted as the first treatment for an underactive thyroid."
+      }
+    }
+  },
+  "29381251": {
+    "Title": "Current evidence for the treatment of hypothyroidism with levothyroxine/levotriiodothyronine combination therapy versus levothyroxine monotherapy",
+    "abstract": {
+      "1": "Objective: Hypothyroidism is relatively common, occurring in approximately 5% of the general US population aged ≥12 years.",
+      "2": "Levothyroxine (LT4) monotherapy is the standard of care.",
+      "3": "Approximately, 5%-10% of patients who normalise thyroid-stimulating hormone levels with LT4 monotherapy may have persistent symptoms that patients and clinicians may attribute to hypothyroidism.",
+      "4": "A long-standing debate in the literature is whether addition of levotriiodothyronine (LT3) to LT4 will ameliorate lingering symptoms.",
+      "5": "Here, we explore the evidence for and against LT4/LT3 combination therapy as the optimal approach to treat euthyroid patients with persistent complaints.",
+      "6": "Methods: Recent literature indexed on PubMed was searched in March 2017 using the terms \"hypothyroid\" or \"hypothyroidism\" and \"triiodothyronine combination\" or \"T3 combination.\"",
+      "7": "Relevant non-review articles published in English during the past 10 years were included and supplemented with articles already known to the authors.",
+      "8": "Findings: Current clinical evidence is not sufficiently strong to support LT4/LT3 combination therapy in patients with hypothyroidism.",
+      "9": "Polymorphisms in deiodinase genes that encode the enzymes that convert T4 to T3 in the periphery may provide potential mechanisms underlying unsatisfactory treatment results with LT4 monotherapy.",
+      "10": "However, results of studies on the effect of LT4/LT3 therapy on clinical symptoms and thyroid-responsive genes have thus far not been conclusive.",
+      "11": "Conclusions: Persistent symptoms in patients who are biochemically euthyroid with LT4 monotherapy may be caused by several other conditions unrelated to thyroid function, and their cause should be aggressively investigated by the clinician."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Underactive thyroid is relatively common, occurring in about 5% of the general U.S. population 12 years and older.",
+        "2": "The recommended treatment is a single drug, levothyroxine (LT4 - a common thyroid medication).",
+        "3": "About 5%-10% of patients who use LT4 alone to regulate thyroid-stimulating hormone levels may have ongoing symptoms that patients and doctors may think are caused by underactive thyroid.",
+        "4": "Science disagrees as to whether addition of levotriiodothyronine (LT3 - another thryoid medication) to LT4 will improve these ongoing symptoms.",
+        "5": "We look at whether combining LT4 and LT3 is the best way to treat patients with normal thyroid function but ongoing symptoms.",
+        "6": "We searched PubMed in March 2017 using the terms \"hypothyroid\" or \"hypothyroidism\" and \"triiodothyronine combination\" or \"T3 combination.\"",
+        "7": "We looked at English articles in the last 10 years in addition to known articles.",
+        "8": "We did not find strong proof that combining LT4 and LT3 worked to treat patients with underactive thyroids.",
+        "9": "Genes that cause less conversion of T4 to T3 may explain unsuccessful treatment with LT4.",
+        "10": "The benefit of adding LT3 to LT4 treatment is uncertain.",
+        "11": "Ongoing symptoms in patients with normal thyroid function may be due to other causes. A doctor should determine the cause of the ongoing symptoms."
+      },
+      "adaptation2": {
+        "1": "Low thyroid function occurs in around 5% of the US population aged ≥12 years.",
+        "2": "Levothyroxine (LT4) (a thyroid hormonal drug) is standard treatment.",
+        "3": "Around 5-10% of patients with regular thyroid-stimulating hormone levels after LT4 may still have symptoms attributable to reduced thyroid funciton.",
+        "4": "Experts debate if adding levotriiodothyronine (LT3), another manmade thyroid hormone, to LT4 will help lingering symptoms.",
+        "5": "We explore evidence for and against LT4/LT3 double treatment for best treating patients with lingering thyroid issues.",
+        "6": "We searched PubMed in March 2017 using the terms \"hypothyroid\" or \"hypothyroidism\" (low thyroid function) and \"triiodothyronine combination\" or \"T3 combination\" (thyroid hormonal drug therapy).",
+        "7": "",
+        "8": "Current evidence does not support LT4/LT3 double treatment for those with reduced thyroid function.",
+        "9": "Variations in genes blueprinting enzymes that convert thyroid hormone from one form to another may explain the lack of improvement with LT4 treatment.",
+        "10": "However, studies of LT4/LT3 double treatment are not conclusive.",
+        "11": "Lingering symptoms in patients with normal thyroids from LT4 therapy may be from other thyroid-unrelated causes, which should be investigated by the clinician."
+      }
+    }
+  },
+  "29490937": {
+    "Title": "MANAGEMENT OF ENDOCRINE DISEASE: Pitfalls on the replacement therapy for primary and central hypothyroidism in adults",
+    "abstract": {
+      "1": "Hypothyroidism is one of the most common hormone deficiencies in adults.",
+      "2": "Most of the cases, particularly those of overt hypothyroidism, are easily diagnosed and managed, with excellent outcomes if treated adequately.",
+      "3": "However, minor alterations of thyroid function determine nonspecific manifestations.",
+      "4": "Primary hypothyroidism due to chronic autoimmune thyroiditis is largely the most common cause of thyroid hormone deficiency.",
+      "5": "Central hypothyroidism is a rare and heterogeneous disorder characterized by decreased thyroid hormone secretion by an otherwise normal thyroid gland, due to lack of TSH.",
+      "6": "The standard treatment of primary and central hypothyroidism is hormone replacement therapy with levothyroxine sodium (LT4).",
+      "7": "Treatment guidelines of hypothyroidism recommend monotherapy with LT4 due to its efficacy, long-term experience, favorable side effect profile, ease of administration, good intestinal absorption, long serum half-life and low cost.",
+      "8": "Despite being easily treatable with a daily dose of LT4, many patients remain hypothyroid due to malabsorption syndromes, autoimmune gastritis, pancreatic and liver disorders, drug interactions, polymorphisms in DIO2 (iodothyronine deiodinase 2), high fiber diet, and more frequently, non-compliance to LT4 therapy.",
+      "9": "Compliance to levothyroxine treatment in hypothyroidism is compromised by daily and fasting schedule.",
+      "10": "Many adult patients remain hypothyroid due to all the above mentioned and many attempts to improve levothyroxine therapy compliance and absorption have been made."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Underactive thyroid is one of the most common conditions caused by a lack of specific hormones in adults.",
+        "2": "Underactive thyroid is usually easily identified and successfully treated.",
+        "3": "However, small changes in thyroid function determine symptoms that can be caused by many conditions.",
+        "4": "Primary underactive thyroid caused by a long-term inflamed thyroid, which in turn is caused by thyroid cells that are attacked by infection-preventing cells, is the most common cause of too little thyroid hormones in adults.",
+        "5": "Central underactive thyroid, which is not very common and has many causes, is when an otherwise normal thyroid makes too little thyroid hormone due to lack of thyroid-stimulating hormone.",
+        "6": "Thyroid hormone replacement with levothyroxine (LT4) is the normal treatment of primary and central underactive thyroid.",
+        "7": "Treatment guidelines for an underactive thyroid recommend a single drug, levothyroxine (LT4), because of how well it works, how long it has been used, few side effects, how easy it is to use, how well it is absorbed in the stomach, how long it lasts in the blood, and low cost.",
+        "8": "Although taking LT4 daily treats underactive thyroid, many people still have underactive thyroids due to conditions that do not allow absorption in the stomach, inflammation of the stomach lining caused by thyroid cells that are attacked by infection-preventing cells, pancreatic and live disease, two or more drugs interacting with each other, gene variations, eating too much fiber, and more commonly, not following the prescribed LT4 treatment.",
+        "9": "Taking levothyroxine as prescribed for underactive thyroid depends on when and if it is taken on an empty stomach.",
+        "10": "For all of these reasons, many adults still have underactive thyroids. Doctors have tried many ways to make people take levothyroxine as prescribed and make levothyroxine more easily absorbed in the stomach."
+      }
+    }
+  },
+  "31071734": {
+    "Title": "Can Supplementation with Vitamin D Modify Thyroid Autoantibodies (Anti-TPO Ab, Anti-Tg Ab) and Thyroid Profile (T3, T4, TSH) in Hashimoto's Thyroiditis? A Double Blind, Randomized Clinical Trial",
+    "abstract": {
+      "1": "Hashimoto's thyroiditis (HT) is the most prevalent autoimmune disorder characterized by the destruction of thyroid cells caused by leukocytes and antibody-mediated immune processes accompanied by hypothyroidism.",
+      "2": "In recent years, evidence has emerged pointing to various roles for vitamin D, including, proliferation and differentiation of normal and cancer cells, cardiovascular function, and immunomodulation.",
+      "3": "Vitamin D deficiency has been especially demonstrated in HT patients.",
+      "4": "The aim of this study was to investigate the effect of vitamin D on circulating thyroid autoantibodies and thyroid hormones profile (T4, T3, and TSH) in females with HT.",
+      "5": "Forty-two women with HT disease were enrolled in this randomized clinical trial study and divided into vitamin D and placebo groups.",
+      "6": "Patients in the vitamin D and placebo groups received 50 000 IU vitamin D and placebo pearls, weekly for 3 months, respectively.",
+      "7": "The serum levels of 25-hydroxy vitamin D [25(OH) D], Ca++ion, anti-thyroperoxidase antibody (anti-TPO Ab), anti-thyroglobulin antibody (anti-Tg Ab), T4, T3, and TSH were measured at the baseline and at the end of the study using enzyme-linked immunosorbent assays.",
+      "8": "The results of this study showed a significant reduction of anti-Tg Ab and TSH hormone in the Vitamin D group compared to the start of the study; however, there was a no significant reduction of anti-TPO Ab in the Vitamin D group compared to the placebo group (p=0.08).",
+      "9": "No significant changes were observed in the serum levels of T3 and T4 hormones.",
+      "10": "Therefore, vitamin D supplementation can be helpful for alleviation of the disease activity in HT patients; however, further well controlled, large, longitudinal studies are needed to determine whether it can be introduced in clinical practice."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Hashimoto's thyroiditis (HT) is the most common type of disease caused by thyroid cells that are attacked by infection-preventing cells and results in an underactive thyroid.",
+        "2": "Recently, science has shown vitamin D can change how normal and cancer cells grow, divide, and change from one cell to another, how the heart works, and how the body's immune system changes.",
+        "3": "Too little vitamin D is seen in people with Hashimoto's thyroiditis.",
+        "4": "This study aimed to determine the effect of vitamin D on thyroid autoantibodies (substances that develop when a person's immune system mistakenly attacks the thyroid) and thyroid hormone (T4, T3, and thyroid-stimulating hormone) blood levels in women.",
+        "5": "We split 42 women with HT disease into two groups and gave one group vitamin D and the other group sham treatment.",
+        "6": "We gave one group 50,000 international units of vitamin D and the other group sugar pills for 3 months.",
+        "7": "We measured blood levels of thyroid autoantibodies and thyroid hormones (T4, T3, and thyroid-stimulating hormone) at the beginning and end of the study using a common antibody-measuring tool.",
+        "8": "Blood levels of one antibody and thyroid-stimulating hormone were lower at the end of the study in the group taking vitamin D. The group taking vitamin D and the group taking sugar pills had similar blood levels of another antibody.",
+        "9": "Blood levels of T3 and T4 hormones did not change in either group.",
+        "10": "Therefore, taking vitamin D can help people with Hashimoto's thyroiditis. However, more large studies done over time are needed to see if it can be used in patient care."
+      }
+    }
+  },
+  "32001830": {
+    "Title": "Selenium in thyroid disorders - essential knowledge for clinicians",
+    "abstract": {
+      "1": "In the 1990s, selenium was identified as a component of an enzyme that activates thyroid hormone; since this discovery, the relevance of selenium to thyroid health has been widely studied.",
+      "2": "Selenium, known primarily for the antioxidant properties of selenoenzymes, is obtained mainly from meat, seafood and grains.",
+      "3": "Intake levels vary across the world owing largely to differences in soil content and factors affecting its bioavailability to plants.",
+      "4": "Adverse health effects have been observed at both extremes of intake, with a narrow optimum range.",
+      "5": "Epidemiological studies have linked an increased risk of autoimmune thyroiditis, Graves disease and goitre to low selenium status.",
+      "6": "Trials of selenium supplementation in patients with chronic autoimmune thyroiditis have generally resulted in reduced thyroid autoantibody titre without apparent improvements in the clinical course of the disease.",
+      "7": "In Graves disease, selenium supplementation might lead to faster remission of hyperthyroidism and improved quality of life and eye involvement in patients with mild thyroid eye disease.",
+      "8": "Despite recommendations only extending to patients with Graves ophthalmopathy, selenium supplementation is widely used by clinicians for other thyroid phenotypes.",
+      "9": "Ongoing and future trials might help identify individuals who can benefit from selenium supplementation, based, for instance, on individual selenium status or genetic profile."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "In the 1990s, selenium was found to be a part of a protein that helps produce thyroid hormone. Since this discovery, many scientists have studied how selenium might help thyroid health.",
+        "2": "Selenium, which has antioxidant characteristics, is found in meat, seafood and grains.",
+        "3": "The amount of selenium eaten varies across the world due to different soils and how much of it plants absorb.",
+        "4": "Eating too much or too little selenium can cause health problems, with a small ideal range for consumption.",
+        "5": "Studies that look at how often diseases occur in different groups of people and why show a relationship between eating too little selenium and higher rates of inflamed thyroid caused by thyroid cells that are attacked by infection-preventing cells, Graves disease (a disease in which infection-preventing cells attack healthy cells and lead to an overactive thyroid), and enlarged thyroids.",
+        "6": "Studies of people taking selenium who have long-term inflamed thyroids caused by thyroid cells attacked by infection-preventing cells generally have bloodwork that suggests more normal thyroid function but no improvement in symptoms.",
+        "7": "In Graves disease, taking selenium might make overactive thyroid go away faster and make quality of life and eye problems better in people with mild thyroid eye disease.",
+        "8": "Although selenium is only recommended for people with thyroid eye disease, doctors prescribe selenium for other thyroid problems.",
+        "9": "Current and future studies might help determine who should take selenium based, for example, on blood selenium levels and heredity."
+      }
+    }
+  },
+  "32740045": {
+    "Title": "Alternative routes of levothyroxine administration for hypothyroidism",
+    "abstract": {
+      "1": "Purpose of review: The aim of the article is to present the basics of oral levothyroxine (LT4) absorption, reasons why patients may have persistently elevated serum thyroid stimulation hormone (TSH) levels, and alternative strategies for LT4 dosing.",
+      "2": "Recent findings: Although oral LT4 tablets are most commonly used for thyroid hormone replacement in patients with hypothyroidism, case studies report that liquid oral LT4, intravenous, intramuscular, and rectal administration of LT4 can successfully treat refractory hypothyroidism.",
+      "3": "Summary: Hypothyroidism is one of the most common endocrine disorders encountered by primary care physicians and endocrinologists.",
+      "4": "LT4 is one of the most widely prescribed medications in the world and it is the standard of care treatment for hypothyroidism.",
+      "5": "Generally, hypothyroid patients will be treated with LT4 tablets to be taken orally, and monitoring will occur with routine serum thyroid tests, including TSH concentrations.",
+      "6": "However, many patients fail to maintain serum TSH levels in the target range while managed on oral LT4 tablets.",
+      "7": "A subset of these patients would be considered to have poorly controlled hypothyroidism, sometimes termed refractory hypothyroidism.",
+      "8": "For these patients, optimization of ingestion routines and alternative formulations and routes of administration of LT4 can be considered, including oral liquid, intravenous, intramuscular, and even rectal formulations."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "This article aims to cover the basics of how well levothyroxine (LT4 - a common thyroid medication) is absorbed when taken by mouth, reasons why people may have continuously high blood levels of thyroid stimulating hormone, and other ways to take levothyroxine.",
+        "2": "Although LT4 tablets taken by mouth are most commonly used for thyroid hormone replacement in people with underactive thyroids, studies show that taking LT4 in liquid-form by mouth, shot to a vein or muscle, and through the rectum can work to treat poorly-controlled underactive thyroid.",
+        "3": "Underactive thyroid is one of the most common hormone disorders doctors see.",
+        "4": "LT4 is one of the most commonly prescribed drugs in the world and is the recommended treatment for underactive thyroid.",
+        "5": "Generally, people with underactive thyroids will take LT4 tablets by mouth and track thryoid levels with common blood thyroid tests, including measuring levels of thyroid-stimulating hormone.",
+        "6": "Taking LT4 tablets by mouth does not keep blood thyroid-stimulating hormone levels at the right level for many people.",
+        "7": "Some of these people may have poorly-controlled underactive thyroids, or refractory underactive thyroids.",
+        "8": "This group of people might need to take LT4 in other forms or other ways, including liquid-form by mouth, shot to a vein or muscle, or even through the rectum."
+      }
+    }
+  },
+  "question": "What is the best thyroid drug?",
+  "question_type": "B"
+  }
+}

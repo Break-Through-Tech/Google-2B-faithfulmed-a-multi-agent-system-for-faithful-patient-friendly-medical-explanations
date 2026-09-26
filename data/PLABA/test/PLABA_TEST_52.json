@@ -1,0 +1,259 @@
+{
+  "52": {
+  "24850140": {
+    "Title": "Amniotic fluid RNA gene expression profiling provides insights into the phenotype of Turner syndrome",
+    "abstract": {
+      "1": "Turner syndrome is a sex chromosome aneuploidy with characteristic malformations.",
+      "2": "Amniotic fluid, a complex biological material, could contribute to the understanding of Turner syndrome pathogenesis.",
+      "3": "In this pilot study, global gene expression analysis of cell-free RNA in amniotic fluid supernatant was utilized to identify specific genes/organ systems that may play a role in Turner syndrome pathophysiology.",
+      "4": "Cell-free RNA from amniotic fluid of five mid-trimester Turner syndrome fetuses and five euploid female fetuses matched for gestational age was extracted, amplified, and hybridized onto Affymetrix(®) U133 Plus 2.0 arrays.",
+      "5": "Significantly differentially regulated genes were identified using paired t tests.",
+      "6": "Biological interpretation was performed using Ingenuity Pathway Analysis and BioGPS gene expression atlas.",
+      "7": "There were 470 statistically significantly differentially expressed genes identified.",
+      "8": "They were widely distributed across the genome.",
+      "9": "XIST was significantly down-regulated (p < 0.0001); SHOX was not differentially expressed.",
+      "10": "One of the most highly represented organ systems was the hematologic/immune system, distinguishing the Turner syndrome transcriptome from other aneuploidies we previously studied.",
+      "11": "Manual curation of the differentially expressed gene list identified genes of possible pathologic significance, including NFATC3, IGFBP5, and LDLR.",
+      "12": "Transcriptomic differences in the amniotic fluid of Turner syndrome fetuses are due to genome-wide dysregulation.",
+      "13": "The hematologic/immune system differences may play a role in early-onset autoimmune dysfunction.",
+      "14": "Other genes identified with possible pathologic significance are associated with cardiac and skeletal systems, which are known to be affected in females with Turner syndrome.",
+      "15": "The discovery-driven approach described here may be useful in elucidating novel mechanisms of disease in Turner syndrome."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Turner syndrome is a condition where there is an abnormal number of chromosomes (genetic material).",
+        "2": "Amniotic fluid, the fluid surrounding a fetus, could contribute to the understanding of Turner syndrome development.",
+        "3": "In this pilot study, gene expression analysis of cell-free RNA (genetic material to create proteins) in amniotic fluid was analyzed. The fluid was evaluated to identify genes/organ systems that may play a role in Turner syndrome development.",
+        "4": "Cell-free RNA from amniotic fluid of five mid-trimester Turner syndrome fetuses and five control female fetuses was extracted.",
+        "5": "Significantly differentially (functionally unique) regulated genes were identified.",
+        "6": "Biological interpretation was performed to determine gene expression.",
+        "7": "There were 470 statistically significantly differentially expressed genes identified.",
+        "8": "They were widely distributed across the genome.",
+        "9": "XIST was significantly down-regulated (decreased in activity). SHOX was not differentially expressed.",
+        "10": "One of the most highly represented organ systems was the hematologic (blood) and immune system.",
+        "11": "Organization of the differentially expressed gene list identified genes of possible disease development significance.",
+        "12": "Transcriptomic (RNA) differences in the amniotic fluid of Turner syndrome fetuses are due to genome-wide dysregulation.",
+        "13": "The hematologic/immune system differences may play a role in early-onset autoimmune dysfunction (in which infection-fighting cells attack healthy cells).",
+        "14": "Other genes identified with possible pathologic (harmful) significance were associated with cardiac (heart) and skeletal systems. These systems are known to be affected in females with Turner syndrome.",
+        "15": "This data may be useful in identifying how Turner syndrome develops."
+      }
+    }
+  },
+  "24932682": {
+    "Title": "Human 45,X fibroblast transcriptome reveals distinct differentially expressed genes including long noncoding RNAs potentially associated with the pathophysiology of Turner syndrome",
+    "abstract": {
+      "1": "Turner syndrome is a chromosomal abnormality characterized by the absence of whole or part of the X chromosome in females.",
+      "2": "This X aneuploidy condition is associated with a diverse set of clinical phenotypes such as gonadal dysfunction, short stature, osteoporosis and Type II diabetes mellitus, among others.",
+      "3": "These phenotypes differ in their severity and penetrance among the affected individuals.",
+      "4": "Haploinsufficiency for a few X linked genes has been associated with some of these disease phenotypes.",
+      "5": "RNA sequencing can provide valuable insights to understand molecular mechanism of disease process.",
+      "6": "In the current study, we have analysed the transcriptome profiles of human untransformed 45,X and 46,XX fibroblast cells and identified differential expression of genes in these two karyotypes.",
+      "7": "Functional analysis revealed that these differentially expressing genes are associated with bone differentiation, glucose metabolism and gonadal development pathways.",
+      "8": "We also report differential expression of lincRNAs in X monosomic cells.",
+      "9": "Our observations provide a basis for evaluation of cellular and molecular mechanism(s) in the establishment of Turner syndrome phenotypes."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Turner syndrome is a chromosomal abnormality. The disease is characterized by the absence of the whole or part of the X chromosome in females.",
+        "2": "This X aneuploidy condition, or condition of having abnormal number of chromosomes, is associated with a diverse set of clinical phenotypes. These phenotypes, or outward characteristics, include ovary dysfunction, short stature, brittle bones, and Type II diabetes mellitus.",
+        "3": "These phenotypes differ in their severity and penetrance (extent) among those with the syndrome.",
+        "4": "Haploinsufficiency, or when one copy of a gene is deleted, for a few X linked genes has been associated with some of these disease phenotypes.",
+        "5": "RNA (special genetic material to create proteins) quantification can provide valuable insights to understand how these diseases form.",
+        "6": "This study analyzed RNA profiles of human 45,X (abnormal) and 46,XX (normal) cells. This study identified differential (unique function) expression of genes in these two chromosomal types.",
+        "7": "Analysis revealed that these differentially expressing genes are associated with bone differentiation, glucose metabolism, and gonadal development pathways.",
+        "8": "This study also reported differential expression of non-coding RNAs (RNAs that cannot be transformed into proteins) in X cells with abnormal chromosome count.",
+        "9": "This study provides a basis for evaluation of cellular and molecular mechanism(s) in the establishment of Turner syndrome phenotypes."
+      }
+    }
+  },
+  "25535777": {
+    "Title": "Detection of Turner Syndrome by quantitative PCR of SHOX and VAMP7 genes",
+    "abstract": {
+      "1": "Turner Syndrome (TS) is an unfavorable genetic condition with a prevalence of 1:2500 in newborn girls.",
+      "2": "Prompt and effective diagnosis is very important to appropriately monitor the comorbidities.",
+      "3": "The aim of the present study was to propose a feasible and practical molecular diagnostic tool for newborn screening by quantifying the gene dosage of the SHOX, VAMP7, XIST, UBA1, and SRY genes by quantitative polymerase chain reaction (qPCR) in individuals with a diagnosis of complete X monosomy, as well as those with TS variants, and then compare the results to controls without chromosomal abnormalities.",
+      "4": "According to our results, the most useful markers for these chromosomal variants were the genes found in the pseudoautosomic regions 1 and 2 (PAR1 and PAR2), because differences in gene dosage (relative quantification) between groups were more evident in SHOX and VAMP7 gene expression.",
+      "5": "Therefore, we conclude that these markers are useful for early detection in aneuploidies involving sex chromosomes."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Turner Syndrome (TS) is a genetic condition found in 1 out of every 2500 newborn girls. Turner syndrome is a condition where there is an abnormal amount of chromosomes (genetic material).",
+        "2": "Prompt and effective diagnosis is very important to appropriately monitor the comorbidities (two or more diseases in one patient).",
+        "3": "The aim of the study was to propose a feasible and practical diagnostic tool for newborn screening. The screening would be completed by quantifying (measuring) the dosage of specific genes in individuals with a diagnosis of complete X monosomy and TS variants. The gene doses would be compared to controls without chromosomal abnormalities. Monosomy indicates there is an absence of one member of a chromosome pair; instead of 46 chromosomes in each cell of the body, there is 45.",
+        "4": "Study results showed the most useful indicators for these chromosomal variants were the genes found in the pseudoautosomic regions 1 and 2 (PAR1 and PAR2).",
+        "5": "The authors concluded that these markers are useful for early detection in chromosomal imbalances, specifically those involving sex chromosomes."
+      }
+    }
+  },
+  "28627089": {
+    "Title": "Analysis of PTPN22, ZFAT and MYO9B polymorphisms in Turner Syndrome and risk of autoimmune disease",
+    "abstract": {
+      "1": "Turner syndrome (TS) is one of the most common sexual chromosome abnormalities and is clearly associated with an increased risk of autoimmune diseases, particularly thyroid disease and coeliac disease (CD).",
+      "2": "Single-nucleotide polymorphism analyses have been shown to provide correlative evidence that specific genes are associated with autoimmune disease.",
+      "3": "Our aim was to study the functional polymorphic variants of PTPN22 and ZFAT in relation to thyroid disease and those of MYO9B in relation to CD.",
+      "4": "A cross-sectional comparative analysis was performed on Mexican mestizo patients with TS and age-matched healthy females.",
+      "5": "Our data showed that PTPN22 C1858T (considered a risk variant) is not associated with TS (X2 = 3.50, p = .61, and OR = 0.33 [95% CI = 0.10-1.10]).",
+      "6": "Also, ZFAT was not associated with TS (X2 = 1.2, p = .28, and OR = 1.22 [95% CI = 0.84-1.79]).",
+      "7": "However, for the first time, rs2305767 MYO9B was revealed to have a strong association with TS (X2 = 58.6, p = .0001, and OR = 10.44 [95% C = 5.51-19.80]), supporting a high level of predisposition to CD among TS patients.",
+      "8": "This report addresses additional data regarding the polymorphic variants associated with autoimmune disease, one of the most common complications in TS."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Turner syndrome (TS) is one of the most common sexual chromosome abnormalities. TS is associated with an increased risk of autoimmune diseases (in which immune cells attack healthy cells), particularly metabolism-affecting thyroid disease and coeliac disease (CD)--gluten sensitivity.",
+        "2": "Genetic analyses have provided evidence that correlates specific genes with autoimmune diseases.",
+        "3": "This report aimed to study the genetic variants of PTPN22 and ZFAT (protein-coding genes) in relation to thyroid disease. Additionally, this study evaluated the variants (gene types) of MYO9B (another protein-coding gene) to CD.",
+        "4": "An analysis was performed on Mexican, mixed heritage patients with TS. These patients were age-matched to healthy females.",
+        "5": "Data showed that PTPN22 C1858T, a PTPN22 variant, is not associated with TS.",
+        "6": "Also, ZFAT was not associated with TS.",
+        "7": "However, rs2305767 MYO9B, a MYO9B variant, was revealed to have a strong association with TS. This suggests patients with this variant have increased susceptibility to CD among TS patients.",
+        "8": "This report addresses additional data regarding the genetic variants associated with autoimmune disease. Autoimmune disease is one of the most common complications found in TS patients."
+      }
+    }
+  },
+  "29973620": {
+    "Title": "Assessment of the key regulatory genes and their Interologs for Turner Syndrome employing network approach",
+    "abstract": {
+      "1": "Turner Syndrome (TS) is a condition where several genes are affected but the molecular mechanism remains unknown.",
+      "2": "Identifying the genes that regulate the TS network is one of the main challenges in understanding its aetiology.",
+      "3": "Here, we studied the regulatory network from manually curated genes reported in the literature and identified essential proteins involved in TS.",
+      "4": "The power-law distribution analysis showed that TS network carries scale-free hierarchical fractal attributes.",
+      "5": "This organization of the network maintained the self-ruled constitution of nodes at various levels without having centrality-lethality control systems.",
+      "6": "Out of twenty-seven genes culminating into leading hubs in the network, we identified two key regulators (KRs) i.e. KDM6A and BDNF.",
+      "7": "These KRs serve as the backbone for all the network activities.",
+      "8": "Removal of KRs does not cause its breakdown, rather a change in the topological properties was observed.",
+      "9": "Since essential proteins are evolutionarily conserved, the orthologs of selected interacting proteins in C. elegans, cat and macaque monkey (lower to higher level organisms) were identified.",
+      "10": "We deciphered three important interologs i.e. KDM6A-WDR5, KDM6A-ASH2L and WDR5-ASH2L that form a triangular motif.",
+      "11": "In conclusion, these KRs and identified interologs are expected to regulate the TS network signifying their biological importance."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Turner Syndrome (TS) is a condition where several genes are affected. However, how this occurs remains unknown. Turner syndrome is a condition where there is an abnormal amount of chromosomes (genetic material).",
+        "2": "Identifying the genes that regulate the TS network is one of the main challenges in understanding its cause.",
+        "3": "This study evaluated the regulatory network of genes reported in scientific literature and identified essential proteins involved in TS.",
+        "4": "A statistical evaluation was completed to model a TS network.",
+        "5": "",
+        "6": "Out of twenty-seven genes, the authors identified two key regulators (KRs) i.e. KDM6A and BDNF.",
+        "7": "These KRs serve as the backbone for all the network activities.",
+        "8": "Removal of KRs does not cause its breakdown, rather a change in the network properties was observed.",
+        "9": "Essential (necessary) proteins are evolutionarily conserved (kept). Because of this, genes of selected interacting proteins in C. elegans, cat, and macaque monkey were identified.",
+        "10": "The authors deciphered three important interologs, interactions between pairs of proteins.",
+        "11": "In conclusion, these KRs and identified interologs are expected to regulate the TS network. This data demonstrates their biological importance."
+      }
+    }
+  },
+  "30779428": {
+    "Title": "How do genes that escape from X-chromosome inactivation contribute to Turner syndrome?",
+    "abstract": {
+      "1": "X-chromosome inactivation generally results in dosage equivalence for expression of X-linked genes between 46,XY males and 46,XX females.",
+      "2": "The 20-30% of genes that escape silencing are thus candidates for having a role in the phenotype of Turner syndrome.",
+      "3": "Understanding which genes escape from silencing, and how they avoid this chromosome-wide inactivation is therefore an important step toward understanding Turner Syndrome.",
+      "4": "We have examined the mechanism of escape using a previously reported knock-in of a BAC containing the human escape gene RPS4X in mouse.",
+      "5": "We now demonstrate that escape from inactivation for RPS4X is already established by embryonic Day 9.5, and that both silencing and escape are faithfully maintained across the lifespan.",
+      "6": "No overt abnormalities were observed for transgenic mice up to 1 year of age despite robust transcription of the human RPS4X gene with no detectable downregulation of the mouse homolog.",
+      "7": "However, there was no significant increase in protein levels, suggesting translational compensation in the mouse.",
+      "8": "Finally, while many of the protein-coding genes have been assessed for their inactivation status, less is known about the X-linked RNA genes, and we propose that for many microRNA genes their inactivation status can be predicted as they are intronic to genes for which the inactivation status is known."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "X-chromosome inactivation generally results in gene expression equivalence of X-linked genes between 46,XY males and 46,XX females.",
+        "2": "The 20-30% of genes that escape silencing may influence the phenotype (physical traits) of Turner syndrome. Turner syndrome is a condition where there is an abnormal amount of chromosomes (genetic material).",
+        "3": "Understanding which genes escape from silencing, and how they avoid this chromosome-wide inactivation, is an important step toward understanding Turner Syndrome.",
+        "4": "This study examined the mechanism of escape using a mouse model where a specific human escape gene, RPS4X, was inserted into the genome.",
+        "5": "The study showed that escape from inactivation for RPS4X is already established by embryonic Day 9.5. Additionally, the study demonstrated that both silencing and escape are maintained across the entire lifespan.",
+        "6": "No overt (obvious) abnormalities were observed for the mice up to 1 year of age.",
+        "7": "However, there was no significant increase in protein levels. This suggest translational compensation (altered conversion of RNA to proteins) in the mouse.",
+        "8": "Finally, while many of the protein-coding genes have been assessed (measured) for their inactivation status, less is known about the X-linked RNA genes. The authors propose that for many microRNA (RNA involved in silencing) genes, inactivation status can be predicted."
+      }
+    }
+  },
+  "30811826": {
+    "Title": "Epigenetics and genomics in Turner syndrome",
+    "abstract": {
+      "1": "The pathogenesis of Turner syndrome (TS) and the genotype-phenotype relationship has been thoroughly investigated during the last decade.",
+      "2": "It has become evident that the phenotype seen in TS does not only depend on simple gene dosage as a result of X chromosome monosomy.",
+      "3": "The origin of TS specific comorbidities such as infertility, cardiac malformations, bone dysgenesis, and autoimmune diseases may depend on a complex relationship between genes as well as transcriptional and epigenetic factors affecting gene expression across the genome.",
+      "4": "Furthermore, two individuals with TS with the exact same karyotype may exhibit completely different traits, suggesting that no conventional genotype-phenotype relationship exists.",
+      "5": "Here, we review the different genetic mechanisms behind differential gene expression, and highlight potential key-genes essential to the comorbidities seen in TS and other X chromosome aneuploidy syndromes.",
+      "6": "KDM6A, important for germ cell development, has shown to be differentially expressed and methylated in Turner and Klinefelter syndrome across studies.",
+      "7": "Furthermore, TIMP1/TIMP3 genes seem to affect the prevalence of bicuspid aortic valve.",
+      "8": "KDM5 C could play a role in the neurocognitive development of Turner and Klinefelter syndrome.",
+      "9": "However, further research is needed to elucidate the genetic mechanism behind the phenotypic variability and the different phenotypic traits seen in TS."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "The disease development of Turner syndrome (TS), and how gene expression effects physical appearance, has been heavily investigated over the last decade. Turner syndrome is a condition where there is an abnormal amount of chromosomes (genetic material).",
+        "2": "Phenotype (observable characteristics) seen in TS does not only depend on the number of copies of a gene as a result of X chromosome monosomy. Monosomy indicates there is an absence of one member of a chromosome pair; instead of 46 chromosomes in each cell of the body, there is 45.",
+        "3": "The origin of TS specific comorbidities (presence of two or more diseases) may depend on crosstalk between genes as well as factors affecting gene expression. These comorbidities include infertility, heart-related malformations, defective bone development, and autoimmune diseases (in which immune cells attack healthy cells).",
+        "4": "Furthermore, two people with TS with the exact same karyotype, number and visual appear of chromosomes, may exhibit completely different traits. This suggests that no conventional genotype-phenotype relationship exists.",
+        "5": "This study reviews the different genetic mechanisms behind differential (function-unique) gene expression. This study also highlights potential key-genes essential to the comorbidities seen in TS and other X chromosome aneuploidy (abnormal chromosome number) syndromes.",
+        "6": "KDM6A, a gene important for germ cell development, has shown to be differentially expressed and methylated in Turner and Klinefelter syndrome (male born with extra X chromosome copy) patients.",
+        "7": "Furthermore, TIMP1/TIMP3 genes seem to affect the prevalence (amount) of bicuspid aortic valve, an abnormality in the aortic valve of the heart.",
+        "8": "KDM5 C could play a role in the brain- and memory-related development of Turner and Klinefelter syndrome.",
+        "9": "However, further research is needed to determine the genetic mechanism behind the phenotypic variability and the different phenotypic traits seen in TS."
+      }
+    }
+  },
+  "32210915": {
+    "Title": "Bioinformatic Analysis Identifies Potential Key Genes in the Pathogenesis of Turner Syndrome",
+    "abstract": {
+      "1": "Background: Turner syndrome (TS) is a sex chromosome aneuploidy with a variable spectrum of symptoms including short stature, ovarian failure and skeletal abnormalities.",
+      "2": "The etiology of TS is complex, and the mechanisms driving its pathogenesis remain unclear.",
+      "3": "Methods: In our study, we used the online Gene Expression Omnibus (GEO) microarray expression profiling dataset GSE46687 to identify differentially expressed genes (DEGs) between monosomy X TS patients and normal female individuals.",
+      "4": "The relevant data on 26 subjects with TS (45,XO) and 10 subjects with the normal karyotype (46,XX) was investigated.",
+      "5": "Then, tissue-specific gene expression, functional enrichment, and protein-protein interaction (PPI) network analyses were performed, and the key modules were identified.",
+      "6": "Results: In total, 25 upregulated and 60 downregulated genes were identified in the differential expression analysis.",
+      "7": "The tissue-specific gene expression analysis of the DEGs revealed that the system with the most highly enriched tissue-specific gene expression was the hematologic/immune system, followed by the skin/skeletal muscle and neurologic systems.",
+      "8": "The PPI network analysis, construction of key modules and manual screening of tissue-specific gene expression resulted in the identification of the following five genes of interest: CD99, CSF2RA, MYL9, MYLPF, and IGFBP2.",
+      "9": "CD99 and CSF2RA are involved in the hematologic/immune system, MYL9 and MYLPF are related to the circulatory system, and IGFBP2 is related to skeletal abnormalities.",
+      "10": "In addition, several genes of interest with possible roles in the pathogenesis of TS were identified as being associated with the hematologic/immune system or metabolism.",
+      "11": "Conclusion: This discovery-driven analysis may be a useful method for elucidating novel mechanisms underlying TS.",
+      "12": "However, more experiments are needed to further explore the relationships between these genes and TS in the future."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Turner syndrome (TS) is a sex chromosome aneuploidy or condition of having abnormal number of chromosomes. The disease has a broad spectrum of symptoms including short stature, ovarian failure, and skeletal abnormalities.",
+        "2": "The cause of TS is complex. The mechanisms driving its development are unclear.",
+        "3": "In this study, an online database was used to identify differentially expressed (functionally unique) genes (DEGs) between monosomy X TS patients (one chromosome lacks its partner) and normal female individuals.",
+        "4": "Data on 26 subjects with TS (45,XO) and 10 subjects with the normal chromosomal count (46,XX) was investigated.",
+        "5": "Several genetic analyses were performed.",
+        "6": "In total, 25 upregulated (increased in activity) and 60 downregulated (decreased in activity) genes were identified.",
+        "7": "The system with the most highly enriched tissue-specific gene expression was the hematologic (blood) and immune system. This was followed by the skin/skeletal muscle and brain-related systems.",
+        "8": "Additionally, analysis resulted in the identification of five genes of interest.",
+        "9": "Two of these genes, CD99 and CSF2RA, are involved in the hematologic (blood)/immune system. Others, MYL9 and MYLPF, are related to the circulatory (heart and blood vessels) system. A fifth gene, IGFBP2, is related to skeletal abnormalities.",
+        "10": "Additionally, several genes of interest with possible roles in the pathogenesis (disease creation) of TS were identified as being associated with the hematologic/immune system or metabolism.",
+        "11": "This analysis may be a useful method for identifying novel mechanisms underlying TS.",
+        "12": "However, more experiments are needed to explore the relationships between these genes and TS."
+      }
+    }
+  },
+  "32489015": {
+    "Title": "Epigenetic and transcriptomic consequences of excess X-chromosome material in 47,XXX syndrome-A comparison with Turner syndrome and 46,XX females",
+    "abstract": {
+      "1": "47,XXX (triple X) and Turner syndrome (45,X) are sex chromosomal abnormalities with detrimental effects on health with increased mortality and morbidity.",
+      "2": "In karyotypical normal females, X-chromosome inactivation balances gene expression between sexes and upregulation of the X chromosome in both sexes maintain stoichiometry with the autosomes.",
+      "3": "In 47,XXX and Turner syndrome a gene dosage imbalance may ensue from increased or decreased expression from the genes that escape X inactivation, as well as from incomplete X chromosome inactivation in 47,XXX.",
+      "4": "We aim to study genome-wide DNA-methylation and RNA-expression changes can explain phenotypic traits in 47,XXX syndrome.",
+      "5": "We compare DNA-methylation and RNA-expression data derived from white blood cells of seven women with 47,XXX syndrome, with data from seven female controls, as well as with seven women with Turner syndrome (45,X).",
+      "6": "To address these questions, we explored genome-wide DNA-methylation and transcriptome data in blood from seven females with 47,XXX syndrome, seven females with Turner syndrome, and seven karyotypically normal females (46,XX).",
+      "7": "Based on promoter methylation, we describe a demethylation of six X-chromosomal genes (AMOT, HTR2C, IL1RAPL2, STAG2, TCEANC, ZNF673), increased methylation for GEMIN8, and four differentially methylated autosomal regions related to four genes (SPEG, MUC4, SP6, and ZNF492).",
+      "8": "We illustrate how these changes seem compensated at the transcriptome level although several genes show differential exon usage.",
+      "9": "In conclusion, our results suggest an impact of the supernumerary X chromosome in 47,XXX syndrome on the methylation status of selected genes despite an overall comparable expression profile."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "47,XXX (triple X) and Turner syndrome (45,X) are sex chromosomal (gene material) abnormalities with detrimental effects on health. Both syndromes are associated with increased death and disease suffering.",
+        "2": "In females with normal chromosomes, X-chromosome (sex chromosome) inactivation balances gene expression between sexes. Upregulation (increase in activity) of the X chromosome in both sexes maintains balance with the autosomes (chromosomes not involved in sex determination).",
+        "3": "In both syndromes, a gene dosage imbalance may be caused by increased or decreased expression from the genes that escape X inactivation. A gene dosage imbalance may also be caused by incomplete X chromosome inactivation in 47,XXX.",
+        "4": "This study aimed to evaluate genome-wide DNA-methylation (addition of methyl groups to DNA) and RNA (genetic material)-expression changes. This was done in the hope that these alterations may explain phenotypic traits, or observable character traits, associated with 47,XXX syndrome.",
+        "5": "This study compared DNA-methylation and RNA-expression data taken from white blood cells of seven women with 47,XXX syndrome. This data was compared with data from seven female controls and seven women with Turner syndrome (45,X).",
+        "6": "This study evaluated genome-wide DNA-methylation and RNA data in blood from seven females with 47,XXX syndrome, seven females with Turner syndrome, and seven normal females (46,XX).",
+        "7": "The study identified the loss of methylation of six X-chromosomal genes, increased methylation for one specific gene, and four differentially methylated autosomal regions related to four genes.",
+        "8": "This data illustrates how these changes seem centered at the RNA level.",
+        "9": "In conclusion, this study suggests an impact of excess X chromosome in 47,XXX syndrome on the methylation status of selected genes."
+      }
+    }
+  },
+  "question": "What level of gene expression from transcription to protein does turner syndrome impact?",
+  "question_type": "B"
+  }
+}

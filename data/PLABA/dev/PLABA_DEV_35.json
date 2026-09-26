@@ -1,0 +1,350 @@
+{
+  "35": {
+  "15549501": {
+    "Title": "Development and validation of the osteoporosis prescreening risk assessment (OPERA) tool to facilitate identification of women likely to have low bone density",
+    "abstract": {
+      "1": "Osteoporosis and its consequent increase in fracture risk is a major health concern for postmenopausal women and older men and has the potential to reach epidemic proportions.",
+      "2": "The \"gold standard\" for osteoporosis diagnosis is bone densitometry.",
+      "3": "However, economic issues or availability of the technology may prevent the possibility of mass screening.",
+      "4": "The goal of this study was to develop and validate a clinical scoring index designed as a prescreening tool to help clinicians identify which women are at increased risk of osteoporosis [bone mineral density (BMD) T-score -2.5 or less] and should therefore undergo further testing with bone densitometry.",
+      "5": "Records were analyzed for 1522 postmenopausal females over 50 years of age who had undergone testing with dual-energy X-ray absorptiometry (DXA).",
+      "6": "Osteoporosis risk index scores were compared to bone density T-scores.",
+      "7": "Hologic QDR 4500 technology was used to measure BMD at the femoral neck and lumbar spine (L1-L4).",
+      "8": "Participants who had a previous diagnosis of osteoporosis or were taking bone-active medication were excluded.",
+      "9": "Receiver-operating characteristic (ROC) analysis was used to identify the specific cutpoint value that would identify women at increased risk of low BMD.",
+      "10": "A simple algorithm based on age, weight, history of previous low impact fracture, early menopause, and corticosteroid therapy was developed.",
+      "11": "Validation of this five-item osteoporosis prescreening risk assessment (OPERA) index showed that the tool, at the recommended threshold (or cutoff value) of two, had a sensitivity that ranged from 88.1 [95% confidence interval (CI) for the mean: 86.2-91.9%] at the femoral neck to 90% (95% CI for the mean: 86.1-93.1%) at the lumbar spine area.",
+      "12": "Corresponding specificity values were 60.6 (95% CI for the mean: 57.9-63.3%) and 64.2% (95% CI for the mean: 61.4-66.9%), respectively.",
+      "13": "The positive predictive value (PPV) ranged from 29 at the femoral neck to 39.2% at the lumbar spine, while the corresponding negative predictive values (NPVs) reached 96.5 and 96.2%, respectively.",
+      "14": "Based on this cutoff value, the area under the ROC curve was 0.866 (95% CI for the mean: 0.847-0.882) for the lumbar spine and 0.814 (95% CI for the mean: 0.793-0.833) for the femoral neck.",
+      "15": "We conclude that the OPERA is a free and effective method for identifying Italian postmenopausal women at increased risk of osteoporosis.",
+      "16": "Its use could facilitate the appropriate and more cost-effective use of bone densitometry in developing countries."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Osteoporosis, a condition in which bones become weak and brittle, and the increase in the risk of bone breaks it causes has worried women who have gone through menopause (a point in time 12 months after the last period) and older men and could become a huge problem.",
+        "2": "The best way to diagnose osteoporosis is bone densitometry, a common test to measure bone density.",
+        "3": "Large-scale checks may not be possible due to economic issues or availability of densitometry.",
+        "4": "We aimed to make and test a scoring system to help doctors find which women are more likely to develop osteoporosis and should have more testing with bone densitometry.",
+        "5": "We looked at records for 1522 women who have gone through menopause over 50 years old who had dual-energy X-ray absorptiometry (DXA - a common test for bone density).",
+        "6": "We compared risk scores to bone density tests.",
+        "7": "We measured BMD at the hip and lower spine.",
+        "8": "We excluded people who were previously diagnosed with osteoporosis or were taking drugs affecting bones.",
+        "9": "",
+        "10": "We came up with a simple calculation based on age, weight, history of previous falls from a standing height or lower, early menopause, and use of a certain kind of steroid.",
+        "11": "Testing of this five-item osteoporosis prescreening risk assessment (OPERA) shows high accuracy for osteoporosis detection.",
+        "12": "OPERA shows high accuracy for no detection.",
+        "13": "The accuracy for results detecting osteoporosis ranged from 29 at the femoral neck to 39.2% at the lumbar spine, while the corresponding accuracy for results not detecting osteoporosis reached 96.5 and 96.2%, respectively.",
+        "14": "",
+        "15": "We conclude that the OPERA is a free and effective way to identify Italian women who have gone through menopause at higher risk of osteoporosis.",
+        "16": "Use of OPERA could help the appropriate and more cost-effective use of bone densitometry in developing countries."
+      }
+    }
+  },
+  "22256806": {
+    "Title": "Bone-Density Testing Interval and Transition to Osteoporosis in Older Women",
+    "abstract": {
+      "1": "BACKGROUND: Although bone mineral density (BMD) testing to screen for osteoporosis (BMD T score, −2.50 or lower) is recommended for women 65 years of age or older, there are few data to guide decisions about the interval between BMD tests.",
+      "2": "METHODS: We studied 4957 women, 67 years of age or older, with normal BMD (T score at the femoral neck and total hip, −1.00 or higher) or osteopenia (T score, −1.01 to −2.49) and with no history of hip or clinical vertebral fracture or of treatment for osteoporosis, followed prospectively for up to 15 years.",
+      "3": "The BMD testing interval was defined as the estimated time for 10% of women to make the transition to osteoporosis before having a hip or clinical vertebral fracture, with adjustment for estrogen use and clinical risk factors.",
+      "4": "Transitions from normal BMD and from three subgroups of osteopenia (mild, moderate, and advanced) were analyzed with the use of parametric cumulative incidence models.",
+      "5": "Incident hip and clinical vertebral fractures and initiation of treatment with bisphosphonates, calcitonin, or raloxifene were treated as competing risks.",
+      "6": "RESULTS: The estimated BMD testing interval was 16.8 years (95% confidence interval [CI], 11.5 to 24.6) for women with normal BMD, 17.3 years (95% CI, 13.9 to 21.5) for women with mild osteopenia, 4.7 years (95% CI, 4.2 to 5.2) for women with moderate osteopenia, and 1.1 years (95% CI, 1.0 to 1.3) for women with advanced osteopenia.",
+      "7": "CONCLUSIONS: Our data indicate that osteoporosis would develop in less than 10% of older, post-menopausal women during rescreening intervals of approximately 15 years for women with normal bone density or mild osteopenia, 5 years for women with moderate osteopenia, and 1 year for women with advanced osteopenia."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Although bone mineral density (BMD) testing to measure how much calcium and other minerals are in bones to look for osteoporosis (a condition in which bones become weak and brittle) is suggested for women 65 years old or older, few studies look at how long to wait between tests.",
+        "2": "We studied 4957 women, 67 years old and older, with normal BMD or weaker than normal bones who had never broken a hip or spine or received treatment for osteoporosis, followed for up to 15 years.",
+        "3": "The time between BMD testing was the estimated time for 10% of women to develop osteoporosis before breaking a hip or spine, considering estrogen (female-specific hormone) use and risk factors.",
+        "4": "We used mathematical models to look at changes from normal BMD and from mild, moderate, and advanced osteopenia.",
+        "5": "We considered hip and spine breaks and people taking drugs to strengthen bones.",
+        "6": "We found the estimated time between BMD testing was 16.8 years for women with normal BMD and 17.3, 4.7. and 1.1 years for women with mild, moderate, and advanced osteopenia, respectively.",
+        "7": "Our results suggest that less than 10% of older women who had gone through menopause (a point in time 12 months after the last period) would develop osteoporosis if tested about every 15 years for women with normal BMD or mild osteopenia, 5 years for women with moderate osteopenia, and 1 year for women with advanced osteopenia."
+      }
+    }
+  },
+  "23000664": {
+    "Title": "DEXA screening—are we doing too much?",
+    "abstract": {
+      "1": "The US Preventive Services Task Force (USPSTF) guideline for osteoporosis screening concludes that there is a lack of evidence about optimal rescreening intervals and states that intervals >2 years may be necessary to better predict fracture risk.",
+      "2": "In addition, the USPSTF cites a prospective study showing that repeat measurement of BMD after 8 years added little predictive value compared with baseline DEXA scan results.",
+      "3": "Reconsider the intervals at which you recommend rescreening for osteoporosis; for post-menopausal women with a baseline of normal bone mineral density (BMD) or mild osteopenia, a 15-year interval is probably sufficient."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Current expert panel guidance for osteoporosis (a condition in which bones become weak and brittle) testing states that not enough data exist on the best period of time in between tests and that periods of over 2 years may be needed to better predict the risk of breaking bones.",
+        "2": "In addition, the guidance mentions a study showing that measuring BMD after 8 years only helped a small amount to predict osteoporosis compared with initial BMD scan results.",
+        "3": "Re-think the period of time between osteoporosis checks; for women who have gone through menopause (a point in time 12 months after the last period) with an initial normal bone mineral density (BMD) or slightly weaker than normal bones, 15 years between checks is likely enough."
+      },
+      "adaptation2": {
+        "1": "The US Preventative Services Task Force (USPSTF) guideline for screening osteoporosis, a bone-weakening disease, states that there is a lack of evidence about best rescreening intervals. The guideline states that intervals >2 years may be needed to better preduct fracture risk.",
+        "2": "Also, the USPSTF mentions a study in which repeat measurement of bone mineral density (BMD) or hardness after 8 years adds litte value relative to inital bone scans.",
+        "3": "Reconsider the intervals at which you recommend rescreening for osteoporosis. For post-menopausal or older women with normal BMD or mild bone weakening, a 15-year interval is likely enough."
+      }
+    }
+  },
+  "24809808": {
+    "Title": "Overuse of short-interval bone densitometry: assessing rates of low-value care",
+    "abstract": {
+      "1": "We evaluated the prevalence and geographic variation of short-interval (repeated in under 2 years) dual-energy X-ray absorptiometry tests (DXAs) among Medicare beneficiaries.",
+      "2": "Short-interval DXA use varied across regions (coefficient of variation = 0.64), and unlike other DXAs, rates decreased with payment cuts.",
+      "3": "Introduction: The American College of Rheumatology, through the Choosing Wisely initiative, identified measuring bone density more often than every 2 years as care \"physicians and patients should question.\"",
+      "4": "We measured the prevalence and described the geographic variation of short-interval (repeated in under 2 years) DXAs among Medicare beneficiaries and estimated the cost of this testing and its responsiveness to payment change.",
+      "5": "Methods: Using 100 % Medicare claims data, 2006-2011, we identified DXAs and short-interval DXAs for female Medicare beneficiaries over age 66.",
+      "6": "We determined the population rate of DXAs and short-interval DXAs, as well as Medicare spending on short-interval DXAs, nationally and by hospital referral region (HRR).",
+      "7": "Results: DXA use was stable 2008-2011 (12.4 to 11.5 DXAs per 100 women).",
+      "8": "DXA use varied across HRRs: in 2011, overall DXA use ranged from 6.3 to 23.0 per 100 women (coefficient of variation = 0.18), and short-interval DXAs ranged from 0.3 to 8.0 per 100 women (coefficient of variation = 0.64).",
+      "9": "Short-interval DXA use fluctuated substantially with payment changes; other DXAs did not.",
+      "10": "Short-interval DXAs, which represented 10.1 % of all DXAs, cost Medicare approximately US$16 million in 2011.",
+      "11": "Conclusions: One out of ten DXAs was administered in a time frame shorter than recommended and at a substantial cost to Medicare.",
+      "12": "DXA use varied across regions.",
+      "13": "Short-interval DXA use was responsive to reimbursement changes, suggesting carefully designed policy and payment reform may reduce this care identified by rheumatologists as low value."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "We rated the number and variation (or differences) across the country of dual-energy x-ray absorptiometry tests (DXAs - useful tests for measuring bone density) repeated in under 2 years (short-interval) in people on Medicare during a specific period.",
+        "2": "Use of short-interval DXAs varied across the country and unlike other DXAs, use went down with Medicare payment cuts.",
+        "3": "A campaign to avoid unnecessary medical tests, treatments and procedures found measuring bone density more often than every 2 years as care \"physicians and patients should question.\"",
+        "4": "We rated the number and variation across the country of short-interval DXAs in people on Medicare during a specific period and estimated the testing cost and how much is changed based on payment.",
+        "5": "We used only information from Medicare claims in 2006-2011 to find DXAs and short-term DXAs for females over age 66 on Medicare.",
+        "6": "We found out how many DXAs and short-term DXAs were done, and how many Medicare dollars were spent on short-interval DXAs, across the country and by healthcare markets.",
+        "7": "From 2008-2011, DXA use was steady (12.4 to 11.5 DXAs per 100 women).",
+        "8": "DXA use varied across healthcare markets.",
+        "9": "Short-interval DXA use changed a lot based on payment; other DXAs did not.",
+        "10": "In 2011, Medicare spent about $16 million USD on short-interval DXAs, which made up 10.1% of all DXAs.",
+        "11": "We conclude that one out of 10 DXAs was done sooner than recommended, costing Medicare considerably.",
+        "12": "DXA use varied across the country.",
+        "13": "Short-interval DXA use changed based on payment, suggesting policy and payment changes may decrease this low-value care."
+      }
+    }
+  },
+  "26086766": {
+    "Title": "Development and Validation of an Osteoporosis Self-Assessment Tool for Taiwan (OSTAi) Postmenopausal Women-A Sub-Study of the Taiwan OsteoPorosis Survey (TOPS)",
+    "abstract": {
+      "1": "Background: To develop an OSTAi tool and compare this with the National Osteoporosis Foundation recommendations in 2013 (NOF 2013) for bone mineral density (BMD) testing among Taiwan postmenopausal women.",
+      "2": "Methods: Taiwan Osteoporosis Association (TOA) conducted a nationwide BMD survey by a bus installed with a dual energy X-ray absorptiometry (DXA) between 2008 and 2011.",
+      "3": "All of the participants completed questionnaire, which included demographics and risk factors of osteoporotic fracture in FRAX tool.",
+      "4": "We used the database to analyze potential risk factors for osteoporosis and followed the model by Koh et al. to develop a risk index via multiple variable regression analysis and item reduction.",
+      "5": "We used the index values to set up a simple algorithm (namely OSTAi) to identify those who need BMD measurement.",
+      "6": "Receiver operating characteristic (ROC) curve and the area under the curve (AUC) was used to compare the sensitivity/specificity analysis of this model with that of recommendations by NOF 2013.",
+      "7": "Results: A total of 12,175 Taiwan postmenopausal women enrolled in this survey.",
+      "8": "The index value was derived by age and body weight of the participants according to weighted odds of each risk factor and the selected cutoff value was set at \"-1\".",
+      "9": "There are 6393 (52.5%) participants whose index value is below \"-1\" and whose risk of osteoporosis was 57.5% (3674/6393).",
+      "10": "The AUC for OSTAi and NOF 2013 were 0.739 (95% confidence interval (CI), 0.728-0.749, P<0.001) and 0.618 (95% CI, 0.606-0.630, P<0.001), respectively.",
+      "11": "The sensitivity and specificity of OSTAi, at the selected cutoff value of -1, and NOF 2013 to identify osteoporosis were 73.1%, 62.0% and 78.3%, 45.7%, respectively.",
+      "12": "Conclusions: As OSTA for Asian populations, OSTAi is an useful tool to identify Taiwan postmenopausal women with osteoporosis,",
+      "13": "In comparison with NOF 2013, OSTAi may be an easier and better tool for referral to BMD measurement by DXA in this area."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "We aimed to make an Osteoporosis (a condition in which bones become weak and brittle) Self-Assessment Tool for Taiwan (OSTAi) and compare this with existing 2013 guidelines for bone mineral density (BMD) testing among Taiwan women who had gone through menopause (a point in time 12 months after the last period).",
+        "2": "We tested women nationwide using a dual energy X-ray absorptiometry (DXA; a common text to measure bone density) between 2008 and 2011.",
+        "3": "All women filled out a questionnaire, which included individual information and risk factors of bone breaks caused by osteoporosis.",
+        "4": "We used this information to look at possible risk factors for osteoporosis.",
+        "5": "We set up OSTAi to find those who needed BMD measurement.",
+        "6": "We compared accuracy for disease detection and no detection between OSTAi and the 2013 guidelines.",
+        "7": "We studied 12,175 Taiwan women who had gone through menopause.",
+        "8": "",
+        "9": "There are 6393 (52.5%) participants whose risk of osteoporosis was 57.5% (3674/6393).",
+        "10": "",
+        "11": "OSTAi showed slightly lower accuracy for disease detection and higher accuracy for no detection than 2013 guidelines.",
+        "12": "OSTAi is useful to find Taiwan women who have gone through menopause with osteoporosis.",
+        "13": "Compared to current guidelines, OSTAi may be an easier and better tool to determine who should have DXA in Taiwan."
+      },
+      "adaptation2": {
+        "1": "The study aims to create an osteoporosis (or bone weakening) self assessment (OSTAi) tool and compare it with the National Osteoporosis Foundation 2013 recommendations (NOF 2013) or bone mineral density (BMD) or hardness testing among Taiwan postmenopausal women who completed their final menstrual or sexual cycle.",
+        "2": "Taiwan Osteoporosis Associated (TOA) had a nationwide BMD survey by a bus installed with an X-ray machine between 2008 and 2011.",
+        "3": "All participants completed a questionnaire, which had socioeconomic and risk factors of osteoporotic fracture in fracture risk tool.",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "12,175 Taiwan postmenopausal women participated in this survey.",
+        "8": "",
+        "9": "There are 6393 (52.5%) participants below the cutoff and whose risk of osteoporosis was 57.5% (3647/6393).",
+        "10": "The measurements for OSTAi and NOF were noteworthy.",
+        "11": "The sensitivity (accuracy of detecting people with the disease) and specificity (accuracy of detecting  people without the disease) of OSTAi at the cutoff and NOF 2013 to detect osteoporosis were 73.1%, 62.0% and 78.3%, 45.7%, respectively.",
+        "12": "Known as OSTA for Asian populations, OSTAi is useful to identify Taiwan postmenopausal women with osteoporosis.",
+        "13": "Compared to NOF 2013, OSTAi may be an easier, better tool to suggest BMD measurement by bone scans in this area."
+      }
+    }
+  },
+  "26280231": {
+    "Title": "Diagnosis and Management of Osteoporosis",
+    "abstract": {
+      "1": "Osteoporosis-related fractures affect approximately one in two white women and one in five white men in their lifetime.",
+      "2": "The impact of fractures includes loss of function, significant costs, and increased mortality.",
+      "3": "The U.S. Preventive Services Task Force recommends using dual energy x-ray absorptiometry to screen all women 65 years and older, and younger women who have an increased fracture risk as determined by the World Health Organization's FRAX Fracture Risk Assessment Tool.",
+      "4": "Although guidelines are lacking for rescreening women who have normal bone mineral density on initial screening, intervals of at least four years appear safe.",
+      "5": "The U.S. Preventive Services Task Force found insufficient evidence to recommend screening for osteoporosis in men; other organizations recommend screening all men 70 years and older.",
+      "6": "In patients with newly diagnosed osteoporosis, suggested laboratory tests to identify secondary causes include serum 25-hydroxyvitamin D, calcium, creatinine, and thyroid-stimulating hormone.",
+      "7": "First-line treatment to prevent fractures consists of fall prevention, smoking cessation, moderation of alcohol intake, and bisphosphonate therapy.",
+      "8": "Clinicians should consider discontinuing bisphosphonate therapy after five years in women without a personal history of vertebral fractures.",
+      "9": "Raloxifene, teriparatide, and denosumab are alternative effective treatments for certain subsets of patients and for those who are unable to take or whose condition does not respond to bisphosphonates.",
+      "10": "The need for follow-up bone mineral density testing in patients receiving treatment for osteoporosis is uncertain."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Bone breaks due to osteoporosis (a condition in which bones become weak and brittle) happen in about 50% of white women and 20% of white men in their lifetime.",
+        "2": "Bone breaks cause loss of physical function, high costs, and increased death.",
+        "3": "An expert panel recommends using dual energy x-ray absorptiometry, or bone density scanning, to check all women 65 year and older, and younger women who are more likely to have bone breaks based on a popular measurement tool to measure fracture risk.",
+        "4": "Although there are not guidelines for rechecking women who have initial normal bone mineral density, four years between checks looks safe.",
+        "5": "The expert panel did not find enough proof to recommend checking for osteoporosis in men; other groups recommend checking all men 70 years and older.",
+        "6": "In people with newly found osteoporosis, lab tests to find underlying causes include measuring blood levels of different substances.",
+        "7": "The best treatment to prevent breaks includes preventing falls, stopping smoking, reducing alcohol consumption, and a group of drugs that help prevent or slow down bone thinning.",
+        "8": "Doctors should think about stopping a group of drugs that help prevent or slow down bone thinning after five years in women without a history of spine breaks.",
+        "9": "Other types of drugs for osteoporosis exist for certain groups of patients and for those who are unable to take or whose condition is not helped by one group of drugs that help prevent or slow down bone thinning.",
+        "10": "The need to recheck bone mineral density in people taking drugs for osteoporosis is unknown."
+      }
+    }
+  },
+  "26458388": {
+    "Title": "Clinical utility of routine laboratory testing to identify possible secondary causes in older men with osteoporosis: the Osteoporotic Fractures in Men (MrOS) Study",
+    "abstract": {
+      "1": "We investigated the value of routine laboratory testing for identifying underlying causes in older men diagnosed with osteoporosis.",
+      "2": "Most osteoporotic and nonosteoporotic men had ≥1 laboratory abnormality.",
+      "3": "Few individual laboratory abnormalities were more common in osteoporotic men.",
+      "4": "The benefit of routine laboratory testing in older osteoporotic men may be low.",
+      "5": "Introduction: To evaluate the utility of recommended laboratory testing to identify secondary causes in older men with osteoporosis, we examined prevalence of laboratory abnormalities in older men with and without osteoporosis.",
+      "6": "Methods: One thousand five hundred seventy-two men aged ≥65 years in the Osteoporotic Fractures in Men study completed bone mineral density (BMD) testing and a battery of laboratory measures, including serum calcium, phosphorus, alkaline phosphatase, parathyroid hormone (PTH), thyroid-stimulating hormone (TSH), 25-OH vitamin D, total testosterone, spot urine calcium/creatinine ratio, spot urine albumin/creatinine ratio, creatinine-derived estimated glomerular filtration rate, 24-h urine calcium, and 24-h urine free cortisol.",
+      "7": "Using cross-sectional analyses, we calculated prevalence ratios (PRs) and 95 % confidence intervals (CI) for the association of any and specific laboratory abnormalities with osteoporosis and the number of men with osteoporosis needed to test to identify one additional laboratory abnormality compared to testing men without osteoporosis.",
+      "8": "Results: Approximately 60 % of men had ≥1 laboratory abnormality in both men with and without osteoporosis.",
+      "9": "Among individual tests, only vitamin D insufficiency (PR, 1.13; 95 % CI, 1.05-1.22) and high alkaline phosphatase (PR, 3.05; 95 % CI, 1.52-6.11) were more likely in men with osteoporosis.",
+      "10": "Hypercortisolism and hyperthyroidism were uncommon and not significantly more frequent in men with osteoporosis.",
+      "11": "No osteoporotic men had hypercalciuria.",
+      "12": "Conclusions: Though most of these older men had ≥1 laboratory abnormality, few routinely recommended individual tests were more common in men with osteoporosis than in those without osteoporosis.",
+      "13": "Possibly excepting vitamin D and alkaline phosphatase, benefit of routine laboratory testing to identify possible secondary causes in older osteoporotic men appears low.",
+      "14": "Results may not be generalizable to younger men or to older men in whom history and exam findings raise clinical suspicion for a secondary cause of osteoporosis."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "We looked at how helpful routine lab testing is for finding underlying causes in older men diagnosed with osteoporosis (a condition in which bones become weak and brittle).",
+        "2": "Most men with and without osteoporosis had one or more abnormal lab measurement.",
+        "3": "Few single lab abnormalities were more common in men with osteoporosis.",
+        "4": "Routine lab testing in older men with osteoporosis may not be helpful.",
+        "5": "We aim to rate how useful recommended lab testing is to find underlying causes of osteoporosis in older men by looking at the number of older men with lab abnormalities with and without osteoporosis during a specific period.",
+        "6": "We studied 1,572 men 65 years old and older who has bone mineral density (BMD) testing and many other lab measurements.",
+        "7": "We checked for links of any lab abnormalities with osteoporosis and the number of men with osteoporosis needed to test to find one more lab abnormality compared to testing men without osteoporosis.",
+        "8": "We found that about 60% of men with and without osteoporosis had one or more lab abnormality.",
+        "9": "Among lab tests, only not enough vitamin D and high alkaline phosphatase (suggesting damage to liver or bone disorder) were more likely in men with osteoporosis.",
+        "10": "Too much cortisol (stress hormone) and overactive thyroid (metabolism-regulating hormone) were rare and not meaningfully more common in men with osteoporosis.",
+        "11": "No men with osteoporosis had high levels of calcium in the urine.",
+        "12": "Though most of these older men had one or more lab abnormality, few often-recommended tests were more common in men with osteoporosis than in those without.",
+        "13": "Except for possibly vitamin D and alkaline phosphatase, usefulness of routine lab testing to find possible underlying causes in older men with osteoporosis seems low.",
+        "14": "Results may not apply to younger men or to older men thought to have osteoporosis from underlying causes."
+      }
+    }
+  },
+  "28285070": {
+    "Title": "Time to Clinically Relevant Fracture Risk Scores in Postmenopausal Women",
+    "abstract": {
+      "1": "Background: Clinical practice guidelines recommend use of fracture risk scores for screening and pharmacologic treatment decisions.",
+      "2": "The timing of occurrence of treatment-level (according to 2014 National Osteoporosis Foundation guidelines) or screening-level (according to 2011 US Preventive Services Task Force guidelines) fracture risk scores has not been estimated in postmenopausal women.",
+      "3": "Methods: We conducted a retrospective competing risk analysis of new occurrence of treatment-level and screening-level fracture risk scores in postmenopausal women aged 50 years and older, prior to receipt of pharmacologic treatment and prior to first hip or clinical vertebral fracture.",
+      "4": "Results: In 54,280 postmenopausal women aged 50 to 64 years without a bone mineral density test, the time for 10% to develop a treatment-level FRAX score could not be estimated accurately because of rare incidence of treatment-level scores.",
+      "5": "In 6096 women who had FRAX scores calculated with bone mineral density, the estimated unadjusted time to treatment-level FRAX ranged from 7.6 years (95% confidence interval [CI], 6.6-8.7) for those aged 65 to 69, to 5.1 years (95% CI, 3.5-7.5) for those aged 75 to 79 at baseline.",
+      "6": "Of 17,967 women aged 50 to 64 with a screening-level FRAX at baseline, 100 (0.6%) experienced a hip or clinical vertebral fracture by age 65 years.",
+      "7": "Conclusions: Postmenopausal women with sub-threshold fracture risk scores at baseline were unlikely to develop a treatment-level FRAX score between ages 50 and 64 years.",
+      "8": "After age 65, the increased incidence of treatment-level fracture risk scores, osteoporosis, and major osteoporotic fracture supports more frequent consideration of FRAX and bone mineral density testing."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Guidelines for patient care recommend use of fracture risk scores, or the likelihood of having a major bone break, for checks and drug treatment decisions.",
+        "2": "The timing of treatment-level or screening-level fracture risk scores based on guidelines has not been estimated in women who have gone through menopause (a point in time 12 months after the last period).",
+        "3": "We measured new occurences of teratment-level and testing-level fracture risk scores in postmenopausal women aged 50 years and older, before receiving drug treatment and the first hip or clinical vertebral fracture.",
+        "4": "In 54,280 women who had gone through menopause aged 50 to 64 years without a bone mineral density test, we could not estimate the time for 10% to need treatment based on a common osteoporosis questionnaire due to too few scores suggesting treatment.",
+        "5": "In 6096 women who had scores from a common osteoporosis questionnaire, the estimated time to need treatment was 7.6 years and 5.1 years for those aged 65 to 69 and aged 75 to 79, respectively.",
+        "6": "Of 17,967 women aged 50 to 64 with an initial screening-level FRAX (or fracture-risk score), 100 (0.6%) broke their hip or spine by age 65 years.",
+        "7": "We conclude that women who have gone through menopause with questionnaire scores that did not suggest treatment were unlikely to have a score suggesting treatment between ages 50 and 64 years.",
+        "8": "After age 65, questionnaire scores suggesting treatment, osteoporosis, and serious bone breaks due to osteoporosis suggest doing more questionnaires and bone mineral density testing more often."
+      },
+      "adaptation2": {
+        "1": "Healtchare guidelines recommend using fracture risk scores for screening and drug treatment decisions.",
+        "2": "The timing of occurence of treatment-level (according to 2014 guidelines by an expert goup) or screening-level (according to 2011 guidelines by national experts) fracture risk scores has not been estimated in postmenopausal women who finished their last menstrual cycle.",
+        "3": "We conducted a risk analysis of new occurence of treatment- and screening-level fracture risk scores in postmenopausal women aged 50 years and older, before receiving drug treatment and hip or spine fracture.",
+        "4": "In 54, 280 postmenopausal women aged 50 to 64 years without a bone hardness test, the time for 10% to get a treatment-level fracture risk score could not be estimated correctly due to rare amount of treatment-level scores.",
+        "5": "In 6096 women who had fracture risk scores calculated with bone hardness, the estimated unadjusted time to treatment-level fracture risk ranged from 7.6 years for those aged 65 to 69, to 5.1 years, for those aged 75 to 79 at the start.",
+        "6": "Of 17,967 women aged 50 to 64 with a screening-level fracture risk score at the start, 100 (0.6%) had a hip or back fracture by age 65 years.",
+        "7": "Postmenopausal women with sub-threshold fracture risk scores at the start were unlikely to get a treatment-level fracture risk score between 50 and 64 years.",
+        "8": "After age 65, the increased amount of treatment-level fracture risk scores, bone weakening, and major fractures from bone weakening support more frequent consideration of fracture risk and bone hardness testing."
+      }
+    }
+  },
+  "28634907": {
+    "Title": "Incidence and Predictors of Repeat Bone Mineral Densitometry: A Longitudinal Cohort Study",
+    "abstract": {
+      "1": "Background: Existing guidelines for repeat screening and treatment monitoring intervals regarding the use of dual-energy x-ray absorptiometry (DXA) scans are conflicting or lacking.",
+      "2": "The Choosing Wisely campaign recommends against repeating DXA scans within 2 years of initial screening.",
+      "3": "It is unclear how frequently physicians order repeat scans and what clinical factors contribute to their use.",
+      "4": "Objective: To estimate cumulative incidence and predictors of repeat DXA for screening or treatment monitoring in a regional health system.",
+      "5": "Design: Retrospective longitudinal cohort study",
+      "6": "PARTICIPANTS: A total of 5992 women aged 40-84 years who received initial DXA screening from 2006 to 2011 within a regional health system in Sacramento, CA.",
+      "7": "Main measures: Two- and five-year cumulative incidence and hazard rations (HR) of repeat DXA by initial screening result (classified into three groups: low or high risk of progression to osteoporosis, or osteoporosis) and whether women were prescribed osteoporosis drugs after initial DXA.",
+      "8": "Key results: Among women not treated after initial DXA, 2-year cumulative incidence for low-risk, high-risk, and osteoporotic women was 8.0%, 13.8%, and 19.6%, respectively, increasing to 42.9%, 60.4%, and 57.4% by 5 years after initial screening.",
+      "9": "For treated women, median time to repeat DXA was over 3 years for all groups.",
+      "10": "Relative to women with low-risk initial DXA, high-risk initial DXA significantly predicted repeat screening for untreated women [adjusted HR 1.67 (95% CI 1.40-2.00)] but not within the treated group [HR 1.09 (95% CI 0.91-1.30)].",
+      "11": "Conclusions: Repeat DXA screening was common in women both at low and high risk of progression to osteoporosis, with a substantial proportion of women receiving repeat scans within 2 years of initial screening.",
+      "12": "Conversely, only 60% of those at high-risk of progression to osteoporosis were re-screened within 5 years.",
+      "13": "Interventions are needed to help clinicians make higher-value decisions regarding repeat use of DXA scans."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Current guidelines disagree or do not exist for how long to wait between checks and treatment check-ins involving the use of dual-energy x-ray absorptiometry (DXA) scans, a technique used by doctors to measure a patient's risk of osteoporosis (a condition in which bones become weak and brittle).",
+        "2": "A campaign to avoid unnecessary medical tests, treatments and procedures does not suggest DXA scans within 2 years of the first test.",
+        "3": "How often and for which patient characteristics doctors order repeat scans is unclear.",
+        "4": "We aim to estimate the number of people at risk who develop osteoporosis over a period and predictors of repeat DXA for checks and treatment check-ins in a healthcare facility.",
+        "5": "",
+        "6": "We studied 5992 women aged 40-84 years who underwent DXA scans to check for osteoporosis from 2006 to 2011 at a healthcare facility in Sacramento, CA.",
+        "7": "Main test scores included two- and five-year amounts and risks of repeat DXA by initial test results (classified into three groups: low or high risk of worsening to osteoporosis, or osteoporosis) and whether women were given osteoporosis drugs after the first DXA.",
+        "8": "For women not treated after a first DXA, 2-year amounts for low-risk, high-risk, and osteoporotic women were 8.0%, 13.8%, and 19.6%, respectively, increasing to 42.9%, 60.4%, and 57.4% by 5 years after the first screening.",
+        "9": "For treated women, average time to repeat DXA was over 3 years for all groups.",
+        "10": "Compared to women with low-risk initial DXA, high-risk initial DXA significantly led to repeat screening for untreated women but not within the treated group.",
+        "11": "Conclusions: Repeat DXA screening was common in women both at low and high risk of worsening to osteoporosis, with a large amount of women receiving repeat scans within 2 years of initial screening.",
+        "12": "On the other hand, only 60% of those at high-risk of worsening or progression to osteoporosis were re-screened within 5 years.",
+        "13": "Treatments are needed to help clinicians make better decisions regarding repeat use of DXA scans."
+      }
+    }
+  },
+  "29946735": {
+    "Title": "Screening for Osteoporosis to Prevent Fractures: US Preventive Services Task Force Recommendation Statement",
+    "abstract": {
+      "1": "Importance: By 2020, approximately 12.3 million individuals in the United States older than 50 years are expected to have osteoporosis.",
+      "2": "Osteoporotic fractures, particularly hip fractures, are associated with limitations in ambulation, chronic pain and disability, loss of independence, and decreased quality of life, and 21% to 30% of patients who experience a hip fracture die within 1 year.",
+      "3": "The prevalence of primary osteoporosis (ie, osteoporosis without underlying disease) increases with age and differs by race/ethnicity.",
+      "4": "With the aging of the US population, the potential preventable burden is likely to increase in future years.",
+      "5": "Objective: To update the 2011 US Preventive Services Task Force (USPSTF) recommendation on screening for osteoporosis.",
+      "6": "Evidence review: The USPSTF reviewed the evidence on screening for and treatment of osteoporotic fractures in men and women, as well as risk assessment tools, screening intervals, and efficacy of screening and treatment in subgroups.",
+      "7": "The screening population was postmenopausal women and older men with no known previous osteoporotic fractures and no known comorbid conditions or medication use associated with secondary osteoporosis.",
+      "8": "Findings: The USPSTF found convincing evidence that bone measurement tests are accurate for detecting osteoporosis and predicting osteoporotic fractures in women and men.",
+      "9": "The USPSTF found adequate evidence that clinical risk assessment tools are moderately accurate in identifying risk of osteoporosis and osteoporotic fractures.",
+      "10": "The USPSTF found convincing evidence that drug therapies reduce subsequent fracture rates in postmenopausal women.",
+      "11": "The USPSTF found that the evidence is inadequate to assess the effectiveness of drug therapies in reducing subsequent fracture rates in men without previous fractures.",
+      "12": "Conclusions and recommendation: The USPSTF recommends screening for osteoporosis with bone measurement testing to prevent osteoporotic fractures in women 65 years and older.",
+      "13": "(B recommendation) The USPSTF recommends screening for osteoporosis with bone measurement testing to prevent osteoporotic fractures in postmenopausal women younger than 65 years at increased risk of osteoporosis, as determined by a formal clinical risk assessment tool.",
+      "14": "(B recommendation) The USPSTF concludes that the current evidence is insufficient to assess the balance of benefits and harms of screening for osteoporosis to prevent osteoporotic fractures in men.",
+      "15": "(I statement)."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "By 2020, about 12.3 million people in the United States older than 50 years are expected to have osteoporosis, a condition in which bones become weak and brittle.",
+        "2": "Broken bones from osteoporosis, especially hip breaks, are related to a limited ability to walk, long-term pain and disability, loss of independence, and reduced quality of life. 21% to 30% of people who break a hip die within 1 year.",
+        "3": "The number of people during a specific period with primary osteoporosis (i.e., osteoporosis not resulting from other disease), goes up with age and changes depending on race/ethnicity.",
+        "4": "With the U.S. population getting older, the possible cost of preventable disease is expected to go up in the future.",
+        "5": "We aim to update a 2011 expert panel suggestion on checking for osteoporosis.",
+        "6": "The expert panel looked at scientific studies on checking for and treatment of bone breaks due to osteoporosis in men and women, and tools to measure risk, periods between checks, and how well checks and treatment work in smaller groups.",
+        "7": "The group that was checked for osteoporosis was women who had gone through menopause (a point in time 12 months after the last period) and older men who had never had a known bone break due to osteoporosis and no known conditions or drug use known to cause osteoporosis.",
+        "8": "The expert panel found strong proof that bone measurement tests are correct for finding osteoporosis and predicting bone breaks due to osteoporosis in women and men.",
+        "9": "The expert panel found some proof that tools to measure risk are somewhat correct in finding risk of osteoporosis and bone breaks due to osteoporosis.",
+        "10": "The expert panel found strong proof that drugs decrease later bone break rates in women who have gone through menopause.",
+        "11": "The expert panel found there is not enough proof to measure how well drugs work to decrease later bone break rates in men without previous bone breaks.",
+        "12": "The expert panel suggests checking for osteoporosis with bone measurement testing to prevent bone breaks from osteoporosis in women 65 years and older.",
+        "13": "The expert panel suggests checking for osteoporosis with bone measurement testing to prevent bone breaks from osteoporosis in women younger than 65 years who have gone through menopause who have a greater risk of osteoporosis, as decided by a tool used by doctors to measure risk.",
+        "14": "The expert panel concludes there is not enough data to measure the pros versus cons of checking for osteoporosis to prevent bone breaks from osteoporosis in men.",
+        "15": ""
+      }
+    }
+  },
+  "question": "How often should i have a bone density test?",
+  "question_type": "C"
+  }
+}

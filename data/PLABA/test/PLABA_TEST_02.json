@@ -1,0 +1,365 @@
+{
+  "2": {
+  "15316838": {
+    "Title": "Duloxetine: mechanism of action at the lower urinary tract and Onuf's nucleus",
+    "abstract": {
+      "1": "Urinary incontinence is the inability to willingly control bladder voiding.",
+      "2": "Stress urinary incontinence (SUI) is the most frequently occurring type of incontinence in women.",
+      "3": "No widely accepted or approved drug therapy is yet available for the treatment of stress urinary incontinence.",
+      "4": "Numerous studies have implicated the neurotransmitters, serotonin and norepinephrine in the central neural control of the lower urinary tract function.",
+      "5": "The pudendal somatic motor nucleus of the spinal cord is densely innervated by 5HT and NE terminals.",
+      "6": "Pharmacological studies confirm central modulation of the lower urinary tract activity by 5HT and NE receptor agonists and antagonists.",
+      "7": "Duloxetine is a combined serotonin/norepinephrine reuptake inhibitor currently under clinical investigation for the treatment of women with stress urinary incontinence.",
+      "8": "Duloxetine exerts balanced in vivo reuptake inhibition of 5HT and NE and exhibits no appreciable binding affinity for receptors of neurotransmitters.",
+      "9": "The action of duloxetine in the treatment of stress urinary incontinence is associated with reuptake inhibition of serotonin and norepinephrine at the presynaptic neuron in Onuf's nucleus of the sacral spinal cord.",
+      "10": "In cats, whose bladder had initially been irritated with acetic acid, a dose-dependent improvement of the bladder capacity (5-fold) and periurethral EMG activity (8-fold) of the striated sphincter muscles was found.",
+      "11": "In a double blind, randomized, placebo-controlled, clinical trial in women with stress urinary incontinence, there was a significant reduction in urinary incontinence episodes under duloxetine treatment.",
+      "12": "In summary, the pharmacological effect of duloxetine to increase the activity of the striated urethral sphincter together with clinical results indicate that duloxetine has an interesting therapeutic potential in patients with stress urinary incontinence."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Urinary incontinence is the inability to control your bladder.",
+        "2": "Stress urinary incontinence (SUI) is the most common type of bladder control issue in women.",
+        "3": "There are no drugs that are available to treat stress urinary incontinence.",
+        "4": "Many studies have looked at two chemical messengers, serotonin and norepinephrine, for controlling bladder function.",
+        "5": "The chemical messengers serotonin (5HT) and norepinephrine (NE) go to one particular part of the spinal cord.",
+        "6": "Drug studies find that drugs which help or block the chemical messengers 5HT and NE affect bladder control.",
+        "7": "Duloxetine is a drug that increases the amount of 5HT and NE available for use and is being looked at to see if it can treat women with bladder control problems.",
+        "8": "Duloxetine increases the amount of 5HT and NE available for use while not blocking the ability of the nerves to use the chemical messengers.",
+        "9": "Duloxetine works for the treatment of bladder problems by increasing the amount of the chemical messengers 5HT and NE for use in one special area of the spinal cord",
+        "10": "Researchers tested the drug in cats with irritated bladders and found that it improved bladder capacity and muscle control.",
+        "11": "Duloxetine reduced bladder control problems for women in clincal trials.",
+        "12": "To sum up, duloxetine may be a treatment option for bladder control problems because of its effect on the bladder and the results from clinical studies."
+      },
+      "adaptation2": {
+        "1": "Urinary incontinence is the loss of bladder control.",
+        "2": "Bladder control loss from stress is the most common type of urinary incontinence in women.",
+        "3": "No approved drug therapy is available.",
+        "4": "Chemical messengers, such as serotonin and norepinephrine, in the brain and spinal cord may control function of the bladder area.",
+        "5": "A portion of the spinal cord receives chemical signals from serotonin and norepinephrine.",
+        "6": "Drug studies show activity of serotonin and norepinephrine influences bladder area activity.",
+        "7": "Duloxetine blocks removal of serotonin/norepinephrine and is studied for treating women with bladder control loss from stress.",
+        "8": "",
+        "9": "",
+        "10": "In cats with impaired bladders, the drug improved bladder capacity and control proportionally with dosage.",
+        "11": "In women with bladder control loss from stress, duloxetine reduced frequency of bladder control loss. ",
+        "12": "In short, duloxetine increases bladder control and may help patients with bladder control loss from stress."
+      }
+    }
+  },
+  "21366359": {
+    "Title": "Duloxetine: clinical pharmacokinetics and drug interactions",
+    "abstract": {
+      "1": "Duloxetine, a potent reuptake inhibitor of serotonin (5-HT) and norepinephrine, is effective for the treatment of major depressive disorder, diabetic neuropathic pain, stress urinary incontinence, generalized anxiety disorder and fibromyalgia.",
+      "2": "Duloxetine achieves a maximum plasma concentration (C(max)) of approximately 47 ng/mL (40 mg twice-daily dosing) to 110 ng/mL (80 mg twice-daily dosing) approximately 6 hours after dosing.",
+      "3": "The elimination half-life of duloxetine is approximately 10-12 hours and the volume of distribution is approximately 1640 L.",
+      "4": "The goal of this paper is to provide a review of the literature on intrinsic and extrinsic factors that may impact the pharmacokinetics of duloxetine with a focus on concomitant medications and their clinical implications.",
+      "5": "Patient demographic characteristics found to influence the pharmacokinetics of duloxetine include sex, smoking status, age, ethnicity, cytochrome P450 (CYP) 2D6 genotype, hepatic function and renal function.",
+      "6": "Of these, only impaired hepatic function or severely impaired renal function warrant specific warnings or dose recommendations.",
+      "7": "Pharmacokinetic results from drug interaction studies show that activated charcoal decreases duloxetine exposure, and that CYP1A2 inhibition increases duloxetine exposure to a clinically significant degree.",
+      "8": "Specifically, following oral administration in the presence of fluvoxamine, the area under the plasma concentration-time curve and C(max) of duloxetine significantly increased by 460% (90% CI 359, 584) and 141% (90% CI 93, 200), respectively.",
+      "9": "In addition, smoking is associated with a 30% decrease in duloxetine concentration.",
+      "10": "The exposure of duloxetine with CYP2D6 inhibitors or in CYP2D6 poor metabolizers is increased to a lesser extent than that observed with CYP1A2 inhibition and does not require a dose adjustment.",
+      "11": "In addition, duloxetine increases the exposure of drugs that are metabolized by CYP2D6, but not CYP1A2.",
+      "12": "Pharmacodynamic study results indicate that duloxetine may enhance the effects of benzodiazepines, but not alcohol or warfarin.",
+      "13": "An increase in gastric pH produced by histamine H(2)-receptor antagonists or antacids did not impact the absorption of duloxetine.",
+      "14": "While duloxetine is generally well tolerated, it is important to be knowledgeable about the potential for pharmacokinetic interactions between duloxetine and drugs that inhibit CYP1A2 or drugs that are metabolized by CYP2D6 enzymes."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Duloxetine blocks two chemical messengers from working, called serotonin (5-HT) and norepinephrine. Duloxetine is given to treat things such as depression, diabetic nerve pain, leaky bladder, anxiety, and other chronic pain.",
+        "2": "",
+        "3": "",
+        "4": "The goal of this paper is to look at other studies on duloxetine to see if the drug can be used with other drugs.",
+        "5": "Things that affect the way that duloxetine works are your sex, age, ethnicity, whether you smoke or not, the condition of your kidney and liver, and your genetics.",
+        "6": "A doctor will only have warnings against using duloxetine if your liver or kidneys are not in good condition.",
+        "7": "Studies show that activated charcoal, used to treat certain poisons, makes duloxetine less effective. Taking drugs that affect a certain enzyme with duloxetine could make you sick.",
+        "8": "Taking the drug fluvoxamine, used to treat depression and OCD, with duloxetine could make you sick.",
+        "9": "Smoking makes duloxetine less effective.",
+        "10": "Certain drugs and genetics could affect duloxetine, but not enough to affect how much dulxoetine you would take.",
+        "11": "There are certain drugs that should not be taken with duloxetine because they can make you sick when taking them normally.",
+        "12": "Studies show that duloxetine may make tranquilizers like valium and xanax stronger, but does not seem to affect alcohol or the blood thinner warfarin.",
+        "13": "Antacids and other stomach acid blockers do not affect duloxetine.",
+        "14": "It is important that your doctors know what drugs you are taking in order to make sure you do not get sick from taking duloxetine."
+      }
+    }
+  },
+  "30249798": {
+    "Title": "A Dual Noradrenergic Mechanism for the Relief of Neuropathic Allodynia by the Antidepressant Drugs Duloxetine and Amitriptyline",
+    "abstract": {
+      "1": "In addition to treating depression, antidepressant drugs are also a first-line treatment for neuropathic pain, which is pain secondary to lesion or pathology of the nervous system.",
+      "2": "Despite the widespread use of these drugs, the mechanism underlying their therapeutic action in this pain context remains partly elusive.",
+      "3": "The present study combined data collected in male and female mice from a model of neuropathic pain and data from the clinical setting to understand how antidepressant drugs act.",
+      "4": "We show two distinct mechanisms by which the selective inhibitor of serotonin and noradrenaline reuptake duloxetine and the tricyclic antidepressant amitriptyline relieve neuropathic allodynia.",
+      "5": "One of these mechanisms is acute, central, and requires descending noradrenergic inhibitory controls and α2A adrenoceptors, as well as the mu and delta opioid receptors.",
+      "6": "The second mechanism is delayed, peripheral, and requires noradrenaline from peripheral sympathetic endings and β2 adrenoceptors, as well as the delta opioid receptors.",
+      "7": "We then conducted a transcriptomic analysis in dorsal root ganglia, which suggested that the peripheral component of duloxetine action involves the inhibition of neuroimmune mechanisms accompanying nerve injury, including the downregulation of the TNF-α-NF-κB signaling pathway.",
+      "8": "Accordingly, immunotherapies against either TNF-α or Toll-like receptor 2 (TLR2) provided allodynia relief.",
+      "9": "We also compared duloxetine plasma levels in the animal model and in patients and we observed that patients' drug concentrations were compatible with those measured in animals under chronic treatment involving the peripheral mechanism.",
+      "10": "Our study highlights a peripheral neuroimmune component of antidepressant drugs that is relevant to their delayed therapeutic action against neuropathic pain.",
+      "11": "SIGNIFICANCE STATEMENT In addition to treating depression, antidepressant drugs are also a first-line treatment for neuropathic pain, which is pain secondary to lesion or pathology of the nervous system.",
+      "12": "However, the mechanism by which antidepressant drugs can relieve neuropathic pain remained in part elusive.",
+      "13": "Indeed, preclinical studies led to contradictions concerning the anatomical and molecular substrates of this action.",
+      "14": "In the present work, we overcame these apparent contradictions by highlighting the existence of two independent mechanisms.",
+      "15": "One is rapid and centrally mediated by descending controls from the brain to the spinal cord and the other is delayed, peripheral, and relies on the anti-neuroimmune action of chronic antidepressant treatment."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "In addition to treating depression, antidepressants are used to treat chronic pain.",
+        "2": "Doctors do not yet understand how exactly these drugs treat chronic pain.",
+        "3": "This study combines the results of a study done on mice and a study done on humans to try to understand how the antidepressants work on pain.",
+        "4": "The study shows two different ways that the drugs duloxetine and amitriptyline relieve nerve pain.",
+        "5": "One way that duloxetine and amitriptyline work is by affecting the nerves quickly and strongly.",
+        "6": "The other way duloxetine and amitriptyline work is by affecting the nerves in a delayed way using different chemical messengers.",
+        "7": "The study suggests that duloxetine works by affecting the immune system around the nerve injury.",
+        "8": "This means that certain treatments that affect the immune system also relieved pain caused by touch.",
+        "9": "Researchers also found that duloxetine works similiarly in both humans and animals used for testing.",
+        "10": "This study shows a delayed way that antidepressant drugs use to treat chronic pain.",
+        "11": "In addition to treating depression, antidepressant drugs can also be used to treat chronic pain.",
+        "12": "However, researchers still don't understand how antidepressant drugs work to treat chronic pain.",
+        "13": "Previous animal studies did not give an answer to how antidepressants treat chronic pain.",
+        "14": "This study shows that there are two different ways antidepressants treat chronic pain.",
+        "15": "One way the antidepressants work is by affecting the brain and spinal cord quickly. The second way the antidepressants work is slower and affects the inmmune system around the nerves."
+      },
+      "adaptation2": {
+        "1": "Antidepressant drugs, aside from treating depression, are also an important treatment for pain that comes from sensory nerve disorders.",
+        "2": "However, we still don't know why antidepressants work for this type of pain.",
+        "3": "This study examined mice with this type of pain to learn more.",
+        "4": "We specifically examine the antidepressants duloxetine and amitriptyline. Duloxetine prevents the neurotransmitters serotonin and norepinephrine from being re-absorbed by cells, increasing the amount available. For relieving allodynia (where pain is felt instead of other sensations like touch), we found there are two different ways antidepressants can work. ",
+        "5": "One way is short-term and involves the central nervous system.",
+        "6": "The other way is long-term and involves the neurotransmitter noradrenalin coming from the sympathetic nervous system (which controls the \"fight or flight\" response) and opioid receptors (which opioid drugs act on).",
+        "7": "We then studied the gene activation in clusters of nerve cells in the spinal cord. Results suggested that duloxetine acts on the peripheral nervous system by inhibiting the immune response following nerve injury.",
+        "8": "",
+        "9": "We also compared the amount of duloxetine in the blood of the mice versus people. We found that the level of the drug in people was similar to the level in the mice being treated long-term.",
+        "10": "This study shows that the immune system of the peripheral nervous system is important to how antidepressants provide long-term relief of pain that does not come from injury.",
+        "11": "Antidepressant drugs, aside from treating depression, are also an important treatment for pain that comes from sensory nerve disorders.",
+        "12": "However, we still don't know why antidepressants work for this type of pain.",
+        "13": "In fact, studies done before clinical trials seemed to create contradictions in how they acted.",
+        "14": "This study suggests that these apparent contradictions are actually because there are two different ways the drugs can work.",
+        "15": "One way is quick and involves the connection of the brain to the spinal cord. The other way is delayed and involves suppression of nerve-related immune response when taking antidepressants long-term."
+      }
+    }
+  },
+  "30838456": {
+    "Title": "Serotonin and Norepinephrine Reuptake Inhibitors",
+    "abstract": {
+      "1": "This chapter covers antidepressants that fall into the class of serotonin (5-HT) and norepinephrine (NE) reuptake inhibitors.",
+      "2": "That is, they bind to the 5-HT and NE transporters with varying levels of potency and binding affinity ratios.",
+      "3": "Duloxetine is a more potent 5-HT and NE reuptake inhibitor with a more balanced profile of binding at about 10:1 for 5HT and NE transporter binding.",
+      "4": "It is also a moderate inhibitor of CYP2D6, so that modest dose reductions and careful monitoring will be needed when prescribing duloxetine in combination with drugs that are preferentially metabolized by CYP2D6.",
+      "5": "The most common side effects identified in clinical trials are nausea, dry mouth, dizziness, constipation, insomnia, asthenia, and hypertension, consistent with its mechanisms of action.",
+      "6": "Clinical trials to date have demonstrated rates of response and remission in patients with major depression that are comparable to other marketed antidepressants reviewed in this book.",
+      "7": "In addition to approval for MDD, duloxetine is approved for diabetic peripheral neuropathic pain, fibromyalgia, and musculoskeletal pain.",
+      "8": "All medications in the class can cause serotonin syndrome when combined with MAOIs."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "This chapter talks about the antidepressant drugs that are called serotonin (5-HT) and norepinephrine (NE) reuptake inhibitors.",
+        "2": "",
+        "3": "Duloxetine is a strong version of the 5-HT and NE reuptake inhibitor type.",
+        "4": "The way that duloxetine works means that doctors will have to watch you closely and may have to adjust your dose if you are taking certain types of other drugs.",
+        "5": "Duloxetine's side effects include upset stomach, dry mouth, dizzy spells, constipation, high blood pressure, and loss of sleep and energy.",
+        "6": "Studies show that duloxetine treats depression just as well as other drugs.",
+        "7": "In addition to treating depression, duloxetine may be given to you to treat pain such as pain caused by diabetes and other body pains.",
+        "8": "Drugs in the 5-HT and NE reuptake inhibitor class can make you very sick if taken with drugs that are in the MAOI class of antidepressants."
+      },
+      "adaptation2": {
+        "1": "This work covers antidepressants that block removal of the chemical messengers, serotonin (5-HT) and norepinephrine (NE).",
+        "2": "These antidepressants bind to 5-HT and NE transporters with varying effect.",
+        "3": "Duloxetine, an antidepressant, is a stronger, more balanced drug for blocking the removal of 5-HT and NE.",
+        "4": "Duloxetine suppresses the drug-metabolizing molecule, CYP2D6. Thus, careful dosage changes and monitoring are needed when used with other drugs digested by CYP2D6.",
+        "5": "The most common side effects are nausea, dry mouth, dizziness, constipation, insomnia, physical weakness, and high blood pressure.",
+        "6": "The drug works with similar success to other antidepressants.",
+        "7": "Besides depression, duloxetine also treats nerve damage from diabetes and full-body muscle pain.",
+        "8": "Similar medications that are used with another class of antidepressant medication can lead to high levels of serotonin."
+      }
+    }
+  },
+  "31747213": {
+    "Title": "Duloxetine",
+    "abstract": {
+      "1": "Duloxetine is a medication used to manage major depressive disorder (MDD), generalized anxiety disorder (GAD), fibromyalgia, diabetic peripheral neuropathy, and chronic musculoskeletal pain.",
+      "2": "Off-label uses for duloxetine include chemotherapy-induced peripheral neuropathy and stress urinary incontinence.",
+      "3": "It is in the Serotonin and norepinephrine reuptake inhibitors (SNRIs) class of medications.",
+      "4": "This activity describes the indications, mechanism of action, and contraindications for duloxetine as a valuable agent in treating multiple health conditions.",
+      "5": "This activity will highlight the mechanism of action, adverse event profile, and other key factors (e.g., off-label uses, dosing, pharmacodynamics, pharmacokinetics, monitoring, relevant drug-drug interactions) pertinent for members of the interprofessional team in the treatment of patients with major depressive disorder (MDD), generalized anxiety disorder (GAD), fibromyalgia, diabetic peripheral neuropathy, chronic musculoskeletal pain, and related conditions."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Duloxetine is a medication used to treat depression, anxiety, fibromyalgia, diabete nerve damage, and chronic pains in the body.",
+        "2": "Duloxetine may also be used to treat nerve pain caused by chemotherapy and loss of bladder control caused by physical activity.",
+        "3": "Duloxetine is in the Serotonin and norepinephrine reuptake inhibitors (SNRIs) class of medications.",
+        "4": "Duloxetine is valuable because it treats many different health problems. This article describes the uses of the antidepressant, how it works, and medications that should not be used while taking it.",
+        "5": "This article will highlight things your doctors will need to know when prescribing duloxetine for treatment."
+      }
+    }
+  },
+  "32546134": {
+    "Title": "Antidepressants and movement disorders: a postmarketing study in the world pharmacovigilance database",
+    "abstract": {
+      "1": "Background: Antidepressants-induced movement disorders are rare and imperfectly known adverse drug reactions.",
+      "2": "The risk may differ between different antidepressants and antidepressants' classes.",
+      "3": "The objective of this study was to assess the putative association of each antidepressant and antidepressants' classes with movement disorders.",
+      "4": "Methods: Using VigiBase®, the WHO Pharmacovigilance database, disproportionality of movement disorders' reporting was assessed among adverse drug reactions related to any antidepressant, from January 1967 to February 2017, through a case/non-case design.",
+      "5": "The association between nine subtypes of movement disorders (akathisia, bruxism, dystonia, myoclonus, parkinsonism, restless legs syndrome, tardive dyskinesia, tics, tremor) and antidepressants was estimated through the calculation first of crude Reporting Odds Ratio (ROR), then adjusted ROR on four potential confounding factors: age, sex, drugs described as able to induce movement disorders, and drugs used to treat movement disorders.",
+      "6": "Results: Out of the 14,270,446 reports included in VigiBase®, 1,027,405 (7.2%) contained at least one antidepressant, among whom 29,253 (2.8%) reported movement disorders.",
+      "7": "The female/male sex ratio was 2.15 and the mean age 50.9 ± 18.0 years.",
+      "8": "We found a significant increased ROR for antidepressants in general for all subtypes of movement disorders, with the highest association with bruxism (ROR 10.37, 95% CI 9.62-11.17) and the lowest with tics (ROR 1.49, 95% CI 1.38-1.60).",
+      "9": "When comparing each of the classes of antidepressants with the others, a significant association was observed for all subtypes of movement disorders except restless legs syndrome with serotonin reuptake inhibitors (SRIs) only.",
+      "10": "Among antidepressants, mirtazapine, vortioxetine, amoxapine, phenelzine, tryptophan and fluvoxamine were associated with the highest level to movement disorders and citalopram, paroxetine, duloxetine and mirtazapine were the most frequently associated with movement disorders.",
+      "11": "An association was also found with eight other antidepressants.",
+      "12": "Conclusions: A potential harmful association was found between movement disorders and use of the antidepressants mirtazapine, vortioxetine, amoxapine, phenelzine, tryptophan, fluvoxamine, citalopram, paroxetine, duloxetine, bupropion, clomipramine, escitalopram, fluoxetine, mianserin, sertraline, venlafaxine and vilazodone.",
+      "13": "Clinicians should beware of these adverse effects and monitor early warning signs carefully.",
+      "14": "However, this observational study must be interpreted as an exploratory analysis, and these results should be refined by future epidemiological studies."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "A rare side effect of taking antidepressant drugs is uncontrollable movement, also called movement disorders.",
+        "2": "There may be different side effects depending on what antidepressant drugs you take.",
+        "3": "This study tried to figure out which antidepressant drugs caused which movement disorder side effects.",
+        "4": "This study looked at reports of antidepressant use from 1967 to 2017 using a computer database.",
+        "5": "This study used statistics to see if the links between the different antidepressants and movement disorders.",
+        "6": "There were over 14 million reports in the database. One million of those contained a report of antidepressant use. Almost 30 thousand of the antidepressant reports contained a movement disorder side effect.",
+        "7": "The patients in the reports ranged from 32-68 years old and contained twice as many women as men.",
+        "8": "All movement disorders were linked to antidepressant use. Jaw clenching was seen the most often, and involuntary movement called tics were the least seen.",
+        "9": "The anitdepressant drug class called serotonin reuptake inhibitors (SRIs) were most often linked to movement disorders except for restless leg syndrome.",
+        "10": "The antidepressants linked to the strongest movement disorders, like Parkinson's or Huntington's disease, were mirtazapine, vortioxetine, amoxapine, phenelzine, tryptophan, and fluvoxamine. The antidepressants with the most movement disorder side effects were citalopram, paroxetine, duloxetine, and mirtazapine.",
+        "11": "Eight other antidepressants were linked to movement disorder side effects.",
+        "12": "This study found that movement disorder side effects were linked to the antidepressants mirtazapine, vortioxetine, amoxapine, phenelzine, tryptophan, fluvoxamine, citalopram, paroxetine, duloxetine, bupropion, clomipramine, escitalopram, fluoxetine, mianserin, sertraline, venlafaxine, and vilazodone.",
+        "13": "Doctors should be aware of side effects and watch patients on antidepresants carefully.",
+        "14": "This study is introductory and should be furthered explored with more studies."
+      }
+    }
+  },
+  "32874005": {
+    "Title": "Duloxetine-induced hypertensive urgency in type 2 diabetes mellitus with diabetic neuropathy",
+    "abstract": {
+      "1": "We present a case of hypertensive urgency in a diabetic patient with painful diabetic neuropathy on duloxetine treatment.",
+      "2": "The patient's blood pressure was high after taking 1-day dose of duloxetine and the patient was diagnosed with hypertensive urgency.",
+      "3": "The patient was treated with labetalol, leading to reduction in blood pressure.",
+      "4": "The patient's medication was switched to telmisartan and metoprolol, which leads to resolution of increased blood pressure.",
+      "5": "This case report is a possible case of hypertensive urgency after the initiation of duloxetine managed with antihypertensives and resolves with the discontinuation of the duloxetine."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "This paper is about a patient with pain caused by diabetes who went to the doctor with very serious high blood pressure.",
+        "2": "The patient's blood pressure was high after taking a 1-day dose of the antidepressant duloxetine (a drug that also treats diabetic nerve pain). The patient was diagnosed with a high blood pressure emergency.",
+        "3": "The patient was given labetalol, a drug that lowers blood pressure.",
+        "4": "The patient was switched to the drugs telmisartan and metoprolol, which treat high blood pressure.",
+        "5": "This paper reports on a case of high blood pressure caused by the drug duloxetine. It was treated with drugs that treat high blood pressure and went back to normal after the patient stopped taking duloxetine."
+      }
+    }
+  },
+  "33347023": {
+    "Title": "Influence of Different Antidepressants on Ocular Surface in Patients With Major Depressive Disorder",
+    "abstract": {
+      "1": "Purpose: Several studies have previously reported the association between dry eye and depression along with the treatment of depression.",
+      "2": "The aim of this study was to investigate the effects of different antidepressant drugs on tear parameters in patients with major depressive disorder.",
+      "3": "Methods: We recruited 132 patients who were using different antidepressants and 58 healthy controls.",
+      "4": "Venlafaxine, duloxetine, escitalopram, and sertraline were used by 34, 28, 36, and 34 patients, respectively.",
+      "5": "The participants filled out and completed the Beck Depression Scale.",
+      "6": "We recorded Schirmer test, tear breakup time (TBUT) and corneal staining values of the participants.",
+      "7": "The Ocular Surface Disease Index was completed by the participants.",
+      "8": "In addition, we evaluated the tear meniscus parameters by using anterior segment optical coherence tomography.",
+      "9": "Results: All conventional dry eye tests and tear meniscus parameters were significantly lesser in the depression group than in the control group (Schirmer test, 11.41 ± 6.73 mm and 22.53 ± 4.98 mm; TBUT, 5.29 ± 2.92 seconds and 13.38 ± 1.72; Corneal staining, tear meniscus area, 0.026 ± 0.012 mm2 and 0.11 ± 0.025 mm2; tear meniscus depth, 182.75 ± 78.79 μm and 257.48 ± 90.1 μm; tear meniscus height, 290.3 ± 133.63 μm and 459.78 ± 180.26 μm, in patients and controls, respectively).",
+      "10": "The tear parameters of the duloxetine group were lowest among the drug groups and Schirmer test, and TBUT of the venlafaxine group was statistically significantly different from the duloxetine group (P = 0.028 and P = 0.017, respectively).",
+      "11": "Ocular Surface Disease Index score of the depression group was significantly higher than the control group (31.12 ± 21.15 and 17.43 ± 11.75 in depression and control group, respectively.).",
+      "12": "Conclusions: We found that the usage of selective serotonin reuptake inhibitors and serotonin noradrenaline reuptake inhibitors affects the ocular surface by a mechanism other than the anticholinergic system.",
+      "13": "Besides serotonin blockage, the noradrenaline blockade of serotonin noradrenaline reuptake inhibitors may increase the dry eye findings on the ocular surface."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Studies show that there is a link between depression treatment and dry eyes.",
+        "2": "This study looks at the tears of depressed people when given different types of drugs that treat depression.",
+        "3": "This study includes 132 people taking antidepressant drugs and 58 people not taking antidepressant drugs for comparison.",
+        "4": "Patients were taking the antidepressant drugs called venlafaxine, duloxetine, escitalopram, and sertraline.",
+        "5": "Patients filled our a form to measure their level of depression.",
+        "6": "The researchers looked at the eyes and tears of the patients.",
+        "7": "Patients filled out a form to measure the dryness of their eyes.",
+        "8": "",
+        "9": "Those people taking antidepressant drugs had drier eyes than those that were not taking antidepressant drugs.",
+        "10": "The people taking duloxetine had the driest eyes.",
+        "11": "The people taking antidepressant drugs scored much higher on a test to measure dry eyes.",
+        "12": "This study finds that certain classes of antidepressant drugs affects the eye ducts but does not because the drugs affect the nerves.",
+        "13": "Using antidepressants from the drug class called serotonin noradrenaline reuptake inhibitors may lead to dry eyes."
+      },
+      "adaptation2": {
+        "1": "Dry eye, depression, and treatent of depression may be linked.",
+        "2": "This study investigates how different antidepressant drugs affects eye tears in patients with depression.",
+        "3": "We included 132 patients using different antidepressants and 58 healthy people.",
+        "4": "Different antidepressants were used by groups of size 34, 28, 36, and 34.",
+        "5": "Participants filled out a questionnaire to measure depression.",
+        "6": "We recorded different eye and tear measurements.",
+        "7": "Participants completed an eye measurement test.",
+        "8": "We also measured other parameters of the tear.",
+        "9": "The depression group had smaller dry eye and tear volume than the healthy group.",
+        "10": "The tear measurements of the antidepressant duloxetine group was lowest among the drug groups and notably different than the antidepressant venlafaxine group.",
+        "11": "Dry eye of the depression group was worse than that of the healthy group.",
+        "12": "We found that using antidepressants that block removal of the chemical messengers serotonin and noradrenaline affect the eye surface.",
+        "13": "Besides blocking removal of serotonin, blockage of noradrenaline by these antidepressants may increase dry eye."
+      }
+    }
+  },
+  "33542006": {
+    "Title": "Atraumatic trismus induced by duloxetine: an uncommon presentation of acute dystonia",
+    "abstract": {
+      "1": "Atraumatic trismus can be one of the presentations of medication-induced acute dystonia, particularly by antipsychotics and less commonly antidepressants.",
+      "2": "A case of an unusual emergency presentation of atraumatic trismus on initiation of duloxetine is reported.",
+      "3": "The patient was a 40-year-old woman experiencing sudden difficulty in mouth opening and speaking due to a stiffened jaw after taking 5 days of duloxetine prescribed for her fibromyalgia-related chest pain.",
+      "4": "Assessment of vital signs is prudent to ensure there is no laryngeal involvement.",
+      "5": "Other physical examinations and her recent investigations were unremarkable.",
+      "6": "She was treated for acute dystonia and intravenous procyclidine was given together with oral diazepam.",
+      "7": "Her symptoms improved immediately and her duloxetine was suggested to be stopped.",
+      "8": "To our knowledge, this is the first case of isolated trismus induced by duloxetine.",
+      "9": "Clinicians should be aware of this risk, especially considering the limitation of important physiological functions (such as swallowing, eating, etc) associated with this condition."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "A stiff jaw is a possible side effect of taking certain medications, such as antidepressant drugs or drugs called antipsychotics.",
+        "2": "Here is an example of someone who visited the ER with a severely stiff jaw after taking the drug duloxetine.",
+        "3": "The patient was a 40-year-old woman who was having trouble with opening her mouth and speaking five days after starting the drug duloxetine.",
+        "4": "",
+        "5": "The woman's doctors found no other problems that might cause her jaw stiffness.",
+        "6": "She was treated for muscle spasms with an IV and pills.",
+        "7": "The woman improved right away and was told to stop taking duloxetine.",
+        "8": "This is the first time the authors have heard of jaw stiffness being caused by the drug duloxetine.",
+        "9": "Doctors should be aware of the risk of jaw stiffness since it could lead to very serious problems."
+      }
+    }
+  },
+  "34397423": {
+    "Title": "Suicidality and other severe psychiatric events with duloxetine: Re-analysis of safety data from a placebo-controlled trial for juvenile fibromyalgia",
+    "abstract": {
+      "1": "Background: In antidepressant trials for pediatric patients with depression or anxiety disorders, the risk of suicidal events and other severe psychiatric adverse events such as aggression and agitation is increased with antidepressants relative to placebo.",
+      "2": "Objective: To examine whether largely mentally healthy adolescents treated for a non-psychiatric condition are also at increased risk of suicidality and other severe psychiatric disorders.",
+      "3": "Methods: This is a re-analysis of a placebo-controlled duloxetine trial for juvenile fibromyalgia based on the main journal article and additional data published in the online supplementary material and on ClinicalTrials.gov.",
+      "4": "Both serious adverse events related to psychiatric disorders and adverse events leading to treatment discontinuation were defined as severe treatment-emergent psychiatric adverse events.",
+      "5": "Results: We found that a significant portion of adolescents had treatment-emergent suicidal ideation and behaviour as well as other severe psychiatric adverse events with duloxetine, but no such events were recorded on placebo.",
+      "6": "The incidence of severe treatment-emergent psychiatric adverse events was statistically significantly higher with duloxetine as compared to placebo.",
+      "7": "Conclusions: Antidepressants may put adolescents at risk of suicidality and other severe psychiatric disorders even when the treatment indication is not depression or anxiety."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Children with depression or anxiety have a higher risk of suicide and aggressive and anxious behavior when taking antidepressants. ",
+        "2": "This study wants to find out if healthy teens have a higher risk of suicide and other bad thoughts when taking antidepressants for reasons other than depression.",
+        "3": "This study looks at data from another study where teens with chronic pain known as fibromyalgia were treated with an antidepressant called duloxetine.",
+        "4": "The study defined severe side effects as suicidal and other bad thoughts and anything that stopped the patient from taking the drug.",
+        "5": "The study found that a large number of teens in the study had suicidal thoughts and other side effects when treated with duloxetine. Teens that were not taking the drug did not have these side effects.",
+        "6": "Many more instances of severe side effects occurred for teens taking duloxetine as opposed to those not taking the drug.",
+        "7": "Teens may be at risk of suicide and other bad thoughts when taking the drug duloxetine even if the drug is not being used to treat depression or anxiety."
+      },
+      "adaptation2": {
+        "1": "Studies of antidepressants in minors with depression or anxiety have shown a higher risk of suicide attempts and other severe mental issues, such as aggression and agitation, when taking antidepressants.",
+        "2": "Our objective was to see if healthy adolescents being treated for a non-mental condition also have a higher risk of suicide attempts and severe mental issues.",
+        "3": "We took a second look at the results from a published trial of duloxetine (Cymbalta) for treating fibromyalgia (a chronic pain disorder). We used results both from the published article and from supplemental results online and from ClinicalTrials.gov.",
+        "4": "",
+        "5": "We found that a significant portion of the adolescents on duloxetine had suicidal tendencies and other serious mental side effects. None of these problems were seen in the participants that weren't taking duloxetine.",
+        "6": "",
+        "7": "We concluded that antidepressants may put adolescents at risk of suicidal tendencies and other serious mental problems, even if they are not being treated for depression or anxiety."
+      }
+    }
+  },
+  "question": "What does duloxetine do?",
+  "question_type": "B"
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "63": {
+  "17679728": {
+    "Title": "A phase II placebo-controlled trial of neoadjuvant anastrozole alone or with gefitinib in early breast cancer",
+    "abstract": {
+      "1": "Purpose: Increased epidermal growth factor receptor (EGFR) expression may promote breast cancer resistance to endocrine therapy.",
+      "2": "We have therefore investigated whether neoadjuvant gefitinib, an EGFR inhibitor, might overcome biologic and clinical resistance to neoadjuvant anastrozole in a phase II placebo-controlled trial.",
+      "3": "Patients and methods: Postmenopausal women with stage I to IIIB hormone receptor-positive early breast cancer received anastrozole 1 mg daily for 16 weeks and were randomly assigned at a ratio of 2:5:5 to receive, in addition, gefitinib 250 mg/d orally for 16 weeks: placebo 1 tablet/d orally for 2 weeks and then gefitinib for 14 weeks or placebo for 16 weeks.",
+      "4": "The primary end point was biologic change in proliferation as measured by Ki67 at 2 and 16 weeks; the main secondary end point was overall objective response (OR).",
+      "5": "Results: Two hundred six women were randomly assigned.",
+      "6": "Mean changes in Ki67 with anastrozole and gefitinib versus anastrozole alone were -77.4% and -83.6%, respectively, between baseline and 16 weeks (geometric mean ratio = 1.37; 95% CI, 0.79 to 2.39; P = .26), -80.1% and -71.3% between baseline and 2 weeks (geometric mean ratio = 0.70; 95% CI, 0.39 to 1.25; P = .22) and -19.3% and -43% (geometric mean ratio = 1.42; 95% CI, 0.86 to 2.35; P = .16) between 2 and 16 weeks.",
+      "7": "ORs in the combination and anastrozole alone groups were 48% and 61% (estimated difference = -13.1%; 95% CI, -27.3% to 1.2%), respectively, with a nonsignificant trend against the combination (P = .08) and 48% versus 72% (estimated difference = -24.1%; 95% CI, -45.3% to -2.9%) in the progesterone-receptor-positive subgroup, which was significant (P = .03) and consistent with Ki67 changes.",
+      "8": "Common treatment-related adverse events included diarrhea, rash, alopecia, dry skin, and nausea.",
+      "9": "There was no evidence of a pharmacokinetic interaction.",
+      "10": "Conclusion: Addition of gefitinib to neoadjuvant anastrozole had no additional clinical or biologic effect, failing to support our original hypothesis."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "For the study's purpose, increased skin-related or epidermal growth factor receptor (EGFR) expression may promote breast cancer resistance to hormonal therapy.",
+        "2": "We have studied if giving gefitinib, an EGFR blocker, first might overcome biologic and medical resistance to pre-treatment anastrozole (a drug commonly used for breast cancer) in a medical trial.",
+        "3": "The study included postmenopausal women (women who had their last period) with hormone receptor-specific, early breast cancer received anastrozole 1 mg daily for 16 weeks. Then, they were randomly assigned at a ratio of 2:5:5 to also receive (1) gefitinib 250 mg/d by mouth for 16 weeks, (2) dummy treatment 1 tablet/d by mouth for 2 weeks and then gefitinib for 14 weeks, or (3) dummy treatment for 16 weeks.",
+        "4": "The main measure was biologic change in cancer cell growth at 2 and 16 weeks. The main secondary measure was overall health improvement or objective response (OR).",
+        "5": "For the study's results, two hundred six women were randomly assigned.",
+        "6": "Average changes in cancer cell growth with anastrozole and gefitinib versus anastrozole alone were -77.4% and -83.6%, respectively, between start and 16 weeks, -80.1% and -71.3% between start and 2 weeks, and -19.3% and -43% between 2 and 16 weeks.",
+        "7": "ORs in the 2-drug-group and anastrozole alone group were 48% and 61%, respectively, and 48% versus 72% in the female-sex-hormone-specific subgroup, which was  consistent with cancer cell growth changes.",
+        "8": "Common treatment-related side effects included diarrhea, rash, alopecia (hair loss or thinning), dry skin, and nausea.",
+        "9": "There was no evidence of a drug interaction.",
+        "10": "In conclusion, adding gefitinib to pre-treatment anastrozole had no additional clinical or biologic effect, failing to support our original theory."
+      }
+    }
+  },
+  "20821047": {
+    "Title": "Anastrozole and letrozole: an investigation and comparison of quality of life and tolerability",
+    "abstract": {
+      "1": "Previous studies have demonstrated that both anastrozole and letrozole are well tolerated.",
+      "2": "Letrozole suppresses estrogen to a greater degree than anastrozole in the serum and breast tumor.",
+      "3": "Concerns have been raised that greater potency may adversely affect patients' quality of life (QOL).",
+      "4": "One hundred eighty-one postmenopausal women with invasive estrogen receptor-positive breast cancers were randomized to receive either 12 weeks of letrozole followed by 12 weeks of anastrozole or the reverse sequence.",
+      "5": "One hundred and six received immediate adjuvant aromatase inhibitors (AIs) following surgery, and 75 received extended adjuvant therapy.",
+      "6": "The Functional Assessment of Cancer Therapy Endocrine Subscale (FACT-B-ES) QOL questionnaires were completed to assess QOL on each drug.",
+      "7": "Additional side-effect profiles were collected.",
+      "8": "Each patient completed a patient preference form.",
+      "9": "Twenty-one patients withdrew before study end, 10/179 (5.6%) while taking letrozole and 4/173 (2.3%) while taking anastrozole (P = 0.12).",
+      "10": "Tamoxifen-naïve patients had a higher mean ES (endocrine symptoms subscale) score at entry versus those having extended therapy (66.0 vs. 61.9; P = 0.001).",
+      "11": "There was no significant change in FACT-B-ES (overall) scores or ES scores while patients were taking anastrozole or letrozole and no significant differences between drugs.",
+      "12": "Nearly 80% of patients reported one or more side effects with either agent.",
+      "13": "No differences in frequency, grade, or range of side effects were seen between drugs.",
+      "14": "Of 160 patients, 49 (30.6%) preferred letrozole, 57 (35.6%) preferred anastrozole, and 54 (33.8%) had no preference (P = 0.26, Pearson's Chi-squared test).",
+      "15": "In conclusion, both AIs are equally well tolerated.",
+      "16": "There were no significant differences in QOL scores between the two drugs."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Previous studies showed that both anastrozole and letrozole (drugs to treat breast cancer) are well tolerated.",
+        "2": "Letrozole reduces estrogen (a female sex hormone) more than anastrozole in the blood and breast tumor.",
+        "3": "There are concerns that its greater strength may harm patients' quality of life (QOL).",
+        "4": "One hundred eighty-one women who have finished their last period and with harmful estrogen-related breast cancers received either 12 weeks of letrozole followed by 12 weeks of anastrozole or the reverse.",
+        "5": "One hundred and six received immediate, secondary aromatase inhibitors (Ais) (drugs used to treat breast cancer) after surgery. 75 received extended secondary therapy.",
+        "6": "Hormonal-cancer-therapy-specific questionnaires were completed to measure QOL on each drug.",
+        "7": "Descriptions of side effects were collected.",
+        "8": "Each patient completed a patient preference form.",
+        "9": "Twenty-one patients quit before the study's end. 10/179 (5.6%) quit while taking letrozole, and 4/173 (2.3%) quit while taking anastrozole.",
+        "10": "Pateints treated with tamoxifen (an estrogen-influencing medication) had a higher hormonal symptom score at the start versus those with long-term therapy.",
+        "11": "There was no change in hormonal therapy scores while patients were taking anastrozole or letrozole. There was also no significant differences between drugs.",
+        "12": "Almost 80% of patients mentioned one or more side effects with either agent.",
+        "13": "No difference in frequency, severity, or range of side effects were seen between drugs.",
+        "14": "Of 160 patients, 49 (30.6%) preferred letrozole, 57 (35.6%) preferred anastrozole, and 54 (33.8%) had no preference.",
+        "15": "In conclusion, both Ais are equally tolerated.",
+        "16": "There were no differences in QOL scores between the two drugs."
+      }
+    }
+  },
+  "24037977": {
+    "Title": "Alopecia with endocrine therapies in patients with cancer",
+    "abstract": {
+      "1": "Background: Whereas the frequency of alopecia to cytotoxic chemotherapies has been well described, the incidence of alopecia during endocrine therapies (i.e., anti-estrogens, aromatase inhibitors) has not been investigated.",
+      "2": "Endocrine agents are widely used in the treatment and prevention of many solid tumors, principally those of the breast and prostate.",
+      "3": "Adherence to these therapies is suboptimal, in part because of toxicities.",
+      "4": "We performed a systematic analysis of the literature to ascertain the incidence and risk for alopecia in patients receiving endocrine therapies.",
+      "5": "Results: Data from 19,430 patients in 35 clinical trials were available for analysis.",
+      "6": "Of these, 13,415 patients had received endocrine treatments and 6,015 patients served as controls.",
+      "7": "The incidence of all-grade alopecia ranged from 0% to 25%, with an overall incidence of 4.4% (95% confidence interval: 3.3%-5.9%).",
+      "8": "The highest incidence of all-grade alopecia was observed in patients treated with tamoxifen in a phase II trial (25.4%); similarly, the overall incidence of grade 2 alopecia by meta-analysis was highest with tamoxifen (6.4%).",
+      "9": "The overall relative risk of alopecia in comparison with placebo was 12.88 (p < .001), with selective estrogen receptor modulators having the highest risk.",
+      "10": "Conclusion: Alopecia is a common yet underreported adverse event of endocrine-based cancer therapies.",
+      "11": "Their long-term use heightens the importance of this condition on patients' quality of life.",
+      "12": "These findings are critical for pretherapy counseling, the identification of risk factors, and the development of interventions that could enhance adherence and mitigate this psychosocially difficult event."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "For the study's background, while the frequency of alopecia (hair loss or thinning) to powerful chemotherapies (cancer-treating treatments) has been well described, the frequency of alopecia during hormonal therapies (i.e., anti-estrogens, aromatase inhibitors used to treat breast cancer) has not been described.",
+        "2": "Hormonal agents are widely used in the treatment and prevention of many solid tumors, mainly those of the breast and prostrate.",
+        "3": "Sticking to these therapies is not the best, In part due to toxicities.",
+        "4": "We analyzed scientific papers to measure the frequency and risk for alopecia in patients receiving hormonal therapies.",
+        "5": "Data from 19,430 patients in 35 clinical trials were available for analysis.",
+        "6": "Of these, 13,415 patients got hormonal treatments. 6,015 did not.",
+        "7": "The frequency of any alopecia ranged from 0% to 25%, with an overall frequency of 4.4%.",
+        "8": "The highest frequency of any alopecia was seen in patients treated with tamoxifen (an estrogen-influencing drug) in a clinical trial (25.4%). Similarly, the overall frequency of severe alopecia in the analysis was highest with tamoxifen (6.4%).",
+        "9": "The overall risk of alopecia compared with sham treatment was 12.88, with specific estrogen-receptor influencers having the highest risk.",
+        "10": "In conclusion, alopecia is a common yet rarely-mentioned side effect of hormonal cancer therapies.",
+        "11": "Their long-term use increases the importance of this condition on patients' quality of life.",
+        "12": "These findings are important for pre-therapy counseling, identifying risk factors, and creating treatments that could improve sticking to the plan and lowering this emotionally difficult event."
+      }
+    }
+  },
+  "24197658": {
+    "Title": "Aromatase inhibitor therapy and hair loss among breast cancer survivors",
+    "abstract": {
+      "1": "The objective of this study was to examine the associations between aromatase inhibitor therapy and hair loss or hair thinning among female breast cancer survivors.",
+      "2": "Data were analyzed from 851 female breast cancer survivors who responded to a hospital registry-based survey.",
+      "3": "Data on hair loss, hair thinning, demographic characteristics, and health habits were based on self-report; data on aromatase inhibitor therapy were collected on the survey and verified using medical record review.",
+      "4": "Logistic regression was used to estimate the odds ratios (ORs) and 95 % confidence intervals (CIs) for the associations between aromatase inhibitor therapy and the hair outcome variables adjusted for potential confounders, including age and chemotherapy treatment.",
+      "5": "The results showed that 22.4 % of the breast cancer survivors reported hair loss and 31.8 % reported hair thinning.",
+      "6": "In the confounder-adjusted analyses, breast cancer survivors who were within 2 years of starting aromatase inhibitor treatment at the time of survey completion were approximately two and a half times more likely to report reporting hair loss (OR 2.55; 95 % CI 1.19-5.45) or hair thinning (OR 2.33; 95 % CI 1.10-4.93) within the past 4 weeks compared to those who were never treated with an aromatase inhibitor.",
+      "7": "Current aromatase inhibitor use for two or more years at the time of the survey and prior use were significantly associated with hair thinning (current users, ≥2 years: OR 1.86; prior users: OR 1.62), but not hair loss.",
+      "8": "Findings from this study suggest that aromatase inhibitor use is associated with an increased risk of hair loss and hair thinning independent of chemotherapy and age; these side effects are likely due to the substantial decrease in estrogen concentrations resulting from treatment with this drug.",
+      "9": "Future research should focus on examining these associations in a prospective manner using more detailed and objective measures of hair loss and thinning."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "This study examines the links between aromatase inhibitor therapy (drugs commonly used to treat breast cancer) and hair loss or hair thinning among female breast cancer survivors.",
+        "2": "We analyzed data from 851 female breast cancer survivors who responded to a hospital survey.",
+        "3": "Data on hair loss, hair thinning, background information, and health habits were self-reported. Data on aromatase inhibitor therapy were collected by the survey and verified with medical records.",
+        "4": "The relationship between aromatase inhibitor therapy and hair outcome was mathematically estimated and adjusted for possible misleading variables, like age and chemotherapy treatment.",
+        "5": "22.4% of the breast cancer survivors reported hair loss. 31.8% reported hair thinning.",
+        "6": "Breast cancer survivors who were within 2 years of starting aromatase inhibitor treatment at the time of the survey were around two and a half times more likely to report hair loss or thinning in the past 4 weeks compared to those never treated with an aromatase inhibitor.",
+        "7": "Current aromatase inhibitor use for 2 or more years at the time of the survey and past use were linked with hair thinning but not hair loss.",
+        "8": "Findings from the study suggest that aromatase inhibitor use is linked with an increased risk of hair loss and thinning regardless of chemotherapy and age. These side effects are likely from the reduction in estrogen (a female sex hormone) from the drug treatment.",
+        "9": "Future research should examine the links in a future-oriented manner with more detailed and measurable measures of hair loss and thinning."
+      }
+    }
+  },
+  "25473228": {
+    "Title": "Pattern Alopecia during Hormonal Anticancer Therapy in Patients with Breast Cancer",
+    "abstract": {
+      "1": "We report five cases of pattern alopecia in female patients who are undergoing hormonal anticancer therapy for the prevention of recurrence of breast cancer after surgery.",
+      "2": "Three patients demonstrated male pattern alopecia with receding frontal hairlines, and two patients demonstrated female pattern alopecia without receding hairlines.",
+      "3": "The detailed clinical history showed that the pattern alopecia of the patients developed after the full recovery of global hair loss of the entire scalp due to previous cytotoxic chemotherapy.",
+      "4": "All of the adjuvant hormonal anticancer drugs that were used in the patients are antiestrogenic agents, either aromatase inhibitors or selective estrogen receptor modulators.",
+      "5": "Considering androgen effect on the hair follicles of the fronto-parietal scalp, the androgen-estrogen imbalance caused by the drugs was thought to be the reason for the onset of pattern alopecia in the patients.",
+      "6": "In general, alopecia that develops during cytotoxic chemotherapy is well known to both physicians and patients; however, the diagnosis of pattern alopecia during hormonal anticancer therapy in breast cancer patients seems to be overlooked."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "We report 5 cases of common alopecia (hair loss or thinning) in female patients undergoing hormonal anticancer therapy to prevent reoccuring breast cancer after surgery.",
+        "2": "Three patients showed alopecia common to males with receding hairlines in the front. Two patients showed alopecia common to females without receding hairlines.",
+        "3": "The patient history showed that common alopecia of the patients developed after full recovery of complete hair loss of the scalp due to prior, severe chemotherapy (cancer treatment).",
+        "4": "All of the secondary hormonal anticancer drugs used in patients are antiestrogenic agents (which influence levels of estrogen, a female sex hormone). These agents include aromatase inhibitors or selective estrogen receptor modulators.",
+        "5": "Considering the effect of hormones on hair follicles in the front scalp, the estrogen-hormone imbalance caused by the drugs was thought to be the reason for visible alopecia in patients. ",
+        "6": "In general, alopecia that develops during severe chemotherapy (cancer therapy) is known to physicians and patients. However, the identification of alopecia during hormonal anticancer therapy in breast cancer patients seems to be overlooked."
+      }
+    }
+  },
+  "26108239": {
+    "Title": "Adjuvant aromatase inhibitor therapy in early breast cancer: what factors lead patients to discontinue treatment?",
+    "abstract": {
+      "1": "Background: Aromatase inhibitors (AIs) are standard hormone therapy (HT) for the adjuvant treatment of postmenopausal endocrine-sensitive early breast cancer.",
+      "2": "Treatment discontinuation due to toxicity is an important issue that may help clinicians identify effective clinical interventions to allow adequate treatment duration.",
+      "3": "We reviewed the main reasons for interruption of AIs at our institution from 2006 to 2009.",
+      "4": "Methods: 236 patients treated with adjuvant AIs were eligible for analysis.",
+      "5": "Median age was 64 years (35-89), median follow-up 53 months (6-60).",
+      "6": "Prior adjuvant chemotherapy was taxane based in 47 patients and anthracycline based in 43 patients.",
+      "7": "118 patients had received letrozole, 101 anastrozole, and 17 exemestane.",
+      "8": "Results: Twenty-four patients (10%) needed discontinuation of the first AI assigned as a result of toxicity.",
+      "9": "Grade 2/3 arthralgia was the main reason for discontinuation in 13/24 patients.",
+      "10": "No differences in the incidence of arthralgia were noted in patients who had received taxanes or anthracyclines.",
+      "11": "Headache, alopecia, itching, diffuse skin reaction, allergic reaction with hypertensive crisis, xerostomia and xerophthalmia, insomnia and somnolence were the other reasons for discontinuation.",
+      "12": "In multivariate logistic regression analysis, age (65 years) and HT were independent factors associated with the onset of arthralgia (p = 0.006 and p = 0.008, respectively; OR 2.65, 95% CI 1.32-5.31).",
+      "13": "Alternative HT (AI or tamoxifen) was offered to patients who wanted or needed to permanently interrupt the ongoing drug.",
+      "14": "Conclusions: In our analysis, 10% of patients discontinued the first AI assigned because of toxicity.",
+      "15": "Median time course of all adverse events leading to HT discontinuation was 155 days and 135 days for arthralgia.",
+      "16": "A switch to alternative HT with toxicity monitoring is a recommended option for avoiding premature and permanent interruption of an effective treatment."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "For the study's background, aromatase inhibitors (Ais) are common hormone therapy (HT) for the secondary treatment of postmenopausal hormone-sensitive early breast cancer.",
+        "2": "Treatment stoppage due to toxicitiy is an important issue that may help clinicians find effective clinical treatments to allow proper treatment duration.",
+        "3": "We reviewed the main reasors for interruption of Ais at our center from 2006 to 2009.",
+        "4": "For the study's methods, 236 patients treated with secondary Ais were analyzed.",
+        "5": "Average age was 64 years (ranging from 35 to 89 years). Average treatment follow-up was 53 months (ranging from 6 to 60).",
+        "6": "Prior secondary chemotherapy (cancer-specific drugs) was taxane for 47 patients and anthracycline for 43 patients.",
+        "7": "118 patients received letrozole, 101 anastrozole, and 17 exemestane (breast cancer-treating drugs).",
+        "8": "Twenty-four patients (10%) needed stoppage of the first AI assigned due to toxicity. ",
+        "9": "Severe arthralgia (joint stiffness) was the main reason for stoppage in 13/24 patients.",
+        "10": "No differences in the frequency of arthralgia were noted in patients who received taxanes or anthracyclines.",
+        "11": "Headache, alopecia (hair loss or thinning), itching, skin reactions, allergic reactions with high-blood-pressure events, xerostomia (dry mouth), xerophthalmia (eye dryness), lack of sleep, and sleepiness were other reasons for stopping treatment.",
+        "12": "With mathematical analysis, age (65 years) and HT were linked with the start of arthralgia.",
+        "13": "Alternative HT (AI or tamoxifen - an estrogen-influencing drug) was offered to patients who wanted or needed to permanently stop the ongoing drug.",
+        "14": "In conclusion, 10% of patients stopped the first AI assigned because of toxicity.",
+        "15": "Average time course of all side effects leading to HT stoppage was 155 days and 135 days for arthralgia.",
+        "16": "A switch to another HT with toxicity monitoring is recommended for avoiding premature and permanent stoppage of an effective treatment."
+      }
+    }
+  },
+  "27247882": {
+    "Title": "Management of hair loss associated with endocrine therapy in patients with breast cancer: an overview",
+    "abstract": {
+      "1": "Endocrine therapy-induced hair loss (ETIHL) associated with aromatase inhibitors and tamoxifen treatment is currently mostly reported but remained an unresolved therapeutic issue in patients with breast cancer (BC) since the number of studies regarding the management is limited in literature.",
+      "2": "Herein we investigated the possible causes of this clinical problem and its relation with endocrine therapies widely used for BC survivors and made some modest practical recommendations in light of the literature review in order to provide an optimal management.",
+      "3": "On the basis of literature findings, common causes of hair loss apart from endocrine therapies should be investigated with an initial evaluation workup and then should be corrected, if observed.",
+      "4": "Treatment with topical 5-alpha reductase inhibitors and supplementation of Vitamin C and omega-3 fatty acids are likely appeared to be the most appropriate treatment agents for ETIHL without causing an adverse effect on BC prognosis.",
+      "5": "However, more prospective, randomised, placebo-controlled studied are required in order to confirm our results and also identify the clinical effects of this problem on patients with BC."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Endocrine therapy-induced hair loss (ETIHL) (hair loss from hormonal therapy) linked with aromatase inhibitors (drugs used to treat breast cancer) and tamoxifen (estrogen-influencing medication) is reported but remains unsolved in patients with breast cancer (BC). This is largely because the number of studies regarding this hair loss management is limited.",
+        "2": "We checked the possible causes of this medical problem and its link to hormonal therapies used for BC survivors. We also made practical recommendations based on relevant medical studies to provide optimal management.",
+        "3": "Based on medical papers, common causes of hair loss besdies hormonal therapies should be checked with a starting evaluation workup and then corrected if found.",
+        "4": "Treatment with 5-alpha reductase inhibitors (drugs for treating hair loss) applied on skin and Vitamin C and omega-3 fatty acid supplements may be the best treatment for ETIHL without causing serious side effects on BC recovery.",
+        "5": "However, more in-depth studies are needed to confirm our results and identify the effects of this problem on BC patients."
+      }
+    }
+  },
+  "29641806": {
+    "Title": "Endocrine Therapy-Induced Alopecia in Patients With Breast Cancer",
+    "abstract": {
+      "1": "Importance: Endocrine therapy-induced alopecia (EIA) has been anecdotally reported but not systematically described.",
+      "2": "Objective: To characterize EIA in patients with breast cancer.",
+      "3": "Design, setting, and participants: Retrospective cohort study of 112 patients with breast cancer, diagnosed with EIA from January 1, 2009, to December 31, 2016, the patients were examined at the dermatology service in a large tertiary care hospital and comprehensive cancer center.",
+      "4": "Main outcomes and measures: The clinical features, alopecia-related quality of life (QoL), and response to minoxidil of EIA in patients with breast cancer were assessed.",
+      "5": "Data from the Hairdex Questionnaire was used to assess the impact of the alopecia on patients QoL. ",
+      "6": "Higher score indicates lower QoL (0-100 score).",
+      "7": "Efficacy of minoxidil was measured at 3 or 6 months by a single-blinded investigator through standardized clinical photographs of the scalp.",
+      "8": "Results: A total of 112 female patients with breast cancer were included (median [range] age, 60 [34-90] years).",
+      "9": "A total of 104 patients (93%) had standardized clinical photographs; of these, 59 patients (53%) had trichoscopy images available at baseline, and 46 patients (41%) were assessed for response to minoxidil.",
+      "10": "Alopecia was attributed to aromatase inhibitors in 75 patients (67%) and tamoxifen in 37 (33%).",
+      "11": "Severity was grade 1 in 96 of 104 patients (92%), and the pattern was similar to androgenetic alopecia.",
+      "12": "The predominant trichoscopic feature at baseline was the presence of vellus hairs and intermediate- and thick-diameter terminal hair shafts.",
+      "13": "A negative impact on QoL was reported, with a higher effect in the emotion domain according to the Hairdex score (mean [SD], 41.8 [21.3]; P < .001).",
+      "14": "After treatment with topical minoxidil, moderate or significant improvement in alopecia was observed in 37 of 46 patients (80%).",
+      "15": "Conclusions and relevance: Endocrine therapies are associated with a pattern alopecia similar to androgenetic-type, consistent with the mechanism of action of causal agents.",
+      "16": "A significant negative impact on QoL was reported by patients, despite mostly mild alopecia severity."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "The study's importance is based on the fact that endocrine therapy-induced alopecia (EIA) (hair loss or thinning from hormonal therapy) has been mentioned but not measured.",
+        "2": "The study's objective is to describe EIA thoroughly in patients with breast cancer.",
+        "3": "The study's design is a study of 112 patients with breast cancer, diagnosed with EIA from January 1, 2009 to December 31, 2016. The patients were examined at a skin center in a large, specialized hospital and professional cancer center.",
+        "4": "The study's main variables included common hospital measures, hair-loss- or hair-thinning-related quality of life (QoL), and reaction to minoxidil (hair regrowth medication) of EIA in patients with breast cancer.",
+        "5": "We used data from the Hairdex Questionnaire (a questionnaire for disease-specific quality of life measurements) to measure the impact of hair loss or thinning (alopecia) on patients QoL.",
+        "6": "Higher scores indicate lower QoL (0-100 score).",
+        "7": "The success of minoxidil was measured at 3 or 6 months by an investigator unaware of the treatment groups through standard photographs of the scalp.",
+        "8": "112 female patients with breast cancer were included. Their median age was 60 years with a range from 34-90 years.",
+        "9": "104 patients (93%) had standard photographs. Of these, 59 patients (53%) had images from special hair and scalp evaluations at the start. 46 patients (41%) were measured for response to minoxidil.",
+        "10": "Alopecia was linked to aromatase inhibitors in 75 patients (67%) and tamoxifen (estrogen-influencing medication) in 37 (33%).",
+        "11": "Severity was low in 96 of 104 patients (92%). The pattern was similar to common, receding hair loss.",
+        "12": "The most common scalp and hair-related feature at the start were peach fuzz and mid- and thick, long hairs on the scalp.",
+        "13": "QoL was negatively reported, especially in the emotional part of life.",
+        "14": "After treatment with minoxidil on the skin, medium or noticeable improvement in hair loss and thinning was seen in 37 of 46 patients (80%).",
+        "15": "In conclusion, hormonal therapies are linked with commonly-seen hair loss and thinning, similar to agents that actively cause alopecia.",
+        "16": "Despite mostly mild alopecia, QoL was negatively impacted for patients."
+      }
+    }
+  },
+  "30464397": {
+    "Title": "Pharmacokinetic evaluation of a transdermal anastrozole-in-adhesive formulation",
+    "abstract": {
+      "1": "Background and objective: Anastrozole is a well-established active pharmaceutical ingredient (API) used for the treatment of hormone-sensitive breast cancer (BC) in postmenopausal women.",
+      "2": "However, treatment with the only available oral formulation is often associated with concentration-dependent serious side effects such as hot flashes, fatigue, muscle and joint pain, nausea, diarrhea, headache, and others.",
+      "3": "In contrast, a sustained-release system for the local application of anastrozole should minimize these serious adverse drug reactions.",
+      "4": "Methods: Anastrozole-in-adhesive transdermal drug delivery systems (TDDS) were developed offering efficient loading, avoidance of inhomogeneity or crystallization of the drug, the desired controlled release kinetics, storage stability, easy handling, mechanical stability, and sufficient stickiness on the skin.",
+      "5": "In vitro continuous anastrozole release profiles were studied in Franz diffusion cells.",
+      "6": "In vivo, consecutive drug plasma kinetics from the final anastrozole transdermal system was tested in beagle dogs.",
+      "7": "For drug analysis, a specific validated liquid chromatography- mass spectrometry method using fragment ion detection was developed and validated.",
+      "8": "Results: After efficient drug loading, a linear and sustained 65% drug release from the TDDS over 48 h was obtained.",
+      "9": "In vivo data showed a favorable anastrozole plasma concentration-time course, avoiding side effect-associated peak concentrations as obtained after oral administration but matching therapeutic plasma levels up to 72 h.",
+      "10": "Conclusion: These results provide the basis for establishing the transdermal application of anastrozole with improved pharmacokinetics and drug safety as novel therapeutic approach and promising option to treat human BC by decreasing the high burden of unwanted side effects."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "For background, anastrozole is an important drug ingredient for treatment of hormone-sensitive breast cancer (BC) in women who have finished their last period.",
+        "2": "However, treatment with the only available drug taken by mouth is linked with serious side effects that worsen with greater doses. These side effects include hot flashes, fatigue, muscle and joint pain, nausea, diarrhea, headache, and others.",
+        "3": "In contrast, a steady release of anastrozole could minimize these serious side effects from the drug.",
+        "4": "Anastrozole administered by a patch on the skin was created for efficient administration, avoiding drug crystals in the body, desired drug release, storage ease, easy handling, stability, and stickiness on the skin.",
+        "5": "Continuous anastrozole treatment was studied in cells designed to measure the success of oils, creams, and gels.",
+        "6": "Drug reactions in blood from the final anastrozole treatment on skin was tested in beagle dogs.",
+        "7": "To analyze the drug, a specific filtration method was created and verified.",
+        "8": "After enough drug exposure, a sustained 65% drug release from the skin treatment over 48 hours was obtained.",
+        "9": "Data in living animals showed good anastrozole blood concentration overtime, avoiding the worst of side effects linked with treatment by mouth but matching its helpful blood levels up to 72 hours.",
+        "10": "In conclusion, applying anastrozole by skin shows improved drug reactions and safety. The treatment is a promising option to treat human BC by reducing unwanted side effects."
+      }
+    }
+  },
+  "32869880": {
+    "Title": "Aromatase inhibitor-induced hair loss in two adolescents",
+    "abstract": {
+      "1": "Hair loss and thinning are possible complications in those undergoing endocrine therapies with aromatase inhibitors.",
+      "2": "Alopecia in pediatric patients undergoing endocrine therapy has not been previously reported.",
+      "3": "We describe two adolescents, 14 and 16 years of age, who developed androgenetic alopecia following treatment with anastrozole for idiopathic short stature.",
+      "4": "Accordingly, the possible adverse event of alopecia should be considered in the pediatric population undergoing treatment with aromatase inhibitors."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Hair loss and thinning are possible side effects in those undergoing hormonal therapies with aromatase inhibitors (drugs commonly used to treat breast cancer).",
+        "2": "Alopecia (hair loss and thinning) in young patients undergoing hormonal therapy has not been previously studied.",
+        "3": "We describe two adolescents, 14 and 16 years of age, who got androgenetic alopecia (common hair loss or thinning) after receiving treatment with anastrozole (a durg usually used to treat breast cancer) for unusally short height.",
+        "4": "Therefore, the possible side effect of alopecia should be considered in the young population undergoing treatment with aromatase inhibitors."
+      }
+    }
+  },
+  "question": "Does anastrozole causes hair loss & dry patches in your scalp?",
+  "question_type": "C"
+  }
+}

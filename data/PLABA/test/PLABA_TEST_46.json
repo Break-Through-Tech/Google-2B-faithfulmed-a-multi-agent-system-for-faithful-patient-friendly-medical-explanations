@@ -1,0 +1,285 @@
+{
+  "46": {
+  "29402832": {
+    "Title": "The CFTR-Associated Ligand Arrests the Trafficking of the Mutant ΔF508 CFTR Channel in the ER Contributing to Cystic Fibrosis",
+    "abstract": {
+      "1": "Background/aims: The CFTR-Associated Ligand (CAL), a PDZ domain containing protein with two coiled-coil domains, reduces cell surface WT CFTR through degradation in the lysosome by a well-characterized mechanism.",
+      "2": "However, CAL's regulatory effect on ΔF508 CFTR has remained almost entirely uninvestigated.",
+      "3": "Methods: In this study, we describe a previously unknown pathway for CAL by which it regulates the membrane expression of ΔF508 CFTR through arrest of ΔF508 CFTR trafficking in the endoplasmic reticulum (ER) using a combination of cell biology, biochemistry and electrophysiology.",
+      "4": "Results: We demonstrate that CAL is an ER localized protein that binds to ΔF508 CFTR and is degraded in the 26S proteasome.",
+      "5": "When CAL is inhibited, ΔF508 CFTR retention in the ER decreases and cell surface expression of mature functional ΔF508 CFTR is observed alongside of enhanced expression of plasma membrane scaffolding protein NHERF1.",
+      "6": "Chaperone proteins regulate this novel process, and ΔF508 CFTR binding to HSP40, HSP90, HSP70, VCP, and Aha1 changes to improve ΔF508 CFTR cell surface trafficking.",
+      "7": "Conclusion: Our results reveal a pathway in which CAL regulates the cell surface availability and intracellular retention of ΔF508 CFTR."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "The CFTR-Associated Ligand (CAL) reduces the cell surface of normal CFTR through destroying it in a well-understood way. The CFTR protein is a channel involved with movement of ions (charged atoms) and fluids in epithelial cells (cells that cover the outer surface of the internal organs).",
+        "2": "However, few scientists have studied how CAL controls ΔF508 CFTR, a specific gene sequence change seen in the CFTR gene which slightly alters the CFTR protein.",
+        "3": "In this study, we describe a previously unknown way CAL controls ΔF508 CFTR through stopping ΔF508 CFTR movement in the cell's transportation system.",
+        "4": "We show that CAL binds to ΔF508 CFTR in one location of the cell and is destroyed in another location of the cell.",
+        "5": "When CAL is stopped, the amount of ΔF508 CFTR held within the cell decreases and working ΔF508 CFTR is seen on the cell surface.",
+        "6": "The binding of ΔF508 CFTR to proteins improves the cell surface movement conducted by ΔF508 CFTR.",
+        "7": "We conclude that CAL controls the cell surface availability and amount held within the cell of ΔF508 CFTR."
+      }
+    }
+  },
+  "29475947": {
+    "Title": "Functional organization of cytoplasmic portals controlling access to the cystic fibrosis transmembrane conductance regulator (CFTR) chloride channel pore",
+    "abstract": {
+      "1": "The cystic fibrosis transmembrane conductance regulator (CFTR) is a Cl- channel that apparently has evolved from an ancestral active transporter.",
+      "2": "Key to the CFTR's switch from pump to channel function may have been the appearance of one or more \"lateral portals.\"",
+      "3": "Such portals connect the cytoplasm to the transmembrane channel pore, allowing a continuous pathway for the electrodiffusional movement of Cl- ions.",
+      "4": "However, these portals remain the least well-characterized part of the Cl- transport pathway; even the number of functional portals is uncertain, and if multiple portals do exist, their relative functional contributions are unknown.",
+      "5": "Here, we used patch-clamp recording to identify the contributions of positively charged amino acid side chains located in CFTR's cytoplasmic transmembrane extensions to portal function.",
+      "6": "Mutagenesis-mediated neutralization of several charged side chains reduced single-channel Cl- conductance.",
+      "7": "However, these same mutations differentially affected channel blockade by cytoplasmic suramin and Pt(NO2)42- anions.",
+      "8": "We considered and tested several models by which the contribution of these positively charged side chains to one or more independent or non-independent portals to the pore could affect Cl- conductance and interactions with blockers.",
+      "9": "Overall, our results suggest the existence of a single portal that is lined by several positively charged side chains that interact electrostatically with both Cl- and blocking anions.",
+      "10": "We further propose that mutations at other sites indirectly alter the function of this single portal.",
+      "11": "Comparison of our functional results with recent structural information on CFTR completes our picture of the overall molecular architecture of the Cl- permeation pathway."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "The cystic fibrosis transmembrane conductance regulator (CFTR) is a chloride (Cl-) channel descended from an active transporter (requiring energy for movement).",
+        "2": "One or more \"lateral portals\" may have appeared, switching the active pump to a channel.",
+        "3": "\"Lateral portals\" allow Cl- ions (charged atoms) to move under the influence of an electric field.",
+        "4": "These portals are the least understood part of Cl- movement. Scientists do not know the number of working portals, and if more than one, which portal does what.",
+        "5": "We used a cell test to find out how positively charged side chemical groups in CFTR contribute to how the portal works.",
+        "6": "Neutralization of many charged side chemical groups caused by gene sequence changes reduced movement of Cl- through a single channel.",
+        "7": "However, these gene sequence changes affected channel blockade by negatively charged atoms differently.",
+        "8": "We used many models to look at ways these positively charged chemical groups changed one or more portals and its effect on Cl- movement and interaction with blockers.",
+        "9": "Our results suggest one portal is lined by many positively charged side chemical groups that interact with both CL- and other blocking negatively charged ions.",
+        "10": "We further suggest that gene sequence changes at other sides change how well the single portal works.",
+        "11": "We compared our results with recent information on CFTR structure to understand the pathway of Cl- transport at a molecule level."
+      },
+      "adaptation2": {
+        "1": "The cystic fibrosis transmembrane conductance regulator (CTFR) is a chloride transporter that apparently has evolved from an ancestral active transporter.",
+        "2": "Key to the CFTR's switch from pump to channel function may have been the appearance of one or more \"lateral portals.\"",
+        "3": "Lateral portals connect the cell's inner fluid to the channel on the cell boundary, allowing a continuous pathway for chloride ion movement.",
+        "4": "However, these portals are the least studied part of the chloride transport pathway. Even the number of active portals in unknown, and if multiple portals do exists, their relative contributions are unknown.",
+        "5": "Here, we use electrical recordings to identify the contributions of positively charged protein segments located in CFTR's extensions to portal function.",
+        "6": "Mutation-controlled silencing of several charged protein segments reduced single-channel chloride transport.",
+        "7": "However, these same mutations uniquely affected channel blocking by specific inner-cell, negatively-charged particles.",
+        "8": "We considered and tested many models by which the contribution of these positive protein segments to one or more independent or non-independent portals to the channel could affect chloride transport and interactions with blockers.",
+        "9": "Overall, our results suggest the existence of a single portal lined with several positively-charged protein segments that interact electrically with both chloride and negative-charged, blocking particles.",
+        "10": "We propose that mutations at other sites indirectly affect the function of this one portal.",
+        "11": "Comparing our results with recent structural information on CTFR completes our picture of the overall molecular architecture of the chloride transport pathway."
+      }
+    }
+  },
+  "30349480": {
+    "Title": "Emerging microRNA Therapeutic Approaches for Cystic Fibrosis",
+    "abstract": {
+      "1": "Cystic fibrosis (CF) is caused by mutations in the cystic fibrosis transmembrane conductance regulator (CFTR) gene and remains the most common life-shortening diseases affecting the exocrine organs.",
+      "2": "The absence of this channel results in an imbalance of ion concentrations across the cell membrane and results in more abnormal secretion and mucus plugging in the gastrointestinal tract and in the lungs of CF patients.",
+      "3": "The direct introduction of fully functional CFTR by gene therapy has long been pursued as a therapeutical option to restore CFTR function independent of the specific CFTR mutation, but the different clinical trials failed to propose persuasive evidence of this strategy.",
+      "4": "The last ten years has led to the development of new pharmacotherapies which can activate CFTR function in a mutation-specific manner.",
+      "5": "Although approximately 2,000 different disease-associated mutations have been identified, a single codon deletion, F508del, is by far the most common and is present on at least one allele in approximately 70% of the patients in CF populations.",
+      "6": "This strategy is limited by chemistry, the knowledge on CFTR and the heterogenicity of the patients.",
+      "7": "New research efforts in CF aim to develop other therapeutical approaches to combine different strategies.",
+      "8": "Targeting RNA appears as a new and an important opportunity to modulate dysregulated biological processes.",
+      "9": "Abnormal miRNA activity has been linked to numerous diseases, and over the last decade, the critical role of miRNA in regulating biological processes has fostered interest in how miRNA binds to and interacts explicitly with the target protein.",
+      "10": "Herein, this review describes the different strategies to identify dysregulated miRNA opens up a new concept and new opportunities to correct CFTR deficiency.",
+      "11": "This review describes therapeutic applications of antisense techniques currently under investigation in CF."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Changes in the cystic fibrosis transmembrane conductance regulator (CFTR) gene cause cystic fibrosis (CF), one of the most common life-shortening diseases affecting organs that make and release substances into transporting ducts.",
+        "2": "The absence of this protein from the CFTR gene causes an imbalance of ion (charged atom) concentrations across the cell membrane and causes release and buildup of abnormally high levels of mucus in the digestive tract and lungs of CF patients.",
+        "3": "Scientists have tried transferring working CFTR into a patient's cells regardless of the specific CFTR gene change, but patient trials were not successful.",
+        "4": "New drugs that can stimulate CFTR function based on the specific gene change have been made in the last ten years.",
+        "5": "Of the roughly 2,000 different gene changes linked to CF, the most common change is F508del, a deletion of a sequence of three consecutive gene compounds, and about 70% of people with CF have at least one form of it.",
+        "6": "Chemistry, CFTR knowledge, and genetic differences of patients limit the ability to stimulate CFTR function based on the specific gene change.",
+        "7": "New CF research aims to develop other treatments that combine different approaches.",
+        "8": "Looking at RNA (which changes the genetic information of DNA into proteins) is a new and important chance to fix incorrectly functioning biological processes.",
+        "9": "Scientists have linked abnormal microRNA (miRNA; short type of non-coding RNA that does not encode a protein) to many diseases, and over the last decade, scientists have developed interest in how miRNA interacts with specific proteins.",
+        "10": "We describe different ways to find incorrectly functioning miRNA that might help correct lack of CFTR.",
+        "11": "This review describes RNA treatments currently being studied in CF."
+      }
+    }
+  },
+  "30825185": {
+    "Title": "Small molecule-facilitated anion transporters in cells for a novel therapeutic approach to cystic fibrosis",
+    "abstract": {
+      "1": "Background and purpose: Cystic fibrosis (CF) is a lethal autosomal recessive genetic disease that originates from the defective function of the CF transmembrane conductance regulator (CFTR) protein, a cAMP-dependent anion channel involved in fluid transport across epithelium.",
+      "2": "Because small synthetic transmembrane anion transporters (anionophores) can replace the biological anion transport mechanisms, independent of genetic mutations in the CFTR, such anionophores are candidates as new potential treatments for CF.",
+      "3": "Experimental approach: In order to assess their effects on cell physiology, we have analysed the transport properties of five anionophore compounds, three prodigiosines and two tambjamines.",
+      "4": "Chloride efflux was measured in large uni-lamellar vesicles and in HEK293 cells with chloride-sensitive electrodes.",
+      "5": "Iodide influx was evaluated in FRT cells transfected with iodide-sensitive YFP.",
+      "6": "Transport of bicarbonate was assessed by changes of pH after a NH4 + pre-pulse using the BCECF fluorescent probe.",
+      "7": "Assays were also carried out in FRT cells permanently transfected with wild type and mutant human CFTR.",
+      "8": "Key results: All studied compounds are capable of transporting halides and bicarbonate across the cell membrane, with a higher transport capacity at acidic pH.",
+      "9": "Interestingly, the presence of these anionophores did not interfere with the activation of CFTR and did not modify the action of lumacaftor (a CFTR corrector) or ivacaftor (a CFTR potentiator).",
+      "10": "Conclusion and implications: These anionophores, at low concentrations, transported chloride and bicarbonate across cell membranes, without affecting CFTR function.",
+      "11": "They therefore provide promising starting points for the development of novel treatments for CF."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Cystic fibrosis (CF) is a deadly disease inherited from both parents that is caused when the CF transmembrane conductance regulator (CFTR) protein does not work correctly, a channel involved with movement of ions (charged atoms) and fluids in epithelial cells (cells that cover the outer surface of the internal organs).",
+        "2": "Anionophores, which are small human-made substances that move negative ions (anions) across membranes, can replace biological anion movement regardless of gene changes in the CFTR and are possible treatments for CF.",
+        "3": "We looked at the movement properties of five anionophore substances.",
+        "4": "We measured the flow of chloride out of the cell.",
+        "5": "We measured the flow of iodide into the cell.",
+        "6": "We measured the movement of bicarbonate (compound).",
+        "7": "",
+        "8": "We saw that all five compounds are able to move halides and bicarbonate (compounds) across the cell membrane, with more moved in acidic conditions.",
+        "9": "Anionophores did not change CFTR activation and did not change the effects of a lumacaftor (corrector that helps the changed protein to move to the cell surface) or ivacaftor (potentiator that holds the gate to the channel open so chloride can flow through the cell membrane).",
+        "10": "We conclude that anionophores, at low concentrations, moved chloride and bicarbonate (compounds) across cell membranes, without changing CFTR function.",
+        "11": "New CF treatments could be developed starting from anionophores."
+      }
+    }
+  },
+  "31401006": {
+    "Title": "The role of endothelial cells in cystic fibrosis",
+    "abstract": {
+      "1": "Cystic fibrosis (CF) is an autosomal recessive disease caused by the loss of function of the cystic fibrosis transmembrane conductance regulator (CFTR) protein which primarily acts as a chloride channel.",
+      "2": "CFTR has mainly been studied in epithelial cells although it is also functional and expressed in other cell types including endothelial cells.",
+      "3": "The present review summarizes current knowledge on the role of the endothelium in CF.",
+      "4": "More specifically, this review highlights the role of endothelial cells in CF in acting as a semipermeable barrier, as a key regulator of angiogenesis, coagulation, the vascular tone and the inflammatory responses.",
+      "5": "It could contribute to different aspects of the disease including cardiovascular symptoms, excessive blood vessel formation, pulmonary and portal hypertension and CF-related diabetes.",
+      "6": "Despite the important role of vascular endothelium in many biological processes, it has largely been under investigated in CF."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Cystic fibrosis (CF) is a disease inherited from both parents caused when the CF transmembrane conductance Regulator (CFTR) protein no longer functions, which acts as a compound (chloride) channel.",
+        "2": "Scientists have mostly studied CFTR in epithelial cells (cells that cover outer surface of the internal organs) although it also works and is seen in other cell types including endothelial cells (cells that cover the blood vessel inner surface).",
+        "3": "This review summarizes what is known on the role of endothelium in CF.",
+        "4": "We summarize the role of endothelial cells in CF in acting as a barrier that allows only some things to pass through, partly controlling formation of new blood vessels, clotting, blood vessel constriction, and inflammation.",
+        "5": "Endothelial cells could play a role in different parts of the disease including heart symptoms, formation of too many blood vessels, two kinds of high blood pressure and CF-related diabetes.",
+        "6": "Vascular endothelium (the inner cellular lining of arteries, veins, and capillaries) is important to many processes in the body, but it has not been studied enough in CF."
+      },
+      "adaptation2": {
+        "1": "Cystic fibrosis (CF) is an inherited disease caused by loss of function of a special cell boundary channel and leads to mucus buildup in many organs.",
+        "2": "This special cell boundary channel has been studied in boundary cells. However, it is also present in other cell types like endothelial cells (cells that line blood vessels and empty areas of the body).",
+        "3": "This review article summarizes current knowledge on the role of the endothelium in CF.",
+        "4": "More specifically, this review highlights how endothelial cells in CF act as a barrier which regulates blood vessel creation, blood clotting, vessel activity, and inflammation.",
+        "5": "It could contribute to different aspects of the disease like heart-related symptoms, excessive blood vessel formation, lung and vein-related high blood pressure and CF-related diabetes.",
+        "6": "Despite the important role of blood vessel boundary cells in many biological processes, it has largely been under-investigated in CF."
+      }
+    }
+  },
+  "32637102": {
+    "Title": "Epithelial vectorial ion transport in cystic fibrosis: Dysfunction, measurement, and pharmacotherapy to target the primary deficit",
+    "abstract": {
+      "1": "Cystic fibrosis patients display multi-organ system dysfunction (e.g. pancreas, gastrointestinal tract, and lung) with pathogenesis linked to a failure of Cl- secretion from the epithelial surfaces of these organs.",
+      "2": "If unmanaged, organ dysfunction starts early and patients experience chronic respiratory infection with reduced lung function and a failure to thrive due to gastrointestinal malabsorption.",
+      "3": "Early mortality is typically caused by respiratory failure.",
+      "4": "In the past 40 years of newborn screening and improved disease management have driven the median survival up from the mid-teens to 43-53, with most of that improvement coming from earlier and more aggressive management of the symptoms.",
+      "5": "In the last decade, promising pharmacotherapies have been developed for the correction of the underlying epithelial dysfunction, namely, Cl- secretion.",
+      "6": "A new generation of systemic drugs target the mutated Cl- channels in cystic fibrosis patients and allow trafficking of the immature mutated protein to the cell membrane (correctors), restore function to the channel once in situ (potentiators), or increase protein levels in the cells (amplifiers).",
+      "7": "Restoration of channel function prior to symptom development has the potential to significantly change the trajectory of disease progression and their evidence suggests that a modest restoration of Cl- secretion may delay disease progression by decades.",
+      "8": "In this article, we review epithelial vectorial ion and fluid transport, its quantification and measurement as a marker for cystic fibrosis ion transport dysfunction, and highlight some of the recent therapies targeted at the dysfunctional ion transport of cystic fibrosis."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "People with cystic fibrosis have organs that do not function correctly (e.g., pancreas, digestive system, and lung) linked to not enough CI- (chloride) production and release from epithelial cells (cells that cover outer surface of the internal organs).",
+        "2": "If not treated, organs quickly stop working and patients have long-term respiratory infection with decreased lung function and a decline in health from poor absorption of food.",
+        "3": "Early death usually happens when lungs can't get enough oxygen into the blood.",
+        "4": "The past 40 years of newborn checks and better ways to treat disease have increased the age that half of patients are still alive from the mid-teens to 43-53, with most of the increase due to earlier and more aggressive management of the symptoms.",
+        "5": "In the last 10 years, drugs have been made to correct underlying problems in epithelial cells, mainly, CI- production and release.",
+        "6": "New drugs for cystic fibrosis patients that work throughout the body target the changed atom (Cl-; chloride) channels and help the changed protein to move to the cell surface (correctors), hold the gate to the channel open so chloride can flow through the cell membrane (potentiators), or increase protein levels in the cells (amplifiers).",
+        "7": "Restoring channel function before symptoms develop could change the course of the disease and a small repair of Cl- production and release may delay disease worsening by decades.",
+        "8": "We look at movement of ions (charged atoms) and fluids in epithelial cells, how to count and measure this movement as a sign of cystic fibrosis transport problems, and discuss recent treatments for cystic fibrosis transport problems."
+      }
+    }
+  },
+  "32666337": {
+    "Title": "Sphingolipids and plasma membrane hydrolases in human primary bronchial cells during differentiation and their altered patterns in cystic fibrosis",
+    "abstract": {
+      "1": "Human primary bronchial epithelial cells differentiated in vitro represent a valuable tool to study lung diseases such as cystic fibrosis (CF), an inherited disorder caused by mutations in the gene coding for the Cystic Fibrosis Transmembrane Conductance Regulator.",
+      "2": "In CF, sphingolipids, a ubiquitous class of bioactive lipids mainly associated with the outer layer of the plasma membrane, seem to play a crucial role in the establishment of the severe lung complications.",
+      "3": "Nevertheless, no information on the involvement of sphingolipids and their metabolism in the differentiation of primary bronchial epithelial cells are available so far.",
+      "4": "Here we show that ceramide and globotriaosylceramide increased during cell differentiation, whereas glucosylceramide and gangliosides content decreased.",
+      "5": "In addition, we found that apical plasma membrane of differentiated bronchial cells is characterized by a higher content of sphingolipids in comparison to the other cell membranes and that activity of sphingolipids catabolic enzymes associated with this membrane results altered with respect to the total cell activities.",
+      "6": "In particular, the apical membrane of CF cells was characterized by high levels of ceramide and glucosylceramide, known to have proinflammatory activity.",
+      "7": "On this basis, our data further support the role of sphingolipids in the onset of CF lung pathology."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Cells on the surface of the bronchi (two tubes that carry air to your lungs) extracted from humans and grown in the lab are a valuable tool to study lung disease such as cystic fibrosis (CF), an inherited disease caused by a change in the Cystic Fibrosis Transmembrane Conductance Regulator (CFTR) protein which helps transport chloride.",
+        "2": "In CF, sphingolipids, a common type of lipids found in cell surroundings, seem to play an important role in the onset of serious lung problems.",
+        "3": "Yet information is lacking on the involvement of sphingolipids and their metabolism (digestion) in the process by which cells on the surface of the bronchi change their type.",
+        "4": "Two types of sphingolipids increased and two decreased as dividing cells changed type.",
+        "5": "Cells on the surface of the bronchi have more sphingolipids compared to surfaces of other cells.",
+        "6": "The surface of CF cells had high levels of two sphingolipids, known to promote inflammation (redness and swelling from fighting an infection).",
+        "7": "Our results support the role of sphingolipids in the onset of CF lung problems."
+      }
+    }
+  },
+  "33038767": {
+    "Title": "Glued in lipids: Lipointoxication in cystic fibrosis",
+    "abstract": {
+      "1": "Cystic Fibrosis (CF) is an autosomal recessive disease caused by mutations in the CF transmembrane regulator (CFTR) gene, which encodes a chloride channel located at the apical surface of epithelial cells.",
+      "2": "Unsaturated Fatty Acid (UFA) deficiency has been a persistent observation in tissues from patients with CF.",
+      "3": "However, the impacts of such deficiencies on the etiology of the disease have been the object of intense debates.",
+      "4": "The aim of the present review is first to highlight the general consensus on fatty acid dysregulations that emerges from, sometimes apparently contradictory, studies.",
+      "5": "In a second step, a unifying mechanism for the potential impacts of these fatty acid dysregulations in CF cells, based on alterations of membrane biophysical properties (known as lipointoxication), is proposed.",
+      "6": "Finally, the contribution of lipointoxication to the progression of the CF disease and how it could affect the efficacy of current treatments is also discussed."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Cystic fibrosis (CF) is a disease inherited from both parents caused by genetic changes in the CF transmembrane conductance Regulator (CFTR) gene, which produces a compound (chloride) channel at the surface of epithelial cells (cells that cover outer surface of the internal organs).",
+        "2": "Not enough Unsaturated Fatty Acid (UFA) has continually been seen in CF patients.",
+        "3": "Scientists do not agree on the role of not enough UFA in causing CF.",
+        "4": "We aim to discuss current beliefs on improper functioning of UFAs that comes from studies that sometime disagree.",
+        "5": "Next, we suggest a way in which possible improper functioning of UFAs impacts CF cells, based on changes in the biological and physical characteristics of the cell membrane (known as lipointoxication).",
+        "6": "Finally, we discuss how lipointoxication might play a role in the progression of CF disease and how it could affect how well current treatments work."
+      },
+      "adaptation2": {
+        "1": "Cystic Fibrosis (CF) is an inherited disease, which leads to mucus buildup in many organs, caused by mutations in a specific gene, which encodes a channel located at the surface of boundary cells.",
+        "2": "Lack of Unsaturated Fatty Acid (UFA), a certain form of fat, has been a common observation for patients with CF.",
+        "3": "However, the effects of such deficiencies on the causes of the disease are debated.",
+        "4": "This review aims to highlight the general consensus on fatty acid impairment that comes from, sometimes contradictory, studies.",
+        "5": "In a second step, how the possible effects of this fatty acid impairment occur in CF cells, based on changes in cell boundary properties, is explored.",
+        "6": "Finally, how fat toxicity contribtues to progression of the CF disease and affects the success of current treatments is discussed."
+      }
+    }
+  },
+  "33331662": {
+    "Title": "Corrector therapies (with or without potentiators) for people with cystic fibrosis with class II CFTR gene variants (most commonly F508del)",
+    "abstract": {
+      "1": "Background: Cystic fibrosis (CF) is a common life-shortening genetic condition caused by a variant in the cystic fibrosis transmembrane conductance regulator (CFTR) protein.",
+      "2": "A class II CFTR variant F508del (found in up to 90% of people with CF (pwCF)) is the commonest CF-causing variant.",
+      "3": "The faulty protein is degraded before reaching the cell membrane, where it needs to be to effect transepithelial salt transport.",
+      "4": "The F508del variant lacks meaningful CFTR function and corrective therapy could benefit many pwCF.",
+      "5": "Therapies in this review include single correctors and any combination of correctors and potentiators."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Cystic fibrosis (CF) is a common life-shortening inherited condition caused by a change in the cystic fibrosis transmembrane conductance regulator (CFTR) protein.",
+        "2": "The most common change, F508del, is a protein processing change, and up to 90% of people with CF have this change.",
+        "3": "The faulty protein is destroyed before reaching the cell membrane, where it needs to be to move salt across epithelial cells (cells that cover outer surface of the internal organs).",
+        "4": "The F508del change doesn't work properly and treatment to fix this could help many people with CF.",
+        "5": "We review single correctors, which help the CFTR protein form the right shape to move to the cell surface, and any combination of correctors and potentiators, which are CFTR modulators (influencers) that hold the gate to the CFTR channel open so chloride can flow through the cell membrane."
+      }
+    }
+  },
+  "33805605": {
+    "Title": "Lumacaftor and Matrine: Possible Therapeutic Combination to Counteract the Inflammatory Process in Cystic Fibrosis",
+    "abstract": {
+      "1": "Cystic fibrosis is a monogenic, autosomal, recessive disease characterized by an alteration of chloride transport caused by mutations in the CFTR (Cystic Fibrosis Transmembrane Conductance Regulator) gene.",
+      "2": "The loss of Phe residue in position 508 (ΔF508-CFTR) causes an incorrect folding of the protein causing its degradation and electrolyte imbalance.",
+      "3": "CF patients are extremely predisposed to the development of a chronic inflammatory process of the bronchopulmonary system.",
+      "4": "When the cells of a tissue are damaged, the immune cells are activated and trigger the production of free radicals, provoking an inflammatory process.",
+      "5": "In addition to routine therapies, today drugs called correctors are available for mutations such as ΔF508-CFTR as well as for others less frequent ones.",
+      "6": "These active molecules are supposed to facilitate the maturation of the mutant CFTR protein, allowing it to reach the apical membrane of the epithelial cell.",
+      "7": "Matrine induces ΔF508-CFTR release from the endoplasmic reticulum to cell cytosol and its localization on the cell membrane.",
+      "8": "We now have evidence that Matrine and Lumacaftor not only restore the transport of mutant CFTR protein, but probably also counteract the inflammatory process by improving the course of the disease."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Cystic fibrosis is a deadly disease inherited from both parents characterized by changes in a compound (chloride) movement caused by genetic changes in the Cystic Fibrosis Transmembrane Conductance Regulator (CFTR) gene.",
+        "2": "One gene change, ΔF508-CFTR, causes the resulting protein the gene creates to fold incorrectly, which leads to its destruction and mineral imbalance.",
+        "3": "CF patients are at very high risk of developing long-term inflammation (redness and swelling from fighting an infection) of part of the lungs.",
+        "4": "When tissue cells are damaged, immune cells are stimulated and produce unstable molecules, prompting the immune system to defend the body.",
+        "5": "In addition to normal treatments, drugs called correctors are available for changes like ΔF508-CFTR and other less common changes.",
+        "6": "Correctors help the CFTR protein form the right shape to move to the surface of the epithelial cell (cell that covers outer surface of the internal organs).",
+        "7": "Matrine, a drug, starts ΔF508-CFTR release from the cell's transportation system through the cell liquid to the surface.",
+        "8": "We now have proof that Matrine and Lumacaftor, another drug, not only allow the changed CFTR to move, but probably neutralize inflammation by improving the course of the disease."
+      }
+    }
+  },
+  "question": "How does cystic fibrosis affect cell membrane?",
+  "question_type": "B"
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "75": {
+  "18667698": {
+    "Title": "DNA polymorphisms at the BCL11A, HBS1L-MYB, and beta-globin loci associate with fetal hemoglobin levels and pain crises in sickle cell disease",
+    "abstract": {
+      "1": "Sickle cell disease (SCD) is a debilitating monogenic blood disorder with a highly variable phenotype characterized by severe pain crises, acute clinical events, and early mortality.",
+      "2": "Interindividual variation in fetal hemoglobin (HbF) expression is a known and potentially heritable modifier of SCD severity.",
+      "3": "High HbF levels are correlated with reduced morbidity and mortality.",
+      "4": "Common single nucleotide polymorphisms (SNPs) at the BCL11A and HBS1L-MYB loci have been implicated previously in HbF level variation in nonanemic European populations.",
+      "5": "We recently demonstrated an association between a BCL11A SNP and HbF levels in one SCD cohort [Uda M, et al. (2008) Proc Natl Acad Sci USA 105:1620-1625].",
+      "6": "Here, we genotyped additional BCL11A SNPs, HBS1L-MYB SNPs, and an SNP upstream of (G)gamma-globin (HBG2; the XmnI polymorphism), in two independent SCD cohorts: the African American Cooperative Study of Sickle Cell Disease (CSSCD) and an SCD cohort from Brazil.",
+      "7": "We studied the effect of these SNPs on HbF levels and on a measure of SCD-related morbidity (pain crisis rate).",
+      "8": "We strongly replicated the association between these SNPs and HbF level variation (in the CSSCD, P values range from 0.04 to 2 x 10(-42)).",
+      "9": "Together, common SNPs at the BCL11A, HBS1L-MYB, and beta-globin (HBB) loci account for >20% of the variation in HbF levels in SCD patients.",
+      "10": "We also have shown that HbF-associated SNPs associate with pain crisis rate in SCD patients.",
+      "11": "These results provide a clear example of inherited common sequence variants modifying the severity of a monogenic disease."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Sickle Cell Disease (SCD) is a disabling genetic blood disorder caused by a single mutation. SCD can have various outcomes,but it can result in severe pain crises, acute symptoms, and early death.",
+        "2": "The severity of the problems that occur in SCD can vary depending on the amount of fetal hemoglobin (HbF) in the blood.",
+        "3": "High HbF levels are associated with decreased problems and death in patients with SCD.",
+        "4": "Common single mutations in two genes, BCL11A and HBS1L-MYB, are thought to cause the changes in HbF levels seen in European populations without anemia.",
+        "5": "Research has shown a connection between a single BCL11A gene mutation and HbF levels in some SCD patients.",
+        "6": "In this paper, researchers found more single mutations in the BCL11A, HBS1L-MYB, and HBC2 genes in two other groups of patients (a study in African Americans SCD patients and a study of SCD patients from Brazil).",
+        "7": "We studied the effect of these single gene mutations on HbF levels and the number of pain crises in SCD.",
+        "8": "We showed a strong connection between the single mutations in these genes and different HbF levels.",
+        "9": "Common single mutations in the BCL11A, HBS1L-MYB, beta-globin (HBB) genes explain >20% of the different HbF levels in SCD patients.",
+        "10": "These mutations, associated with HbF levels, are also associated with the number of pain crises in SCD patients.",
+        "11": "This shows a clear example that inherited common gene mutations can change the severity of a genetic disease. "
+      }
+    }
+  },
+  "18695233": {
+    "Title": "Genetic complexity in sickle cell disease",
+    "abstract": {
+      "1": "Sickle cell disease (SCD) was the first human monogenic disorder to be characterized at the molecular level.",
+      "2": "It results from the substitution of glutamic acid by valine at position 6 of the β-chain of hemoglobin.",
+      "3": "The clinical manifestations of SCD arise from the tendency of sickle hemoglobin (known as HbS or α2βS2) to polymerize at reduced oxygen tensions and deform red cells into the characteristic rigid sickle cell shape.",
+      "4": "Such inflexible red cells cannot pass through the microcirculation efficiently, and this results in anemia (due to destruction of the red cells) and intermittent vasoocclusion causing tissue damage and pain.",
+      "5": "Although all patients with homozygous SCD have exactly the same molecular defect, there is considerable clinical variation, ranging from death in early childhood to a normal life span with few complications.",
+      "6": "Genetic modifiers of SCD include α-thalassemia, and it has been known for many years that patients with increased levels of fetal Hb (HbF or α2γ2) often tend to have a relatively mild clinical course because HbF reduces the tendency of HbS to polymerise within the red cell.",
+      "7": "Increased HbF may result from rare deletions within the β-globin gene cluster or from point mutations in the promoters of the fetal γ-globin genes (hereditary persistence of fetal hemoglobin, HPFH), but additional loci are known to increase HbF levels in adult life.",
+      "8": "Identifying such loci has been a painstaking task, but a combination of genome-wide analysis within a large kindred and within twin pairs has identified two quantitative trait loci (QTL) with major influences on fetal hemoglobin levels in adults.",
+      "9": "A significant proportion of the variation in HbF levels and the frequency of painful crises in patients with SCD is accounted for by five common single-nucleotide polymorphisms (SNPs) at these loci."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Sickle Cell Disease (SCD) was the first human genetic disorder caused by a mutation in a single gene to be described at the chemical level.",
+        "2": "SCD occurs when a mutation of the Beta-hemoglobin gene causes the amino acid, glutamic acid, to be replaced by valine in the beta chain of the hemoglobin protein.",
+        "3": "The signs and symptoms in SCD occur because these sickle hemoglobin (HbS) proteins tend to join together where oxygen levels are lower in the body. This causes the red blood cells to change into the typical abnormal rigid sickle cell shape.",
+        "4": "These rigid red blood cells cannot pass through the smallest blood vessels well.This causes the vessels to be blocked, resulting in tissue damage and pain.These sickle red blood cells are also destroyed, which causes anemia. ",
+        "5": "Patients with the same genetic defect in SCD can have many different outcomes, ranging from death in early childhood to a normal life span with few problems.",
+        "6": "Alpha-Thalassemia is a genetic disease that can change the outcome of patients with SCD. Also, patients with increased levels of another type of hemoglobin protein, fetal hemoglobin (HbF), tend to have a milder disease. The presence of fetal hemoglobin decreases the tendency of the sickle hemoglobin to join together in the red blood cells.",
+        "7": "Increased levels of HbF may be due to other mutations in various hemoglobin genes.",
+        "8": "Identifying these mutations in the hemoglobin genes has been very difficult.  But researchers have been able to identify two areas on the genes that have major influences on fetal hemoglobin (HbF) levels in adults.",
+        "9": "A large part of the different HbF levels and number of painful crises in Sickle Cell Disease patients is due to five common mutations in the hemoglobin gene."
+      }
+    }
+  },
+  "29205277": {
+    "Title": "Clinical and genetic factors are associated with pain and hospitalisation rates in sickle cell anaemia in Cameroon",
+    "abstract": {
+      "1": "We aimed to investigate the clinical and genetic predictors of painful vaso-occlusive crises (VOC) in sickle cell disease (SCD) in Cameroon.",
+      "2": "Socio-demographics, clinical variables/events and haematological indices were acquired.",
+      "3": "Genotyping was performed for 40 variants in 17 pain-related genes, three fetal haemoglobin (HbF)-promoting loci, two kidney dysfunctions-related genes, and HBA1/HBA2 genes.",
+      "4": "Statistical models using regression frameworks were performed in R® .",
+      "5": "A total of 436 hydoxycarbamide- and opioid-naïve patients were studied; median age was 16 years.",
+      "6": "Female sex, body mass index, Hb/HbF, blood transfusions, leucocytosis and consultation or hospitalisation rates significantly correlated with VOC.",
+      "7": "Three pain-related genes variants correlated with VOC (CACNA2D3-rs6777055, P = 0·025; DRD2-rs4274224, P = 0·037; KCNS1-rs734784, P = 0·01).",
+      "8": "Five pain-related genes variants correlated with hospitalisation/consultation rates.",
+      "9": "(COMT-rs6269, P = 0·027; FAAH-rs4141964, P = 0·003; OPRM1-rs1799971, P = 0·031; ADRB2-rs1042713; P < 0·001; UGT2B7-rs7438135, P = 0·037).",
+      "10": "The 3·7 kb HBA1/HBA2 deletion correlated with increased VOC (P = 0·002).",
+      "11": "HbF-promoting loci variants correlated with decreased hospitalisation (BCL11A-rs4671393, P = 0·026; HBS1L-MYB-rs28384513, P = 0·01).",
+      "12": "APOL1 G1/G2 correlated with increased hospitalisation (P = 0·048).",
+      "13": "This first study from Africa has provided evidence supporting possible development of genetic risk model for pain in SCD."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "This research studies factors that may predict painful blood vessel blockages (VOC-vaso-occlusive crises) in Sickle Cell Disease (SCD) patients in Cameroon.",
+        "2": "Researchers found out facts about the population, signs and symptoms, and their blood.",
+        "3": "Genetic testing was done for 40 mutations in 17 pain-relating genes, three fetal hemoglobin areas on genes, two genes related to kidney disease, and the HBA1/HBA2 (alpha-globin)genes.",
+        "4": "Models were performed to predict outcomes.",
+        "5": "A total of 436 patients that had not taken hydroxycarbamide or opioids were studied. Half the patients were younger than 16 years old and half were older.",
+        "6": "Female sex, body mass index, Hb/HbF (hemoglobin/fetal hemoglobin), blood transfusions, higher white blood cell count, and consultations or hospitalisations are significantly linked with blood vessel blockages (vaso-occlusive crises (VOC)).",
+        "7": "Three pain-related gene variants (mutations) are linked to VOC.",
+        "8": "Five pain-related gene variants are linked to the amount of hospitalisations/consultations.",
+        "9": "These gene variants are specific mutations in COMT, FAAH, OPRM1, ADRB2, and UGT2B7 genes.",
+        "10": "A specific mutation in the HBA1/HBA2 genes are linked to increased VOC.",
+        "11": "Specific gene variants on the BCL11A gene and the HBS1L-MYB gene increase HbF and are linked to decreased hospitalisation.",
+        "12": "The APOL1 G1/G2 genes (related to kidney disease) are linked to increased hospitalisation.",
+        "13": "This first study from an African country has provided evidence supporting the  possible development of a genetic risk model for pain in Sickle Cell Disease. "
+      }
+    }
+  },
+  "29555644": {
+    "Title": "Biological impact of α genes, β haplotypes, and G6PD activity in sickle cell anemia at baseline and with hydroxyurea",
+    "abstract": {
+      "1": "Sickle cell anemia (SCA), albeit monogenic, has heterogeneous phenotypic expression, mainly related to the level of hemoglobin F (HbF).",
+      "2": "No large cohort studies have ever compared biological parameters in patients with major β-globin haplotypes; ie, Senegal (SEN), Benin (BEN), and Bantu/Central African Republic (CAR).",
+      "3": "The aim of this study was to evaluate the biological impact of α genes, β haplotypes, and glucose-6-phosphate dehydrogenase (G6PD) activity at baseline and with hydroxyurea (HU).",
+      "4": "Homozygous HbS patients from the Créteil pediatric cohort with available α-gene and β-haplotype data were included (n = 580; 301 females and 279 males) in this retrospective study.",
+      "5": "Homozygous β-haplotype patients represented 74% of cases (37.4% CAR/CAR, 24.3% BEN/BEN, and 12.1% SEN/SEN).",
+      "6": "HU was given to 168 cohort SCA children.",
+      "7": "Hematological parameters were recorded when HbF was maximal, and changes (ΔHU-T0) were calculated.",
+      "8": "At baseline, CAR-haplotype and α-gene numbers were independently and negatively correlated with Hb and positively correlated with lactate dehydrogenase.",
+      "9": "HbF was negatively correlated with CAR-haplotype numbers and positively with BEN- and SEN-haplotype numbers.",
+      "10": "The BCL11A/rs1427407 \"T\" allele, which is favorable for HbF expression, was positively correlated with BEN- and negatively correlated with CAR-haplotype numbers.",
+      "11": "With HU treatment, Δ and HbF values were positively correlated with the BEN-haplotype number.",
+      "12": "BEN/BEN patients had higher HbF and Hb levels than CAR/CAR and SEN/SEN patients.",
+      "13": "In conclusion, we show that BEN/BEN patients have the best response on HU and suggest that this could be related to the higher prevalence of the favorable BCL11A/rs1427407/T/allele for HbF expression in these patients."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Sickle Cell Anemia (SCA) is caused by a single gene mutation. SCA varies in different patients mainly due to the fetal hemoglobin (HbF) level in the blood.",
+        "2": "No large research studies have ever compared factors seen in patients with the major different beta-globin genetic types; for example, Senegal (SEN), Benin (BEN), and Bantu/Central African Republic (CAR).",
+        "3": "This research studies the importance of alpha genes, different beta gene types, and glucose-6-phosphate dehydrogenase (G6PD-an enzyme that protects red blood cells from damage) activity in patients before and after treatment with the medicine,  hydroxyurea.",
+        "4": "This study included boys and girls who inherited the sickle hemoglobin (HbS) from both parents (SS -Creteil pediatric group). Facts about the alpha-gene and beta-globin genetic types were known.",
+        "5": "Children who inherited the major different beta-globin genetic types from both parents made up 74% all patients CAR/CAR, BEN/BEN, and SEN/SEN.",
+        "6": "Hydroxyurea (HU) was given to 168 children with Sickle Cell Anemia (SCA).",
+        "7": "Factors in the blood were recorded when HbF was highest. Changes were analyzed after hydroxyurea (HU) was given.",
+        "8": "Before HU, the CAR beta-globin genetic type and the alpha-gene were separately linked to lower hemoglobin and higher lactate dehydrogenase (an enzyme from tissue damage).",
+        "9": "Higher HbF was linked to lower CAR genetic type numbers but higher BEN and SEN genetic type numbers.",
+        "10": "A BCL11A gene mutation is linked to the favorable higher HbF levels. This gene mutation was also linked to higher BEN, but lower CAR genetic type numbers.",
+        "11": "With HU treatment, positive changes and higher HbF numbers were linked to the BEN genetic type.",
+        "12": "BEN/BEN patients had higher HbF and hemoglobin (Hb) levelsthan CAR/CAR and SEN/SEN patients.",
+        "13": "This research shows that children inheriting BEN mutations from both parents (BEN/BEN) have the best response on hydroxyurea. This could be related to the more likely presence of favorable genetic mutations for HbF production in these patients."
+      }
+    }
+  },
+  "30216683": {
+    "Title": "The association of HBG2, BCL11A, and HMIP polymorphisms with fetal hemoglobin and clinical phenotype in Iraqi Kurds with sickle cell disease",
+    "abstract": {
+      "1": "Introduction: Fetal hemoglobin (HbF) is the major modifier for sickle cell disease (SCD) severity.",
+      "2": "HbF is modulated mainly by three major quantitative trait loci (QTL) on chromosomes 2, 6, and 11.",
+      "3": "Methods: Five SNPs in the three QTLs (HBG2, rs7482144; BCL11A, rs1427407 and rs10189857; and HBS1L-MYB intergenic region, rs28384513 and rs9399137) were investigated by multiplex PCR and reverse hybridization, and their roles in HbF and clinical phenotype variability in Iraqi Kurds with SCD were assessed.",
+      "4": "Results: HBG2 rs7482144 with minor allele frequency (MAF) of 0.133 was the most significant contributor to HbF variability, contributing 18.1%, followed by rs1427407 (MAF of 0.266) and rs9399137 (MAF of 0.137) at 14.3% and 8.8%, respectively.",
+      "5": "The other two SNPs were not significant contributors.",
+      "6": "Furthermore, when the cumulative numbers of minor alleles in the three contributing SNPs were assessed, HbF% and hemoglobin concentration increased with increasing number of minor alleles (P < 0.0005 and 0.001, respectively), while serum lactic dehydrogenase, reticulocytes, leukocytes, transfusion, and pain frequencies decreased (P = 0.003, 0.004, <0.0005, <0.0005, and 0.017, respectively).",
+      "7": "Conclusions: It was demonstrated that SNPs in all three major HbF QTLs contribute significantly to HbF and clinical variability in Iraqi Kurds with SCD and that the cumulative number of minor alleles at contributing SNPs may serve as a better predictor of such variability in this population."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Fetal hemoglobin (HbF) is an important protein that affects the severity of Sickle Cell Disease (SCD).",
+        "2": "HbF is changed mainly by three important quantitative trail loci (QTL-special sections of DNA) on chromosomes 2, 6, and 11.",
+        "3": "Five single mutations in the three QTLs were studied. The roles of these mutations in HbF were studied. The research evaluated how these mutations affected the variety of characteristics seen in Iraqui Kurds with Sickle Cell Disease (SCD).  ",
+        "4": "Three minor single mutations of the HBG2 gene resulted in the most important changes in HbF.",
+        "5": "The other two single mutations did not contribute significantly.",
+        "6": "An increase in the number of these minor single mutations resulted in an increase in the amount of HbF and hemoglobin. This also resulted in a decrease in blood lactic dehydrogenase (an enzyme from tissue damage), white blood cells, transfusions, and occurences of pain.",
+        "7": "Research showed these mutations in all three major HbF QTLs are important to HbF. These mutations also contribute to the variety of disease outcomes in Iraqui Kurds with SCD. The added amount of these minor single mutations may better predict variety of disease outcome in this population."
+      }
+    }
+  },
+  "31322815": {
+    "Title": "Combined and differential effects of alpha-thalassemia and HbF-quantitative trait loci in Senegalese hydroxyurea-free children with sickle cell anemia",
+    "abstract": {
+      "1": "Background: Our objective was to investigate the combined and differential effects of alpha-thalassemia -3.7 kb deletion and HbF-promoting quantitative trait loci (HbF-QTL) in Senegalese hydroxyurea (HU)-free children and young adults with sickle cell anemia (SCA).",
+      "2": "Procedure: Steady-state biological parameters and vaso-occlusive crises (VOC) requiring emergency admission were recorded over a 2-year period in 301 children with SCA.",
+      "3": "The age of the first hospitalized VOC was also recorded.",
+      "4": "These data were correlated with the alpha-globin and HbF-QTL genotypes.",
+      "5": "For the latter, three different genetic loci were studied (XmnI, rs7482144; BCL11A, rs1427407; and the HBS1L-MYB region, rs28384513) and a composite score was calculated, ranging from zero (none of these three polymorphisms) to six (all three polymorphisms at the homozygous state).",
+      "6": "Results: A positive clinical impact of the HbF-QTL score on VOC rate, HbF, leucocytes, and C-reactive protein levels was observed only for patients without alpha-thalassemia deletion.",
+      "7": "Conversely, combination of homozygous -3.7 kb deletion with three to six HbF-QTL was associated with a higher VOC rate.",
+      "8": "The age of the first hospitalized VOC was delayed for patients with one or two alpha-thalassemia deletions and at least two HbF-QTL.",
+      "9": "Conclusion: Alpha-thalassemia -3.7 kb deletion and HbF-QTL are modulating factors of SCA clinical severity that interact with each other.",
+      "10": "They should be studied and interpreted together and not separately, at least in HU-free children."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Researchers analyzed the effects of an alpha-thalassemia (another genetic blood disease) mutation and fetal hemoglobin-promoting quantitative trait loci (HbF-QTL (special section of DNA)) in Senegalese children and young adults with Sickle Cell Anemia (SCA) who have not received the medicine, hydroxyurea. ",
+        "2": "Steady biological signs and crises from blood vessel blockages (vaso-occlusive crises-VOC) requiring emergency admission were recorded over a 2-year period in 301 children with Sickle Cell Anemia (SCA).",
+        "3": "The age of the first hospitalized VOC was also recorded.",
+        "4": "These facts were compared to patients who had alpha-globin and HbF-QTL genes.",
+        "5": "Three different gene regions on the HbF-QTL gene were studied in detail. A score was given to patients from zero to six depending on the different changes (mutations) at the 3 gene regions.",
+        "6": "A higher HbF-QTL score resulted in better signs of SCA disease outcome only for patients without the alpha-thalassemia mutation.",
+        "7": "With the alpha-thalassemia mutation, a higher HbF-QTL score was linked to more VOC (vaso-occlusive crises).",
+        "8": "The age of the first hospitalization for VOC was older in patients with the alpha-thalassemia mutation and at least 2 HbF-QTL gene region mutations.",
+        "9": "The alpha-thalassemia mutation and the HbF-QTL gene mutations react with each other and can change the severity of Sickle Cell Anemia.",
+        "10": "These genes and their mutations should be studied together, not separately, at least in children who have not received hydroxyurea."
+      }
+    }
+  },
+  "32447424": {
+    "Title": "Functional polymorphisms of BCL11A and HBS1L-MYB genes affect both fetal hemoglobin level and clinical outcomes in a cohort of children with sickle cell anemia",
+    "abstract": {
+      "1": "Fetal hemoglobin (HbF) ameliorates clinical severity of sickle cell anemia (SCA).",
+      "2": "The major loci regulating HbF levels are HBB cluster, BCL11A, and HMIP-2 (HBS1L-MYB).",
+      "3": "However, the impact of noncoding single-nucleotide polymorphisms (SNPs) in these loci on clinical outcomes and their functional role on regulating HbF levels should be better elucidated.",
+      "4": "Therefore, we performed comprehensive association analyses of 14 noncoding SNPs in five loci with HbF levels and with clinical outcomes in a cohort of 250 children with SCA from Southeastern Brazil, and further performed functional annotation of these SNPs.",
+      "5": "We found SNPs independently associated with HbF levels: rs4671393 in BCL11A (β-coefficient = 0.28), rs9399137 in HMIP-2A (β-coefficient = 0.16), and rs4895441 in HMIP-2B (β-coefficient = 0.15).",
+      "6": "Patients carrying minor (HbF-boosting) alleles for rs1427407, rs93979137, rs4895441, rs9402686, and rs9494145 showed reduced count of reticulocytes (p < 0.01), while those carrying the T allele of rs9494145 showed lower white blood cell count (p = 0.002).",
+      "7": "Carriers of the minor allele for rs9402686 showed higher peripheral saturation of oxygen (p = 0.002).",
+      "8": "Patients carrying minor alleles in BCL11A showed lower risk of transfusion incidence rate ratio (IRR ≥ 1.3; p < 0.0001).",
+      "9": "This effect was independent of HbF effect (p = 0.005).",
+      "10": "Carriers of minor alleles for rs9399137 and rs9402686 showed lower risk of acute chest syndrome (IRR > 1.3; p ≤ 0.01).",
+      "11": "Carriers of the reference allele for rs4671393 showed lower risk of infections (IRR = 1.16; p = 0.01).",
+      "12": "In conclusion, patients carrying HbF-boosting alleles of BCL11A and HMIP-2 were associated with milder clinical phenotypes.",
+      "13": "Higher HbF concentration may underlie this effect."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Fetal hemoglobin (HbF) makes the severity of Sickle Cell Anemia (SCA) better.",
+        "2": "The major specific genetic areas effecting HbF levels are in the HBB cluster, BCL11A, and HMIP-2 (HBS1L-MYB) genes.",
+        "3": "Researchers need to know more about how the areas of these genes effect the process of HbF levels and the outcome of disease in SCA.",
+        "4": "Researchers analyzed the function and relationship of 14 mutations in 5 specific genetic areas of the genes with HbF levels and disease outcomes in 250 children with SCA in Southeastern Brazil.",
+        "5": "They found single mutations that were linked to HbF levels in BCL11A and HMIP-2A and HMIP-2B genes.",
+        "6": "Patients who had minor mutations (carriers) that increased HbF levels (HbF-boosting) had reduced white blood cells counts.",
+        "7": "Carriers of other minor mutations (genetic differences) showed higher levels of oxygen in the blood.",
+        "8": "Patients carrying still other minor genetic differences in BCL11A showed lower risk of transfusions.",
+        "9": "These findings were separate from the HbF effect.",
+        "10": "Carriers of other minor mutations showed lower risk of acute chest syndrome.",
+        "11": "Carriers of the standard minor genetic change showed lower risk of infection.",
+        "12": "Patients carrying HBF-boosting minor mutations of BCL11A and HMIP-2 genes had milder disease.",
+        "13": "Higher HbF levels may be the cause of this effect."
+      }
+    }
+  },
+  "32772141": {
+    "Title": "Association between BCL11A, HSB1L-MYB, and XmnI γG-158 (C/T) gene polymorphism and hemoglobin F level in Egyptian sickle cell disease patients",
+    "abstract": {
+      "1": "Sickle cell disease (SCD) is a monogenic disease characterized by multisystem morbidity and highly variable clinical course.",
+      "2": "Inter-individual variability in hemoglobin F (HbF) levels is one of the main modifiers that account for the clinical heterogeneity in SCD.",
+      "3": "HbF levels are affected by, among other factors, single nucleotide polymorphisms (SNPs) at the BCL11A gene and the HBS1L-MYB intergenic region and Xmn1 gene.",
+      "4": "Our aim was to investigate HbF-enhancer haplotypes at these loci to obtain a first overview of the genetic situation of SCD patients in Egypt and its impact on the severity of the disease.",
+      "5": "The study included 100 SCD patients and 100 matched controls.",
+      "6": "Genotyping of BCL11A (rs1886868 C/T), HBS1L-MYB (rs9389268 A/G) and Xmn1 γG158 (rs7842144 C/T) SNPs showed no statistically significant difference between SCD patients and controls except for the hetero-mutant genotypes of BCL11A which was significantly higher in SCD patients compared with controls.",
+      "7": "Baseline HbF levels were significantly higher in those with co-inheritance of polymorphic genotypes of BCL11A + HSB1L-MYB and BCL11A + Xmn1.",
+      "8": "Steady-state HbF levels, used as an indicator of disease severity, were significantly higher in SCD-Sβ patients having the polymorphic genotypes of HSB1L-MYB.",
+      "9": "Fold change of HbF in both patient groups did not differ between those harboring the wild and the polymorphic genotypes of the studied SNPs.",
+      "10": "In conclusion, BCL11A, HSB1L, and Xmn1 genetic polymorphisms had no positive impact on baseline HbF levels solely but had if coexisted.",
+      "11": "Discovery of the molecular mechanisms controlling HbF production could provide a more effective strategy for HbF induction."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Sickle Cell Disease (SCD) is a genetic blood disease that can affect many areas of the body. The course of the disease can vary between patients.",
+        "2": "Different levels of fetal hemoglobin (HbF) is a main reason that explains the variation in the course of SCD.",
+        "3": "HbF levels are affected by single gene mutations in the BCL11A, HBS1L-MYB, and Xmn1 genes.",
+        "4": "Our research focused on specific areas in these genes that affected HbF and also affected the disease severity in SCD patients in Egypt.",
+        "5": "The study compared 2 groups, 100 SCD patients and 100 patients without SCD (controls).",
+        "6": "Generally, closer analysis of the BCL11A, HBS1L-MYB, and Xmn1 genes didn't show important differences between the 2 groups. But certain specific genetic mutations in the BCL11A gene were higher in SCD patients.",
+        "7": "Baseline HbF levels were significantly higher in those who inherited mutations of both BCL11A + HSB1L-MYB and BCL11A+ Xmn1 genes.",
+        "8": "Steady HbF levels, (a sign of disease severity) in both groups, were significantly higher in SCD-Sbeta patients having the different genetic mutations of the HSB1L-MYB gene.",
+        "9": "The protein folding chemistry of HbF in both groups didn’t change between patients with the normal or mutant genes.",
+        "10": "BCL11A, HSB1L, and Xmn1 gene mutations did not have a positive effect on baseline HbF levels unless the mutations occurred together.",
+        "11": "If researchers could discover the underlying chemistry of HbF production we might be able to increase it in patients."
+      }
+    }
+  },
+  "33072979": {
+    "Title": "Sickle Cell Disease-Genetics, Pathophysiology, Clinical Presentation and Treatment",
+    "abstract": {
+      "1": "Sickle cell disease (SCD) is a monogenetic disorder due to a single base-pair point mutation in the β-globin gene resulting in the substitution of the amino acid valine for glutamic acid in the β-globin chain.",
+      "2": "Phenotypic variation in the clinical presentation and disease outcome is a characteristic feature of the disorder.",
+      "3": "Understanding the pathogenesis and pathophysiology of the disorder is central to the choice of therapeutic development and intervention.",
+      "4": "In this special edition for newborn screening for haemoglobin disorders, it is pertinent to describe the genetic, pathologic and clinical presentation of sickle cell disease as a prelude to the justification for screening.",
+      "5": "Through a systematic review of the literature using search terms relating to SCD up till 2019, we identified relevant descriptive publications for inclusion.",
+      "6": "The scope of this review is mainly an overview of the clinical features of pain, the cardinal symptom in SCD, which present following the drop in foetal haemoglobin as young as five to six months after birth.",
+      "7": "The relative impact of haemolysis and small-vessel occlusive pathology remains controversial, a combination of features probably contribute to the different pathologies.",
+      "8": "We also provide an overview of emerging therapies in SCD."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Sickle Cell Disease (SCD) is a genetic disorder due to a single mutation in the Beta-globin gene. This mutation causes a change in an amino acid in the Beta-hemoglobin protein that decreases the ability of oxygen to be carried out to the body.",
+        "2": "Patients with Sickle Cell Disease (SCD) may experience a variety of signs, symptoms and disease outcomes from this disorder.",
+        "3": "Understanding the causes, progression, and functional problems that result in patients with SCD are very important in finding and choosing treatments.",
+        "4": "In this special paper, doctors discuss the importance of screening newborns for SCD. They also describe the genes, the pathology, and the signs and symptoms of Sickle Cell Disease.",
+        "5": "This paper is the result of a very thorough research of the literature on SCD.",
+        "6": " The paper focuses on the pain SCD can cause after the decrease in fetal hemoglobin which occurs in infants as young as five to six months after birth.",
+        "7": "The features seen in Sickle Cell Disease is probably due to a combination of the red blood cells being destroyed and the small blood vessels being blocked.",
+        "8": "This paper also discusses new therapies for Sickle Cell Disease."
+      }
+    }
+  },
+  "33216016": {
+    "Title": "HbF-promoting polymorphisms may specifically reduce the residual risk of cerebral vasculopathy in SCA children with alpha-thalassemia",
+    "abstract": {
+      "1": "Sickle cell anemia (SCA) is a disease characterized by abnormal red blood cell rheology.",
+      "2": "Because of their effects on HbS polymerization and red blood cell deformability, alpha-thalassemia and the residual HbF level are known genetic modifiers of the disease.",
+      "3": "The aim of our study was to determine if the number of HbF quantitative trait loci (QTL) would also favor a specific sub-phenotype of SCA as it is the case for alpha-thalassemia.",
+      "4": "Our results confirmed that alpha-thalassemia protected from cerebral vasculopathy but increased the risk for frequent painful vaso-occlusive crises.",
+      "5": "We also showed that more HbF-QTL may provide an additional and specific protection against cerebral vasculopathy but only for children with alpha-thalassemia (-α/αα or -α/-α genotypes)."
+    },
+    "adaptations": {
+      "adaptation3": {
+        "1": "Sickle Cell Anemia (SCA) is a genetic blood disease that causes abnormal red blood cell flow through blood vessels.",
+        "2": "Due to their effects on sickle hemoglobin (HbS) chemistry and red blood cell shape changes, alpha-thalassemia (another genetic blood disease)and HbF (fetal hemoglobin) levels are known to change the course of SCA. ",
+        "3": "The aim of our study was to find out if the number of HbF-QTL, quantitative trait loci (QTL-special sections of DNA) would influence the severity of SCA as seen in alpha-thalassemia.",
+        "4": "Results showed that alpha-thalassemia protected SCA patients from cerebral vasculopathy (diseases of blood vessels in the brain). But, it increased the risk for more painful crises due to blood vessel blockages.",
+        "5": "We also showed that more HbF-QTL may protect more against cerebral vasculopathy, but only for children with certain genetic types of alpha-thalassemia."
+      }
+    }
+  },
+  "question": "What is a gene affected by sickle cell anemia?",
+  "question_type": "B"
+  }
+}

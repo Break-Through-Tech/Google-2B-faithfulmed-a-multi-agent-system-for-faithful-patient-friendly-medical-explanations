@@ -1,0 +1,362 @@
+{
+  "66": {
+  "22087198": {
+    "Title": "Complications of nephrotic syndrome",
+    "abstract": {
+      "1": "Nephrotic syndrome (NS) is one of the most common glomerular diseases that affect children.",
+      "2": "Renal histology reveals the presence of minimal change nephrotic syndrome (MCNS) in more than 80% of these patients.",
+      "3": "Most patients with MCNS have favorable outcomes without complications.",
+      "4": "However, a few of these children have lesions of focal segmental glomerulosclerosis, suffer from severe and prolonged proteinuria, and are at high risk for complications.",
+      "5": "Complications of NS are divided into two categories: disease-associated and drug-related complications.",
+      "6": "Disease-associated complications include infections (e.g., peritonitis, sepsis, cellulitis, and chicken pox), thromboembolism (e.g., venous thromboembolism and pulmonary embolism), hypovolemic crisis (e.g., abdominal pain, tachycardia, and hypotension), cardiovascular problems (e.g., hyperlipidemia), acute renal failure, anemia, and others (e.g., hypothyroidism, hypocalcemia, bone disease, and intussusception).",
+      "7": "The main pathomechanism of disease-associated complications originates from the large loss of plasma proteins in the urine of nephrotic children.",
+      "8": "The majority of children with MCNS who respond to treatment with corticosteroids or cytotoxic agents have smaller and milder complications than those with steroid-resistant NS.",
+      "9": "Corticosteroids, alkylating agents, cyclosporin A, and mycophenolate mofetil have often been used to treat NS, and these drugs have treatment-related complications.",
+      "10": "Early detection and appropriate treatment of these complications will improve outcomes for patients with NS."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Nephrotic Syndrome (NS) is one of the most common kidney diseases in children.",
+        "2": "Most of the time, looking at kidney tissue under a microscope shows that there is Minimal Change Nephrotic Syndrome (MCNS).",
+        "3": "Most people with MCNS can be cured without other issues. ",
+        "4": "However, some children with NS have a different form called focal segmental glomerulosclerosis. Children with this form have excess protein in their urine for long periods of time and are at high risk for additional problems.",
+        "5": "Additional problems caused by NS come in two categories: problems caused by the disease, and problems caused by drugs used to treat the disease.",
+        "6": "Problems caused by the disease include infections, blood clots, shock, heart disease, kidney failure, anemia, and others.",
+        "7": "The main way NS causes problems is from the large loss of proteins from the blood through urine.",
+        "8": "Most children with MCNS that is treatable with drugs have fewer additional problems that children with NS that drugs cannot help.",
+        "9": "Several drugs have been used to treat NS. These drugs can cause additional problems when used to treat NS.",
+        "10": "Finding additional problems early will improve results for patients with NS."
+      }
+    }
+  },
+  "25230687": {
+    "Title": "Japanese: retrospective analysis of the Japan Renal Biopsy Registry (J-RBR)",
+    "abstract": {
+      "1": "Background and objectives: There are very little data available regarding nephrotic syndrome (NS) in elderly (aged ≥65 years) Japanese.",
+      "2": "The aim of this study was to examine the causes and outcomes of NS in elderly patients who underwent renal biopsies between 2007 and 2010.",
+      "3": "Design, setting, participants, and measurements: From July 2007 to June 2010, all of the elderly (aged ≥65 years) Japanese primary NS patients who underwent native renal biopsies and were registered in the Japan renal biopsy registry (J-RBR; 438 patients including 226 males and 212 females) were identified.",
+      "4": "From this cohort, 61 patients [28 males and 33 females including 29, 19, 6, 4, and 3 patients with membranous nephropathy (MN), minimal change nephrotic syndrome (MCNS), focal segmental glomerulosclerosis (FSGS), membranoproliferative glomerulonephritis (MPGN), and other conditions, respectively] were registered from the representative multi-centers over all districts of Japan, and analyzed retrospectively.",
+      "5": "The treatment outcome was assessed using proteinuria-based criteria; i.e., complete remission (CR) was defined as urinary protein level of <0.3 g/day or g/g Cr, and incomplete remission type I (ICR-I) was defined as urinary protein level of <1.0-0.3 g/day or g/g Cr, and renal dysfunction was defined as a serum creatinine (Cr) level of 1.5 times the baseline level.",
+      "6": "Results: In this elderly primary NS cohort, MN was the most common histological type of NS (54.8 %), followed by MCNS (19.4 %), FSGS (17.4 %), and MPGN (8.4 %).",
+      "7": "Of the patients with MN, MCNS, or FSGS, immunosuppressive therapy involving oral prednisolone was performed in 25 MN patients (86.2 %), 18 MCNS patients (94.7 %), and all 6 FSGS patients (100 %).",
+      "8": "CR was achieved in all 19 (100 %) MCNS patients.",
+      "9": "In addition, CR and ICR-I were achieved in 16 (55.2 %) and 18 (62.1 %) MN patients and 4 (66.7 %) and 5 (83.3 %) FSGS patients, respectively.",
+      "10": "There were significant differences in the median time to CR among the MCNS, FSGS, and MN patients (median: 26 vs. 271 vs. 461 days, respectively, p < 0.001), and between the elderly (65-74 years, n = 7) and very elderly (aged ≥75 years, n = 12) MCNS patients (7 vs. 22 days, p = 0.037).",
+      "11": "Relapse occurred in two (6.9 %) of the MN and nine (47.4 %) of the MCNS patients.",
+      "12": "Renal dysfunction was observed in five (7.2 %) of the MN patients.",
+      "13": "Serious complications developed in eight (14.8 %) patients, i.e., two (3.7 %) patients died, four (7.4 %, including three MCNS patients) were hospitalized due to infectious disease, and two (3.7 %) developed malignancies.",
+      "14": "The initiation of diabetic therapy was necessary in 14 of the 61 patients (23.0 %) with much higher initial steroid dosage.",
+      "15": "Conclusion: Renal biopsy is a valuable diagnostic tool for elderly Japanese NS patients.",
+      "16": "In this study, most of elderly primary NS patients respond to immunosuppressive therapy with favorable clinical outcomes.",
+      "17": "On the other hand, infectious disease is a harmful complication among elderly NS patients, especially those with MCNS.",
+      "18": "In future, modified clinical guidelines for elderly NS patients should be developed."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "There’s not a lot of information about Nephrotic Syndrome (NS) in older Japanese people.",
+        "2": "The goal of this study was to look at the causes and outcomes of NS in older patients that had kidney biopsies (tissue samples) between 2007 and 2010.",
+        "3": "From a registry in Japan, we found all Japanese NS patients 65 or older who had kidney biopsies (tissue samples) from July 2007 to June 2010. This included 438 patients, 226 men and 212 women.",
+        "4": "Out of these patients, we looked closer at 61 that had certain types of NS.",
+        "5": "To know how well treatments worked, we looked at the levels of protein in the patients’ urine.",
+        "6": "In this group of older people with NS, more than half (58%) had a type called Membranous Nephropathy (MN). Another 19% had Minimal Change Nephrotic Syndrome (MCNS), 17% had Focal Segmental Glomerosclerosis (FSGS), and 8% had membranoproliferative glomerulonephritis (MPGN).",
+        "7": "A drug called prednisolone, which suppresses the immune system, was given to 86% of the patients with MN, 94% of the patients with MCNS, and all 6 patients with FSGS.",
+        "8": "The disease was completely cured in all 19 MCNS patients.",
+        "9": "Fifty-five percent of MN patients were completely cured and 62% were at least partially cured. Sixty-six percent of FSGS patients were completely cured and 83% were partially cured.",
+        "10": "There were meaningful differences in how long it took for different types of NS to be cured.  The differences depended both on the type of NS (MCNS, FSGS, or MN) and whether MCNS patients were 75 or older.",
+        "11": "The disease came back in 7% of patients with MN and 47% of patients with MCNS.",
+        "12": "Seven percent of patients with MN had problems with kidney function.",
+        "13": "Eight patients had serious problems. For example, two of them died, four were hospitalized for infections, and two developed malignant tumors.",
+        "14": "Treatment for diabetes was needed for 14 of the 61 patients with higher initial steroid dosage.",
+        "15": "Conclusions we can make include the fact that kidney biopsies are valuable for diagnosing NS in older Japanese patients.",
+        "16": "Also, in this study, most older NS patients responded well to drugs that suppress the immune system.",
+        "17": "On the other hand, infections are a harmful related problem among older people with NS, especially if they have MCNS.",
+        "18": "In the future, doctors should update guidelines for older NS patients."
+      }
+    }
+  },
+  "28089478": {
+    "Title": "The Clinical Course of Minimal Change Nephrotic Syndrome With Onset in Adulthood or Late Adolescence: A Case Series",
+    "abstract": {
+      "1": "Background: Few studies have examined the treatment and outcome of adult-onset minimal change nephrotic syndrome (MCNS).",
+      "2": "We retrospectively studied 125 patients who had MCNS with onset in either adulthood or late adolescence.",
+      "3": "Presenting characteristics, duration of initial treatment and response to treatment, relapse patterns, complications, and long-term outcome were studied.",
+      "4": "Study design: Case series.",
+      "5": "Setting & participants: Patients with new-onset nephrotic syndrome 16 years or older and a histologic diagnosis of MCNS in 1985 to 2011 were identified from pathology records of 10 participating centers.",
+      "6": "Outcomes: Partial and complete remission, treatment resistance, relapse, complications, renal survival.",
+      "7": "Results: Corticosteroids were given as initial treatment in 105 (84%) patients.",
+      "8": "After 16 weeks of corticosteroid treatment, 92 (88%) of these patients had reached remission.",
+      "9": "Median time to remission was 4 (IQR, 2-7) weeks.",
+      "10": "7 (6%) patients initially received cyclophosphamide with or without corticosteroids, and all attained remission after a median of 4 (IQR, 3-11) weeks.",
+      "11": "13 (10%) patients reached remission without immunosuppressive treatment.",
+      "12": "One or more relapses were observed in 57 (54%) patients who received initial corticosteroid treatment.",
+      "13": "Second-line cyclophosphamide resulted in stable remission in 57% of patients with relapsing MCNS.",
+      "14": "Acute kidney injury was observed in 50 (40%) patients.",
+      "15": "Recovery of kidney function occurred almost without exception.",
+      "16": "Arterial or venous thrombosis occurred in 11 (9%) patients.",
+      "17": "At the last follow-up, 113 (90%) patients were in remission and had preserved kidney function.",
+      "18": "3 patients with steroid-resistant MCNS progressed to end-stage renal disease, which was associated with focal segmental glomerulosclerosis lesions on repeat biopsy.",
+      "19": "Limitations: Retrospective design, variable treatment protocols.",
+      "20": "Conclusions: The large majority of patients who had MCNS with onset in adulthood or late adolescence were treated with corticosteroids and reached remission, but many had relapses.",
+      "21": "Cyclophosphamide resulted in stable remission in many patients with relapses.",
+      "22": "Significant morbidity was observed due to acute kidney injury and other complications.",
+      "23": "Progression to end-stage renal disease occurred in a few patients and was explained by focal segmental glomerulosclerosis."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Minimal Change Nephrotic Syndrome (MCNS) is a kidney disease that can lead to a group of symptoms called Nephrotic Syndrome (NS). Not many studies have looked at the treatment and results of MCNS that starts in adulthood.",
+        "2": "We looked at 125 patients from other studies that had MCNS appear as a late adolescent or adult.",
+        "3": "We studied how the disease appeared, how long it was treated, and how patients responded to the treatment. We also studied further problems caused by the disease and treatment, as well as long-term outcomes. ",
+        "4": "The type of this study is to look at various cases.",
+        "5": "We looked at pathology reports from 1985 to 2011 from 10 participating health care centers. From these, we found patients 16 years or older with new NS and a diagnosis of MCNS confirmed by looking at tissue under a microscope.",
+        "6": "The cases had a variety of outcomes: partial and complete reversal of the disease, resistance of the disease to treatment, the disease coming back, further problems caused by the disease, and how long the kidneys functioned.",
+        "7": "Eighty-four percent of patients were given corticosteroids as an initial treatment.",
+        "8": "After 16 weeks of corticosteroids, 88% of these patients were cured.",
+        "9": "On average, time to reversing the disease was around 4 weeks.",
+        "10": "Six percent of patients at first were given a cancer drug called cyclophosphamide, either with or without corticosteroids. All these patients were cured, in about 4 weeks on average.",
+        "11": "Ten percent of patients were cured without drugs that suppress the immune system.",
+        "12": "The disease returned at least once in 54% of patients that initially were given corticosteroids.",
+        "13": "Cyclophosphamide used as a second-choice alternative drug cured 57% of the patients who had returning MCNS.",
+        "14": "Forty percent of the patients had serious kidney damage.",
+        "15": "Kidney function returned in almost every case.",
+        "16": "Nine percent of patients had blood clots.",
+        "17": "At the last follow-up, 90% of the patients still had the disease reversed and had functioning kidneys.",
+        "18": "Three patients with steroid-resistant MCNS continued to kidney failure. The kidney failure came along with damage to the small structures of the kidney that were seen under a microscope.",
+        "19": "This study is limited because we only looked at past patients and they were not all given the same treatments and dosages.",
+        "20": "The first conclusion we can make is that most patients with MCNS that appeared as an adult or late adolescent were cured with corticosteroids. However, many had the disease come back.",
+        "21": "In many of the patients for whom the disease came back, treatment with cyclophosphamide kept it from coming back again.",
+        "22": "Significant health problems were seen from serious damage to the kidneys and other problems caused by the disease.",
+        "23": "In a few patients, the disease continued to kidney failure, and this could be explained by damage to the small structures of the kidney."
+      }
+    }
+  },
+  "32146646": {
+    "Title": "Incidence of remission and relapse of proteinuria, end-stage kidney disease, mortality, and major outcomes in primary nephrotic syndrome: the Japan Nephrotic Syndrome Cohort Study (JNSCS)",
+    "abstract": {
+      "1": "Background: Despite recent advances in immunosuppressive therapy for patients with primary nephrotic syndrome, its effectiveness and safety have not been fully studied in recent nationwide real-world clinical data in Japan.",
+      "2": "Methods: A 5-year cohort study, the Japan Nephrotic Syndrome Cohort Study, enrolled 374 patients with primary nephrotic syndrome in 55 hospitals in Japan, including 155, 148, 38, and 33 patients with minimal change disease (MCD), membranous nephropathy (MN), focal segmental glomerulosclerosis (FSGS), and other glomerulonephritides, respectively.",
+      "3": "The incidence rates of remission and relapse of proteinuria, 50% and 100% increases in serum creatinine, end-stage kidney disease (ESKD), all-cause mortality, and other major adverse outcomes were compared among glomerulonephritides using the Log-rank test.",
+      "4": "Incidence of hospitalization for infection, the most common cause of mortality, was compared using a multivariable-adjusted Cox proportional hazard model.",
+      "5": "Results: Immunosuppressive therapy was administered in 339 (90.6%) patients.",
+      "6": "The cumulative probabilities of complete remission within 3 years of the baseline visit was ≥ 0.75 in patients with MCD, MN, and FSGS (0.95, 0.77, and 0.79, respectively).",
+      "7": "Diabetes was the most common adverse events associated with immunosuppressive therapy (incidence rate, 71.0 per 1000 person-years).",
+      "8": "All-cause mortality (15.6 per 1000 person-years), mainly infection-related mortality (47.8%), was more common than ESKD (8.9 per 1000 person-years), especially in patients with MCD and MN.",
+      "9": "MCD was significantly associated with hospitalization for infection than MN.",
+      "10": "Conclusions: Patients with MCD and MN had a higher mortality, especially infection-related mortality, than ESKD.",
+      "11": "Nephrologists should pay more attention to infections in patients with primary nephrotic syndrome."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "New discoveries in treatments that suppress the immune system have helped patients with Nephrotic Syndrome (NS), a group of symptoms relating to the kidneys. However, the safety and effectiveness of these treatments has not been fully studied for recent cases in Japan.",
+        "2": "A study 5 years ago followed 374 patients with NS in Japan, across 55 hospitals. It included 155 patients with Minimal Change Disease (MCD), 148 patients with membranous nephropathy (MN), 38 patients with Focal Segmental Glomerulosclerosis (FSGS), and 33 patients with other types of inflammation of the small filtering structures in the kidney.",
+        "3": "Among these diseases, we compared how often proteinuria (too much protein in the urine) was cured and came back. We also compared how often patients died, had kidney failure, or had other serious problems.",
+        "4": "The most common cause of death was being hospitalized for an infection. We compared this cause among the different diseases using statistical methods.",
+        "5": "We found that treatment to suppress the immune system was given to 339 patients.",
+        "6": "For patients with MCD, MN, FSGS, there was more than a 75% chance the disease was completely cured within 3 years.",
+        "7": "The most common side effect of treatments suppressing the immune system was diabetes. In each year, a person had a 71 in 1000 chance of this happening.",
+        "8": "Death from any cause, about half of which caused by infections, was more common than kidney failure, especially in patients with MCD and MN.",
+        "9": "MCD was more associated with hospitalization for infections than MN.",
+        "10": "Patients with MCD and MN were more likely to die, especially from infections, than to have kidney failure.",
+        "11": "We also conclude that doctors should pay more attention to infections in patients with NS."
+      }
+    }
+  },
+  "34362836": {
+    "Title": "Primary Nephrotic Syndrome and Risks of ESKD, Cardiovascular Events, and Death: The Kaiser Permanente Nephrotic Syndrome Study",
+    "abstract": {
+      "1": "Background: Little population-based data exist about adults with primary nephrotic syndrome.",
+      "2": "Methods: To evaluate kidney, cardiovascular, and mortality outcomes in adults with primary nephrotic syndrome, we identified adults within an integrated health care delivery system (Kaiser Permanente Northern California) with nephrotic-range proteinuria or diagnosed nephrotic syndrome between 1996 and 2012.",
+      "3": "Nephrologists reviewed medical records for clinical presentation, laboratory findings, and biopsy results to confirm primary nephrotic syndrome and assigned etiology.",
+      "4": "We identified a 1:100 time-matched cohort of adults without diabetes, diagnosed nephrotic syndrome, or proteinuria as controls to compare rates of ESKD, cardiovascular outcomes, and death through 2014, using multivariable Cox regression.",
+      "5": "Results: We confirmed 907 patients with primary nephrotic syndrome (655 definite and 252 presumed patients with FSGS [40%], membranous nephropathy [40%], and minimal change disease [20%]).",
+      "6": "Mean age was 49 years; 43% were women.",
+      "7": "Adults with primary nephrotic syndrome had higher adjusted rates of ESKD (adjusted hazard ratio [aHR], 19.63; 95% confidence interval [95% CI], 12.76 to 30.20), acute coronary syndrome (aHR, 2.58; 95% CI, 1.89 to 3.52), heart failure (aHR, 3.01; 95% CI, 2.16 to 4.19), ischemic stroke (aHR, 1.80; 95% CI, 1.06 to 3.05), venous thromboembolism (aHR, 2.56; 95% CI, 1.35 to 4.85), and death (aHR, 1.34; 95% CI, 1.09 to 1.64) versus controls.",
+      "8": "Excess ESKD risk was significantly higher for FSGS and membranous nephropathy than for presumed minimal change disease.",
+      "9": "The three etiologies of primary nephrotic syndrome did not differ significantly in terms of cardiovascular outcomes and death.",
+      "10": "Conclusions: Adults with primary nephrotic syndrome experience higher adjusted rates of ESKD, cardiovascular outcomes, and death, with significant variation by underlying etiology in the risk for developing ESKD."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Nephrotic Syndrome (NS) is a combination of symptoms relating to the kidneys. There is not much information about how NS exists in the population.",
+        "2": "We looked at kidney health, heart disease, and death in adults within Kaiser Permanente of Northern California that had symptoms of NS between 1996 and 2012.",
+        "3": "Kidney specialists looked at medical records to confirm NS and determined causes.",
+        "4": "For comparison, we also found a group of adults with no diabetes, NS, or proteinuria (too much protein in the urine) through 2014. This group was to compare rates of kidney failure, heart disease, and death using statistical methods.",
+        "5": "We confirmed 907 patients with NS. Of these, 655 definitely had either Focal Segmental Glomerulosclerosis (FSGS), Membranous Nephropathy (MN), or Minimal Change Disease (MCD). Another 252 were presumed to have one of these.",
+        "6": "The average age of the patients was 49, and 43% were women.",
+        "7": "Adults with NS had about 20 times the rate of kidney failure compared to people with no NS. They also had about two and a half times the rate of heart-related chest pain, three times the rate of heart failure, almost twice the rate of stroke, two and a half times the rate of blood clots, and 34% higher rate of death.",
+        "8": "The extra risk for kidney failure was much higher for FSGS and MN than for disease presumed to be MCD.",
+        "9": "The three causes of NS did not have significant differences in heart disease and death.",
+        "10": "In conclusion, adults with NS have higher rates of kidney failure, heart disease, and death. The risk of kidney failure depended significantly on which underlying disease caused the NS symptoms."
+      }
+    }
+  },
+  "34775776": {
+    "Title": "Primary nephrotic syndrome complicated by chylothorax: a case report",
+    "abstract": {
+      "1": "Chylothorax is an uncommon and serious clinical condition, typically induced by trauma, either postsurgical or accidental injury, but the mechanism of chylothorax caused by nephrotic syndrome is still unclear.",
+      "2": "Here, we report a case of primary nephrotic syndrome with membranous nephropathy (MN) in a 66-year-old man who presented with severe chylothorax.",
+      "3": "The chylothorax was managed by intercostal chest tube drainage, subcutaneous injection of enoxaparin, and treatment with anti-inflammatory agents and diuretics.",
+      "4": "After treatment, the patient's pleural effusion decreased, and the chyle gradually became clear.",
+      "5": "We discuss the causes of MN with chylothorax.",
+      "6": "We considered that the hypoproteinemia changed the permeability of mucous membranes and lymphatic vessels, leading to leakage of chylous particles and chylous pleural effusion formation.",
+      "7": "Chylothorax may also have been caused by severe tissue edema, edema of the lymphatic walls, and increased pressure, resulting in increased permeability or rupture of the lymphatic wall, and leakage of chylous fluid into the thoracic cavity.",
+      "8": "Because of its rarity, we hope this case report will improve clinicians' understanding of MN complications in primary nephrotic syndrome and provide suitable treatment options for future clinical reference."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Chylothorax is an uncommon and serious medical condition where fluid from the lymphatic system builds up around the lungs. It is typically caused by serious damage to the body, either after surgery or an accident. However, we don’t know how a cluster of kidney-related symptoms called Nephrotic Syndrome (NS) causes chylothorax.",
+        "2": "In this article we describe a case of NS with a kidney disease called Membranous Nephropathy (MN) in a 66 year old man with severe chylothorax.",
+        "3": "The chylothorax was kept under control with a drainage tube inserted into the chest, injections of a drug called enoxaparin, and treatment with anti-inflammatory drugs and diuretics, which increase urine production.",
+        "4": "After treatment, the fluid around the lungs decreased and became clear.",
+        "5": "We will talk about the causes of MN with chylothorax.",
+        "6": "We thought that maybe too little protein in the blood allowed fluid from the lymphatic system to leak through tissues and cause the buildup around the lungs.",
+        "7": "The chylothorax may also have been caused by severe swelling and increased pressure. This could have caused fluid to seep through or rupture the walls of lymph vessels (which are similar to blood vessels) and leak into the chest cavity.",
+        "8": "Since MN is rare, we hope this case report will help doctors to understand problems associated with MN in patients that have NS, and that it will provide treatment options for doctors in the future."
+      }
+    }
+  },
+  "34839817": {
+    "Title": "Intravenous cyclophosphamide induces remission in children with difficult to treat steroid resistant nephrotic syndrome from minimal change disease",
+    "abstract": {
+      "1": "Background: Steroid resistant nephrotic syndrome (SRNS), while uncommon in children, is associated with significant morbidity.",
+      "2": "Calcineurin inhibitors (CNIs) remain the first line recommended therapy for children with non-genetic forms of SRNS, but some children fail to respond to them.",
+      "3": "Intravenous (IV) cyclophosphamide (CTX) has been shown to be effective in Asian-Indian children with difficult to treat SRNS (SRNS-DTT).",
+      "4": "Our study evaluated the outcome of IV CTX treatment in North American children with SRNS-DTT.",
+      "5": "Methods: Retrospective review of the medical records of children with SRNS-DTT treated with IV CTX from January 2000 to July 2019 at our center.",
+      "6": "Data abstracted included demographics, histopathology on renal biopsy, prior and concomitant use of other immunosuppressive agents and serial clinical/laboratory data.",
+      "7": "Primary outcome measure was attainment of complete remission (CR).",
+      "8": "Results: Eight children with SRNS-DTT received monthly doses (median 6; range 4-6) of IV CTX.",
+      "9": "Four (50%) went into CR, 1 achieved partial remission and 3 did not respond.",
+      "10": "Three of the 4 responders had minimal change disease (MCD).",
+      "11": "Excluding the 1 child who responded after the 4th infusion, the median time to CR was 6.5 (range 0.5-8) months after completion of IV CTX infusions.",
+      "12": "Three remain in CR at a median of 8.5 years (range: 3.7-10.5 years) after completion of CTX; one child relapsed and became steroid-dependent.",
+      "13": "No infections or life-threatening complications related to IV CTX were observed.",
+      "14": "Conclusions: IV CXT can induce long term remission in North-American children with MCD who have SRNS-DTT."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Steroid Resistant Nephrotic Syndrome (SRNS) is a group of kidney-related symptoms that cannot be treated with steroids. Though it is not common in children, it is associated with many serious health problems.",
+        "2": "Immune system suppressing drugs called Calcineurin Inhibitors (CNIs) are the preferred treatment for children with SRNS that is not inherited. However, some children do not respond to these drugs.",
+        "3": "Another drug called Cyclophosphamide (CTX), given by IV, has been shown to be effective in Asian-Indian children with SRNS that is difficult to treat (SRNS-DTT).",
+        "4": "Our study looked at the outcome of IV CTX treatment in North American children with this disease.",
+        "5": "The study was a review of previous medical records of children with SRNS-DTT treated with IV CTX from January 2000 to July 2019 at our center.",
+        "6": "From these records, we looked at demographics, kidney tissue samples, and the use of drugs to suppress the immune system. We also looked at notes from office visits and lab results recorded over time.",
+        "7": "The main outcome that we measured was complete reversal of the disease.",
+        "8": "We found that 8 children with SRNS-DTT were given monthly doses of IV CTX.",
+        "9": "Four were completely cured, one was partially cured, and three did not respond to the treatment.",
+        "10": "Three of the four patients that were cured had a particular type of SRNS that was caused by Minimal Change Disease (MCD).",
+        "11": "Except for the one child who responded to treatment after the 4th dose, the average time to reverse the disease was about six and a half months after completing all the IV CTX doses.",
+        "12": "Three of the patients are still cured at an average of 8 and a half years after completing the CTX treatment. One child had the disease come back and had to continue taking steroids indefinitely.",
+        "13": "No infections or other life-threatening problems relating to IV CTX were seen.",
+        "14": "In conclusion, in North American children, Cyclophosphamide (CTX) given by IV can completely cure SRNS that is difficult to treat and is caused by Minimal Change Disease (MCD)."
+      }
+    }
+  },
+  "34979093": {
+    "Title": "Risk of Arterial Thromboembolism, Venous Thromboembolism, and Bleeding in Patients with Nephrotic Syndrome: A Population-Based Cohort Study",
+    "abstract": {
+      "1": "Background: Although venous thromboembolism is a well-known complication of nephrotic syndrome, the long-term absolute and relative risks of arterial thromboembolism, venous thromboembolism, and bleeding in adults with nephrotic syndrome remain unclarified.",
+      "2": "Methods: In this matched cohort study, we identified every adult with first-time recorded nephrotic syndrome from admissions, outpatient clinics, or emergency department visits in Denmark during 1995-2018.",
+      "3": "Each patient was matched by age and sex with 10 individuals from the general population.",
+      "4": "We estimated the 10-year cumulative risks of recorded arterial thromboembolism, venous thromboembolism, and bleeding accounting for the competing risk of death.",
+      "5": "Using Cox models, we computed crude and adjusted hazard ratios (HRs) of the outcomes in patients with nephrotic syndrome versus comparators.",
+      "6": "Results: Among 3967 adults with first-time nephrotic syndrome, the 1-year risk of arterial thromboembolism was 4.2% (95% confidence interval [CI] 3.6-4.8), of venous thromboembolism was 2.8% (95% CI 2.3-3.3), and of bleeding was 5.2% (95% CI 4.5-5.9).",
+      "7": "The 10-year risk of arterial thromboembolism was 14.0% (95% CI 12.8-15.2), of venous thromboembolism 7.7% (95% CI 6.8-8.6), and of bleeding 17.0% (95% CI 15.7-18.3), with highest risks of ischemic stroke (8.1%), myocardial infarction (6.0%), and gastrointestinal bleeding (8.2%).",
+      "8": "During the first year, patients with nephrotic syndrome had increased rates of both arterial thromboembolism (adjusted HR [HRadj] = 3.11 [95% CI 2.60-3.73]), venous thromboembolism (HRadj = 7.11 [5.49-9.19]), and bleeding (HRadj = 4.02 [3.40-4.75]) compared with the general population comparators after adjusting for confounders.",
+      "9": "Conclusion: Adults with nephrotic syndrome have a high risk of arterial thromboembolism, venous thromboembolism, and bleeding compared with the general population.",
+      "10": "The mechanisms and consequences of this needs to be clarified."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Blood clots are a well-known problem associated with Nephrotic Syndrome (NS), a group of kidney-related symptoms. However, the risks of blood clots and bleeding in adults with NS is not clear.",
+        "2": "This study looked at groups of similar people with and without disease. In it, we found every adult that had NS recorded for the first time from 1995 to 2018 at admissions, outpatient clinics, and emergency department visits in Denmark.",
+        "3": "Each patient was matched by age and sex with 10 individuals from the general population.",
+        "4": "We estimated the 10-year risk of recorded blood clots and bleeding, accounting for risk of death.",
+        "5": "Using a statistical model, we calculated how likely the patients were to have certain outcomes compared to the general population.",
+        "6": "Among 3,967 adults with first-time NS, the risk of having a blood clot in an artery within one year was 4%. The risk of a blood clot in a vein in the same time was 3%, and the risk of bleeding was 5%.",
+        "7": "Within 10 years, the risk of a blood clot in an artery was 14%, the risk of a blood clot in a vein was 8%, and the risk of bleeding was 17%. The highest bleeding risks were of stroke, heart attack, and gastrointestinal bleeding.",
+        "8": "During the first year, patients with NS had higher rates of blood clots in arteries, blood clots in veins, and bleeding than the people from the general population.",
+        "9": "In conclusion, adults with NS have a higher risk of blood clots, both in arteries and veins, and bleeding compared to the general population.",
+        "10": "We still need to figure out how this happens and what the consequences are."
+      }
+    }
+  },
+  "35017338": {
+    "Title": "Acute kidney injury in children hospitalized with a relapse of nephrotic syndrome: A short-term outcome study",
+    "abstract": {
+      "1": "Children with nephrotic syndrome (NS) have a number of potential risk factors for the development of acute kidney injury (AKI) including intravascular volume depletion, infection, exposure to nephrotoxic medication, and renal interstitial edema.",
+      "2": "This study was aimed to determine the incidence of AKI in children hospitalized with a relapse of NS and its short-term outcome.",
+      "3": "This prospective observational study was conducted from February 2017 to January 2018 at a tertiary care teaching hospital.",
+      "4": "A total of 54 children and adolescents (1-18 years) hospitalized with a diagnosis of NS and relapse with/or without other complications were enrolled.",
+      "5": "Clinical data and examination were recorded.",
+      "6": "AKI was defined using the Kidney Disease Improving Global Outcomes (KDIGO) serum creatinine criteria and Pediatric Risk, Injury, Failure, Loss, End-Stage Renal Disease (p-RIFLE) classification.",
+      "7": "Children who developed AKI during the first two weeks of hospitalization were followed up till recovery or six weeks whichever was earlier to determine the outcome and factors predisposing to AKI.",
+      "8": "The mean age of the study population was 59.5 months and 35 (64.8%) patients were male.",
+      "9": "Of the 54 patients hospitalized, 42 (77.8%) were admitted with infection-associated relapses while 22.2% of children had relapse alone.",
+      "10": "Diarrhea and spontaneous bacterial peritonitis were the most common infections (26.1% each) followed by urinary tract infections in 19% and pneumonia in 14.3%.",
+      "11": "Twenty-three (42.6%) children developed AKI according to the KDIGO definition and 27 (50%) using the pRIFLE classification.",
+      "12": "Fourteen (60.9%) had stage 2 AKI while 21.7% had stage 3 AKI.",
+      "13": "Infections [odds ratio (OR) 1.24] and use of angiotensin-converting enzyme inhibitors (ACEI) (OR 2.3) were the most common predisposing factors for AKI.",
+      "14": "The mean recovery time for AKI was 7.34 days.",
+      "15": "Development of AKI was associated with prolonged hospital stay (12.57 vs.8.55 days P <0.01) and delayed recovery.",
+      "16": "At the end of follow-up all children recovered from AKI.",
+      "17": "The incidence of AKI in children hospitalized with complications of NS is high.",
+      "18": "While the occurrence of these AKI episodes may appear transient, a recurrence of such episodes may be detrimental to the long-term outcome of children with NS.",
+      "19": "Infections and the use of ACEI during relapses are risk factor for the occurrence of AKI."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Nephrotic Syndrome (NS) is a combination of kidney-related symptoms. Children with NS are at risk for serious kidney damage for a number of reasons. These include too little blood, infection, medications, and swelling in the kidneys.",
+        "2": "The aim of this study was to find out how often serious kidney damage happens in children that had NS come back, and the short-term outcome of that damage.",
+        "3": "This study followed people over time and was conducted from February 2017 to January 2018 at a teaching hospital with highly specialized care.",
+        "4": "We enrolled a total of 54 children and adolescents who were hospitalized with a diagnosis of NS that came back, with or without associated problems.",
+        "5": "We recorded health-related information.",
+        "6": "",
+        "7": "To figure out what puts children more at risk for serious kidney damage, we followed up with children who had this problem during the first two weeks of hospitalization. We continued following up with them either until they recovered or until six weeks, whichever was earlier.",
+        "8": "The average age of people in the study was 59.5 months. Thirty-five of the patients (65%) were male.",
+        "9": "Out of the 54 patients that were hospitalized, 42 had returning NS that was associated with infections. Twenty-two percent of children had returning NS only.",
+        "10": "The most common infections were diarrhea and bacterial infections of the peritoneum, the lining of the abdominal cavity. The next most common were urinary tract infections and pneumonia.",
+        "11": "Twenty-three or 27 children developed serious kidney damage, depending on the criteria used.",
+        "12": "",
+        "13": "The most common factors that increased risk of serious kidney damage were infections and the use of ACE inhibitors.",
+        "14": "The average time for recovery from the serious kidney damage was about 7 days.",
+        "15": "Serious kidney damage was associated with longer hospital stays and delayed recovery.",
+        "16": "At the end of the followup, all children recovered from the kidney damage.",
+        "17": "Children hospitalized with problems associated with NS have high rates of serious kidney damage.",
+        "18": "These instances of serious kidney damage may seem to come and go, but happening repeatedly may cause long-term problems for children with NS.",
+        "19": "Infections and the use of ACE inhibitors increases the risk of serious kidney damage."
+      }
+    }
+  },
+  "35102405": {
+    "Title": "Nephrotic Syndrome",
+    "abstract": {
+      "1": "Nephrotic syndrome (NS) encompasses a variety of disease processes leading to heavy proteinuria and edema.",
+      "2": "Minimal change disease (MCD) remains the most common primary cause of NS, as well as the most responsive to pharmacologic treatment with often minimal to no chronic kidney disease.",
+      "3": "Other causes of NS include focal segmental glomerulosclerosis, which follows MCD, and secondary causes, including extrarenal or systemic diseases, infections, and drugs.",
+      "4": "Although initial diagnosis relies on clinical findings as well as urine and blood chemistries, renal biopsy and genetic testing are important diagnostic tools, especially when considering non-MCD NS.",
+      "5": "Moreover, biomarkers in urine and serum have become important areas for research in this disease.",
+      "6": "NS progression and prognosis are variable and depend on etiology, with corticosteroids being the mainstay of treatment.",
+      "7": "Other alternative therapies found to be successful in inducing and maintaining remission include calcineurin inhibitors and rituximab.",
+      "8": "Disease course can range from recurrent disease relapse with or without acute kidney injury to end-stage renal disease in some cases.",
+      "9": "Given the complex pathogenesis of NS, which remains incompletely understood, complications are numerous and diverse and include infections, electrolyte abnormalities, acute kidney injury, and thrombosis.",
+      "10": "Pediatricians must be aware of the presentation, complications, and overall long-term implications of NS and its treatment."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Nephrotic syndrome (NS) includes a variety of underlying diseases that lead to serious proteinuria (too much protein in the blood) and edema (fluid buildup).",
+        "2": "Minimal change disease (MCD) is still the most common cause of NS, and is the most responsive to treatment with drugs, often with little or no chronic kidney disease.",
+        "3": "Other causes of NS include focal segmental glomerulosclerosis, which follows MCD, and secondary causes, including diseases outside the kidneys, infections, and drugs.",
+        "4": "The initial diagnosis relies on signs and symptoms observed by a doctor. However, urine and blood tests, kidney tissue samples, and genetic testing are also important for diagnosis. This is especially true for NS not caused by MCD.",
+        "5": "Additionally, signs of disease in blood and urine have become important areas for research in this disease.",
+        "6": "The outcomes of NS and the way it progresses can vary and depend on the underlying disease. Corticosteroids are the main treatment.",
+        "7": "Alternative treatments that have been found to work include calcineurin inhibitors (a class of drugs that suppress the immune system) and rituximab (Rituxan).",
+        "8": "The course of the disease can range from continuing to come back, with or without serious kidney damage, to kidney failure in some cases.",
+        "9": "Since the origin of NS is complicated and not completely understood, there are many associated problems. These include infections, electrolyte problems, serious kidney damage, and blood clots.",
+        "10": "Pediatricians should know about how NS appears and the associated problems and long-term issues of NS and its treatment."
+      }
+    }
+  },
+  "question": "Nephrotic syndrome what happens when gets bad?",
+  "question_type": "B"
+  }
+}

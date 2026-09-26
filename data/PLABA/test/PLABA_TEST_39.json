@@ -1,0 +1,278 @@
+{
+  "39": {
+  "34569949": {
+    "Title": "Clinical Characteristic in Primary Progressive Aphasia in Relation to Alzheimer's Disease Biomarkers",
+    "abstract": {
+      "1": "Background: Primary progressive aphasia (PPA) is associated with amyloid-β (Aβ) pathology.",
+      "2": "However, clinical feature of PPA based on Aβ positivity remains unclear.",
+      "3": "Objective: We aimed to assess the prevalence of Aβ positivity in patients with PPA and compare the clinical characteristics of patients with Aβ-positive (A+) and Aβ-negative (A-) PPA.",
+      "4": "Further, we applied Aβ and tau classification system (AT system) in patients with PPA for whom additional information of in vivo tau biomarker was available.",
+      "5": "Methods: We recruited 110 patients with PPA (41 semantic [svPPA], 27 non-fluent [nfvPPA], 32 logopenic [lvPPA], and 10 unclassified [ucPPA]) who underwent Aβ-PET imaging at multi centers.",
+      "6": "The extent of language impairment and cortical atrophy were compared between the A+ and A-PPA subgroups using general linear models.",
+      "7": "Results: The prevalence of Aβ positivity was highest in patients with lvPPA (81.3%), followed by ucPPA (60.0%), nfvPPA (18.5%), and svPPA (9.8%).",
+      "8": "The A+ PPA subgroup manifested cortical atrophy mainly in the left superior temporal/inferior parietal regions and had lower repetition scores compared to the A-PPA subgroup.",
+      "9": "Further, we observed that more than 90%(13/14) of the patients with A+ PPA had tau deposition.",
+      "10": "Conclusion: Our findings will help clinicians understand the patterns of language impairment and cortical atrophy in patients with PPA based on Aβ deposition.",
+      "11": "Considering that most of the A+ PPA patents are tau positive, understanding the influence of Alzheimer's disease biomarkers on PPA might provide an opportunity for these patients to participate in clinical trials aimed for treating atypical Alzheimer's disease."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Primary progressive aphasia (PPA), a disease that damages nerve tissue, is associated with amyloid-β (Aβ) pathology. Amyloid-β (Aβ) pathology is the accumulation of protein plaques in the brain.",
+        "2": "However, diagnosis of PPA based on Aβ positivity (presence) remains unclear.",
+        "3": "The goal of this paper was to determine the prevalence (frequency) of Aβ positivity in patients with PPA. The paper also aimed to compare the clinical characteristics of patients with Aβ-positive (A+) and Aβ-negative (A- or no presence of Aβ) PPA.",
+        "4": "Additionally the authors applied the Aβ and tau classification system (AT system) in patients with PPA. However, this was only done for patients with available information of a tau (a type of protein) biomarker. Biomarkers are measurable, biological substances that can indicate disease in a patient.",
+        "5": "This study recruited 110 patients with PPA. Of the 110 patients, there were four PPA groups: 41 semantic [svPPA], 27 non-fluent [nfvPPA], 32 logopenic [lvPPA], and 10 unclassified [ucPPA]). Semantic PPA is characterized by loss of language function. Non-fluent PPA is characterized by the gradual loss of speech. Logopenic PPA is characterized by difficulty in naming and sentence repetition. All recruits underwent Aβ-PET (brain scan) imaging at multi centers.",
+        "6": "The extent of language impairment and cortical atrophy, or brain degeneration, were compared between the A+ and A-PPA subgroups.",
+        "7": "The prevalence of Aβ positivity was highest in patients with lvPPA, followed by ucPPA, nfvPPA, and svPPA, respectively.",
+        "8": "The A+ PPA subgroup had cortical atrophy (damage) mainly in the left brain regions and had lower repetition scores when compared to the A- PPA subgroup.",
+        "9": "The authors observed that >90% of the recruits with A+ PPA had tau or protein deposition.",
+        "10": "These findings will help clinicians understand the patterns of language impairment and cortical atrophy in patients with PPA based on Aβ deposition.",
+        "11": "Most of the A+ PPA patents were tau positive. Due to this, understanding the influence of Alzheimer's disease biomarkers on PPA may allow for these patients to participate in clinical trials that treat atypical Alzheimer's disease."
+      },
+      "adaptation2": {
+        "1": "Pimary progressive aphasia (PPA), a language and speech brain disorder, is linked with amyloid-β (Aβ), a brain protein segment associated with Alzheimer's disease.",
+        "2": "However, symptoms of PPA based on Aβ presence is unclear.",
+        "3": "We assess the amount of Aβ presence in patients with PPA and compare the symptoms of PPA patients with Aβ presence of Aβ-positive (A+) versus those without Aβ (A-).",
+        "4": "We also classified Aβ and tau type in PPA patients with this available information.",
+        "5": "We had 110 PPA patients (41 who can't understand words [svPPA], 27 who can't speak but understand words [nfvPPA], 32 who have trouble finding the right word [lvPPA], and 10 unclassified [ucPPA]) undergo Aβ imaging at multiple centers.",
+        "6": "The extent of language impairment and brain damage were compared between tehe A+ and A- PPA subgroups.",
+        "7": "The proportion of Aβ presence was highest in patients with lvPPA (81.3%), then ucPPA (60.0%), nfvPPA (18.5%), and svPPA (9.8%).",
+        "8": "The A+ PPA subgroup had brain damage mainly on the left side in the middle regions and had worse scores compared to the A- PPA subgroup.",
+        "9": "Also, over 90% (13/14) patients with A+ PPA had tau, a brain protein associated with Alzheimer's disease.",
+        "10": "Our findings will help clinicians understand the patterns of language impairment and brain damage in PPA patients based on Aβ presence.",
+        "11": "Since most A+ PPA patients have tau, understanding the effect of Alzheimer's disease markers on PPA may allow these patients to participate in clinical studies aimed for treating atypical Alzheimer's disease."
+      }
+    }
+  },
+  "34576985": {
+    "Title": "Breath Biomarkers in Diagnostic Applications",
+    "abstract": {
+      "1": "The detection of chemical compounds in exhaled human breath presents an opportunity to determine physiological state, diagnose disease or assess environmental exposure.",
+      "2": "Recent advancements in metabolomics research have led to improved capabilities to explore human metabolic profiles in breath.",
+      "3": "Despite some notable challenges in sampling and analysis, exhaled breath represents a desirable medium for metabolomics applications, foremost due to its non-invasive, convenient and practically limitless availability.",
+      "4": "Several breath-based tests that target either endogenous or exogenous gas-phase compounds are currently established and are in practical and/or clinical use.",
+      "5": "This review outlines the concept of breath analysis in the context of these unique tests and their applications.",
+      "6": "The respective breath biomarkers targeted in each test are discussed in relation to their physiological production in the human body and the development and implementation of the associated tests.",
+      "7": "The paper concludes with a brief insight into prospective tests and an outlook of the future direction of breath research."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Detection of chemical compounds in exhaled human breath provides an opportunity to determine several aspects about human health. These aspects include evaluating physiological state (how the body is functioning), determining any disease, and/or assessing (measuring) environmental exposures (or things in the environment that can lead to disease).",
+        "2": "Recent advancements in metabolomics research have led to better opportunities to explore human metabolic profiles in depth. Metabolomics is the study of metabolites within the body. Metabolites are small substances involved in cell metabolism or energy-production.",
+        "3": "Despite some test challenges, exhaled breath represents a good sample for metabolomics applications. Breath is ideal as it is non-invasive, convenient, and nearly limitless in availability.",
+        "4": "There are several breath-based tests that target either internal or external chemical compounds. These tests are already established and are in practical and/or clinical use.",
+        "5": "This paper reviews the concept of breath analysis used for these unique tests and their applications.",
+        "6": "The breath biomarkers targeted in each test are discussed in relation to their function in the human body. Additionally, the paper evaluates the development and implementation of the associated tests.",
+        "7": "The paper concludes with a brief insight into prospective (future) tests and an outlook of the future direction of breath research."
+      },
+      "adaptation2": {
+        "1": "Detecting chemical compounds in exhaled human breath may help determine health status, identify disease, or measure environmental exposure.",
+        "2": "Recent advances in research of small energy molecules (metabolomics) led to better methods to explore human health status in breath.",
+        "3": "Despite some methodological challenges, exhaled breath is a desirable tool for metabolomics due to its non-surgery, convenient, and limitless availability.",
+        "4": "Many breath-based tests that target internal or external gas compounds are established and used in practice.",
+        "5": "This review outlines the concept of breath analysis regarding these unique breath-based tests and their applications.",
+        "6": "The breath biological disease markers in each test are discussed based on their production in humans and development and use of the associated tests.",
+        "7": "The paper ends with a short look into future tests and direction of breath research."
+      }
+    }
+  },
+  "34599830": {
+    "Title": "The Nitric Oxide Signalling Pathway in Aortic Aneurysm and Dissection",
+    "abstract": {
+      "1": "Recent studies have shown that nitric oxide (NO) is a central mediator in diseases occurring with thoracic aortic aneurysm (TAA), such as Marfan syndrome (MFS).",
+      "2": "The progressive dilation of the aorta in TAA ultimately leads to aortic dissection.",
+      "3": "Unfortunately, current medical treatments neither halt aortic enlargement nor prevent rupture, leaving surgical repair as the only effective treatment.",
+      "4": "There is therefore a pressing need for effective therapies to delay or even avoid the need for surgical repair in TAA patients.",
+      "5": "Here, we summarize the mechanisms through which NO signalling dysregulation causes TAA, particularly in MFS and discuss recent advances based on the identification of new MFS mediators related to pathway overactivation that represent potential disease biomarkers.",
+      "6": "Likewise, we propose iNOS, sGC, and PRKG1, whose pharmacological inhibition reverses aortopathy in MFS mice, as targets for therapeutic intervention in TAA and candidates for clinical trials."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Recent studies have shown that nitric oxide (NO) is a key mediator (regulator) in diseases occurring with thoracic aortic aneurysm (TAA), such as Marfan syndrome (MFS). Thoracic aortic aneurysm is characterized by an abnormal bulge in the blood vessel.",
+        "2": "The progressive dilation, or widening, of the aorta (the largest human artery) in TAA ultimately leads to aortic dissection. This is a tear in the inner layer of the blood artery.",
+        "3": "Unfortunately, current medical treatments neither halt aortic enlargement nor prevent rupture. This leaves surgical repair as the only effective treatment.",
+        "4": "There is a need for effective therapies to delay or even avoid the need for surgical repair in TAA patients.",
+        "5": "This paper summarizes the ways NO signaling dysregulation (or dysfunction) causes TAA, particularly in MFS. Additionally, this paper will discuss recent advances on the identification of new MFS mediators that represent potential biomarkers. Biomarkers are measurable, biological substances that can indicate disease in a patient.",
+        "6": "The authors propose several biological substances as targets for therapeutic intervention in TAA and candidates for clinical trials."
+      }
+    }
+  },
+  "34600555": {
+    "Title": "Development of a two-circular RNA panel as potential prognostic biomarker for gastric cancer",
+    "abstract": {
+      "1": "Background: Circular RNAs (circRNAs) have attracted increasing attention in recent years for their potential application as disease biomarkers due to their high abundance and stability.",
+      "2": "In this study, we attempted to screen circRNAs that can be used to predict postoperative recurrence and survival in patients with gastric cancer (GC).",
+      "3": "Methods: High-throughput RNA sequencing was used to identify differentially expressed circRNAs in GC patients with different prognoses.",
+      "4": "The expression level of circRNAs in the training set (n = 136) and validation set (n = 167) was detected by quantitative real-time PCR (qRT-PCR).",
+      "5": "Kaplan-Meier estimator, receiver operating characteristic (ROC) curve and cox regression analysis were used to evaluate the prognostic value of circRNAs on recurrence-free survival (RFS) and overall survival (OS) in GC patients.",
+      "6": "CeRNA network prediction, gene ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) analyses were performed for the circRNAs with prognostic significance.",
+      "7": "Results: A total of 259 differentially expressed circRNAs were identified in GC patients with different RFS.",
+      "8": "We found two circRNAs (hsa_circ_0005092 and hsa_circ_0002647) that highly expressed in GC patients with good prognoses, and subsequently established a predictive model for postoperative recurrence and prognosis evaluation, named circPanel.",
+      "9": "Patients with circPanellow might have shorter recurrence-free survival (RFS) and overall survival (OS).",
+      "10": "We also performed circRNA-miRNA-mRNA network prediction and functional analysis for hsa_circ_0005092 and hsa_circ_0002647.",
+      "11": "Conclusions: CircPanel has the potential to be a prognostic biomarker in GC patients with greater accuracy than a single circRNA and certain traditional tumor markers (e.g., CEA, CA19-9 and CA724)."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Circular RNAs (circRNAs) are a special class of RNAs that do not transcribe into (result into) proteins. CircRNAs have attracted increasing attention in recent years for their potential application as disease biomarkers due to their high abundance and stability. Biomarkers are measurable, biological substances that can indicate disease in a patient.",
+        "2": "The authors aimed to screen circRNAs that can be used to predict post-operation recurrence and survival in patients with gastric cancer (GC), cancer of the stomach.",
+        "3": "Tests were used to identify differentially (uniquely) expressed circRNAs in GC patients with different prognoses or forecasts of the disease.",
+        "4": "The expression level of circRNAs in the training and validation sets were detected by laboratory testing. Training and validation sets are used in scientific modeling to train the artificial intelligence machine and then validate its output, respectively.",
+        "5": "Several statistical tests were used to predict the amount of circRNAs on recurrence-free survival (RFS) and overall survival (OS) in GC patients. Recurrence-free survival (RFS) refers to the time between the day of diagnosis of a disease and the day the patient relapses into illness. Overall survival (OS) refers to the time from the day of disease diagnosis that the patients are still alive.",
+        "6": "Several bioinformatics tests evaluating disease recurrence and gene expression were performed for the circRNAs with prognostic significance (estimating the future disease course).",
+        "7": "A total of 259 differentially expressed circRNAs were identified in GC patients with different RFS.",
+        "8": "Two circRNAs were highly expressed in GC patients with good prognoses. These results established a predictive model for postoperative recurrence (disease relapse) and prognosis evaluation (likely course of disease), named circPanel.",
+        "9": "Patients with circPanellow might have shorter recurrence-free survival (RFS) and overall survival (OS).",
+        "10": "Additional tests to predict a circRNA-miRNA-mRNA network were completed on the two identified highly expressed circRNA.",
+        "11": "CircPanel has the potential to be a prognostic biomarker in GC patients. CircPanel has greater accuracy than a single circRNA and other traditional tumor markers."
+      }
+    }
+  },
+  "34638000": {
+    "Title": "Relationships between frontal metabolites and Alzheimer's disease biomarkers in cognitively normal older adults",
+    "abstract": {
+      "1": "Elevated expression of β-amyloid (Aβ1-42) and tau are considered risk-factors for Alzheimer's disease in healthy older adults.",
+      "2": "We investigated the effect of aging and cerebrospinal fluid levels of Aβ1-42 and tau on 1) frontal metabolites measured with proton magnetic resonance spectroscopy (MRS) and 2) cognition in cognitively normal older adults (n = 144; age range 50-85).",
+      "3": "Levels of frontal gamma aminobutyric acid (GABA+) and myo-inositol relative to creatine (mI/tCr) were predicted by age.",
+      "4": "Levels of GABA+ predicted cognitive performance better than mI/tCr.",
+      "5": "Additionally, we found that frontal levels of n-acetylaspartate relative to creatine (tNAA/tCr) were predicted by levels of t-tau.",
+      "6": "In cognitively normal older adults, levels of frontal GABA+ and mI/t Cr are predicted by aging, with levels of GABA+ decreasing with age and the opposite for mI/tCr.",
+      "7": "These results suggest that age- and biomarker-related changes in brain metabolites are not only located in the posterior cortex as suggested by previous studies and further demonstrate that MRS is a viable tool in the study of aging and biomarkers associated with pathological aging and Alzheimer's disease."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Increased expression of β-amyloid (Aβ1-42) and tau proteins are considered risk-factors for Alzheimer's disease in healthy older adults. Aβ1-42 is a protein deposited in organs, clumps referred to as plaques, during certain diseases. Tau proteins are proteins that stabilizes microtubules or structures within cells.",
+        "2": "This paper investigated the effect of aging and cerebrospinal (brain and spine) fluid levels of Aβ1-42 and tau on two health endpoints. These endpoints include evaluating frontal metabolites with a proton magnetic resonance spectroscopy (MRS) and cognition (thinking ability) in cognitively normal older adults.",
+        "3": "Levels of a neurotransmitter (a signaling molecule) known as gamma aminobutyric acid (GABA+) were predicted by age. Levels of myo-inositol relative to creatine (mI/tCr), a ratio of two metabolites in the brain often used to determine disease state, were predicted by age.",
+        "4": "Levels of GABA+ predicted cognitive performance better than mI/tCr.",
+        "5": "Additionally, frontal levels of n-acetyl aspartate, another brain metabolite, relative to creatine (tNAA/tCr) were predicted by levels of t-tau, the protein.",
+        "6": "In cognitively normal older adults, levels of frontal GABA+ and mI/t Cr are predicted by aging. Levels of GABA+ decreased with age. Levels of mI/tCr increased with age.",
+        "7": "These results suggest that age- and biomarker-related changes in brain metabolites are not only located in the posterior cortex. Additionally, these studies demonstrate that MRS is a viable tool to study aging and aging biomarkers associated with Alzheimer's disease."
+      },
+      "adaptation2": {
+        "1": "Increased amounts of β-amyloid (Aβ1-42) and tau, biological proteins, are considered risk factors for Alzheimer's disease in healthy, older adults.",
+        "2": "We tested the effect of aging and Aβ1-42 and tau amounts in brain and spine fluid on 1) energy molecules in the front of the brain and 2) reasoning skills in 144 older adults.",
+        "3": "Levels of specific chemical signal molecules (GABA+) and sugars (mI/tCr) in the brain were linked to age.",
+        "4": "Levels of the GABA+ trended with reasoning skills better than Mi/tCr.",
+        "5": "We found that levels of a specific chemical molecule were linked to levels of t-tau.",
+        "6": "In normal older adults, the specific chemical signal molecule GABA+ decreased with age while the chemical sugar mI/tCR increased with age.",
+        "7": "Age- and biomarker-related changes in brain molecules are not only located in the back of the brain as other studies show and that using a radio-wave tool can help study aging and biomarkers linked with aging diseases and Alzheimer's."
+      }
+    }
+  },
+  "34638664": {
+    "Title": "Potential Biomarkers Associated with Multiple Sclerosis Pathology",
+    "abstract": {
+      "1": "Multiple sclerosis (MS) is a complex disease of the central nervous system (CNS) that involves an intricate and aberrant interaction of immune cells leading to inflammation, demyelination, and neurodegeneration.",
+      "2": "Due to the heterogeneity of clinical subtypes, their diagnosis becomes challenging and the best treatment cannot be easily provided to patients.",
+      "3": "Biomarkers have been used to simplify the diagnosis and prognosis of MS, as well as to evaluate the results of clinical treatments.",
+      "4": "In recent years, research on biomarkers has advanced rapidly due to their ability to be easily and promptly measured, their specificity, and their reproducibility.",
+      "5": "Biomarkers are classified into several categories depending on whether they address personal or predictive susceptibility, diagnosis, prognosis, disease activity, or response to treatment in different clinical courses of MS.",
+      "6": "The identified members indicate a variety of pathological processes of MS, such as neuroaxonal damage, gliosis, demyelination, progression of disability, and remyelination, among others.",
+      "7": "The present review analyzes biomarkers in cerebrospinal fluid (CSF) and blood serum, the most promising imaging biomarkers used in clinical practice.",
+      "8": "Furthermore, it aims to shed light on the criteria and challenges that a biomarker must face to be considered as a standard in daily clinical practice."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Multiple sclerosis (MS) is a complex disease of the central nervous system (CNS). MS involves an intricate and abnormal interaction of immune cells that leads to inflammation (redness and swelling from fighting an infection), demyelination (destruction of nerve tissue), and neurodegeneration. Neurodegeneration is the loss of structure and/or function of neurons, cells in the brain.",
+        "2": "Due to the diversity of the types of MS, their diagnosis becomes challenging, and the best treatment cannot be easily provided to patients.",
+        "3": "Biomarkers, or measurable biological substances that can indicate disease, have been used to simplify the diagnosis and treatment of MS. Biomarkers have also been used to evaluate the results of clinical treatments.",
+        "4": "In recent years, biomarker research has advanced rapidly due to their ability to be easily and promptly measured, their specificity, and their reproducibility.",
+        "5": "Biomarkers are classified into several categories. These categories depend on whether the biomarkers address personal or predictive susceptibility (or risk), diagnosis, disease forecast (or progression), disease activity, or response to treatment in different clinical courses of MS.",
+        "6": "The identified members indicate a variety of causative pathways of MS. These pathways include neuroaxonal damage (nerve degeneration), gliosis (scarring in the CNS), demyelination (nerve tissue destruction), progression of disability, and many others.",
+        "7": "The present review analyzes biomarkers in cerebrospinal (brain) fluid (CSF) and blood serum. These are the most promising imaging biomarkers used in clinical practice.",
+        "8": "Furthermore, this paper aims to shed light on the criteria and challenges that a biomarker faces to be routinely used daily clinical practice."
+      }
+    }
+  },
+  "34638669": {
+    "Title": "Nanoparticle-Aided Detection of Colorectal Cancer-Associated Glycoconjugates of Extracellular Vesicles in Human Serum",
+    "abstract": {
+      "1": "Extracellular vesicles (EVs) are found in all biological fluids, providing potential for the identification of disease biomarkers such as colorectal cancer (CRC).",
+      "2": "EVs are heavily glycosylated with specific glycoconjugates such as tetraspanins, integrins, and mucins, reflecting the characteristics of the original cell offering valuable targets for detection of CRC.",
+      "3": "We report here on europium-nanoparticle (EuNP)-based assay to detect and characterize different surface glycoconjugates of EVs without extensive purification steps from five different CRC and the HEK 293 cell lines.",
+      "4": "The promising EVs candidates from cell culture were clinically evaluated on small panel of serum samples including early-stage (n = 11) and late-stage (n = 11) CRC patients, benign condition (n = 11), and healthy control (n = 10).",
+      "5": "The majority of CRC cell lines expressed tetraspanin sub-population and glycovariants of integrins and conventional tumor markers.",
+      "6": "The subpopulation of CD151 having CD63 expression (CD151CD63) was significantly (p = 0.001) elevated in early-stage CRC (8 out of 11) without detecting any benign and late-stage samples, while conventional CEA detected mostly late-stage CRC (p = 0.045) and with only four early-stage cases.",
+      "7": "The other glycovariant assays such as CEACon-A, CA125WGA, CA 19.9Ma696, and CA 19.9Con-A further provided some complementation to the CD151CD63 assay.",
+      "8": "These results indicate the potential application of CD151CD63 assay for early detection of CRC patients in human serum."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Extracellular vesicles (EVs) are found in all biological fluids. EVs are released by cells and are used as carriers of biomarkers. Biomarkers are measurable substances that can indicate illness. Because of this, EVs can potentially help identify diseases, such as colorectal cancer (CRC) or cancer of the colon.",
+        "2": "EVs are heavily modified with carbohydrates or sugar-carrying molecules, such as tetraspanins, integrins, and mucins. This modification allows EVs to reflect the characteristics of the original cell. Because EVs reflect the original cells, they can offer valuable targets for detection of CRC.",
+        "3": "This study reports on a testing assay (device) to detect and characterize different surface carbohydrates of EVs. The assay no longer requires extensive purification (filtration) steps. The assay is tested in five different CRC and the HEK 293 cell lines. HEK 293 cells are human kidney cells.",
+        "4": "The EVs candidates from cell culture (growing in a lab) were evaluated on a panel of serum (blood) samples. The panel included early-stage and late-stage CRC patients, benign (normal) condition, and healthy control samples.",
+        "5": "Most of the CRC cell lines expressed proteins associated with abnormal cell function and conventional tumor markers.",
+        "6": "A unique assay was used to detect CD151CD63, a specific combination of foreign substances associated with cancer induction (causation). The CD151CD63 assay showed significantly elevated levels in early-stage CRC without detecting any benign and late-stage samples. Conventional CEA assay detected mostly late-stage CRC and with only four early-stage cases.",
+        "7": "Other assays provided similar results to the CD151CD63 assay.",
+        "8": "These results indicate the potential use of CD151CD63 assay for early detection of CRC patients in human serum."
+      }
+    }
+  },
+  "34654834": {
+    "Title": "Single-cell RNA sequencing for the identification of early-stage lung cancer biomarkers from circulating blood",
+    "abstract": {
+      "1": "Lung cancer accounts for more than half of the new cancers diagnosed world-wide with poor survival rates.",
+      "2": "Despite the development of chemical, radiological, and immunotherapies, many patients do not benefit from these therapies, as recurrence is common.",
+      "3": "We performed single-cell RNA-sequencing (scRNA-seq) analysis using Fluidigm C1 systems to characterize human lung cancer transcriptomes at single-cell resolution.",
+      "4": "Validation of scRNA-seq differentially expressed genes (DEGs) through quantitative real time-polymerase chain reaction (qRT-PCR) found a positive correlation in fold-change values between C-X-C motif chemokine ligand 1 (CXCL1) and 2 (CXCL2) compared with bulk-cell level in 34 primary lung adenocarcinomas (LUADs) from Stage I patients.",
+      "5": "Furthermore, we discovered an inverse correlation between chemokine mRNAs, miR-532-5p, and miR-1266-3p in early-stage primary LUADs.",
+      "6": "Specially, miR-532-5p was quantifiable in plasma from the corresponding LUADs.",
+      "7": "Collectively, we identified markers of early-stage lung cancer that were validated in primary lung tumors and circulating blood."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Lung cancer accounts for more than half of the new cancers diagnosed world-wide. Lung cancer patients have poor survival rates.",
+        "2": "Despite the development of several therapy types, many patients do not benefit from these therapies. Recurrence, or the return of lung cancer, is common.",
+        "3": "The authors performed an analysis to characterize human lung cancer transcriptomes at single-cell resolution. The transcriptome is the sum total of messenger RNA within the genetic material of an organism.",
+        "4": "The analysis found a positive correlation (link) between a gene and a chemokine, both with roles in a pro-inflammatory or infection-fighting response, in human lung cancer cells taken from cancer patients. Chemokines are signaling proteins that attract white blood cells to infection sites.",
+        "5": "Furthermore, the authors discovered an inverse (opposite) correlation between chemokine messenger RNAs and microRNAs in human lung cancer cells taken from cancer patients. MicroRNA is RNA that is not translated into functioning proteins.",
+        "6": "Specially, one microRNA (miR-532-5p) was measurable in plasma from the cells.",
+        "7": "The authors identified markers of early-stage lung cancer that were validated (proven) in primary lung tumors and circulating blood."
+      }
+    }
+  },
+  "34664478": {
+    "Title": "Exploration of novel biomarkers for hypertensive disorders of pregnancy by comprehensive analysis of peptide fragments in blood: their potential and technologies supporting quantification",
+    "abstract": {
+      "1": "Among the many complications associated with pregnancy, hypertensive disorders of pregnancy (HDP) constitute one of the most important.",
+      "2": "Since the pathophysiology of HDP is complex, new disease biomarkers (DBMs) are needed to serve as indicators of disease activity.",
+      "3": "However, in the current status of laboratory medicine, despite the fact that blood pressure measurement has been used for a long time, not many DBMs contribute adequately to the subsequent diagnosis and treatment.",
+      "4": "In this article, we discuss studies focusing on peptide fragments in blood identified by comprehensive quantitative methods, among the currently proposed DBM candidates.",
+      "5": "Furthermore, we describe the basic techniques of peptidomics, especially quantitative proteomics, and outline the current status and challenges of measuring peptides in blood as DBM for HDP."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "There are several complications associated with pregnancy. Hypertensive (high blood pressure) disorders of pregnancy (HDP) are one of the most important.",
+        "2": "Since the underlying mechanism of HDP is complex, new disease biomarkers (DBMs) are needed. Biomarkers are measurable substances in the body that are indicators of illness.",
+        "3": "However, despite current advanced medicine and the fact that blood pressure measurement has been used extensively, not many DBMs contribute adequately to the diagnosis and treatment of HDP.",
+        "4": "Herein, the authors review studies focusing on peptide fragments in blood as one of the currently proposed DBM candidates. Peptide fragments are portions of proteins.",
+        "5": "Furthermore, the authors describe the basic techniques of peptidomics, the study of peptides in an organism. Additionally, the authors outline the current status and challenges of measuring peptides in blood as DBM for HDP."
+      }
+    }
+  },
+  "34669343": {
+    "Title": "The role of neurodegeneration biomarkers in the management of patients with diabetic retinopathy",
+    "abstract": {
+      "1": "This literature review focuses on the role of disease biomarkers in the management of patients with diabetic retinopathy (DR) investigating in detail the problem of retinal neurodegeneration in such patients.",
+      "2": "Identification and assessment of the significance of qualitative and quantitative biomarkers of DR and neurodegeneration can complement screening examination, as well as help predict the course of the disease and the response to therapy.",
+      "3": "A comprehensive analysis of these factors allows for effective treatment and prevention of complications in patients with DR based on prognostic models and dynamic monitoring of these indicators."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "This literature review investigates the role of disease biomarkers in the management of patients with diabetic retinopathy (DR). DR refers to damaged blood vessels in the eye. Biomarkers are measurable substances in the body that are indicators of illness. Additionally, this review investigates the problem of retinal neurodegeneration, or nerve damage, in such patients.",
+        "2": "Evaluating the significance of various biomarkers of DR and neurodegeneration can complement screening examinations. Additionally, evaluating significant biomarkers can help predict the course of the disease and what type of therapy is appropriate.",
+        "3": "Analysis of these factors allows for effective treatment and prevention of complications in patients with DR."
+      },
+      "adaptation2": {
+        "1": "This review article focuses on the role of biological disease markers in treating patients with diabetic retinopathy (DR), or eye diseases from diabetes. The article also investigates how nerve cells in the eye die in these patients.",
+        "2": "Evaluating the importance of non-measurable and measurable disease markers of DR and nerve cell degeneration can help disease detection, prediction, and treatment.",
+        "3": "An analysis of these markers allows for effective treatment and prevention of health hazards in patients with DR based on measuring and monitoring these markers."
+      }
+    }
+  },
+  "question": "What is a biomarker?",
+  "question_type": "B"
+  }
+}

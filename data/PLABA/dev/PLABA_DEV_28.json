@@ -1,0 +1,359 @@
+{
+  "28": {
+  "34517257": {
+    "Title": "Dehydrozingerone ameliorates Lipopolysaccharide induced acute respiratory distress syndrome by inhibiting cytokine storm, oxidative stress via modulating the MAPK/NF-κB pathway",
+    "abstract": {
+      "1": "Background: Inflammation-mediated lung injury is a major cause of health problems in many countries and has been the leading cause of morbidity/mortality in intensive care units.",
+      "2": "In the current COVID-19 pandemic, the majority of the patients experienced serious pneumonia resulting from inflammation (Acute respiratory distress syndrome/ARDS).",
+      "3": "Pathogenic infections cause cytokine release syndrome (CRS) by hyperactivation of immune cells, which in turn release excessive cytokines causing ARDS.",
+      "4": "Currently, there are no standard therapies for viral, bacterial or pathogen-mediated CRS.",
+      "5": "Purpose: This study aimed to investigate and validate the protective effects of Dehydrozingerone (DHZ) against LPS induced lung cell injury by in-vitro and in-vivo models and to gain insights into the molecular mechanisms that mediate these therapeutic effects.",
+      "6": "Methods: The therapeutic activity of DHZ was determined in in-vitro models by pre-treating the cells with DHZ and exposed to LPS to stimulate the inflammatory cascade of events.",
+      "7": "We analysed the effect of DHZ on LPS induced inflammatory cytokines, chemokines and cell damage markers expression/levels using various cell lines.",
+      "8": "We performed gene expression, ELISA, and western blot analysis to elucidate the effect of DHZ on inflammation and its modulation of MAPK and NF-κB pathways.",
+      "9": "Further, the prophylactic and therapeutic effect of DHZ was evaluated against the LPS induced ARDS model in rats.",
+      "10": "Results: DHZ significantly (p < 0.01) attenuated the LPS induced ROS, inflammatory cytokine, chemokine gene expression and protein release in macrophages.",
+      "11": "Similarly, DHZ treatment protected the lung epithelial and endothelial cells by mitigating the LPS induced inflammatory events in a dose-dependent manner.",
+      "12": "In vivo analysis showed that DHZ treatment significantly (p < 0.001) mitigated the LPS induced ARDS pathophysiology of increase in the inflammatory cells in BALF, inflammatory cytokine and chemokines in lung tissues.",
+      "13": "LPS stimulated neutrophil-mediated events, apoptosis, alveolar wall thickening and alveolar inflammation were profoundly reduced by DHZ treatment in a rat model.",
+      "14": "Conclusion: This study demonstrates for the first time that DHZ has the potential to ameliorate LPS induced ARDS by inhibiting cytokine storm and oxidative through modulating the MAPK and NF-κB pathways.",
+      "15": "This data provides pre-clinical support to develop DHZ as a potential therapeutic agent against ARDS."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Lung injuries caused by inflammation (redness and swelling from fighting an infection) in the body is a major cause of health problems in several countries. Additionally, inflammation is a leading cause for disease and death within intensive care units (ICU) in hospitals.",
+        "2": "The majority of patients of COVID-19 (a viral, breathing-related or respiratory disease) have suffered from a condition known as acute respiratory distress syndrome (ARDS) that results from inflammation. It is similar to pneumonia (lung infection).",
+        "3": "Infections within the body can trigger the excess release of cytokines. Cytokines are proteins that can tell your immune system what to do. Sometimes, when we are sick, cytokines stimulate too many immune cells, causing hyperactivation, which in turn causes more cytokines to release more signals. This causes a biological loop known as cytokine release syndrome (CRS) that results in ARDS.",
+        "4": "Currently, there are no medical treatments to prevent CRS that is causes by viruses, bacteria, or germs.",
+        "5": "The goal of this paper was to better understand how a chemical, known as Dehydrozingerone (DHZ), can protect lung cells from damage caused by lipopolysaccharides (LPS). LPS are molecules that exist within the cell walls of bacteria and are extremely toxic.  This study used two types of studies, in vitro (in cells) and in vivo (in animals), to fully comprehend how DHZ can prevent LPS-induced lung cell injury.",
+        "6": "For the in vitro study, cells were treated with DHZ before being exposed to LPS. This caused a series of inflammatory events to occur within the treated cells.",
+        "7": "The authors reviewed how DHZ protected against LPS damage within several different types of cells.",
+        "8": "They performed several lab tests looking at cells' internal health to better determine the effect DHZ had on inflammation and how it was protective.",
+        "9": "Additionally, the authors determined how DHZ could prevent disease and protect against LPS within rats already sick with ARDS.",
+        "10": "Within one type of cell, DHZ significantly decreased the negative effects caused by LPS exposure.",
+        "11": "Similarly, DHZ protected lung cells by reducing LPS-induced inflammation in a dose-dependent manner. Meaning as the amount of DHZ given was increased, the symptoms from LPS treatment decreased.",
+        "12": "In the rats treated with DHZ, the chemical significantly reduced LPS-caused ARDS.",
+        "13": "DHZ significantly reduced several harmful effects of LPS within the rat model, including cell injury and cell death.",
+        "14": "This study is the first to show that DHZ has the ability to protect against ARDS by decreasing harmful immune responses triggered by LPS.",
+        "15": "This data provides support to develop DHZ as a potential human pharmaceutical prescription or drug to protect against ARDS."
+      }
+    }
+  },
+  "34531331": {
+    "Title": "SARS-CoV-2 causes senescence in human cells and exacerbates the senescence-associated secretory phenotype through TLR-3",
+    "abstract": {
+      "1": "Senescent cells, which arise due to damage-associated signals, are apoptosis-resistant and can express a pro-inflammatory, tissue-destructive senescence-associated secretory phenotype (SASP).",
+      "2": "We recently reported that a component of the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) surface protein, S1, can amplify the SASP of senescent cultured human cells and that a related mouse β-coronavirus, mouse hepatitis virus (MHV), increases SASP factors and senescent cell burden in infected mice.",
+      "3": "Here, we show that SARS-CoV-2 induces senescence in human non-senescent cells and exacerbates the SASP in human senescent cells through Toll-like receptor-3 (TLR-3).",
+      "4": "TLR-3, which senses viral RNA, was increased in human senescent compared to non-senescent cells.",
+      "5": "Notably, genetically or pharmacologically inhibiting TLR-3 prevented senescence induction and SASP amplification by SARS-CoV-2 or Spike pseudotyped virus.",
+      "6": "While an artificial TLR-3 agonist alone was not sufficient to induce senescence, it amplified the SASP in senescent human cells.",
+      "7": "Consistent with these findings, lung p16INK4a+ senescent cell burden was higher in patients who died from acute SARS-CoV-2 infection than other causes.",
+      "8": "Our results suggest that induction of cellular senescence and SASP amplification through TLR-3 contribute to SARS-CoV-2 morbidity, indicating that clinical trials of senolytics and/or SASP/TLR-3 inhibitors for alleviating acute and long-term SARS-CoV-2 sequelae are warranted."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Senescent cells are cells that are no longer able to divide but are still active. Senescent cells become active when damage-associated signals are triggered. These cells are resistant to cell death. They can also release tissue damaging, senescence-associated secretory phenotype (SASP). This means these cells release high levels of inflammatory (infection-fighting) cells.",
+        "2": "The authors of this report recently reported that a protein associated with the coronavirus or virus for COVID-19 (a viral, breathing-related disease) can increase SASP within cultured (grown within a lab) human cells. Additionally, the authors reported that a specific strain of mouse coronavirus increases SASP and the amount of senescent cells within sickened mice.",
+        "3": "In this study, the authors demonstrate that COVID-19 causes cells to become senescent and overactive SASP in human senescent cells through a specific immune system receptor known as Toll-like receptor-3 (TLR-3). Immune receptors are structures that bind to the surface of a cell and causes a response.",
+        "4": "TLR-3 can detect virus RNA or genetic material. TLR-3 was increased in human senescent cells compared to those not in a state of senescence.",
+        "5": "The blocking of TLR-3 prevented senescence causation and SASP amplification from occurring following COVID-19 or Spike pseudo-typed virus (a virus manipulated to not replicate).",
+        "6": "An artificial TLR-3 agonist, a substance that induces a specific response similar to the original, was not strong enough to induce or cause senescence. However, it did amplify SASP in senescent human cells.",
+        "7": "Consistent with these findings, the amount of senescent cells within lungs was increased in patients who died from acute COVID-19 infection when compared to patients who passed away for other reasons.",
+        "8": "These results suggest increased cell senescence and SASP through TLR-3 contributed to COVID-19 death. This indicates that clinical trials of senolytics (drugs that only kill senescent cells) or SASP/TLR-3 inhibitors or blockers are needed. These trials may help reduce short- and long-term effects of COVID-19."
+      }
+    }
+  },
+  "34549987": {
+    "Title": "Direct activation of endothelial cells by SARS-CoV-2 nucleocapsid protein is blocked by Simvastatin",
+    "abstract": {
+      "1": "Emerging evidence suggests that endothelial activation plays a central role in the pathogenesis of acute respiratory distress syndrome (ARDS) and multi-organ failure in patients with COVID-19.",
+      "2": "However, the molecular mechanisms underlying endothelial activation in COVID-19 patients remain unclear.",
+      "3": "In this study, the SARS-CoV-2 viral proteins that potently activate human endothelial cells were screened to elucidate the molecular mechanisms involved in endothelial activation.",
+      "4": "It was found that nucleocapsid protein (NP) of SARS-CoV-2 significantly activated human endothelial cells through TLR2/NF-κB and MAPK signaling pathways.",
+      "5": "Moreover, by screening a natural microbial compound library containing 154 natural compounds, simvastatin was identified as a potent inhibitor of NP-induced endothelial activation.",
+      "6": "Remarkablely, though the protein sequences of N proteins from coronaviruses are highly conserved, only NP from SARS-CoV-2 induced endothelial activation.",
+      "7": "The NPs from other coronaviruses such as SARS-CoV, MERS-CoV, HUB1-CoV and influenza virus H1N1 did not activate endothelial cells.",
+      "8": "These findings are well consistent with the results from clinical investigations showing broad endotheliitis and organ injury in severe COVID-19 patients.",
+      "9": "In conclusion, the study provides insights on SARS-CoV-2-induced vasculopathy and coagulopathy, and suggests that simvastatin, an FDA-approved lipid-lowering drug, may benefit to prevent the pathogenesis and improve the outcome of COVID-19 patients.",
+      "10": "IMPORTANCE Coronavirus disease 2019 (COVID-19), caused by the betacoronavirus SARS-CoV-2, is a worldwide challenge for health-care systems.",
+      "11": "The leading cause of mortality in patients with COVID-19 is hypoxic respiratory failure from acute respiratory distress syndrome (ARDS).",
+      "12": "To date, pulmonary endothelial cells (ECs) have been largely overlooked as a therapeutic target in COVID-19, yet emerging evidence suggests that these cells contribute to the initiation and propagation of ARDS by altering vessel barrier integrity, promoting a pro-coagulative state, inducing vascular inflammation and mediating inflammatory cell infiltration.",
+      "13": "Therefore, a better mechanistic understanding of the vasculature is of utmost importance.",
+      "14": "In this study, we screened the SARS-CoV-2 viral proteins that potently activate human endothelial cells and found that nucleocapsid protein (NP) significantly activated human endothelial cells through TLR2/NF-κB and MAPK signaling pathways.",
+      "15": "Moreover, by screening a natural microbial compound library containing 154 natural compounds, simvastatin was identified as a potent inhibitor of NP-induced endothelial activation.",
+      "16": "Our results provide insights on SARS-CoV-2-induced vasculopathy and coagulopathy, and suggests that simvastatin, an FDA-approved lipid-lowering drug, may benefit to prevent the pathogenesis and improve the outcome of COVID-19 patients."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Recent scientific reports suggest that increased endothelial activation plays a key role in the acute respiratory distress syndrome (ARDS) and multi-organ failure seen within patients of COVID-19 (a viral, breathing-related disease). Endothelial cells line our organs within our body, especially blood vessels. When these cells become activated, they encourage inflammation (redness and swelling from fighting an infection) and blood clotting or scabbing.",
+        "2": "However, how COVID-19 causes this endothelial cell activation is unclear.",
+        "3": "In this study, COVID-19 virus proteins (small molecules within the virus that help it function) were analyzed. The goal of analyzing the proteins was to determine how they might activate endothelial cells.",
+        "4": "This study found a specific protein of COVID-19 that highly activated endothelial cells through two specific bodily pathways.",
+        "5": "Secondly, the authors identified a prescription medication, known as Simvastatin, that can reduce the identified endothelial activation.",
+        "6": "The authors also noted that the identified protein only caused endothelial activation in COVID-19 illness.",
+        "7": "This protein in other illnesses, such as SARS-CoV, MERS-CoV, HUB1-CoV and influenza virus H1N1, did not activate endothelial cells.",
+        "8": "These scientific findings match with results from clinical research (research within patients). Clinical research has shown broad endothelial cell inflammation and organ injury within COVID-19 patients.",
+        "9": "The authors concluded this paper increases current knowledge surrounding how COVID-19 impacts blood vessels and blood flow within patients. Additionally, this paper suggested simvastatin may help prevent damage and improve overall health within COVID-19 patients.",
+        "10": "COVID-19, caused by a coronavirus, is a worldwide challenge for health-care.",
+        "11": "The leading cause of death in those with COVID-19 is lack of oxygen in the blood from a breathing-related illness.",
+        "12": "To date, cells that line the lungs and its blood vessels have been overlooked as a therapy target in COVID-19, yet new evidence suggests these cells contribute to the start and spread of breathing-related illnesses by changing blood vessel structures, promoting clotting, causing inflammation, and influencing inflammatory cell reactions.",
+        "13": "Therefore, a better understanding of the blood vessels Is of great importance.",
+        "14": "In this study, we tested COVID-19 virus proteins that activate these blood-vessel lining cells and found that viral proteins activate these cells through phosphate-related pathways.",
+        "15": "Also, by testing a natural microorganism library with 154 natural compounds, simvastatin was found to be a powerful blocker of the viral-caused lining cell activation.",
+        "16": "Our results give insights on the viral-caused blood- and blood vessel-related diseases, and suggests that simvastatin, an FDA-approved fat-lowering drug, may help prevent these diseases and improve outcomes for COVID-19 patients."
+      }
+    }
+  },
+  "34562551": {
+    "Title": "Targeting the PI3K/Akt/mTOR pathway: A therapeutic strategy in COVID-19 patients",
+    "abstract": {
+      "1": "Some COVID-19 patients suffer complications from anti-viral immune responses which can lead to both a dangerous cytokine storm and development of blood-borne factors that render severe thrombotic events more likely.",
+      "2": "The precise immune response profile is likely, therefore, to determine and predict patient outcomes and also represents a target for intervention.",
+      "3": "Anti-viral T cell exhaustion in the early stages is associated with disease progression.",
+      "4": "Dysregulation of T cell functions, which precedes cytokine storm development and neutrophil expansion in alveolar tissues heralds damaging pathology.",
+      "5": "T cell function, cytokine production and factors that attract neutrophils to the lung can be modified through targeting molecules that can modulate T cell responses.",
+      "6": "Manipulating T cell responses by targeting the PI3K/Akt/mTOR pathway could provide the means to control the immune response in COVID-19 patients.",
+      "7": "During the initial anti-viral response, T cell effector function can be enhanced by delaying anti-viral exhaustion through inhibiting PI3K and Akt.",
+      "8": "Additionally, immune dysregulation can be addressed by enhancing immune suppressor functions by targeting downstream mTOR, an important intracellular modulator of cellular metabolism.",
+      "9": "Targeting this signalling pathway also has potential to prevent formation of thrombi due to its role in platelet activation.",
+      "10": "Furthermore, this signalling pathway is essential for SARS-cov-2 virus replication in host cells and its inhibition could, therefore, reduce viral load.",
+      "11": "The ultimate goal is to identify targets that can quickly control the immune response in COVID-19 patients to improve patient outcome.",
+      "12": "Targeting different levels of the PI3K/Akt/mTOR signalling pathway could potentially achieve this during each stage of the disease."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Some patients suffer complications from anti-viral immune responses, or the response their body creates when infected with a virus. These complications can lead to both a dangerous cytokine storm (proteins that control activity of immune and blood cells that flood the body) and development of blood-borne factors that increase the likelihood of blood clots or scabs.",
+        "2": "Each person's unique immune response will likely determine and predict how a patient will react to infection. Therefore, each person's immune system represents a target for intervention to prevent harmful side effects.",
+        "3": "In the early stages of infection, exhausted or overworked T cells (an immune system cell) can lead to disease progression.",
+        "4": "Alteration of T cell functions often comes before a cytokine storm and neutrophil expansion, or the suppression of immune system. When these events occur in lung tissues, diseases are often even more damaging.",
+        "5": "T cell function, cytokine production, and events that attract neutrophils (cells that sweep humans for signs of infection) to the lung can be changed by specifically targeting molecules that trigger T cell responses.",
+        "6": "Manipulating T cell responses could provide the means to control the immune response in patients with COVID-19 (a viral, breathing-related disorder).",
+        "7": "During the initial anti-viral response, T cell function can be enhanced by delaying anti-viral exhaustion by suppressing certain biological pathways.",
+        "8": "Additionally, immune dysregulation or errors can be addressed by enhancing immune suppressor functions by targeting molecules that control cell metabolism.",
+        "9": "Targeting cell metabolism pathways may also prevent formation of blood clots.",
+        "10": "Furthermore, the cell metabolism pathway is needed for COVID-19 replication in host cells. Suppressing the pathway could potentially decrease the amount of virus within the host.",
+        "11": "The overall goal is to identify biological targets than can control the immune response in COVID-19 patients to improve patient well-being.",
+        "12": "Targeting specific pathways in the body could achieve this goal during each stage of the disease."
+      },
+      "adaptation2": {
+        "1": "Some patients of COVID-19 (a respiratory viral illness) suffer issues from anti-viral immune responses. These can lead to a dangerous inflammatory molecule overproduction and blood-borne substances that increase blood clotting risk.",
+        "2": "The exact immune response type may determine and predict patient outcomes. It may also be a target for treatment.",
+        "3": "Elimination of specific anti-viral immune cells called T cells in the early stages is linked with disease progression.",
+        "4": "Damaged T cell function, which is before inflammatory molecule overproduction and expansion in lungs, signals harmful disease effects.",
+        "5": "T cell function, inflammatory molecule production and attraction to the lung can be changed by targeting molecules that can alter responses of specific immune cells.",
+        "6": "Changing T cell responses by targeting a specific pathway may help control the immune response in COVID-19 patients.",
+        "7": "During initial anti-viral response, specific T cell function can be improved by delaying anti-viral elimination by blocking a specific cell pathway.",
+        "8": "Also, immune system impairment can be addressed by improving functions to suppress the immune response. This can be done by targeting a specific molecule that influences cellular metabolism.",
+        "9": "Targeting this specific cell signaling pathway may prevent blood clotting.",
+        "10": "Also, this cellular pathway is needed for the replication of the SARS-CoV-2 virus that causes COVID-19. Blocking the pathway could reduce virus amount.",
+        "11": "The end goal is to identify targets that can quickly control the immune response in COVID-19 patients to improve patient outcome.",
+        "12": "Targeting different parts of a specific cellular pathway could achieve this immune response control at each stage of the disease."
+      }
+    }
+  },
+  "34571039": {
+    "Title": "Manifestations and mechanisms of central nervous system damage caused by SARS-CoV-2",
+    "abstract": {
+      "1": "The global pandemic caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) and its threat to humans have drawn worldwide attention.",
+      "2": "The acute and long-term effects of SARS-CoV-2 on the nervous system pose major public health challenges.",
+      "3": "Patients with SARS-CoV-2 present diverse symptoms of the central nervous system.",
+      "4": "Exploring the mechanism of coronavirus damage to the nervous system is essential for reducing the long-term neurological complications of COVID-19.",
+      "5": "Despite rapid progress in characterizing SARS-CoV-2, the long-term effects of COVID-19 on the brain remain unclear.",
+      "6": "The possible mechanisms of SARS-CoV-2 injury to the central nervous system include: 1) direct injury of nerve cells, 2) activation of the immune system and inflammatory cytokines caused by systemic infection, 3) a high affinity of the SARS-CoV-2 spike glycoprotein for the angiotensin-converting enzyme ACE2, 4) cerebrovascular disease caused by hypoxia and coagulation dysfunction, and 5) a systemic inflammatory response that promotes cognitive impairment and neurodegenerative diseases.",
+      "7": "Although we do not fully understand the mechanism by which SARS-CoV-2 causes nerve injury, we hope to provide a framework by reviewing the clinical manifestations, complications, and possible mechanisms of neurological damage caused by SARS-CoV-2.",
+      "8": "With hope, this will facilitate the early identification, diagnosis, and treatment of possible neurological sequelae, which could contribute toward improving patient prognosis and preventing transmission."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "The ongoing global pandemic is caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), also known COVID-19 (a viral, breathing-related disease). It has threatened public health and drawn worldwide attention.",
+        "2": "The short- and long-term effects of COVID-19 on the nervous system pose major public health challenges.",
+        "3": "Patients with COVID-19 present a wide range of symptoms of the central nervous system (the brain and spinal cord).",
+        "4": "It is essential to better understand how COVID-19 affects the nervous system. Increasing current understanding will reduce the long-term effects COVID-19 may cause within the brain.",
+        "5": "Despite rapid progress in better understanding how COVID-19 hurts the human body, the long-term effects of the virus on the brain are still unclear.",
+        "6": "There are several possible ways COVID-19 affects the central nervous system. One of these ways is by potentially hurting nerve cells. Second, the virus may cause body-wide inflammation (redness and swelling from fighting an infection) that may activate the immune system. Third, COVID-19 may be highly attracted to a specific pathway into cells and can then rapidly distribute throughout the body. Fourth, the virus may cause disease by decreasing oxygen and increase blood clotting within the body. And lastly, COVID-19 may cause body-wide inflammation that decreases brain function.",
+        "7": "Despite not fully understanding how COVID-19 causes nerve injury, the authors hoped to provide a review of clinical reports, documented human health effects, and potential pathways of COVID-19-caused brain damage.",
+        "8": "The aim of this paper was to assist in early detection, diagnosis, and treatment of COVID-19-caused brain damage. Additionally, the authors hope this can help predict COVID-19 related effects before they occur and decrease viral spread in general."
+      },
+      "adaptation2": {
+        "1": "The global pandemic caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), a breathing-related viral illness, and its threat to humans have drawn worldwide attention.",
+        "2": "The immediate and long-term effects of SARS-CoV-2 on the nervous system present major public health challenges.",
+        "3": "Patients with SARS-CoV-2 have diverse symptoms of the brain and spinal cord.",
+        "4": "Exploring how coronavirus damages the nervous system is essential to reduce the long-term damage from COVID-19, or SARS-CoV-2 illness, to the nervous system.",
+        "5": "Despite rapid progress in describing SARS-CoV-2, the long-term effects of COVID-19 on the brain is unclear.",
+        "6": "Some ways SARS-CoV-2 may injure the brain and spinal cord are: 1) directly harming nerve cells, 2) activating the immune system and inflammatory molecules from full-body infection, 3) binding of the virus to a specific molecule, 4) damaged blood flow in the brain due to reduced oxygen and blood clotting, and 5) full-body inflammation leading to cognitive damage and harmful nervous system diseases.",
+        "7": "While we do not fully know how SARS-CoV-2 causes nerve injury, we hope to lay the groundwork by reviewing clinical symptoms, issues, and possible methods for nerve damage caused by SARS-CoV-2.",
+        "8": "This review will hopefully aid early identification and treatment of possible nerve-related consequences, which may improve patient recovery and prevent transmission."
+      }
+    }
+  },
+  "34577851": {
+    "Title": "Mitochondria and Mitochondrial DNA: Key Elements in the Pathogenesis and Exacerbation of the Inflammatory State Caused by COVID-19",
+    "abstract": {
+      "1": "Background and Objectives. The importance of mitochondria in inflammatory pathologies, besides providing energy, is associated with the release of mitochondrial damage products, such as mitochondrial DNA (mt-DNA), which may perpetuate inflammation.",
+      "2": "In this review, we aimed to show the importance of mitochondria, as organelles that produce energy and intervene in multiple pathologies, focusing mainly in COVID-19 and using multiple molecular mechanisms that allow for the replication and maintenance of the viral genome, leading to the exacerbation and spread of the inflammatory response.",
+      "3": "The evidence suggests that mitochondria are implicated in the replication of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), which forms double-membrane vesicles and evades detection by the cell defense system.",
+      "4": "These mitochondrion-hijacking vesicles damage the integrity of the mitochondrion's membrane, releasing mt-DNA into circulation and triggering the activation of innate immunity, which may contribute to an exacerbation of the pro-inflammatory state.",
+      "5": "Conclusions. While mitochondrial dysfunction in COVID-19 continues to be studied, the use of mt-DNA as an indicator of prognosis and severity is a potential area yet to be explored."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Mitochondria (the powerhouse of a cell) play several important roles in the body. These roles include providing energy and participating in pathways of inflammation (redness and swelling from fighting an infection). The event of mitochondria increasing inflammation is associated with the release of products from mitochondrial damage. One of these products is mitochondrial DNA which can increase inflammation within the body.",
+        "2": "This review aimed to show the importance of the mitochondria in energy production and in the intervention in the development of several diseases, mainly COVID-19 (a viral, respiratory disease). Additionally the paper aimed to show how the mitochondria organelle uses several different ways to allow the replication and maintenance of a virus. This can lead to the worsening and spread of inflammation.",
+        "3": "The reviewed scientific evidence suggested that mitochondria are involved in the replication of COVID-19. The virus forms double-walled vesicles, a small chamber outside or within a cell, that evades detection by the host's immune system.",
+        "4": "These vesicles can then damage mitochondria within cells, releasing mitochondrial DNA into the body. This can trigger the innate immune system, the defense system you were born with, which increase inflammation within the body.",
+        "5": "This review concluded that while the role of the mitochondria in COVID-19 is still being studied, the use of mitochondrial DNA as an indicator of illness is a potential area yet to be researched."
+      }
+    }
+  },
+  "34578187": {
+    "Title": "Interactome Analysis of the Nucleocapsid Protein of SARS-CoV-2 Virus",
+    "abstract": {
+      "1": "SARS-CoV-2 infection has caused a global pandemic that has severely damaged both public health and the economy.",
+      "2": "The nucleocapsid protein of SARS-CoV-2 is multifunctional and plays an important role in ribonucleocapsid formation and viral genome replication.",
+      "3": "In order to elucidate its functions, interaction partners of the SARS-CoV-2 N protein in human cells were identified via affinity purification and mass spectrometry.",
+      "4": "We identified 160 cellular proteins as interaction partners of the SARS-CoV-2 N protein in HEK293T and/or Calu-3 cells.",
+      "5": "Functional analysis revealed strong enrichment for ribosome biogenesis and RNA-associated processes, including ribonucleoprotein complex biogenesis, ribosomal large and small subunits biogenesis, RNA binding, catalysis, translation and transcription.",
+      "6": "Proteins related to virus defence responses, including MOV10, EIF2AK2, TRIM25, G3BP1, ZC3HAV1 and ZCCHC3 were also identified in the N protein interactome.",
+      "7": "This study comprehensively profiled the viral-host interactome of the SARS-CoV-2 N protein in human cells, and the findings provide the basis for further studies on the pathogenesis and antiviral strategies for this emerging infection."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "SARS-CoV-2 infection, also known as COVID-19 (a viral, breathing-related disease), has caused a global pandemic that has hurt both public health and the economy.",
+        "2": "A protein of the virus has several purposes and plays an important role in creating the protective outer shell of the virus and helping the virus replicate itself.",
+        "3": "In order to better understand how the virus protein works, proteins within human cells that interact with the COVID-19 protein were identified.",
+        "4": "The authors identified 160 proteins within two different human cell types that interact in some way with the COVID-19 protein.",
+        "5": "The human proteins found to interact with the virus protein are responsible for several cell functions, all of which impact the creation of more proteins.",
+        "6": "Additionally, some human proteins identified to interact with the virus protein have roles in defending the body from viruses.",
+        "7": "This study thoroughly characterized how the viral protein and the host (or human) protein interact when a person is infected. These findings can provide a foundation for future studies on the development and treatment options for COVID-19."
+      }
+    }
+  },
+  "34578462": {
+    "Title": "Myocardial Damage by SARS-CoV-2: Emerging Mechanisms and Therapies",
+    "abstract": {
+      "1": "Evidence is emerging that severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) can infect various organs of the body, including cardiomyocytes and cardiac endothelial cells in the heart.",
+      "2": "This review focuses on the effects of SARS-CoV-2 in the heart after direct infection that can lead to myocarditis and an outline of potential treatment options.",
+      "3": "The main points are: (1) Viral entry: SARS-CoV-2 uses specific receptors and proteases for docking and priming in cardiac cells.",
+      "4": "Thus, different receptors or protease inhibitors might be effective in SARS-CoV-2-infected cardiac cells.",
+      "5": "(2) Viral replication: SARS-CoV-2 uses RNA-dependent RNA polymerase for replication.",
+      "6": "Drugs acting against ssRNA(+) viral replication for cardiac cells can be effective.",
+      "7": "(3) Autophagy and double-membrane vesicles: SARS-CoV-2 manipulates autophagy to inhibit viral clearance and promote SARS-CoV-2 replication by creating double-membrane vesicles as replication sites.",
+      "8": "(4) Immune response: Host immune response is manipulated to evade host cell attacks against SARS-CoV-2 and increased inflammation by dysregulating immune cells.",
+      "9": "Efficiency of immunosuppressive therapy must be elucidated.",
+      "10": "(5) Programmed cell death: SARS-CoV-2 inhibits programmed cell death in early stages and induces apoptosis, necroptosis, and pyroptosis in later stages.",
+      "11": "(6) Energy metabolism: SARS-CoV-2 infection leads to disturbed energy metabolism that in turn leads to a decrease in ATP production and ROS production.",
+      "12": "(7) Viroporins: SARS-CoV-2 creates viroporins that lead to an imbalance of ion homeostasis.",
+      "13": "This causes apoptosis, altered action potential, and arrhythmia."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "New scientific research has shown that severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), or COVID-19 (a viral, breathing-related disease), can infect various parts of the body, including cells within the heart.",
+        "2": "This paper reviews the effects COVID-19 has on the heart after direct infection, which can lead to myocarditis. Myocarditis is inflammation of the heart muscle.  This paper will also outline potential treatment options for this illness.",
+        "3": "The authors proposed seven potential treatment options to help reduce heart injury in COVID-19 patients. First, the virus uses specific entry points to infect heart cells so that it can replicate and grow stronger.",
+        "4": "Therefore, specific drugs that target these entry points might be helpful.",
+        "5": "Second, COVID-19 uses a specific pathway to replicate itself. This pathway uses RNA, a chain of genetic material that helps form proteins.",
+        "6": "Drugs that prevent the creation of RNA for viral replication could be helpful.",
+        "7": "Third, COVID-19 decreases the body's ability to degrade infected cells. This prevents the body from decreasing the amount of virus within it. COVID-19 is able to replicate as it creates double-membrane vesicles, extra-strong chambers, as spaces safe from the body's natural defense system.",
+        "8": "Fourth, COVID-19 can cause the host immune response to be changed so that the virus is not targeted for removal. It can also increase inflammation (redness and swelling from fighting an infection) which alters the function of immune cells.",
+        "9": "Better understanding of drugs that suppress the immune system is needed.",
+        "10": "Fifth, COVID-19 prevents cells from dying in the early stages of infection but induces cell death later, once it has replicated and moved to other cells.",
+        "11": "Sixth, COVID-19 infection can disturb energy metabolism (the process in getting energy from food). This can reduce energy production and affect cell function and viability.",
+        "12": "Seventh, COVID-19 creates virus proteins to lead to an imbalance within the host body.",
+        "13": "This can cause cell death, abnormal heart function, and an abnormal heartbeat."
+      },
+      "adaptation2": {
+        "1": "There is evidence that severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), a severe breathing-related virus, can infect various body organs, like heart cells.",
+        "2": "This review focuses on the effects of SARS-CoV-2 in the heart after direct infection that can cause myocarditis (heart muscle inflammation) and possible treatments.",
+        "3": "The main points are: (1) Viral entry: SARS-CoV-2 uses specific cell parts to attach to heart cells.",
+        "4": "Thus, different blockers of specific cell parts may help with SARS-CoV-2-infected heart cells.",
+        "5": "(2) Viral replication: SARS-CoV-2 uses a specific molecule for replication.",
+        "6": "Drugs acting against a specific form of viral replication for heart cells can be effective.",
+        "7": "(3) Cell degradation and transport molecules: SARS-COV-2 alters cell degradation to block virus removal and promote virus replication by making transport molecules as replication sites.",
+        "8": "(4) Immune response: Patient immune response is altered to evade paitent cell attacks against SARS-CoV-2 and increased inflammation by impairing immune cells.",
+        "9": "Efficiency of immune-system-suppressing therapy must be explained.",
+        "10": "(5) Intentional cell death: SARS-CoV-2 blocks intentional cell death in early stages and causes cell death in later stages.",
+        "11": "(6) Energy metabolism: SARS-CoV-2 infection leads to damaged energy metabolism that leads to a decrease in energy and reactive chemical production.",
+        "12": "(7) Virus channels: SARS-CoV-2 pokes openings in the cell that leads to leaking of important cell molecules.",
+        "13": "This leaking causes cell death, altered cell signals, and an irregular heart beat."
+      }
+    }
+  },
+  "34579572": {
+    "Title": "Antibody-Dependent Enhancement of SARS-CoV-2 Infection Is Mediated by the IgG Receptors FcγRIIA and FcγRIIIA but Does Not Contribute to Aberrant Cytokine Production by Macrophages",
+    "abstract": {
+      "1": "The coronavirus disease 2019 (COVID-19) pandemic has raised concerns about the detrimental effects of antibodies.",
+      "2": "Antibody-dependent enhancement (ADE) of infection is one of the biggest concerns in terms of not only the antibody reaction to severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) upon reinfection with the virus but also the reaction to COVID-19 vaccines.",
+      "3": "In this study, we evaluated ADE of infection by using COVID-19 convalescent-phase plasma and BHK cells expressing human Fcγ receptors (FcγRs).",
+      "4": "We found that FcγRIIA and FcγRIIIA mediated modest ADE of infection against SARS-CoV-2.",
+      "5": "Although ADE of infection was observed in monocyte-derived macrophages infected with SARS-CoV-2, including its variants, proinflammatory cytokine/chemokine expression was not upregulated in macrophages.",
+      "6": "SARS-CoV-2 infection thus produces antibodies that elicit ADE of infection, but these antibodies do not contribute to excess cytokine production by macrophages.",
+      "7": "IMPORTANCE Viruses infect cells mainly via specific receptors at the cell surface.",
+      "8": "Antibody-dependent enhancement (ADE) of infection is an alternative mechanism of infection for viruses to infect immune cells that is mediated by antibodies and IgG receptors (FcγRs).",
+      "9": "Because ADE of infection contributes to the pathogenesis of some viruses, such as dengue virus and feline coronavirus, it is important to evaluate the precise mechanism of ADE and its contribution to the pathogenesis of SARS-CoV-2.",
+      "10": "Here, using convalescent-phase plasma from COVID-19 patients, we found that two types of FcγRs, FcγRIIA and FcγRIIIA, mediate ADE of SARS-CoV-2 infection.",
+      "11": "Although ADE of infection was observed for SARS-CoV-2 and its recent variants, proinflammatory cytokine production in monocyte-derived macrophages was not upregulated.",
+      "12": "These observations suggest that SARS-CoV-2 infection produces antibodies that elicit ADE of infection, but these antibodies may not be involved in aberrant cytokine release by macrophages during SARS-CoV-2 infection."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "The pandemic of COVID-19 (a viral, breathing-related disease) has raised concerns about the harmful effects antibodies can have. Antibodies are proteins used by the immune system to identify and neutralize viruses.",
+        "2": "Antibody-dependent enhancement (ADE) is a unique occurrence in which virus-specific antibodies actually increase entrance of the virus into the host. ADE is a big concern for both people who are exposed to COVID-19 and those who receive the vaccine.",
+        "3": "In this study, the authors evaluated ADE of infection by using COVID-19 convalescent-phase plasma (a specific of plasma often used to treat infections) and human cells expressing Fcγ receptors (FcγRs), special receptors on infection-fighting cells.",
+        "4": "The authors found two Fcγ receptors mediated or controlled most ADE of infection against COVID-19.",
+        "5": "Although ADE of infection was found in macrophages (a white blood cell) infected with COVID-19, and its variants, proteins that increase inflammation were not upregulated or increased.",
+        "6": "COVID-19 creates antibodies that cause ADE of infection. However, these antibodies do not increase inflammatory or infection-fighting responses by macrophages.",
+        "7": "Viruses infect cells mainly through specific receptors (pathways) on the cell surface.",
+        "8": "ADE of infection is an alternative way that viruses can infect immune cells. ADE is mediated by antibodies and FcγRs.",
+        "9": "Because ADE of infection contributes to the development of some viruses, it is import to better understand the exact way ADE contributes to COVID-19 progression.",
+        "10": "In this study, using plasma or blood from COVID-19 patients, we found that two types of Fcγ receptors mediate ADE of COVID-19 infection.",
+        "11": "Although ADE of infection was seen for COVID-19, and its variants, increased inflammatory responses in macrophages was not found.",
+        "12": "These findings suggest that COVID-19 infection produces antibodies that produce ADE of infection. However, these antibodies may not be involved in pro-inflammatory pathways by macrophages."
+      },
+      "adaptation2": {
+        "1": "The pandemic of coronavirus disease 2019 (COVID-19), a viral respiratory disease, highlights harmful effects of antibodies, body molecules that combat foreign organisms.",
+        "2": "Antibody-dependent enhancement (ADE) of infection is a big concern because of the antibody reaction to severe acute respiratory syndrome coronavirus (SARS-CoV-2), which causes COVID-19, upon reinfection and the reaction to COVID-19 vaccines.",
+        "3": "",
+        "4": "We found that certain cell molecules affect mild ADE of infection against SARS-CoV-2.",
+        "5": "Although certain immune cells infected with SARS-CoV-2 and its variants had infection enhancement, proinflammatory molecules were not increased in these cells.",
+        "6": "SARS-CoV-2 infection thus creates antibodies that cause ADE of infection, but these antibodies do not lead to increased inflammatory molecule production by certain cells.",
+        "7": "Viruses infect cells via certain cell parts.",
+        "8": "ADE of infection or improvement of infection is another method of infection for viruses to infect immune cells influenced by antibodies and certain cellular molecules.",
+        "9": "Because ADE of infection leads to disease symptoms of some viruses, understanding how ADE works and leads to these symptoms of SARS-CoV-2 is important.",
+        "10": "Using blood from COVID-19 patients, we found two cellular molecules that influence ADE of SARS-CoV-2 infection.",
+        "11": "While ADE of infection was seen for SARS-CoV-2 and its variants, proinflammatory molecule production in certain immune cells was not increased.",
+        "12": "Thus, SARS-CoV-2 infection may create antibodies that cause ADE of infection, but these antibodies may not lead to increased inflammatory production by certain cells during infection."
+      }
+    }
+  },
+  "34585235": {
+    "Title": "RNA-RNA interactions between SARS-CoV-2 and host benefit viral development and evolution during COVID-19 infection",
+    "abstract": {
+      "1": "Some studies reported that genomic RNA of SARS-CoV-2 can absorb a few host miRNAs that regulate immune-related genes and then deprive their function.",
+      "2": "In this perspective, we conjecture that the absorption of the SARS-CoV-2 genome to host miRNAs is not a coincidence, which may be an indispensable approach leading to viral survival and development in host.",
+      "3": "In our study, we collected five datasets of miRNAs that were predicted to interact with the genome of SARS-CoV-2.",
+      "4": "The targets of these miRNAs in the five groups were consistently enriched immune-related pathways and virus-infectious diseases.",
+      "5": "Interestingly, the five datasets shared no one miRNA but their targets shared 168 genes.",
+      "6": "The signaling pathway enrichment of 168 shared targets implied an unbalanced immune response that the most of interleukin signaling pathways and none of the interferon signaling pathways were significantly different.",
+      "7": "Protein-protein interaction (PPI) network using the shared targets showed that PPI pairs, including IL6-IL6R, were related to the process of SARS-CoV-2 infection and pathogenesis.",
+      "8": "In addition, we found that SARS-CoV-2 absorption to host miRNA could benefit two popular mutant strains for more infectivity and pathogenicity.",
+      "9": "Conclusively, our results suggest that genomic RNA absorption to host miRNAs may be a vital approach by which SARS-CoV-2 disturbs the host immune system and infects host cells."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Some scientific reports have stated that RNA, or genetic material, from COVID-19 virus (a virus leading to lung infection) can absorb microRNA (small chains of RNA that cannot be coded into proteins) from the host. MiRNA can regulate immune system-related genes. When the virus absorbs this miRNA, it can deprive the genes of their ability to function.",
+        "2": "Using this knowledge, the authors hypothesized or theorized that the absorption of COVID-19 genetic material to host miRNA is not a coincidence. Therefore, this may be a pathway in which the virus survives and replicates within a host.",
+        "3": "In this study, the authors collected five datasets of miRNAs that were predicted to interact with the COVID-19 genetic material.",
+        "4": "The targets of the selected miRNA were pathways related to immune response and virus-infectious diseases.",
+        "5": "Interestingly, the five datasets had no repeated miRNA, but their targets shared 168 genes.",
+        "6": "A test analyzing the 168 shared targets implied an unbalanced immune response where most of the interleukin (a messenger protein) signaling pathways and none of the interferon (another messenger protein) signaling pathways were significantly different.",
+        "7": "A second test using the shared targets show protein-protein interaction pairs, including IL6 to IL6R. The test showed the pairs are related to the process of COVID-19 infection and development.",
+        "8": "Additionally, the authors found that COVID-19 absorption to host miRNA could help two popular viral strains to infect more and cause more damage in hosts.",
+        "9": "These results suggest that the absorption of viral RNA to host miRNAs may be a way that COVID-19 disturbs the host immune system and infects host cells."
+      }
+    }
+  },
+  "question": "How can covid cause cell injury?",
+  "question_type": "B"
+  }
+}

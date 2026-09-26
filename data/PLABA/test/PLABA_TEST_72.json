@@ -1,0 +1,366 @@
+{
+  "72": {
+  "9483156": {
+    "Title": "Newborn screening for inborn errors of metabolism: a systematic review",
+    "abstract": {
+      "1": "OBJECTIVES. To establish a database of literature and other evidence on neonatal screening programmes and technologies for inborn errors of metabolism.",
+      "2": "To undertake a systematic review of the data as a basis for evaluation of newborn screening for inborn errors of metabolism.",
+      "3": "To prepare an objective summary of the evidence on the appropriateness and need for various existing and possible neonatal screening programmes for inborn errors of metabolism in relation to the natural history of these diseases.",
+      "4": "To identify gaps in existing knowledge and make recommendations for required primary research.",
+      "5": "To make recommendations for the future development and organisation of neonatal screening for inborn errors of metabolism in the UK.",
+      "6": "HOW THE RESEARCH WAS CONDUCTED. There were three parts to the research.",
+      "7": "A systematic review of the literature on inborn errors of metabolism, neonatal screening programmes, new technologies for screening and economic factors.",
+      "8": "Inclusion and exclusion criteria were applied, and a working database of relevant papers was established.",
+      "9": "All selected papers were read by two or three experts and were critically appraised using a standard format.",
+      "10": "Seven criteria for a screening programme, based on the principles formulated by Wilson and Jungner (WHO, 1968), were used to summarise the evidence.",
+      "11": "These were as follows.",
+      "12": "Clinically and biochemically well-defined disorder.",
+      "13": "Known incidence in populations relevant to the UK.",
+      "14": "Disorder associated with significant morbidity or mortality.",
+      "15": "Effective treatment available.",
+      "16": "Period before onset during which intervention improves outcome.",
+      "17": "Ethical, safe, simple and robust screening test.",
+      "18": "Cost-effectiveness of screening.",
+      "19": "A questionnaire which was sent to all newborn screening laboratories in the UK.",
+      "20": "Site visits to assess new methodologies for newborn screening.",
+      "21": "The classical definition of an inborn error of metabolism was used (i.e., a monogenic disease resulting in deficient activity in a single enzyme in a pathway of intermediary metabolism).",
+      "22": "RESEARCH FINDINGS. INBORN ERRORS OF METABOLISM. Phenylketonuria (PKU) (incidence 1:12,000) fulfilled all the screening criteria and could be used as the 'gold standard' against which to review other disorders despite significant variation in methodologies, sample collection and timing of screening and inadequacies in the infrastructure for notification and continued care of identified patients.",
+      "23": "Of the many disorders of organic acid and fatty acid metabolism, a case can only be made for the introduction of newborn screening for glutaric aciduria type 1 (GA1; estimated incidence 1:40,000) and medium-chain acyl CoA dehydrogenase (MCAD) deficiency (estimated incidence 1:8000-1:15,000).",
+      "24": "Therapeutic advances for GA1 offer prevention of neurological damage but further investigation is required into the costs and benefits of screening for this disorder.",
+      "25": "MCAD deficiency is simply and cheaply treatable, preventing possible early death and neurological handicap.",
+      "26": "Neonatal screening for these diseases is dependent upon the introduction of tandem mass spectrometry (tandem MS).",
+      "27": "This screening could however also simultaneously detect some other commonly-encountered disorders of organic acid metabolism with a collective incidence of 1:15,000.",
+      "28": "Neonatal screening for congenital adrenal hyperplasia (CAH) due to 21-hydroxylase deficiency (incidence 1:17,000) has been shown to be beneficial in other countries and similar benefits should accrue in the UK.",
+      "29": "A national programme of neonatal screening for CAH would be justified, with reassessment after an agreed period.",
+      "30": "Biotinidase deficiency is of low incidence in the UK (estimated 1:100,000), but this may be outweighed by the simplicity of the screening methodology and the benefits in prevention."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Our first goal in this article was to establish a database of literature and other evidence on newborn screening programmes and technology for genetic disorders related to metabolism.",
+        "2": "We also aimed to rigorously review data to evaluate newborn screening for genetic disorders related to metabolism.",
+        "3": "We aimed to summarize the evidence for whether various newborn screening programs for genetic disorders related to metabolism are appropriate and necessary. We aimed to make this summary in relation to the natural history of these diseases, and for both existing and possible programs.",
+        "4": "We further aimed to identify gaps in knowledge and make recommendations for further research that is needed.",
+        "5": "Finally, we aimed to make recommendations for the future development and organisation of newborn screening for genetic disorders related to metabolism in the UK.",
+        "6": "There were three parts to this research.",
+        "7": "We rigorously reviewed research papers on genetic disorders related to metabolism, newborn screening programs, new technologies for screening, and economic factors.",
+        "8": "We decided how we would include or exclude papers, and made a working database of relevant papers.",
+        "9": "All the papers we selected were read by two or three experts and were critically assessed using a standard format.",
+        "10": "Seven criteria for a screening programme, based on the principles formulated by Wilson and Jungner (WHO, 1968), were used to summarise the evidence.",
+        "11": "These were the following:",
+        "12": "The disorder is well defined by signs and symptoms.",
+        "13": "The disease occurs in populations relevant to the UK.",
+        "14": "The disorder is associated with serious health problems or death.",
+        "15": "Effective treatment is available for the disease.",
+        "16": "The disorder can be helped by addressing it in the time before it appears.",
+        "17": "There is an ethical, safe, simple and robust screening test for the disorder.",
+        "18": "Screening for the disorder is cost-effective.",
+        "19": "A questionnaire was sent to all newborn screening laboratories in the UK.",
+        "20": "There are site visits to assess new methodologies for newborn screening.",
+        "21": "We used the traditional way of defining a genetic disorder related to metabolism. This was that the disorder was caused by a single mutated gene that affected a single type of enzyme needed for metabolism.",
+        "22": "We found that phenylketonuria matched all the                                  criteria. This disorder could be used as a gold standard when comparing other disorders, even though the screening process can vary and systems for notifying patients are not good enough.",
+        "23": "Of the many disorders of metabolism of organic and fatty acids, we can only make the case for newborn screening of Glutaric Aciduria type 1 (GA1) and Medium-Chain Acy-CoA Dehydrogenase (MCAD deficiency).",
+        "24": "Advancements in therapy for GA1 can prevent damage to the brain and nerves but more research into the costs and benefits of screening for this disorder is needed.",
+        "25": "MCAD deficiency can be treated simply and cheaply, preventing possible early death and brain handicap.",
+        "26": "Newborn screening for these diseases depends on the introduction of tandem Mass Spectrometry (tandem MS) technology.",
+        "27": "But, this screening could also detect some other disorders at the same time. These other disorders are related to organic acid metabolism and happen to one in 15,000 people.",
+        "28": "Newborn screening for congenital adrenal hyperplasia (CAH) has worked well in other countries and the UK should see similar benefits. This disease occurs in one in 17,000 people.",
+        "29": "A national programme of newborn screening for CAH would be justified, and could be looked at again after an agreed period of time.",
+        "30": "Another disorder, biotinidase deficiency, is rare in the UK (estimated at one in 100,000), but that may be outweighed by how simple the screening process is and the benefits of preventing the disease."
+      }
+    }
+  },
+  "17183568": {
+    "Title": "The clinical aspects of newborn screening: importance of newborn screening follow-up",
+    "abstract": {
+      "1": "The aim of newborn screening is to identify presymptomatic healthy infants that will develop significant metabolic or endocrine derangements if left undiagnosed and untreated.",
+      "2": "The goal of ultimately reducing or eliminating irreversible sequelae is reached by maximizing test sensitivity of the primary newborn screening that measures specific analytes by a number of methodologies.",
+      "3": "Differentiation of true from false negatives is accomplished by the test specificity.",
+      "4": "This review discusses disorders for which, in general, there are available therapies and that are detected by routine and expanded newborn screening.",
+      "5": "Recommendations are presented for evaluation by a primary care physician, with confirmation by a metabolic or endocrinology specialist.",
+      "6": "Disorders are organized in tabular format by class of pathway or analyte, with attention to typical clinical presentations, confirmatory biochemical and molecular tests, and therapies.",
+      "7": "There are numerous challenges in clinical follow-up, including diagnosis and appropriate understanding of the consequences of the disorders.",
+      "8": "The data required to meet these challenges can be acquired only by large scale longitudinal comprehensive studies of outcome in children identified by newborn screening.",
+      "9": "Only with such data can newborn screening fully serve families."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "The aim of newborn screening is to identify healthy infants that will develop significant metabolic or endocrine disorders if left undiagnosed and untreated.",
+        "2": "Newborn screening measures specific substances in various ways. Using the most sensitive screening tests can ultimately reduce or eliminate permanent consequences.",
+        "3": "Specificity of a test distinguishes true negative results from false negative results (when the test is negative but the patient actually has the disease).",
+        "4": "In general, this article discusses disorders that have treatments and that can be detected by routine and expanded newborn screening.",
+        "5": "We give recommendations for testing by a general practice doctor, with confirmation by a metabolic or endocrine specialist.",
+        "6": "We organize disorders in a table by the physical process they affect in the body or by the substance that is tested. In doing this we also pay attention to how the disease first appears, lab tests that can confirm the disorders, and treatments available.",
+        "7": "There are many challenges for following up with patients, including diagnosis and appropriate understanding of the consequences of the disorders.",
+        "8": "Meeting these challenges will require information. This can only be gained with large-scale studies that follow children identified by newborn screening over time to see their outcomes.",
+        "9": "Newborn screening can only fully serve families once we have this knowledge."
+      }
+    }
+  },
+  "18203033": {
+    "Title": "Newborn screening",
+    "abstract": {
+      "1": "The aim of newborn screening is to detect newborns with serious, treatable disorders so as to facilitate appropriate interventions to avoid or ameliorate adverse outcomes.",
+      "2": "Mass biochemical testing of newborn babies was pioneered in the 1960s with the introduction of screening for phenylketonuria, a rare inborn error of metabolism, tested by using a dried blood spot sample.",
+      "3": "The next disorder introduced into screening programs was congenital hypothyroidism and a few more much rarer disorders were gradually included.",
+      "4": "Two recent advances have greatly changed the pace: modification of tandem mass spectrometry and DNA extraction and analysis from newborn screening dried blood spot.",
+      "5": "These two technologies make the future possibilities of newborn screening seem almost unlimited.",
+      "6": "Newborn screening tests are usually carried out on a dried blood spot sample, for which there are special analytical considerations.",
+      "7": "Dried blood spot calibrators and controls, prepared on the same lot number of filter paper, are needed.",
+      "8": "Methods have a co-efficient of variation of about 10% due to the increased variability of a dried filter paper sample compared with other biochemical samples.",
+      "9": "The haematocrit is an additional variable not able to be measured.",
+      "10": "Also of importance is obtaining a balance between the sensitivity and specificity of each assay.",
+      "11": "Fixing cut-off points for action needs consideration of what is an acceptable percentage of the population to recall for further testing.",
+      "12": "Few assays are 100% discriminatory.",
+      "13": "Programs in Australasia currently screen for at least 30 disorders.",
+      "14": "Detection of these requires not only the assay of a primary marker but often determination of a ratio of that marker with another, or possibly an alternative assay, for example a DNA mutation.",
+      "15": "The most important disorders screened for are described briefly: phenylketonuria, primary congenital hypothyroidism, cystic fibrosis, the galactosaemias, medium-chain acyl-CoA dehydrogenase deficiency, glutaryl-CoA dehydrogenase deficiency and congenital adrenal hyperplasia, together with several other disorders detectable by tandem mass spectrometry.",
+      "16": "Newborn screening deals with rare disorders and benefit cannot be shown easily without very large pilot studies.",
+      "17": "There have been randomised controlled trials of screening for cystic fibrosis, and now several studies are beginning to establish the benefit of tandem mass spectrometry screening for disorders of fatty acid and amino acid metabolism.",
+      "18": "Two things will influence the new directions for newborn screening: the development of effective treatments for hitherto untreatable disorders, and advancing technology, enabling new testing strategies to be developed.",
+      "19": "There are novel treatments on the horizon for many discrete disorders.",
+      "20": "Susceptibility testing has recently been considered for newborn screening application, but is more controversial.",
+      "21": "Newborn screening has entered a new and exciting phase, with an explosion of new treatments, new technologies, and, possibly in the future, new preventive strategies."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "The goal of newborn screening is to detect newborns with serious, treatable disorders. This allows appropriate action to be taken to prevent or lessen bad outcomes.",
+        "2": "Large-scale lab testing of newborn babies was pioneered in the 1960s with the introduction of screening for phenylketonuria, a rare, inherited metabolic disorder. This testing was done by using dried blood spot samples.",
+        "3": "The next disorder introduced into screening programs was congenital hypothyroidism, which is an inherited disorder of the thyroid gland, which controls metabolism. A few more much rarer disorders were gradually included.",
+        "4": "Two recent advances have greatly change the pace. These are modification of tandem mass spectrometry (an advanced chemical detection technique, also known as MS/MS) and DNA analysis from newborn screening dried blood spots.",
+        "5": "These two technologies make the future possibilities of newborn screening seem almost unlimited.",
+        "6": "Newborn screening test are usually done with a dried blood spot sample, which needs to be considered when analyzing.",
+        "7": "Extra dried blood spots need to be prepared on the same filter paper to calibrate the tests.",
+        "8": "Since dried filter paper samples have more variability than other types of samples, the results of these tests can vary by about 10% or more.",
+        "9": "Additionally, the amount of red blood cells cannot be measured.",
+        "10": "It is also important to balance how sensitive the test is (how good it is at finding a problem) with how specific it is (how sure you can be when a problem is found).",
+        "11": "In deciding how to balance these, we need to consider how many people it is acceptable to bring back for more testing.",
+        "12": "Not many tests are perfectly accurate.",
+        "13": "Programs in Australasia currently screen for at least 30 disorders.",
+        "14": "Detecting these disorders often requires more than just knowing one amount. It can require knowing relative amounts of two different things, or could require an additional alternative test, like a genetic test.",
+        "15": "In this article we will briefly describe the most important disorders that are screened for. These are phenylketonuria, hypothyroidism, Cystic Fibrosis (CF), galactosaemias, Medium-Chain Acyl-CoA Dehydrogenase (MCAD) deficiency, Glutaryl-CoA Dehydrogenase (GCDH) deficiency and Congenital Adrenal Hyperplasia (CAH), along with several other disorders detectable by MS/MS.",
+        "16": "Newborn screening deals with rare disorders and it is hard to see the benefit without very large studies.",
+        "17": "There have been randomised controlled trials of screening for cystic fibrosis. Also, several studies are now beginning to show the benefit of MS/MS screening for disorders relating to fatty acid and amino acid metabolism.",
+        "18": "Two things will influence the new directions for newborn screening. The first is the development of effective treatments for disorders that don’t currently have them. The second is advancing technology that will enable new testing strategies to be developed.",
+        "19": "There are new treatments on the horizon for many distinct disorders.",
+        "20": "Testing for being at risk for disorders has recently been considered for newborn screening, but this is more controversial.",
+        "21": "Newborn screening has entered a new and exciting phase, with an explosion of new treatments, new technologies, and, possibly in the future, new preventive strategies."
+      }
+    }
+  },
+  "20498829": {
+    "Title": "Newborn screening",
+    "abstract": {
+      "1": "Early detection of many disorders, mainly inherited, is feasible with population-wide analysis of newborn dried blood spot samples.",
+      "2": "Phenylketonuria was the prototype disorder for newborn screening (NBS) and early dietary treatment has resulted in vastly improved outcomes for this disorder.",
+      "3": "Testing for primary hypothyroidism and cystic fibrosis (CF) was later added to NBS programs following the development of robust immunoassays and molecular testing.",
+      "4": "Current CF testing usually relies on a combined immunoreactive trypsin/mutation detection strategy.",
+      "5": "Multiplex testing for approximately 25 inborn errors of metabolism using tandem mass spectrometry is a relatively recent addition to NBS.",
+      "6": "The simultaneous introduction of many disorders has caused some re-evaluation of the traditional guidelines for NBS, because very rare disorders or disorders without good treatments can be included with minimal effort.",
+      "7": "NBS tests for many other disorders have been developed, but these are less uniformly applied or are currently considered developmental.",
+      "8": "This review focuses on Australasian NBS practices."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Many disorders (but mostly ones that are inherited) can be detected early by looking at dried blood spot samples of newborns across the population.",
+        "2": "Phenylketonuria is an inherited disorder that can cause many issues with the brain. This disorder was the original example of how newborn screening can result in big improvements for health outcomes.",
+        "3": "After improved lab tests for hypothyroidism (a gland disorder) and Cystic Fibrosis (CF), an inherited disorder that causes lung infections, these diseases were added to newborn screening programs.",
+        "4": "Current testing for CF usually relies on a combination of testing for genetic mutations that cause CF and testing for an enzyme that is reduced by CF.",
+        "5": "Combined testing for about 25 genetic mutations relating to metabolism is a relatively recent addition to newborn screening.",
+        "6": "The addition of many disorders all at once has led to some reconsideration of the way newborn screening is usually done. This is because it is easy to include tests for disorders that are very rare or don’t have good treatments.",
+        "7": "Newborn screening for many other disorders have been developed, but these aren’t applied as evenly or are consider to be still under development.",
+        "8": "This article focuses on newborn screening practices in Australasia."
+      }
+    }
+  },
+  "22891501": {
+    "Title": "Newborn screening: ethical, legal, and social implications",
+    "abstract": {
+      "1": "Newborn dried blood spot screening (NBS) is a core public health service and is the largest application of genetic testing in the United States.",
+      "2": "NBS is conducted by state public health departments to identify infants with certain genetic, metabolic, and endocrine disorders.",
+      "3": "Screening is performed in the first few days of life through blood testing.",
+      "4": "Several drops of blood are taken from the baby's heel and placed on a filter paper card.",
+      "5": "The dried blood, on the filter cards, is sent from the newborn nursery to the state health department laboratory, or a commercial partner, where the blood is analyzed.",
+      "6": "Scientific and technological advances have lead to a significant expansion in the number of tests-from an average of 6 to more than 50--and there is a national trend to further expand the NBS program.",
+      "7": "This rapid expansion has created significant ethical, legal, and social challenges for the health care system and opportunity for scholarly inquiry to address these issues.",
+      "8": "The purpose of this chapter is to provide an overview of the NBS programs and to provide an in-depth examination of two significant concerns raised from expanded newborn screening, specifically false-positives and lack of information for parents.",
+      "9": "Implications for nursing research in managing these ethical dilemmas are discussed."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Newborn dried blood spot screening (or simply “newborn screening”) is an essential public health service and is the largest application of genetic testing in the United States.",
+        "2": "Newborn screening is done by state public health departments to identify infants with certain genetic, metabolic, and endocrine disorders.",
+        "3": "Screening is done in the first few days of life through blood testing.",
+        "4": "Several drops of blood are taken from the baby's heel and placed on a filter paper card.",
+        "5": "The dried blood, on the filter cards, is sent from the newborn nursery to the state health department laboratory, or a commercial partner, where the blood is analyzed.",
+        "6": "Scientific and technological advances have lead to a significant expansion in the number of tests—from an average of 6 to more than 50—and there is a national trend to further expand the newborn screening program.",
+        "7": "This rapid expansion has created significant ethical, legal, and social challenges for the health care system. It has also created opportunity for research to address these issues.",
+        "8": "The purpose of this chapter is to provide an overview of the newborn screening programs and to provide an in-depth examination of two significant concerns raised from expanded newborn screening. Specifically, these concerns are false positives (when the test is positive but the person does not actually have the disease) and lack of information for parents.",
+        "9": "We also discuss what newborn screening means for nursing research in managing these ethical dilemmas."
+      }
+    }
+  },
+  "22996108": {
+    "Title": "Newborn screening and the obstetrician",
+    "abstract": {
+      "1": "Newborn screening is the largest genetic screening program in the United States with approximately four million newborns screened yearly.",
+      "2": "It has been available and in continuous development for more than 50 years.",
+      "3": "Each state manages, funds, and maintains its own individual program, which encompasses newborn screening as well as the diagnosis and coordination of care for affected infants and children.",
+      "4": "The ideal disorder for screening is one in which newborn intervention prevents later disabilities or death for infants who may appear normal at birth.",
+      "5": "There are 31 core conditions that are currently recommended for incorporation into state screening programs.",
+      "6": "To obtain a sample, several drops of blood are collected from the newborn's heel and applied to filter paper.",
+      "7": "Although testing for core disorders is fairly standardized, more extensive screening varies by state and the rigorous evaluation of new disorders for inclusion in state screening panels is ongoing.",
+      "8": "As genomic medicine becomes more accessible, screening newborns for chronic diseases that may affect their long-term health will need to be addressed as well as the use of the residual blood spots for research.",
+      "9": "Obstetric providers should, at some time during pregnancy, review the basic process of newborn screening with parents to prepare them for this testing in the neonatal period.",
+      "10": "This information can be reviewed as it best suits incorporation in an individual's practice; verbal discussion and the distribution of written materials with resources for further information are encouraged."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Newborn screening is the largest genetic screening program in the United States with approximately four million newborns screened every year.",
+        "2": "It has been available and continuously being improved for more than 50 years.",
+        "3": "Each state manages, funds, and maintains its own individual program. This involves newborn screening as well as the diagnosis and coordination of care for affected infants and children.",
+        "4": "The ideal disorder for screening is one where taking action for newborns that appear normal prevents later disabilities or death.",
+        "5": "There are 31 main conditions that are currently recommended for inclusion in state screening programs.",
+        "6": "To get a sample, several drops of blood are collected from the newborn's heel and applied to filter paper.",
+        "7": "Testing for the main disorders is fairly standardized. However, more extensive screening varies by state. Additionally, new disorders are always being carefully considered for being included in state screening panels.",
+        "8": "Healthcare based on genetics is becoming more widely available. As this happens we need to think about screening newborns for chronic diseases that may affect their long-term health. We also need to think about the use of the leftover blood spots for research.",
+        "9": "At some time during pregnancy, obstetricians should review the basic process of newborn screening with parents to prepare them for this testing when the child is born.",
+        "10": "Reviewing this information can depend on how it fits into each doctor’s individual practice. Talking with patients and giving out of written materials with resources for further information are encouraged."
+      }
+    }
+  },
+  "23183752": {
+    "Title": "Expanded newborn screening and confirmatory follow-up testing for inborn errors of metabolism detected by tandem mass spectrometry",
+    "abstract": {
+      "1": "Newborn screening (NBS) of inborn errors of metabolism (IEM) is a coordinated comprehensive system consisting of education, screening, follow-up of abnormal test results, confirmatory testing, diagnosis, treatment, and evaluation of periodic outcome and efficiency.",
+      "2": "The ultimate goal of NBS and follow-up programs is to reduce morbidity and mortality from the disorders.",
+      "3": "Over the past decade, tandem mass spectrometry (MS/MS) has become a key technology in the field of NBS.",
+      "4": "It has replaced classic screening techniques of one-analysis, one-metabolite, one-disease with one analysis, many-metabolites, and many-diseases.",
+      "5": "The development of electrospray ionization (ESI), automation of sample handling and data manipulation have allowed the introduction of expanded NBS for the identification of numerous conditions on a single sample and new conditions to be added to the list of disorders being screened for using MS/MS.",
+      "6": "In the case of a screened positive result, a follow-up analytical test should be performed for confirmation of the primary result.",
+      "7": "The most common confirmatory follow-up tests are amino acids and acylcarnitine analysis in plasma and organic acid analysis in urine.",
+      "8": "NBS should be integrated with follow-up and clinical management.",
+      "9": "Recent improvements in therapy have caused some disorders to be considered as potential candidates for NBS.",
+      "10": "This review covers some of the basic theory of expanded MS/MS and follow-up confirmatory tests applied for NBS of IEM."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Inborn Errors of Metabolism (IEM) are hereditary diseases that affect how the body processes nutrients. Newborn screening of IEM is a coordinated, comprehensive system. It is made up of education, screening, follow-up of abnormal test results, confirmatory testing, diagnosis, treatment, and evaluation of outcome and efficiency.",
+        "2": "The ultimate goal of newborn screening and follow-up programs is to reduce poor health and death from the disorders.",
+        "3": "Over the past decade, tandem mass spectrometry (MS/MS) has become a key technology in the field of newborn screening.",
+        "4": "It has replaced classic screening techniques, which screen for one disease per lab test, with lab tests that screen for many diseases at once. ",
+        "5": "Several factors have allowed expanded newborn screening for identifying many conditions with a single sample. These factors are the development of Electrospray Ionization (ESI), automation of sample handling, and data manipulation. These factors have also allowed new conditions to be added to the list of disorders being screened for using MS/MS.",
+        "6": "In the case of a positive result from a screen, a follow-up lab test should be done to confirm the first result.",
+        "7": "The most common follow-up tests for confirmation are blood tests for amino acids (building blocks of protein) and acylcarnitine (a chemical in the body important for metabolism), and urine tests for certain acids.",
+        "8": "Newborn screening should be integrated with follow-up and clinical management.",
+        "9": "Recent improvements in therapy have caused some disorders to be considered as potential candidates for newborn screening.",
+        "10": "This article reviewing newborn screening covers some of the basic theory of expanded MS/MS. It also covers follow-up tests for confirmation used for newborn screening of IEM."
+      }
+    }
+  },
+  "24295058": {
+    "Title": "Inborn errors of metabolism and expanded newborn screening: review and update",
+    "abstract": {
+      "1": "Inborn errors of metabolism (IEM) are a phenotypically and genetically heterogeneous group of disorders caused by a defect in a metabolic pathway, leading to malfunctioning metabolism and/or the accumulation of toxic intermediate metabolites.",
+      "2": "To date, more than 1000 different IEM have been identified.",
+      "3": "While individually rare, the cumulative incidence has been shown to be upwards of 1 in 800.",
+      "4": "Clinical presentations are protean, complicating diagnostic pathways.",
+      "5": "IEM are present in all ethnic groups and across every age.",
+      "6": "Some IEM are amenable to treatment, with promising outcomes.",
+      "7": "However, high clinical suspicion alone is not sufficient to reduce morbidities and mortalities.",
+      "8": "In the last decade, due to the advent of tandem mass spectrometry, expanded newborn screening (NBS) has become a mandatory public health strategy in most developed and developing countries.",
+      "9": "The technology allows inexpensive simultaneous detection of more than 30 different metabolic disorders in one single blood spot specimen at a cost of about USD 10 per baby, with commendable analytical accuracy and precision.",
+      "10": "The sensitivity and specificity of this method can be up to 99% and 99.995%, respectively, for most amino acid disorders, organic acidemias, and fatty acid oxidation defects.",
+      "11": "Cost-effectiveness studies have confirmed that the savings achieved through the use of expanded NBS programs are significantly greater than the costs of implementation.",
+      "12": "The adverse effects of false positive results are negligible in view of the economic health benefits generated by expanded NBS and these could be minimized through increased education, better communication, and improved technologies.",
+      "13": "Local screening agencies should be given the autonomy to develop their screening programs in order to keep pace with international advancements.",
+      "14": "The development of biochemical genetics is closely linked with expanded NBS.",
+      "15": "With ongoing advancements in nanotechnology and molecular genomics, the field of biochemical genetics is still expanding rapidly.",
+      "16": "The potential of tandem mass spectrometry is extending to cover more disorders.",
+      "17": "Indeed, the use of genetic markers in T-cell receptor excision circles for severe combined immunodeficiency is one promising example.",
+      "18": "NBS represents the highest volume of genetic testing.",
+      "19": "It is more than a test and it warrants systematic healthcare service delivery across the pre-analytical, analytical, and post-analytical phases.",
+      "20": "There should be a comprehensive reporting system entailing genetic counselling as well as short-term and long-term follow-up.",
+      "21": "It is essential to integrate existing clinical IEM services with the expanded NBS program to enable close communication between the laboratory, clinicians, and allied health parties.",
+      "22": "In this review, we will discuss the history of IEM, its clinical presentations in children and adult patients, and its incidence among different ethnicities; the history and recent expansion of NBS, its cost-effectiveness, associated pros and cons, and the ethical issues that can arise; the analytical aspects of tandem mass spectrometry and post-analytical perspectives regarding result interpretation."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Inborn Errors of Metabolism (IEM) are hereditary diseases that affect how the body processes nutrients. They vary both in how they appear in a patient and in they underlying genetic causes.",
+        "2": "To date, more than 1000 different IEM have been identified.",
+        "3": "Though each individual disease is rare, taken altogether the rate has been shown to be upwards of 1 in 800.",
+        "4": "The way the diseases appear in patients can vary. This makes it difficult it diagnose them.",
+        "5": "IEM are present in all ethnic groups and across every age.",
+        "6": "Some IEM can be treated, with promising outcomes.",
+        "7": "However, doctors suspecting these diseases from patient exams is not enough alone to reduce health problems and death.",
+        "8": "In the last decade, expanded newborn screening has become a mandatory public health strategy in most developed and developing countries. This is due to the advent of a chemical detection technology called tandem mass spectrometry.",
+        "9": "This technology allows more than 30 different metabolic disorders to be detected at low cost in one single blood spot specimen. The cost is about 10 dollars per baby, and the tests are highly accurate.",
+        "10": "",
+        "11": "Studies of cost-effectiveness have confirmed that the savings from expanded newborn screening programs are much greater than the costs of running them.",
+        "12": "The side effects of false positives (when the test is positive but the patient does not have the disease) are not significant in light of the economic and health benefits produced by expanded newborn screening. Further, these side effects could be lessened with more education, better communication, and improved technology.",
+        "13": "Local screening agencies should be given the freedom to create their own screening programs so they can keep up with international advancements.",
+        "14": "Improvements in knowledge of genes and how they affect the body are closely linked with expanded newborn screening.",
+        "15": "This knowledge is growing because of advancements in nanotechnology (working with things at the microscopic level) and molecular genomics (the study of how changes DNA drive hereditary outcomes).",
+        "16": "The potential of tandem mass spectrometry is extending to cover more disorders.",
+        "17": "In fact, one promising example is the use of genetic markers for Severe Combined Immunodeficiency (SCID), a disease that makes people extremely vulnerable to germs.",
+        "18": "Newborn screening represents the highest volume of genetic testing.",
+        "19": "It is more than a test and it calls for providing organized healthcare before, during, and after the test.",
+        "20": "There should be a comprehensive reporting system requiring genetic counselling as well as short-term and long-term follow-up.",
+        "21": "It is essential to integrate existing clinical IEM services with the expanded newborn screening program. This is to enable close communication between the laboratory, clinicians, and allied health parties.",
+        "22": "In this article reviewing the topic, we will discuss the history of IEM, how it appears in children and adults, and its rate among different ethnicities. We will also discuss the history and recent expansion of newborn screening, its cost-effectiveness, associated pros and cons, and the ethical issues that can arise. Finally, we will discuss the technical aspects of tandem mass spectrometry and considerations for  interpreting results."
+      }
+    }
+  },
+  "28671437": {
+    "Title": "Expanded Newborn Screening: Information and Resources for the Family Physician",
+    "abstract": {
+      "1": "Each year, 4 to 5 million newborns receive state-mandated screening.",
+      "2": "Although the Advisory Committee on Heritable Disorders in Newborns and Children has identified 34 core conditions that should be incorporated into screening programs, each state manages, funds, and maintains its own program.",
+      "3": "State programs encompass screening, as well as the diagnosis and coordination of care for newborns with positive findings.",
+      "4": "Testing for core disorders is fairly standardized, but more extensive screening varies widely by state, and the rigorous evaluation of new screening panels is ongoing.",
+      "5": "The core panel includes testing for three main categories of disorders: metabolic disorders (e.g., amino acid and urea cycle, fatty acid oxidation, and organic acid disorders); hemoglobinopathies; and a group of assorted conditions, including congenital hearing loss.",
+      "6": "Family physicians must be familiar with the expanded newborn screening tests to effectively communicate results to parents and formulate interventions.",
+      "7": "They must also recognize signs of metabolic disorders that may not be detected by screening tests or that may not be a part of standard newborn screening in their state.",
+      "8": "For infants with positive screening results leading to diagnosis, long-term follow-up involves ongoing parental education, regular medical examinations, management at a metabolic treatment center, and developmental and neuropsychological testing to detect associated disorders in time for early intervention."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Each year, 4 to 5 million newborns receive state-mandated screening.",
+        "2": "The Advisory Committee on Heritable Disorders in Newborns and Children has identified 34 main conditions that should be included in screening programs. However, each state manages, funds, and maintains its own program.",
+        "3": "State programs include screening, as well as the diagnosis and coordination of care for newborns with positive test results.",
+        "4": "Testing for the main disorders is fairly standardized, but more extensive screening varies widely by state. Additionally, the rigorous evaluation of new screening panels is ongoing.",
+        "5": "The standard group of tests includes testing for three main categories of disorders: metabolic disorders, problems with hemoglobin (the protein that carries oxygen in the blood) and a group of assorted conditions, including congenital hearing loss.",
+        "6": "Family doctors need to be familiar with the expanded newborn screening tests to effectively communicate the results to parents, and to create plans of action.",
+        "7": "These doctors also need to recognize signs of metabolic disorders that may not be detected by screening tests or that may not be a part of standard newborn screening in their state.",
+        "8": "For infants with positive screening results that lead to a diagnosis, long-term follow-up involves ongoing parental education, regular exams, and management at a metabolic treatment center. Long-term follow-up also involves tests of brain development to detect relevant disorders in time for early action."
+      }
+    }
+  },
+  "question": "What is newborn metabolic screening? what can the results tell doctors?",
+  "PMC3872591": {
+    "Title": "Newborn Screening for inherited metabolic disorders; news and views",
+    "abstract": {
+      "1": "Newborn screening is important for the early detection of many congenital genetic and metabolic disorders, aimed at the earliest possible recognition and management of affected newborns, to prevent the morbidity, mortality, and disabilities associated with an inherited metabolic disorder.",
+      "2": "This comprehensive system includes; testing, education, follow up, diagnosis, treatment, management, and evaluation.",
+      "3": "There are major differences among many of the disorders being considered for inclusion in newborn screening programs.",
+      "4": "In recent times, advances in laboratory technology such as tandem mass spectrometry (MS/MS), which is more specific, sensitive, reliable, and comprehensive than traditional assays, has increased the number of genetic conditions that can be diagnosed through neonatal screening programs at birth.",
+      "5": "With a single dried filter paper blood spot, MS/MS can identify more than 30 inherited metabolic disorders in around two to three minutes.",
+      "6": "Advances in the diagnosis and treatment and an increased understanding of the natural history of inborn errors of metabolism have produced pressure to implement expanded newborn screening programs in many countries.",
+      "7": "Even as many countries throughout the world have made newborn screening mandatory, in Iran, nationwide newborn screening for inherited metabolic disorders other than hypothyroidism has not been initiated, hence, there is little information about these diseases.",
+      "8": "This article aims to review the recent advances in newborn metabolic screening and its situation in Iran and other countries."
+    },
+    "adaptations": {
+      "adaptation2": {
+        "1": "Newborn screening is important for the early detection of many hereditary and metabolic disorders. It is aimed at the earliest possible recognition and management of affected newborns, to prevent the health problems, deaths, and disabilities associated with an inherited metabolic disorder.",
+        "2": "This comprehensive system includes; testing, education, follow up, diagnosis, treatment, management, and evaluation.",
+        "3": "There are major differences among many of the disorders being considered for inclusion in newborn screening programs.",
+        "4": "In recent times, advances in laboratory technology such as tandem mass spectrometry (MS/MS), has increased the number of genetic conditions that can be diagnosed through newborn screening programs at birth.",
+        "5": "With a single dried filter paper blood spot, MS/MS can identify more than 30 inherited metabolic disorders in around two to three minutes.",
+        "6": "Advances have been made in the diagnosis and treatment of genetic disorders related to metabolism. Our understanding of the natural history of these disorders has also increased. Both these improvements have produced pressure to implement expanded newborn screening programs in many countries.",
+        "7": "Even as many countries throughout the world have made newborn screening mandatory, in Iran, nationwide newborn screening for inherited metabolic disorders has not been started, except for hypothyroidism. Because of this, there is not much information about these diseases.",
+        "8": "This article aims to review the recent advances in newborn metabolic screening and its situation in Iran and other countries."
+      }
+    }
+  },
+  "question_type": "C"
+  }
+}

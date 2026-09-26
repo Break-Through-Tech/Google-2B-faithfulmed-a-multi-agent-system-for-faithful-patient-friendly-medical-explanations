@@ -1,0 +1,362 @@
+{
+  "45": {
+  "28639707": {
+    "Title": "Dressings and topical agents for treating pressure ulcers",
+    "abstract": {
+      "1": "Background: Pressure ulcers, also known as bedsores, decubitus ulcers and pressure injuries, are localised areas of injury to the skin or the underlying tissue, or both.",
+      "2": "Dressings are widely used to treat pressure ulcers and promote healing, and there are many options to choose from including alginate, hydrocolloid and protease-modulating dressings.",
+      "3": "Topical agents have also been used as alternatives to dressings in order to promote healing.",
+      "4": "A clear and current overview of all the evidence is required to facilitate decision-making regarding the use of dressings or topical agents for the treatment of pressure ulcers.",
+      "5": "Such a review would ideally help people with pressure ulcers and health professionals assess the best treatment options.",
+      "6": "This review is a network meta-analysis (NMA) which assesses the probability of complete ulcer healing associated with alternative dressings and topical agents.",
+      "7": "Main results: We included 51 studies (2947 participants) in this review and carried out NMA in a network of linked interventions for the sole outcome of probability of complete healing.",
+      "8": "The network included 21 different interventions (13 dressings, 6 topical agents and 2 supplementary linking interventions) and was informed by 39 studies in 2127 participants, of whom 783 had completely healed wounds.",
+      "9": "We judged the network to be sparse: overall, there were relatively few participants, with few events, both for the number of interventions and the number of mixed treatment contrasts; most studies were small or very small.",
+      "10": "The consequence of this sparseness is high imprecision in the evidence, and this, coupled with the (mainly) high risk of bias in the studies informing the network, means that we judged the vast majority of the evidence to be of low or very low certainty.",
+      "11": "We have no confidence in the findings regarding the rank order of interventions in this review (very low-certainty evidence), but we report here a summary of results for some comparisons of interventions compared with saline gauze.",
+      "12": "We present here only the findings from evidence which we did not consider to be very low certainty, but these reported results should still be interpreted in the context of the very low certainty of the network as a whole.",
+      "13": "It is not clear whether regimens involving protease-modulating dressings increase the probability of pressure ulcer healing compared with saline gauze (risk ratio (RR) 1.65, 95% confidence interval (CI) 0.92 to 2.94) (moderate-certainty evidence: low risk of bias, downgraded for imprecision).",
+      "14": "This risk ratio of 1.65 corresponds to an absolute difference of 102 more people healed with protease modulating dressings per 1000 people treated than with saline gauze alone (95% CI 13 fewer to 302 more).",
+      "15": "It is unclear whether the following interventions increase the probability of healing compared with saline gauze (low-certainty evidence): collagenase ointment (RR 2.12, 95% CI 1.06 to 4.22); foam dressings (RR 1.52, 95% CI 1.03 to 2.26); basic wound contact dressings (RR 1.30, 95% CI 0.65 to 2.58) and polyvinylpyrrolidone plus zinc oxide (RR 1.31, 95% CI 0.37 to 4.62); the latter two interventions both had confidence intervals consistent with both a clinically important benefit and a clinically important harm, and the former two interventions each had high risk of bias as well as imprecision.",
+      "16": "Authors' conclusions: A network meta-analysis (NMA) of data from 39 studies (evaluating 21 dressings and topical agents for pressure ulcers) is sparse and the evidence is of low or very low certainty (due mainly to risk of bias and imprecision).",
+      "17": "Consequently we are unable to determine which dressings or topical agents are the most likely to heal pressure ulcers, and it is generally unclear whether the treatments examined are more effective than saline gauze.",
+      "18": "More research is needed to determine whether particular dressings or topical agents improve the probability of healing of pressure ulcers.",
+      "19": "The NMA is uninformative regarding which interventions might best be included in a large trial, and it may be that research is directed towards prevention, leaving clinicians to decide which treatment to use on the basis of wound symptoms, clinical experience, patient preference and cost."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Bedsores are areas of injury to the skin or underlying tissue, or both, found in a certain part of the body.",
+        "2": "Doctors often use dressings to treat bedsores and promote healing, and there are many options to choose from.",
+        "3": "Doctors have also used medications applied to the skin instead of dressings to promote healing.",
+        "4": "A clear and current summary of the scientific data is needed to help make decisions about the use of dressings or medicines applied to the skin to treat bedsores.",
+        "5": "This review would ideally help people with bedsores and doctors decide the best treatment options.",
+        "6": "This review compares multiple studies to measure the likelihood of complete ulcer (bedsore) healing based on different dressings and medicines applied to the skin.",
+        "7": "We included 51 studies (2947 people) in this review and compared treatments based on the likelihood of complete healing.",
+        "8": "We compared 21 different treatments (13 dressings, 6 medicines applied to the skin and 2 mixed treatments) and looked at 39 studies in 2127 people, 783 of whom had completely healed wounds.",
+        "9": "We thought the data were limited, with relatively few participants, with few wounds, both for the number of treatments and the number of mixed treatments, and mostly small or very small studies.",
+        "10": "We thought that most of the data were low or very low quality due to unclear data combined with high likelihood of misleading results.",
+        "11": "We are not sure our ranking of interventions (treatments) is correct, but we summarize our results to compare treatments to saline gauze often used to as a wound dressing.",
+        "12": "We report only results from data we did not think was low quality, but these reported results should be considered keeping in mind the overall low certainty of data used.",
+        "13": "We are not sure whether protease-modulating (protein-altering) dressings increased the likelihood of bedsore healing compared to saline gauze.",
+        "14": "For every 1000 people, 102 more people healed with protease modulating dressings than people treated with only saline gauze.",
+        "15": "We are not sure collagenase (enzyme) ointment, foam dressings, basic wound contact dressings, and polyvinylpyrrolidone (water-soluble biological molecule) plus zinc oxide increased the likelihood of bedsore healing compared to saline gauze.",
+        "16": "We conclude that comparing data from 39 studies (rating 21 dressings and medicines applied to the skin for bedsores) is limited and the data are not reliable (due to unclear data and high likelihood of misleading results).",
+        "17": "Therefore, we cannot tell which dressings or medicines applied to the skin are the most likely to heal bedsores nor whether the treatments we looked at work better than saline gauze.",
+        "18": "More research is needed to find out whether certain dressings or medicines applied to the skin improve the likelihood of bedsore healing.",
+        "19": "Our study does not help decide which treatments might best be part of a large trial, and studies may need to focus on prevention, leaving doctors to decide which treatment to use based on wound symptoms, professional experience, what the patients want and cost."
+      },
+      "adaptation2": {
+        "1": "Pressure ulcers, or bedsores, decubitus ulcers and pressure injuries are restricted areas of injury to the skin or underlying body tissue, or both.",
+        "2": "Dressings (ointment or gauze to cover wounds) are widely used to treat pressure ulcers and promote healing. THere are many varied dressings to choose from.",
+        "3": "Skin-level agents also have been used as alternatives to dressings for healing.",
+        "4": "A clear and current overview of all the evidence is required to help make decisions regarding using dressings or skin-level agents to treat pressure ulcers.",
+        "5": "This review would ideally help those with pressure ulcers and health professionals choose treatments.",
+        "6": "This review is a study which assesses the probability of complete ulcer healing associated with alternative dressings and skin-level treatments.",
+        "7": "We included 51 studies (2947 participants) in this review and analyzed the treatments solely to measure the probability of complete healing.",
+        "8": "The study included 21 different treatments (13 dressings, 6 skin-level treatments, and 2 additional linking treatments). It included data from 39 studies in 2127 participants, of whom 783 had completely healed wounds.",
+        "9": "We judged the study network to be scattered. Overall, there were few participants, with few events, both for number of treatments and mixed treatment analysis. Most studies were small or very small.",
+        "10": "The effect of this sparseness is low reliability in the evidence. This, along with the (mainly) high risk of bias (or prejudice) in the studies, means we judged the majority of evidence to be low or very low quality.",
+        "11": "We have no confidence in the results regarding the rank order of treatments in this review (very low-quality evidence), but we report a summary of results for some comparisons of treatments compared with standard gauze.",
+        "12": "We present here only results from evidence we did not consdier to be very low quality, but the reported results should be interpreted while knowing of the very low quality regarding the whole study network.",
+        "13": "It is not clear if treatments with special protein-breakdown dressings increase the probability of pressure ulcer healing compared with standard gauze.",
+        "14": "102 more people were healed with special protein-breakdown dressings per 1000 people than those with standard gauze alone.",
+        "15": "It is unclear if any of the other treatments examined increase the probability of healing compared with standard gauze (low-quality evidence). Some showed metrics consistent with a clinically important benefit and harm. Others had a high risk of bias and unreliability.",
+        "16": "A large analysis of data from 39 studies (examining 21 dressings and skin-level agents for pressure ulcers) is scattered. The evidence is also of low or very low quality (due to risk of bias and unreliability).",
+        "17": "Therefore, we are unable to determine which dressings or skin-level agents are best to heal pressure ulcers. It is unclear whether the treatments are more effective than standard gauze.",
+        "18": "More research is needed to tell if certain dressings or skin-level agents improve the chance of healing for pressure ulcers.",
+        "19": "This analysis is uninformative regarding which treatments may best be included in a large trial. It may that research is focused on prevention, leaving clinicians to decide which treatment to use based on wound symptoms, clinical experience, patient preference and cost."
+      }
+    }
+  },
+  "28723796": {
+    "Title": "Moist exposed burn ointment for treating pressure ulcers: A multicenter randomized controlled trial",
+    "abstract": {
+      "1": "Background: Pressure ulcers often seriously affect the quality of life of patients.",
+      "2": "Moist Exposed Burn Ointment (MEBO) has been developed to treat patients with pressure ulcers.",
+      "3": "The present study aimed to evaluate the efficacy and safety of MEBO in the treatment of pressure ulcers in Chinese patients.",
+      "4": "Methods: Seventy-two patients with pressure ulcers were randomly assigned to 2 groups who received a placebo or MEBO for 2 months.",
+      "5": "The primary outcomes included the wound surface area (WSA) and pressure ulcer scale for healing (PUSH) tool.",
+      "6": "The secondary outcomes included a visual analog scale (VAS), questionnaire of ulcer status, and adverse effects.",
+      "7": "Results: Sixty-seven patients completed the study.",
+      "8": "After 2 months of treatment, the difference of mean change from the baseline was greater for MEBO (vs placebo) for WSA mean (SD) -6.0 (-8.8, -3.3), PUSH Tool -2.6 (-4.7, -1.5), and VAS score -2.9 (-4.4, -1.7).",
+      "9": "On the basis of the questionnaire, the pressure ulcers were \"completely healed\" (50.0% vs 16.7%) (P < .05) in patients after 2 months of treatment with MEBO versus placebo.",
+      "10": "No major adverse effects were found in the 2 groups.",
+      "11": "Conclusion: We showed that MEBO is effective and well tolerated for improving wound healing in Chinese patients with pressure ulcers."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Bedsores often seriously affect the quality of life of patients.",
+        "2": "Bedsores can be treated with Moist Exposed Burn Ointment (MEBO).",
+        "3": "Our study aimed to rate how well MEBO works and how safe MEBO is in the treatment of bedsores in Chinese patients.",
+        "4": "We randomly put 72 bedsore patients in two groups and gave them MEBO or ointment with no medicine for 2 months.",
+        "5": "The most important outcomes were wound surface area and a common bedsore scoring tool.",
+        "6": "We also looked at a common scoring tool for pain, questionnaire of ulcer (sore) status, and side effects.",
+        "7": "Sixty-seven patients did the study.",
+        "8": "After 2 months of treatment, MEBO resulted in a greater average change from the beginning of the study compared to ointment with no medicine for wound surface area and both scoring tools.",
+        "9": "The questionnaire indicated MEBO \"completely healed\" bedsores in patients after 2 months of treatment versus ointment with no medicine.",
+        "10": "We found no major side effects in the 2 groups.",
+        "11": "We showed that MEBO works with no major side effects for improving would healing in Chinese patients with bedsores."
+      }
+    }
+  },
+  "29295637": {
+    "Title": "Clostridial collagenase ointment and medicinal honey utilization for pressure ulcers in US hospitals",
+    "abstract": {
+      "1": "Aims: To describe the utilization of clostridial collagenase ointment (CCO) and medicinal honey debridement methods in real-world inpatient and outpatient hospital settings among pressure ulcer (PU) patients and compare the frequency of healthcare re-encounters between CCO- and medicinal honey-treated patients.",
+      "2": "Materials and methods: De-identified hospital discharge records for patients receiving CCO or medicinal honey methods of debridement and having an ICD-9 code for PU were extracted from the US Premier Healthcare Database.",
+      "3": "Multivariable analysis was used to compare the frequency of inpatient and outpatient revisits up to 6 months after an index encounter for CCO- vs medicinal honey-treated PUs.",
+      "4": "Results: The study identified 48,267 inpatients and 2,599 outpatients with PUs treated with CCO or medicinal honeys.",
+      "5": "Among study inpatients, n = 44,725 (93%) were treated with CCO, and n = 3,542 (7%) with medicinal honeys.",
+      "6": "CCO and medicinal honeys accounted for 1,826 (70%) and 773 (30%), respectively, of study outpatients.",
+      "7": "In adjusted models, those treated with CCO had lower odds for inpatient readmissions (OR = 0.86, 95% CI = 0.80-0.94) after inpatient index visits, and outpatient re-encounters both after inpatient (OR = 0.73, 95% CI = 0.67-0.79) and outpatient (OR = 0.78, 95% CI = 0.64-0.95) index visits in 6 months of follow-up.",
+      "8": "Limitations: The study was observational in nature, and did not adjust for reasons why patients were hospitalized initially, or why they returned to the facility.",
+      "9": "Although the study adjusted for differences in a variety of demographic, clinical, and hospital characteristics between the treatments, we are not able to rule out selection bias.",
+      "10": "Conclusion: Patients with CCO-treated PUs returned to inpatient and outpatient hospital settings less often compared with medicinal honey-treated PUs.",
+      "11": "These results from real-world administrative data help to gain a better understanding of the clinical characteristics of patients with PUs treated with these two debridement methods and the economic implications of debridement choice in the acute care setting."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "We aim to describe the use of clostridial collagenase ointment (CCO - a medication with special proteins) and medical honey to remove damaged tissue in hospitals among bedsore patients and compare how often CCO- and medical honey-treated patients return to the hospital.",
+        "2": "We obtained hospital discharge records from a national database for patients getting CCO or medical honey methods of removing damaged tissues with an official diagnosis of bedsores.",
+        "3": "We used statistical models to compare how often patients who did and did not stay at least one night in the hospital returned to the hospital up to 6 months after bedsore treatment with either CCO or medical honey.",
+        "4": "We looked at 48,267 and 2,599 patients with bedsores treated with CCO or medicine honeys who did and did not stay at least one night at the hospital, respectively.",
+        "5": "CCO and medical honeys made up 44,725 (93%) and 3,542 (7%), respectively, of people who stayed at least one night in the hospital.",
+        "6": "CCO and medical honeys made up 1,826 (70%) and 773 (30%), respectively, of people who did not stay a night in the hospital.",
+        "7": "Based on models, patients treated with CCO were less likely to be readmitted to the hospital after being admitted, and to return to the hospital but not stay a night after either going to the hospital and staying or not staying at least one night over the following 6 months.",
+        "8": "Study limitations included not considering why patients were hospitalized or why they returned to the hospital.",
+        "9": "Even though we took into account differences in many population, clinical, and hospital characteristics between the treatments, the study population may have not been completely random.",
+        "10": "We conclude that bedsore patients treated with CCO returned to the hospital less often than those treated with medical honey.",
+        "11": "These results based on real-world data help us better understand treatment characteristics of bedsore patients related with these two days to remove damaged tissue and connect to method costs related to short-term care."
+      }
+    }
+  },
+  "30086256": {
+    "Title": "Topical pentoxifylline for pressure ulcer treatment: a randomised, double-blind, placebo-controlled clinical trial",
+    "abstract": {
+      "1": "Objective: To evaluate the effectiveness of topical pentoxifylline (PTX) on pressure ulcer (PU) healing in critically ill patients.",
+      "2": "Method: In this randomised, double blind, placebo-controlled clinical trial, patients with category I or II PUs were randomly assigned to receive either topical PTX 5% or a placebo twice daily for 14 days.",
+      "3": "Changes in PU characteristics (category and size) were assessed.",
+      "4": "The category of the PU was determined by the Stirling Pressure Ulcer Severity Scale (two-digit) at baseline (day zero), day seven and day 14 of treatment.",
+      "5": "PU length and width was measured with a disposable ruler and expressed as cm2.",
+      "6": "Results: A total of 112 adult patients were enrolled in the study.",
+      "7": "Median PU size and score at day zero were 32 (10.00-69.33)cm2 and 1(1.00-2.00) respectively.",
+      "8": "In the PTX group, the mean differences (95% confidence interval, CI) of all PU scores and sizes decreased significantly across the intervals (day seven versus day zero, day 14 versus day zero, and day 14 versus day seven), compared with the placebo group",
+      "9": "Conclusion: The severity and size of PUs improved significantly in patients who received topical PTX 5% ointment twice a day for 14 days compared with those in the placebo group.",
+      "10": "Topical PTX may be considered as a potential option in the treatment of categories I and II PUs in critically ill patients."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "We aimed to rate how well pentoxifylline (PTX) applied to the skin worked to heal bedsores in critically ill patients.",
+        "2": "This was a medical study involving human participants in which neither side knew who was getting what treatment, and either PTX 5% or ointment with no medicine was applied to the skin twice a day for 14 days.",
+        "3": "We measured changes in bedsore category and size.",
+        "4": "We used a common scoring system to measure the severity of bedsores and bedsore stage at the beginning of the study and on study days 7 and 14.",
+        "5": "We measured bedsore length and width with a disposable ruler.",
+        "6": "We studied a total of 112 adult patients.",
+        "7": "Median (average) bedsore size and score at the beginning of the study were 32cm2 and 1, respectively.",
+        "8": "The average differences of bedsore scores and sizes decreased significantly between measurement days (day seven versus day zero, day 14 versus day zero, and day 14 versus day seven) compared to the ointment with no medicine.",
+        "9": "We conclude that the seriousness and size of bedsores improved significantly in patients who received PTX 5% ointment applied to the skin twice a day for 14 days compared to those who received ointment with no medicine.",
+        "10": "PTX applied to the skin may be a potential treatment option for stage I or II bedsores in critically ill patients."
+      },
+      "adaptation2": {
+        "1": "The study's objective is to evaulate the success of topical pentoxifylline (PTX) (a blood flow medication) on pressure ulcer (PU), or bedsore, healing in very ill patients.",
+        "2": "In this study, patients with mild or moderate PUs were randomly assigned to receive either skin-level PTX 5% or a sham treatment twice daily for 14 days.",
+        "3": "Changes in PU (severity and size) were measured.",
+        "4": "The severity of PU was determined with a special scale at starting (day zero), day seven, and day 14 of the treatment.",
+        "5": "PU length and width was measured with a ruler in cm2.",
+        "6": "112 adult patients enrolled in the study.",
+        "7": "Average PU size and score at day 0 were 32 cm2 and 1 respectively.",
+        "8": "In the PTX group, the average differences of all PU scores and sizes decreased greatly across the intervals (day seven vs day zero, day 14 vs day zero, and day 14 vs day seven), compared with the sham treatment group.",
+        "9": "The severity and size of PUs improved greatly in patients who received skin-level PTX 5% ointment twice a day for 14 days compared to those in the dummy treatment group.",
+        "10": "Skin-level PTX may be a possible option to treat mild and moderate PUs in very ill patients."
+      }
+    }
+  },
+  "30767645": {
+    "Title": "Technological features of advanced skin protectants and an examination of the evidence base",
+    "abstract": {
+      "1": "Products that provide a protective skin barrier play a vital role in defending the skin against the corrosive effect of bodily fluids, including wound exudate, urine, liquid faeces, stoma output and sweat.",
+      "2": "There are many products to choose from, which can be broadly categorised by ingredients.",
+      "3": "This article describes the differences in mechanisms of action between barrier products comprising petrolatum and/or zinc oxide, silicone film-forming polymers and cyanoacrylates, and compares the evidence on them.",
+      "4": "The literature indicates that all types of barrier product are clinically effective, with little comparative evidence indicating that any one ingredient is more efficacious than another, although film-forming polymers and cyanoacrylates have been found to be easier to apply and more cost-effective.",
+      "5": "However, laboratory evidence, albeit limited, indicates that a concentrated cyanoacrylate produced a more substantial and adherent layer on a porcine explant when compared with a diluted cyanoacrylate and was more effective at protecting skin from abrasion and repeated exposure to moisture than a film-forming polymer.",
+      "6": "Finally, a silicone-based cream containing micronutrients was found to significantly reduce the incidence of pressure ulceration when used as part of a comprehensive prevention strategy."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Products that serve as a barrier to protect the skin are important in defending the skin against chemically damaging effects of bodily fluids, including fluid produced from the healing process, urine, liquid faeces, output from an opening in the body and sweat.",
+        "2": "Many treatments exist, which can be grouped based on ingredients.",
+        "3": "This study describes the differences in how barrier products work, including petroleum jelly (Vaseline) and/or zinc oxide, polymers (substances made of very large molecules) that form silicone (type of polymer) film, and cyanoacrylates (group of strong fast-acting adhesives).",
+        "4": "Studies suggest all barrier products work, with few studies that compare ingredients to show one works better than another. Film-forming polymers and cyanoacrylates are easier to apply and cost less.",
+        "5": "Limited lab data suggest that a concentrated cyanoacrylate made a more notable layer that stuck more to pig tissue than a less-concentrated cyanoacrylate and protected the skin from rubbing and moisture better than a film-forming polymer.",
+        "6": "Finally, a silicon-based cream with vitamins and minerals needed by the body in very small amounts significantly reduced bedsore occurrence when used with other approaches."
+      }
+    }
+  },
+  "31237193": {
+    "Title": "Efficacy of a Ceratothoa oestroides Olive Oil Extract in Patients With Chronic Ulcers: A Pilot Study",
+    "abstract": {
+      "1": "Chronic wounds unresponsive to existing treatments constitute a serious disease burden.",
+      "2": "Factors that contribute to the pathogenesis of chronic ulcers include oxidative stress, comorbid microbial infections, and the type of immune system response.",
+      "3": "Preclinically, and in a case study, a formulation containing a Ceratothoa oestroides olive oil extract promoted wound healing.",
+      "4": "Patients with chronic venous and pressure ulcers, clinically assessed as being unresponsive to healing agents, were treated for 3 months with an ointment containing the C oestroides extract combined with antibiotic and/or antiseptic agents chosen according to the type of bacterial infection.",
+      "5": "Treatment evaluation was performed using the Bates-Jensen criteria with +WoundDesk and MOWA cell phone applications.",
+      "6": "After 3 months of treatment, C oestroides resulted in an average decrease of 36% in the Bates-Jensen score of ulcers (P < .000), with the decrease being significant from the first month (P < .007).",
+      "7": "The combined use of topically applied antibiotics and antiseptics efficiently controlled microbial ulcer infection and facilitated wound healing.",
+      "8": "In relation to other factors such as initial wound size, chronicity appeared to be an important prognostic factor regarding the extent of wound healing.",
+      "9": "Future clinical investigations assessing the wound healing efficacy of the C oestroides olive oil extract are warranted."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Long-lasting wounds that do not respond to available treatments have serious impacts.",
+        "2": "Things that determine how bedsores progress include low antioxidant levels, other infections caused by microbes (microorganisms), and the type of immune system response.",
+        "3": "Before symptoms, and in a detailed study, a mixture containing a Ceratothoa oestroides (fish parasite) olive oil extract increased wound healing.",
+        "4": "Patients with long-lasting leg ulcers (sores) due to blood flow problems and bedsores, determined by doctors as not responding to healing treatments, were treated for 3 months with an ointment with C oestroides extract combined with antibiotics (kill bacteria) and/or antiseptics (slow bacteria growth) based on type of bacterial infection.",
+        "5": "We evaluated treatment using a common tool used to track wound healing with two cell phone apps.",
+        "6": "After 3 months of treatment, C oestroides caused an average score decrease of 36% on a common tool used to track wound healing.",
+        "7": "Applying both antibiotics and antiseptics controlled ulcer infection by microorganisms and helped wound healing.",
+        "8": "Compared to things like initial wound size, how long lasting the wound was seemed to be an important factor in predicting how much the wound healed.",
+        "9": "Future studies looking at how well C oestroides olive oil extract works to heal wounds are needed."
+      }
+    }
+  },
+  "31241491": {
+    "Title": "Topical Nifedipine for the Treatment of Pressure Ulcer: A Randomized, Placebo-Controlled Clinical Trial",
+    "abstract": {
+      "1": "Background: Effect of nifedipine on pressure ulcer (PU) healing has not been evaluated in the human subjects yet.",
+      "2": "Study question: In this study, the effect of topical application of nifedipine 3% ointment on PU healing in critically ill patients was investigated.",
+      "3": "Study design: This was a randomized, double-blind, placebo-controlled clinical.",
+      "4": "Measures and outcomes: In this study, 200 patients with stage I or II PU according to 2-digit Stirling Pressure Ulcer Severity Scale were randomized to receive topical nifedipine 3% ointment or placebo twice daily for 14 days.",
+      "5": "Changes in the size and stage of the ulcers were considered as primary outcome of the study.",
+      "6": "The stage of the ulcers at baseline and on day 7 and day 14 of study was determined by using 2-digit stirling scale.",
+      "7": "In addition, the surface area of the wounds was estimated by multiplying width by length.",
+      "8": "Results: In total, 83 patients in each group completed the study.",
+      "9": "The groups were matched for the baseline stage and size of PUs.",
+      "10": "Mean decrease in the stage of PU in the nifedipine group was significantly higher than the placebo group on day 7 (-1.71 vs. -0.16, respectively, P < 0.001) and day 14 (-0.78 vs. -0.09, respectively, P < 0.001).",
+      "11": "Furthermore, the mean decrease in the surface area of PU was significantly higher in the nifedipine group compared with the placebo group on day 7 (-1.44 vs. -0.32, respectively, P < 0.001) and day 14 (-2.51 vs. -0.24, respectively, P < 0.001) of study.",
+      "12": "Conclusions: Topical application of nifedipine 3% ointment for 14 days significantly improved the healing process of stage I or II PUs in critically ill patients."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Scientists have not yet measured the effect of nifedipine, a drug to treat high blood pressure and chest pain, on bedsores in humans.",
+        "2": "In this study, we looked at the effect of applying nifedipine 3% ointment to the skin on bedsore healing in critically ill patients.",
+        "3": "This was a medical study involving human participants in which neither side knew who was getting what treatment and ointment with no medicine was given to a control group.",
+        "4": "In this study, we randomly gave 200 patients with stage I or II, according to a common scoring system to measure the severity of bedsores, nifedipine ointment applied to the skin or ointment with no medicine two times a day for 14 days.",
+        "5": "The most important outcome was changes in the size and stage of bedsores.",
+        "6": "We used the bedsore scoring scale to measure bedsore stage at the beginning of the study and on study days 7 and 14.",
+        "7": "We estimated the surface area of the bedsores by multiplying width by length.",
+        "8": "In total, 83 patients in each group completed the study.",
+        "9": "We compared patients with similar bedsore stage and size at the beginning of the study.",
+        "10": "The group given nifedipine had significantly higher average decrease in bedsore stage than the group not given nifedipine on days 7 and 14.",
+        "11": "The group given nifedipine had significantly higher average decrease in bedsore surface area than the group not given nifedipine on days 7 and 14.",
+        "12": "We conclude that nifedipine 3% ointment applied to the skin for 14 days significantly improved the healing process of stage I or II bedsores in critically ill patients."
+      },
+      "adaptation2": {
+        "1": "The effect of nifedipine (a common vasodilator medication that widens blood vessels) on pressure ulcers (PU), or bedsores, has not been measured in humans.",
+        "2": "In this study, the effect of skin-level application of nifedipine 3% ointment on PU healing in very ill patients was investigated.",
+        "3": "This was a randomized study with a sham treatment group.",
+        "4": "In this study, 200 patients with mild and moderate PU were randomzed to receive topical nifedipine 3% ointment or dummy treatment twice daily for 14 days.",
+        "5": "Changes in the size and severity of ulcers were the main measures of the study.",
+        "6": "The severity of ulcers at baseline, on day 7, and on day 14 of the study was measured.",
+        "7": "Also, the area of the wounds was estimated by multiplying width by length.",
+        "8": "In total, 83 patients in each group completed the study.",
+        "9": "The groups were matched for starting severity and size of PUs.",
+        "10": "Average decrease in the severity of PU in the nifedipine group was higher than the dummy treatment group on day 7 and day 14.",
+        "11": "Also, the average decrease in the area of PU was higher in the nifedipine group compared with the sham treatment group on day 7 and 14 of the study.",
+        "12": "Skin-level application of nifedipine 3% ointment for 14 days improved the healing process of mild or moderate PUs in very ill patients."
+      }
+    }
+  },
+  "34408570": {
+    "Title": "Evaluation of the therapeutic efficacy of active specialistic medical dressings in the treatment of decubitus",
+    "abstract": {
+      "1": "Introduction: Treatment of decubitus ulcers is a grave medical problem.",
+      "2": "In many cases, it is difficult to cure a pressure ulcer, especially when it is deep and extensive, and prognosis is usually unfavourable.",
+      "3": "Treatment of decubitus ulcers requires new specialist dressings, which play an important role in the healing process.",
+      "4": "Aim: To evaluate therapeutic efficacy of active specialist medical dressings in the treatment of decubitus.",
+      "5": "Material and methods: Research involved 40 patients - 18 (45%) women and 22 (55%) men, suffering from decubitus ulcers of different size and depth, localized in the sacral region, lasting from 1.5 to 30 months.",
+      "6": "Patients were randomly assigned to two research groups (20 people each), were treated for 4 weeks with 2 different specialist dressings.",
+      "7": "ATRAUMAN Ag, which contains silver ions, was used in the first group, while paraffin gauze of BACTIGRAS type was used in the second group.",
+      "8": "An assessment of pressure ulcers' healing progress was done with a planimetric method, which evaluates the wound surface area.",
+      "9": "Results: The analysis results showed a significant statistical decrease in an average decubitus ulcer surface area in both research groups: in the first group by 60.2% (p = 0.001), and in the second group by 32.95% (p < 0.001), which speaks in favour of dressings with silver ions as having better therapeutic effectiveness.",
+      "10": "Conclusions: Using specialist dressings results in a significant decrease in the decubitus ulcer surface area, depending on the type of dressing and active substances contained within, while silver ions support curative effectiveness of the dressing used."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Treatment of bedsores is a serious medical problem.",
+        "2": "Often, a bedsore is hard to cure, especially when it is deep and covers a large area, and usually has a poor prognosis (plan for recovery).",
+        "3": "Treating bedsores requires specialized dressings, which play an important role in the healing process.",
+        "4": "We aim to rate how well active specialized dressings, which promote healing by keeping the wound moist, work to treat bedsores.",
+        "5": "We looked at 40 patients, 18 (45%) women and 22 (55%) men, with bedsores differing in size and depth, located near the bottom of the spine, lasting from 1.5 to 3.0 months.",
+        "6": "We randomly assigned patients to two groups of 20 people each and treated them with two different specialist dressings for 4 weeks.",
+        "7": "We used ATRAUMAN ag, which contains silver ions, in the first group and paraffin (waxy) gauze of BACTIGRAS type in the second group.",
+        "8": "We measured the progress of bedsore healing by measuring the wound's boundaries, which calculates the surface area.",
+        "9": "Results showed average bedsore surface area significantly decreased in the first group by 60.2% and in the second group by 32.95%, suggesting dressings with silver ions worked better.",
+        "10": "We conclude that specialist dressings significantly decrease bedsore surface area, and dressings with silver ions work better than those without."
+      },
+      "adaptation2": {
+        "1": "Treating decubitus ulcers (bedsores) is a serious medical problem.",
+        "2": "In many cases, it is difficult to cure a pressure ulcer or bedsore, especially when it is deep and extensive. Recovery is usually poor.",
+        "3": "Treating bedsores requires new specialized dressings (e.g., ointments, gauze), which are important for healing.",
+        "4": "We aim to evaluate the success of active specialized medical dressings for treating bedsores.",
+        "5": "Research included 40 patients - 18 (45% women) and 22 (55%) men, suffering from bedsores of various size and depth, in the lower back, lasting from 1.5 to 30 months.",
+        "6": "Patients were randomly split to two groups (20 people each) and treated for 4 weeks with either ATRAUMAN Ag, a dressing with silver, or gauze with paraffin (a waxy substance commonly used for coating and sealing candles and rubbers) from BACTIGRAS.",
+        "7": "Measuring pressure ulcer healing was done by measuring the wound surface area.",
+        "8": "The results showed a decrease in average bedsore area in both treatment groups: in the first group by 60.2% and in the second group by 32.95%, which speaks in favour of dressings with silver as better treatments.",
+        "9": "Using specialized dressings leads to a decrease in bedsore area, depending on the dressing type and substances contained within it. Silver supports the healing properties of the dressing used."
+      }
+    }
+  },
+  "34414933": {
+    "Title": "Effect of Ma Yinglong Shexiang hemorrhoids cream combined with pearl powder on the pain and complications of severe pressure ulcer patients",
+    "abstract": {
+      "1": "Objective: The aim of this study was to investigate the effect of Ma Yinglong Shexiang Hemorrhoids Cream combined with pearl powder on pain and complications in patients with severe pressure ulcers.",
+      "2": "Methods: One hundred seventeen patients with severe pressure ulcers hospitalized and treated in our hospital (January 2019--December 2019) were divided into Ma Yinglong Musk Hemorrhoid Cream Group (MY Group), Pearl Powder Group (PP Group), and combination with Ma Yinglong Musk Hemorrhoid Cream and Pearl Powder Group (MP group), 39 patients in each group.",
+      "3": "There was no significant difference in the general data of patients in MY group, PP group, and MP group.",
+      "4": "By analyzing the differences in clinical efficacy, secondary effects, scar incidence, pain, and clinical indicators of patients in the MY group, PP group, and MP group, the effects of Mayinglong Shexiang Hemorrhoid Cream combined with pearl powder in the treatment of pain and complications in patients with severe pressure ulcers were explored.",
+      "5": "Results: After treatment, compared with the MY group and the PP group, the MP group had a higher clinical efficacy than the MY group and the PP group.",
+      "6": "Compared with MY group and PP group, the healing time, dressing change times, and dressing change time of MP group were better than MY group (P < .05).",
+      "7": "After treatment, the VAS score and incidence of secondary effects of the MP group was significantly lower than that of the MY group and PP group (P < .05).",
+      "8": "The incidence and area of scar formation in the MP group were lower than those in the MY group and the PP group (P < .05).",
+      "9": "Conclusion: Compared with Ma Yinglong Musk Hemorrhoid Cream or Pearl Powder, combination of Ma Yinglong Musk Hemorrhoid Cream and Pearl Powder are more effective in treating severe pressure ulcer patients, and can significantly reduce the pain in the affected area and reduce the occurrence of complications."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "We aimed to study the effect of Ma Yinglong Shexiang Hemorrhoids Cream combined with pearl powder on pain and side effects in patients with serious bedsores.",
+        "2": "We divided 117 patients hospitalized with serious bedsores in our hospital (January 2019-December 2019) into the Ma Yinglong Musk Hemorrhoid Cream Group (MY Group), Pearl Powder Group (PP Group), and combination with Ma Yinglong Musk Hemorrhoid Cream and Pearl Powder Group (MP group), 39 patients in each group.",
+        "3": "Patients in the three groups generally were similar.",
+        "4": "We looked at the effects of Mayinglong Shexiang Hemorrhoid Cream combined with pearl powder in the treatment of pain and side effects in patients with serious bedsores based on differences in how well a treatment works, side effects, scar occurrence, pain, and quality of care of patients in the MY, PP, and MP groups.",
+        "5": "The MP group treatment worked better than the MY and PP groups.",
+        "6": "The MP group had better healing time and dressing change times than the MY group.",
+        "7": "The MP group had a better score on a common scoring tool for pain and fewer side effects than the MY and PP groups.",
+        "8": "The MP group had less occurrence of scars and smaller scar area than the MY and PP groups.",
+        "9": "A combination of Ma Yinglong Musk Hemorrhoid Cream and Pearl Powder worked better than either treatment by itself in treating severe bedsore patients, and can significantly reduce pain in the affected area and side effects."
+      }
+    }
+  },
+  "34692658": {
+    "Title": "Zwitterionic Hydrogel Activates Autophagy to Promote Extracellular Matrix Remodeling for Improved Pressure Ulcer Healing",
+    "abstract": {
+      "1": "Pressure ulcer (PU) is a worldwide problem that is hard to heal because of its prolonged inflammatory response and impaired ECM deposition caused by local hypoxia and repeated ischemia/reperfusion.",
+      "2": "Our previous study discovered that the non-fouling zwitterionic sulfated poly (sulfobetaine methacrylate) (SBMA) hydrogel can improve PU healing with rapid ECM rebuilding.",
+      "3": "However, the mechanism of the SBMA hydrogel in promoting ECM rebuilding is unclear.",
+      "4": "Therefore, in this work, the impact of the SBMA hydrogel on ECM reconstruction is comprehensively studied, and the underlying mechanism is intensively investigated in a rat PU model.",
+      "5": "The in vivo data demonstrate that compared to the PEG hydrogel, the SBMA hydrogel enhances the ECM remolding by the upregulation of fibronectin and laminin expression as well as the inhibition of MMP-2.",
+      "6": "Further investigation reveals that the decreased MMP-2 expression of zwitterionic SBMA hydrogel treatment is due to the activation of autophagy through the inhibited PI3K/Akt/mTOR signaling pathway and reduced inflammation.",
+      "7": "The association of autophagy with ECM remodeling may provide a way in guiding the design of biomaterial-based wound dressing for chronic wound repair."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Bedsores are a worldwide problem that is hard to heal because it causes long-lasting inflammation (redness and swelling from fighting an infection) and harms the extracellular matrix (ECM; secreted by cells and surrounds cells in tissues) from not enough oxygen and blood flow.",
+        "2": "The study we did before found that non-fouling zwitterionic (inner salts to which proteins and bacteria cannot stick) sulfated poly (sulfobetaine methacrylate) (SBMA) hydrogel can improve bedsore healing and quickly rebuild ECM.",
+        "3": "However, scientists are unsure how SBMA hydrogel rebuilds ECM.",
+        "4": "In this study, we look at how SBMA hydrogel rebuilds ECM using a rat bedsore model.",
+        "5": "SMBA hydrogel helps remodel ECM better than PEG hydrogel, another bedsore treatment.",
+        "6": "",
+        "7": "The relationship between autophagy (cleaning out of damaged cells) with ECM remodeling may influence the design of wound dressings with substances that interact with biological systems for long-term wound repair."
+      }
+    }
+  },
+  "question": "Do i keep a pressure sore covered and moist and what kind of ointment to use?",
+  "question_type": "C"
+  }
+}

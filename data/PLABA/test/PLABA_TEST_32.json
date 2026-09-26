@@ -1,0 +1,329 @@
+{
+  "32": {
+  "15226090": {
+    "Title": "The C677T polymorphism of the methylenetetrahydrofolate reductase gene is associated with the level of decrease on diastolic blood pressure in essential hypertension patients treated by angiotensin-converting enzyme inhibitor",
+    "abstract": {
+      "1": "Objectives: Elevated plasma homocysteine has been implicated as a risk factor for hypertension.",
+      "2": "C677T polymorphism in methylenetetrahydrofolate reductase gene (MTHFR) is a major determinant of hyperhomocysteinemia, which results in endothelial dysfunction.",
+      "3": "Angiotensin-converting enzyme (ACE) inhibitors appear to remedy the endothelial dysfunction and restore endothelium-dependent vasodilatation.",
+      "4": "The co-existence of genetic polymorphisms in drug metabolizing enzymes, targets, receptors, and transporters may influence the drug efficacy.",
+      "5": "The purpose of this study was to investigate whether short-term blood pressure control by benazepril, an ACE inhibitor, was modulated by C677T MTHFR gene polymorphism.",
+      "6": "Methods and results: A total of 444 hypertensive patients, aged 27 to 65 years, without any anti hypertensive therapy within 2 weeks were included.",
+      "7": "All of them were treated orally with benazepril at a single daily fixed dosage of 10 mg for 15 consecutive days.",
+      "8": "Blood pressures were measured at baseline and on the 16th day of treatment.",
+      "9": "Among them, the frequency of MTHFR C677T genotype CC, CT and TT was 24.3%, 51.8%, and 23.9%, respectively.",
+      "10": "In a recessive model (CC+CT versus TT genotype), both baseline diastolic blood pressure (DBP) and diastolic blood pressure response (DeltaDBP) were significantly higher in patients with the TT genotype than in those with the CT or CC genotype (P value=0.0076 for DBP, and P value=0.0005 for DeltaDBP).",
+      "11": "We further divided all patients into three groups based on the tertiles of the DeltaBP distribution.",
+      "12": "Compared to subjects in the lowest tertile of DeltaDBP, the adjusted relative odds of having the TT genotype among subjects in the highest tertile was 2.6 (95% CI, 1.4 to 4.9).",
+      "13": "However, baseline systolic blood pressure (SBP) and SBP response did not significantly associate with MTHFR C677T polymorphism.",
+      "14": "Conclusions: Our finding suggests that MTHFR C667T polymorphism modulated baseline DBP and DBP responsiveness by short-term treatment of ACE inhibitor in Chinese essential hypertensive patients."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Increase plasma, or blood, homocysteine has been identified as a risk factor for hypertension (high blood pressure). Homocysteine is a chemical your body produces to help make proteins.",
+        "2": "An identified genetic variation or gene type within the human population is a major determinant of hyperhomocysteinemia. Hyperhomocysteinemia is a condition with excess homocysteine in the blood. The condition can result in endothelial dysfunction, or a heart disease where the blood vessels narrow instead of opening.",
+        "3": "Angiotensin-converting enzyme (ACE) inhibitors are a type of drug commonly used to treat high blood pressure. ACE Inhibitors appear to fix the endothelial (or blood vessel lining) dysfunction and allow blood vessels to open.",
+        "4": "The presence of the genetic variation in specific bodily locations that metabolize or digest drugs, such as enzymes and receptors, may influence how well a drug works.",
+        "5": "The goal of this study was to investigate if short-term blood pressure control by an ACE inhibitor (Benazepril) is effected by the identified genetic variation.",
+        "6": "A total of 444 hypertensive patients, aged 27 to 65 years, without any anti hypertensive therapy within 2 weeks were included.",
+        "7": "All patients were treated with Benazepril with a single, daily dose of 10 mg for 15 consecutive days.",
+        "8": "Blood pressures were measured prior to the study beginning (baseline) and on the 16th day of treatment.",
+        "9": "The unique genetic variation has three unique \"versions\" or genotypes, known as CC, CT, or TT. Among the patients, the frequency of the genetic variation genotype CC, CT, and TT was 24.3%, 51.8%, and 23.9%, respectively.",
+        "10": "In a statistical analysis, several blood pressure measurements were higher in patients with the TT genotype than those with the CT or CC genotype.",
+        "11": "The authors further divided all patients into three groups based on where their diastolic blood pressure response (DeltaDBP) fell within a population scale. Diastolic blood pressure is the lowest pressure when the heart is relaxed.",
+        "12": "Patients with the highest DeltaDBP had the highest chance of having the TT genotype.",
+        "13": "However, baseline systolic blood pressure (when the heart is contracting) was not significantly associated with the unique genetic variation.",
+        "14": "This study suggests that the unique genetic variation altered baseline DBP by short-term treatment of ACE inhibitor in hypertensive patients."
+      },
+      "adaptation2": {
+        "1": "Increased blood levels of homocysteine, a specific chemical, may be a risk factor for high blood pressure.",
+        "2": "A specific mutation in DNA (C677T) encoding methylenetetrahydrofolate reductase (MTHFR), a protein that transforms homocysteine, greatly influences hyperhomocysteinemia, or high blood levels of homocysteine. This condition results in damage to cells that line the heart and blood vessels.",
+        "3": "Blood pressure medication called angiotensin-converting enzyme (ACE) inhibitors seem to repair damage to cells lining the heart and blood vessels and restore blood vessel widening.",
+        "4": "The co-existence of varied DNA for drug-digesting enzymes, targets, target sites, and transporters may affect drug effect.",
+        "5": "This study investigates if short-term blood pressure control by benazepril, an ACE inhibitor, was affected by variation in the DNA sequence for the C667T MTHFR gene.",
+        "6": "444 patients with high blood pressure, aged 27 to 65 years, without any high blood pressure therapy within 2 weeks were included.",
+        "7": "All of them swallowed benazepril at a single daily fixed dose of 10 mg for 15 consecutive days.",
+        "8": "Blood pressures were measured at start and on the 16th day of treatment.",
+        "9": "Among them, the gene sequence for MTHFR C677T varied.",
+        "10": "Diastolic blood pressure at the start and end were much higher for patients with a certain DNA sequence for the MTHFR C677T gene than patients with two other DNA sequences.",
+        "11": "We then divided all patients into 3 groups based on the distribution of blood pressure readings at the study's end.",
+        "12": "Compared to those with the lowest blood pressure measurements, the chances of having a certain DNA sequence for the MTHFR C667T gene among those with the highest blood pressure readings was 2.6 times higher.",
+        "13": "However, systolic blood pressure at the start and end was not linked to DNA sequences.",
+        "14": "DNA sequence variation for the MTHFR C667T gene affects diastolic blood pressure at the study's start and end in Chinese essential patients with high blood pressure."
+      }
+    }
+  },
+  "18200034": {
+    "Title": "Effect of ACE inhibitors and beta-blockers on homocysteine levels in essential hypertension",
+    "abstract": {
+      "1": "Recent studies have shown that antihypertensive drugs like diuretics increase plasma homocysteine (Hcy) levels.",
+      "2": "However, the effect of other antihypertensive drugs on plasma Hcy levels has not been tested extensively.",
+      "3": "The aim of present study was to investigate the effect of antihypertensive therapy (AHT) on Hcy levels in essential hypertensive subjects.",
+      "4": "A case-control study of 273 patients with essential hypertension (EH) and 103 normotensive controls was undertaken.",
+      "5": "Plasma Hcy levels were measured before and after 6 weeks of AHT.",
+      "6": "The genotyping of MTHFR C677T polymorphism was performed by polymerase chain reaction-restriction fragment length polymorphism.",
+      "7": "Angiotensin-converting enzyme (ACE) inhibitors and beta-blockers significantly decreased and hydrochlorothiazides significantly increased the plasma Hcy levels in hypertensive patients (P<0.05).",
+      "8": "No significant association between MTHFR C677T genotypes and changes in Hcy levels in response to antihypertensive was observed in EH patients.",
+      "9": "The decrease in Hcy induced by beta-blockers and ACE inhibitors observed in our study may be due to the improvement of endothelial function along with improved renal function.",
+      "10": "Thus, our results suggest that ACE inhibitors and beta-blockers may provide additional beneficial therapeutic effects to the EH patients by decreasing Hcy levels."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Recent studies have shown that antihypertensive drugs (that treat high blood pressure), like diuretics, increase plasma or blood homocysteine (Hcy) levels. Hcy is am amino acid that creates other chemicals your body needs.",
+        "2": "However, the effect of other antihypertensive drugs on plasma Hcy levels has not been tested extensively.",
+        "3": "The goal of this study was to investigate the effect of antihypertensive therapy (AHT) on Hcy levels in essential hypertensive subjects. Essential hypertensive patients have high blood pressure that is not the result of a medical condition.",
+        "4": "A study of 273 patients with essential hypertension (EH) and 103 patients with normal blood pressure was begun.",
+        "5": "Plasma Hcy levels were measured before and after 6 weeks of AHT.",
+        "6": "Patients were genotyped to analyze a specific genetic variation or gene material.",
+        "7": "Angiotensin-converting enzyme (ACE) inhibitors are drugs that lower blood pressure by relaxing veins and arteries. Beta-blockers are drugs that lower blood pressure by blocking the effects of adrenaline. ACE inhibitors and beta-blockers significantly decrease plasms Hcy levels in hypertensive patients. Hydrochlorothiazides, or \"water pills\", significantly increase plasms Hcy levels in hypertensive patients.",
+        "8": "There was no association between the identified genetic variation and changes in Hcy levels in response to antihypertensive within EH patients.",
+        "9": "The observed decrease in Hcy caused by ACE inhibitors and beta-blockers may be due to the improvement of endothelial (tissue lining various organs and cavities in the body) and kidney function.",
+        "10": "Therefore, this study suggests that ACE inhibitors and beta-blockers may provide additional, beneficial or therapeutic effects to the EH patients by decreasing Hcy levels."
+      }
+    }
+  },
+  "23608654": {
+    "Title": "Blood pressure in treated hypertensive individuals with the MTHFR 677TT genotype is responsive to intervention with riboflavin: findings of a targeted randomized trial",
+    "abstract": {
+      "1": "Intervention with riboflavin was recently shown to produce genotype-specific lowering of blood pressure (BP) in patients with premature cardiovascular disease homozygous for the 677C→ T polymorphism (TT genotype) in the gene encoding the enzyme methylenetetrahydrofolate reductase (MTHFR).",
+      "2": "Whether this effect is confined to patients with high-risk cardiovascular disease is unknown.",
+      "3": "The aim of this randomized trial, therefore, was to investigate the responsiveness of BP to riboflavin supplementation in hypertensive individuals with the TT genotype but without overt cardiovascular disease.",
+      "4": "From an available sample of 1427 patients with hypertension, we identified 157 with the MTHFR 677TT genotype, 91 of whom agreed to participate in the trial.",
+      "5": "Participants were stratified by systolic BP and randomized to receive placebo or riboflavin (1.6 mg/d) for 16 weeks.",
+      "6": "At baseline, despite being prescribed multiple classes of antihypertensive drugs, >60% of participants with this genotype had failed to reach goal BP (≤140/90 mm Hg).",
+      "7": "A significant improvement in the biomarker status of riboflavin was observed in response to intervention (P<0.001).",
+      "8": "Correspondingly, an overall treatment effect of 5.6±2.6 mm Hg (P=0.033) in systolic BP was observed, with pre- and postintervention values of 141.8±2.9 and 137.1±3.0 mm Hg (treatment group) and 143.5±3.0 and 144.3±3.1 mm Hg (placebo group), whereas the treatment effect in diastolic BP was not significant (P=0.291).",
+      "9": "In conclusion, these results show that riboflavin supplementation targeted at hypertensive individuals with the MTHFR 677TT genotype can decrease BP more effectively than treatment with current antihypertensive drugs only and indicate the potential for a personalized approach to the management of hypertension in this genetically at-risk group."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Use of riboflavin (a B vitamin) was recently shown to have genotype-specific effects on lowering blood pressure (BP). This means a person's response was different depending on their genetic makeup. This process was shown within patients of premature (or early) cardiovascular (or heart-related) disease with a TT genotype of a specific genetic variation or gene change. This genetic variation, known as 677C, is found within the gene that encodes the enzyme methylenetetrahydrofolate reductase (MTHFR). MTHFR is involved in the processing of amino acids, the building blocks of proteins.",
+        "2": "It is unknown if this effect is confined to patients with high-risk cardiovascular disease.",
+        "3": "The goal of this study was to investigate the responsiveness of BP in hypertensive (high blood pressure) patients taking riboflavin. Specifically, these patients would have the TT genotype but no obvious cardiovascular disease.",
+        "4": "Of 1427 hypertensive patients, the authors identified 157 with the MTHFR 677TT genotype. Ninety-one agreed to participate in the study.",
+        "5": "Participants were ordered by systolic BP (when the heart contracts and the higher blood pressure number) and randomized to receive a placebo (harmless pill) or riboflavin (1.6 mg/d) for 16 weeks.",
+        "6": "Before treatment, despite being prescribed multiple classes of antihypertensive drugs, the majority of participants with this genotype had failed to reach the goal BP.",
+        "7": "A significant improvement in the level of bodily riboflavin was observed in response to intervention or treatment.",
+        "8": "A significant treatment effect in systolic BP was observed. However, no significant treatment was found in diastolic (when the heart relaxes and the lower blood pressure number) BP.",
+        "9": "The study concluded riboflavin supplementation within hypertensive individuals with the MTHFR 677TT genotype decreases BP more efficiently than current antihypertensive drugs only. Furthermore, this study indicates the potential for a personalized, or individualized, approach to the way high blood pressure is managed in this genetically at-risk group."
+      }
+    }
+  },
+  "24131523": {
+    "Title": "MTHFR 677TT genotype and disease risk: is there a modulating role for B-vitamins?",
+    "abstract": {
+      "1": "Methylenetetrahydrofolate reductase (MTHFR) is a critical folate-metabolising enzyme which requires riboflavin as its co-factor.",
+      "2": "A common polymorphism (677C→T) in the MTHFR gene results in reduced MTHFR activity in vivo which in turn leads to impaired folate metabolism and elevated homocysteine concentrations.",
+      "3": "Homozygosity for this polymorphism (TT genotype) is associated with an increased risk of a number of conditions including heart disease and stroke, but there is considerable variability in the extent of excess risk in various reports.",
+      "4": "The present review will explore the evidence which supports a role for this polymorphism as a risk factor for a number of adverse health outcomes, and the potential modulating roles for B-vitamins in alleviating disease risk.",
+      "5": "The evidence is convincing in the case which links this polymorphism with hypertension and hypertensive disorders of pregnancy, particularly preeclampsia.",
+      "6": "Furthermore, elevated blood pressure was found to be highly responsive to riboflavin intervention specifically in individuals with the MTHFR 677TT genotype.",
+      "7": "Future intervention studies targeted at these genetically predisposed individuals are required to further investigate this novel gene-nutrient interaction.",
+      "8": "This polymorphism has also been associated with an increased risk of neural tube defects (NTD) and other adverse pregnancy outcomes; however, the evidence in this area has been inconsistent.",
+      "9": "Preliminary evidence has suggested that there may be a much greater need for women with the MTHFR 677TT genotype to adhere to the specific recommendation of commencing folic acid prior to conception for the prevention of NTD, but this requires further investigation."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Methylenetetrahydrofolate reductase (MTHFR) is a critical folate (specific vitamin)-metabolizing enzyme which requires riboflavin as its co-factor. Co-factors are needed for enzymes, catalysts for chemical reactions in the body, to complete their roles.",
+        "2": "A common variation (677C→T) in the MTHFR gene results in reduced MTHFR activity. This can caused impaired folate metabolism and increased homocysteine concentrations. Homocysteine is a chemical your body produces to help make proteins.",
+        "3": "Individuals can inherit the same form of a gene from both parents. When this occurs, a person has homozygosity. Homozygosity for this genetic variation (TT genotype) is associated with an increased risk of a number of conditions. These conditions include heart disease and stroke. However, there is a large amount of variability or differences in the extent of excess risk in various reports.",
+        "4": "The study aimed to explore the evidence available that supports this genetic variation increasing the risk for several adverse or bad health outcomes. Additionally, the study aimed to explore the evidence of how B-vitamins can help alleviate or lessen disease risk.",
+        "5": "There is strong evidence that links the genetic variation (TT genotype) with hypertension (hig blood pressure) and hypertensive disorders of pregnancy, particularly preeclampsia.",
+        "6": "Furthermore, high blood pressure was found to be highly responsive to or affected by riboflavin intervention or treatment specifically in individuals with the MTHFR 677TT genotype.",
+        "7": "Future intervention studies aimed at genetically predisposed or genetically risky individuals are required to further understand this gene-nutrient interaction.",
+        "8": "This genetic variation has also been associated with an increased risk of neural tube defects (NTD), brain-related damage, and other adverse pregnancy outcomes. However, the evidence on this subject has been inconsistent.",
+        "9": "Initial evidence has suggested there may be a greater need for women with MTHFR 677TT genotype to take folic acid prior to conception (or having a baby) for the prevention of NTD. However, this idea requires further investigation."
+      }
+    }
+  },
+  "27845713": {
+    "Title": "Novel Approaches to Investigate One-Carbon Metabolism and Related B-Vitamins in Blood Pressure",
+    "abstract": {
+      "1": "Hypertension, a major risk factor for heart disease and stroke, is the world's leading cause of preventable, premature death.",
+      "2": "A common polymorphism (677C→T) in the gene encoding the folate metabolizing enzyme methylenetetrahydrofolate reductase (MTHFR) is associated with increased blood pressure, and there is accumulating evidence demonstrating that this phenotype can be modulated, specifically in individuals with the MTHFR 677TT genotype, by the B-vitamin riboflavin, an essential co-factor for MTHFR.",
+      "3": "The underlying mechanism that links this polymorphism, and the related gene-nutrient interaction, with hypertension is currently unknown.",
+      "4": "Previous research has shown that 5-methyltetrahydrofolate, the product of the reaction catalysed by MTHFR, appears to be a positive allosteric modulator of endothelial nitric oxide synthase (eNOS) and may thus increase the production of nitric oxide, a potent vasodilator.",
+      "5": "Blood pressure follows a circadian pattern, peaking shortly after wakening and falling during the night, a phenomenon known as 'dipping'.",
+      "6": "Any deviation from this pattern, which can only be identified using ambulatory blood pressure monitoring (ABPM), has been associated with increased cardiovascular disease (CVD) risk.",
+      "7": "This review will consider the evidence linking this polymorphism and novel gene-nutrient interaction with hypertension and the potential mechanisms that might be involved.",
+      "8": "The role of ABPM in B-vitamin research and in nutrition research generally will also be reviewed."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Hypertension, also known as high blood pressure, is a major risk factor for heart disease and stroke. Hypertension is the world's leading cause of preventable, premature death.",
+        "2": "A common genetic variation or gene change (677C→T) is found in the gene that codes the folate (specific vitamin) metabolizing (digesting) enzyme methylenetetrahydrofolate reductase (MTHFR). 677C→T is associated with increased blood pressure. There is accumulating evidence that shows this event can be altered, especially in people with MTHFR 677TT genotype, by the B-vitamin riboflavin. Riboflavin is an essential co-factor, meaning it is needed for a biological process to be completed, for MTHFR.",
+        "3": "The underlying mechanism that links this genetic variation or gene differences, and the related gene-nutrient interaction, with hypertension is currently unknown.",
+        "4": "Previous research has shown that the product produced by the biological reaction caused by MTHFR is a positive modulator (increases activity) of a specific enzyme. The enzyme is known as endothelial nitric oxide synthase (eNOS), which helps fight blood vessel disease. The product of MTHFR, known as 5-methyltetrahydrofolate, may increase the production of nitric oxide, a potent vasodilator. Vasodilators widen blood vessels, which decreases blood pressure.",
+        "5": "Blood pressure follows a circadian rhythm (a 24 hour cycle), peaking shortly after wakening and falling during the night. This process is known as 'dipping'.",
+        "6": "Any change in this pattern, which can only be identified using ambulatory blood pressure monitoring (ABPM), has been associated with increased cardiovascular (or heart-related) disease (CVD) risk.",
+        "7": "This review will consider the evidence linking this genetic variation and new gene-nutrient interaction with hypertension. This paper will also investigate the potential mechanisms that might be involved.",
+        "8": "The role of ABPM in B-vitamin research and in nutrition research generally will also be reviewed."
+      }
+    }
+  },
+  "29371246": {
+    "Title": "MTHFR Gene and Serum Folate Interaction on Serum Homocysteine Lowering: Prospect for Precision Folic Acid Treatment",
+    "abstract": {
+      "1": "Objective: This post hoc analysis of the CSPPT (China Stroke Primary Prevention Trial) assessed the individual variation in total homocysteine (tHcy)-lowering response after an average 4.5 years of 0.8 mg daily folic acid therapy in Chinese hypertensive adults and evaluated effect modification by methylenetetrahydrofolate reductase (MTHFR) C677T genotypes and serum folate levels.",
+      "2": "Approach and results: This analysis included 16 413 participants from the CSPPT, who were randomly assigned to 2 double-blind treatment groups: either 10-mg enalapril+0.8-mg folic acid or 10-mg enalapril, daily and had individual measurements of serum folate and tHcy levels at baseline and exit visits and MTHFR C677T genotypes.",
+      "3": "Mean baseline tHcy levels were comparable between the 2 treatment groups (14.5±8.5 versus 14.4±8.1 μmol/L; P=0.561).",
+      "4": "After 4.5 years of treatment, mean tHcy levels were reduced to 12.7±6.1 μmol/L in the enalapril+folic acid group, but almost stayed the same in the enalapril group (14.4±7.9 μmol/L, group difference: 1.61 μmol/L; 11% reduction).",
+      "5": "More importantly, tHcy lowering varied by MTHFR genotypes and serum folate levels.",
+      "6": "Compared with CC and CT genotypes, participants with the TT genotype had a more prominent L-shaped curve between tHcy and serum folate levels and required higher folate levels (at least 15 ng/mL) to eliminate the differences in tHcy by genotypes.",
+      "7": "Conclusions: Compared with CC or CT, tHcy in the TT group manifested a heightened L-shaped curve from low to high folate levels, but this difference in tHcy by genotype was eliminated when plasma folate levels reach ≈15 ng/mL or higher.",
+      "8": "Our data raised the prospect to tailor folic acid therapy according to individual MTHFR C677T genotype and folate status."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "This study represents an analysis on the China Stroke Primary Prevention Trial (CSPPT). Individual variation in total homocysteine (tHcy)-lowering response was measured after an average of 4.5 years of 0.8 mg daily folic acid (or specific vitamin) therapy. Homocysteine is a chemical your body produces to help make proteins. This study was completed in Chinese hypertensive (high blood pressure) adults. This study evaluated effect modification by methylenetetrahydrofolate reductase (MTHFR) C677T genotypes (a person's specific gene type for a specific protein) and serum or blood folate (derivative of folic acid) levels.",
+        "2": "The study included 16,413 participants from the CSPPT study. The participants were randomly assigned to 2 double-blind treatment groups. Double-blind indicates the study participants were not told which treatment group they were apart of. The participants received either 10-mg enalapril (common blood pressure medication) +0.8-mg folic acid or 10-mg enalapril daily. The participants had individual measurements of serum folate and tHcy levels at baseline (before study) and exit (end of study) visits and MTHFR C677T genotypes.",
+        "3": "Average baseline tHcy levels were similar between the 2 treatment groups.",
+        "4": "After 4.5 years of treatment, mean or average tHcy levels were reduced in the enalapril+folic acid group, but almost stayed the same in the enalapril group.",
+        "5": "However, tHcy lowering varied by MTHFR genotypes and serum folate levels.",
+        "6": "Participants with a specific MTHFR genotype (TT) required higher folate levels to eliminate the differences in tHcy between them and the other two genotypes (CC and CT).",
+        "7": "The study concluded that the TT genotype group showed that as folate levels increased, tHcy levels decreased. However, this difference in tHcy between the genotype groups was removed when plasma or blood folate levels reached ≈15 ng/mL or higher.",
+        "8": "This study suggests to tailor folic acid therapy by MTHFR genotype and folate status."
+      }
+    }
+  },
+  "30372582": {
+    "Title": "The modifying effect of the MTHFR genotype on the association between folic acid supplementation and pulse wave velocity: Findings from the CSPPT",
+    "abstract": {
+      "1": "Objective: In a subgroup analysis of the China Stroke Primary Prevention Trial, we aimed to explore the impact of folic acid supplementation on arterial stiffness and assess the modifying effect of the methylenetetrahydrofolate reductase (MTHFR) gene in Chinese patients with hypertension.",
+      "2": "Methods: This prospective study enrolled 2529 hypertensive Chinese patients.",
+      "3": "Participants were randomized to receive treatment with either a combination of enalapril and folic acid or enalapril.",
+      "4": "Brachial-ankle pulse wave velocity (PWV) was measured by trained medical staff using PWV instruments at both baseline and exit visits, approximately 5 years after enrollment.",
+      "5": "This trial was registered with clinicaltrials.gov (NCT00794885).",
+      "6": "Results: During the follow-up, change in folate was significantly and independently correlated with change in ba-PWV in study patients (β = -1.31, P < 0.001).",
+      "7": "Individuals with CC genotype had a significantly greater PWV response to folic acid supplementation than did carriers of the T allele (β = -2.79, P < 0.001 for CC homozygotes compared with β = -0.56, P = 0.464 for TT homozygotes).",
+      "8": "The positive effect of folic acid on improved PWV was modified by the MTHFR genotype (P for interaction = 0.034).",
+      "9": "Conclusion: In a subgroup of Chinese hypertensive patients who had received 5-year antihypertensive therapy, increases in folate status were associated with higher reductions in PWV, and individuals with the CC genotype showed greatest PWV response to folic acid supplementation."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "This study conducted an analysis using patients from the China Stroke Primary Prevention Trial. The goal of this study was to explore the impact of folic acid (a specific vitamin) on arterial stiffness (hardness of arteries or specific blood vessels). Additionally, this study aimed to measure the modifying or influencing effect of a specific gene (methylenetetrahydrofolate reductase-MTHFR) in Chinese patients with hypertension (high blood pressure).",
+        "2": "This study enrolled 2,529 hypertensive (high blood pressure) Chinese patients.",
+        "3": "Participants were randomized to receive treatment with either a combination of enalapril (common blood pressure medication) and folic acid or enalapril.",
+        "4": "Brachial-ankle pulse wave velocity (PWV) is a measurement of  arterial stiffness. It is measured by looking at the brachial and tibial arteries, located within the upper arm. PWV was taken by trained medical staff using appropriate equipment during both baseline (before treatment) and exit (end of treatment) visits, approximately 5 years after enrollment.",
+        "5": "This trial was registered with clinicaltrials.gov (NCT00794885).",
+        "6": "During the follow-up, change in folate (vitamin in the body) was significantly and independently linked with change in PWV in patients.",
+        "7": "Patients with CC genotype (a person's collection of specific genes) had a significantly greater PWV response to folic acid than those with genotype CT or TT.",
+        "8": "The positive effect of folic acid on improved PWV was modified by what genotype the patient had.",
+        "9": "The study concluded that within the analyzed subgroup of Chinese hypertensive patients who had received a 5-year antihypertensive therapy, increase in folate status were correlated or linked with decreased PWV. Additionally, individuals with CC genotype showed greatest PWV response to folic acid treatment."
+      }
+    }
+  },
+  "31932513": {
+    "Title": "Interaction of serum vitamin B 12 and folate with MTHFR genotypes on risk of ischemic stroke",
+    "abstract": {
+      "1": "Objective: We evaluated the interaction of serum folate and vitamin B12 with methylenetetrahydrofolate reductase (MTHFR) C677T genotypes on the risk of first ischemic stroke and on the efficacy of folic acid treatment in prevention of first ischemic stroke.",
+      "2": "Methods: A total of 20,702 hypertensive adults were randomized to a double-blind treatment of daily enalapril 10 mg and folic acid 0.8 mg or enalapril 10 mg alone.",
+      "3": "Participants were followed up every 3 months.",
+      "4": "Results: Median values of folate and B12 concentrations at baseline were 8.1 ng/mL and 280.2 pmol/L, respectively.",
+      "5": "Over a median of 4.5 years, among those not receiving folic acid, participants with baseline serum B12 or serum folate above the median had a significantly lower risk of first ischemic stroke (hazard ratio [HR], 0.74; 95% confidence interval [CI], 0.57-0.96), especially in those with MTHFR 677 CC genotype (wild-type) (HR, 0.49; 95% CI, 0.31-0.78).",
+      "6": "Folic acid treatment significantly reduced the risk of first ischemic stroke in participants with both folate and B12 below the median (2.3% in enalapril-folic acid group vs 3.6% in enalapril-only group; HR, 0.62; 95% CI, 0.46-0.86), particularly in MTHFR 677 CC carriers (1.6% vs 4.9%; HR, 0.24; 95% CI, 0.11-0.55).",
+      "7": "However, TT homozygotes responded better with both folate and B12 levels above the median (HR, 0.28; 95% CI, 0.10-0.75).",
+      "8": "Conclusions: The risk of first ischemic stroke was significantly higher in hypertensive patients with low levels of both folate and B12.",
+      "9": "Effect of folic acid treatment was greatest in patients with low folate and B12 with the CC genotype, and with high folate and B12 with the TT genotype."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "The aim of this study was to evaluate the interaction of serumor blood folate (a specific vitamin) and vitamin B12 with methylenetetrahydrofolate reductase (MTHFR- a gene) C677T genotypes, or inherited gene types for a protein involved in blood pressure, on the risk of first ischemic or brain-related stroke. Genotypes are variations of a gene. These variations are often referred to as TT, CC, or CT. Additionally, the study aimed to review the efficacy or success of folic acid treatment in prevention of first ischemic stroke.",
+        "2": "A total of 20,702 hypertensive (high blood pressure) adults were randomly placed into one of two treatment groups: daily enalapril (common blood pressure medication) 10 mg and folic acid 0.8 mg or enalapril 10 mg alone.",
+        "3": "Participants were followed up every 3 months.",
+        "4": "Average values of folate and B12 concentrations before treatment were 8.1 ng/mL and 280.2 pmol/L, respectively.",
+        "5": "Over an average of 4.5 years, participants not receiving folic acid with baseline (starting) serum or blood B12 or serum folate above the median (average) had a significantly lower risk of first ischemic stroke. This decreased risk was found especially in those with MTHFR 677 CC genotype (wild-type or normal).",
+        "6": "Folic acid treatment significantly reduced the risk of first ischemic stroke in participants with both folate and B12 below the median, particularly in patients with CC genotype.",
+        "7": "However, participants with TT genotype responded better with both folate and B12 levels above the median of participants.",
+        "8": "The study concluded the risk of first ischemic stroke was significantly higher in hypertensive patients with low levels of both folate and B12.",
+        "9": "Folic acid treatment helped the most in patients with low folate and B12 with the CC genotype, and with high folate and B12 with the TT genotype."
+      },
+      "adaptation2": {
+        "1": "We checked the interaction of blood folate, a B-vitamin, and vitamin B12 with methylenetetrahydrofolate reductase (MTHFR) C6677T genotypes, or specific DNA sequences in humans encoding the same protein. This was done to measure the risk of first ischemic stroke, or blood clotting that would block brain blood flow, and success of folic acid treatment to prevent this stroke.",
+        "2": "20,702 adults with high blood pressure randomly received either 10 mg of daily blood pressure medication and 0.8 mg of folic acid or 10 mg of blood pressure alone.",
+        "3": "Participants were checked every 3 months.",
+        "4": "Average folate and B12 levels at start were 8.1 ng/mL and 280.2 pmol/L, respectively.",
+        "5": "Over around 4.5 years, among those not receiving folid acid, participants with starting blood B12 or blood folate above the average had much lower risk of first ischemic stroke, especially those with the standard MTHFR C6677T genotype.",
+        "6": "Folic acid treatment reduced the risk of first ischemic stroke in participants with both folate and B12 below the average, especially in those with the altered MTHFR genotype.",
+        "7": "However, those with certain MTHFR genotypes responded with both folate and B12 levels above the average.",
+        "8": "The risk of first ischemic stroke was higher in patients with high blood pressure and low levels of folate and B12.",
+        "9": "Folic acid treatment had the most effect in patients with low folate and B12 with a certain MTHFR genotype, and with high folate and B12 with another genotype."
+      }
+    }
+  },
+  "32278343": {
+    "Title": "A prospective cohort study of MTHFR C677T gene polymorphism and its influence on the therapeutic effect of homocysteine in stroke patients with hyperhomocysteinemia",
+    "abstract": {
+      "1": "Background: Hyperhomocysteinemia (HHCY) is a risk factor for cardiovascular and cerebrovascular diseases.",
+      "2": "The C677T 5, 10-methylenetetrahydrofolate reductase (MTHFR) gene polymorphism increases homocysteine (HCY) levels.",
+      "3": "This study analyzed the relationship between C677T MTHFR polymorphism and the therapeutic effect of lowering HCY in stroke patients with HHCY.",
+      "4": "Methods: Baseline data were collected from stroke patients with HHCY for this prospective cohort study.",
+      "5": "The C677T MTHFR genotype was detected by polymerase chain reaction-restriction fragment length polymorphism and the therapeutic effect to reduce HCY was compared.",
+      "6": "Results: Of 200 stroke patients 162 (81.0%) completed follow-up and were evaluated.",
+      "7": "Most of them responded well to treatment (103 cases, 63.5%), but 59 (36.4%) patients were in the poor efficacy group.",
+      "8": "There was a significant difference in terms of age (P < 0.001), hypertension (P = 0.041), hyperuricemia (P = 0.042), HCY after treatment (P < 0.001), and MTHFR genotype (P < 0.001) between the poor efficacy and effective groups, with increased frequency of the TT genotype in the poor efficacy group.",
+      "9": "Logistic regression showed that the T allele was associated with poor efficacy (OR = 0.733, 95%CI: 0.693, 0.862, P < 0.001).",
+      "10": "In the codominant model the TT genotype was associated with poor outcome (OR = 0.862, 95%CI: 0.767, 0.970, P = 0.017) and this was also the case in the recessive model (OR = 0.585, 95%CI: 0.462, 0.741, P < 0.001) but there was no association between CT and TT in the dominant model.",
+      "11": "Conclusions: The T allele and TT genotype of the MTHFR C677T polymorphism was associated with poor HCY reduction treatment efficacy in stroke patients with HHCY."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Hyperhomocysteinemia (HHCY), when there is excess homocysteine in the blood, is a risk factor for cardiovascular, or blood- and heart-related, and cerebrovascular, or blood- and brain-related, diseases. Homocysteine is an intermediate amino acid (molecule that form proteins).",
+        "2": "A specific genetic variation or gene change, known as  C677T 5, 10-methylenetetrahydrofolate reductase (MTHFR) gene polymorphism, which alters the MTHFR protein involved in blood pressure, increases homocysteine (HCY) levels.",
+        "3": "This study analyzed the relationship between C677T MTHFR variation and the therapeutic, beneficial effect (response after a treatment) of lowering HCY in stroke patients with HHCY.",
+        "4": "Baseline data, meaning prior to treatment, was collected from stroke patients with HHCY for this study.",
+        "5": "The C677T MTHFR genotype was detected, and the therapeutic effect to reduce HCY was compared.",
+        "6": "Of 200 stroke patients, 162 completed follow-up and were evaluated.",
+        "7": "Most of them responded well to treatment, but 59 patients were in the poor efficacy or poor effect group.",
+        "8": "There was a significant difference in terms of age, hypertension (high blood pressure), hyperuricemia (high uric acid or waste), HCY after treatment, and MTHFR genotype between the poor efficacy and effective groups. The poor efficacy group had more participated with TT genotype of the genetic variant.",
+        "9": "Statistical analysis showed that the T allele (an alternative form of a gene) was associated with poor efficacy.",
+        "10": "The TT genotype was associated with poor outcomes.",
+        "11": "The study concluded the T allele and TT genotype of the MTHFR C677T genetic variation was associated with poor HCY reduction treatment efficacy in stroke patients with HHCY."
+      }
+    }
+  },
+  "33172445": {
+    "Title": "Impact of the common MTHFR 677C→T polymorphism on blood pressure in adulthood and role of riboflavin in modifying the genetic risk of hypertension: evidence from the JINGO project",
+    "abstract": {
+      "1": "Background: Genome-wide and clinical studies have linked the 677C→T polymorphism in the gene encoding methylenetetrahydrofolate reductase (MTHFR) with hypertension, whilst limited evidence shows that intervention with riboflavin (i.e. the MTHFR co-factor) can lower blood pressure (BP) in hypertensive patients with the variant MTHFR 677TT genotype.",
+      "2": "We investigated the impact of this common polymorphism on BP throughout adulthood and hypothesised that riboflavin status would modulate the genetic risk of hypertension.",
+      "3": "Methods: Observational data on 6076 adults of 18-102 years were drawn from the Joint Irish Nutrigenomics Organisation project, comprising the Trinity-Ulster Department of Agriculture (TUDA; volunteer sample) and the National Adult Nutrition Survey (NANS; population-based sample) cohorts.",
+      "4": "Participants were recruited from the Republic of Ireland and Northern Ireland (UK) in 2008-2012 using standardised methods.",
+      "5": "Results: The variant MTHFR 677TT genotype was identified in 12% of adults.",
+      "6": "From 18 to 70 years, this genotype was associated with an increased risk of hypertension (i.e. systolic BP ≥ 140 and/or a diastolic BP ≥ 90 mmHg): odds ratio (OR) 1.42, 95% confidence interval (CI) 1.07 to 1.90; P = 0.016, after adjustment for antihypertensive drug use and other significant factors, namely, age, male sex, BMI, alcohol and total cholesterol.",
+      "7": "Low or deficient biomarker status of riboflavin (observed in 30.2% and 30.0% of participants, respectively) exacerbated the genetic risk of hypertension, with a 3-fold increased risk for the TT genotype in combination with deficient riboflavin status (OR 3.00, 95% CI, 1.34-6.68; P = 0.007) relative to the CC genotype combined with normal riboflavin status.",
+      "8": "Up to 65 years, we observed poorer BP control rates on antihypertensive treatment in participants with the TT genotype (30%) compared to those without this variant, CT (37%) and CC (45%) genotypes (P < 0.027).",
+      "9": "Conclusions: The MTHFR 677TT genotype is associated with higher BP independently of homocysteine and predisposes adults to an increased risk of hypertension and poorer BP control with antihypertensive treatment, whilst better riboflavin status is associated with a reduced genetic risk.",
+      "10": "Riboflavin intervention may thus offer a personalised approach to prevent the onset of hypertension in adults with the TT genotype; however, this requires confirmation in a randomised trial in non-hypertensive adults."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Research has linked a specific a genetic variation or gene change, known as 677C→T, within the gene encoding methylenetetrahydrofolate reductase (MTHFR - a blood-pressure-related protein) with hypertension (high blood pressure). Limited evidence has shown that taking riboflavin, which is a co-factor or helper of MTHFR, can lower blood pressure (BP) in hypertensive patients with the variant MTHFR 677TT genotype.",
+        "2": "This study investigated the impact of the common genetic variation on BP throughout adulthood. They hypothesized that riboflavin status would alter the genetic risk of hypertension.",
+        "3": "Observational data on 6076 adults of 18-102 years were drawn from the Joint Irish Nutrigenomics Organization project, comprising the Trinity-Ulster Department of Agriculture (TUDA; volunteer sample) and the National Adult Nutrition Survey (NANS; population-based sample) cohorts or groups.",
+        "4": "Participants were recruited from the Republic of Ireland and Northern Ireland (UK) in 2008-2012 using standard methods.",
+        "5": "The genetic variant MTHFR 677TT genotype was identified in 12% of recruited adults.",
+        "6": "In patients 18 to 70 years old, this genotype was associated with an increased risk of hypertension.",
+        "7": "Low or deficient levels of riboflavin increased the genetic risk of hypertension. Participants with 677TT genotype and a riboflavin deficiency have a 3-fold higher risk of developing hypertension.",
+        "8": "In participants up to 65 years, the authors observed poorer BP control rates on antihypertensive treatment in participants with the TT genotype compared to participants with other genotypes (CC or CT).",
+        "9": "The study concluded the MTHFR 677TT genotype is associated with higher BP independently of homocysteine levels. Homocysteine is a chemical your body produces to help make proteins. Additionally, the MTHFR 677TT genotype makes people more likely to have an increased risk of hypertension and poorer BP control with antihypertensive treatment. Better riboflavin status was associated with a reduced genetic risk for hypertension.",
+        "10": "Riboflavin administration or use may offer a personalized or unique approach to prevent the onset or start of hypertension in adults with the TT genotype. However, this requires more researched in non-hypertensive adults."
+      },
+      "adaptation2": {
+        "1": "Genetic and clinical studies have linked variation in a specific DNA sequence for methylenetetrahydrofolate reductase (MTHFR), a certain protein, with high blood pressure. Some evidence shows that treatment with riboflavin (a molecule that attaches to MTHFR) can lower blood pressure (BP) in patients with high blood pressure and an altered DNA sequence for MTHFR called 677TT.",
+        "2": "We tested the impact of this altered DNA sequence on BP through adulthood. We believed that riboflavin would affect the genetic risk of high blood pressure.",
+        "3": "",
+        "4": "Patients were recruited from the Republic of Ireland and Northern Ireland in 2008-2012.",
+        "5": "The altered DNA sequence of MTHFR 677TT was found in 12% of adults.",
+        "6": "From 18 to 70 years, this altered DNA sequence, or genotype, was linked with increased risk of high blood pressure after adjusting for blood pressure medication use, age, sex, body mass, alcohol, total cholesterol, and other factors.",
+        "7": "Low or no riboflavin (seen in 30.2% and 30.0% of participants, respectively) worsened the genetic risk of high blood pressure. Patients with a certain genotype along with no riboflavin had a 3-fold increased risk compared to patients with the standard genotype along with normal riboflavin.",
+        "8": "Up to 65 years, we saw poorer BP control rates on anti-high-BP treatment in participants with a certain DNA sequence for MTHFR compared to those without this altered DNA sequence.",
+        "9": "A specific gentoype for MTHFR is linked with higher BP regardless of homocysteine, a molecule that MTHFR acts on, and biases adults to increased risk of high BP and poorer BP control with anti-high-BP treatment. Better riboflavin amount is linked with reduced genetic risk.",
+        "10": "Riboflavin treatment may thus give an individualized approach to prevent high BP in adults with a certain genotype for MTHFR. Still, this needs confirmation in a trial in adults without high BP."
+      }
+    }
+  },
+  "question": "What bp meds should not be taken if person has mthfr genetic variant?",
+  "question_type": "B"
+  }
+}

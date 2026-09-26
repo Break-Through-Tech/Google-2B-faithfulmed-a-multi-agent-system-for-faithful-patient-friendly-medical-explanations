@@ -1,0 +1,334 @@
+{
+  "11": {
+  "7853374": {
+    "Title": "Pyruvate dehydrogenase deficiency",
+    "abstract": {
+      "1": "Treatment of PDH deficiency rarely influences the course of the disease.",
+      "2": "It is usually possible to reverse or minimize systemic lactic acid accumulation by giving a high fat/low carbohydrate \"ketogenic\" diet, but this does not alleviate the neurological symptoms as structural damage in the brain is present from before birth and many patients do not have significant metabolic problems.",
+      "3": "There is some evidence that dichloroacetate (which inhibits the specific PDH kinase and thereby activates any residual functioning complex) will also reduce the metabolic disturbance in some patients, but, again, this is rarely accompanied by any objective improvement in neurological performance.",
+      "4": "A more favorable outcome can be expected in the extremely rare patients with a thiamine responsive form of the disease and, for this reason, a short therapeutic trial of thiamine is worth trying in all cases."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Pyruvate dehydrogenase deficiency or shortage is a rare disorder caused by genetic changes, and its progression can rarely be stopped by treatment.",
+        "2": "It is usually possible to reverse or minimize some symptoms by giving a high fat/low carbohydrate \"ketogenic\" diet, but this does not help with delays in mental and motor development because damage in the brain is present before birth.",
+        "3": "A chemical in the body called dichloroacetate may also reduce the disturbance on metabolism in some patients, but, again, this is rarely accompanied by any improvement in mental and motor development.",
+        "4": "In rare cases, a vitamin called thiamine may respond to pyruvate dehydrogenase deficiency, and so a short course of thiamine is worth trying for all cases."
+      }
+    }
+  },
+  "18206410": {
+    "Title": "A combined therapeutic approach for pyruvate dehydrogenase deficiency using self-complementary adeno-associated virus serotype-specific vectors and dichloroacetate",
+    "abstract": {
+      "1": "We determined the ability of self-complementary adeno-associated virus (scAAV) vectors to deliver and express the pyruvate dehydrogenase E1alpha subunit gene (PDHA1) in primary cultures of skin fibroblasts from 3 patients with defined mutations in PHDA1 and 3 healthy subjects.",
+      "2": "Cells were transduced with scAAV vectors containing the cytomegalovirus promoter-driven enhanced green fluorescent protein (EGFP) reporter gene at a vector:cell ratio of 200.",
+      "3": "Transgene expression was measured 72h later.",
+      "4": "The transduction efficiency of scAAV2 and scAAV6 vectors was 3- to 5-fold higher than that of the other serotypes, which were subsequently used to transduce fibroblasts with wild-type PDHA1 cDNA under the control of the chicken beta-action (CBA) promoter at a vector:cell ratio of 1000.",
+      "5": "Total PDH-specific activity and E1alpha protein expression were determined 10 days post-transduction.",
+      "6": "Both vectors increased E1alpha expression 40-60% in both control and patient cells, and increased PDH activity in two patient cell lines.",
+      "7": "We also used dichloroacetate (DCA) to maximally activate PDH through dephosphorylation of E1alpha.",
+      "8": "Exposure for 24h to 5mM DCA increased PDH activity in non-transduced control (mean 37% increase) and PDH deficient (mean 44% increase) cells.",
+      "9": "Exposure of transduced patient fibroblasts to DCA increased PDH activity up to 90% of the activity measured in untreated control cells.",
+      "10": "DCA also increased expression of E1alpha protein and, to variable extents, that of other components of the PDH complex in both non-transduced and transduced cells.",
+      "11": "These data suggest that a combined gene delivery and pharmacological approach may hold promise for the treatment of PDH deficiency."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "This study focuses on the ability of self-complementary adeno-associated virus (scAAV) vectors (a gene therapy tool that introduces genetic material using a modified virus to create a normal copy of a damaged gene) to deliver the pyruvate dehydrogenase gene called PDHA1 (a gene involved in the chemical process to create energy for the body) and create proteins. Cell samples of connective tissue from 3 patients with mutations in PDHA1 and 3 healthy patients were collected for the gene therapy process.",
+        "2": "Cells are given genetic material with scAAV vectors containing a gene that creates proteins.",
+        "3": "",
+        "4": "Two types of vectors, the scAAV2 and scAAv6, were found to be the most effective way to deliver the genetic material into cells.",
+        "5": "",
+        "6": "Both vectors increase the production of gene proteins in patients with the damaged genes and in patients with healthy cells.",
+        "7": "Dichloroacetate, a drug used to treat genetic mitochondrial diseases (diseases where the miochondria cannot create enough energy for cells), is also used to activate pyruvate dehydrogenase, (an enzyme used in metabolism to create energy).",
+        "8": "",
+        "9": "The use of dichloroacetate did increase productivity of pyruvate dehydrogenase in cells with damaged genes involved in metabolism.",
+        "10": "Dichloroacetate did increase production of proteins from certain energy-related genes and activity in other parts of pyruvate dehydrogenase (a protein involved in the chemical process that creates energy for the body).",
+        "11": "This study shows that a combination of gene therapy and drugs may be a promising treatment for people with pyruvate dehydrogenase deficiency or shortage."
+      }
+    }
+  },
+  "25666556": {
+    "Title": "Mitochondria: The ketogenic diet--A metabolism-based therapy",
+    "abstract": {
+      "1": "Mitochondria are the energy-producing organelles of the cell, generating ATP via oxidative phosphorylation mainly by using pyruvate derived from glycolytic processing of glucose.",
+      "2": "Ketone bodies generated by fatty acid oxidation can serve as alternative metabolites for aerobic energy production.",
+      "3": "The ketogenic diet, which is high in fat and low in carbohydrates, mimics the metabolic state of starvation, forcing the body to utilize fat as its primary source of energy.",
+      "4": "The ketogenic diet is used therapeutically for pharmacoresistant epilepsy and for \"rare diseases\" of glucose metabolism (glucose transporter type 1 and pyruvate dehydrogenase deficiency).",
+      "5": "As metabolic reprogramming from oxidative phosphorylation toward increased glycolysis is a hallmark of cancer cells; there is increasing evidence that the ketogenic diet may also be beneficial as an adjuvant cancer therapy by potentiating the antitumor effect of chemotherapy and radiation treatment."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Mitochondria are the parts of cells that produce energy for the body.",
+        "2": "Ketone bodies are particles made from breaking down fats and can serve as an alternative to generate energy.",
+        "3": "The ketogenic diet, which is high in fat and low in carbohydrates, forces the body to use fat as its main source of energy.",
+        "4": "The ketogenic diet is used to help drug resistant epilepsy (seizures that cannot be conrolled with medicine) and for rare diseases that impact metabolism and the process for changing sugar into energy.",
+        "5": "There is increasing evidence that the ketogenic diet may also be helpful as an additional therapy for cancer."
+      }
+    }
+  },
+  "28101805": {
+    "Title": "Ketogenic diet in pyruvate dehydrogenase complex deficiency: short- and long-term outcomes",
+    "abstract": {
+      "1": "Objectives: Our aime was to study the short- and long-term effects of ketogenic diet on the disease course and disease-related outcomes in patients with pyruvate dehydrogenase complex deficiency, the metabolic factors implicated in treatment outcomes, and potential safety and compliance issues.",
+      "2": "Methods: Pediatric patients diagnosed with pyruvate dehydrogenase complex deficiency in Sweden and treated with ketogenic diet were evaluated.",
+      "3": "Study assessments at specific time points included developmental and neurocognitive testing, patient log books, and investigator and parental questionnaires.",
+      "4": "A systematic literature review was also performed.",
+      "5": "Results: Nineteen patients were assessed, the majority having prenatal disease onset.",
+      "6": "Patients were treated with ketogenic diet for a median of 2.9 years.",
+      "7": "All patients alive at the time of data registration at a median age of 6 years.",
+      "8": "The treatment had a positive effect mainly in the areas of epilepsy, ataxia, sleep disturbance, speech/language development, social functioning, and frequency of hospitalizations.",
+      "9": "It was also safe-except in one patient who discontinued because of acute pancreatitis.",
+      "10": "The median plasma concentration of ketone bodies (3-hydroxybutyric acid) was 3.3 mmol/l.",
+      "11": "Poor dietary compliance was associated with relapsing ataxia and stagnation of motor and neurocognitive development.",
+      "12": "Results of neurocognitive testing are reported for 12 of 19 patients.",
+      "13": "Conclusion: Ketogenic diet was an effective and safe treatment for the majority of patients.",
+      "14": "Treatment effect was mainly determined by disease phenotype and attainment and maintenance of ketosis."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "A ketogenic diet is a low carb, high-fat diet that can help create fuel for the body when glucose levels are low. The aim of this study is to find the short- and long-term effects of a ketogenic diet on disease progression and disease-related outcomes (changes in health) in patients with pyruvate dehydrogenase complex deficiency, a rare disease that impacts the nervous system. The effects of a ketogenic diet on the body's chemical process to turn food into energy and potential safety issues are also studied.",
+        "2": "Child patients diagnosed with pyruvate dehydrogenase complex deficiency in Sweden and treated with a ketogenic diet are evaluated in this study.",
+        "3": "The study includes different tests on development and brain function, recording assessments in patient log books, and a series of questions for both researchers and parents to answer.",
+        "4": "A review of all relevant research on this topic is also performed.",
+        "5": "Nineteen patients were included in the study. For most of the patients, the disease developed during pregnancy.",
+        "6": "Patients were treated with ketogenic diet for about 2.9 years, but this time varied.",
+        "7": "All patients alive at the time of data registration were about 6 years old, but the age did vary.",
+        "8": "The treatment has a positive effect mainly in the areas of epilepsy (a disorder that causes seizures), ataxia (loss of control of movement), sleep disturbance, speech/language development, social functioning (the ability to engage with others), and the number of hospitalizations.",
+        "9": "It is also safe-except in one patient who had to stop because of acute pancreatitis, where the pancreas becomes swollen over a short period of time.",
+        "10": "",
+        "11": "Not staying on the diet regularly is connected with returning ataxia (loss of control of movement) and slowing or stopping of the strengthening of bones and muscles and brain development.",
+        "12": "",
+        "13": "Ketogenic diet is an effective and safe treatment for the majority of patients.",
+        "14": "How effective treatment is was mostly determined by physical traits or characteristics of patients and by if the body reaches and maintains ketosis, a process where the body burns stored fat for energy instead of glucose."
+      }
+    }
+  },
+  "31161145": {
+    "Title": "Pyruvate Dehydrogenase Complex Deficiency: An Unusual Cause of Recurrent Lactic Acidosis in a Paediatric Critical Care Unit",
+    "abstract": {
+      "1": "Pyruvate dehydrogenase complex deficiency (PDCD) is a rare neurodegenerative disorder associated with abnormal mitochondrial metabolism.",
+      "2": "Structural brain abnormalities are common in PDCD.",
+      "3": "A case of a patient with PDCD with an unusual presentation is described.",
+      "4": "A 20-month-old boy with hypotonia and developmental delay, presented with hypoxia and respiratory distress due to bronchiolitis.",
+      "5": "During hospitalisation, he was prescribed PediaSure® feeds.",
+      "6": "Two days after starting these feeds, he developed respiratory arrest requiring intubation.",
+      "7": "His blood gas before arrest revealed lactate of 8.9 mmol/L despite normal haemodynamics.",
+      "8": "After stabilisation and a period of compulsory fasting, subsequent feeding with PediaSure® resulted in the recurrence of lactic acidosis.",
+      "9": "A metabolic workup revealed an elevated serum pyruvate level.",
+      "10": "Brain MRI was normal.",
+      "11": "Skeletal muscle biopsy confirmed PDCD.",
+      "12": "The most common cause of PDCD is a mutation in the X-linked PDHA1 gene.",
+      "13": "The severity of PDCD can range from neonatal death to more delayed onset of symptoms as in our index case.",
+      "14": "Normal brain MRI is reported in only 2% of patients with PDCD.",
+      "15": "There is no effective treatment for PDCD.",
+      "16": "In patients with proximal muscle weakness and feeding intolerance with glucose-containing feeds, the presence of lactic acidosis should raise the suspicion of PDCD irrespective of the patient's age and normal MRI."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Pyruvate dehydrogenase complex deficiency (PDCD) or shortage is a rare disorder that can impact metabolism and lead to problems in the brain and nerves.",
+        "2": "Structural brain abnormalities are common in PDCD.",
+        "3": "A case of a patient with PDCD is described.",
+        "4": "A 20-month-old boy with hypotonia (low muscle tone) and developmental delay, was seen by doctors and also had hypoxia (low levels of oxygen in tissues) and trouble breathing due to bronchiolitis (a lung infection).",
+        "5": "While in the hospital, he was prescribed PediaSure® feeds, a child formula or nutritional food product.",
+        "6": "Two days after starting these feeds, he stopped breathing and needed a tube inserted in his throat to help him breathe.",
+        "7": "",
+        "8": "After being stable and fasting (no food or drinks), feeding with PediaSure® resulted in the recurrence of lactic acidosis (lactic acid build up that can cause nausea, vomiting, and breathing problem).",
+        "9": "",
+        "10": "The MRI (scanned image) of the brain was normal.",
+        "11": "Pyruvate dehydrogenase complex deficiency (PDCD) was confirmed by viewing the muscle tissue under a microscope.",
+        "12": "The most common cause of PDCD is a mutation in one of the genes called PDHA1 (a gene that encodes a building block of PCD).",
+        "13": "The seriousness of PDCD can range from infant death to more delayed onset of symptoms as in the child case described here.",
+        "14": "A normal brain MRI is reported in only 2% of patients with PDCD.",
+        "15": "There is no effective treatment for PDCD.",
+        "16": "In patients with muscle weakness and who are unable to eat foods with glucose, the presence of lactic acidosis should raise the suspicion of PDCD regardless of the patient's age and normal MRI."
+      }
+    }
+  },
+  "31627352": {
+    "Title": "Ketogenic Diet: A New Light Shining on Old but Gold Biochemistry",
+    "abstract": {
+      "1": "Diets low in carbohydrates and proteins and enriched in fat stimulate the hepatic synthesis of ketone bodies (KB).",
+      "2": "These molecules are used as alternative fuel for energy production in target tissues.",
+      "3": "The synthesis and utilization of KB are tightly regulated both at transcriptional and hormonal levels.",
+      "4": "The nuclear receptor peroxisome proliferator activated receptor α (PPARα), currently recognized as one of the master regulators of ketogenesis, integrates nutritional signals to the activation of transcriptional networks regulating fatty acid β-oxidation and ketogenesis.",
+      "5": "New factors, such as circadian rhythms and paracrine signals, are emerging as important aspects of this metabolic regulation.",
+      "6": "However, KB are currently considered not only as energy substrates but also as signaling molecules.",
+      "7": "β-hydroxybutyrate has been identified as class I histone deacetylase inhibitor, thus establishing a connection between products of hepatic lipid metabolism and epigenetics.",
+      "8": "Ketogenic diets (KD) are currently used to treat different forms of infantile epilepsy, also caused by genetic defects such as Glut1 and Pyruvate Dehydrogenase Deficiency Syndromes.",
+      "9": "However, several researchers are now focusing on the possibility to use KD in other diseases, such as cancer, neurological and metabolic disorders.",
+      "10": "Nonetheless, clear-cut evidence of the efficacy of KD in other disorders remains to be provided in order to suggest the adoption of such diets to metabolic-related pathologies."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Diets low in carbohydrates and proteins but high in fat stimulate the liver to make fat-related energy molecules called ketone bodies (KB).",
+        "2": "Ketone bodies are molecules used as alternate fuel to produce energy for tissues in the body.",
+        "3": "Making and using ketone bodies is carefully controlled within the body at the molecule and hormone level.",
+        "4": "One hormone, known as the master regulator of the process to develop ketone bodies, helps activate the cell networks that control fatty acids and ketogenesis, the process that creates ketone bodies.",
+        "5": "New factors, such as circadian rhythms (the natural cycle of mental and physical changes in the body over 24 hours) and paracrine signals (cell signaling to communicate with other cells nearby), are becoming important aspects of this metabolic regulation that controls and monitors cell energy stores.",
+        "6": "However, ketone bodies are currently considered not only as an energy supply but also as signaling molecules that send messages to other cells or parts of the body.",
+        "7": "",
+        "8": "Ketogenic diets are currently used to treat different forms of infantile epilepsy (the onset of seizures in infancy), which is also caused by genetic defects.",
+        "9": "However, several researchers are now focusing on the possibility to use ketogenic diets in other diseases, such as cancer, brain-related and metabolic disorders.",
+        "10": "Nonetheless, clear-cut evidence of the performance of ketogenic bodies in other disorders is needed in order to suggest using such diets."
+      },
+      "adaptation2": {
+        "1": "Diets low in carbs and proteins and high in fat quicken the creation of liver ketone bodies (KB) (particles made from fat breakdown).",
+        "2": "KB are used for energy creation in certain body parts.",
+        "3": "The creation and use of KB from fat breakdown are monitored both at the cellular and multi-cellular level.",
+        "4": "The nuclear receptor peroxisome proliferator activated receptor α (PPARα) is a major regulator of the creation of KB made from fat breakdown. It combines diet signals to the start up of cellular systems monitoring fat breakdown and KB creation.",
+        "5": "New factors, like sleep-wake patterns and cellular signals, may strongly influence this metabolic monitoring.",
+        "6": "However, KB are not just energy particles but also signaling particles.",
+        "7": "β-hydroxybutyrate (a particle made from fat breakdown) blocks some cellular processes. This creates a connection between products of liver fat breakdown and changes in gene expression without changes to the DNA sequence.",
+        "8": "Ketogenic diets (KD) or low-carb diets are used to treat different forms of infatile epilepsy, a disorder in babies that disturbs brain and nerve activity and causes seizures. Infantile epilepsy is also caused by flaws in gene expression.",
+        "9": "However, researchers are now focusing on using KD in other diseases, such as cancer, nerve-related and metabolic disorders.",
+        "10": "More evidence is needed to use KD diets to treat diseases."
+      }
+    }
+  },
+  "31665995": {
+    "Title": "Serial Magnetic Resonance Imaging (MRI) in Pyruvate Dehydrogenase Complex Deficiency",
+    "abstract": {
+      "1": "Objectives: To report 2 additional cases of pyruvate dehydrogenase complex deficiency with reversible deep gray matter lesions following initiation of ketogenic diet and to perform a literature review of serial imaging in patients with pyruvate dehydrogenase complex.",
+      "2": "Methods: Clinical data on 3 previously unpublished cases of patients with pyruvate dehydrogenase complex deficiency and with serial magnetic resonance imagings (MRIs) before and after institution of ketogenic diet were reported.",
+      "3": "A systematic literature review was performed to search for published cases of patients with confirmed pyruvate dehydrogenase complex deficiency who underwent serial MRIs.",
+      "4": "Results: The 3 subjects in this series demonstrated clinical improvement on ketogenic diet.",
+      "5": "Two subjects showed reversal of some brain lesions on repeat MRI following initiation of ketogenic diet.",
+      "6": "Of the 21 published cases with serial MRIs, 13 patients underwent some form of treatment, and of this smaller subset 4 patients had repeat MRIs that showed definitive improvement.",
+      "7": "In both our described cases and those published in the literature, improvement occurred in lesions in the basal ganglia.",
+      "8": "Conclusions: In patients with pyruvate dehydrogenase complex deficiency, basal ganglia lesions on MRI are reversible with treatment in some cases and could serve as a biomarker for measuring response to treatment."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Pyruvate dehydrogenase complex deficiency or shortage is a rare disorder that can impact metabolism and lead to problems in the nervous sytem. The objective of this study is to describe cases of pyruvate dehydrogenase complex deficiency after starting a ketogenic (low carb/high fat) diet and to review other studies that have images of the brain in patients with the disorder.",
+        "2": "Medical information from 3 cases of patients with pyruvate dehydrogenase complex deficiency who had magnetic resonance imagings (MRIs), or scans of the brain, taken before and after they started a ketogenic diet are reported.",
+        "3": "Researchers searched for other published cases of patients with pyruvate dehydrogenase complex deficiency who also had multiple MRIs.",
+        "4": "The 3 cases in this report showed improvement by being on a ketogenic diet.",
+        "5": "Two cases showed a reversal of some brain lesions or damage on repeat MRI after starting a ketogenic diet.",
+        "6": "The study's search for other cases found 13 patients with pyruvate dehydrogenase complex deficiency who had some form of treatment, and of this group 4 patients had repeat MRIs that showed definite improvement.",
+        "7": "In all cases, improvement occurred in lesions in the basal ganglia, a part of the brain that helps coordinate movement.",
+        "8": "In patients with pyruvate dehydrogenase complex deficiency, basal ganglia lesions on MRI are reversible with treatment in some cases and could serve as a way to measure how a patient responds to treatment."
+      }
+    }
+  },
+  "32073132": {
+    "Title": "Pyruvate dehydrogenase deficiency: morphological and metabolic effects, creation of animal model to search for curative treatment",
+    "abstract": {
+      "1": "The main source of energy for brain and other organs is glucose.",
+      "2": "To obtain energy for all tissue, glucose has to come through glycolysis; then as pyruvate it is converted to acetyl-CoA by pyruvate dehydrogenase complex (PDC) and finally enters citric acid cycle.",
+      "3": "What happens when one of these stages become disturb?",
+      "4": "Mutation in genes encoding subunits of PDC leads to pyruvate dehydrogenase deficiency.",
+      "5": "Abnormalities in PDC activity result in severe metabolic and brain malformations.",
+      "6": "For better understanding the development and mechanism of pyruvate dehydrogenase deficiency the murine model of this disease has been created.",
+      "7": "Studies on a murine model showed similar malformation in brain structures as in the patients suffered from pyruvate dehydrogenase deficiency such as reduced neuronal density, heterotopias of grey matter, reduced size of corpus callosum and pyramids.",
+      "8": "There is still no effective cure for PDC-deficiency.",
+      "9": "Promising therapy seemed to be ketogenic diet, which substitutes glucose to ketone bodies as a source of energy.",
+      "10": "Studies have shown that ketogenic diet decreases lactic acidosis and inhibits brain malformations, but not the mortality in early childhood.",
+      "11": "The newest reports say that phenylbutyrate increases the level of PDC in the brain, because it reduces the level of inactive form of PDH.",
+      "12": "Experiments on human fibroblast and zebra fish PDC-deficiency model showed that phenylbutyrate is promising cure to PDC-deficiency.",
+      "13": "This review summarizes the most important findings on the metabolic and morphological effects of PDC-deficiency and research for treatment therapy."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "The main source of energy for the brain and other organs is glucose, a type of sugar in the blood that comes from the food people eat.",
+        "2": "In order for energy to reach all tissues, glucose has to go through a process with several stages. One of these stages is called pyruvate dehydrogenase complex (PDC) which converts molecules and links cells to the final stage of creating energy.",
+        "3": "What happens when one of these stages is disturbed?",
+        "4": "Genetic changes in the PDC process leads to pyruvate dehydrogenase deficiency, a disease where the body cannot properly breakdown food to create fuel or energy.",
+        "5": "Errors in PDC (pyruvate dehydrogenase complex) activity also result in severe disruption of the body's ability to process and distribute nutrients and can create brain malformations where the brain or nervous system is damaged or has not formed properly during pregnancy.",
+        "6": "To better understand the pyruvate dehydrogenase deficiency, researchers created an experiment that includes common household rats and mice.",
+        "7": "Studies using an animal experiment showed similar abnormalities in brain structures compared to patients suffering from pyruvate dehydrogenase deficiency.",
+        "8": "There is still no effective cure for pyruvate dehydrogenase complex-deficiency.",
+        "9": "Promising therapy may be a low carb, high fat diet called a ketogenic diet, where the body substitutes glucose with ketone bodies (chemicals the body makes when there is not enough glucose) as a source of energy.",
+        "10": "Studies show that a ketogenic diet decreases lactic acidosis (lactic acid build up that can cause nausea, vomiting, and breathing problems) and slows down brain malformations, but not death in early childhood.",
+        "11": "The newest reports say that phenylbutyrate, a type of salt in the body that helps remove ammonia and waste from the body, increases the level of pyruvate dehydrogenase complex in the brain.",
+        "12": "Experiments on human fibroblast (a cell found in connective tissues) and zebra fish showed that phenylbutyrate is a promising cure to dehydrogenase complex deficiency.",
+        "13": "This review summarizes the most important findings on the effects of PDC-deficiency on metabolism and development of the brain and on research for treatment therapy."
+      }
+    }
+  },
+  "32654164": {
+    "Title": "Metabolic epilepsies amenable to ketogenic therapies: Indications, contraindications, and underlying mechanisms",
+    "abstract": {
+      "1": "Metabolic epilepsies arise in the context of rare inborn errors of metabolism (IEM), notably glucose transporter type 1 deficiency syndrome, succinic semialdehyde dehydrogenase deficiency, pyruvate dehydrogenase complex deficiency, nonketotic hyperglycinemia, and mitochondrial cytopathies.",
+      "2": "A common feature of these disorders is impaired bioenergetics, which through incompletely defined mechanisms result in a wide spectrum of neurological symptoms, such as epileptic seizures, developmental delay, and movement disorders.",
+      "3": "The ketogenic diet (KD) has been successfully utilized to treat such conditions to varying degrees.",
+      "4": "While the mechanisms underlying the clinical efficacy of the KD in IEM remain unclear, it is likely that the proposed heterogeneous targets influenced by the KD work in concert to rectify or ameliorate the downstream negative consequences of genetic mutations affecting key metabolic enzymes and substrates-such as oxidative stress and cell death.",
+      "5": "These beneficial effects can be broadly grouped into restoration of impaired bioenergetics and synaptic dysfunction, improved redox homeostasis, anti-inflammatory, and epigenetic activity.",
+      "6": "Hence, it is conceivable that the KD might prove useful in other metabolic disorders that present with epileptic seizures.",
+      "7": "At the same time, however, there are notable contraindications to KD use, such as fatty acid oxidation disorders.",
+      "8": "Clearly, more research is needed to better characterize those metabolic epilepsies that would be amenable to ketogenic therapies, both experimentally and clinically.",
+      "9": "In the end, the expanded knowledge base will be critical to designing metabolism-based treatments that can afford greater clinical efficacy and tolerability compared to current KD approaches, and improved long-term outcomes for patients."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "Metabolic epilepsies (seizures) arise in the context of rare hereditary or inborn errors of metabolism (IEM) and can be caused in rare disorders.",
+        "2": "A common feature of these disorders is they cause brain-related symptoms, such as epileptic seizures, developmental delay (delays in reaching language, thinking, social, or motor skills), and movement disorders.",
+        "3": "The ketogenic diet, a low-carb/high-fat diet, has been successfully used to treat such conditions.",
+        "4": "How a ketogenic diet exactly impacts inborn errors of metabolism is not known, but it is likely that they influence the negative impacts of genetic mutations.",
+        "5": "Benefits of a ketogenic diet are broadly grouped into restoration of parts of metabolism that are impaired, improved maintenance of cells and cells processes, reduced pain and swelling, and processes that control gene activity without changing the DNA.",
+        "6": "It is possible that a ketogenic diet may be useful in other disorders of metabolism that include epileptic seizures.",
+        "7": "At the same time, there are some disorders where ketogenic diets should be avoided.",
+        "8": "More research is needed to better describe metabolic epilepsies that would benefit from a ketogenic diet.",
+        "9": "Expanding knowledge will be important to design metabolism-based treatments."
+      },
+      "adaptation2": {
+        "1": "Metabolic epilepsies (a disorder that disturbs brain and nerve activity and causes seizures) are present with rare, inborn errors of metabolism (IEM), especially with deficiencies of certain energy-monitoring molecules.",
+        "2": "These disorders commonly include weakened energy-monitoring processes, which lead to a range of nerve-related effects, including epileptic seizures, growth delay, and movement disorders.",
+        "3": "The ketogenic diet (KD) (a low-carb diet) has successfully treated these conditions to some effect.",
+        "4": "While the reasons for the usefulness of KD or low-carb diets in inborn errors of metabolism is unclear, it may be because certain targets of KD work together to improve the negative effects from gene sequence changes affecting key metabolic particles, cell stress, and cell death.",
+        "5": "These helpful effects can be grouped into restoration of weakened energy-monitoring processes and nerve-related damage, improved electrical balance, anti-inflammation, and gene-related activity.",
+        "6": "Therefore, it is possible that KD may help other metabolic disorders with epileptic seizures.",
+        "7": "However, there are issues with KD use, including fat breakdown disorders.",
+        "8": "More research is needed to explain metabolic epilepsies (disorders that disturbe brain and nerve activity and cause seizures) that may be treated with low-carb treatments.",
+        "9": "Ultimately, this new knowledge will be useful to design metabolic treatments that can further help patients compared to current KD approaches, with better long-term outcomes for patients."
+      }
+    }
+  },
+  "33092611": {
+    "Title": "Pyruvate dehydrogenase complex deficiency: updating the clinical, metabolic and mutational landscapes in a cohort of Portuguese patients",
+    "abstract": {
+      "1": "Background: The pyruvate dehydrogenase complex (PDC) catalyzes the irreversible decarboxylation of pyruvate into acetyl-CoA.",
+      "2": "PDC deficiency can be caused by alterations in any of the genes encoding its several subunits.",
+      "3": "The resulting phenotype, though very heterogeneous, mainly affects the central nervous system.",
+      "4": "The aim of this study is to describe and discuss the clinical, biochemical and genotypic information from thirteen PDC deficient patients, thus seeking to establish possible genotype-phenotype correlations.",
+      "5": "Results: The mutational spectrum showed that seven patients carry mutations in the PDHA1 gene encoding the E1α subunit, five patients carry mutations in the PDHX gene encoding the E3 binding protein, and the remaining patient carries mutations in the DLD gene encoding the E3 subunit.",
+      "6": "These data corroborate earlier reports describing PDHA1 mutations as the predominant cause of PDC deficiency but also reveal a notable prevalence of PDHX mutations among Portuguese patients, most of them carrying what seems to be a private mutation (p.R284X).",
+      "7": "The biochemical analyses revealed high lactate and pyruvate plasma levels whereas the lactate/pyruvate ratio was below 16; enzymatic activities, when compared to control values, indicated to be independent from the genotype and ranged from 8.5% to 30%, the latter being considered a cut-off value for primary PDC deficiency.",
+      "8": "Concerning the clinical features, all patients displayed psychomotor retardation/developmental delay, the severity of which seems to correlate with the type and localization of the mutation carried by the patient.",
+      "9": "The therapeutic options essentially include the administration of a ketogenic diet and supplementation with thiamine, although arginine aspartate intake revealed to be beneficial in some patients.",
+      "10": "Moreover, in silico analysis of the missense mutations present in this PDC deficient population allowed to envisage the molecular mechanism underlying these pathogenic variants.",
+      "11": "Conclusion: The identification of the disease-causing mutations, together with the functional and structural characterization of the mutant protein variants, allow to obtain an insight on the severity of the clinical phenotype and the selection of the most appropriate therapy."
+    },
+    "adaptations": {
+      "adaptation1": {
+        "1": "The pyruvate dehydrogenase complex (PDC) is a chemical process in the body that converts molecules and links cells to the final stage of creating energy.",
+        "2": "PDC deficiency or shortage is a disorder that can be caused by changes in genes.",
+        "3": "The result of PDC deficiency mainly affects the central nervous system (the spinal cord and brain).",
+        "4": "This study aims to describe the clinical, biochemical (the chemical processes in living organisms), and genetic information in 13 patients with pyruvate dehydrogenase complex (PDC) deficiency.",
+        "5": "All 13 patients carry some type of mutation in the genes that are involved in the PDC process. The mutation in the PDHA1 gene (a gene that helps encode a building block of PDC) is the most common.",
+        "6": "These data support earlier reports describing PDHA1 mutations as the main cause of PDC deficiency. The data also reveal a notable frequency of the PDHX mutation (another gene that helps encode a building block of PDC) among Portuguese patients who seem to carry a mutation in the community or population.",
+        "7": "The biochemical analysis showed high levels of lactic acid (high levels occur when oxygen in the body decreases) and high levels of pyruvate plasma (a molecule that helps change sugar in the blood to energy when oxygen levels are low).",
+        "8": "All patients showed developmental delay (delays or slowness in reaching language, thinking, or motor skills). How serious these delays are seems to match up with the type and location of the mutation carried by the patient.",
+        "9": "Treatment options include a ketogenic diet (low-carb/high-fat diet) and adding a vitamin called thiamine to the diet, although taking a supplement called arginine aspartate (used for helping to build proteins) may be beneficial in some patients.",
+        "10": "Moreover, computer modeling of these gene mutations in this PDC deficient population created a picture of underlying causes of these mutations.",
+        "11": "The identification of the disease-causing mutations provides an insight on the severity of their impact on development and the selection of the best therapy."
+      },
+      "adaptation2": {
+        "1": "The pyruvate dehydrogenase complex (PDC) quickens the permanent conversion of pyruvate (a particle used for energy-production) into acetyl-CoA (another particle used for energy production).",
+        "2": "PDC shortage can occur from changes in genes involved in creating its components.",
+        "3": "The resulting physical traits, though very different, mainly affect the brain and spinal cord.",
+        "4": "This study explores the medical, biochemical and gene-related information from thirteen PDC scarce patients. The study seeks to create possible gene-physical trait connections.",
+        "5": "",
+        "6": "The data agrees with earlier reports describing a specfic gene's sequence changes as the main cause of PDC shortage. However, the results also reveal a large presence of another gene's sequence changes among Portuguese patients. Most carry a possibly private gene sequence change.",
+        "7": "",
+        "8": "Regarding medical characteristics, all patients show coordination setback, the intensity of which seems to parallel the type and location of the patient's gene sequence change.",
+        "9": "Treatment options include administration of a low-carb diet and thiamine, although arginine aspartate may also help.",
+        "10": "",
+        "11": "Identifying disease-causing gene sequence changes, along with the altered cellular substances, help explain the physical traits caused by the disease and select the best treatment."
+      }
+    }
+  },
+  "question": "How to treat phda1?",
+  "question_type": "B"
+  }
+}
