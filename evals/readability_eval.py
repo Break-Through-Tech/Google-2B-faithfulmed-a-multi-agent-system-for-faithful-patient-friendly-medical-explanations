@@ -87,6 +87,17 @@ def summarize_results(results: list[dict]) -> list[dict]:
     """
     Summarizes the results from a list of evaluated texts.
     """
+    if not results:
+        return {
+            "num_results": 0,
+            "mean_fk_grade": None,
+            "mean_smog_index": None,
+            "mean_jargon_density": None,
+            "mean_word_count": None,
+            "percent_successful": None,
+            "percent_refusal": None
+        }
+
     n = len(results)
 
     # Creating a dictionary with all the total number of results, mean values, percentage of success, and refusal rate
@@ -129,6 +140,9 @@ def readability_target_rate(texts: list[str]) -> float:
     Calculates and returns the percentage of texts that
     meet the readability target criteria.
     """
+    if not texts:
+        return -1.0
+    
     return (sum(meets_readability_target(text) for text in texts) / len(texts)) * 100
 
 
@@ -157,5 +171,8 @@ def refusal_rate(texts: list[str]) -> float:
     Calculates and returns the percentage of texts that
     are a refusal
     """
+    if not texts:
+        return -1.0
+    
     return (sum(is_refusal(text) for text in texts) / len(texts)) * 100
 
