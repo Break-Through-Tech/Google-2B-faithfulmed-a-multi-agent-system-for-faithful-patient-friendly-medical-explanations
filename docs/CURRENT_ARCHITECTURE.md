@@ -35,12 +35,12 @@ Dataset files, annotations, manifests, data documentation, `.env.example`, and t
 - `agents/__init__.py` contains `DEFAULT_MODEL` and `run_agent_once()`. The helper creates one isolated ADK session and returns final text.
 - `agents/extractor.py` owns `create_extractor_agent()` and `run_extractor()`. Its final schema is a teammate TODO.
 - `agents/simplifier.py` owns `create_simplifier_agent()` and `run_simplifier()`. Glossary retrieval and its final output contract are TODOs.
-- `agents/verifier.py` owns `create_verifier_agent()` and `run_verifier()`. It currently requests the four fields from the starter notebook: `faithful`, `unsupported_claims`, `omissions`, and `reading_level_ok`.
+- `agents/verifier.py` owns answer- and citation-level Verifier builders. Both receive a question, candidate text, and evidence context; the citation form receives the assessed evidence snippets only.
 - `agents/refiner.py` owns `create_refiner_agent()` and `run_refiner()`. The final revision contract remains a TODO.
 - `agents/readability.py` owns `create_readability_agent()` and `run_readability()`. Its owner must decide whether the final result is a score, revised text, or both.
 - `evals/__init__.py` exposes the small Verifier evaluation types and scoring function.
-- `evals/verifier_eval.py` validates Verifier output, saves and loads JSONL predictions, and calculates unsupported-claim TP/FP/TN/FN, precision, recall, and F1 against independent human labels.
-- `tests/test_verifier_eval.py` tests scoring with synthetic data only. It never imports ADK or calls Gemini.
+- `evals/verifier_eval.py` flattens real MedAESQA answer or citation records, saves/loads JSONL predictions, and scores each level separately.
+- `tests/test_verifier_eval.py` tests the documented MedAESQA mappings with tiny offline fixtures. It never imports ADK or calls Gemini.
 - `notebooks/adk_pipeline.py` imports the five agent builders and assembles the current sequence plus the bounded Verifier/Refiner loop.
 - `notebooks/eval_harness.py` is provided starter material. It offers readability scores, a target-grade check, a basic loader for the missing full MedAESQA file, and accuracy/Cohen's kappa helpers.
 - `data/validate_annotations.py` is the existing read-only annotation validator and is separate from agent evaluation.
@@ -77,6 +77,15 @@ Use only scratch or development material while building prompts. The same patter
 
 ## Run the Verifier independently
 
+To run a small MedAESQA sample (five answers by default), load no shell variables manually: the command reads `GOOGLE_API_KEY` from the repository `.env` file.
+
+```bash
+# CALLS GEMINI ON FIVE ANSWERS
+python3 -m evals.run_verifier_examples --limit 5
+```
+
+It prints each raw result and writes `verifier_first_5_predictions.jsonl`; use `--output path/to/file.jsonl` to choose another location. This is generation, not scoring, and it never provides gold labels to the Verifier.
+
 ```bash
 # CALLS GEMINI AND MAY USE API QUOTA
 python3 - <<'PY'
@@ -91,32 +100,34 @@ print(raw_prediction)
 PY
 ```
 
-This returns raw response text. Pass it to `evals.verifier_eval.parse_prediction()` before saving or scoring it. The current output shape is provisional. Contradiction, numeric-error, and uncertainty-error fields have not been added because there is no agreed human-label mapping.
+This returns raw response text. Pass it to `evals.verifier_eval.parse_answer_prediction()` before saving it. For MedAESQA answer evaluation, pass `question=` and use the machine answer as `candidate_text`; do not provide the gold label to the agent.
 
 ## Evaluate the Verifier independently
 
 Generation and scoring are separate:
 
-1. Use `generate_predictions()` with `agents.verifier.run_verifier`, or call the agent yourself.
+1. Call `agents.verifier.run_verifier()` or `run_citation_verifier()` only when intentionally generating predictions, then parse each raw result with the matching parser.
 2. Use `save_predictions()` to keep raw predictions in JSONL.
 3. Later, use `load_predictions()` and `score_predictions()` with independent human labels. This step is offline and makes no Gemini call.
 
-The binary positive class is: **the human label says the generated claim or explanation is unsupported**.
+MedAESQA has two distinct Verifier-relevant levels:
+
+- **Answer accuracy:** `is_answer_accurate` is mapped only as `yes` → acceptable (`faithful=True`) and `no` → not acceptable (`faithful=False`). This is the dataset's answer-level judgment, not a label for the narrower assertion “contains an unsupported claim.”
+- **Citation support:** `evidence_relation` is mapped only as `supporting` → support and `contradicting` → contradiction. A citation verifier gets the question, one answer sentence, and that citation's `evidence_support` snippet. `neutral`, `not relevant`, missing evidence, and invalid/missing citations are unavailable—not negative examples.
+
+`answer_sentence_relevance` (`required`, `borderline`, `unnecessary`, `inappropriate`) measures answer relevance/completeness and is not a factual-support target. Expert answers are not string-match targets. Nuggets are not citation-support labels. The M1–M30 spreadsheet describes systems, not example labels.
+
+These mappings follow the [MedAESQA paper](https://doi.org/10.1038/s41597-025-05233-z) and its [upstream evaluator](https://github.com/deepaknlp/MedAESQA/blob/main/src/medaesqa_eval.py): the upstream evaluator reports answer accuracy, citation support rate, and citation contradiction rate as distinct measures. It does not define a binary factual-support metric for `neutral` or `not relevant`.
 
 ```python
-from evals.verifier_eval import LabeledVerifierExample, load_predictions, score_predictions
+from evals.verifier_eval import load_medaesqa_examples, load_predictions, score_predictions
 
-gold = [LabeledVerifierExample(
-    example_id="scratch-1",
-    source_text="source",
-    candidate_text="candidate",
-    gold_unsupported=True,
-)]
+gold = load_medaesqa_examples("data/medaesqa_v1.json", level="answer")
 metrics = score_predictions(gold, load_predictions("predictions.jsonl"))
 print(metrics)
 ```
 
-Malformed model output and missing human labels are excluded and reported separately. A zero denominator produces `None`, not a fake zero. False-positive and false-negative IDs are retained for review.
+Score answer and citation examples in separate calls. Malformed model output and unavailable labels are excluded and reported separately. A zero denominator produces `None`, not a fake zero. IDs preserve question, method, sentence, and citation where applicable, so false positives and negatives remain traceable.
 
 ## Shared evaluation code
 
@@ -134,7 +145,7 @@ It is not executable in the current local environment until `textstat` and sciki
 
 Use scratch and development examples while designing prompts or choosing models. Do not use the frozen test split for iteration. Looking at test results while tuning makes the final measurement unreliable.
 
-The repository contains `data/MedAESQA_methods_M1-M30.xlsx`, which documents answer-generation methods. It does not contain the questions, answers, evidence excerpts, stable IDs, or human accuracy/evidence-support judgments required for real Verifier evaluation. Real MedAESQA scoring is not currently possible, and no label mapping has been invented.
+The MedAESQA JSON is absent in this checkout, so no project metrics were generated. Once it is available locally, `load_medaesqa_examples()` supports offline scoring of saved predictions. Do not tune prompts on a frozen test set; use development or scratch examples only.
 
 ## Commands
 
@@ -160,5 +171,5 @@ The notebook command requires ADK to be installed. Any example that calls an `ag
 - The complete pipeline has not been run or medically validated.
 - There is no production pipeline module, deployment code, ablation system, or generalized runner.
 - There are no teammate evaluation files yet.
-- The Verifier schema is provisional and deterministic evaluation currently covers unsupported-claim detection only.
-- Real MedAESQA evaluation cannot run until the full labeled dataset and documented field mapping are available.
+- Citation scoring intentionally leaves neutral, not-relevant, missing-evidence, and invalid-citation cases unavailable because MedAESQA does not define them as supported or contradicted.
+- Answer and citation prediction generation require a model call; loading saved predictions and scoring them does not.

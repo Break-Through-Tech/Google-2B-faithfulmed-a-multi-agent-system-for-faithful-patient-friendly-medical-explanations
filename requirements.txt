@@ -22,7 +22,7 @@ seaborn
 
 # ── Demo (December: HF Spaces or Cloud Run) ────────────────────────────
 gradio
-# streamlit            # alternative demo framework
+streamlit             # local agent workbench
 
 # ── Optional alternatives ──────────────────────────────────────────────
 # langgraph            # alternative orchestration to ADK

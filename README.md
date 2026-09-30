@@ -16,6 +16,18 @@ python3 -m unittest discover -s tests -v
 Running any `run_*` function under `agents/` uses Google ADK, requires `GOOGLE_API_KEY`, and may use
 Gemini API quota. Building the objects in `notebooks/adk_pipeline.py` does not itself call Gemini.
 
+## Local agent workbench
+
+After installing requirements in an activated virtual environment, start the local Streamlit workbench:
+
+```bash
+python -m streamlit run workbench.py
+```
+
+It opens a Verifier-only MedAESQA workbench. It reads `GOOGLE_API_KEY` from `.env`, shows the exact
+inputs and raw output for every selected answer, compares predictions with human labels only after
+generation, and caches completed results locally. See [the workbench guide](docs/VERIFIER_WORKBENCH.md).
+
 The original team-project template follows below and can be updated as the broader project develops.
 
 > 💡 **Note for the team:** This is just a template. Update the above title with your AI Studio Challenge Project name. Remove all guidance notes and example text in this template and populate this README with your own content. You can work on this README throughout AI Studio, and get feedback from your AI Studio Coach and Challenge Advisor before finalizing it.  

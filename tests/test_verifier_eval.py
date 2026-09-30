@@ -1,92 +1,92 @@
+"""Offline fixtures only; these are not MedAESQA project results."""
+
 from __future__ import annotations
 
+import json
 import tempfile
 import unittest
 from pathlib import Path
 
 from evals.verifier_eval import (
-    LabeledVerifierExample,
+    MedAESQAExample,
     VerifierPrediction,
+    load_medaesqa_examples,
     load_predictions,
-    parse_prediction,
+    parse_answer_prediction,
+    parse_citation_prediction,
     save_predictions,
     score_predictions,
 )
 
 
-def example(example_id: str, gold: bool | None) -> LabeledVerifierExample:
-    return LabeledVerifierExample(example_id, "synthetic source", "synthetic claim", gold)
-
-
-def prediction(example_id: str, value: bool) -> VerifierPrediction:
-    return VerifierPrediction(example_id, value)
-
-
 class VerifierEvaluationTests(unittest.TestCase):
-    def test_perfect_predictions(self) -> None:
-        result = score_predictions(
-            [example("positive", True), example("negative", False)],
-            [prediction("positive", True), prediction("negative", False)],
-        )
-        self.assertEqual((result.true_positives, result.true_negatives), (1, 1))
-        self.assertEqual((result.precision, result.recall, result.f1), (1.0, 1.0, 1.0))
+    def test_answer_labels_use_yes_no_as_acceptability(self) -> None:
+        examples = [
+            MedAESQAExample("answer", "q1", "M1", "question", "answer", True, gold_label_raw="yes"),
+            MedAESQAExample("answer", "q1", "M2", "question", "answer", False, gold_label_raw="no"),
+        ]
+        result = score_predictions(examples, [
+            VerifierPrediction(examples[0].example_id, True),
+            VerifierPrediction(examples[1].example_id, False),
+        ])
+        self.assertEqual((result.evaluation_level, result.accuracy, result.f1), ("answer", 1.0, 1.0))
+        self.assertEqual(result.positive_class, "MedAESQA answer label 'yes' (acceptable)")
 
-    def test_one_false_positive(self) -> None:
-        result = score_predictions([example("fp", False)], [prediction("fp", True)])
-        self.assertEqual(result.false_positives, 1)
-        self.assertEqual(result.false_positive_ids, ("fp",))
+    def test_citation_labels_only_score_supporting_and_contradicting(self) -> None:
+        supporting = MedAESQAExample("citation", "q1", "M1", "q", "claim", True, "s1", "1", ("evidence",), "supporting")
+        contradicting = MedAESQAExample("citation", "q1", "M1", "q", "claim", False, "s2", "2", ("evidence",), "contradicting")
+        result = score_predictions([supporting, contradicting], [
+            VerifierPrediction(supporting.example_id, True), VerifierPrediction(contradicting.example_id, False),
+        ])
+        self.assertEqual((result.evaluation_level, result.true_positives, result.true_negatives), ("citation", 1, 1))
 
-    def test_one_false_negative(self) -> None:
-        result = score_predictions([example("fn", True)], [prediction("fn", False)])
-        self.assertEqual(result.false_negatives, 1)
-        self.assertEqual(result.false_negative_ids, ("fn",))
-
-    def test_mixed_confusion_counts(self) -> None:
-        examples = [example("tp", True), example("fp", False), example("tn", False), example("fn", True)]
-        predictions = [prediction("tp", True), prediction("fp", True), prediction("tn", False), prediction("fn", False)]
-        result = score_predictions(examples, predictions)
-        self.assertEqual(
-            (result.true_positives, result.false_positives, result.true_negatives, result.false_negatives),
-            (1, 1, 1, 1),
-        )
-        self.assertEqual((result.precision, result.recall, result.f1), (0.5, 0.5, 0.5))
-
-    def test_mismatched_ids_are_rejected(self) -> None:
-        with self.assertRaisesRegex(ValueError, "ID mismatch"):
-            score_predictions([example("gold", True)], [prediction("different", True)])
-
-    def test_no_predicted_positives(self) -> None:
-        result = score_predictions([example("positive", True)], [prediction("positive", False)])
-        self.assertIsNone(result.precision)
-        self.assertEqual(result.recall, 0.0)
-        self.assertIsNone(result.f1)
-
-    def test_no_actual_positives(self) -> None:
-        result = score_predictions([example("negative", False)], [prediction("negative", True)])
-        self.assertEqual(result.precision, 0.0)
-        self.assertIsNone(result.recall)
-        self.assertIsNone(result.f1)
-
-    def test_malformed_structured_prediction_is_separate(self) -> None:
-        malformed = parse_prediction("bad", '{"faithful": true}')
-        result = score_predictions([example("bad", True)], [malformed])
+    def test_neutral_is_unavailable_not_a_negative_label(self) -> None:
+        neutral = MedAESQAExample("citation", "q1", "M1", "q", "claim", None, "s1", "1", gold_label_raw="neutral", unavailable_reason="not evaluable")
+        result = score_predictions([neutral], [VerifierPrediction(neutral.example_id, False)])
         self.assertEqual(result.status, "not_evaluated")
-        self.assertEqual(result.malformed_ids, ("bad",))
+        self.assertEqual(result.unavailable_gold_ids, (neutral.example_id,))
         self.assertEqual(result.false_negatives, 0)
 
-    def test_missing_human_label_is_not_scored(self) -> None:
-        result = score_predictions([example("missing", None)], [prediction("missing", True)])
-        self.assertEqual(result.status, "not_evaluated")
-        self.assertEqual(result.missing_gold_ids, ("missing",))
-        self.assertEqual(result.false_positives, 0)
+    def test_loader_preserves_real_vocab_and_evidence_input(self) -> None:
+        fixture = [{"question_id": "q1", "question": "What?", "machine_generated_answers": {
+            "M1": {"answer": "A", "is_answer_accurate": "yes", "answer_sentences": [
+                {"answer_sentence_id": "s1", "answer_sentence": "A claim", "answer_sentence_relevance": "required",
+                 "citation_assessment": [
+                    {"cited_pmid": "10", "evidence_relation": "supporting", "evidence_support": "supports claim"},
+                    {"cited_pmid": "11", "evidence_relation": "neutral", "evidence_support": "topic only"},
+                ]}
+            ]}
+        }}]
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "fixture.json"
+            path.write_text(json.dumps(fixture), encoding="utf-8")
+            answers = load_medaesqa_examples(path, level="answer")
+            citations = load_medaesqa_examples(path, level="citation")
+        self.assertEqual((answers[0].gold_label, answers[0].question), (True, "What?"))
+        self.assertEqual(citations[0].evidence_snippets, ("supports claim",))
+        self.assertIsNone(citations[1].gold_label)
+        self.assertEqual(citations[1].gold_label_raw, "neutral")
 
-    def test_saved_predictions_can_be_scored_without_a_model_call(self) -> None:
-        original = [prediction("one", True), prediction("two", False)]
+    def test_malformed_output_is_separate_from_wrong_judgment(self) -> None:
+        example = MedAESQAExample("answer", "q1", "M1", "q", "a", True)
+        malformed = parse_answer_prediction(example.example_id, "{}")
+        result = score_predictions([example], [malformed])
+        self.assertEqual((result.status, result.malformed_ids, result.false_negatives), ("not_evaluated", (example.example_id,), 0))
+
+    def test_answer_parser_accepts_markdown_fenced_json(self) -> None:
+        prediction = parse_answer_prediction("q1:M1", '```json\n{"faithful": false}\n```')
+        self.assertEqual((prediction.predicted_label, prediction.malformed_error), (False, None))
+
+    def test_citation_parser_rejects_unknown_verdict(self) -> None:
+        prediction = parse_citation_prediction("q:M:s:1", '{"citation_verdict": "neutral"}')
+        self.assertIsNotNone(prediction.malformed_error)
+
+    def test_saved_predictions_rescore_without_model_call(self) -> None:
+        original = [VerifierPrediction("q1:M1", True)]
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "predictions.jsonl"
             save_predictions(path, original)
-            loaded = load_predictions(path)
-        self.assertEqual(loaded, original)
+            self.assertEqual(load_predictions(path), original)
 
 
 if __name__ == "__main__":

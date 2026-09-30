@@ -4,19 +4,15 @@ from __future__ import annotations
 
 from typing import Any
 
-from . import DEFAULT_MODEL, run_agent_once
+from . import run_agent_once
 
-
-EXPECTED_OUTPUT_FIELDS = (
-    "faithful",
-    "unsupported_claims",
-    "omissions",
-    "reading_level_ok",
-)
+# Gemini returned 404 for the repository-wide legacy default (gemini-2.0-flash)
+# in September 2026. Keep this override scoped to the Verifier.
+VERIFIER_DEFAULT_MODEL = "gemini-3.8-flash"
 
 
 def create_verifier_agent(
-    model: str = DEFAULT_MODEL,
+    model: str = VERIFIER_DEFAULT_MODEL,
     *,
     candidate_state_key: str = "candidate_text",
 ) -> Any:
@@ -26,17 +22,10 @@ def create_verifier_agent(
         from google.adk.agents import LlmAgent
     except ImportError as exc:
         raise RuntimeError("Install requirements.txt before creating the Verifier agent.") from exc
-    candidate_placeholder = "{" + candidate_state_key + "}"
     return LlmAgent(
         name="Verifier",
         model=model,
-        instruction=(
-            "Compare the generated explanation with the original medical source. Return one JSON "
-            "object with exactly these fields: faithful (boolean), unsupported_claims (list of "
-            "strings), omissions (list of strings), and reading_level_ok (boolean). Be strict: an "
-            "unsupported clinical claim is a failure.\n\nORIGINAL MEDICAL SOURCE:\n{source_text}\n\n"
-            f"GENERATED EXPLANATION:\n{candidate_placeholder}"
-        ),
+        instruction="{evaluation_prompt}",
         output_key="verdict",
     )
 
@@ -44,15 +33,22 @@ def create_verifier_agent(
 async def run_verifier(
     source_text: str,
     candidate_text: str,
-    model: str = DEFAULT_MODEL,
+    model: str = VERIFIER_DEFAULT_MODEL,
+    *,
+    question: str = "",
+    evidence_context: str | None = None,
 ) -> str:
-    """Run only the Verifier and return its raw structured response text."""
+    """Compatibility wrapper for an ad-hoc answer-only Verifier request."""
+    from evals.verifier_workbench import prompt_for
+    payload = {"question_id": "ad_hoc", "question": question, "method_id": "ad_hoc", "candidate_answer": candidate_text,
+               "sentences": [], "evidence_context": evidence_context if evidence_context is not None else source_text}
+    return await run_medaesqa_verifier(prompt_for(payload), model)
 
-    return await run_agent_once(
-        create_verifier_agent(model),
-        state={"source_text": source_text, "candidate_text": candidate_text},
-        message="Verify the generated explanation against the medical source.",
-    )
+
+async def run_medaesqa_verifier(evaluation_prompt: str, model: str = VERIFIER_DEFAULT_MODEL) -> str:
+    """One Gemini call for one complete MedAESQA answer and its evidence items."""
+    return await run_agent_once(create_verifier_agent(model), state={"evaluation_prompt": evaluation_prompt},
+                                message="Return the requested JSON verification object.")
 
 
 # TODO: Add contradiction, numeric, and uncertainty fields only after the team agrees on
