@@ -8,7 +8,7 @@ from . import DEFAULT_MODEL, run_agent_once
 
 
 def create_readability_agent(model: str = DEFAULT_MODEL) -> Any:
-    """Create the starter Readability agent from the provided notebook instruction."""
+    """Create the Readability agent."""
 
     try:
         from google.adk.agents import LlmAgent
@@ -18,8 +18,20 @@ def create_readability_agent(model: str = DEFAULT_MODEL) -> Any:
         name="Readability",
         model=model,
         instruction=(
-            "Polish the draft to a Flesch-Kincaid grade level of 8 or below while preserving every "
-            "fact. Do not introduce new clinical content.\n\nDRAFT:\n{draft}"
+            "You are a medical readability agent. "
+            "Your task is to improve the readability of a medical draft while "
+            "preserving every clinical fact and meaning.\n\n"
+            "The requirements include: "
+            "- Rewrite the draft to target a Flesch-Kincaid grade level of 8 or below.\n"
+            "- Preserve every fact in the original draft.\n"
+            "- Do NOT add new clinical information.\n"
+            "- Do NOT remove or change the clinical information.\n"
+            "- Do NOT hallucinate.\n"
+            "- If the draft is a refusal, is outside of the agent's scope, or is not medical, "
+            "return exactly \"I am unable to help.\"\n"
+            "- Return only the revised draft or the refusal and nothing else.\n"
+            "- Do NOT explain your changes.\n"
+            "\nDRAFT:\n{draft}"
         ),
         output_key="final",
     )
@@ -31,7 +43,7 @@ async def run_readability(draft: str, model: str = DEFAULT_MODEL) -> str:
     return await run_agent_once(
         create_readability_agent(model),
         state={"draft": draft},
-        message="Check and improve the draft's readability without changing its facts.",
+        message="Return the improved the draft.",
     )
 
 
