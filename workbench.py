@@ -140,6 +140,9 @@ def main() -> None:
     elif agent == "Refiner":
         from evals.refiner_workbench import refiner_page
         refiner_page()
+    elif agent == "Readability":
+        from evals.readability_workbench import readability_page
+        readability_page()
     else: placeholder_page(agent)
 
 

@@ -6,6 +6,8 @@ from typing import Any
 
 from . import DEFAULT_MODEL, run_agent_once
 
+READABILITY_DEFAULT_MODEL = "gemini-3.8-flash"
+
 
 def create_readability_agent(model: str = DEFAULT_MODEL) -> Any:
     """Create the Readability agent."""
