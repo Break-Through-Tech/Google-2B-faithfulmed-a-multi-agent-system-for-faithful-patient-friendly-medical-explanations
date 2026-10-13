@@ -83,7 +83,7 @@ def evaluate_multiple(texts: list[str]) -> list[dict]:
     return results
 
 
-def summarize_results(results: list[dict]) -> list[dict]:
+def summarize_results(results: list[dict]) -> dict:
     """
     Summarizes the results from a list of evaluated texts.
     """

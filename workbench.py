@@ -404,6 +404,12 @@ def main() -> None:
     if agent == "Verifier":
         st.title("FaithfulMed Verifier Workbench"); st.caption("Exploratory MedAESQA results only—not final research results.")
         verifier_page()
+    elif agent == "Refiner":
+        from evals.refiner_workbench import refiner_page
+        refiner_page()
+    elif agent == "Readability":
+        from evals.readability_workbench import readability_page
+        readability_page()
     else: placeholder_page(agent)
 
 
