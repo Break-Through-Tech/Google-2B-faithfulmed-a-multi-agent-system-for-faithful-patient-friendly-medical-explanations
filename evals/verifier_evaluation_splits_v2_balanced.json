@@ -1,0 +1,83 @@
+{
+  "name": "medaesqa_verifier_evaluation_splits_v2_balanced",
+  "dataset": "medaesqa_v1.json",
+  "selection_seed": 20261010,
+  "selection_method": "Each split was selected with a fixed seed and exactly five human-gold yes and five human-gold no answer-accuracy labels. One machine answer was randomly chosen among methods eligible for its requested label, and Question IDs are unique across all splits. Prompt-development is sampled from historical workbench Question IDs; validation and final-test are sampled from Question IDs absent from historical workbench runs.",
+  "historical_manifests_preserved": ["verifier_evaluation_splits.json", "verifier_frozen_test_set.json", "verifier_prompt_development_batch.json"],
+  "historical_verifier_question_ids": ["116", "117", "118", "119", "120", "121", "122", "124", "126", "127", "129", "133", "142", "150"],
+  "balance_note": "These are balanced diagnostic sets. Their 50/50 answer-accuracy distribution checks both classes but does not represent the natural yes/no prevalence in MedAESQA, so raw accuracy from these sets is not an estimate of natural-population performance. Only answer_accuracy is balanced.",
+  "splits": {
+    "prompt-development": {
+      "role": "Inspect errors and revise prompts here. Records preferentially use Question IDs previously scored in the workbench.",
+      "previously_used": true,
+      "selection_seed": 20261010,
+      "answer_accuracy_target_counts": {"yes": 5, "no": 5},
+      "label_counts": {
+        "answer_accuracy": {"yes": 5, "no": 5},
+        "sentence_relevance": {"borderline": 1, "required": 11, "unnecessary": 4},
+        "evidence_relation": {"neutral": 2, "not relevant": 10, "supporting": 10},
+        "citation_entries_without_evidence_support": 10
+      },
+      "records": [
+        {"question_id": "126", "method_id": "M22"},
+        {"question_id": "119", "method_id": "M9"},
+        {"question_id": "117", "method_id": "M7"},
+        {"question_id": "118", "method_id": "M5"},
+        {"question_id": "150", "method_id": "M5"},
+        {"question_id": "142", "method_id": "M30"},
+        {"question_id": "127", "method_id": "M22"},
+        {"question_id": "121", "method_id": "M25"},
+        {"question_id": "116", "method_id": "M22"},
+        {"question_id": "129", "method_id": "M20"}
+      ]
+    },
+    "validation": {
+      "role": "Compare candidate prompt versions. Once results influence a prompt choice, this split is no longer untouched final data.",
+      "previously_used": false,
+      "selection_seed": 20261011,
+      "answer_accuracy_target_counts": {"yes": 5, "no": 5},
+      "label_counts": {
+        "answer_accuracy": {"yes": 5, "no": 5},
+        "sentence_relevance": {"borderline": 1, "required": 22, "unnecessary": 4},
+        "evidence_relation": {"invalid citation": 3, "neutral": 3, "not relevant": 9, "supporting": 22},
+        "citation_entries_without_evidence_support": 12
+      },
+      "records": [
+        {"question_id": "148", "method_id": "M10"},
+        {"question_id": "144", "method_id": "M15"},
+        {"question_id": "137", "method_id": "M28"},
+        {"question_id": "136", "method_id": "M16"},
+        {"question_id": "138", "method_id": "M10"},
+        {"question_id": "123", "method_id": "M15"},
+        {"question_id": "149", "method_id": "M21"},
+        {"question_id": "154", "method_id": "M30"},
+        {"question_id": "155", "method_id": "M22"},
+        {"question_id": "147", "method_id": "M22"}
+      ]
+    },
+    "final-test": {
+      "role": "Keep unseen while developing and comparing prompts. Run only after the prompt, model, and settings are locked; if results lead to changes, replace this split before the next final evaluation.",
+      "previously_used": false,
+      "selection_seed": 20261012,
+      "answer_accuracy_target_counts": {"yes": 5, "no": 5},
+      "label_counts": {
+        "answer_accuracy": {"yes": 5, "no": 5},
+        "sentence_relevance": {"borderline": 2, "required": 17, "unnecessary": 2},
+        "evidence_relation": {"neutral": 1, "not relevant": 12, "supporting": 29},
+        "citation_entries_without_evidence_support": 12
+      },
+      "records": [
+        {"question_id": "152", "method_id": "M29"},
+        {"question_id": "135", "method_id": "M20"},
+        {"question_id": "139", "method_id": "M11"},
+        {"question_id": "143", "method_id": "M15"},
+        {"question_id": "141", "method_id": "M28"},
+        {"question_id": "146", "method_id": "M22"},
+        {"question_id": "153", "method_id": "M15"},
+        {"question_id": "128", "method_id": "M5"},
+        {"question_id": "132", "method_id": "M30"},
+        {"question_id": "131", "method_id": "M22"}
+      ]
+    }
+  }
+}

@@ -22,7 +22,7 @@ seaborn
 
 # ── Demo (December: HF Spaces or Cloud Run) ────────────────────────────
 gradio
-streamlit             # local agent workbench
+streamlit>=1.35       # local agent workbench; dataframe row selection
 
 # ── Optional alternatives ──────────────────────────────────────────────
 # langgraph            # alternative orchestration to ADK

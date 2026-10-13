@@ -1,0 +1,58 @@
+{
+  "name": "medaesqa_verifier_evaluation_splits_v1",
+  "dataset": "medaesqa_v1.json",
+  "selection_seed": 20261009,
+  "selection_method": "Prompt-development retains the prior saved records. Validation and final-test use a reproducible random sample of question IDs unseen in saved historical Verifier runs, then one reproducibly sampled method per question.",
+  "historical_verifier_question_ids_excluded_from_validation_and_final": ["116", "117", "118", "119", "120", "121", "122", "124", "126", "127", "129", "133", "142", "150"],
+  "eligible_unseen_question_id_count": 26,
+  "splits": {
+    "prompt-development": {
+      "role": "Inspect errors and revise prompts here. Previously scored examples are intentionally included.",
+      "previously_used": true,
+      "records": [
+        {"question_id": "127", "method_id": "M6"},
+        {"question_id": "126", "method_id": "M13"},
+        {"question_id": "120", "method_id": "M19"},
+        {"question_id": "117", "method_id": "M10"},
+        {"question_id": "118", "method_id": "M10"},
+        {"question_id": "133", "method_id": "M15"},
+        {"question_id": "150", "method_id": "M29"},
+        {"question_id": "129", "method_id": "M28"},
+        {"question_id": "142", "method_id": "M25"},
+        {"question_id": "124", "method_id": "M22"}
+      ]
+    },
+    "validation": {
+      "role": "Compare candidate prompt versions. Once results influence a prompt choice, this split is no longer untouched final data.",
+      "previously_used": false,
+      "records": [
+        {"question_id": "151", "method_id": "M20"},
+        {"question_id": "134", "method_id": "M20"},
+        {"question_id": "143", "method_id": "M23"},
+        {"question_id": "131", "method_id": "M6"},
+        {"question_id": "138", "method_id": "M28"},
+        {"question_id": "128", "method_id": "M8"},
+        {"question_id": "154", "method_id": "M10"},
+        {"question_id": "146", "method_id": "M7"},
+        {"question_id": "153", "method_id": "M24"},
+        {"question_id": "135", "method_id": "M22"}
+      ]
+    },
+    "final-test": {
+      "role": "Keep unseen while developing and comparing prompts. Run only after the prompt, model, and settings are locked; if results lead to changes, replace this split before the next final evaluation.",
+      "previously_used": false,
+      "records": [
+        {"question_id": "130", "method_id": "M20"},
+        {"question_id": "145", "method_id": "M15"},
+        {"question_id": "155", "method_id": "M22"},
+        {"question_id": "140", "method_id": "M21"},
+        {"question_id": "141", "method_id": "M15"},
+        {"question_id": "152", "method_id": "M26"},
+        {"question_id": "139", "method_id": "M24"},
+        {"question_id": "132", "method_id": "M7"},
+        {"question_id": "137", "method_id": "M17"},
+        {"question_id": "147", "method_id": "M6"}
+      ]
+    }
+  }
+}

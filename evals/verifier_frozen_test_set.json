@@ -1,0 +1,12 @@
+{
+  "name": "medaesqa_verifier_frozen_v1",
+  "dataset": "medaesqa_v1.json",
+  "description": "Five fixed MedAESQA machine-answer records for reproducible Verifier comparisons across workbench hostings.",
+  "records": [
+    {"question_id": "127", "method_id": "M6"},
+    {"question_id": "126", "method_id": "M13"},
+    {"question_id": "120", "method_id": "M19"},
+    {"question_id": "117", "method_id": "M10"},
+    {"question_id": "118", "method_id": "M10"}
+  ]
+}

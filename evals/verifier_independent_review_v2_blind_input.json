@@ -1,0 +1,1334 @@
+{
+  "schema": "faithfulmed_medaesqa_blind_review_input_v1",
+  "source_manifest": "verifier_evaluation_splits_v2_balanced.json",
+  "reviewer_notice": "This input intentionally excludes all human labels, gold fields, Gemini predictions, Gemini justifications, and evaluation scores. Expert-curated answers are reference context, not infallible ground truth.",
+  "splits": {
+    "prompt-development": [
+      {
+        "question_id": "126",
+        "method_id": "M22",
+        "question": "what is nondisjunction and what causes it?",
+        "candidate_answer": "Nondisjunction is not mentioned in the given context. However, the question \"What is it?\" can be interpreted as asking for the name or function of an object. In the given context, it seems that children are more interested in the function of an object when they ask \"What is it?\". . [15147491].",
+        "expert_curated_answer": " Nondisjunction is the errors in splitting genetic materials when our body cells divide [17911163]. A type of cell division that takes only one of two copies of each chromosome (cell structures that store genetic information) from the parent cell, for the baby to have a set of chromosomes from each parent, is called meiosis. When the cells divide for growth and to maintain our bodies, the number of chromosomes remains the same in the new cells, and this type of cell division is called mitosis. Non-disjunction can happen during both types of cell division [9557829, 6232200]. When the chromosomes fail to split properly, it causes a condition called aneuploidy (having too many or too few chromosomes instead of the normal two of each)[11283700, 35788750]. Nondisjunction can be caused by the genes and environment [7789361]. During meiosis, both women's eggs and male sperm may have faulty chromosomes. It happens more often in older women [9557829, 35270022] and in men who inherited faulty chromosomes [21311180]. Hormone imbalance plays an important role in nondisjunction [4096700]. Faulty chromosomes in sperm were linked to drug treatments, occupational agents and lifestyle [17292877].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Nondisjunction is not mentioned in the given context.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "However, the question \"What is it?\" can be interpreted as asking for the name or function of an object.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "In the given context, it seems that children are more interested in the function of an object when they ask \"What is it?\". .",
+            "citations": []
+          }
+        ]
+      },
+      {
+        "question_id": "119",
+        "method_id": "M9",
+        "question": "what drug or combination of drugs is most popular for treating stage 4 copd?",
+        "candidate_answer": "The most popular treatment for stage 4 COPD involves a combination of inhaled medications targeting multiple disease processes [26417965, 34428673]. The most common combination is triple therapy, which includes a long-acting beta-agonist (LABA), a long-acting muscarinic antagonist (LAMA), and an inhaled corticosteroid (ICS) [26417965]. This combination is often preferred over dual therapy, which may include LABA + ICS or LAMA + LABA [23767419]. While the effectiveness of triple therapy compared to dual therapy is still under investigation, it is considered a common approach for managing advanced COPD [23767419, 17310045]. \n\n",
+        "expert_curated_answer": " Drugs are used to lessen the symptoms of COPD and prevent flare-ups [28246430, 18044097]. Combinations of drugs that include inhaled corticosteroids (steroid sprays or powders that you breathe in to reduce inflammation) improve quality of life [35547781], reduce risk of death [35207460, 34301267] and flare-ups [34301267, 28220381], improve breathing  and reduce symptoms[32335859]. The most effective triple combinations were  inhaled corticosteroid/long-acting muscarinic antagonist/long-acting β2-agonist (ICS/LAMA/LABA), such as budesonide/glycopyrronium/formoterol fumarate [32335859]. Muscarinic antagonists help the small muscles and other lung tissues work properly.  Long-acting β2-agonists, also called bronchodilators, relax the muscles in the airways, helping them to open up.",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "The most popular treatment for stage 4 COPD involves a combination of inhaled medications targeting multiple disease processes [26417965, 34428673].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "34428673",
+                "evidence_support": "Combination treatments, targeting multiple disease processes, benefit subjects with acute exacerbation of chronic obstructive pulmonary disease (AECOPD)"
+              },
+              {
+                "citation_id": "1:1",
+                "cited_pmid": "26417965",
+                "evidence_support": "The most common maintenance treatment was inhaled corticoids (ICS) (80.9%) followed by long-acting beta-agonists (LABA) (75.4%). The most common combination was triple therapy (LABA+ LAMA+ICS) (56.2%) followed by LABA+ICS dual therapy (18.2%) regardless of the severity of COPD."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "The most common combination is triple therapy, which includes a long-acting beta-agonist (LABA), a long-acting muscarinic antagonist (LAMA), and an inhaled corticosteroid (ICS) [26417965].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "26417965",
+                "evidence_support": "The most common combination was triple therapy (LABA+ LAMA+ICS) (56.2%) followed by LABA+ICS dual therapy (18.2%) regardless of the severity of COPD. "
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "This combination is often preferred over dual therapy, which may include LABA + ICS or LAMA + LABA [23767419].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "23767419",
+                "evidence_support": "If patients remain symptomatic despite monotherapy, dual therapy with a long-acting anticholinergic and a LABA, or a LABA and an ICS, may be beneficial."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "While the effectiveness of triple therapy compared to dual therapy is still under investigation, it is considered a common approach for managing advanced COPD [23767419, 17310045].",
+            "citations": [
+              {
+                "citation_id": "4:0",
+                "cited_pmid": "23767419",
+                "evidence_support": "Triple therapy (ie, a long-acting anticholinergic, a LABA, and an ICS) also is used, but it is unclear if triple therapy is superior to dual therapy."
+              },
+              {
+                "citation_id": "4:1",
+                "cited_pmid": "17310045",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "117",
+        "method_id": "M7",
+        "question": "What will mutation in runx2 affect in the future?",
+        "candidate_answer": "Mutation in the RUNX2 gene will likely lead to cleidocranial dysplasia (CCD), a condition characterized by skeletal abnormalities, particularly affecting the development of bones and teeth. This is due to the haploinsufficiency of the RUNX2 gene, which is known to be responsible for CCD [29058294]. Additionally, specific mutations such as insertions and deletions in the RUNX2 gene can further complicate the phenotype associated with this condition [29089101].",
+        "expert_curated_answer": " The effect of the runx2 mutation depends on the kind of the mutation. This gene mostly affects bone development [19734454, 24222232, 32385263]. Mutations can cause bone deformities, height lower than expected, extra teeth and other dental problems [19734454, 24222232, 17290219, 19744171, 35235174, 32360898]. Later in life, having more RUNX2 is linked to cancers, such as pancreatic and bone cancer [29558908], prostate and breast cancer [33411419], and small cell lung cancer [34810201].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Mutation in the RUNX2 gene will likely lead to cleidocranial dysplasia (CCD), a condition characterized by skeletal abnormalities, particularly affecting the development of bones and teeth.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "This is due to the haploinsufficiency of the RUNX2 gene, which is known to be responsible for CCD [29058294].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "29058294",
+                "evidence_support": "Haploinsufficiency of the runt-related transcription factor 2 (Runx2) gene is widely known to be responsible for cleidocranial dysplasia (CCD)."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "Additionally, specific mutations such as insertions and deletions in the RUNX2 gene can further complicate the phenotype associated with this condition [29089101].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "29089101",
+                "evidence_support": "Our findings demonstrated that the novel c.243-260delGGCGGCTGCGGCGGCGGC mutation resulted in CCD. These results extend the spectrum of RUNX2 mutations in CCD patients and suggest a functional role of the novel mutation in CCD."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "118",
+        "method_id": "M5",
+        "question": "how long does a minor cornea injury take to heal without medical attention?",
+        "candidate_answer": "The given context does not provide information about the healing time of a minor cornea injury without medical attention.",
+        "expert_curated_answer": " Most corneal injuries heal in 24 to 72 hours [15259527, 8644566]. If the injury is greater than 4mm and vision is not getting better, a doctor should evaluate it again after 24 hours [23317075]. Severe injuries might need two weeks of treatment or more [29355667].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "The given context does not provide information about the healing time of a minor cornea injury without medical attention.",
+            "citations": []
+          }
+        ]
+      },
+      {
+        "question_id": "150",
+        "method_id": "M5",
+        "question": "what are the effectiveness of physical therapy interventions in reducing pain in patients with lumbar disc herniation?",
+        "candidate_answer": "The effectiveness of physical therapy interventions in reducing pain in patients with lumbar disc herniation was evaluated using a logistic model and gradient boosting machine (GBM) [35602348]. The mathematical expression ability of the logistic regression model for patients with lumbar disc herniation undergoing physical therapy was sufficient, and the global determination coefficient was 0.721 [35602348]. The final results of the whole course of treatment were predicted by the measured values of 2-9 times of treatment [35602348]. The pain was evaluated by the visual analogue scale (VAS) before each treatment [35602348]. The results would be better.",
+        "expert_curated_answer": " Physical therapy is effective as the first line treatment of lumbar disc herniation [18394495, 28505956, 38389961], and pain reducing physical therapies such as cold or electrotherapy are effective additional treatments [11552355]. Specific successful procedures include mobilization therapies, exercise, traction [11552355, 18394495, 35774300, 38799754, 38398287], and decompression [28505956].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "The effectiveness of physical therapy interventions in reducing pain in patients with lumbar disc herniation was evaluated using a logistic model and gradient boosting machine (GBM) [35602348].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "35602348",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "The mathematical expression ability of the logistic regression model for patients with lumbar disc herniation undergoing physical therapy was sufficient, and the global determination coefficient was 0.721 [35602348].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "35602348",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "The final results of the whole course of treatment were predicted by the measured values of 2-9 times of treatment [35602348].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "35602348",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "The pain was evaluated by the visual analogue scale (VAS) before each treatment [35602348].",
+            "citations": [
+              {
+                "citation_id": "4:0",
+                "cited_pmid": "35602348",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "5",
+            "answer_sentence": "The results would be better.",
+            "citations": []
+          }
+        ]
+      },
+      {
+        "question_id": "142",
+        "method_id": "M30",
+        "question": "what medication has a drug interaction with high blood pressure?",
+        "candidate_answer": "The context provided does not specify a particular medication that has a drug interaction with high blood pressure. However, statins are mentioned in relation to their blood pressure-lowering effects, suggesting they may interact positively with high blood pressure management [19365283]. For specific drug interactions, it is essential to consult detailed pharmacological resources or guidelines.",
+        "expert_curated_answer": " Many drugs increase blood pressure by themselves [22195528, 7777726] or through interaction with other drugs [17028488]. The most common drugs that affect blood pressure are the nonsteroidal anti-inflammatory drugs (NSAIDs) [11416668] and steroids [17028488], inhibitors of angiogenesis (cancer-fighting drugs), and some drugs that raise HDL [22002334].  Other drugs that raise blood pressure include drugs for treating depression [34414219] and attention deficit hyperactivity disorder [24803642]. It is not clear if obesity treatments orlistat and sibutramine significantly affect blood pressure [20025693], whereas anti-HIV lopinavir/ritonavir [16603854] treatment and Nirmatrelvir/ritonavir (Paxlovid) [37012153] prescribed for COVID-19 are linked to high blood pressure.",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "The context provided does not specify a particular medication that has a drug interaction with high blood pressure.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "However, statins are mentioned in relation to their blood pressure-lowering effects, suggesting they may interact positively with high blood pressure management [19365283].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "19365283",
+                "evidence_support": "Although statins had no significant effect among nonusers, it decreased systolic blood pressure by 3.3 mmHg among users of antihypertensive medication (interaction P = 0.02)."
+              },
+              {
+                "citation_id": "2:1",
+                "cited_pmid": "19365283",
+                "evidence_support": "Statins also lowered diastolic blood pressure by an average of 1.9 mmHg (P < 0.01), regardless of antihypertensive medication use."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "For specific drug interactions, it is essential to consult detailed pharmacological resources or guidelines.",
+            "citations": []
+          }
+        ]
+      },
+      {
+        "question_id": "127",
+        "method_id": "M22",
+        "question": "what effects does gene therapy have on an organism?",
+        "candidate_answer": "Gene therapy has been used in more than 1700 clinical trials for various diseases, including cancer  [24520527]. It offers innovative approaches for cancer treatment. . [36096566]. However, it has also been associated with drawbacks and successes  [24520527]. The surgeon plays a pivotal role in the diagnosis and treatment of cancer, and understanding gene therapy is essential for managing patients with neoplastic disease. . [36096566].",
+        "expert_curated_answer": " Gene therapy aims to treat and cure disease by improving genes [33677501, 29091160]. Gene therapy can suppress the genes \"gene silencing\", replace the genes, or genes can be edited (modified) [35123997]. Each method may have side effects [38247731, 37886603].  Gene replacement relies on viruses and similar cells to deliver the gene to the target location [38549260]. Side effects include toxic damage to the liver (hepatotoxicity), heart (cardiotoxicity), nerves (neurotoxicity), inflammation caused by immune response, and even death [38549260, 38247731]. Suppressing the immune response may cause secondary infections [38247731]. Gene editing may cause unintended changes [33667951].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Gene therapy has been used in more than 1700 clinical trials for various diseases, including cancer  [24520527].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "24520527",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "It offers innovative approaches for cancer treatment. .",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "However, it has also been associated with drawbacks and successes  [24520527].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "24520527",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "The surgeon plays a pivotal role in the diagnosis and treatment of cancer, and understanding gene therapy is essential for managing patients with neoplastic disease. .",
+            "citations": []
+          }
+        ]
+      },
+      {
+        "question_id": "121",
+        "method_id": "M25",
+        "question": "how can i lower my cortisol level?",
+        "candidate_answer": "To lower cortisol levels, consider adopting stress-reduction techniques such as regular exercise, mindfulness meditation, and adequate sleep. Additionally, maintaining a balanced diet rich in whole foods, reducing caffeine and sugar intake, and engaging in relaxation practices can also help manage cortisol levels effectively.",
+        "expert_curated_answer": " Stress management, such as mindfulness, meditation and relaxation [37879237], or interacting with dogs for an hour [35989236] can lower cortisol levels. Balneotherapy (using water or bathing as treatment) or spa treatments may also help [29455296]. Electrical stimulation [33948545] and acupuncture [37920858] may have some effect too. Medicinal plant Withania somnifera [38140274], and hormones melatonin [34616464] and dehydroepiandrosterone (DHEA) [34342920] might help as well.",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "To lower cortisol levels, consider adopting stress-reduction techniques such as regular exercise, mindfulness meditation, and adequate sleep.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "Additionally, maintaining a balanced diet rich in whole foods, reducing caffeine and sugar intake, and engaging in relaxation practices can also help manage cortisol levels effectively.",
+            "citations": []
+          }
+        ]
+      },
+      {
+        "question_id": "116",
+        "method_id": "M22",
+        "question": "Are there ways to prevent sleep apnea or treat it naturally?",
+        "candidate_answer": "There is no natural way to prevent sleep apnea. Treatment options for sleep apnea in children include adenotonsillectomy, which is the first line treatment, but improvement in objectively documented outcomes is often inadequate and a substantial number of children have residual disease  [28052557]. A multidisciplinary approach is required as most of them have additional risk factors for sleep apnea and comorbidities  [28052557]. Different diagnostic modalities are available to evaluate the sites of persistent upper airway obstruction and currently available treatment options are discussed in the literature  [28052557].",
+        "expert_curated_answer": " There are ways to prevent and treat sleep apnea naturally. Lifestyle changes may prevent and treat sleep apnea [28646811, 33659106, 28659501, 12693795, 36617387]. Sleep apnea can be prevented by losing weight and keeping it down with diet and exercise [33659106, 12693795, 30204000, 36617387, 28659501]; quitting alcohol and smoking [33659106, 12693795, 36617387]; and changing sleep position [12693795, 22987061, 30204000, 36617387]. While Continuous Positive Airway Pressure (CPAP, a machine that uses mild air pressure to keep breathing airways open while you sleep) is the standard treatment for obstructive sleep apnea (OSA) [28901030, 35909585], Chinese massage Tui Na [28646811], dental treatments to change teeth and jaw position [12693795, 36617387, 28901030]; and exercises for tongue and throat [28901030] reduce snoring and apnea. Treatments with drugs [30204000, 22987061], nerve stimulation [22987061, 28901030] and surgery [25348130, 22987061] were also suggested.",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "There is no natural way to prevent sleep apnea.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "Treatment options for sleep apnea in children include adenotonsillectomy, which is the first line treatment, but improvement in objectively documented outcomes is often inadequate and a substantial number of children have residual disease  [28052557].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "28052557",
+                "evidence_support": "Although adenotonsillectomy is the first line treatment for children with obstructive sleep apnea syndrome (0SAS),1 improvement in objectively documented outcomes is often inadequate and a substantial number of children have residual disease."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "A multidisciplinary approach is required as most of them have additional risk factors for sleep apnea and comorbidities  [28052557].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "28052557",
+                "evidence_support": "The management of these children is frequently complex and a multidisciplinary approach is required as most of them have additional risk factors for OSAS and comorbidities."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "Different diagnostic modalities are available to evaluate the sites of persistent upper airway obstruction and currently available treatment options are discussed in the literature  [28052557].",
+            "citations": [
+              {
+                "citation_id": "4:0",
+                "cited_pmid": "28052557",
+                "evidence_support": "Thereafter, we discuss different diagnostic modalities to evaluate the sites of persistent upper airway obstruction and the currently available treatment options."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "129",
+        "method_id": "M20",
+        "question": "what are side effects for suddenly stopping metoprolol?",
+        "candidate_answer": "Abrupt cessation of metoprolol can lead to withdrawal syndrome, which includes symptoms such as nervousness, tachycardia, headache, agitation, and nausea [15857353]. In some cases, it can also cause a rapid increase in blood pressure to pre-treatment levels or above, or myocardial ischemia [15857353]. Furthermore, transient left ventricular apical ballooning syndrome has been reported in a case of abrupt metoprolol withdrawal [17949833]. ",
+        "expert_curated_answer": " Suddenly stopping metropolis may cause withdrawal symptoms [15857353, 7102534, 37093], return of high blood pressure [7053309, 7104154, 15857353, 37093,  3813760,  6125187] and heart problems [15857353, 6125187, 17949833]. Withdrawal symptoms include fast heartbeat, headache, agitation, nausea [15857353], heart palpitations and shaking [7102534]. Patients with severe heart problems may die [10467195]. These withdrawal effects may be prevented by gradual withdrawal on a prolonged small dose of metoprolol [6125187].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Abrupt cessation of metoprolol can lead to withdrawal syndrome, which includes symptoms such as nervousness, tachycardia, headache, agitation, and nausea [15857353].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "15857353",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "In some cases, it can also cause a rapid increase in blood pressure to pre-treatment levels or above, or myocardial ischemia [15857353].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "15857353",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "Furthermore, transient left ventricular apical ballooning syndrome has been reported in a case of abrupt metoprolol withdrawal [17949833].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "17949833",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "validation": [
+      {
+        "question_id": "148",
+        "method_id": "M10",
+        "question": "why do i bruise so easily?",
+        "candidate_answer": "Easy bruising can occur due to several factors. The most common cause is trauma, but spontaneous bruising can also arise from conditions like factor VIII deficiency, which should be considered in such cases [22024936]. Additionally, certain skin conditions, such as Ehlers-Danlos syndrome type IV, lead to fragile skin and blood vessels, making bruising more likely [17728513, 16969576]. Aging can also contribute, as chronically sun-exposed skin becomes thinner and more susceptible to bruising [12739321]. Medications, such as fluoxetine, have been reported to cause bruising as well [8826562]. Lastly, conditions like Achenbach syndrome can result in recurrent bruising without systemic disease [35481314]. If bruising is disproportionate to any trauma, it may warrant further investigation [8826562].",
+        "expert_curated_answer": " Easy bruising may have simple causes [16634245]. Bruising may be caused by problems with blood clotting [22463830, 23023361], liver problems [26926815], inherited bleeding disorders, such as von Willebrand's disease [18481559], deep tissue injury [26123043], or collagen disorders, such as the Ehlers-Danlos syndrome [15566352]. Skin becomes prone to bruising as people are getting older [28979656]. Young women with psychiatric problems may have painful bruising syndrome [12442101].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Easy bruising can occur due to several factors.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "The most common cause is trauma, but spontaneous bruising can also arise from conditions like factor VIII deficiency, which should be considered in such cases [22024936].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "22024936",
+                "evidence_support": "Laboratory tests revealed an activated partial thromboplastin time of 53 s and a factor VIII level of <1%, consistent with the diagnosis of acquired hemophilia "
+              },
+              {
+                "citation_id": "2:1",
+                "cited_pmid": "22024936",
+                "evidence_support": "This case report showed that whenever there is spontaneous bruising, factor VIII deficiency should be considered as one of the important differential diagnosis."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "Additionally, certain skin conditions, such as Ehlers-Danlos syndrome type IV, lead to fragile skin and blood vessels, making bruising more likely [17728513, 16969576].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "17728513",
+                "evidence_support": "EDS type IV (EDS IV), the vascular type of the disease, is characterized by easy bruising, thin skin with visible veins, and spontaneous rupture of the large arteries, uterus, or bowel."
+              },
+              {
+                "citation_id": "3:1",
+                "cited_pmid": "16969576",
+                "evidence_support": "The skin is soft with rubber consistency and easily bruising."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "Aging can also contribute, as chronically sun-exposed skin becomes thinner and more susceptible to bruising [12739321].",
+            "citations": [
+              {
+                "citation_id": "4:0",
+                "cited_pmid": "12739321",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "5",
+            "answer_sentence": "Medications, such as fluoxetine, have been reported to cause bruising as well [8826562].",
+            "citations": [
+              {
+                "citation_id": "5:0",
+                "cited_pmid": "8826562",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "6",
+            "answer_sentence": "Lastly, conditions like Achenbach syndrome can result in recurrent bruising without systemic disease [35481314].",
+            "citations": [
+              {
+                "citation_id": "6:0",
+                "cited_pmid": "35481314",
+                "evidence_support": "Achenbach syndrome is a rare, benign, self-limiting condition characterized by spontaneous, recurrent bruising of the digits without evidence of systemic disease or predisposing factors."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "7",
+            "answer_sentence": "If bruising is disproportionate to any trauma, it may warrant further investigation [8826562].",
+            "citations": [
+              {
+                "citation_id": "7:0",
+                "cited_pmid": "8826562",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "144",
+        "method_id": "M15",
+        "question": "when should i treat high blood pressure?",
+        "candidate_answer": "The context does not provide information about when to treat high blood pressure. In general, high blood pressure is treated with medications such as ACE inhibitors, ARBs, beta blockers, and diuretics . However, the context suggests that high blood pressure can be a symptom of anaphylaxis. , and the treatment of anaph [36008817].",
+        "expert_curated_answer": " Guidelines for starting blood pressure treatments take into account blood pressure levels and risk of heart disease and stroke [30659396]. The guidelines have changed over the years, particularly for the elderly and patients with diabetic kidney disease, chronic kidney disease, and stroke [36523741]. American College of Cardiology recommends 130/80 mmHg blood pressure levels [32237577]. Lowering blood pressure  below 120/70 mmHg may cause heart and other problems [30612417]. According to European guidelines, the threshold should be adjusted for people over 65 years old [31958854]. The best time of the day to take the medications is in the evening [32073800].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "The context does not provide information about when to treat high blood pressure.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "In general, high blood pressure is treated with medications such as ACE inhibitors, ARBs, beta blockers, and diuretics .",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "However, the context suggests that high blood pressure can be a symptom of anaphylaxis.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": ", and the treatment of anaph [36008817].",
+            "citations": [
+              {
+                "citation_id": "4:0",
+                "cited_pmid": "36008817",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "137",
+        "method_id": "M28",
+        "question": "in an adult with type 2 diabetes would metformin or ketogenic diet be the most effective option to lower a1c levels?​",
+        "candidate_answer": "When considering the management of type 2 diabetes, both metformin and dietary approaches like the ketogenic diet can influence A1C levels. Metformin is a well-established medication that has been widely used to effectively lower A1C levels by improving insulin sensitivity and reducing glucose production in the liver. On the other hand, dietary patterns, although not specifically ketogenic diets, have been shown to impact metabolic health. For instance, Canada's Food Guide (CFG) promotes a diet rich in grains, fruits, and vegetables, which aligns with the principles of healthy eating for diabetes management [18461106]. However, while dietary approaches can have beneficial effects, metformin's role in directly lowering A1C levels is more robustly supported by clinical evidence [18461106].",
+        "expert_curated_answer": " in a side-by-side comparison of a low glycemic index diet, which is similar to ketogenic, and metformin in about 50 adults with metabolic syndrome (which may lead to type 2 diabetes) both were equally effective in significantly lowering  Hemoglobin A1c (HbA1c)[26587028]. For diabetic adults, evaluated separately, ketogenic diet alone or in combination with metformin improved HbA1c [34448957, 33652834, 30291062, 32641437]. Some of these patients were able to stop taking metformin [30291062, 28600119]. To keep HbA1c low, studies recommend combining diet and medications [28600119, 10359389]. Some doctors are concerned that the long-term effects of ketogenic diet are not known [37966583] and suggest the patient on the diet should be monitored [34448957, 36297093].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "When considering the management of type 2 diabetes, both metformin and dietary approaches like the ketogenic diet can influence A1C levels.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "Metformin is a well-established medication that has been widely used to effectively lower A1C levels by improving insulin sensitivity and reducing glucose production in the liver.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "On the other hand, dietary patterns, although not specifically ketogenic diets, have been shown to impact metabolic health.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "For instance, Canada's Food Guide (CFG) promotes a diet rich in grains, fruits, and vegetables, which aligns with the principles of healthy eating for diabetes management [18461106].",
+            "citations": [
+              {
+                "citation_id": "4:0",
+                "cited_pmid": "18461106",
+                "evidence_support": "Although the two guides differ in their recommendations for red wine, fats, and meat and meat alternatives, they both promote a diet rich in grains, fruits, and vegetables."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "5",
+            "answer_sentence": "However, while dietary approaches can have beneficial effects, metformin's role in directly lowering A1C levels is more robustly supported by clinical evidence [18461106].",
+            "citations": [
+              {
+                "citation_id": "5:0",
+                "cited_pmid": "18461106",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "136",
+        "method_id": "M16",
+        "question": "what can be done for severe elbow pain?",
+        "candidate_answer": "Severe elbow pain can be addressed through various treatment options, depending on the underlying cause and severity of the condition.For patients with lateral epicondylitis, also known as tennis elbow, nonoperative measures such as rest, nonsteroidal anti-inflammatory medication, and physical therapy are often effective [18180389, 17536516, 18686818]. However, in refractory cases, surgical interventions like arthroscopic release with debridement  or percutaneous release of the common extensor origin may be necessary [21253755]. Additionally, platelet-rich plasma injections have shown promise in reducing pain and improving function in patients with recalcitrant epicondylitis [21323296, 28577784]. For patients with severe elbow arthritis, total elbow arthroplasty may be considered, although this is typically reserved for older patients with end-stage osteoarthritis who have failed joint-preserving procedures [34099969, 17539763, 18590859]. A thorough preoperative evaluation is essential in choosing the suitable surgical procedure for each individual patient [17539763, 18590859].",
+        "expert_curated_answer": " Elbow pain may be caused by inflammation [33330224] and injuries [35876779, 26001427, 23016111, 35419078, 36800442]. Standard treatments include rest, painkillers, non-steroidal anti-inflammatory medications (NSAIDs), physical therapy, and steroids [33330224, 26001427, 36800442]. If the standard treatments do not relieve pain, your doctor may suggest surgery [26001427, 33467345, 38685993]. Alternative treatments that show promise include acupuncture [35419078],  High-Intensity Laser Therapy [36233361], botulinum toxin and bone marrow injections [33330224].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Severe elbow pain can be addressed through various treatment options, depending on the underlying cause and severity of the condition.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "For patients with lateral epicondylitis, also known as tennis elbow, nonoperative measures such as rest, nonsteroidal anti-inflammatory medication, and physical therapy are often effective [18180389, 17536516, 18686818].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "18180389",
+                "evidence_support": "Nonsurgical treatment, the mainstay of management, involves a myriad of options, including rest, nonsteroidal anti-inflammatory drugs, physical therapy, cortisone, blood and botulinum toxin injections, supportive forearm bracing, and local modalities."
+              },
+              {
+                "citation_id": "2:1",
+                "cited_pmid": "17536516",
+                "evidence_support": "Conservative treatment measures will lead to symptom resolution in most cases."
+              },
+              {
+                "citation_id": "2:2",
+                "cited_pmid": "18686818",
+                "evidence_support": "Modalities such as patient education, physiotherapy, use of splints, anti-inflammatory medication, complementary medicine and eventually local injections are all acceptable treatment methods"
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "However, in refractory cases, surgical interventions like arthroscopic release with debridement  or percutaneous release of the common extensor origin may be necessary [21253755].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "21253755",
+                "evidence_support": "Rest, activity modification, and conservative therapies are generally efficacious in relieving symptoms in the majority of patients; however, a small percentage of people will experience refractory pain and require surgical intervention to alleviate their discomfort. Surgical release of the common extensor origin can be done through an open, percutaneous, or arthroscopic approach."
+              },
+              {
+                "citation_id": "3:1",
+                "cited_pmid": "21253755",
+                "evidence_support": "Both arthroscopic and percutaneous release of the common extensor origin can be effective in treatment of lateral epicondylitis. "
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "Additionally, platelet-rich plasma injections have shown promise in reducing pain and improving function in patients with recalcitrant epicondylitis [21323296, 28577784].",
+            "citations": [
+              {
+                "citation_id": "4:0",
+                "cited_pmid": "21323296",
+                "evidence_support": "Results suggest that a single platelet-rich plasma injection can improve pain and function scores, thus avoiding surgery."
+              },
+              {
+                "citation_id": "4:1",
+                "cited_pmid": "28577784",
+                "evidence_support": "Autologous blood injections and platelet-rich plasma injections are the two most frequently used orthobiologic techniques in the treatment of lateral epicondylitis."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "5",
+            "answer_sentence": "For patients with severe elbow arthritis, total elbow arthroplasty may be considered, although this is typically reserved for older patients with end-stage osteoarthritis who have failed joint-preserving procedures [34099969, 17539763, 18590859].",
+            "citations": [
+              {
+                "citation_id": "5:0",
+                "cited_pmid": "34099969",
+                "evidence_support": "Total elbow arthroplasty is very successful in terms of pain relief and function, but it is reserved for patients with end-stage osteoarthritis who are relatively older and have failed joint preserving procedures."
+              },
+              {
+                "citation_id": "5:1",
+                "cited_pmid": "17539763",
+                "evidence_support": "If these modalities fail, operative treatment is guided by the severity of disease as well as several patient-related factors such as age, activity level, and expectations. Total elbow arthroplasty can provide satisfactory results in the majority of patients with significant degeneration of the elbow. However, due to issues regarding prosthesis longevity, this procedure is generally avoided in young active patients."
+              },
+              {
+                "citation_id": "5:2",
+                "cited_pmid": "18590859",
+                "evidence_support": "Rheumatoid, low-demand, and elderly patients are candidates for total elbow replacement;"
+              },
+              {
+                "citation_id": "5:3",
+                "cited_pmid": "18590859",
+                "evidence_support": "Total elbow allografts and elbow arthrodeses are considered only in salvage situations."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "6",
+            "answer_sentence": "A thorough preoperative evaluation is essential in choosing the suitable surgical procedure for each individual patient [17539763, 18590859].",
+            "citations": [
+              {
+                "citation_id": "6:0",
+                "cited_pmid": "17539763",
+                "evidence_support": "As all of these operations may provide a satisfactory outcome for the appropriate patient, a thorough preoperative evaluation is essential in choosing the suitable surgical procedure for each individual patient."
+              },
+              {
+                "citation_id": "6:1",
+                "cited_pmid": "18590859",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "138",
+        "method_id": "M10",
+        "question": "can i use Sudafed after using Afrin for nasal congestion?",
+        "candidate_answer": "Using Sudafed (pseudoephedrine) after Afrin (oxymetazoline) can be safe, but caution is advised. Afrin is a topical decongestant that can lead to rebound congestion if used for more than three consecutive days [PMID1]. Sudafed, an oral decongestant, works differently by constricting blood vessels in the nasal passages [PMID2]. While there are no direct contraindications for using these medications together, it is essential to monitor for potential side effects, such as increased blood pressure or heart rate, especially in individuals with pre-existing conditions [PMID3]. Always consult a healthcare provider before combining medications to ensure safety and efficacy tailored to your specific health needs.",
+        "expert_curated_answer": " Both Sudafed (also called pseudoephedrine) and Afrin (also called oxymetazoline) use the same process to quickly help with congestion [25932218, 1702944]. This process can also affect your heart and breathing [25932218], and the other body systems in adults[7507588] and children[34942425]. While some studies show that taken in higher than recommended doses, pseudoephedrine can cause stroke [12791938, 1725079], others recommend combining local decongestants with systemic (affecting the whole body)[23119799]. In healthy people, local decongestants do not affect blood pressure [30195946].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Using Sudafed (pseudoephedrine) after Afrin (oxymetazoline) can be safe, but caution is advised.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "Afrin is a topical decongestant that can lead to rebound congestion if used for more than three consecutive days [PMID1].",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "Sudafed, an oral decongestant, works differently by constricting blood vessels in the nasal passages [PMID2].",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "While there are no direct contraindications for using these medications together, it is essential to monitor for potential side effects, such as increased blood pressure or heart rate, especially in individuals with pre-existing conditions [PMID3].",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "5",
+            "answer_sentence": "Always consult a healthcare provider before combining medications to ensure safety and efficacy tailored to your specific health needs.",
+            "citations": []
+          }
+        ]
+      },
+      {
+        "question_id": "123",
+        "method_id": "M15",
+        "question": "what is fbn1 mutation?",
+        "candidate_answer": "The R2726W mutation in the fibrillin 1 (FBN1) gene is a fbn1 mutation [24610719,15598221].",
+        "expert_curated_answer": " FBN1 is a gene that tells the body how to build connective tissues that support and protect the structure of the human body [27437668]. Mutations in specific parts of FBN1 can cause health problems [27437668, 23897642, 38458756]. Some of these mutations called missense mutation (like misspelling the instructions) cause tall or short stature, finger deformities, and problems with aorta (the major artery that supplies the body with blood) [23897642, 38317175, 38458756]. Mutations in specific parts of the gene cause different problems, such as Marfan syndrome, Weill-Marchesani syndrome, familial thoracic aortic aneurysms/dissections, acromicric dysplasia, and geleophysic dysplasia [27437668, 23897642],",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "The R2726W mutation in the fibrillin 1 (FBN1) gene is a fbn1 mutation [24610719,15598221].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "24610719",
+                "evidence_support": null
+              },
+              {
+                "citation_id": "1:1",
+                "cited_pmid": "15598221",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "149",
+        "method_id": "M21",
+        "question": "what is the best test to rule out a lumbar disc herniation?",
+        "candidate_answer": "The best test to rule out a lumbar disc herniation is magnetic resonance imaging (MRI) [15765459, 16028734, 20831785]. MRI is a sensitive and noninvasive test for the presence of degenerative disc disease [16028734, 16579004, 28781912]. It is widely employed in the diagnosis of lumbar spine disorders, such as lumbar spinal stenosis or lumbar disc herniation [34127567, 16579004, 28781912]. However, incomplete specificity is a definite drawback, given that MRI abnormalities are frequently identified in aged control subjects [34127567]. ",
+        "expert_curated_answer": " Disc herniation is diagnosed  with a history of the problem, physical examination by your doctor, and advanced medical imaging [37072094], although some studies value imaging les than the examination and history [38125064]. MRI is considered the best imaging method [28722852, 38034203, 36704505]. Deterioration of muscles around the spine is linked to disc herniation  [36812791]. Lumbar provocation discography (imaging with special materials) may help finding if the disc causes pain [29565943].  If a patient cannot have MRI, special CT images can be used [38755438].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "The best test to rule out a lumbar disc herniation is magnetic resonance imaging (MRI) [15765459, 16028734, 20831785].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "16028734",
+                "evidence_support": "Magnetic resonance imaging is a sensitive and noninvasive test for the presence of degenerative disc disease."
+              },
+              {
+                "citation_id": "1:1",
+                "cited_pmid": "20831785",
+                "evidence_support": "Magnetic resonance imaging (MRI) has become the diagnostic method of choice for this detection."
+              },
+              {
+                "citation_id": "1:2",
+                "cited_pmid": "15765459",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "MRI is a sensitive and noninvasive test for the presence of degenerative disc disease [16028734, 16579004, 28781912].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "16028734",
+                "evidence_support": "Magnetic resonance imaging is a sensitive and noninvasive test for the presence of degenerative disc disease. "
+              },
+              {
+                "citation_id": "2:1",
+                "cited_pmid": "28781912",
+                "evidence_support": null
+              },
+              {
+                "citation_id": "2:2",
+                "cited_pmid": "16579004",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "It is widely employed in the diagnosis of lumbar spine disorders, such as lumbar spinal stenosis or lumbar disc herniation [34127567, 16579004, 28781912].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "34127567",
+                "evidence_support": "Magnetic resonance imaging (MRI) is widely employed in the diagnosis of lumbar spine disorders, such as lumbar spinal stenosis or lumbar disc herniation."
+              },
+              {
+                "citation_id": "3:1",
+                "cited_pmid": "16579004",
+                "evidence_support": "To assess agreement in detection of lumbar disc herniation (LDH) between limited and full protocol MRI."
+              },
+              {
+                "citation_id": "3:2",
+                "cited_pmid": "28781912",
+                "evidence_support": "Patients may first undergo diagnostic studies [(magnetic resonance imaging (MRI) and computed tomographic (CT) examinations] to determine whether there is any significant nerve root or thecal sac compression."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "However, incomplete specificity is a definite drawback, given that MRI abnormalities are frequently identified in aged control subjects [34127567].",
+            "citations": [
+              {
+                "citation_id": "4:0",
+                "cited_pmid": "34127567",
+                "evidence_support": "However, incomplete specificity is a definite drawback, given that MRI abnormalities are frequently identified in aged control subjects."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "154",
+        "method_id": "M30",
+        "question": "how to breathe when you are short of breath?",
+        "candidate_answer": "Question: How to breathe when you are short of breath?",
+        "expert_curated_answer": " Shortness of breath (SoB) may be caused by many different health problems, treating which will help with SoB [32352727]. In patients with lung disease, strengthening respiratory (breathing) muscles, breast, ribcage and stomach muscles, pursed lips breathing, and leaning forward help [16281658]. Aerobic exercise with or without breathing exercises and inspiratory muscle training (IMT) improve breathing [32274173]. IMT also helps by itself [32936904]. Patients reported that reducing physical activity, psychological strategies, and breathing techniques and positions improved their breathing [27220949].  \"Breathing SPACE\" approach, in which S stands for stopping smoking, P for treating pulmonary (lung) disease, A for managing anxiety/psychosocial factors, C for cardiac disease, and E for exercise/fitness, was developed to help with all breathing problems [28138132]. Yoga with pranayama breathing techniques improved breathing [23076942], while the effect of diaphragmatic breathing is not clear [33076360]. Using a fan may help with SoB [31004769].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Question: How to breathe when you are short of breath?",
+            "citations": []
+          }
+        ]
+      },
+      {
+        "question_id": "155",
+        "method_id": "M22",
+        "question": "for how long after cataract surgery do i keep dropping eye drops?",
+        "candidate_answer": "The context does not provide information on how long to keep dropping eye drops after cataract surgery.",
+        "expert_curated_answer": " Studies show that using antibiotic eye drops for one week might be as effective as two weeks to prevent eye infection after cataract surgery [33081522]. It is recommended to see your eye doctor a week after surgery to see if you need to continue eye drops [34936061]. If the eyes are dry, a month-long treatment might be needed [32434354].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "The context does not provide information on how long to keep dropping eye drops after cataract surgery.",
+            "citations": []
+          }
+        ]
+      },
+      {
+        "question_id": "147",
+        "method_id": "M22",
+        "question": "what treatments options are available for atherosclerosis?",
+        "candidate_answer": "The treatment options for atherosclerosis are not explicitly mentioned in the given context. However, the case report describes a patient with atherosclerosis who was initially treated with interferon therapy but had to discontinue it due to severe adverse effects  [20565856]. The patient's condition worsened, and no further treatment options were mentioned in the given context.",
+        "expert_curated_answer": " Drugs that reduce the effects of atherosclerosis include statins, which reduce levels of fat in the blood [37175766, 31025381]. Agents targeting inflammatory pathways show promise [35786159], e.g., added to statins, low-dose colchicine lowers rates of myocardial infarction, stroke, and cardiovascular death [37871757]. It is recommended that in an addition to statins, women change their lifestyle to improve many common age-related heart and metabolism problems [37770308]. Focused ultrasound is also showing promise [37629640], as well as specific light that stabilizes plaques and reduces inflammation [38396639]. Surgery is sometimes needed [36065464].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "The treatment options for atherosclerosis are not explicitly mentioned in the given context.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "However, the case report describes a patient with atherosclerosis who was initially treated with interferon therapy but had to discontinue it due to severe adverse effects  [20565856].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "20565856",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "The patient's condition worsened, and no further treatment options were mentioned in the given context.",
+            "citations": []
+          }
+        ]
+      }
+    ],
+    "final-test": [
+      {
+        "question_id": "152",
+        "method_id": "M29",
+        "question": "is it possible to quit taking amlodipine after taking for many years?",
+        "candidate_answer": "Stopping amlodipine abruptly can lead to cardiac rhythm disturbances and potentially severe hypotension, which can increase the risk of cardiovascular events [22740057, 28332511]. A study found that discontinuation of antihypertensive drugs, including amlodipine, increases the risk of acute myocardial infarction after more than 90 days of discontinuation [28332511]. However, a study found that long-term treatment with amlodipine can lead to persistent reductions in cardiac fibrosis even after the drug is withdrawn, but systolic blood pressure increased progressively after withdrawal without reaching the values of the hypertensive controls [15183079]. A systematic review found that the mean proportion of people remaining normotensive for 6 months or longer after cessation of antihypertensive therapy, including amlodipine, was 0.38 [28486271]. ",
+        "expert_curated_answer": " After taking amlodipine for a long time, blood pressure is decreased from pre-treatment baseline and stable [1534713]. If you stop taking amlodipine, your blood pressure will slowly return to baseline over 7-10 days [1534713]. Only a small part of young to middle-aged adults with mildly high blood pressure succeeded in stopping their anti-hypertensive medication over 6 months [36593518, 28486271].  Temporarily stopping antihypertensive medication for the diagnostic evaluation is safe under your doctor's guidance [28373591]. If you are switching to another medication, the dose might need to be adjusted [10999500]. Switching might be needed if amlodipine does not lower your blood pressure [19590506]. Amlodipine is still a good choice for older adults to control blood pressure and protect against stroke and myocardial infarction [37551050]. In general, it is not recommended suddenly stoping the class of medications that includes amlodipine [31814590, 15857353, 39949].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Stopping amlodipine abruptly can lead to cardiac rhythm disturbances and potentially severe hypotension, which can increase the risk of cardiovascular events [22740057, 28332511].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "28332511",
+                "evidence_support": "In conclusion, discontinuation of antihypertensive drugs increases the risk of AMI after >90 days of discontinuation."
+              },
+              {
+                "citation_id": "1:1",
+                "cited_pmid": "22740057",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "A study found that discontinuation of antihypertensive drugs, including amlodipine, increases the risk of acute myocardial infarction after more than 90 days of discontinuation [28332511].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "28332511",
+                "evidence_support": "In conclusion, discontinuation of antihypertensive drugs increases the risk of AMI after >90 days of discontinuation. "
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "However, a study found that long-term treatment with amlodipine can lead to persistent reductions in cardiac fibrosis even after the drug is withdrawn, but systolic blood pressure increased progressively after withdrawal without reaching the values of the hypertensive controls [15183079].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "15183079",
+                "evidence_support": "Systolic blood pressure was reduced in the treated SHR in a dose-dependent way and after amlodipine withdrawal it increased progressively, without reaching the values of the hypertensive controls."
+              },
+              {
+                "citation_id": "3:1",
+                "cited_pmid": "15183079",
+                "evidence_support": "All three doses of amlodipine reduced cardiac fibrosis and this regression persisted with the two highest doses after three months without treatment."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "A systematic review found that the mean proportion of people remaining normotensive for 6 months or longer after cessation of antihypertensive therapy, including amlodipine, was 0.38 [28486271].",
+            "citations": [
+              {
+                "citation_id": "4:0",
+                "cited_pmid": "28486271",
+                "evidence_support": "The mean proportion adjusted for sample size of people remaining below each study's threshold for hypertension treatment was 0.38 at 6 months [95% confidence interval (CI) 0.37-0.49; 912 participants], 0.40 at 1 year (95% CI 0.40-0.40; 2640 participants) and 0.26 at 2 years or longer (95% CI 0.26-0.27; 1262 participants)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "135",
+        "method_id": "M20",
+        "question": "what can happen if you are prescribed thyroid meds but don't take them?",
+        "candidate_answer": "If you are prescribed thyroid medications but don't take them, you may experience a range of negative consequences, including poor growth and development, compromised brain and physical function, increased risk of cardiovascular disease, obesity, hypertension, poor physical capacity, and poor quality of life [38015369, 37556077]. In young women, undertreatment can lead to subnormal fertility, recurrent pregnancy loss, preeclampsia, and compromised fetal growth and neurocognitive development [38015369, 37556077]. In the elderly, undertreatment can lead to increased mortality [16915315]. Additionally, nonadherence to medication can lead to a range of symptoms, including tremors, and others [25377611]. However, symptoms like lethargy, body temperature dysregulation, orthostatic hypotension, and diarrhea are not mentioned in this article [25377611]. ",
+        "expert_curated_answer": " If you don't take medications for under-active thyroid gland (hypothyroidism), you will be fatigued, gain weight, have constipation, dry skin and cold intolerance [28336049, 37908940, 37469961, 32175200]. Then yo may have severe complications like heart failure, infertility, myxedema coma [37908940]. In myxedema coma, people experience decreased mental status, hypothermia (low body temperature), and slowing of function in multiple organs, which can lead to death [29631518]. Most people will have these problems if they don't take their medications [33161885]. If you do not treat hyper-active thyroid gland (untreated hyperthyroidism), you may have a life-threatening emergency called thyroid storm [35155015, 37614021].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "If you are prescribed thyroid medications but don't take them, you may experience a range of negative consequences, including poor growth and development, compromised brain and physical function, increased risk of cardiovascular disease, obesity, hypertension, poor physical capacity, and poor quality of life [38015369, 37556077].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "38015369",
+                "evidence_support": "The under-treated condition often results in a higher risk of, e.g., increased cardiovascular disease burden, obesity, hypertension, poor physical capacity, and poor quality of life."
+              },
+              {
+                "citation_id": "1:1",
+                "cited_pmid": "37556077",
+                "evidence_support": "The undertreated condition often results in a higher risk of several secondary devastating diseases such as increased cardiovascular disease burden, obesity, hypertension, poor physical capacity, poor quality of life."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "In young women, undertreatment can lead to subnormal fertility, recurrent pregnancy loss, preeclampsia, and compromised fetal growth and neurocognitive development [38015369, 37556077].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "38015369",
+                "evidence_support": "In young fertile women, the consequences of undertreatment with LT4 are subnormal fertility, recurrent pregnancy loss, compromised fetal growth, and neurocognitive development"
+              },
+              {
+                "citation_id": "2:1",
+                "cited_pmid": "37556077",
+                "evidence_support": "In young women of fertile age the consequences of undertreatment with LT4 are subnormal fertility, recurrent pregnancy loss, preeclampsia, compromised fetal growth and neurocognitive development."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "In the elderly, undertreatment can lead to increased mortality [16915315].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "16915315",
+                "evidence_support": "Elderly patients represent a large proportion of patients with acute myocardial infarction, but they receive less medical therapy than younger patients."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "Additionally, nonadherence to medication can lead to a range of symptoms, including tremors, and others [25377611].",
+            "citations": [
+              {
+                "citation_id": "4:0",
+                "cited_pmid": "25377611",
+                "evidence_support": "Nonadherence to medications is common and associated with poor or limited clinical outcomes in the treatment of bipolar disorder."
+              },
+              {
+                "citation_id": "4:1",
+                "cited_pmid": "25377611",
+                "evidence_support": "Weight gain, perceived cognitive impairment, tremors, and sedation are the adverse effects most likely to lead to nonadherence."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "5",
+            "answer_sentence": "However, symptoms like lethargy, body temperature dysregulation, orthostatic hypotension, and diarrhea are not mentioned in this article [25377611].",
+            "citations": [
+              {
+                "citation_id": "5:0",
+                "cited_pmid": "25377611",
+                "evidence_support": "Weight gain, perceived cognitive impairment, tremors, and sedation are the adverse effects most likely to lead to nonadherence."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "139",
+        "method_id": "M11",
+        "question": "what are possible long-term outcomes of not treating anorexia?",
+        "candidate_answer": "Untreated anorexia can lead to severe long-term consequences, including osteoporosis, infertility, and increased risk of fractures [37578122, 23706279, 36109301]. Women with anorexia may experience complications during pregnancy, such as hyperemesis gravidarum, anemia, and obstetric complications [23706279, 35172902]. Anorexia can also lead to cardiac complications, including sinus bradycardia, prolonged QT interval, arrhythmias, and hypotension [23706279, 19646241, 21739848]. In addition, anorexia can cause neuroendocrine changes, including impairment of gonadotropin-releasing hormone pulsatile secretion and changes in neuropeptide activity [27811940, 23706279, 31662110]. Untreated anorexia is associated with a significant increase in the risk of death [15478133, 36566253, 23771148]. ",
+        "expert_curated_answer": " Anorexia affects all body systems [32778424], particularly the heart, bones, digestive system and ability to have children [23706279, 33023762]. It may even lead to death [26138740, 32796186]. People with anorexia often have anxiety and depression [36498309], reduced sleep quality [38469262], and reduced quality of life [32796186].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Untreated anorexia can lead to severe long-term consequences, including osteoporosis, infertility, and increased risk of fractures [37578122, 23706279, 36109301].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "37578122",
+                "evidence_support": "In conclusion, we found that AN was associated with a 46% increased risk of any fracture up to 40 years after diagnosis"
+              },
+              {
+                "citation_id": "1:1",
+                "cited_pmid": "23706279",
+                "evidence_support": "AN is related to a decrease in bone mass density, which can lead to osteopenia and osteoporosis and a significant increase in fracture risk in later life."
+              },
+              {
+                "citation_id": "1:2",
+                "cited_pmid": "23706279",
+                "evidence_support": "Untreated AN is associated with a significant increase in the risk of death"
+              },
+              {
+                "citation_id": "1:3",
+                "cited_pmid": "36109301",
+                "evidence_support": "Several factors, such as long-term high-dose steroids, chronic inflammation, malnutrition, immobility, lack of sex steroids, and medication can reduce bone density and increase the risk for fragility fractures when left untreated."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "Women with anorexia may experience complications during pregnancy, such as hyperemesis gravidarum, anemia, and obstetric complications [23706279, 35172902].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "23706279",
+                "evidence_support": "Rates of birth complications and low birth weight may be higher in women with previous AN"
+              },
+              {
+                "citation_id": "2:1",
+                "cited_pmid": "23706279",
+                "evidence_support": "During pregnancy, women with the condition have higher rates of hyperemesis gravidarum, anaemia and obstetric complications, as well as impaired weight gain and compromised intrauterine foetal growth."
+              },
+              {
+                "citation_id": "2:2",
+                "cited_pmid": "35172902",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "Anorexia can also lead to cardiac complications, including sinus bradycardia, prolonged QT interval, arrhythmias, and hypotension [23706279, 19646241, 21739848].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "23706279",
+                "evidence_support": "It is reported that 80% of AN patients are affected by a cardiac complications such as sinus bradycardia, a prolonged QT interval on electrocardiography, arrythmias, myocardial mass modification and hypotension."
+              },
+              {
+                "citation_id": "3:1",
+                "cited_pmid": "19646241",
+                "evidence_support": "But the commonest complications are rhythm variations, typically bradycardia with a prolonged QT interval in up to a 40% of the cases, which altogether elevates ventricular tachycardia and sudden death risk."
+              },
+              {
+                "citation_id": "3:2",
+                "cited_pmid": "19646241",
+                "evidence_support": "We present the case of a male who was diagnosed with anorexia nervosa and developed asthenia, a long QT interval and also a severe both hypokalaemia and hypomagnesaemia."
+              },
+              {
+                "citation_id": "3:3",
+                "cited_pmid": "21739848",
+                "evidence_support": "Sinus bradycardia is the most common cardiovascular physical finding and the most common arrhythmia in patients with anorexia nervosa. It is important to appreciate the significance of sinus bradycardia in this clinical setting because it may be associated with sudden death, especially in the presence of other arrhythmias or EKG abnormalities, such as prolongation of the QTc interval."
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "In addition, anorexia can cause neuroendocrine changes, including impairment of gonadotropin-releasing hormone pulsatile secretion and changes in neuropeptide activity [27811940, 23706279, 31662110].",
+            "citations": [
+              {
+                "citation_id": "4:0",
+                "cited_pmid": "27811940",
+                "evidence_support": "Dysfunction of the hypothalamic-pituitary axis includes hypogonadotropic hypogonadism with relative oestrogen and androgen deficiency, growth hormone resistance, hypercortisolaemia, non-thyroidal illness syndrome, hyponatraemia and hypooxytocinaemia"
+              },
+              {
+                "citation_id": "4:1",
+                "cited_pmid": "23706279",
+                "evidence_support": "The obsessive fear of weight gain, critically limited food intake and neuroendocrine aberrations characteristic of AN have both short- and long-term consequences for the reproductive, cardiovascular, gastrointestinal and skeletal systems"
+              },
+              {
+                "citation_id": "4:2",
+                "cited_pmid": "23706279",
+                "evidence_support": "Neuroendocrine changes include impairment of gonadotropin releasing-hormone (GnRH) pulsatile secretion and changes in neuropeptide activity at the hypothalamic level, which cause profound hypoestrogenism."
+              },
+              {
+                "citation_id": "4:3",
+                "cited_pmid": "31662110",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "5",
+            "answer_sentence": "Untreated anorexia is associated with a significant increase in the risk of death [15478133, 36566253, 23771148].",
+            "citations": [
+              {
+                "citation_id": "5:0",
+                "cited_pmid": "15478133",
+                "evidence_support": "Anorexia nervosa is associated with an increased mortality rate."
+              },
+              {
+                "citation_id": "5:1",
+                "cited_pmid": "36566253",
+                "evidence_support": "AN is associated with a substantial risk of death from many medical causes."
+              },
+              {
+                "citation_id": "5:2",
+                "cited_pmid": "23771148",
+                "evidence_support": "These findings highlight the need for early identification and intervention and suggest that a long duration of illness, substance abuse, low weight, and poor psychosocial functioning raise the risk for mortality in anorexia nervosa."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "143",
+        "method_id": "M15",
+        "question": "how to live with huntington's disease?",
+        "candidate_answer": "Living with Huntington's disease may require constant care and support from family or caregivers [37424016].",
+        "expert_curated_answer": " Living with Huntington's disease (HD) begins with coping with the knowledge of the forthcoming functional, behavioral, and cognitive changes, followed by physical dependence on other people [35526033]. Even before the disease starts, apathy caused by this knowledge hinders employment [35379551] as does chorea [34183975]. In a small number of people, HD starts late (over 60 years of age) [28671137]. Good nutrition helps keeping health and functions for a longer time [25482256]. Rehabilitation programs and breathing training improved quality of life in HD [36715747]. While currently available  medications help with symptoms, treatments that target the harmful body chemicals and harmful genes are evaluated in clinical trials [35615642, 38764004].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Living with Huntington's disease may require constant care and support from family or caregivers [37424016].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "37424016",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "141",
+        "method_id": "M28",
+        "question": "what are the possible complications for a person that has yellow fever?",
+        "candidate_answer": "Yellow fever can lead to a range of complications, especially if the infection is severe. Complications may include acute kidney injury, which can progress to kidney failure, as noted in studies where certain viral infections have been linked to hypertension and damage to the cardiovascular system. Additionally, yellow fever can cause hepatic failure, which may lead to jaundice, bleeding disorders, and multiple organ failure. In severe cases, these complications can be life-threatening and require immediate medical attention. The disease's impact on the immune system can also increase the risk of secondary infections and other related complications [30562093].",
+        "expert_curated_answer": " Severe cases of yellow fever can cause bleeding, damage to liver, nerves and kidneys, and even death [15487593, 29641667, 10582093]. Yellow fwver can also cause blood clotting problems [36386719, 33268494], damage to the heart [37757571], pancreas and multi-organ failure [31150098]. Liver problems include hepatitis (inflammation of the liver) [32079143]. Kidney problems include acute kidney injury [31340247].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Yellow fever can lead to a range of complications, especially if the infection is severe.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "Complications may include acute kidney injury, which can progress to kidney failure, as noted in studies where certain viral infections have been linked to hypertension and damage to the cardiovascular system.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "Additionally, yellow fever can cause hepatic failure, which may lead to jaundice, bleeding disorders, and multiple organ failure.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "4",
+            "answer_sentence": "In severe cases, these complications can be life-threatening and require immediate medical attention.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "5",
+            "answer_sentence": "The disease's impact on the immune system can also increase the risk of secondary infections and other related complications [30562093].",
+            "citations": [
+              {
+                "citation_id": "5:0",
+                "cited_pmid": "30562093",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "146",
+        "method_id": "M22",
+        "question": "how can ptsd be treated/managed?",
+        "candidate_answer": "The study did not provide information on the treatment or management of PTSD or CPTSD. . [32166005].",
+        "expert_curated_answer": " the Veterans Affairs (VA) and the Department of Defense (DoD) recommend  trauma-focused treatments such as Cognitive Processing Therapy (CPT), Prolonged Exposure Therapy (PE), Eye Movement, Desensitization, and Restructuring (EMDR) [34924624]. They recommend avoiding benzodiazepines and other sedative hypnotic medications because of their side effects [34924624]. The recommended medications include selective serotonin reuptake inhibitors (SSRIs) [34575284]. Prazosin is often prescribed for nightmares [33026676], although the evidence for it and other drugs, such as tricyclic antidepressants and atypical antipsychotics is inconclusive [35688992]. Mindfulness skills, such as non-judgmental acceptance, attentional control and openness to experiences [38812001] and fMRI-guided neurofeedback [38577405] may help with the symptoms.  Hyperbaric oxygen therapy (HBOT) helped veterans with treatment-resistant PTSD [38027524].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "The study did not provide information on the treatment or management of PTSD or CPTSD. .",
+            "citations": []
+          }
+        ]
+      },
+      {
+        "question_id": "153",
+        "method_id": "M15",
+        "question": "if hct is 34, does pt need blood transfusion?",
+        "candidate_answer": "The question cannot be definitively answered based on the given context [25495602].",
+        "expert_curated_answer": " In healthy women optimal Hct is 35-40% and in men, 39-50%, but in stable hospital patients, the recommended transfusion threshold is 7-8 g/dL hemoglobin (Hct 20-24%) [27767984]. Traditionally, a 3% change in hematocrit was considered equal to a 1-\"unit\" loss of blood [16432852], and the 10/30 rule (hemoglobin 10 g/dL - hematocrit 30%) has been most commonly used to start blood transfusions [15196315, 33173454]. The peripheral venous hematocrit (Hct)levels alone are not enough to decide on transfusion [16533277]; other measurements and the patient's condition should be taken into account [38395758, 26492900, 32770311].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "The question cannot be definitively answered based on the given context [25495602].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "25495602",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "128",
+        "method_id": "M5",
+        "question": "how does cbd effect liver enzymes?",
+        "candidate_answer": "CBD accumulation in mammalian tissues has the potential to influence receptor binding and metabolism [35631242]. The rise in tissue CBD was closely related to specific pharmacokinetic parameters, and adipose tissue levels were ~10 to ~100 fold greater than liver or muscle [35631242]. CBD accumulation in gastrocnemius muscle, liver and adipose tissue in adult rats following oral gavage was investigated [35631242].",
+        "expert_curated_answer": " Cannabidiol (CBD) is a non-psychoactive (not causing 'high') chemical found in Cannabis (marijuana) [38397045]. Some studies show that it causes liver enzymes to be higher than normal [36912195, 31052254, 38011195, 38286636], which shows CBD in higher doses damages liver [38494580, 33022751]. Other studies found that in healthy adults CBD is not linked to higher liver enzymes [34918948, 36968131], and it may be protective in some liver diseases [38397045].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "CBD accumulation in mammalian tissues has the potential to influence receptor binding and metabolism [35631242].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "35631242",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "The rise in tissue CBD was closely related to specific pharmacokinetic parameters, and adipose tissue levels were ~10 to ~100 fold greater than liver or muscle [35631242].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "35631242",
+                "evidence_support": null
+              }
+            ]
+          },
+          {
+            "answer_sentence_id": "3",
+            "answer_sentence": "CBD accumulation in gastrocnemius muscle, liver and adipose tissue in adult rats following oral gavage was investigated [35631242].",
+            "citations": [
+              {
+                "citation_id": "3:0",
+                "cited_pmid": "35631242",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "132",
+        "method_id": "M30",
+        "question": "what is the effect of low vitamin D?",
+        "candidate_answer": "Low vitamin D levels can negatively impact various health parameters, including reproductive health and neonatal growth. Specifically, low vitamin D may affect endometrial thickness and follicle growth in infertile women, as well as influence neonatal growth parameters and the prevalence of vitamin D deficiency in newborns, which is associated with maternal vitamin D status [29526131,25800497,30027298].",
+        "expert_curated_answer": " Many conditions are linked to low Vitamin D or Vitamin D deficiency, and some problems are known to be caused by Vitamin D deficiency [36396409]. Vitamin D deficiency can lead to bone softening and rickets in children and bone softening [30335299, 26204630], brittleness and fractures [18400738] in adults. Vitamin D deficiency is linked to increased risk of common cancers, autoimmune diseases [28516265], hypertension (high blood pressure), infections [18400738], depression [23377209], mental problems [22461123], type 2 diabetes, heart disease, metabolic syndrome,  [26204630, 37242192] and nervous system problems [28516265].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "Low vitamin D levels can negatively impact various health parameters, including reproductive health and neonatal growth.",
+            "citations": []
+          },
+          {
+            "answer_sentence_id": "2",
+            "answer_sentence": "Specifically, low vitamin D may affect endometrial thickness and follicle growth in infertile women, as well as influence neonatal growth parameters and the prevalence of vitamin D deficiency in newborns, which is associated with maternal vitamin D status [29526131,25800497,30027298].",
+            "citations": [
+              {
+                "citation_id": "2:0",
+                "cited_pmid": "29526131",
+                "evidence_support": "The results showed that a correlation exists between endometrial thickness as well as the number of antral follicles and replete level of Vitamin D."
+              },
+              {
+                "citation_id": "2:1",
+                "cited_pmid": "25800497",
+                "evidence_support": null
+              },
+              {
+                "citation_id": "2:2",
+                "cited_pmid": "30027298",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question_id": "131",
+        "method_id": "M22",
+        "question": "what are side effects of using formoterol?",
+        "candidate_answer": "In patients taking maintenance ICS-salmeterol, but not ICS-formoterol, significantly more non-asthma-related and nonserious DAEs occurred with as-needed formoterol versus as-needed salbutamol  [37054881].",
+        "expert_curated_answer": " Formoterol improves breathing in patients with asthma and other lung problems [33273813]. It is safe for most patients [20159250, 11534893]. The most frequent side effects are  tremors (shaking, twitching) and palpitations (throbbing), which happen more frequently when formoterol  is taken orally [1718682, 9506248]. Formoterol may cause supraventricular tachycardia (SVT -- irregular heartbeat) [38530149]. In children with asthma, the most frequent side effects were worsening of asthma, lung infection, cough, fever and headache [24562976]. In cancer patients, the few side effects included tremors, swelling, increased heart rate, and indigestion [24389826].",
+        "sentences": [
+          {
+            "answer_sentence_id": "1",
+            "answer_sentence": "In patients taking maintenance ICS-salmeterol, but not ICS-formoterol, significantly more non-asthma-related and nonserious DAEs occurred with as-needed formoterol versus as-needed salbutamol  [37054881].",
+            "citations": [
+              {
+                "citation_id": "1:0",
+                "cited_pmid": "37054881",
+                "evidence_support": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

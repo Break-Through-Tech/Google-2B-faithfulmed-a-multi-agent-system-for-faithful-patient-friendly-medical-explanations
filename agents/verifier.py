@@ -40,8 +40,15 @@ async def run_verifier(
 ) -> str:
     """Compatibility wrapper for an ad-hoc answer-only Verifier request."""
     from evals.verifier_workbench import prompt_for
-    payload = {"question_id": "ad_hoc", "question": question, "method_id": "ad_hoc", "candidate_answer": candidate_text,
-               "sentences": [], "evidence_context": evidence_context if evidence_context is not None else source_text}
+    payload = {
+        "question_id": "ad_hoc",
+        "question": question,
+        "machine_generated_answer": {
+            "method_id": "ad_hoc",
+            "answer": candidate_text,
+            "answer_sentences": [],
+        },
+    }
     return await run_medaesqa_verifier(prompt_for(payload), model)
 
 

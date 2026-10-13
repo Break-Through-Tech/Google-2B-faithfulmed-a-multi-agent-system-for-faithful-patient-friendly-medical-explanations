@@ -1,0 +1,25 @@
+{
+  "name": "medaesqa_verifier_prompt_development_v1",
+  "dataset": "medaesqa_v1.json",
+  "random_seed": 20261009,
+  "description": "Saved ten-record MedAESQA prompt-development batch. It is not an untouched final test set.",
+  "preserved_records": [
+    {"question_id": "127", "method_id": "M6"},
+    {"question_id": "126", "method_id": "M13"},
+    {"question_id": "120", "method_id": "M19"},
+    {"question_id": "117", "method_id": "M10"},
+    {"question_id": "118", "method_id": "M10"}
+  ],
+  "records": [
+    {"question_id": "127", "method_id": "M6"},
+    {"question_id": "126", "method_id": "M13"},
+    {"question_id": "120", "method_id": "M19"},
+    {"question_id": "117", "method_id": "M10"},
+    {"question_id": "118", "method_id": "M10"},
+    {"question_id": "133", "method_id": "M15"},
+    {"question_id": "150", "method_id": "M29"},
+    {"question_id": "129", "method_id": "M28"},
+    {"question_id": "142", "method_id": "M25"},
+    {"question_id": "124", "method_id": "M22"}
+  ]
+}
