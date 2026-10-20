@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from . import DEFAULT_MODEL,  run_agent_once
+from . import DEFAULT_MODEL, run_agent_once
 
 
 SIMPLIFIER_INSTRUCTION = """
@@ -127,14 +127,17 @@ async def run_simplifier(
 ) -> str:
     """Simplify medical text using extracted facts and an optional glossary."""
 
-    if not source_text or not source_text.strip():
+    if not isinstance(source_text, str) or not source_text.strip():
         raise ValueError("source_text must not be empty.")
 
-    if not atoms or not atoms.strip():
+    if not isinstance(atoms, str) or not atoms.strip():
         raise ValueError(
             "atoms must contain extracted facts. "
             "Do not run the Simplifier without them."
         )
+
+    if not isinstance(glossary, str) or not glossary.strip():
+        raise ValueError("glossary must be a nonempty string.")
 
     agent = create_simplifier_agent(model)
 

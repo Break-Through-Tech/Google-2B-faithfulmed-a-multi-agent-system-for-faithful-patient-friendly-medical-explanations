@@ -75,7 +75,9 @@ def evaluate_example(
 ) -> SimplifierExampleMetrics:
     """Evaluate one Simplifier output against its source text."""
 
-    if not example.candidate_text.strip():
+    if not isinstance(example.source_text, str) or not example.source_text.strip():
+        raise ValueError("Simplifier source text is empty")
+    if not isinstance(example.candidate_text, str) or not example.candidate_text.strip():
         raise ValueError("Simplifier output is empty")
 
     original = readability_scores(example.source_text)
@@ -123,3 +125,63 @@ def score_examples(
             continue
 
     return results
+
+
+def _mean(values: list[float | int]) -> float | None:
+    """Return a mean, or ``None`` when no valid values were supplied."""
+
+    return sum(values) / len(values) if values else None
+
+
+def summarize_examples(examples: Iterable[SimplifierExample]) -> SimplifierMetrics:
+    """Summarize readability results while preserving malformed example IDs.
+
+    This is intentionally a readability-only summary. Faithfulness is checked by
+    the downstream Verifier; a shorter or easier output is not proof that it
+    preserved the medical content.
+    """
+
+    results: list[SimplifierExampleMetrics] = []
+    malformed_ids: list[str] = []
+    for example in examples:
+        try:
+            results.append(evaluate_example(example))
+        except ValueError:
+            malformed_ids.append(example.example_id)
+
+    if not results:
+        return SimplifierMetrics(
+            status="not_evaluated",
+            n=0,
+            mean_original_fk_grade=None,
+            mean_simplified_fk_grade=None,
+            mean_fk_grade_reduction=None,
+            mean_original_smog=None,
+            mean_simplified_smog=None,
+            mean_smog_reduction=None,
+            mean_original_jargon_density=None,
+            mean_simplified_jargon_density=None,
+            mean_jargon_reduction=None,
+            mean_original_word_count=None,
+            mean_simplified_word_count=None,
+            readability_target_rate=None,
+            malformed_ids=tuple(malformed_ids),
+        )
+
+    return SimplifierMetrics(
+        status="partial" if malformed_ids else "ok",
+        n=len(results),
+        mean_original_fk_grade=_mean([item.original_fk_grade for item in results]),
+        mean_simplified_fk_grade=_mean([item.simplified_fk_grade for item in results]),
+        mean_fk_grade_reduction=_mean([item.fk_grade_reduction for item in results]),
+        mean_original_smog=_mean([item.original_smog for item in results]),
+        mean_simplified_smog=_mean([item.simplified_smog for item in results]),
+        mean_smog_reduction=_mean([item.smog_reduction for item in results]),
+        mean_original_jargon_density=_mean([item.original_jargon_density for item in results]),
+        mean_simplified_jargon_density=_mean([item.simplified_jargon_density for item in results]),
+        mean_jargon_reduction=_mean([item.jargon_reduction for item in results]),
+        mean_original_word_count=_mean([item.original_word_count for item in results]),
+        mean_simplified_word_count=_mean([item.simplified_word_count for item in results]),
+        readability_target_rate=sum(item.meets_readability_target for item in results) / len(results),
+        malformed_ids=tuple(malformed_ids),
+    )
