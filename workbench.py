@@ -400,7 +400,7 @@ def placeholder_page(agent: str) -> None:
 
 def main() -> None:
     load_env(); st.set_page_config(page_title="FaithfulMed Workbench", page_icon="🩺", layout="wide")
-    agent = st.sidebar.radio("Agent workbench", ["Verifier", "Extractor", "Simplifier", "Refiner", "Readability"])
+    agent = st.sidebar.radio("Agent workbench", ["Baseline", "Verifier", "Extractor", "Simplifier", "Refiner", "Readability"])
     if agent == "Verifier":
         st.title("FaithfulMed Verifier Workbench"); st.caption("Exploratory MedAESQA results only—not final research results.")
         verifier_page()
@@ -410,6 +410,9 @@ def main() -> None:
     elif agent == "Readability":
         from evals.readability_workbench import readability_page
         readability_page()
+    elif agent == "Baseline":
+        from evals.baseline_workbench import baseline_page
+        baseline_page()
     else: placeholder_page(agent)
 
 
