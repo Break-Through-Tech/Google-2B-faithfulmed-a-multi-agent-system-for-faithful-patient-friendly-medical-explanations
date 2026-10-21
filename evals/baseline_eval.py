@@ -7,6 +7,8 @@ import json
 import sys
 from pathlib import Path
 from typing import Any
+import random
+from google.genai import errors
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -89,6 +91,42 @@ def save_record(record: dict[str, Any]) -> None:
         file.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
+async def run_baseline_with_retry(
+    source_text: str,
+    *,
+    model: str,
+    max_attempts: int = 4,
+    initial_delay: float = 1.0,
+) -> str:
+    """Retry temporary Gemini server errors with exponential backoff."""
+
+    retryable_codes = {500, 502, 503, 504}
+
+    for attempt in range(max_attempts):
+        try:
+            return await run_baseline(source_text, model=model)
+
+        except errors.ServerError as exc:
+            if (
+                getattr(exc, "code", None) not in retryable_codes
+                or attempt == max_attempts - 1
+            ):
+                raise
+
+            delay = initial_delay * (2 ** attempt)
+            delay += random.uniform(0, 0.5)
+
+            print(
+                f"Gemini server error {exc.code}. "
+                f"Retrying attempt {attempt + 2}/{max_attempts} "
+                f"in {delay:.1f} seconds..."
+            )
+
+            await asyncio.sleep(delay)
+
+    raise RuntimeError("Baseline retry loop ended unexpectedly.")
+
+
 async def evaluate_split(
     split: str,
     model: str = BASELINE_DEFAULT_MODEL,
@@ -125,7 +163,7 @@ async def evaluate_split(
         }
 
         try:
-            generated_text = await run_baseline(
+            generated_text = await run_baseline_with_retry(
                 sample["source_text"],
                 model=model,
             )
