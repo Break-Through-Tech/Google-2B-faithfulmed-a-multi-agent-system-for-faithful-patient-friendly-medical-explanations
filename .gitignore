@@ -24,7 +24,9 @@ eval_results/*
 data/*
 !data/.gitkeep
 !data/README.md
-!data/MedAESQA_methods_M1-M30.xlsx
+!data/MedAESQA/
+data/MedAESQA/*
+!data/MedAESQA/MedAESQA_methods_M1-M30.xlsx
 # Track the MTSamples annotation infrastructure and development independent
 # annotations. Continue ignoring filled annotations in the other splits.
 !data/ANNOTATION_WORKFLOW.md
