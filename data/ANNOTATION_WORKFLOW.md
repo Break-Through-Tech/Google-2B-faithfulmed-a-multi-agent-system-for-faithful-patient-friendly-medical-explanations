@@ -69,7 +69,7 @@ change it.
 From the repository root, validate a split recursively:
 
 ```bash
-python data/validate_annotations.py data/annotations/dev
+python data/validate_annotations.py data/MTSamples/dev
 ```
 
 Omitting the path validates all annotation directories. The validator checks

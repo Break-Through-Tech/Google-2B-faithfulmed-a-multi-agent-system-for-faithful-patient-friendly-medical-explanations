@@ -30,6 +30,24 @@ generation, and caches completed results locally. See [the workbench guide](docs
 
 The original team-project template follows below and can be updated as the broader project develops.
 
+## Complete agent-system demo
+
+The full-system Streamlit demo is separate from the individual-agent evaluation workbench. It accepts a pasted report or selected examples from the scratch, dev, and test MTSamples/PLABA splits, then runs the actual Extractor, Simplifier, production Verifier/Refiner loop, and Readability agents. One separate factual evaluator checks the final Readability output against the source. The page streams ADK model events and offers stage traces as JSON downloads.
+
+From the repository root, with the virtual environment activated and `GOOGLE_API_KEY` saved in `.env`, run:
+
+```bash
+python -m streamlit run agentic_system_demo.py
+```
+
+The production loop permits at most two Verifier-to-Refiner revision cycles. Readability runs only after the production Verifier accepts the draft. If the second revision is still rejected, the latest draft remains available for inspection but is not labeled as a verified final explanation.
+
+Choose MTSamples, PLABA, or both; choose `scratch`, `dev`, or `test`; and select only the examples you want to run. For de-identified dataset examples, **Run selected examples** reuses an append-only cached record only when the dataset identity, source and reference content, model settings, prompt hashes, and evaluator/implementation versions all match. **Force new run** bypasses the cache and appends a new uniquely identified record without deleting prior runs or inheriting their manual labels. These records live under the git-ignored `eval_results/` directory. Open **Saved run history** to restore an older result and continue its review. Pasted reports are kept only in Streamlit session state unless you explicitly download their JSON trace.
+
+In **Human claim review**, every factual-evaluator claim labeled `unsupported` or `contradicted` and `clinically_meaningful: true` is shown with its exact saved claim text, source spans, and evaluator reason. It defaults to **Hallucination**, matching Gemini's evaluator verdict, until you select **Hallucination**, **Not hallucination**, or **Ignore**. Decisions are appended separately to `eval_results/system_claim_reviews.jsonl` under the immutable `run_id` and `claim_id`, so widget reruns, browser refreshes, cached runs, and history reopening preserve them without another model call. Ignored claims are excluded from claim-level calculations. The adjusted rates remain provisional whenever Gemini-default decisions have not been human-reviewed.
+
+The automatic metrics panel remains separate and reports Flesch–Kincaid grade, SMOG, word count, refusal rate, the existing Dale–Chall difficult-word proxy (clearly labeled as a jargon-density proxy), and independent automated estimates of source fidelity and clinically meaningful hallucination rate. Readability is computed from the exact final displayed explanation, including bullet punctuation. The refusal detector is a phrase-based heuristic. Automated factual and screening labels are not human-reviewed gold labels, so challenge factuality targets are not declared met from screening alone. MTSamples adjudicated facts and PLABA adaptations are post-generation references only; they are never supplied to the generation pipeline. PLABA screening uses exact professional-source sentence IDs rather than assuming MTSamples-style fact annotations, and the plain-language adaptation is not treated as required wording.
+
 > 💡 **Note for the team:** This is just a template. Update the above title with your AI Studio Challenge Project name. Remove all guidance notes and example text in this template and populate this README with your own content. You can work on this README throughout AI Studio, and get feedback from your AI Studio Coach and Challenge Advisor before finalizing it.  
 
 ---

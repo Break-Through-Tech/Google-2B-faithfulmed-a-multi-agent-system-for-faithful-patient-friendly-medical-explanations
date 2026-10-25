@@ -19,7 +19,7 @@ from agents.baseline import (
 )
 from evals.readability_eval import evaluate_single
 
-ANNOTATIONS_DIR = ROOT / "data" / "annotations"
+ANNOTATIONS_DIR = ROOT / "data" / "MTSamples"
 RESULTS_FILE = ROOT / "runs" / "baseline.jsonl"
 
 VALID_SPLITS = ("dev", "scratch", "test")

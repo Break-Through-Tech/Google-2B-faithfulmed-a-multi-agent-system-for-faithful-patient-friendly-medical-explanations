@@ -62,6 +62,8 @@ CORE RULES
 - Aim for approximately an 8th-grade reading level.
 - Prefer common words, concrete explanations, and clear transitions.
 - Use bullet points when they improve understanding.
+- End every bullet item with a period, question mark, or exclamation point so
+  each item has a clear sentence boundary for patients and readability scoring.
 - Do not sacrifice accuracy merely to achieve a readability score.
 - Keep the rewrite concise while preserving important information.
 

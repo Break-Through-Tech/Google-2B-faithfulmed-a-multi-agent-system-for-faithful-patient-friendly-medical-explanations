@@ -135,7 +135,10 @@ class WorkbenchTests(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]
         manifest_path = root / "evals" / "verifier_evaluation_splits_v2_balanced.json"
         manifest = json.loads(manifest_path.read_text())
-        loaded = load_all_evaluation_splits(manifest_path, load_workbench_answers(root / "data" / "medaesqa_v1.json"))
+        loaded = load_all_evaluation_splits(
+            manifest_path,
+            load_workbench_answers(root / "data" / "MedAESQA" / "medaesqa_v1.json"),
+        )
         all_question_ids = []
         for name, (records, metadata) in loaded.items():
             self.assertEqual(len(records), 10)

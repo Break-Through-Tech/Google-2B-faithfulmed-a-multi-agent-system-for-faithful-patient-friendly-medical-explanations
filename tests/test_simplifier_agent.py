@@ -30,6 +30,7 @@ class SimplifierAgentTests(unittest.TestCase):
     def test_instruction_documents_the_current_output_sections(self) -> None:
         self.assertIn("PATIENT-FRIENDLY VERSION:", SIMPLIFIER_INSTRUCTION)
         self.assertIn("REVIEW FLAGS:", SIMPLIFIER_INSTRUCTION)
+        self.assertIn("End every bullet item with a period", SIMPLIFIER_INSTRUCTION)
 
     def test_blank_or_nonstring_inputs_are_rejected_without_a_model_call(self) -> None:
         cases = [

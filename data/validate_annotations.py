@@ -376,8 +376,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "path",
         nargs="?",
-        default=str(Path(__file__).resolve().parent / "annotations"),
-        help="JSON file or directory to validate (default: data/annotations)",
+        default=str(Path(__file__).resolve().parent / "MTSamples"),
+        help="JSON file or directory to validate (default: data/MTSamples)",
     )
     return parser.parse_args()
 

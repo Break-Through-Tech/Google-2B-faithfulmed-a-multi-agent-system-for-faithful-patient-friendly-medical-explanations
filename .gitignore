@@ -13,8 +13,11 @@ env/
 .env
 *.key
 
-# Generated evaluation artifacts
-eval_results/
+# Generated evaluation artifacts. Share the full-system cache and its human
+# review decisions with the team, but keep any other generated artifacts local.
+eval_results/*
+!eval_results/system_demo_runs.jsonl
+!eval_results/system_claim_reviews.jsonl
 
 # Data — download locally per data/README.md
 # (keep the folder, its docs, and the small MedAESQA methods reference)
@@ -28,31 +31,31 @@ data/*
 !data/validate_annotations.py
 !data/annotation_templates/
 !data/annotation_templates/**
-!data/annotations/
-data/annotations/*
-!data/annotations/mtsamples_split_manifest.json
-!data/annotations/scratch/
-data/annotations/scratch/*
-!data/annotations/scratch/.gitkeep
-!data/annotations/scratch/adjudicated/
-!data/annotations/scratch/adjudicated/**
-!data/annotations/scratch/independent/
-!data/annotations/scratch/independent/**
-!data/annotations/dev/
-data/annotations/dev/*
-!data/annotations/dev/independent/
-!data/annotations/dev/independent/**
-!data/annotations/dev/independent/.gitkeep
-!data/annotations/dev/adjudicated/
-!data/annotations/dev/adjudicated/**
-!data/annotations/test/
-data/annotations/test/*
-!data/annotations/test/independent/
-!data/annotations/test/independent/**
-!data/annotations/test/independent/.gitkeep
-!data/annotations/test/adjudicated/
-!data/annotations/test/adjudicated/**
-!data/annotations/test/adjudicated/.gitkeep
+!data/MTSamples/
+data/MTSamples/*
+!data/MTSamples/mtsamples_split_manifest.json
+!data/MTSamples/scratch/
+data/MTSamples/scratch/*
+!data/MTSamples/scratch/.gitkeep
+!data/MTSamples/scratch/adjudicated/
+!data/MTSamples/scratch/adjudicated/**
+!data/MTSamples/scratch/independent/
+!data/MTSamples/scratch/independent/**
+!data/MTSamples/dev/
+data/MTSamples/dev/*
+!data/MTSamples/dev/independent/
+!data/MTSamples/dev/independent/**
+!data/MTSamples/dev/independent/.gitkeep
+!data/MTSamples/dev/adjudicated/
+!data/MTSamples/dev/adjudicated/**
+!data/MTSamples/test/
+data/MTSamples/test/*
+!data/MTSamples/test/independent/
+!data/MTSamples/test/independent/**
+!data/MTSamples/test/independent/.gitkeep
+!data/MTSamples/test/adjudicated/
+!data/MTSamples/test/adjudicated/**
+!data/MTSamples/test/adjudicated/.gitkeep
 
 !data/PLABA/
 data/PLABA/*

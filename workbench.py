@@ -19,7 +19,7 @@ from evals.verifier_workbench import (append_cache, cache_key, compare, load_cac
 from evals.independent_review import load_independent_review, supplementary_agreement
 
 ROOT = Path(__file__).resolve().parent
-DATA, CACHE = ROOT / "data" / "medaesqa_v1.json", ROOT / "runs" / "verifier_workbench_cache.jsonl"
+DATA, CACHE = ROOT / "data" / "MedAESQA" / "medaesqa_v1.json", ROOT / "runs" / "verifier_workbench_cache.jsonl"
 EVALUATION_SPLITS = ROOT / "evals" / "verifier_evaluation_splits_v2_balanced.json"
 RUN_LOG = ROOT / "runs" / "verifier_workbench_runs.jsonl"
 INDEPENDENT_REVIEW = ROOT / "evals" / "verifier_independent_review_v2.json"
@@ -158,7 +158,7 @@ def supplementary_review_view(results: list[dict], split_name: str) -> None:
 
 def verifier_page() -> None:
     if not DATA.exists() or not EVALUATION_SPLITS.exists():
-        st.error("Missing data/medaesqa_v1.json or evals/verifier_evaluation_splits_v2_balanced.json"); return
+        st.error("Missing data/MedAESQA/medaesqa_v1.json or evals/verifier_evaluation_splits_v2_balanced.json"); return
     with st.sidebar:
         model = st.text_input("Model", VERIFIER_DEFAULT_MODEL)
         prompt_version = REVISED_PROMPT_VERSION
