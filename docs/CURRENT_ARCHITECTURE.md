@@ -45,6 +45,37 @@ Dataset files, annotations, manifests, data documentation, `.env.example`, and t
 - `notebooks/eval_harness.py` is provided starter material. It offers readability scores, a target-grade check, a basic loader for the missing full MedAESQA file, and accuracy/Cohen's kappa helpers.
 - `data/validate_annotations.py` is the existing read-only annotation validator and is separate from agent evaluation.
 
+## Reference definitions (UMLS and DrugBank)
+
+`agents/medical_lookup.py` adds a `TermLookup` stage to the production pipeline, between the Extractor and the Simplifier:
+
+1. A small `TermFinder` agent lists medical terms and drug names from the extracted facts. Code keeps a term only if it appears word-for-word in the `fact_text` of a fact it cites.
+2. Medications are looked up in DrugBank first, then UMLS. All other terms go to UMLS. Lookups are plain code; no model writes or edits a definition.
+3. The result (`faithfulmed_reference_definitions_v1`) is stored in `trace["results"]["reference_definitions"]`, separate from the Extractor's facts. Each entry has the term, its `fact_ids`, the definition, `source` (UMLS or DrugBank), `source_id` (CUI or DrugBank ID), the definition's source vocabulary, and a reference URL. Unresolved terms record why: `not_found`, `ambiguous`, `no_definition`, `api_error`, or `not_configured`.
+4. The Simplifier receives the definitions as its `{glossary}`. The Verifier receives them as a separate `reference_definitions` key and is told never to treat them as evidence for patient-specific claims.
+
+Any lookup failure is recorded in the trace and the pipeline continues without definitions. With no source configured, the stage is skipped and no extra model call is made.
+
+Setup (both optional):
+
+```bash
+# UMLS: put a UTS API key in .env as UMLS_API_KEY=...
+# DrugBank: build the local index from the academic XML (licensed data; data/ is gitignored)
+python3 -m agents.medical_lookup build-drugbank-index --xml path/to/full_database.xml
+# Check one term (UMLS uses the network)
+python3 -m agents.medical_lookup lookup metoprolol --category medication
+```
+
+UMLS definitions are accepted only from MeSH, NCI, CSP, HPO, and MedlinePlus, in that order. MedlinePlus is last because its entries are long health-topic summaries; after the 600-character cap they can keep only background (for hypertension, a description of blood pressure in general). Short all-caps abbreviations that match several UMLS concepts are left unresolved instead of guessed. Each glossary line the Simplifier sees names the fact IDs it belongs to.
+
+Smoke test for the lookup handoffs on a synthetic note (see `evals/lookup_smoke.py`):
+
+```bash
+python3 -m evals.lookup_smoke --mode mock       # offline; also run by the test suite
+python3 -m evals.lookup_smoke --mode umls-live  # real UMLS, mocked Gemini stages
+python3 -m evals.lookup_smoke --mode live       # real UMLS and Gemini (uses API quota)
+```
+
 ## Agent, pipeline, test, and evaluation
 
 - An **agent** is one ADK `LlmAgent` that performs one job.

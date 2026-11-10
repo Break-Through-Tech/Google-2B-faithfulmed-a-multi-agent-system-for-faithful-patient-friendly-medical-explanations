@@ -10,6 +10,10 @@ from typing import Any, Awaitable, Callable
 
 from . import run_agent_stream
 from .extractor import ExtractorOutput, create_extractor_agent
+from .medical_lookup import (
+    MedicalLookup, build_reference_definitions, create_term_finder_agent,
+    empty_reference_definitions, reference_definitions_for_prompt, render_glossary,
+)
 from .readability import create_readability_agent
 from .refiner import create_refiner_agent
 from .simplifier import create_simplifier_agent
@@ -18,7 +22,8 @@ from .verifier import VERIFIER_DEFAULT_MODEL, run_production_verifier
 MAX_REVISION_CYCLES = 2
 TraceCallback = Callable[[dict[str, Any]], None]
 AgentExecutor = Callable[[Any, dict[str, Any], str, Callable[[str, str], None]], Awaitable[str]]
-VerifierRunner = Callable[[str, str, str, str, Callable[[str, str], None]], Awaitable[str]]
+# (source_text, extracted_facts, draft, model, on_text, reference_definitions_json)
+VerifierRunner = Callable[[str, str, str, str, Callable[[str, str], None], str], Awaitable[str]]
 
 
 @dataclass(frozen=True)
@@ -80,9 +85,9 @@ async def _default_agent_executor(agent: Any, state: dict[str, Any], message: st
 
 
 async def _default_verifier_runner(source_text: str, facts: str, draft: str, model: str,
-                                   on_text: Callable[[str, str], None]) -> str:
+                                   on_text: Callable[[str, str], None], definitions: str) -> str:
     return await run_production_verifier(
-        source_text, facts, draft, model, on_text=on_text,
+        source_text, facts, draft, model, on_text=on_text, reference_definitions=definitions,
     )
 
 
@@ -93,19 +98,25 @@ async def run_production_pipeline(
     on_event: TraceCallback | None = None,
     agent_executor: AgentExecutor = _default_agent_executor,
     verifier_runner: VerifierRunner = _default_verifier_runner,
+    lookup: MedicalLookup | None = None,
 ) -> PipelineRunResult:
-    """Run every production stage while preserving an inspectable in-memory trace."""
+    """Run every production stage while preserving an inspectable in-memory trace.
+
+    ``lookup`` supplies UMLS/DrugBank reference definitions; by default it is
+    configured from the environment. Lookup problems never stop the pipeline.
+    """
     if not isinstance(source_text, str) or not source_text.strip():
         raise ValueError("source_text must be a nonempty medical report.")
+    lookup = lookup if lookup is not None else MedicalLookup.from_env()
     trace: dict[str, Any] = {
-        "schema": "faithfulmed_production_trace_v1",
+        "schema": "faithfulmed_production_trace_v2",
         "started_at_utc": _now(),
         "completed_at_utc": None,
         "model": model,
         "status": "running",
         "original_report": source_text,
         "stages": [],
-        "results": {"extractor": None, "simplifier": None, "verifier_refiner_iterations": [],
+        "results": {"extractor": None, "reference_definitions": None, "simplifier": None, "verifier_refiner_iterations": [],
                     "readability": None, "final_explanation": None},
         "error": None,
     }
@@ -136,6 +147,7 @@ async def run_production_pipeline(
     async def verify(draft: str, check_number: int) -> tuple[str, dict[str, Any]]:
         stage_id = f"verifier-{check_number}"
         stage_input = {"original_report": source_text, "extracted_facts": json.loads(atoms),
+                       "reference_definitions": verifier_definitions,
                        "patient_friendly_explanation_draft": draft}
         record = {"stage_id": stage_id, "agent": "Verifier", "iteration": check_number,
                   "status": "running", "started_at_utc": _now(), "completed_at_utc": None,
@@ -149,7 +161,8 @@ async def run_production_pipeline(
                              "iteration": check_number, "delta": delta, "output": accumulated})
 
         try:
-            raw = await verifier_runner(source_text, atoms, draft, model, on_text)
+            raw = await verifier_runner(source_text, atoms, draft, model, on_text,
+                                        json.dumps(verifier_definitions, ensure_ascii=False))
             parsed = parse_production_verdict(raw)
         except Exception as exc:
             record.update(status="failed", completed_at_utc=_now(), error=str(exc))
@@ -159,6 +172,35 @@ async def run_production_pipeline(
                       parsed_output=parsed)
         _emit(on_event, {"type": "stage_completed", "record": record})
         return raw, parsed
+
+    async def term_lookup() -> dict[str, Any]:
+        """Pick terms and look them up. Records failures; never raises."""
+        record = {"stage_id": "term_lookup", "agent": "TermLookup", "iteration": None,
+                  "status": "running", "started_at_utc": _now(), "completed_at_utc": None,
+                  "input": {"extracted_facts": json.loads(atoms), "sources": lookup.sources()},
+                  "output": "", "error": None}
+        trace["stages"].append(record)
+        _emit(on_event, {"type": "stage_started", "record": record})
+
+        def on_text(delta: str, accumulated: str) -> None:
+            record["output"] = accumulated
+            _emit(on_event, {"type": "stage_chunk", "stage_id": "term_lookup", "agent": "TermLookup",
+                             "iteration": None, "delta": delta, "output": accumulated})
+
+        async def find_terms(facts_json: str) -> str:
+            return await agent_executor(create_term_finder_agent(model), {"atoms": facts_json},
+                                        "List the terms to look up.", on_text)
+
+        try:
+            definitions = await build_reference_definitions(atoms, lookup, find_terms)
+        except Exception as exc:  # build_reference_definitions should not raise; stay safe
+            definitions = empty_reference_definitions("failed", lookup, [f"{type(exc).__name__}: {exc}"])
+        status = {"completed": "completed", "not_configured": "skipped"}.get(definitions["status"], "failed")
+        record.update(status=status, completed_at_utc=_now(),
+                      output=json.dumps(definitions, ensure_ascii=False), parsed_output=definitions,
+                      error="; ".join(definitions["errors"]) or None)
+        _emit(on_event, {"type": "stage_completed", "record": record})
+        return definitions
 
     try:
         atoms_raw = await stage(
@@ -170,11 +212,17 @@ async def run_production_pipeline(
         ExtractorOutput.model_validate_json(atoms)
         trace["results"]["extractor"] = atoms
 
+        # Reference definitions stay separate from the patient-specific facts.
+        definitions = await term_lookup()
+        trace["results"]["reference_definitions"] = definitions
+        glossary = render_glossary(definitions)
+        verifier_definitions = reference_definitions_for_prompt(definitions)
+
         draft = await stage(
             "simplifier", "Simplifier", {"original_report": source_text, "extracted_facts": json.loads(atoms),
-                                          "glossary": "No glossary entries provided."},
+                                          "glossary": glossary},
             create_simplifier_agent(model),
-            {"source_text": source_text, "atoms": atoms, "glossary": "No glossary entries provided."},
+            {"source_text": source_text, "atoms": atoms, "glossary": glossary},
             "Create the patient-friendly medical text.",
         )
         trace["results"]["simplifier"] = draft

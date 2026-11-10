@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any, Awaitable, Callable
 
 from agents.extractor import EXTRACTOR_INSTRUCTION
+from agents.medical_lookup import TERM_FINDER_INSTRUCTION, lookup_config_from_env
 from agents.factual_evaluator import (
     FACTUAL_EVALUATOR_PROMPT,
     factual_evaluator_request,
@@ -31,7 +32,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_CACHE_PATH = ROOT / "eval_results" / "system_demo_runs.jsonl"
 VALID_SPLITS = ("scratch", "dev", "test")
 VALID_DATASETS = ("MTSamples", "PLABA")
-PIPELINE_IMPLEMENTATION_VERSION = "system-pipeline-v2"
+PIPELINE_IMPLEMENTATION_VERSION = "system-pipeline-v3"
 METRIC_IMPLEMENTATION_VERSION = "system-metrics-v3"
 FACTUAL_LABELS = {"supported", "unsupported", "contradicted", "uncertain"}
 FACTUAL_STATUSES = {"scored", "no_claims", "insufficient_source"}
@@ -439,6 +440,7 @@ def _percent(items: list[dict[str, Any]], key: str) -> float | None:
 def prompt_hashes() -> dict[str, str]:
     prompts = {
         "extractor": EXTRACTOR_INSTRUCTION,
+        "term_finder": TERM_FINDER_INSTRUCTION,
         "simplifier": SIMPLIFIER_INSTRUCTION,
         "production_verifier": PRODUCTION_VERIFIER_PROMPT,
         "refiner": _REFINER_INSTRUCTION,
@@ -446,6 +448,11 @@ def prompt_hashes() -> dict[str, str]:
         "factual_evaluator": FACTUAL_EVALUATOR_PROMPT,
     }
     return {name: hashlib.sha256(prompt.encode("utf-8")).hexdigest() for name, prompt in prompts.items()}
+
+
+def pipeline_config() -> dict[str, Any]:
+    """Settings that change pipeline output, including which lookup sources exist."""
+    return {"max_revision_cycles": MAX_REVISION_CYCLES, "reference_lookup": lookup_config_from_env()}
 
 
 def cache_key(example: SystemExample, pipeline_model: str, evaluator_model: str) -> str:
@@ -457,7 +464,7 @@ def cache_key(example: SystemExample, pipeline_model: str, evaluator_model: str)
         "evaluator_model": evaluator_model,
         "prompt_hashes": prompt_hashes(),
         "pipeline_version": PIPELINE_IMPLEMENTATION_VERSION,
-        "pipeline_config": {"max_revision_cycles": MAX_REVISION_CYCLES},
+        "pipeline_config": pipeline_config(),
         "metric_version": METRIC_IMPLEMENTATION_VERSION,
     }
     return hashlib.sha256(json.dumps(identity, sort_keys=True).encode("utf-8")).hexdigest()
@@ -595,7 +602,7 @@ async def run_system_example(
         "evaluator_model": evaluator_model,
         "prompt_hashes": prompt_hashes(),
         "pipeline_version": PIPELINE_IMPLEMENTATION_VERSION,
-        "pipeline_config": {"max_revision_cycles": MAX_REVISION_CYCLES},
+        "pipeline_config": pipeline_config(),
         "metric_version": METRIC_IMPLEMENTATION_VERSION,
         "source_text": example.source_text,
         "post_generation_references": example.references,

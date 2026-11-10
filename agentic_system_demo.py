@@ -384,7 +384,7 @@ def render_live(
     with container.container():
         st.markdown(f"#### Running {label}")
         display_stages = [
-            "Extractor", "Simplifier", "Verifier / Refiner", "Readability",
+            "Extractor", "TermLookup", "Simplifier", "Verifier / Refiner", "Readability",
             "Factual evaluator",
         ]
         states = {name: "waiting" for name in display_stages}
@@ -405,6 +405,7 @@ def render_live(
             suffix = f" · iteration {iteration}" if iteration is not None else ""
             messages = {
                 "Extractor": "Extractor is reading the source.",
+                "TermLookup": "Looking up UMLS and DrugBank definitions for medical terms.",
                 "Simplifier": "Simplifier is drafting the patient-friendly explanation.",
                 "Verifier": "Verifier is checking the current draft.",
                 "Refiner": "Refiner is applying targeted corrections.",

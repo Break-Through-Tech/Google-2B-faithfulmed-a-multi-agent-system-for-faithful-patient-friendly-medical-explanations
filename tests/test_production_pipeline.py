@@ -8,6 +8,7 @@ import unittest
 from types import SimpleNamespace
 from unittest.mock import patch
 
+from agents.medical_lookup import MedicalLookup
 from agents.production_pipeline import MAX_REVISION_CYCLES, run_production_pipeline
 from agents.verifier import PRODUCTION_VERIFIER_PROMPT, production_verifier_prompt
 
@@ -58,18 +59,19 @@ class ProductionPipelineTests(unittest.TestCase):
 
         decisions = iter((verdict("revise"), verdict("accept")))
 
-        async def verifier_runner(source, facts, draft, model, on_text):
+        async def verifier_runner(source, facts, draft, model, on_text, definitions):
             text = next(decisions)
             on_text(text, text)
             return text
 
         result = asyncio.run(run_production_pipeline(
             "Finding.", agent_executor=executor, verifier_runner=verifier_runner,
+            lookup=MedicalLookup.disabled(),
         ))
         self.assertTrue(result.accepted)
         self.assertEqual(result.final_explanation, "Final explanation.")
         self.assertEqual([item["agent"] for item in result.trace["stages"]],
-                         ["Extractor", "Simplifier", "Verifier", "Refiner", "Verifier", "Readability"])
+                         ["Extractor", "TermLookup", "Simplifier", "Verifier", "Refiner", "Verifier", "Readability"])
         self.assertEqual(len(result.trace["results"]["verifier_refiner_iterations"]), 2)
 
     @patch("agents.production_pipeline.create_readability_agent", return_value=SimpleNamespace(name="Readability"))
@@ -93,7 +95,7 @@ class ProductionPipelineTests(unittest.TestCase):
             on_text(text, text)
             return text
 
-        async def verifier_runner(source, facts, draft, model, on_text):
+        async def verifier_runner(source, facts, draft, model, on_text, definitions):
             counts["Verifier"] += 1
             text = verdict("revise")
             on_text(text, text)
@@ -101,6 +103,7 @@ class ProductionPipelineTests(unittest.TestCase):
 
         result = asyncio.run(run_production_pipeline(
             "Finding.", agent_executor=executor, verifier_runner=verifier_runner,
+            lookup=MedicalLookup.disabled(),
         ))
         self.assertFalse(result.accepted)
         self.assertIsNone(result.final_explanation)
@@ -126,12 +129,15 @@ class ProductionPipelineTests(unittest.TestCase):
                 return extracted
             raise RuntimeError("simplifier unavailable")
 
-        result = asyncio.run(run_production_pipeline("Finding.", agent_executor=executor))
+        result = asyncio.run(run_production_pipeline(
+            "Finding.", agent_executor=executor, lookup=MedicalLookup.disabled(),
+        ))
         self.assertFalse(result.accepted)
         self.assertEqual(result.trace["status"], "failed")
         self.assertEqual(result.trace["results"]["extractor"], extracted)
         self.assertEqual(result.trace["stages"][0]["status"], "completed")
-        self.assertEqual(result.trace["stages"][1]["status"], "failed")
+        self.assertEqual(result.trace["stages"][1]["status"], "skipped")
+        self.assertEqual(result.trace["stages"][2]["status"], "failed")
         self.assertEqual(result.trace["error"], "simplifier unavailable")
 
 

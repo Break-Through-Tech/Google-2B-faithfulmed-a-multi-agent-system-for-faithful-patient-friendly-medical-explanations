@@ -19,6 +19,7 @@ The input contains:
 - The original medical report.
 - Extracted facts. Each fact has a fact_id (a string such as "001", "002", or "003"), fact_text, fact_type, and source_evidence (a list of strings).
 - A patient-friendly explanation draft.
+- Optionally, reference_definitions: general definitions of terms from UMLS or DrugBank. Each has term, fact_ids, source, source_id, matched_name, definition_source, and definition.
 
 Use the original report as the source of truth. Use the extracted facts to help find and check relevant information, but verify them against the report. Do not invent facts, requirements, or report details.
 
@@ -56,6 +57,13 @@ For every clinical, causal, comparative, or negative claim:
 - If the source does not establish the claim, label it unsupported even when it seems medically plausible.
 - Use contradicted only when the source explicitly conflicts with the claim. An entity mismatch or missing support alone is unsupported, not contradicted.
 - Return "revise" for any clinically meaningful unsupported, contradicted, or unresolved claim.
+
+REFERENCE DEFINITIONS
+reference_definitions, when present, describe what a term means in general. They are not part of the report and are not facts about this patient.
+- Never use a reference definition to support a patient-specific claim, such as a diagnosis, finding, result, dose, cause, plan, or instruction. Those still require support from the report.
+- A plain-language explanation of what a term generally means is not unsupported merely because the report does not define the term, provided it is consistent with the supplied reference definition for that term and does not change the report's meaning.
+- Flag an explanation of a term as unsupported if it conflicts with or materially goes beyond its supplied definition, or if the definition describes a different concept than the one the report uses. Name the definition's source_id in instruction_to_refiner.
+- A missing definition is never an omission.
 
 Unsupported claims
 List material claims in the explanation that the report does not establish or that conflict with it.
@@ -128,8 +136,17 @@ Use exactly these keys and labels:
 Include every sentence from the explanation in order, numbered starting at 1. If there are no material unsupported claims or omissions, return empty arrays for those fields. Keep reasons and Refiner instructions brief and grounded in the report."""
 
 
-def production_verifier_prompt(source_text: str, extracted_facts: str, draft: str) -> str:
-    """Append only the production inputs to the exact production prompt."""
+def production_verifier_prompt(
+    source_text: str,
+    extracted_facts: str,
+    draft: str,
+    reference_definitions: Any = None,
+) -> str:
+    """Append only the production inputs to the exact production prompt.
+
+    ``reference_definitions`` (a list, or its JSON text) is added as its own key,
+    separate from the patient-specific extracted facts, and only when nonempty.
+    """
     try:
         facts: Any = json.loads(extracted_facts)
     except (json.JSONDecodeError, TypeError):
@@ -139,6 +156,13 @@ def production_verifier_prompt(source_text: str, extracted_facts: str, draft: st
         "extracted_facts": facts,
         "patient_friendly_explanation_draft": draft,
     }
+    if isinstance(reference_definitions, str):
+        try:
+            reference_definitions = json.loads(reference_definitions)
+        except json.JSONDecodeError:
+            reference_definitions = None
+    if isinstance(reference_definitions, list) and reference_definitions:
+        payload["reference_definitions"] = reference_definitions
     return PRODUCTION_VERIFIER_PROMPT + "\n\nINPUT JSON:\n" + json.dumps(payload, ensure_ascii=False)
 
 
@@ -196,9 +220,12 @@ async def run_production_verifier(
     model: str = VERIFIER_DEFAULT_MODEL,
     *,
     on_text: Callable[[str, str], None] | None = None,
+    reference_definitions: Any = None,
 ) -> str:
     """Run the full-system Verifier without changing the MedAESQA evaluator."""
-    evaluation_prompt = production_verifier_prompt(source_text, extracted_facts, draft)
+    evaluation_prompt = production_verifier_prompt(
+        source_text, extracted_facts, draft, reference_definitions,
+    )
     agent = create_verifier_agent(model)
     state = {"evaluation_prompt": evaluation_prompt}
     message = "Return the requested production verification JSON object."
