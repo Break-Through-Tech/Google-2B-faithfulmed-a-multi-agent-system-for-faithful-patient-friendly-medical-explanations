@@ -400,7 +400,7 @@ def placeholder_page(agent: str) -> None:
 
 def main() -> None:
     load_env(); st.set_page_config(page_title="FaithfulMed Workbench", page_icon="🩺", layout="wide")
-    agent = st.sidebar.radio("Agent workbench", ["Baseline", "Verifier", "Extractor", "Simplifier", "Refiner", "Readability"])
+    agent = st.sidebar.radio("Agent workbench", ["Baseline", "Verifier", "Refiner", "Readability"])
     if agent == "Verifier":
         st.title("FaithfulMed Verifier Workbench"); st.caption("Exploratory MedAESQA results only—not final research results.")
         verifier_page()
