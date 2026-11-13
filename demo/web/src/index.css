@@ -9,6 +9,8 @@
   --color-ink-800: #131a29;
   --color-ink-700: #1c2539;
   --color-ink-600: #2a3550;
+  /* Text on solid accent backgrounds (buttons, verdict badges). */
+  --color-on-accent: #05070d;
   --animate-pulse-ring: pulse-ring 1.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animate-flow: flow 1.2s linear infinite;
   --animate-fade-up: fade-up 0.45s ease-out both;
@@ -25,6 +27,48 @@
 @keyframes blink { 50% { opacity: 0; } }
 
 html { color-scheme: dark; }
+
+/* Light theme: components are written against the dark palette, so remap it.
+   Surfaces and neutrals invert; accent tints used for text deepen to stay readable on white. */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-ink-950: #f3f5f9;
+  --color-ink-900: #ffffff;
+  --color-ink-850: #f6f8fb;
+  --color-ink-800: #eef2f7;
+  --color-ink-700: #e2e8f0;
+  --color-ink-600: #cbd5e1;
+  --color-white: #0f172a;
+  --color-on-accent: #ffffff;
+  --color-slate-50: #0b1220;
+  --color-slate-100: #0f172a;
+  --color-slate-200: #1e293b;
+  --color-slate-300: #334155;
+  --color-slate-400: #475569;
+  --color-slate-500: #5b6b80;
+  --color-slate-600: #94a3b8;
+  --color-cyan-100: #164e63;
+  --color-cyan-200: #155e75;
+  --color-cyan-300: #0e7490;
+  --color-cyan-400: #0e7490;
+  --color-sky-300: #0369a1;
+  --color-sky-400: #0369a1;
+  --color-violet-300: #6d28d9;
+  --color-violet-400: #6d28d9;
+  --color-amber-200: #92400e;
+  --color-amber-300: #b45309;
+  --color-amber-400: #b45309;
+  --color-emerald-200: #065f46;
+  --color-emerald-300: #047857;
+  --color-emerald-400: #047857;
+  --color-rose-200: #9f1239;
+  --color-rose-300: #be123c;
+  --color-rose-400: #be123c;
+  --color-pink-200: #9d174d;
+  --color-pink-300: #be185d;
+  --color-pink-400: #be185d;
+  --color-teal-200: #0f766e;
+}
 body {
   @apply bg-ink-950 text-slate-200 font-sans antialiased;
   background-image:
@@ -36,8 +80,8 @@ body {
 
 .grid-bg {
   background-image:
-    linear-gradient(rgb(148 163 184 / 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(148 163 184 / 0.05) 1px, transparent 1px);
+    linear-gradient(var(--grid-line, rgb(148 163 184 / 0.05)) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line, rgb(148 163 184 / 0.05)) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
@@ -45,6 +89,8 @@ body {
   @apply rounded-2xl border border-white/[0.07] bg-ink-900/70 backdrop-blur-xl;
   box-shadow: 0 1px 0 0 rgb(255 255 255 / 0.04) inset, 0 20px 40px -24px rgb(0 0 0 / 0.6);
 }
+:root[data-theme="light"] .glass { box-shadow: 0 1px 2px 0 rgb(15 23 42 / 0.04), 0 16px 36px -24px rgb(15 23 42 / 0.25); }
+:root[data-theme="light"] .grid-bg { --grid-line: rgb(100 116 139 / 0.09); }
 
 .text-gradient {
   @apply bg-gradient-to-r from-cyan-300 via-sky-300 to-violet-300 bg-clip-text text-transparent;

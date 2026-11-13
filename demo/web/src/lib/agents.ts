@@ -12,7 +12,7 @@ export interface AgentInfo {
 
 export const AGENTS: Record<string, AgentInfo> = {
   Extractor: { key: "Extractor", label: "Extractor", role: "Pulls every checkable fact, with verbatim evidence", icon: ScanText, text: "text-cyan-300", hex: "#22d3ee" },
-  TermLookup: { key: "TermLookup", label: "Term Lookup", role: "Grounds jargon in UMLS & DrugBank definitions", icon: BookOpenText, text: "text-sky-300", hex: "#38bdf8" },
+  TermLookup: { key: "TermLookup", label: "Term Lookup", role: "Grounds jargon in UMLS definitions", icon: BookOpenText, text: "text-sky-300", hex: "#38bdf8" },
   Simplifier: { key: "Simplifier", label: "Simplifier", role: "Drafts a plain-language explanation", icon: Wand2, text: "text-violet-300", hex: "#a78bfa" },
   Verifier: { key: "Verifier", label: "Verifier", role: "Audits every sentence against the source", icon: ShieldCheck, text: "text-amber-300", hex: "#fbbf24" },
   Refiner: { key: "Refiner", label: "Refiner", role: "Makes minimal, targeted fixes", icon: PenLine, text: "text-pink-300", hex: "#f472b6" },

@@ -37,7 +37,7 @@ export function summarize(stage: Stage): string {
     }
     case "TermLookup": {
       const defs = stage.parsed_output;
-      if (stage.status === "skipped" || defs?.status === "not_configured") return "Skipped · no UMLS/DrugBank configured";
+      if (stage.status === "skipped" || defs?.status === "not_configured") return "Skipped · no UMLS key configured";
       return defs ? `${defs.entries?.length ?? 0} definitions · ${defs.unresolved?.length ?? 0} unresolved` : "Looking up terms";
     }
     case "Verifier": {
@@ -99,7 +99,7 @@ function TermLookupView({ stage }: { stage: Stage }) {
       <p className="flex items-center gap-2 text-sm text-slate-400">
         <CircleSlash className="h-4 w-4" />
         {defs.status === "not_configured"
-          ? "No UMLS key or DrugBank index on this server, so the stage was skipped with no model call."
+          ? "No UMLS key on this server, so the stage was skipped with no model call."
           : "No reference definitions were found."}
       </p>
     );
@@ -146,7 +146,7 @@ function VerifierView({ verdict }: { verdict: any }) {
   return (
     <div className="space-y-4">
       <div className={`flex items-start gap-3 rounded-xl p-3 ${accept ? "bg-emerald-400/10" : "bg-amber-400/10"}`}>
-        <div className={`rounded-lg px-2.5 py-1 text-sm font-bold tracking-wide ${accept ? "bg-emerald-400 text-ink-950" : "bg-amber-400 text-ink-950"}`}>
+        <div className={`rounded-lg px-2.5 py-1 text-sm font-bold tracking-wide ${accept ? "bg-emerald-400 text-on-accent" : "bg-amber-400 text-on-accent"}`}>
           {accept ? "ACCEPT" : "REVISE"}
         </div>
         <p className="text-sm text-slate-200">{verdict.explanation_accuracy?.reason}</p>

@@ -46,7 +46,7 @@ Offline tests (fake Gemini, no quota): `python -m unittest discover -s tests -p 
 | `DEMO_LIVE` | `1` | Set to `0` to turn off live runs even when a key is present. |
 | `DEMO_MAX_LIVE_RUNS` | `1` | Concurrent live runs allowed. Extra requests get HTTP 429. |
 | `DEMO_MODEL` | `gemini-3.8-flash` | Model for the pipeline and the fact-check. |
-| `UMLS_API_KEY`, `DRUGBANK_INDEX_PATH` | none | Optional: enables the Term Lookup stage. |
+| `UMLS_API_KEY` | none | Optional: enables the Term Lookup stage. |
 
 If the browser disconnects mid-run, the server cancels the pipeline so it stops using quota.
 

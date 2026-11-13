@@ -1,6 +1,6 @@
 # Slim runtime for the hosted demo (the root requirements.txt is the full research stack).
-google-adk==2.10.0
-google-genai==2.25.0
+google-adk==2.14.0
+google-genai==2.34.0
 fastapi==0.141.1
 uvicorn==0.54.0
 pydantic==2.13.5

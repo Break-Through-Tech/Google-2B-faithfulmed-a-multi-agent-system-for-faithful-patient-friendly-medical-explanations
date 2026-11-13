@@ -10,15 +10,15 @@ function Ring({ value, target, color }: { value: number | null; target: number; 
   const t = target / 100;
   return (
     <svg viewBox="0 0 100 100" className="h-28 w-28 -rotate-90">
-      <circle cx="50" cy="50" r={r} fill="none" stroke="#1c2539" strokeWidth="9" />
+      <circle cx="50" cy="50" r={r} fill="none" stroke="var(--color-ink-700)" strokeWidth="9" />
       <circle
         cx="50" cy="50" r={r} fill="none" stroke={color} strokeWidth="9" strokeLinecap="round"
-        strokeDasharray={`${c * pct} ${c}`} style={{ transition: "stroke-dasharray 1.2s ease-out", filter: `drop-shadow(0 0 6px ${color}88)` }}
+        strokeDasharray={`${c * pct} ${c}`} style={{ transition: "stroke-dasharray 1.2s ease-out", filter: `drop-shadow(0 0 6px color-mix(in oklab, ${color} 55%, transparent))` }}
       />
       <line
         x1={50 + (r - 7) * Math.cos(2 * Math.PI * t)} y1={50 + (r - 7) * Math.sin(2 * Math.PI * t)}
         x2={50 + (r + 7) * Math.cos(2 * Math.PI * t)} y2={50 + (r + 7) * Math.sin(2 * Math.PI * t)}
-        stroke="#e2e8f0" strokeWidth="1.5"
+        stroke="var(--color-slate-200)" strokeWidth="1.5"
       />
     </svg>
   );
@@ -59,7 +59,7 @@ export function ScoreBoard({ result, run }: { result: ResultEvent; run: RunState
         <Label>Faithfulness</Label>
         <div className="mt-2 flex items-center gap-4">
           <div className="relative">
-            <Ring value={fidelity} target={85} color="#34d399" />
+            <Ring value={fidelity} target={85} color="var(--color-emerald-400)" />
             <div className="absolute inset-0 grid place-items-center text-2xl font-bold text-slate-50">{fmt(fidelity, 0, "%")}</div>
           </div>
           <div className="text-sm text-slate-400">
@@ -98,7 +98,7 @@ export function ScoreBoard({ result, run }: { result: ResultEvent; run: RunState
             g === null ? null : (
               <div
                 key={i}
-                className={`absolute -top-1.5 h-5 w-1.5 rounded-full ${i ? "bg-white shadow-[0_0_10px_white]" : "bg-slate-500"}`}
+                className={`absolute -top-1.5 h-5 w-1.5 rounded-full ${i ? "bg-white shadow-[0_0_10px_var(--color-white)]" : "bg-slate-500"}`}
                 style={{ left: `${Math.min(100, (g / 18) * 100)}%`, transition: "left 1s" }}
               />
             ),
