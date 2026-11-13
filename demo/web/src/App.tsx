@@ -1,4 +1,4 @@
-import { AlertOctagon, Github, Radio, Stethoscope, Timer } from "lucide-react";
+import { AlertOctagon, Github, Moon, Radio, Stethoscope, Sun, Timer } from "lucide-react";
 import { useCallback, useEffect, useReducer, useRef, useState } from "react";
 import { EvidenceView, type Selection } from "./components/EvidenceView";
 import { FlaggedPassages } from "./components/FlaggedPassages";
@@ -12,6 +12,7 @@ import { AGENTS } from "./lib/agents";
 import { initialRunState, runReducer } from "./lib/runState";
 import { streamEvents } from "./lib/stream";
 import { friendlyError } from "./lib/text";
+import { useTheme } from "./lib/theme";
 import type { Config, LiveExample, SavedRun } from "./lib/types";
 
 const REPO = "https://github.com/Break-Through-Tech/Google-2B-faithfulmed-a-multi-agent-system-for-faithful-patient-friendly-medical-explanations";
@@ -64,6 +65,7 @@ export default function App() {
   const [run, dispatch] = useReducer(runReducer, initialRunState);
   const [selection, setSelection] = useState<Selection>(null);
   const [follow, setFollow] = useState(true);
+  const [theme, toggleTheme] = useTheme();
   const abort = useRef<AbortController | null>(null);
   const evidenceRef = useRef<HTMLDivElement>(null);
 
@@ -115,7 +117,7 @@ export default function App() {
     <div className="mx-auto max-w-[1400px] px-4 pb-24 sm:px-6">
       <header className="flex flex-wrap items-center gap-3 py-5">
         <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-cyan-400 to-violet-500 shadow-[0_0_24px_-4px_#22d3ee]">
-          <Stethoscope className="h-5 w-5 text-ink-950" />
+          <Stethoscope className="h-5 w-5 text-on-accent" />
         </div>
         <div>
           <div className="text-lg font-bold tracking-tight text-slate-50">FaithfulMed</div>
@@ -141,6 +143,14 @@ export default function App() {
           <a href={REPO} target="_blank" rel="noreferrer" className="rounded-full bg-white/5 p-1.5 text-slate-400 ring-1 ring-inset ring-white/10 hover:text-white" aria-label="GitHub repository">
             <Github className="h-4 w-4" />
           </a>
+          <button
+            onClick={toggleTheme}
+            className="rounded-full bg-white/5 p-1.5 text-slate-400 ring-1 ring-inset ring-white/10 hover:text-white"
+            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+            title={theme === "dark" ? "Light mode" : "Dark mode"}
+          >
+            {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+          </button>
         </div>
       </header>
 

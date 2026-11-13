@@ -164,7 +164,7 @@ export function LaunchPanel({
         <button
           onClick={launch}
           disabled={!canRun}
-          className="group relative mt-4 flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-gradient-to-r from-cyan-400 via-sky-400 to-violet-400 py-3 text-sm font-bold text-ink-950 shadow-[0_0_30px_-8px_#22d3ee] transition hover:shadow-[0_0_40px_-6px_#22d3ee] disabled:opacity-40"
+          className="group relative mt-4 flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-gradient-to-r from-cyan-400 via-sky-400 to-violet-400 py-3 text-sm font-bold text-on-accent shadow-[0_0_30px_-8px_#22d3ee] transition hover:shadow-[0_0_40px_-6px_#22d3ee] disabled:opacity-40"
         >
           {tab === "replay" ? <Play className="h-4 w-4" /> : <Zap className="h-4 w-4" />}
           {tab === "replay" ? "Replay pipeline" : "Run agents live"}

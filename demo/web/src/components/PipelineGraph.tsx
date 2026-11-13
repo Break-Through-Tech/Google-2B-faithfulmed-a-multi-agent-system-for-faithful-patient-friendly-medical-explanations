@@ -57,11 +57,11 @@ function Node({ agent, status, count, compact }: { agent: string; status: NodeSt
 function Connector({ active, done }: { active: boolean; done: boolean }) {
   return (
     <svg className="mt-7 hidden h-2 min-w-6 flex-1 md:block" preserveAspectRatio="none" viewBox="0 0 100 4">
-      <line x1="0" y1="2" x2="100" y2="2" stroke={done ? "#334155" : "#1e293b"} strokeWidth="2" />
+      <line x1="0" y1="2" x2="100" y2="2" stroke={done ? "var(--color-ink-600)" : "var(--color-ink-700)"} strokeWidth="2" />
       {active && (
-        <line x1="0" y1="2" x2="100" y2="2" stroke="#22d3ee" strokeWidth="2" strokeDasharray="6 10" className="animate-flow" />
+        <line x1="0" y1="2" x2="100" y2="2" stroke="var(--color-cyan-400)" strokeWidth="2" strokeDasharray="6 10" className="animate-flow" />
       )}
-      {done && !active && <line x1="0" y1="2" x2="100" y2="2" stroke="#22d3ee55" strokeWidth="2" />}
+      {done && !active && <line x1="0" y1="2" x2="100" y2="2" stroke="color-mix(in oklab, var(--color-cyan-400) 35%, transparent)" strokeWidth="2" />}
     </svg>
   );
 }
