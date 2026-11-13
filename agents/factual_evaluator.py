@@ -112,12 +112,14 @@ async def run_factual_evaluator(
     model: str = VERIFIER_DEFAULT_MODEL,
     *,
     on_text: Callable[[str, str], None] | None = None,
+    on_usage: Callable[[dict[str, Any]], None] | None = None,
 ) -> str:
     """Run an evaluation call that is independent of the pipeline Verifier."""
     prompt = factual_evaluator_prompt(source_text, final_explanation, references)
     agent = create_factual_evaluator_agent(model)
     state = {"evaluation_prompt": prompt}
     message = "Return the requested independent factual-fidelity JSON object."
+    usage_kw = {"on_usage": on_usage} if on_usage else {}  # only usage-aware callers pass it
     if on_text:
-        return await run_agent_stream(agent, state=state, message=message, on_text=on_text)
-    return await run_agent_once(agent, state=state, message=message)
+        return await run_agent_stream(agent, state=state, message=message, on_text=on_text, **usage_kw)
+    return await run_agent_once(agent, state=state, message=message, **usage_kw)

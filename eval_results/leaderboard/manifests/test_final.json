@@ -1,0 +1,364 @@
+{
+  "schema": "faithfulmed_leaderboard_manifest_v1",
+  "manifest_id": "test_final",
+  "purpose": "final_test",
+  "split": "test",
+  "datasets": [
+    "MTSamples",
+    "PLABA"
+  ],
+  "created_at_utc": "2026-11-11T01:40:58.366826+00:00",
+  "notes": [
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_01",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_01_gold.json",
+      "source_sha256": "0f2a307092c35c98b0c411900ffb99ffacd70a9851bc9ec2071345c7e06e952e"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_02",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_02_gold.json",
+      "source_sha256": "e1d6ee44b4bdf938cccf25117772eda4e52753c7ad09307cf12d2e49a46057ec"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_03",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_03_gold.json",
+      "source_sha256": "2aa99af67c4e2b8b41f58c30de51489ae5808cea983c44fd0f4718249d9b3bd8"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_05",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_05_gold.json",
+      "source_sha256": "6aa09895315d71fa2ed705276109819e2aa684c8111743809966bc9976d582ec"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_06",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_06_gold.json",
+      "source_sha256": "5df1982d7dfa05a1f5fccd2ad3867122e0024243c7697af04e2287cd6e117eb6"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_07",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_07_gold.json",
+      "source_sha256": "0ac6ff3c0398c50ede12ccfbcf674e52d287c610ce63921c5fb5986804db7580"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_09",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_09_gold.json",
+      "source_sha256": "57ae0afb23fa3b636ab3a6fa607e0475d2877700141f96c0275e46ed6c7a2535"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_10",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_10_gold.json",
+      "source_sha256": "40ad0c4c25c283776b6889b06ade8cfa1ec32202d773ea17e11f566140090aa9"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_14",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_14_gold.json",
+      "source_sha256": "f964df664ae705f962e5870e6f768e486a4d2f5ef6fb389a1c0cbb9b75da9eb0"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_15",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_15_gold.json",
+      "source_sha256": "27179700ecc6161fbaa21d2bfad187ef87ba9c590c3e2e336106ab13d33c61b6"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_16",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_16_gold.json",
+      "source_sha256": "a269164e6a5d6cdbe0426d1c434115cfee895b11862140d6c851939f2ccf8dc7"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_19",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_19_gold.json",
+      "source_sha256": "b4ddd5bf7ef285a8be312c01958a4963d35e0d52f6da2d7d19483294a76756f1"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_20",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_20_gold.json",
+      "source_sha256": "4805cce17367f703560181e4d1ab7a907f9e583b4c6cc5e1a283a597c7d5e19f"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_21",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_21_gold.json",
+      "source_sha256": "cd112f2eeed8f933bff615e0bb38f937569ab9817fb1d7edcb0bb26f0360ff43"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_23",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_23_gold.json",
+      "source_sha256": "39b196271a1fa0d556cdfb47d3bc498862089995ea8fafb40edf676492222ec6"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_24",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_24_gold.json",
+      "source_sha256": "db09e48f0431dc52601f15be1305edfe1723cf3531854d9517f7b7b7bff7929d"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_25",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_25_gold.json",
+      "source_sha256": "e0afbca517d660b52163f51a265b6b18fb55f82069c18ed7b8ffe38bb21e72c2"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_26",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_26_gold.json",
+      "source_sha256": "cc98aabf30312e600af33626dadf442389924f8fdad792c0d6821f14e787189f"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_27",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_27_gold.json",
+      "source_sha256": "efa87b573d00cba875bb7c7ac182796f0511d5edae46fad8bf027554885764fc"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_30",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_30_gold.json",
+      "source_sha256": "b4a1723f1cb967ce00c014bece8715a4f53edcb4311288165c01b383b1f1a492"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_32",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_32_gold.json",
+      "source_sha256": "9c3f1120bfd17c0c4714f27c0bb7864db6fcbc9f361f4ff0f36e4d03f86f77c8"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_34",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_34_gold.json",
+      "source_sha256": "02a62db89c8af7a5d4851d828fdfa735b8ae99b66de695328d2fdf280582d3de"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_35",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_35_gold.json",
+      "source_sha256": "102fc4b40fa0e20f9d687f506376c78c8e152629ee777c8f7503435f919ef15c"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_36",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_36_gold.json",
+      "source_sha256": "fd7af5b82c07685251d68dc96b1a3e8124f8ab7964f90bc240e4ab92514b2850"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_37",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_37_gold.json",
+      "source_sha256": "cd49ef6fd8950c90b4c32dd009bdf31d11fa9d639615546afa174d63ae5d4b1c"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_38",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_38_gold.json",
+      "source_sha256": "0722f15b5b108409881943f3e988b8a294c2a4a2e6264a82e9388a2a9329edb4"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_39",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_39_gold.json",
+      "source_sha256": "d7a71418c9c5c1dc2cf38bdc742074cfb2cebed40fedd05edd95608e1964fb40"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_40",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_40_gold.json",
+      "source_sha256": "359a5c297451c3ad29fd2a8cb9e06bf7abb14f179dd6738261336dd9d8f41ca6"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_41",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_41_gold.json",
+      "source_sha256": "b84f99b969825bd5074e91c261f6dc80dd87804f641c416471f12c9a9a16a787"
+    },
+    {
+      "dataset": "MTSamples",
+      "split": "test",
+      "example_id": "MTS_TEST_42",
+      "source_file": "data/MTSamples/test/adjudicated/MTS_TEST_42_gold.json",
+      "source_sha256": "1fd97f2223e1c63938c18dcd1217ec69a72e5dc847d0bbdfb9c3e43baec74e05"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_02",
+      "source_file": "data/PLABA/test/PLABA_TEST_02.json",
+      "source_sha256": "b892093868e59b9b5e5a2e1cdf577dcc0f0a462b85cd9f87b9c0ee122f9ad6e8"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_04",
+      "source_file": "data/PLABA/test/PLABA_TEST_04.json",
+      "source_sha256": "464c84698aa9dfd6de02e23305914e4052b96c88ef37ee3b6fe1939ba2cfbcdd"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_06",
+      "source_file": "data/PLABA/test/PLABA_TEST_06.json",
+      "source_sha256": "0f3bc388ac98ca1f3be2d31392d7eec95dc9a0ed0f910fc7cf6ddd683e9f99ec"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_11",
+      "source_file": "data/PLABA/test/PLABA_TEST_11.json",
+      "source_sha256": "c6a0e1f7e7e2fa8ee31e53a6449dd675c20ae09121d1993aac4b68b8b70d689d"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_16",
+      "source_file": "data/PLABA/test/PLABA_TEST_16.json",
+      "source_sha256": "e6dac878cdddb285108ab7cb6791fe081aaab7a8a1131a2cd3c973e6f46f722f"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_18",
+      "source_file": "data/PLABA/test/PLABA_TEST_18.json",
+      "source_sha256": "8da8e944ddb5446335dbf44ed75df34e822f53103f75f8f4634c69e4ae07c926"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_21",
+      "source_file": "data/PLABA/test/PLABA_TEST_21.json",
+      "source_sha256": "25e9cabc8657e778a2e9415f964d0fb97641b342bb34eb1e30cf00e9206ae091"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_32",
+      "source_file": "data/PLABA/test/PLABA_TEST_32.json",
+      "source_sha256": "394dba3fda5730d0a6c358892bb6fa46706c5e9337e9e9d3658c0fc6f5ffaa17"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_38",
+      "source_file": "data/PLABA/test/PLABA_TEST_38.json",
+      "source_sha256": "db5eb96311f9fa342840a999ddb8877eade0d13245c3f54779d0bbce658a2ba8"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_39",
+      "source_file": "data/PLABA/test/PLABA_TEST_39.json",
+      "source_sha256": "3b850c46d8160b6add5e42158b2c8ff6c1e31d1ded042f0a5ce934b25fdd7b0e"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_44",
+      "source_file": "data/PLABA/test/PLABA_TEST_44.json",
+      "source_sha256": "f576383cb10c1e3b8b08c12bea4264c58b7086c36c7637441014c1a48dfe21de"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_45",
+      "source_file": "data/PLABA/test/PLABA_TEST_45.json",
+      "source_sha256": "55fa5de6c2c381c43a4960b64723bfcd0c619adb29442be532965a8bbfd6a88c"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_46",
+      "source_file": "data/PLABA/test/PLABA_TEST_46.json",
+      "source_sha256": "aa04cd8164b626ad51f871448e04bb1706fdc634ecbdcc75f76d698b0c287e0e"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_52",
+      "source_file": "data/PLABA/test/PLABA_TEST_52.json",
+      "source_sha256": "9944f2561fec50bcbd87b9737e094364bb57fb02a71b433d188aff8247515d81"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_56",
+      "source_file": "data/PLABA/test/PLABA_TEST_56.json",
+      "source_sha256": "8b78d35294ecad8d2a162ef11da9f4bda9767f1f28696d843f38fe12a4032166"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_63",
+      "source_file": "data/PLABA/test/PLABA_TEST_63.json",
+      "source_sha256": "8c461b94ad5c0a33eba391d4c1cebc5d86b3fc21d4d5f3e179a8a53d4329a3d2"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_66",
+      "source_file": "data/PLABA/test/PLABA_TEST_66.json",
+      "source_sha256": "5d21a0138d82dfe7fae5702a4a01e2c7468bcc8542a2a87ffbc9577ea74c0812"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_67",
+      "source_file": "data/PLABA/test/PLABA_TEST_67.json",
+      "source_sha256": "2e86adbee37d22741a19c4bd7e8b0ecaa3ae545a0697c3307343bf99f905fc3a"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_72",
+      "source_file": "data/PLABA/test/PLABA_TEST_72.json",
+      "source_sha256": "f343eb5418ede0f984485d8f0cc1953ce0bd766ae3afddc093b29f99fe80df76"
+    },
+    {
+      "dataset": "PLABA",
+      "split": "test",
+      "example_id": "PLABA_TEST_75",
+      "source_file": "data/PLABA/test/PLABA_TEST_75.json",
+      "source_sha256": "7d60dee3edaad0aa7b5eef257e37f32e9d55a19067e0da36a4cb2e5f60baa558"
+    }
+  ],
+  "manifest_sha256": "df220295ed3ca73e235b1f5b86239e5bb380987e7b53108caeffae141a1476f0"
+}

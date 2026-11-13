@@ -1,0 +1,21 @@
+{
+  "schema": "faithfulmed_leaderboard_manifest_v1",
+  "manifest_id": "smoke_dev",
+  "purpose": "smoke",
+  "split": "dev",
+  "datasets": [
+    "MTSamples",
+    "PLABA"
+  ],
+  "created_at_utc": "2026-11-11T01:40:56.515786+00:00",
+  "notes": [
+    {
+      "dataset": "MTSamples",
+      "split": "dev",
+      "example_id": "MTS_DEV_04",
+      "source_file": "data/MTSamples/dev/adjudicated/MTS_DEV_04_gold.json",
+      "source_sha256": "3957dd5289d2bbc7ddad105c8e1bbd7f36249b93c9a4213a21f4677d270c2a23"
+    }
+  ],
+  "manifest_sha256": "b087012fd4558ca7d9f480e27396b80fd36fd198d9986b0e71f5f74635bc7487"
+}

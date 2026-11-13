@@ -1,0 +1,126 @@
+{
+  "schema": "faithfulmed_leaderboard_models_v1",
+  "checked_on": "2026-11-10",
+  "billing_tier": "free",
+  "billing_note": "All six configurations run on free API tiers, so the amount actually billed is $0. Estimated cost uses each provider's published paid-tier list price on the run date. Google's free tier allows Google to use submitted data to improve its products; the notes are public, de-identified MTSamples and PLABA records.",
+  "generation_settings_policy": "provider_defaults",
+  "generation_settings_note": "No temperature, token cap, or reasoning setting is passed to any model; each provider's defaults apply. Prompts and the revision limit are identical across models.",
+  "full_system": {
+    "lookup": {"umls": true},
+    "lookup_note": "UMLS reference definitions are on for every full-system configuration. DrugBank is not part of the pipeline. Baselines use no lookups."
+  },
+  "evaluator": {
+    "model_key": "gemini",
+    "model_id": "gemini-3.8-flash",
+    "judge_family": "Gemini",
+    "prompt": "agents.factual_evaluator.FACTUAL_EVALUATOR_PROMPT",
+    "note": "The automated faithfulness judge is Gemini (gemini-3.8-flash) with the existing factual-evaluator prompt, for all six configurations. Gemini is also a contestant, so the judge may favour Gemini outputs; the blind human review exists to measure that."
+  },
+  "models": {
+    "gemini": {
+      "display_name": "Gemini 3.8 Flash",
+      "model_id": "gemini-3.8-flash",
+      "adk_model": "gemini-3.8-flash",
+      "provider": "Google AI Studio (Gemini API)",
+      "credential_env": "GOOGLE_API_KEY",
+      "adaptations": [],
+      "pricing": {
+        "currency": "USD",
+        "unit": "per 1M tokens",
+        "tier": "Standard (paid tier, non-batch)",
+        "output_includes_thinking": true,
+        "periods": [
+          {"from": null, "to": "2026-12-31", "input": 0.75, "output": 3.75},
+          {"from": "2027-01-01", "to": null, "input": 1.50, "output": 7.50}
+        ],
+        "source_url": "https://aistudio.google.com/docs/pricing",
+        "checked_on": "2026-11-10",
+        "verification": "Read from the page's Gemini 3.8 Flash table (output price 'including thinking tokens'). The page shows no last-updated date."
+      },
+      "openness": {
+        "category": "closed",
+        "weights": "Not available; the model is offered only as a hosted API.",
+        "license": "Proprietary; used under the Gemini API terms of service.",
+        "license_url": "https://ai.google.dev/gemini-api/terms",
+        "hosting": "Google-hosted API (Google AI Studio).",
+        "sources": ["https://aistudio.google.com/docs/models"],
+        "checked_on": "2026-11-10"
+      }
+    },
+    "gemma": {
+      "display_name": "Gemma 4 31B IT",
+      "model_id": "gemma-4-31b-it",
+      "adk_model": "gemma-4-31b-it",
+      "provider": "Google AI Studio (Gemini API)",
+      "credential_env": "GOOGLE_API_KEY",
+      "adaptations": [],
+      "pricing": {
+        "currency": "USD",
+        "unit": "per 1M tokens",
+        "tier": "Paid tier",
+        "paid_tier_available": false,
+        "free_tier": "Free of charge",
+        "periods": [],
+        "source_url": "https://aistudio.google.com/docs/pricing",
+        "checked_on": "2026-11-10",
+        "verification": "The page's Gemma 4 table reads 'Free of charge' (free tier) and 'Not available' (paid tier) for input and output. The table names the Gemma 4 family, not this exact model ID."
+      },
+      "openness": {
+        "category": "open_weights",
+        "weights": "Downloadable from Hugging Face (google/gemma-4-31B-it) and Kaggle.",
+        "license": "Apache 2.0 (Hugging Face metadata 'apache-2.0'; the model card links Google's Gemma 4 license page).",
+        "license_url": "https://ai.google.dev/gemma/docs/gemma_4_license",
+        "hosting": "Google-hosted Gemini API for this leaderboard; the weights can also be self-hosted.",
+        "sources": [
+          "https://huggingface.co/google/gemma-4-31b-it",
+          "https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api",
+          "https://ai.google.dev/gemma/terms"
+        ],
+        "checked_on": "2026-11-10"
+      }
+    },
+    "gpt_oss": {
+      "display_name": "gpt-oss-120b (Groq)",
+      "model_id": "openai/gpt-oss-120b",
+      "adk_model": "groq/openai/gpt-oss-120b",
+      "provider": "Groq (via ADK LiteLlm)",
+      "credential_env": "GROQ_API_KEY",
+      "adaptations": [
+        "Called through ADK's LiteLlm wrapper (OpenAI-compatible chat API); ADK sends each agent's instruction as a system message instead of a Gemini system instruction.",
+        "Reasoning effort is left at Groq's default; reasoning tokens are billed inside output tokens."
+      ],
+      "pricing": {
+        "currency": "USD",
+        "unit": "per 1M tokens",
+        "tier": "Groq on-demand price",
+        "output_includes_thinking": true,
+        "periods": [
+          {"from": null, "to": null, "input": 0.15, "output": 0.60}
+        ],
+        "source_url": "https://console.groq.com/docs/models",
+        "checked_on": "2026-11-10",
+        "verification": "Read from the 'Price per 1M tokens' column on the Groq models page; groq.com/pricing showed no price table when checked."
+      },
+      "openness": {
+        "category": "open_weights",
+        "weights": "Downloadable from Hugging Face (openai/gpt-oss-120b).",
+        "license": "Apache 2.0.",
+        "license_url": "https://huggingface.co/openai/gpt-oss-120b",
+        "hosting": "Third-party hosted API (Groq), reached through LiteLLM.",
+        "sources": [
+          "https://huggingface.co/openai/gpt-oss-120b",
+          "https://console.groq.com/docs/models"
+        ],
+        "checked_on": "2026-11-10"
+      }
+    }
+  },
+  "configurations": [
+    {"config_id": "gemini-baseline", "model_key": "gemini", "type": "baseline"},
+    {"config_id": "gemini-system", "model_key": "gemini", "type": "full_system"},
+    {"config_id": "gemma-baseline", "model_key": "gemma", "type": "baseline"},
+    {"config_id": "gemma-system", "model_key": "gemma", "type": "full_system"},
+    {"config_id": "gpt-oss-baseline", "model_key": "gpt_oss", "type": "baseline"},
+    {"config_id": "gpt-oss-system", "model_key": "gpt_oss", "type": "full_system"}
+  ]
+}

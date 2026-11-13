@@ -1,7 +1,12 @@
+# Python 3.11–3.14 (google-adk 2.14 requires >= 3.11; litellm 1.106.2 requires < 3.15).
+#   uv venv --python 3.14 .venv && source .venv/bin/activate && uv pip install -r requirements.txt
+# The three agent-stack packages are pinned exactly so every teammate runs the same
+# code; leaderboard runs record these versions and treat a change as a new setup.
+
 # ── Google GCP-first stack ─────────────────────────────────────────────
-google-genai          # unified Gemini SDK (Google AI Studio + Vertex AI)
-google-adk>=2.9.1,<3  # Current stable ADK 2.x — multi-agent orchestration
-litellm               # lets ADK call Gemma / external open models for the leaderboard
+google-genai==2.34.0  # unified Gemini SDK (Google AI Studio + Vertex AI); ADK 2.14 needs >=2.30,<3
+google-adk==2.14.0    # ADK 2.x — multi-agent orchestration
+litellm==1.106.2      # ADK LiteLlm route to Groq (gpt-oss); ADK 2.14 supports >=1.84,<1.106.3
 
 # ── RAG / retrieval ────────────────────────────────────────────────────
 chromadb
@@ -26,4 +31,4 @@ streamlit>=1.35       # local agent workbench; dataframe row selection
 
 # ── Optional alternatives ──────────────────────────────────────────────
 # langgraph            # alternative orchestration to ADK
-# groq                 # one external open model (Llama-3) for the leaderboard
+# groq                 # not needed: LiteLLM calls Groq directly with GROQ_API_KEY

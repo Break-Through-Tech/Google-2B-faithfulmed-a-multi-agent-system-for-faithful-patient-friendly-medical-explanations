@@ -18,6 +18,11 @@ env/
 eval_results/*
 !eval_results/system_demo_runs.jsonl
 !eval_results/system_claim_reviews.jsonl
+# Leaderboard manifests, attempts, judge results, blind review items, and reports
+# are shared. Review keys unblind the human review: keep them with the
+# leaderboard owner until every judgment is in, then commit deliberately.
+!eval_results/leaderboard/
+eval_results/leaderboard/review_keys/
 
 # Data — download locally per data/README.md
 # (keep the folder, its docs, and the small MedAESQA methods reference)

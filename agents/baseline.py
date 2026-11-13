@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
-from . import DEFAULT_MODEL, run_agent_once
+from . import DEFAULT_MODEL, UsageCallback, run_agent_once
+
+BASELINE_MESSAGE = "Return the patient-friendly explanation"
 
 BASELINE_DEFAULT_MODEL = "gemini-3.8-flash"
 
@@ -34,11 +36,17 @@ def create_baseline_agent(model: str = DEFAULT_MODEL) -> Any:
     )
 
 
-async def run_baseline(source_text: str, model: str = DEFAULT_MODEL) -> str:
+async def run_baseline(
+    source_text: str,
+    model: str = DEFAULT_MODEL,
+    *,
+    on_usage: Optional[UsageCallback] = None,
+) -> str:
     """Run only the Baseline agent on one draft."""
 
     return await run_agent_once(
         create_baseline_agent(model),
         state={"source_text": source_text},
-        message="Return the patient-friendly explanation",
+        message=BASELINE_MESSAGE,
+        on_usage=on_usage,
     )

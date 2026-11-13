@@ -137,6 +137,9 @@ Use exactly these keys and labels:
 Include every sentence from the explanation in order, numbered starting at 1. If there are no material unsupported claims or omissions, return empty arrays for those fields. Keep reasons and Refiner instructions brief and grounded in the report."""
 
 
+PRODUCTION_VERIFIER_MESSAGE = "Return the requested production verification JSON object."
+
+
 def production_verifier_prompt(
     source_text: str,
     extracted_facts: str,
@@ -229,7 +232,7 @@ async def run_production_verifier(
     )
     agent = create_verifier_agent(model)
     state = {"evaluation_prompt": evaluation_prompt}
-    message = "Return the requested production verification JSON object."
+    message = PRODUCTION_VERIFIER_MESSAGE
     if on_text is not None:
         return await run_agent_stream(agent, state=state, message=message, on_text=on_text)
     return await run_agent_once(agent, state=state, message=message)

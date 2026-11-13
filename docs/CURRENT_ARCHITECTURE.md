@@ -96,6 +96,26 @@ The report includes `accepted` and `final_explanation` so step 4 can be reviewed
 
 The Simplifier returns two sections, `PATIENT-FRIENDLY VERSION:` and `REVIEW FLAGS:`. `split_simplifier_output()` in `agents/production_pipeline.py` separates them right after the Simplifier stage. Only the patient text goes to the Verifier, Refiner, Readability, and `final_explanation`. The raw output stays in `trace["results"]["simplifier"]` and the flags in `trace["results"]["simplifier_review_flags"]`. Before this, the wrapper could reach `final_explanation`, the demo display, readability metrics, and the factual evaluator's spans (10 of 32 saved runs in `eval_results/system_demo_runs.jsonl` contain it; those saved records are unchanged).
 
+## Model leaderboard
+
+Six configurations: {Gemini `gemini-3.8-flash`, Gemma `gemma-4-31b-it`, gpt-oss `groq/openai/gpt-oss-120b`} × {single-model baseline, full agentic system}. In a full-system configuration the one model powers every generation agent (Extractor, TermFinder, Simplifier, Verifier, Refiner, Readability). Models, prices, openness, and sources live in `evals/leaderboard_models.json`.
+
+**The automated faithfulness judge is Gemini** (`gemini-3.8-flash`, existing factual-evaluator prompt) for all six configurations. Gemini is also a contestant, so a blind human review of an equal-sized random sample per configuration is supported; human judgments and judge scores are kept and reported separately.
+
+- `evals/leaderboard.py` (offline): manifests, result schema, aggregation, Markdown/CSV report, blind review sampling, labelled historical runs.
+- `evals/leaderboard_runner.py` (model calls): resumable runs with bounded retries, per-call token usage, and generation latency that includes retry waits and excludes the judge.
+- Results: `eval_results/leaderboard/{manifests,attempts.jsonl,evaluations.jsonl,reviews,reports}`. Review keys (`review_keys/`) are gitignored until judging is finished.
+
+```bash
+python3 -m evals.leaderboard_runner status --manifest eval_results/leaderboard/manifests/smoke_dev.json
+python3 -m evals.leaderboard_runner run    --manifest eval_results/leaderboard/manifests/smoke_dev.json   # API quota
+python3 -m evals.leaderboard report        --manifest eval_results/leaderboard/manifests/smoke_dev.json
+python3 -m evals.leaderboard report --historical   # earlier runs, labelled with their original settings
+python3 -m evals.leaderboard review-sample --manifest eval_results/leaderboard/manifests/dev_pilot.json --per-config 5 --seed 20261110
+```
+
+The frozen `test_final` manifest runs only with `--final`, after the setup is fixed. Every attempt records its setup fingerprint (prompts, pipeline version, revision limit, lookup settings, package versions, model); results from different setups are never merged.
+
 ## Agent, pipeline, test, and evaluation
 
 - An **agent** is one ADK `LlmAgent` that performs one job.
