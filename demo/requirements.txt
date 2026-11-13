@@ -1,0 +1,8 @@
+# Slim runtime for the hosted demo (the root requirements.txt is the full research stack).
+google-adk==2.10.0
+google-genai==2.25.0
+fastapi==0.141.1
+uvicorn==0.54.0
+pydantic==2.13.5
+textstat==0.7.13      # readability metrics
+scikit-learn==1.9.1   # imported by notebooks/eval_harness.py

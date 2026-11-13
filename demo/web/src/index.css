@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-ink-950: #05070d;
+  --color-ink-900: #0a0e17;
+  --color-ink-850: #0e131f;
+  --color-ink-800: #131a29;
+  --color-ink-700: #1c2539;
+  --color-ink-600: #2a3550;
+  --animate-pulse-ring: pulse-ring 1.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-flow: flow 1.2s linear infinite;
+  --animate-fade-up: fade-up 0.45s ease-out both;
+  --animate-blink: blink 1s step-end infinite;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--ring-color, #22d3ee) 55%, transparent); }
+  70% { box-shadow: 0 0 0 14px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+@keyframes flow { to { stroke-dashoffset: -16; } }
+@keyframes fade-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes blink { 50% { opacity: 0; } }
+
+html { color-scheme: dark; }
+body {
+  @apply bg-ink-950 text-slate-200 font-sans antialiased;
+  background-image:
+    radial-gradient(60rem 40rem at 10% -10%, rgb(34 211 238 / 0.10), transparent 60%),
+    radial-gradient(50rem 35rem at 100% 0%, rgb(167 139 250 / 0.10), transparent 60%),
+    radial-gradient(40rem 30rem at 50% 110%, rgb(52 211 153 / 0.06), transparent 60%);
+  background-attachment: fixed;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgb(148 163 184 / 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(148 163 184 / 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.glass {
+  @apply rounded-2xl border border-white/[0.07] bg-ink-900/70 backdrop-blur-xl;
+  box-shadow: 0 1px 0 0 rgb(255 255 255 / 0.04) inset, 0 20px 40px -24px rgb(0 0 0 / 0.6);
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-cyan-300 via-sky-300 to-violet-300 bg-clip-text text-transparent;
+}
+
+.caret::after {
+  content: "▋";
+  @apply ml-0.5 text-cyan-300 animate-blink;
+}
+
+.scroll-thin { scrollbar-width: thin; scrollbar-color: rgb(71 85 105 / 0.6) transparent; }
+
+.prose-fm h1, .prose-fm h2, .prose-fm h3, .prose-fm h4 { @apply mt-4 mb-1.5 font-semibold text-slate-100 first:mt-0; }
+.prose-fm h3 { @apply text-base; }
+.prose-fm p { @apply my-2 leading-relaxed; }
+.prose-fm ul { @apply my-2 list-disc space-y-1 pl-5 marker:text-cyan-400/70; }
+.prose-fm strong { @apply font-semibold text-slate-50; }
+.prose-fm hr { @apply my-4 border-white/10; }
