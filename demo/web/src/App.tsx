@@ -90,7 +90,10 @@ export default function App() {
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: JSON.stringify("exampleKey" in request ? { example_key: request.exampleKey } : { source_text: request.sourceText }),
+              body: JSON.stringify({
+                model: request.model,
+                ...("exampleKey" in request ? { example_key: request.exampleKey } : { source_text: request.sourceText }),
+              }),
             },
           ];
     try {
@@ -139,7 +142,7 @@ export default function App() {
               <Timer className="h-3.5 w-3.5" /> <Elapsed start={run.startedAt} end={run.finishedAt} />
             </span>
           )}
-          <span className="rounded-full bg-white/5 px-3 py-1 font-mono text-slate-400 ring-1 ring-inset ring-white/10">{meta?.model ?? config?.model ?? "gemini"}</span>
+          <span className="rounded-full bg-white/5 px-3 py-1 font-mono text-slate-400 ring-1 ring-inset ring-white/10">{meta?.model_label ?? meta?.model ?? config?.model ?? "gemini"}</span>
           <a href={REPO} target="_blank" rel="noreferrer" className="rounded-full bg-white/5 p-1.5 text-slate-400 ring-1 ring-inset ring-white/10 hover:text-white" aria-label="GitHub repository">
             <Github className="h-4 w-4" />
           </a>
@@ -209,6 +212,15 @@ export default function App() {
         <div className="animate-fade-up mt-10 space-y-8">
           <section>
             <SectionTitle kicker="Faithfulness scores" title="How the final explanation measures up" />
+            {run.result.evaluator_error && (
+              <div className="glass mb-4 flex items-start gap-3 border-amber-400/30 p-4 text-sm text-amber-200">
+                <AlertOctagon className="mt-0.5 h-5 w-5 shrink-0" />
+                <div>
+                  The independent fact-check couldn't run, so faithfulness scores and flagged passages are missing for this run. The explanation itself
+                  passed the Verifier. <span className="text-slate-400">{friendlyError(run.result.evaluator_error)}</span>
+                </div>
+              </div>
+            )}
             <ScoreBoard result={run.result} run={run} />
           </section>
           {run.result.explanation_spans.length > 0 && (

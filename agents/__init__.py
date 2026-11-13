@@ -74,6 +74,15 @@ def resolve_model(model: Any) -> Any:
     return model
 
 
+def _answer_text(parts: Any) -> str:
+    """Join a response's answer text. Reasoning parts (``thought=True``) are skipped:
+    Gemma returns them by default, and they would corrupt JSON outputs."""
+    return "".join(
+        part.text for part in parts or []
+        if isinstance(getattr(part, "text", None), str) and not getattr(part, "thought", False)
+    )
+
+
 def _prepare_agent(agent: Any) -> Any:
     """Resolve model IDs on an agent tree in place. Agents keep string IDs until run."""
     if isinstance(getattr(agent, "model", None), str):
@@ -122,9 +131,7 @@ async def run_agent_once(
         _report_usage(event, on_usage)
         if event.is_final_response():
             parts = getattr(getattr(event, "content", None), "parts", None) or []
-            final_text = "".join(
-                part.text for part in parts if isinstance(getattr(part, "text", None), str)
-            ).strip()
+            final_text = _answer_text(parts).strip()
     if not final_text:
         raise RuntimeError("The ADK agent completed without a final text response.")
     return final_text
@@ -175,9 +182,7 @@ async def run_agent_stream(
             raise RuntimeError(event.error_message or event.error_code)
         _report_usage(event, on_usage)
         parts = getattr(getattr(event, "content", None), "parts", None) or []
-        text = "".join(
-            part.text for part in parts if isinstance(getattr(part, "text", None), str)
-        )
+        text = _answer_text(parts)
         if event.partial and text:
             accumulated += text
             if on_text:

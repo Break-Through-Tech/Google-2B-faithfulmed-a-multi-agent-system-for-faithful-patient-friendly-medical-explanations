@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import asyncio
 import hashlib
+import importlib.util
 import json
 import math
 import os
@@ -26,6 +27,7 @@ from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
+from agents import LITELLM_PROVIDER_PREFIXES
 from agents.production_pipeline import MAX_REVISION_CYCLES
 from agents.verifier import VERIFIER_DEFAULT_MODEL
 from evals.system_demo import AppendOnlyRunCache, SystemExample, load_system_examples
@@ -34,6 +36,7 @@ from .events import pipeline_done_event, public_stage, result_event, sse
 
 ROOT = Path(__file__).resolve().parent.parent
 DIST = Path(__file__).resolve().parent / "web" / "dist"
+MODELS_PATH = ROOT / "evals" / "leaderboard_models.json"
 LIVE_SPLITS = ("scratch", "dev")
 MAX_SOURCE_CHARS = 15_000
 KEEPALIVE_SECONDS = 15.0
@@ -58,9 +61,38 @@ app = FastAPI(title="FaithfulMed demo")
 
 
 def live_available() -> bool:
+    """Live runs need Gemini credentials: the fact-check always runs on MODEL."""
     if os.getenv("DEMO_LIVE", "1") == "0":
         return False
     return bool(os.getenv("GOOGLE_API_KEY") or os.getenv("GOOGLE_GENAI_USE_VERTEXAI"))
+
+
+# ── Pipeline models ─────────────────────────────────────────────────────
+
+@lru_cache(maxsize=1)
+def model_catalog() -> dict[str, dict[str, Any]]:
+    """Models the pipeline can run on, from the leaderboard's model list."""
+    models = json.loads(MODELS_PATH.read_text(encoding="utf-8"))["models"]
+    return {
+        key: {"key": key, "label": m["display_name"], "model_id": m["adk_model"], "provider": m["provider"],
+              "openness": (m.get("openness") or {}).get("category"), "credential_env": m["credential_env"]}
+        for key, m in models.items()
+    }
+
+
+def model_unavailable_reason(entry: dict[str, Any]) -> str | None:
+    """None when this server can run the model, otherwise why it can't."""
+    env = entry["credential_env"]
+    if not (os.getenv(env) or (env == "GOOGLE_API_KEY" and os.getenv("GOOGLE_GENAI_USE_VERTEXAI"))):
+        return f"Needs {env} on the server."
+    if entry["model_id"].startswith(LITELLM_PROVIDER_PREFIXES) and importlib.util.find_spec("litellm") is None:
+        return "Needs the litellm package on the server."
+    return None
+
+
+def default_model_key() -> str:
+    catalog = model_catalog()
+    return next((key for key, entry in catalog.items() if entry["model_id"] == MODEL), next(iter(catalog)))
 
 
 # ── Saved runs ──────────────────────────────────────────────────────────
@@ -115,6 +147,14 @@ def config() -> dict[str, Any]:
     return {
         "live_available": live_available(),
         "model": MODEL,
+        "evaluator_model": MODEL,
+        "default_model": default_model_key(),
+        "models": [
+            {**{k: entry[k] for k in ("key", "label", "model_id", "provider", "openness")},
+             "available": reason is None, "reason": reason}
+            for entry in model_catalog().values()
+            for reason in [model_unavailable_reason(entry)]
+        ],
         "max_revision_cycles": MAX_REVISION_CYCLES,
         "max_source_chars": MAX_SOURCE_CHARS,
     }
@@ -182,9 +222,10 @@ async def replay(run_id: str, speed: float = Query(1.0, ge=0.25, le=8.0)) -> Str
 class RunRequest(BaseModel):
     source_text: str | None = Field(default=None, max_length=MAX_SOURCE_CHARS)
     example_key: str | None = None
+    model: str | None = None
 
 
-async def live_events(example: SystemExample) -> AsyncIterator[str]:
+async def live_events(example: SystemExample, model: dict[str, Any]) -> AsyncIterator[str]:
     from evals.system_demo import run_system_example
 
     queue: asyncio.Queue[dict[str, Any]] = asyncio.Queue()
@@ -208,7 +249,7 @@ async def live_events(example: SystemExample) -> AsyncIterator[str]:
         return
     await _live_slots.acquire()
     task = asyncio.create_task(run_system_example(
-        example, MODEL, MODEL, cache=None, persist=False,
+        example, model["model_id"], MODEL, cache=None, persist=False,
         on_pipeline_event=on_pipeline_event,
         on_evaluator_start=lambda: queue.put_nowait({"type": "evaluator_started"}),
         on_evaluator_text=lambda delta, _acc: queue.put_nowait({"type": "evaluator_chunk", "delta": delta}),
@@ -216,7 +257,8 @@ async def live_events(example: SystemExample) -> AsyncIterator[str]:
     try:
         yield sse({"type": "run_started", "meta": {
             "mode": "live", "dataset": example.dataset, "split": example.split,
-            "example_id": example.example_id, "model": MODEL, "source_text": example.source_text,
+            "example_id": example.example_id, "model": model["model_id"], "model_label": model["label"],
+            "evaluator_model": MODEL, "source_text": example.source_text,
         }})
         while True:
             getter = asyncio.ensure_future(queue.get())
@@ -248,6 +290,11 @@ async def live_events(example: SystemExample) -> AsyncIterator[str]:
 async def run(request: RunRequest) -> StreamingResponse:
     if not live_available():
         raise HTTPException(503, "Live runs are disabled on this server. Use a saved run instead.")
+    model = model_catalog().get(request.model or default_model_key())
+    if model is None:
+        raise HTTPException(422, "Unknown model.")
+    if reason := model_unavailable_reason(model):
+        raise HTTPException(503, f"{model['label']} isn't available on this server. {reason}")
     if request.example_key:
         example = live_examples().get(request.example_key)
         if example is None:
@@ -260,7 +307,7 @@ async def run(request: RunRequest) -> StreamingResponse:
         example = SystemExample("Pasted", "session", f"pasted-{digest}", text, {}, "session")
     if _live_slots.locked():
         raise HTTPException(429, "A live run is already in progress. Try a saved run, or wait a minute.")
-    return StreamingResponse(live_events(example), media_type="text/event-stream", headers=SSE_HEADERS)
+    return StreamingResponse(live_events(example, model), media_type="text/event-stream", headers=SSE_HEADERS)
 
 
 # ── Frontend ────────────────────────────────────────────────────────────

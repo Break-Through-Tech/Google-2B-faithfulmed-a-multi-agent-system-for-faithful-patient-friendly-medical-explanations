@@ -16,7 +16,7 @@ COPY demo/requirements.txt demo/requirements.txt
 RUN pip install --no-cache-dir -r demo/requirements.txt
 
 COPY agents/ agents/
-COPY evals/*.py evals/
+COPY evals/*.py evals/leaderboard_models.json evals/
 COPY notebooks/eval_harness.py notebooks/
 COPY demo/*.py demo/
 COPY data/MTSamples/scratch/ data/MTSamples/scratch/

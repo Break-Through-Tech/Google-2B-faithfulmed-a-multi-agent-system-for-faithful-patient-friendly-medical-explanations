@@ -1,6 +1,7 @@
 # Slim runtime for the hosted demo (the root requirements.txt is the full research stack).
 google-adk==2.14.0
 google-genai==2.34.0
+litellm==1.106.2      # gpt-oss via Groq (ADK LiteLlm); pin matches requirements.txt
 fastapi==0.141.1
 uvicorn==0.54.0
 pydantic==2.13.5
