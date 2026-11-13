@@ -17,6 +17,10 @@ Modes:
   auto       live if both keys are set, else umls-live if UMLS_API_KEY is set, else mock.
 
     python3 -m evals.lookup_smoke --mode umls-live
+    python3 -m evals.lookup_smoke --mode live --model <gemini model id>
+
+``--model`` sets the model for every Gemini stage (Extractor, TermFinder,
+Simplifier, Verifier, Refiner, Readability). Without it the pipeline default is used.
 
 The UMLS key is read only from the environment and is masked in all output.
 Nothing is written to disk.
@@ -79,7 +83,8 @@ def resolve_mode(mode: str, env: Dict[str, str]) -> str:
     return mode
 
 
-async def run_smoke(mode: str = "mock", env: Dict[str, str] | None = None) -> Dict[str, Any]:
+async def run_smoke(mode: str = "mock", env: Dict[str, str] | None = None,
+                    model: str | None = None) -> Dict[str, Any]:
     """Run the pipeline once and return the evidence and a verdict for each step."""
     env = dict(os.environ) if env is None else env
     mode = resolve_mode(mode, env)
@@ -109,8 +114,9 @@ async def run_smoke(mode: str = "mock", env: Dict[str, str] | None = None) -> Di
                      "create_readability_agent": "Readability"}
             for factory in AGENT_FACTORIES:
                 stack.enter_context(patch.object(pp, factory, return_value=SimpleNamespace(name=names[factory])))
+        model_kw = {"model": model} if model else {}
         result = await pp.run_production_pipeline(NOTE, agent_executor=executor,
-                                                  verifier_runner=verifier_runner, lookup=lookup)
+                                                  verifier_runner=verifier_runner, lookup=lookup, **model_kw)
 
     trace = result.trace
     steps: Dict[str, Dict[str, Any]] = {}
@@ -172,8 +178,9 @@ async def run_smoke(mode: str = "mock", env: Dict[str, str] | None = None) -> Di
                             "length": len(entry["definition"])}
     steps["4"] = {"pass": "manual review" if umls_live else "blocked (mock text)", "evidence": quality}
 
-    return {"mode": mode, "llm_stages": "live" if llm_live else "mocked", "umls": "live" if umls_live else "mocked",
+    return {"mode": mode, "model": trace["model"], "llm_stages": "live" if llm_live else "mocked", "umls": "live" if umls_live else "mocked",
             "pipeline_status": trace["status"], "pipeline_error": trace["error"],
+            "accepted": result.accepted, "final_explanation": result.final_explanation,
             "stages": [(s["agent"], s["status"]) for s in trace["stages"]], "steps": steps}
 
 
@@ -184,17 +191,18 @@ def _redact(text: str, secret: str) -> str:
 def main(argv: list | None = None) -> int:
     parser = argparse.ArgumentParser(description="FaithfulMed UMLS lookup smoke test.")
     parser.add_argument("--mode", choices=MODES, default="auto")
+    parser.add_argument("--model", default=None, help="Gemini model ID for all LLM stages (live mode).")
     args = parser.parse_args(argv)
     secret = os.environ.get("UMLS_API_KEY", "")
     try:
-        report = asyncio.run(run_smoke(args.mode))
+        report = asyncio.run(run_smoke(args.mode, model=args.model))
     except RuntimeError as exc:
         print(_redact(str(exc), secret))
         return 2
     print(_redact(json.dumps(report, indent=2, ensure_ascii=False), secret))
     summary = {k: ("PASS" if v["pass"] is True else "FAIL" if v["pass"] is False else v["pass"])
                for k, v in report["steps"].items()}
-    print(f"\nMODE {report['mode']} (Gemini stages {report['llm_stages']}, UMLS {report['umls']})")
+    print(f"\nMODE {report['mode']} (model {report['model']}, Gemini stages {report['llm_stages']}, UMLS {report['umls']})")
     print("SUMMARY", json.dumps(summary))
     return 0 if all(v["pass"] is not False for v in report["steps"].values()) else 1
 

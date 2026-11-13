@@ -45,23 +45,21 @@ Dataset files, annotations, manifests, data documentation, `.env.example`, and t
 - `notebooks/eval_harness.py` is provided starter material. It offers readability scores, a target-grade check, a basic loader for the missing full MedAESQA file, and accuracy/Cohen's kappa helpers.
 - `data/validate_annotations.py` is the existing read-only annotation validator and is separate from agent evaluation.
 
-## Reference definitions (UMLS and DrugBank)
+## Reference definitions (UMLS)
 
 `agents/medical_lookup.py` adds a `TermLookup` stage to the production pipeline, between the Extractor and the Simplifier:
 
 1. A small `TermFinder` agent lists medical terms and drug names from the extracted facts. Code keeps a term only if it appears word-for-word in the `fact_text` of a fact it cites.
-2. Medications are looked up in DrugBank first, then UMLS. All other terms go to UMLS. Lookups are plain code; no model writes or edits a definition.
-3. The result (`faithfulmed_reference_definitions_v1`) is stored in `trace["results"]["reference_definitions"]`, separate from the Extractor's facts. Each entry has the term, its `fact_ids`, the definition, `source` (UMLS or DrugBank), `source_id` (CUI or DrugBank ID), the definition's source vocabulary, and a reference URL. Unresolved terms record why: `not_found`, `ambiguous`, `no_definition`, `api_error`, or `not_configured`.
+2. Every term, including medications, is looked up in UMLS. Lookups are plain code; no model writes or edits a definition. DrugBank is not part of the pipeline.
+3. The result (`faithfulmed_reference_definitions_v1`) is stored in `trace["results"]["reference_definitions"]`, separate from the Extractor's facts. Each entry has the term, its `fact_ids`, the definition, `source` (UMLS), `source_id` (CUI), the definition's source vocabulary, and a reference URL. Unresolved terms record why: `not_found`, `ambiguous`, `no_definition`, `api_error`, or `not_configured`.
 4. The Simplifier receives the definitions as its `{glossary}`. The Verifier receives them as a separate `reference_definitions` key and is told never to treat them as evidence for patient-specific claims.
 
 Any lookup failure is recorded in the trace and the pipeline continues without definitions. With no source configured, the stage is skipped and no extra model call is made.
 
-Setup (both optional):
+Setup (optional):
 
 ```bash
 # UMLS: put a UTS API key in .env as UMLS_API_KEY=...
-# DrugBank: build the local index from the academic XML (licensed data; data/ is gitignored)
-python3 -m agents.medical_lookup build-drugbank-index --xml path/to/full_database.xml
 # Check one term (UMLS uses the network)
 python3 -m agents.medical_lookup lookup metoprolol --category medication
 ```
@@ -74,7 +72,29 @@ Smoke test for the lookup handoffs on a synthetic note (see `evals/lookup_smoke.
 python3 -m evals.lookup_smoke --mode mock       # offline; also run by the test suite
 python3 -m evals.lookup_smoke --mode umls-live  # real UMLS, mocked Gemini stages
 python3 -m evals.lookup_smoke --mode live       # real UMLS and Gemini (uses API quota)
+python3 -m evals.lookup_smoke --mode live --model gemini-3.1-flash-lite  # pick the model for every stage
 ```
+
+The report includes `accepted` and `final_explanation` so step 4 can be reviewed by hand.
+
+### Recorded live runs
+
+**2026-11-13, `gemini-3.1-flash-lite`, live UMLS** (`python3 -m evals.lookup_smoke --mode live --model gemini-3.1-flash-lite`)
+
+- Steps 1, 2, 3a, 3b: **passed**. Stages Extractor, TermLookup, Simplifier, Verifier, Readability all completed; the Verifier accepted on the first check. UMLS returned C0020538 ("Hypertensive disease", MeSH definition, not truncated) linked to fact F-001, and both the Simplifier glossary and the Verifier's `reference_definitions` received it.
+- Step 4: **manual faithfulness finding**. The source says "The patient has a history of hypertension." The accepted final output said "You have hypertension, which is the medical term for high blood pressure." Dropping "history of" changes the claim from a past condition to a current one, and the Verifier did not flag it. The final output also still contained the Simplifier's `PATIENT-FRIENDLY VERSION:` / `REVIEW FLAGS:` wrapper.
+- Follow-up: the Simplifier and Verifier prompts now name time and status qualifiers ("history of", "prior", "suspected", "possible", "resolved", "ruled out"), and the pipeline now strips the wrapper (see below). Expected meaning on rerun: "You have a history of high blood pressure, also called hypertension. Please continue your current treatment plan."
+
+**2026-11-13 rerun after the fixes, same model and command**
+
+- First attempt: the TermFinder's Gemini call returned `503 UNAVAILABLE` (model under high demand), so no UMLS lookup ran and steps 2, 3a, 3b failed for that reason only. The pipeline recorded the failure and still completed without definitions, as designed. Not counted as a UMLS result.
+- Second attempt: steps 1, 2, 3a, 3b **passed** (UMLS C0020538 linked to F-001 and handed to both the Simplifier and the Verifier). Step 4 **passed on manual review**. Final output: "You have a history of high blood pressure. This is medically known as hypertension. Please continue to follow your current treatment plan as directed." It keeps "history of", covers both facts, uses the UMLS definition only to explain the term, and has no wrapper headers. "As directed" is a minor addition that does not change the meaning.
+- Medication lookup, live UMLS (`python3 -m agents.medical_lookup lookup metoprolol --category medication`): **found** C0025859 ("metoprolol", MeSH, not truncated): "A selective adrenergic beta-1 blocking agent that is commonly used to treat ANGINA PECTORIS; HYPERTENSION; and CARDIAC ARRHYTHMIAS." Medications resolve through UMLS now that DrugBank is out of the pipeline.
+- Not yet covered live: a medication term through the full pipeline, and real (non-synthetic) notes.
+
+### Simplifier output boundary
+
+The Simplifier returns two sections, `PATIENT-FRIENDLY VERSION:` and `REVIEW FLAGS:`. `split_simplifier_output()` in `agents/production_pipeline.py` separates them right after the Simplifier stage. Only the patient text goes to the Verifier, Refiner, Readability, and `final_explanation`. The raw output stays in `trace["results"]["simplifier"]` and the flags in `trace["results"]["simplifier_review_flags"]`. Before this, the wrapper could reach `final_explanation`, the demo display, readability metrics, and the factual evaluator's spans (10 of 32 saved runs in `eval_results/system_demo_runs.jsonl` contain it; those saved records are unchanged).
 
 ## Agent, pipeline, test, and evaluation
 

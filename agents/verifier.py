@@ -19,7 +19,7 @@ The input contains:
 - The original medical report.
 - Extracted facts. Each fact has a fact_id (a string such as "001", "002", or "003"), fact_text, fact_type, and source_evidence (a list of strings).
 - A patient-friendly explanation draft.
-- Optionally, reference_definitions: general definitions of terms from UMLS or DrugBank. Each has term, fact_ids, source, source_id, matched_name, definition_source, and definition.
+- Optionally, reference_definitions: general definitions of terms from UMLS. Each has term, fact_ids, source, source_id, matched_name, definition_source, and definition.
 
 Use the original report as the source of truth. Use the extracted facts to help find and check relevant information, but verify them against the report. Do not invent facts, requirements, or report details.
 
@@ -52,6 +52,7 @@ Judge faithfulness only against the supplied medical source. A claim may be medi
 For every clinical, causal, comparative, or negative claim:
 - Require support from the supplied source.
 - Check that the source discusses the same condition, nutrient, medication, anatomical site, population, and relationship.
+- Check that each claim keeps the source's time and status qualifiers, such as "history of," "prior," "suspected," "possible," "resolved," or "ruled out." A claim that drops or changes one (for example, "history of hypertension" becoming "you have hypertension") is unsupported and material.
 - Do not transfer a fact about one entity to another, such as vitamin B12 to vitamin B6, a side effect of warfarin to aspirin, or a finding about the left kidney to the right kidney.
 - Claims such as "does not cause," "prevents," "improves," or "lowers risk" require explicit source support.
 - If the source does not establish the claim, label it unsupported even when it seems medically plausible.

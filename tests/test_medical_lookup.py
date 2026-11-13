@@ -1,20 +1,18 @@
-"""Offline tests for UMLS/DrugBank reference definitions. No network, no Gemini."""
+"""Offline tests for UMLS reference definitions. No network, no Gemini."""
 
 from __future__ import annotations
 
 import asyncio
 import json
-import tempfile
 import unittest
 import urllib.parse
-from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import patch
 
 from agents.extractor import ExtractorOutput
 from agents.medical_lookup import (
-    NO_GLOSSARY, REFERENCE_DEFINITIONS_SCHEMA, TERM_FINDER_INSTRUCTION, DrugBankIndex,
-    LookupServiceError, MedicalLookup, UMLSClient, build_drugbank_index, build_reference_definitions,
+    NO_GLOSSARY, REFERENCE_DEFINITIONS_SCHEMA, TERM_FINDER_INSTRUCTION,
+    LookupServiceError, MedicalLookup, UMLSClient, build_reference_definitions,
     lookup_config_from_env, parse_term_candidates, reference_definitions_for_prompt, render_glossary,
 )
 from agents.production_pipeline import run_production_pipeline
@@ -30,34 +28,6 @@ FACTS = [
 ]
 SOURCE = "Continue metoprolol 25 mg b.i.d. for hypertension. History of hypertension."
 
-DRUGBANK_XML = """<?xml version="1.0" encoding="UTF-8"?>
-<drugbank xmlns="http://www.drugbank.ca" version="5.1.99" exported-on="2026-01-01">
-  <drug type="small molecule">
-    <drugbank-id primary="true">DB00264</drugbank-id>
-    <drugbank-id>APRD00059</drugbank-id>
-    <name>Metoprolol</name>
-    <description>Metoprolol is a beta-blocker used to treat high blood pressure.[A1234, L5678] It is taken by mouth.[FDA Label]</description>
-    <synonyms><synonym language="english">Metoprololum</synonym></synonyms>
-    <products><product><name>Lopressor</name></product></products>
-    <salts><salt><drugbank-id>DBSALT000001</drugbank-id><name>Metoprolol tartrate</name></salt></salts>
-    <drug-interactions>
-      <drug-interaction><drugbank-id>DB00999</drugbank-id><name>Nestedonly</name></drug-interaction>
-    </drug-interactions>
-  </drug>
-  <drug type="small molecule">
-    <drugbank-id primary="true">DB00001</drugbank-id>
-    <name>Alphadrug</name>
-    <description></description>
-    <products><product><name>Sharedbrand</name></product></products>
-  </drug>
-  <drug type="small molecule">
-    <drugbank-id primary="true">DB00002</drugbank-id>
-    <name>Betadrug</name>
-    <description>Betadrug description.</description>
-    <products><product><name>Sharedbrand</name></product></products>
-  </drug>
-</drugbank>
-"""
 
 
 def fake_umls(concepts: dict, definitions: dict, calls: list | None = None):
@@ -78,14 +48,6 @@ def fake_umls(concepts: dict, definitions: dict, calls: list | None = None):
             return None  # UTS answers 404 when a concept has no definitions
         return {"result": [{"rootSource": s, "value": v} for s, v in definitions[cui]]}
     return fetch
-
-
-def build_index(tmp: str) -> DrugBankIndex:
-    xml = Path(tmp) / "db.xml"
-    xml.write_text(DRUGBANK_XML, encoding="utf-8")
-    out = Path(tmp) / "index.json"
-    build_drugbank_index(xml, out)
-    return DrugBankIndex.load(out)
 
 
 class UMLSClientTests(unittest.TestCase):
@@ -157,43 +119,6 @@ class UMLSClientTests(unittest.TestCase):
         self.assertNotIn(KEY, json.dumps(result))
 
 
-class DrugBankIndexTests(unittest.TestCase):
-    def test_index_lookup_by_name_brand_synonym_and_salt(self) -> None:
-        with tempfile.TemporaryDirectory() as tmp:
-            index = build_index(tmp)
-        for name in ("metoprolol", "Lopressor", "METOPROLOLUM", "metoprolol  tartrate"):
-            with self.subTest(name=name):
-                result = index.lookup(name)
-                self.assertEqual(result["status"], "found")
-                self.assertEqual(result["source_id"], "DB00264")
-        result = index.lookup("metoprolol")
-        self.assertEqual(result["definition"],
-                         "Metoprolol is a beta-blocker used to treat high blood pressure. It is taken by mouth.")
-        self.assertEqual(result["source_version"], "5.1.99")
-        self.assertEqual(result["reference_url"], "https://go.drugbank.com/drugs/DB00264")
-
-    def test_nested_names_are_not_indexed(self) -> None:
-        with tempfile.TemporaryDirectory() as tmp:
-            index = build_index(tmp)
-        self.assertEqual(index.lookup("Nestedonly")["reason"], "not_found")
-        self.assertEqual(index.lookup("APRD00059")["reason"], "not_found")
-
-    def test_ambiguous_and_missing_description(self) -> None:
-        with tempfile.TemporaryDirectory() as tmp:
-            index = build_index(tmp)
-        self.assertEqual(index.lookup("Sharedbrand")["reason"], "ambiguous")
-        self.assertEqual(index.lookup("Alphadrug")["reason"], "no_definition")
-
-    def test_long_definition_is_shortened_at_sentence(self) -> None:
-        index = DrugBankIndex({"schema": "faithfulmed_drugbank_index_v1", "drugs": {
-            "DB1": {"name": "Long", "description": ("First sentence is here. " * 60)}},
-            "primary_names": {"long": ["DB1"]}, "aliases": {}})
-        result = index.lookup("long")
-        self.assertTrue(result["truncated"])
-        self.assertLessEqual(len(result["definition"]), 600)
-        self.assertTrue(result["definition"].endswith("."))
-
-
 class TermCandidateTests(unittest.TestCase):
     def test_terms_must_appear_in_cited_fact_text(self) -> None:
         raw = json.dumps([
@@ -225,12 +150,12 @@ class TermCandidateTests(unittest.TestCase):
         self.assertIn("{atoms}", TERM_FINDER_INSTRUCTION)
 
 
-def configured_lookup(tmp: str) -> MedicalLookup:
-    umls = UMLSClient(KEY, fetch=fake_umls(
-        {"hypertension": [("C0020538", "Hypertensive disease")]},
-        {"C0020538": [("MSH", "Persistently high systemic arterial blood pressure.")]},
-    ))
-    return MedicalLookup(umls=umls, drugbank=build_index(tmp))
+def configured_lookup() -> MedicalLookup:
+    return MedicalLookup(umls=UMLSClient(KEY, fetch=fake_umls(
+        {"hypertension": [("C0020538", "Hypertensive disease")], "metoprolol": [("C0025859", "Metoprolol")]},
+        {"C0020538": [("MSH", "Persistently high systemic arterial blood pressure.")],
+         "C0025859": [("NCI", "A beta blocker.")]},
+    )))
 
 
 TERMS = json.dumps([
@@ -247,12 +172,11 @@ class BuildReferenceDefinitionsTests(unittest.TestCase):
     def test_successful_lookup_routes_to_the_right_source(self) -> None:
         async def find_terms(atoms):
             return TERMS
-        with tempfile.TemporaryDirectory() as tmp:
-            result = self.run_build(configured_lookup(tmp), find_terms)
+        result = self.run_build(configured_lookup(), find_terms)
         self.assertEqual(result["schema"], REFERENCE_DEFINITIONS_SCHEMA)
         self.assertEqual(result["status"], "completed")
         by_term = {e["term"]: e for e in result["entries"]}
-        self.assertEqual((by_term["metoprolol"]["source"], by_term["metoprolol"]["source_id"]), ("DrugBank", "DB00264"))
+        self.assertEqual((by_term["metoprolol"]["source"], by_term["metoprolol"]["source_id"]), ("UMLS", "C0025859"))
         self.assertEqual((by_term["hypertension"]["source"], by_term["hypertension"]["source_id"]), ("UMLS", "C0020538"))
         for entry in result["entries"]:
             for field in ("term", "definition", "source", "source_id", "reference_url", "fact_ids"):
@@ -260,7 +184,7 @@ class BuildReferenceDefinitionsTests(unittest.TestCase):
         self.assertEqual([u["term"] for u in result["unresolved"]], ["b.i.d"])
         self.assertEqual(result["unresolved"][0]["attempts"][0]["reason"], "not_found")
 
-    def test_medication_falls_back_to_umls_when_drugbank_missing(self) -> None:
+    def test_medication_is_looked_up_in_umls(self) -> None:
         umls = UMLSClient(KEY, fetch=fake_umls({"metoprolol": [("C0025859", "Metoprolol")]},
                                                {"C0025859": [("NCI", "A beta blocker.")]}))
         result = MedicalLookup(umls=umls).lookup_candidate(
@@ -279,8 +203,7 @@ class BuildReferenceDefinitionsTests(unittest.TestCase):
     def test_term_finder_failure_is_recorded_without_definitions(self) -> None:
         async def find_terms(atoms):
             raise RuntimeError("model unavailable")
-        with tempfile.TemporaryDirectory() as tmp:
-            result = self.run_build(configured_lookup(tmp), find_terms)
+        result = self.run_build(configured_lookup(), find_terms)
         self.assertEqual(result["status"], "failed")
         self.assertEqual(result["entries"], [])
         self.assertIn("model unavailable", result["errors"][0])
@@ -288,37 +211,31 @@ class BuildReferenceDefinitionsTests(unittest.TestCase):
     def test_term_limit(self) -> None:
         async def find_terms(atoms):
             return TERMS
-        with tempfile.TemporaryDirectory() as tmp:
-            lookup = configured_lookup(tmp)
-            lookup.max_terms = 1
-            result = self.run_build(lookup, find_terms)
+        lookup = configured_lookup()
+        lookup.max_terms = 1
+        result = self.run_build(lookup, find_terms)
         self.assertEqual(len(result["entries"]) + len(result["unresolved"]), 1)
         self.assertEqual(sum(d["reason"] == "term_limit" for d in result["dropped_terms"]), 2)
 
     def test_env_config(self) -> None:
-        with tempfile.TemporaryDirectory() as tmp:
-            env = {"UMLS_API_KEY": "", "DRUGBANK_INDEX_PATH": str(Path(tmp) / "missing.json")}
-            self.assertFalse(MedicalLookup.from_env(env).configured)
-            self.assertEqual(lookup_config_from_env(env), {"umls": False, "drugbank_index": None})
-            bad = Path(tmp) / "bad.json"
-            bad.write_text("{}", encoding="utf-8")
-            lookup = MedicalLookup.from_env({"UMLS_API_KEY": KEY, "DRUGBANK_INDEX_PATH": str(bad)})
-            self.assertIsNotNone(lookup.umls)
-            self.assertIsNone(lookup.drugbank)
-            self.assertTrue(lookup.config_errors)
+        env = {"UMLS_API_KEY": "", "DRUGBANK_INDEX_PATH": "/any/index.json"}  # DrugBank is ignored
+        self.assertFalse(MedicalLookup.from_env(env).configured)
+        self.assertEqual(lookup_config_from_env(env), {"umls": False})
+        lookup = MedicalLookup.from_env({"UMLS_API_KEY": KEY})
+        self.assertTrue(lookup.configured)
+        self.assertEqual(set(lookup.sources()), {"umls"})
 
 
 class DownstreamFormatTests(unittest.TestCase):
     def definitions(self):
         async def find_terms(atoms):
             return TERMS
-        with tempfile.TemporaryDirectory() as tmp:
-            return asyncio.run(build_reference_definitions(json.dumps(FACTS), configured_lookup(tmp), find_terms))
+        return asyncio.run(build_reference_definitions(json.dumps(FACTS), configured_lookup(), find_terms))
 
     def test_glossary_carries_definition_and_provenance(self) -> None:
         glossary = render_glossary(self.definitions())
         self.assertIn("not facts about this patient", glossary)
-        self.assertIn("metoprolol [DrugBank DB00264", glossary)
+        self.assertIn("metoprolol [UMLS C0025859", glossary)
         self.assertIn("hypertension [UMLS C0020538", glossary)
         self.assertIn("Persistently high systemic arterial blood pressure.", glossary)
         lines = {line.split(" [", 1)[0]: line for line in glossary.splitlines() if line.startswith("- ")}
@@ -330,7 +247,7 @@ class DownstreamFormatTests(unittest.TestCase):
         rendered = production_verifier_prompt(SOURCE, json.dumps(FACTS), "Draft", json.dumps(compact))
         payload = json.loads(rendered.rsplit("INPUT JSON:\n", 1)[1])
         self.assertEqual(payload["extracted_facts"], FACTS)
-        self.assertEqual({d["source_id"] for d in payload["reference_definitions"]}, {"DB00264", "C0020538"})
+        self.assertEqual({d["source_id"] for d in payload["reference_definitions"]}, {"C0025859", "C0020538"})
         empty = production_verifier_prompt(SOURCE, json.dumps(FACTS), "Draft", "[]")
         self.assertNotIn("reference_definitions", json.loads(empty.rsplit("INPUT JSON:\n", 1)[1]))
 
@@ -370,23 +287,21 @@ class PipelineIntegrationTests(unittest.TestCase):
         return result, seen, extracted
 
     def test_definitions_reach_simplifier_and_verifier_and_facts_are_unchanged(self, *_):
-        with tempfile.TemporaryDirectory() as tmp:
-            result, seen, extracted = self.run_pipeline(configured_lookup(tmp), TERMS)
+        result, seen, extracted = self.run_pipeline(configured_lookup(), TERMS)
         self.assertTrue(result.accepted)
         self.assertEqual(result.trace["results"]["extractor"], extracted)
         ExtractorOutput.model_validate_json(result.trace["results"]["extractor"])
         self.assertEqual(json.loads(seen["Verifier"]["facts"]), FACTS)  # no definitions mixed into facts
         self.assertEqual(seen["Simplifier"]["atoms"], extracted)
-        self.assertIn("DrugBank DB00264", seen["Simplifier"]["glossary"])
-        self.assertEqual({d["source_id"] for d in seen["Verifier"]["definitions"]}, {"DB00264", "C0020538"})
+        self.assertIn("UMLS C0025859", seen["Simplifier"]["glossary"])
+        self.assertEqual({d["source_id"] for d in seen["Verifier"]["definitions"]}, {"C0025859", "C0020538"})
         self.assertEqual(seen["TermFinder"], {"atoms": extracted})
         stage = next(s for s in result.trace["stages"] if s["agent"] == "TermLookup")
         self.assertEqual(stage["status"], "completed")
         self.assertEqual(result.trace["results"]["reference_definitions"]["status"], "completed")
 
     def test_lookup_failure_does_not_interrupt_pipeline(self, *_):
-        with tempfile.TemporaryDirectory() as tmp:
-            result, seen, _ = self.run_pipeline(configured_lookup(tmp), RuntimeError("quota"))
+        result, seen, _ = self.run_pipeline(configured_lookup(), RuntimeError("quota"))
         self.assertTrue(result.accepted)
         self.assertEqual(result.final_explanation, "Final.")
         self.assertEqual(seen["Simplifier"]["glossary"], NO_GLOSSARY)
@@ -404,7 +319,7 @@ class PipelineIntegrationTests(unittest.TestCase):
         definitions = result.trace["results"]["reference_definitions"]
         self.assertEqual(definitions["entries"], [])
         reasons = {a["reason"] for u in definitions["unresolved"] for a in u["attempts"]}
-        self.assertEqual(reasons, {"api_error", "not_configured"})
+        self.assertEqual(reasons, {"api_error"})  # UMLS is the only source
         self.assertEqual(seen["Simplifier"]["glossary"], NO_GLOSSARY)
 
 

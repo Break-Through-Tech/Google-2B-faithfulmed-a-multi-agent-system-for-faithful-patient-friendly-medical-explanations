@@ -47,6 +47,26 @@ def _strip_json_fence(text: str) -> str:
     return match.group(1).strip() if match else text.strip()
 
 
+_SIMPLIFIER_TEXT_HEADER = re.compile(r"PATIENT-FRIENDLY VERSION\s*:?[*#]*", re.I)
+_SIMPLIFIER_FLAGS_HEADER = re.compile(r"\n[ \t]*[*#]*[ \t]*REVIEW FLAGS\s*:?[*#]*", re.I)
+
+
+def split_simplifier_output(text: str) -> tuple[str, str | None]:
+    """Split the Simplifier's two-section output into (patient text, review flags).
+
+    Only the patient text goes on to the Verifier, Refiner, Readability, and the
+    final explanation; review flags are reviewer notes, not patient text. Output
+    without the expected headers is returned whole.
+    """
+    flags = _SIMPLIFIER_FLAGS_HEADER.search(text)
+    body = text[: flags.start()] if flags else text
+    header = _SIMPLIFIER_TEXT_HEADER.search(body)
+    if header and not body[: header.start()].strip(" \t\n*#"):
+        body = body[header.end():]
+    review_flags = text[flags.end():].strip() if flags else None
+    return body.strip(), review_flags or None
+
+
 def parse_production_verdict(raw: str) -> dict[str, Any]:
     """Parse the production decision fields required by pipeline control flow."""
     data = json.loads(_strip_json_fence(raw))
@@ -102,7 +122,7 @@ async def run_production_pipeline(
 ) -> PipelineRunResult:
     """Run every production stage while preserving an inspectable in-memory trace.
 
-    ``lookup`` supplies UMLS/DrugBank reference definitions; by default it is
+    ``lookup`` supplies UMLS reference definitions; by default it is
     configured from the environment. Lookup problems never stop the pipeline.
     """
     if not isinstance(source_text, str) or not source_text.strip():
@@ -117,7 +137,7 @@ async def run_production_pipeline(
         "original_report": source_text,
         "stages": [],
         "results": {"extractor": None, "reference_definitions": None, "simplifier": None, "verifier_refiner_iterations": [],
-                    "readability": None, "final_explanation": None},
+                    "simplifier_review_flags": None, "readability": None, "final_explanation": None},
         "error": None,
     }
 
@@ -225,7 +245,8 @@ async def run_production_pipeline(
             {"source_text": source_text, "atoms": atoms, "glossary": glossary},
             "Create the patient-friendly medical text.",
         )
-        trace["results"]["simplifier"] = draft
+        trace["results"]["simplifier"] = draft  # raw output, both sections
+        draft, trace["results"]["simplifier_review_flags"] = split_simplifier_output(draft)
 
         accepted = False
         revisions = 0

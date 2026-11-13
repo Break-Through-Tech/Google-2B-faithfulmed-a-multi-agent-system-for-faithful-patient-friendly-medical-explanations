@@ -9,7 +9,7 @@ from types import SimpleNamespace
 from unittest.mock import patch
 
 from agents.medical_lookup import MedicalLookup
-from agents.production_pipeline import MAX_REVISION_CYCLES, run_production_pipeline
+from agents.production_pipeline import MAX_REVISION_CYCLES, run_production_pipeline, split_simplifier_output
 from agents.verifier import PRODUCTION_VERIFIER_PROMPT, production_verifier_prompt
 
 
@@ -39,6 +39,41 @@ class ProductionPipelineTests(unittest.TestCase):
         self.assertIn("vitamin B12 to vitamin B6", PRODUCTION_VERIFIER_PROMPT)
         self.assertIn("a side effect of warfarin to aspirin", PRODUCTION_VERIFIER_PROMPT)
         self.assertIn("the left kidney to the right kidney", PRODUCTION_VERIFIER_PROMPT)
+        self.assertIn('"history of hypertension" becoming "you have hypertension"', PRODUCTION_VERIFIER_PROMPT)
+
+    def test_split_simplifier_output(self) -> None:
+        wrapped = "PATIENT-FRIENDLY VERSION:\n\nYou have a history of high blood pressure.\n\nREVIEW FLAGS:\n- None."
+        self.assertEqual(split_simplifier_output(wrapped), ("You have a history of high blood pressure.", "- None."))
+        bold = "**PATIENT-FRIENDLY VERSION:**\nText.\n\n**REVIEW FLAGS:**\n- Source and facts disagree."
+        self.assertEqual(split_simplifier_output(bold), ("Text.", "- Source and facts disagree."))
+        self.assertEqual(split_simplifier_output("Plain text only."), ("Plain text only.", None))
+
+    @patch("agents.production_pipeline.create_readability_agent", return_value=SimpleNamespace(name="Readability"))
+    @patch("agents.production_pipeline.create_simplifier_agent", return_value=SimpleNamespace(name="Simplifier"))
+    @patch("agents.production_pipeline.create_extractor_agent", return_value=SimpleNamespace(name="Extractor"))
+    def test_review_flags_never_reach_verifier_or_final(self, *_mocks) -> None:
+        raw = "PATIENT-FRIENDLY VERSION:\nPatient text.\n\nREVIEW FLAGS:\n- None."
+        seen = {}
+
+        async def executor(agent, state, message, on_text):
+            seen[agent.name] = dict(state)
+            text = {"Extractor": json.dumps([{"fact_id": "F-001", "fact_text": "Finding", "fact_type": "diagnosis",
+                                              "source_evidence": ["Finding."]}]),
+                    "Simplifier": raw}.get(agent.name, state.get("draft"))  # Readability echoes its input
+            on_text(text, text)
+            return text
+
+        async def verifier_runner(source, facts, draft, model, on_text, definitions):
+            seen["Verifier"] = draft
+            return verdict("accept")
+
+        result = asyncio.run(run_production_pipeline(
+            "Finding.", agent_executor=executor, verifier_runner=verifier_runner, lookup=MedicalLookup.disabled()))
+        self.assertEqual(seen["Verifier"], "Patient text.")
+        self.assertEqual(seen["Readability"]["draft"], "Patient text.")
+        self.assertEqual(result.final_explanation, "Patient text.")
+        self.assertEqual(result.trace["results"]["simplifier"], raw)
+        self.assertEqual(result.trace["results"]["simplifier_review_flags"], "- None.")
 
     @patch("agents.production_pipeline.create_readability_agent", return_value=SimpleNamespace(name="Readability"))
     @patch("agents.production_pipeline.create_refiner_agent", return_value=SimpleNamespace(name="Refiner"))

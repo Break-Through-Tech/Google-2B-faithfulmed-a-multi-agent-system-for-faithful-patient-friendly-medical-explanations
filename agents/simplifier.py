@@ -29,6 +29,10 @@ CORE RULES
   recommendations, or outcomes.
 - Do not turn a possibility into a certainty.
 - Preserve uncertainty, qualifications, and conditional statements.
+- Preserve time and status qualifiers such as "history of," "prior,"
+  "suspected," "possible," "resolved," and "ruled out." For example,
+  "history of hypertension" must become "a history of high blood
+  pressure," never "you have high blood pressure."
 - Keep numbers, dates, dosages, units, names, and test results accurate.
 - Preserve negations. For example, "no evidence of infection" must
   never become "evidence of infection."

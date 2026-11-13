@@ -1,16 +1,16 @@
-"""Reference definitions from UMLS and DrugBank for terms in extracted facts.
+"""Reference definitions from UMLS for terms in extracted facts.
 
 Workflow (runs right after the Extractor):
 
     extracted facts --TermFinder (LLM)--> candidate terms
                     --code check: term must appear in its fact_text-->
-                    --UMLS / DrugBank lookups (deterministic code)--> reference definitions
+                    --UMLS lookups (deterministic code)--> reference definitions
 
 Reference definitions are general background about what a term means. They are
 NOT facts about the patient, so they are kept in their own structure and never
 merged into the Extractor's fact list. The LLM only picks terms; it never writes
 or edits a definition. Every definition comes verbatim (cleaned of markup and
-citation tags, possibly shortened) from UMLS or DrugBank, with its identifier.
+citation tags, possibly shortened) from UMLS, with its CUI.
 
 Any failure (no credentials, network error, unknown term, bad TermFinder output)
 becomes an "unresolved" record or an error note. It never raises into the
@@ -18,9 +18,6 @@ pipeline and never produces a substitute definition.
 
 Configuration (environment variables, see .env.example):
     UMLS_API_KEY         UTS API key (free with a UMLS license).
-    DRUGBANK_INDEX_PATH  Local index built from the DrugBank academic XML:
-                         python3 -m agents.medical_lookup build-drugbank-index \
-                             --xml path/to/full_database.xml
 """
 
 from __future__ import annotations
@@ -35,24 +32,20 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
-import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Awaitable, Callable, Dict, List, Optional, Tuple
 
 from . import DEFAULT_MODEL, run_agent_once
 
 REFERENCE_DEFINITIONS_SCHEMA = "faithfulmed_reference_definitions_v1"
-DRUGBANK_INDEX_SCHEMA = "faithfulmed_drugbank_index_v1"
 CATEGORIES = ("medication", "clinical_concept")
 MAX_TERMS = 25
 MAX_DEFINITION_CHARS = 600
 NO_GLOSSARY = "No glossary entries provided."
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_DRUGBANK_INDEX = REPO_ROOT / "data" / "drugbank" / "drugbank_index.json"
 REFERENCE_NOTICE = (
-    "General reference definitions from UMLS and DrugBank. They describe what a term "
+    "General reference definitions from UMLS. They describe what a term "
     "means in general and are not facts about this patient."
 )
 
@@ -298,144 +291,20 @@ class UMLSClient:
         }
 
 
-# ── DrugBank (local index built from the academic XML) ──────────────────
-
-def _local(tag: str) -> str:
-    return tag.rsplit("}", 1)[-1]
-
-
-def _child(elem: ET.Element, name: str) -> Optional[ET.Element]:
-    return next((c for c in elem if _local(c.tag) == name), None)
-
-
-def _children(elem: ET.Element, *path: str) -> List[ET.Element]:
-    """Direct-descendant path lookup that ignores namespaces."""
-    level = [elem]
-    for name in path:
-        level = [c for parent in level for c in parent if _local(c.tag) == name]
-    return level
-
-
-def _parse_drug(drug: ET.Element) -> Optional[Dict[str, Any]]:
-    ids = [e for e in drug if _local(e.tag) == "drugbank-id"]
-    primary = next((e for e in ids if e.get("primary") == "true"), ids[0] if ids else None)
-    name_el = _child(drug, "name")
-    if primary is None or not (primary.text or "").strip() or name_el is None or not (name_el.text or "").strip():
-        return None
-    desc_el = _child(drug, "description")
-    aliases = [e.text for e in _children(drug, "synonyms", "synonym")]
-    aliases += [e.text for e in _children(drug, "international-brands", "international-brand", "name")]
-    aliases += [e.text for e in _children(drug, "products", "product", "name")]
-    aliases += [e.text for e in _children(drug, "salts", "salt", "name")]
-    return {
-        "id": primary.text.strip(), "name": name_el.text.strip(),
-        "description": (desc_el.text or "").strip() if desc_el is not None else "",
-        "aliases": sorted({a.strip() for a in aliases if a and a.strip()}),
-    }
-
-
-def build_drugbank_index(xml_path: Path, out_path: Path) -> Dict[str, Any]:
-    """Stream the DrugBank XML into a compact name -> definition index.
-
-    The full XML is large, so it is parsed incrementally and only top-level
-    <drug> elements are read (nested names inside interactions or targets are
-    ignored). The index is licensed DrugBank data: keep it out of git.
-    """
-    drugs: Dict[str, Dict[str, str]] = {}
-    primary_names: Dict[str, List[str]] = {}
-    aliases: Dict[str, List[str]] = {}
-    meta: Dict[str, str] = {}
-    depth = 0
-    root: Optional[ET.Element] = None
-    for event, elem in ET.iterparse(str(xml_path), events=("start", "end")):
-        if event == "start":
-            depth += 1
-            if root is None:
-                root = elem
-                meta = {"drugbank_version": elem.get("version", ""), "exported_on": elem.get("exported-on", "")}
-            continue
-        depth -= 1
-        if depth == 1 and _local(elem.tag) == "drug":
-            parsed = _parse_drug(elem)
-            if parsed:
-                drugs[parsed["id"]] = {"name": parsed["name"], "description": parsed["description"]}
-                primary_names.setdefault(_norm(parsed["name"]), []).append(parsed["id"])
-                for alias in parsed["aliases"]:
-                    ids = aliases.setdefault(_norm(alias), [])
-                    if parsed["id"] not in ids:
-                        ids.append(parsed["id"])
-            assert root is not None
-            root.clear()  # free memory for processed drugs
-    index = {"schema": DRUGBANK_INDEX_SCHEMA, **meta,
-             "built_at_utc": datetime.now(timezone.utc).isoformat(),
-             "drugs": drugs, "primary_names": primary_names, "aliases": aliases}
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(index, ensure_ascii=False), encoding="utf-8")
-    return {"drugs": len(drugs), "names": len(primary_names) + len(aliases), **meta, "path": str(out_path)}
-
-
-class DrugBankIndex:
-    SOURCE = "DrugBank"
-
-    def __init__(self, data: Dict[str, Any]):
-        if data.get("schema") != DRUGBANK_INDEX_SCHEMA:
-            raise ValueError("Not a FaithfulMed DrugBank index; rebuild it with build-drugbank-index.")
-        self._drugs = data["drugs"]
-        self._primary = data["primary_names"]
-        self._aliases = data["aliases"]
-        self.version = data.get("drugbank_version") or "unknown"
-
-    @classmethod
-    def load(cls, path: Path) -> "DrugBankIndex":
-        return cls(json.loads(Path(path).read_text(encoding="utf-8")))
-
-    def lookup(self, term: str) -> Dict[str, Any]:
-        key = _norm(term)
-        ids = self._primary.get(key) or self._aliases.get(key) or []
-        if not ids:
-            return _miss(self.SOURCE, "not_found", "No DrugBank drug has this name, synonym, brand, or salt.")
-        if len(ids) > 1:
-            return _miss(self.SOURCE, "ambiguous", f"Name matches {len(ids)} DrugBank drugs: {', '.join(ids[:5])}.")
-        drug_id = ids[0]
-        drug = self._drugs[drug_id]
-        definition, truncated = _clean_definition(drug.get("description") or "")
-        if not definition:
-            return _miss(self.SOURCE, "no_definition", f"DrugBank {drug_id} ({drug['name']}) has no description.")
-        return {
-            "status": "found", "source": self.SOURCE, "source_id": drug_id,
-            "matched_name": drug["name"], "definition": definition, "definition_source": "DrugBank",
-            "source_version": self.version, "reference_url": f"https://go.drugbank.com/drugs/{drug_id}",
-            "truncated": truncated,
-        }
-
-
 # ── Lookup service ──────────────────────────────────────────────────────
-
-_INDEX_CACHE: Dict[Tuple[str, float], DrugBankIndex] = {}
-
-
-def _load_index_cached(path: Path) -> DrugBankIndex:
-    key = (str(path.resolve()), path.stat().st_mtime)
-    if key not in _INDEX_CACHE:
-        _INDEX_CACHE.clear()
-        _INDEX_CACHE[key] = DrugBankIndex.load(path)
-    return _INDEX_CACHE[key]
-
 
 def lookup_config_from_env(env: Optional[Dict[str, str]] = None) -> Dict[str, Any]:
     """Cheap description of which sources are configured (for cache keys and traces)."""
     env = os.environ if env is None else env
-    path = Path(env.get("DRUGBANK_INDEX_PATH") or DEFAULT_DRUGBANK_INDEX)
-    return {"umls": bool(env.get("UMLS_API_KEY")), "drugbank_index": path.name if path.exists() else None}
+    return {"umls": bool(env.get("UMLS_API_KEY"))}
 
 
 class MedicalLookup:
     """Routes each term to the right source and records every hit and miss."""
 
-    def __init__(self, umls: Optional[UMLSClient] = None, drugbank: Optional[DrugBankIndex] = None, *,
+    def __init__(self, umls: Optional[UMLSClient] = None, *,
                  max_terms: int = MAX_TERMS, workers: int = 4, config_errors: Optional[List[str]] = None):
         self.umls = umls
-        self.drugbank = drugbank
         self.max_terms = max_terms
         self.workers = workers
         self.config_errors = list(config_errors or [])
@@ -447,29 +316,18 @@ class MedicalLookup:
     @classmethod
     def from_env(cls, env: Optional[Dict[str, str]] = None) -> "MedicalLookup":
         env = os.environ if env is None else env
-        errors: List[str] = []
         key = env.get("UMLS_API_KEY", "").strip()
-        umls = UMLSClient(key, version=env.get("UMLS_VERSION") or "current") if key else None
-        drugbank = None
-        path = Path(env.get("DRUGBANK_INDEX_PATH") or DEFAULT_DRUGBANK_INDEX)
-        if path.exists():
-            try:
-                drugbank = _load_index_cached(path)
-            except (OSError, ValueError, KeyError) as exc:
-                errors.append(f"DrugBank index could not be loaded: {type(exc).__name__}: {exc}")
-        return cls(umls, drugbank, config_errors=errors)
+        return cls(UMLSClient(key, version=env.get("UMLS_VERSION") or "current") if key else None)
 
     @property
     def configured(self) -> bool:
-        return self.umls is not None or self.drugbank is not None
+        return self.umls is not None
 
     def sources(self) -> Dict[str, Any]:
         return {
             "umls": {"configured": self.umls is not None,
                      "version": self.umls.version if self.umls else None,
                      "definition_sources": list(self.umls.definition_sources) if self.umls else []},
-            "drugbank": {"configured": self.drugbank is not None,
-                         "version": self.drugbank.version if self.drugbank else None},
         }
 
     def _try(self, client: Any, source: str, term: str) -> Dict[str, Any]:
@@ -482,10 +340,7 @@ class MedicalLookup:
 
     def lookup_candidate(self, candidate: Dict[str, Any]) -> Dict[str, Any]:
         term = candidate["term"]
-        if candidate["category"] == "medication":
-            order = [(self.drugbank, DrugBankIndex.SOURCE), (self.umls, UMLSClient.SOURCE)]
-        else:
-            order = [(self.umls, UMLSClient.SOURCE)]
+        order = [(self.umls, UMLSClient.SOURCE)]  # medications and clinical concepts alike
         attempts = []
         for client, source in order:
             result = self._try(client, source, term)
@@ -597,17 +452,11 @@ def reference_definitions_for_prompt(definitions: Dict[str, Any]) -> List[Dict[s
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n", 1)[0])
     sub = parser.add_subparsers(dest="command", required=True)
-    build = sub.add_parser("build-drugbank-index", help="Build the local DrugBank index from the academic XML.")
-    build.add_argument("--xml", type=Path, required=True)
-    build.add_argument("--out", type=Path, default=DEFAULT_DRUGBANK_INDEX)
     look = sub.add_parser("lookup", help="Look up one term (UMLS calls use the network).")
     look.add_argument("term")
     look.add_argument("--category", choices=CATEGORIES, default="clinical_concept")
     args = parser.parse_args(argv)
 
-    if args.command == "build-drugbank-index":
-        print(json.dumps(build_drugbank_index(args.xml, args.out), indent=2))
-        return 0
     env_file = REPO_ROOT / ".env"
     if env_file.exists():
         for line in env_file.read_text(encoding="utf-8").splitlines():
@@ -616,7 +465,7 @@ def main(argv: Optional[List[str]] = None) -> int:
                 os.environ.setdefault(key.replace("export ", "").strip(), value.strip().strip("'\""))
     lookup = MedicalLookup.from_env()
     if not lookup.configured:
-        print("No lookup source configured. Set UMLS_API_KEY and/or build the DrugBank index.", file=sys.stderr)
+        print("No lookup source configured. Set UMLS_API_KEY.", file=sys.stderr)
         return 1
     result = lookup.lookup_candidate({"term": args.term, "category": args.category, "fact_ids": []})
     print(json.dumps(result, indent=2, ensure_ascii=False))

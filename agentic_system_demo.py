@@ -405,7 +405,7 @@ def render_live(
             suffix = f" · iteration {iteration}" if iteration is not None else ""
             messages = {
                 "Extractor": "Extractor is reading the source.",
-                "TermLookup": "Looking up UMLS and DrugBank definitions for medical terms.",
+                "TermLookup": "Looking up UMLS definitions for medical terms.",
                 "Simplifier": "Simplifier is drafting the patient-friendly explanation.",
                 "Verifier": "Verifier is checking the current draft.",
                 "Refiner": "Refiner is applying targeted corrections.",
