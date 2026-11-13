@@ -1,16 +1,62 @@
-import { ClipboardPaste, Database, History, Lock, Play, RefreshCcw, Square, Zap } from "lucide-react";
+import { ClipboardPaste, Cpu, Database, History, Lock, Play, RefreshCcw, Square, Zap } from "lucide-react";
 import { useState } from "react";
-import type { Config, LiveExample, SavedRun } from "../lib/types";
+import type { Config, LiveExample, ModelOption, SavedRun } from "../lib/types";
 import { Chip, fmt } from "./ui";
 
 type Tab = "replay" | "dataset" | "paste";
 
 export type LaunchRequest =
   | { mode: "replay"; runId: string; speed: number }
-  | { mode: "live"; exampleKey: string }
-  | { mode: "live"; sourceText: string };
+  | { mode: "live"; model: string; exampleKey: string }
+  | { mode: "live"; model: string; sourceText: string };
 
 const SPEEDS = [0.5, 1, 2, 4];
+
+function ModelPicker({
+  models,
+  selected,
+  evaluator,
+  busy,
+  onSelect,
+}: {
+  models: ModelOption[];
+  selected: ModelOption | undefined;
+  evaluator: string;
+  busy: boolean;
+  onSelect: (key: string) => void;
+}) {
+  return (
+    <div className="mt-3">
+      <div className="mb-1.5 text-xs text-slate-400">Pipeline model</div>
+      <div className="space-y-1.5">
+        {models.map((m) => {
+          const open = m.openness === "open_weights";
+          return (
+            <button
+              key={m.key}
+              disabled={!m.available || busy}
+              onClick={() => onSelect(m.key)}
+              title={m.reason ?? m.model_id}
+              className={`flex w-full items-center gap-2.5 rounded-xl border px-3 py-2 text-left transition ${
+                selected?.key === m.key ? "border-cyan-400/50 bg-cyan-400/[0.06]" : "border-white/[0.06] bg-ink-850 hover:border-white/15"
+              } disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:border-white/[0.06]`}
+            >
+              {m.available ? <Cpu className="h-4 w-4 shrink-0 text-slate-400" /> : <Lock className="h-4 w-4 shrink-0 text-slate-500" />}
+              <div className="min-w-0 flex-1">
+                <div className="text-sm font-semibold text-slate-100">{m.label}</div>
+                <div className="truncate text-[11px] text-slate-500">{m.available ? m.provider : m.reason}</div>
+              </div>
+              <Chip className={open ? "bg-emerald-400/10 text-emerald-300 ring-emerald-400/30" : "bg-white/5 text-slate-400 ring-white/10"}>
+                {open ? "open weights" : "closed"}
+              </Chip>
+            </button>
+          );
+        })}
+      </div>
+      <p className="mt-1.5 text-[11px] text-slate-500">Every agent runs on this model. The fact-check always uses {evaluator}, so scores stay comparable.</p>
+    </div>
+  );
+}
 
 export function LaunchPanel({
   config,
@@ -32,9 +78,15 @@ export function LaunchPanel({
   const [speed, setSpeed] = useState(1);
   const [exampleKey, setExampleKey] = useState<string>("");
   const [pasted, setPasted] = useState("");
+  const [modelKey, setModelKey] = useState("");
   const live = config?.live_available ?? false;
   const selectedRun = runId ?? runs[0]?.run_id ?? null;
   const selectedExample = examples.find((e) => e.key === exampleKey) ?? examples[0];
+  const models = config?.models ?? [];
+  const usable = models.filter((m) => m.available);
+  const selectedModel =
+    usable.find((m) => m.key === modelKey) ?? usable.find((m) => m.key === config?.default_model) ?? usable[0];
+  const modelLabel = (id: string | null | undefined) => models.find((m) => m.model_id === id)?.label ?? id;
 
   const tabs: { key: Tab; label: string; icon: typeof History; locked: boolean }[] = [
     { key: "replay", label: "Recorded", icon: History, locked: false },
@@ -43,12 +95,15 @@ export function LaunchPanel({
   ];
 
   const canRun =
-    tab === "replay" ? Boolean(selectedRun) : tab === "dataset" ? Boolean(selectedExample) : pasted.trim().length > 40;
+    tab === "replay"
+      ? Boolean(selectedRun)
+      : Boolean(selectedModel) && (tab === "dataset" ? Boolean(selectedExample) : pasted.trim().length > 40);
 
   const launch = () => {
     if (tab === "replay" && selectedRun) onLaunch({ mode: "replay", runId: selectedRun, speed });
-    else if (tab === "dataset" && selectedExample) onLaunch({ mode: "live", exampleKey: selectedExample.key });
-    else if (tab === "paste") onLaunch({ mode: "live", sourceText: pasted.trim() });
+    else if (!selectedModel) return;
+    else if (tab === "dataset" && selectedExample) onLaunch({ mode: "live", model: selectedModel.key, exampleKey: selectedExample.key });
+    else if (tab === "paste") onLaunch({ mode: "live", model: selectedModel.key, sourceText: pasted.trim() });
   };
 
   return (
@@ -98,6 +153,7 @@ export function LaunchPanel({
                 <div className="mt-1.5 flex gap-3 text-[11px] text-slate-500">
                   <span>grade {fmt(run.fk_grade)}</span>
                   <span>fidelity {fmt(run.fidelity, 0, "%")}</span>
+                  <span className="ml-auto">{modelLabel(run.model)}</span>
                 </div>
               </button>
             ))}
@@ -121,7 +177,7 @@ export function LaunchPanel({
 
       {tab === "dataset" && (
         <>
-          <p className="mb-2 text-xs text-slate-400">De-identified scratch/dev examples. Runs every agent live on {config?.model}; takes about 1–5 minutes.</p>
+          <p className="mb-2 text-xs text-slate-400">De-identified scratch/dev examples. Runs every agent live on the model you pick below; takes about 1–5 minutes.</p>
           <select
             value={selectedExample?.key ?? ""}
             onChange={(e) => setExampleKey(e.target.value)}
@@ -134,7 +190,7 @@ export function LaunchPanel({
               </option>
             ))}
           </select>
-          <pre className="scroll-thin mt-2 max-h-72 overflow-y-auto whitespace-pre-wrap rounded-xl bg-ink-950/60 p-3 font-serif text-xs leading-relaxed text-slate-400">
+          <pre className="scroll-thin mt-2 max-h-48 overflow-y-auto whitespace-pre-wrap rounded-xl bg-ink-950/60 p-3 font-serif text-xs leading-relaxed text-slate-400">
             {selectedExample?.source_text}
           </pre>
         </>
@@ -148,12 +204,22 @@ export function LaunchPanel({
             onChange={(e) => setPasted(e.target.value.slice(0, config?.max_source_chars ?? 15000))}
             disabled={busy}
             placeholder="Paste a clinical note, discharge summary, or abstract…"
-            className="scroll-thin h-72 w-full resize-none rounded-xl border border-white/10 bg-ink-850 p-3 font-serif text-sm text-slate-200 outline-none placeholder:text-slate-600 focus:border-cyan-400/50"
+            className="scroll-thin h-56 w-full resize-none rounded-xl border border-white/10 bg-ink-850 p-3 font-serif text-sm text-slate-200 outline-none placeholder:text-slate-600 focus:border-cyan-400/50"
           />
           <div className="mt-1 text-right text-[11px] text-slate-500">
             {pasted.length.toLocaleString()} / {(config?.max_source_chars ?? 15000).toLocaleString()}
           </div>
         </>
+      )}
+
+      {tab !== "replay" && models.length > 0 && (
+        <ModelPicker
+          models={models}
+          selected={selectedModel}
+          evaluator={modelLabel(config?.evaluator_model) ?? "Gemini"}
+          busy={busy}
+          onSelect={setModelKey}
+        />
       )}
 
       {busy ? (

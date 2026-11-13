@@ -65,12 +65,14 @@ export function wordDiff(before: string, after: string): DiffPart[] {
   return parts;
 }
 
-/** Turn raw Gemini/ADK errors into something a demo audience can read. */
+/** Turn raw model/ADK errors into something a demo audience can read. */
 export function friendlyError(error: string): string {
   if (/\b503\b|UNAVAILABLE|high demand/i.test(error))
-    return "Gemini is overloaded right now (503). Try again in a minute, or replay a recorded run.";
-  if (/\b429\b|RESOURCE_EXHAUSTED|quota/i.test(error)) return "The Gemini API quota is used up (429). Replay a recorded run instead.";
-  if (/API key|PERMISSION_DENIED|\b40[13]\b/i.test(error)) return "The server's Gemini API key was rejected. Replay a recorded run instead.";
+    return "The model provider is overloaded right now (503). Try again in a minute, or replay a recorded run.";
+  if (/\b500\b|INTERNAL/.test(error))
+    return "The model provider had an internal error (500). Try again, or replay a recorded run.";
+  if (/\b429\b|RESOURCE_EXHAUSTED|quota/i.test(error)) return "The model API quota is used up (429). Replay a recorded run instead.";
+  if (/API key|PERMISSION_DENIED|\b40[13]\b/i.test(error)) return "The server's API key was rejected. Replay a recorded run instead.";
   return error.length > 300 ? `${error.slice(0, 300)}…` : error;
 }
 

@@ -70,7 +70,11 @@ export function PipelineGraph({ run, maxRevisions }: { run: RunState; maxRevisio
   const by = (agent: string) => run.stages.filter((s) => s.agent === agent);
   const verifier = by("Verifier");
   const refiner = by("Refiner");
-  const evaluator: NodeStatus = run.evaluatorRunning ? "running" : run.result ? "completed" : "waiting";
+  const evaluator: NodeStatus = run.evaluatorRunning
+    ? "running"
+    : run.result
+      ? run.result.evaluator_error ? "failed" : "completed"
+      : "waiting";
   const loopStatus = statusOf([...verifier, ...refiner].sort((a, b) => (a.started_at_utc ?? "").localeCompare(b.started_at_utc ?? "")));
   const nodes: { key: string; status: NodeStatus }[] = [
     { key: "Extractor", status: statusOf(by("Extractor")) },

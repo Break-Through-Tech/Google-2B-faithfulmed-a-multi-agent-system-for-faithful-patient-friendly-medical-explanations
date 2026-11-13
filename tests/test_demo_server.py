@@ -135,6 +135,35 @@ class DemoServerTests(unittest.TestCase):
         self.assertEqual(events[-2]["type"], "result")
         self.assertEqual(events[-1]["type"], "done")
 
+    def test_live_run_uses_the_chosen_model_and_keeps_the_gemini_fact_check(self) -> None:
+        seen: list[str] = []
+
+        async def verifier(source_text, facts, draft, model, *, on_text=None, reference_definitions=None) -> str:
+            seen.append(model)
+            return await _emit(verdict("accept"), on_text)
+
+        patches = faked_model([])
+        with patches[0], patches[1], patches[2], patches[4], \
+                patch("agents.production_pipeline.run_production_verifier", verifier), \
+                patch.dict(os.environ, {"GOOGLE_API_KEY": "test-only", "DEMO_LIVE": "1"}):
+            response = TestClient(server.app).post("/api/run", json={"source_text": SOURCE, "model": "gemma"})
+        meta = parse_sse(response.text)[0]["meta"]
+        self.assertEqual(meta["model"], "gemma-4-31b-it")
+        self.assertEqual(meta["evaluator_model"], server.MODEL)
+        self.assertEqual(seen, ["gemma-4-31b-it"])
+
+    def test_live_run_rejects_unknown_or_unconfigured_models(self) -> None:
+        with patch.dict(os.environ, {"GOOGLE_API_KEY": "test-only", "DEMO_LIVE": "1"}):
+            os.environ.pop("GROQ_API_KEY", None)
+            client = TestClient(server.app)
+            self.assertEqual(client.post("/api/run", json={"source_text": SOURCE, "model": "nope"}).status_code, 422)
+            refused = client.post("/api/run", json={"source_text": SOURCE, "model": "gpt_oss"})
+            models = {m["key"]: m for m in client.get("/api/config").json()["models"]}
+        self.assertEqual(refused.status_code, 503)
+        self.assertIn("GROQ_API_KEY", refused.json()["detail"])
+        self.assertFalse(models["gpt_oss"]["available"])
+        self.assertTrue(models["gemma"]["available"])
+
     def test_live_run_is_refused_when_disabled(self) -> None:
         with patch.dict(os.environ, {"DEMO_LIVE": "0"}):
             response = TestClient(server.app).post("/api/run", json={"source_text": SOURCE})

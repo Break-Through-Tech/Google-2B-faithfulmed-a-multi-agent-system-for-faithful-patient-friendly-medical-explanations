@@ -63,6 +63,8 @@ export interface RunMeta {
   split: string;
   example_id: string;
   model: string;
+  model_label?: string;
+  evaluator_model?: string;
   recorded_at_utc?: string;
   source_text: string;
 }
@@ -90,9 +92,22 @@ export interface LiveExample {
   source_text: string;
 }
 
+export interface ModelOption {
+  key: string;
+  label: string;
+  model_id: string;
+  provider: string;
+  openness: string | null;
+  available: boolean;
+  reason: string | null;
+}
+
 export interface Config {
   live_available: boolean;
   model: string;
+  evaluator_model: string;
+  default_model: string;
+  models: ModelOption[];
   max_revision_cycles: number;
   max_source_chars: number;
 }

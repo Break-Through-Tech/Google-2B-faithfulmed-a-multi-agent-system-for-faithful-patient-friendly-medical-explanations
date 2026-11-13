@@ -42,11 +42,14 @@ Offline tests (fake Gemini, no quota): `python -m unittest discover -s tests -p 
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `GOOGLE_API_KEY` | none | Enables the live modes. Without it, only Recorded mode is available. |
+| `GOOGLE_API_KEY` | none | Enables the live modes and the Gemini and Gemma models. Without it, only Recorded mode is available. |
+| `GROQ_API_KEY` | none | Optional: enables gpt-oss-120b (via Groq) in the model picker. |
 | `DEMO_LIVE` | `1` | Set to `0` to turn off live runs even when a key is present. |
 | `DEMO_MAX_LIVE_RUNS` | `1` | Concurrent live runs allowed. Extra requests get HTTP 429. |
-| `DEMO_MODEL` | `gemini-3.8-flash` | Model for the pipeline and the fact-check. |
+| `DEMO_MODEL` | `gemini-3.8-flash` | Fact-check model, and the picker's default when it matches a listed model. |
 | `UMLS_API_KEY` | none | Optional: enables the Term Lookup stage. |
+
+Live runs have a **model picker**. It lists the models in `evals/leaderboard_models.json` (the same list the leaderboard uses) and locks any whose API key isn't set on the server. Every agent runs on the chosen model; the fact-check stays on `DEMO_MODEL` so scores are comparable across models. Recorded runs show the model they were made with.
 
 If the browser disconnects mid-run, the server cancels the pipeline so it stops using quota.
 
