@@ -59,7 +59,14 @@ python3 -m unittest discover -s tests -v
 
 #### Interactive Demo
 
-To launch the end-to-end demo, with the virtual environment active and .env configured:
+The hosted demo (React + FastAPI, streams every agent live, with replay of recorded runs, faithfulness scores, evidence attribution, and flagged passages) lives in `demo/`. See [`demo/README.md`](demo/README.md) to run or deploy it:
+
+```bash
+cd demo/web && npm install && npm run build && cd ../..
+python -m uvicorn demo.server:app --port 8000
+```
+
+To launch the Streamlit evaluation demo, with the virtual environment active and .env configured:
 
 ```bash
 python -m streamlit run agentic_system_demo.py
