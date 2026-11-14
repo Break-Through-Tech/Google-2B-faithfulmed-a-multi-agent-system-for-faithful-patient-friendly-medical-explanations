@@ -13,11 +13,12 @@ env/
 .env
 *.key
 
-# Generated evaluation artifacts. Share the full-system cache and its human
-# review decisions with the team, but keep any other generated artifacts local.
+# Generated evaluation artifacts. Share the system and baseline evaluation
+# caches and human-review decisions, but keep other generated artifacts local.
 eval_results/*
 !eval_results/system_demo_runs.jsonl
 !eval_results/system_claim_reviews.jsonl
+*source_embedding_cache*.jsonl
 # Leaderboard manifests, attempts, judge results, blind review items, and reports
 # are shared. Review keys unblind the human review: keep them with the
 # leaderboard owner until every judgment is in, then commit deliberately.

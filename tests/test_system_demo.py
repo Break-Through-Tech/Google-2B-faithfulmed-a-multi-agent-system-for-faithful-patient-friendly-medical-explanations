@@ -16,6 +16,7 @@ from evals.system_demo import (
     SystemExample,
     aggregate_metrics,
     cache_key,
+    decode_factual_evaluation_json,
     factual_metrics,
     load_mtsamples,
     load_plaba,
@@ -174,6 +175,24 @@ class SystemDemoTests(unittest.TestCase):
             '{"status":"no_claims","status_reason":"No claims.","claims":[]}', "Hello."
         )
         self.assertEqual(parsed["status"], "no_claims")
+
+    def test_malformed_stream_prefix_recovers_complete_trailing_evaluation(self) -> None:
+        complete = json.dumps({
+            "status": "scored", "status_reason": "Complete retry.",
+            "claims": [{
+                "claim_id": "C1", "claim_span_id": "E001",
+                "claim_text": "Final claim.", "classification": "supported",
+                "clinically_meaningful": True, "source_span_ids": ["S001"],
+                "reason": "The source supports it.",
+            }],
+        })
+        raw = '{"status":"scored","claims":[{"broken"%\n' + complete
+        decoded, recovered_json, recovered = decode_factual_evaluation_json(raw)
+        parsed = parse_factual_evaluation(raw, "Final claim.", "Source fact.")
+
+        self.assertTrue(recovered)
+        self.assertEqual(json.loads(recovered_json), decoded)
+        self.assertEqual(parsed["claims"][0]["classification"], "supported")
 
     def test_unique_formatting_normalization_resolves_to_exact_spans(self) -> None:
         parsed = parse_factual_evaluation(json.dumps({

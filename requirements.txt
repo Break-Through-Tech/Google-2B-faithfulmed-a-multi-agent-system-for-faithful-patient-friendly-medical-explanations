@@ -27,7 +27,8 @@ seaborn
 
 # ── Demo (December: HF Spaces or Cloud Run) ────────────────────────────
 gradio
-streamlit>=1.35       # local agent workbench; dataframe row selection
+streamlit>=1.37       # fragments isolate claim-review reruns; dataframe row selection
+markdown-it-py        # safe Markdown rendering inside sentence-level source-match hover spans
 
 # ── Optional alternatives ──────────────────────────────────────────────
 # langgraph            # alternative orchestration to ADK

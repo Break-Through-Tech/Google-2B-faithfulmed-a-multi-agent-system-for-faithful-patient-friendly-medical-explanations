@@ -1,0 +1,6 @@
+{
+  "embedding_model": "gemini-embedding-001",
+  "embedding_task_type": "SEMANTIC_SIMILARITY",
+  "embedding_output_dimensionality": 768,
+  "embedding_match_threshold": 0.70
+}

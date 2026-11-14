@@ -247,7 +247,7 @@ def parse_factual_evaluation(
     final_explanation: str,
     source_text: str | None = None,
 ) -> dict[str, Any]:
-    data = json.loads(_strip_json_fence(raw))
+    data, _, _ = decode_factual_evaluation_json(raw)
     if not isinstance(data, dict) or data.get("status") not in FACTUAL_STATUSES:
         raise ValueError("Factual evaluator returned an invalid status.")
     if not isinstance(data.get("status_reason"), str) or not isinstance(data.get("claims"), list):
@@ -347,6 +347,35 @@ def parse_factual_evaluation(
     data["claims_returned"] = len(returned_claims)
     data["skipped_claims"] = skipped_claims
     return data
+
+
+def decode_factual_evaluation_json(raw: str) -> tuple[dict[str, Any], str, bool]:
+    """Decode one evaluator object, recovering a complete trailing retry.
+
+    Some streamed Gemini responses contain a malformed partial attempt followed
+    by a complete JSON object. Recovery is deliberately narrow: only a suffix
+    that parses through the factual-evaluator schema is accepted.
+    """
+    stripped = _strip_json_fence(raw)
+    try:
+        data = json.loads(stripped)
+        return data, stripped, False
+    except json.JSONDecodeError as original_error:
+        starts = [index for index, character in enumerate(stripped) if character == "{"]
+        for start in reversed(starts):
+            candidate = stripped[start:].strip()
+            try:
+                data = json.loads(candidate)
+            except json.JSONDecodeError:
+                continue
+            if (
+                isinstance(data, dict)
+                and data.get("status") in FACTUAL_STATUSES
+                and isinstance(data.get("status_reason"), str)
+                and isinstance(data.get("claims"), list)
+            ):
+                return data, candidate, True
+        raise original_error
 
 
 def factual_metrics(result: dict[str, Any] | None) -> dict[str, Any]:
