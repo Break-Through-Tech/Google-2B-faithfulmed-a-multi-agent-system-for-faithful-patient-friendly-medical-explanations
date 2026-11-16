@@ -29,7 +29,7 @@ function Elapsed({ start, end }: { start: number | null; end: number | null }) {
 }
 
 function Hero() {
-  const order = ["Extractor", "TermLookup", "Simplifier", "Verifier", "Refiner", "Readability", "Evaluator"];
+  const order = ["Extractor", "UMLSLookup", "Simplifier", "Readability", "Verifier", "Refiner", "Evaluator"];
   return (
     <div className="glass grid-bg flex h-full flex-col justify-center p-8">
       <div className="text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan-300/80">Google ADK · Gemini multi-agent system</div>
@@ -37,7 +37,7 @@ function Hero() {
         Medical jargon in. <span className="text-gradient">A faithful explanation out.</span>
       </h1>
       <p className="mt-4 max-w-2xl text-slate-400">
-        Seven specialized agents read a clinical report, explain it at an 8th-grade level, and check every sentence against the source. Pick a run on the left and watch them work.
+        Five generation agents read a clinical report, use Python-fetched UMLS definitions when available, explain it at an 8th-grade level, and check every claim against its allowed evidence. Pick a run on the left and watch them work.
       </p>
       <div className="mt-8 grid gap-2 sm:grid-cols-2">
         {order.map((key, i) => {
@@ -234,7 +234,7 @@ export default function App() {
             <FlaggedPassages result={run.result} onSelect={selectAndScroll} />
           </section>
           <p className="text-center text-xs text-slate-600">
-            Scores come from an automated, source-based evaluator and are estimates, not human gold labels. Not medical advice.
+            Scores come from an automated report-and-UMLS evidence evaluator and are estimates, not human gold labels. Not medical advice.
           </p>
         </div>
       )}

@@ -78,14 +78,14 @@ export function PipelineGraph({ run, maxRevisions }: { run: RunState; maxRevisio
   const loopStatus = statusOf([...verifier, ...refiner].sort((a, b) => (a.started_at_utc ?? "").localeCompare(b.started_at_utc ?? "")));
   const nodes: { key: string; status: NodeStatus }[] = [
     { key: "Extractor", status: statusOf(by("Extractor")) },
-    { key: "TermLookup", status: statusOf(by("TermLookup")) },
+    { key: "UMLSLookup", status: statusOf(by("UMLSLookup")) },
     { key: "Simplifier", status: statusOf(by("Simplifier")) },
-    { key: "Loop", status: refiner.length || verifier.length ? (run.pipeline ? "completed" : loopStatus) : "waiting" },
     { key: "Readability", status: statusOf(by("Readability")) },
+    { key: "Loop", status: refiner.length || verifier.length ? (run.pipeline ? "completed" : loopStatus) : "waiting" },
     { key: "Evaluator", status: evaluator },
   ];
   // Older recorded runs predate the Term Lookup stage.
-  const visible = nodes.filter((n) => !(n.key === "TermLookup" && n.status === "waiting" && run.stages.some((s) => s.agent === "Simplifier")));
+  const visible = nodes.filter((n) => !(n.key === "UMLSLookup" && n.status === "waiting" && run.stages.some((s) => s.agent === "Simplifier")));
   const lastVerdict = verifier[verifier.length - 1]?.parsed_output?.overall_decision as string | undefined;
 
   return (

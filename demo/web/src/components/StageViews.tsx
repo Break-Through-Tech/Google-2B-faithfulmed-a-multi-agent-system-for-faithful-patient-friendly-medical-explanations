@@ -35,7 +35,7 @@ export function summarize(stage: Stage): string {
       const facts = tryParseJson<Fact[]>(stage.output);
       return facts ? `${facts.length} facts extracted` : "Extracting facts";
     }
-    case "TermLookup": {
+    case "UMLSLookup": {
       const defs = stage.parsed_output;
       if (stage.status === "skipped" || defs?.status === "not_configured") return "Skipped · no UMLS key configured";
       return defs ? `${defs.entries?.length ?? 0} definitions · ${defs.unresolved?.length ?? 0} unresolved` : "Looking up terms";
@@ -91,7 +91,7 @@ function ExtractorView({ output }: { output: string }) {
   );
 }
 
-function TermLookupView({ stage }: { stage: Stage }) {
+function UMLSLookupView({ stage }: { stage: Stage }) {
   const defs = stage.parsed_output ?? {};
   const entries: any[] = defs.entries ?? [];
   if (!entries.length)
@@ -270,8 +270,8 @@ export function StageBody({ stage, previousDraft }: { stage: Stage; previousDraf
   switch (stage.agent) {
     case "Extractor":
       return <ExtractorView output={stage.output} />;
-    case "TermLookup":
-      return <TermLookupView stage={stage} />;
+    case "UMLSLookup":
+      return <UMLSLookupView stage={stage} />;
     case "Simplifier":
       return <SimplifierView output={stage.output} />;
     case "Verifier":

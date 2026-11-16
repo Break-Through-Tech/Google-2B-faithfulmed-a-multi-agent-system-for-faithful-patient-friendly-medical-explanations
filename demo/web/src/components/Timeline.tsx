@@ -143,7 +143,7 @@ export function Timeline({ run, follow }: { run: RunState; follow: boolean }) {
             <div className="flex-1">
               <div className="font-semibold text-slate-100">Independent Fact-Check</div>
               <div className="text-xs text-slate-400">
-                {run.evaluatorRunning ? Eval.role : `${run.result?.claims.length ?? 0} atomic claims checked against the source`}
+                {run.evaluatorRunning ? Eval.role : `${run.result?.claims.length ?? 0} atomic claims checked against allowed evidence`}
               </div>
             </div>
           </div>

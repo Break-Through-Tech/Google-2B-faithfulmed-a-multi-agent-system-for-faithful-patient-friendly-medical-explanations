@@ -47,7 +47,7 @@ Offline tests (fake Gemini, no quota): `python -m unittest discover -s tests -p 
 | `DEMO_LIVE` | `1` | Set to `0` to turn off live runs even when a key is present. |
 | `DEMO_MAX_LIVE_RUNS` | `1` | Concurrent live runs allowed. Extra requests get HTTP 429. |
 | `DEMO_MODEL` | `gemini-3.8-flash` | Fact-check model, and the picker's default when it matches a listed model. |
-| `UMLS_API_KEY` | none | Optional: enables the Term Lookup stage. |
+| `UMLS_API_KEY` | none | Optional: enables Python UMLS definition lookup for terms selected by the Extractor; no additional model call. |
 
 Live runs have a **model picker**. It lists the models in `evals/leaderboard_models.json` (the same list the leaderboard uses) and locks any whose API key isn't set on the server. Every agent runs on the chosen model; the fact-check stays on `DEMO_MODEL` so scores are comparable across models. Recorded runs show the model they were made with.
 

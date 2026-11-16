@@ -154,9 +154,9 @@ class UsageCaptureTests(unittest.TestCase):
                              side_effect=lambda m: SimpleNamespace(name="Verifier", model=m)):
             result = asyncio.run(runner.generate_system(config, EXAMPLES[0], rec, MedicalLookup.disabled()))
         self.assertEqual(result["status"], lb.COMPLETED)
-        self.assertEqual(result["final_output"], "Final.")
+        self.assertEqual(result["final_output"], "Revised.")
         stages = [c["stage"] for c in rec.calls]
-        self.assertEqual(stages, ["Extractor", "Simplifier", "Verifier", "Refiner", "Verifier", "Readability"])
+        self.assertEqual(stages, ["Extractor", "Simplifier", "Readability", "Verifier", "Refiner", "Verifier"])
         summary = lb.summarize_calls(rec.calls, latency_s=1.0)
         self.assertEqual(summary["tokens"]["input"], 600)
         self.assertTrue(summary["usage_complete"])

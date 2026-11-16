@@ -84,7 +84,7 @@ The Streamlit workbench provides separate views for the Baseline, Verifier, Refi
 
 ## Complete Agent-System Demo
 
-The full-system Streamlit demo is separate from the individual-agent evaluation workbench. It accepts a pasted report or selected examples from the scratch, dev, and test MTSamples/PLABA splits, then runs the actual Extractor, Simplifier, production Verifier/Refiner loop, and Readability agents. One separate factual evaluator checks the final Readability output against the source. The page streams ADK model events and offers stage traces as JSON downloads.
+The full-system Streamlit demo is separate from the individual-agent evaluation workbench. It accepts a pasted report or selected examples from the scratch, dev, and test MTSamples/PLABA splits, then runs the actual Extractor, optional Python UMLS lookup, Simplifier, Readability, and production Verifier/Refiner loop. One separate factual evaluator checks patient-specific claims against the report and general term explanations against matching UMLS definitions. The page streams ADK model events and offers stage traces as JSON downloads.
 
 From the repository root, with the virtual environment activated and `GOOGLE_API_KEY` saved in `.env`, run:
 
@@ -92,19 +92,19 @@ From the repository root, with the virtual environment activated and `GOOGLE_API
 python -m streamlit run agentic_system_demo.py
 ```
 
-Use the top workspace switch to open **Single-agent baseline**. That view loads saved generations and readability metrics from `runs/baseline.jsonl`. **Run selected samples** is cache-only and makes no API calls. **Force new run** asks the baseline Gemini agent for a new simplification, recalculates readability, embeds the new answer, and reruns the factual evaluator; unchanged original-report sentence vectors are reused from the shared cache. Run snapshots are appended to `eval_results/baseline_demo_runs.jsonl`, human claim decisions are appended separately to `eval_results/baseline_claim_reviews.jsonl`, and vectors share the full system's `eval_results/source_embeddings.sqlite3` cache. This gives the baseline the same fidelity, hallucination, source-match, per-example, automatic-claim, and human-review views as the full agentic system. See [the baseline factuality audit](docs/BASELINE_FACTUAL_AUDIT.md) for the saved 42-output review and metric limitations.
+Use the top workspace switch to open **Single-agent baseline**. That view loads saved generations and readability metrics from `runs/baseline.jsonl`. **Open cached outputs** is cache-only and makes no API calls. **Evaluate cached baseline outputs** keeps those saved answers and calls only the independent factual evaluator for outputs missing a compatible assessment; it does not regenerate answers or calculate embeddings. **Force new run** asks the baseline Gemini agent for a new simplification, recalculates readability, embeds the new answer, and reruns the factual evaluator; unchanged original-report sentence vectors are reused from the shared cache. Run snapshots are appended to `eval_results/baseline_demo_runs.jsonl`, human claim decisions are appended separately to `eval_results/baseline_claim_reviews.jsonl`, and vectors share the full system's `eval_results/source_embeddings.sqlite3` cache. This gives the baseline the same fidelity, hallucination, source-match, per-example, automatic-claim, and human-review views as the full agentic system. See [the baseline factuality audit](docs/BASELINE_FACTUAL_AUDIT.md) for the saved 42-output review and metric limitations.
 
-The production loop permits at most two Verifier-to-Refiner revision cycles. Readability runs only after the production Verifier accepts the draft. If the second revision is still rejected, the latest draft remains available for inspection but is not labeled as a verified final explanation.
+The production loop permits at most two Verifier-to-Refiner revision cycles. Readability runs before that loop so the exact readability-edited text must pass the Verifier; no unchecked model stage runs after acceptance. If the second revision is still rejected, the latest draft remains available for inspection but is not labeled as a verified final explanation.
 
 Choose MTSamples, PLABA, or both; choose `scratch`, `dev`, or `test`; and select only the examples you want to run. For de-identified dataset examples, **Run selected examples** reuses an append-only cached record only when the dataset identity, source and reference content, model settings, prompt hashes, and evaluator/implementation versions all match. **Force new run** bypasses the cache and appends a new uniquely identified record without deleting prior runs or inheriting their manual labels. These records live under the git-ignored `eval_results/` directory. Open **Saved run history** to restore an older result and continue its review. Pasted reports are kept only in Streamlit session state unless you explicitly download their JSON trace.
 
 In **Human claim review**, every factual-evaluator claim labeled `unsupported` or `contradicted` and `clinically_meaningful: true` is shown with its exact saved claim text, source spans, and evaluator reason. It defaults to **Hallucination**, matching Gemini's evaluator verdict, until you select **Hallucination**, **Not hallucination**, or **Ignore**. Decisions are appended separately to `eval_results/system_claim_reviews.jsonl` under the immutable `run_id` and `claim_id`, so widget reruns, browser refreshes, cached runs, and history reopening preserve them without another model call. Ignored claims are excluded from claim-level calculations. The adjusted rates remain provisional whenever Gemini-default decisions have not been human-reviewed.
 
-The automatic metrics panel remains separate and reports Flesch–Kincaid grade, SMOG, word count, refusal rate, the existing Dale–Chall difficult-word proxy (clearly labeled as a jargon-density proxy), and independent automated estimates of source fidelity and clinically meaningful hallucination rate. Readability is computed from the exact final displayed explanation, including bullet punctuation. The refusal detector is a phrase-based heuristic. Automated factual and screening labels are not human-reviewed gold labels, so challenge factuality targets are not declared met from screening alone. MTSamples adjudicated facts and PLABA adaptations are post-generation references only; they are never supplied to the generation pipeline. PLABA screening uses exact professional-source sentence IDs rather than assuming MTSamples-style fact annotations, and the plain-language adaptation is not treated as required wording.
+The automatic metrics panel remains separate and reports Flesch–Kincaid grade, SMOG, word count, refusal rate, the existing Dale–Chall difficult-word proxy (clearly labeled as a jargon-density proxy), and independent automated estimates of evidence-grounded fidelity and clinically meaningful hallucination rate. Patient-specific claims require report evidence; only general term explanations may use matching UMLS definitions. Readability is computed from the exact final displayed explanation, including bullet punctuation. The refusal detector is a phrase-based heuristic. Automated factual and screening labels are not human-reviewed gold labels, so challenge factuality targets are not declared met from screening alone. MTSamples adjudicated facts and PLABA adaptations are post-generation references only; they are never supplied to the generation pipeline. PLABA screening uses exact professional-source sentence IDs rather than assuming MTSamples-style fact annotations, and the plain-language adaptation is not treated as required wording.
 
 ### Post-run source similarities
 
-After Readability produces the final explanation, the demo embeds each original-report sentence and each final-explanation sentence with `gemini-embedding-001`, `task_type="SEMANTIC_SIMILARITY"`, and the dimensionality in [`config/source_matching.json`](config/source_matching.json). Cosine similarity is calculated locally. Hover or focus an explanation sentence to see its closest original sentence and any additional sentences above the current **Source match threshold**. A similarity match is only a navigation aid: it is not proof of factual support, a support probability, or a faithfulness percentage. Compound explanation sentences may contain claims that the closest sentence does not support.
+After the Verifier accepts the final explanation, the demo embeds each original-report sentence and each final-explanation sentence with `gemini-embedding-001`, `task_type="SEMANTIC_SIMILARITY"`, and the dimensionality in [`config/source_matching.json`](config/source_matching.json). Cosine similarity is calculated locally. Hover or focus an explanation sentence to see its closest original sentence and any additional sentences above the current **Source match threshold**. A similarity match is only a navigation aid: it is not proof of factual support, a support probability, or a faithfulness percentage. Compound explanation sentences may contain claims that the closest sentence does not support.
 
 The provisional default threshold is `0.70`. Moving the slider only filters and relabels already-computed scores; it does not call the API. The threshold is excluded from embedding-cache keys, while the text hash, model, task type, and dimensionality are included. Source and explanation vectors are stored locally in `eval_results/source_embeddings.sqlite3`. The **Source similarities** tab shows whether vectors were newly embedded or loaded from cache, provides a compact cache debug table, and exports the cache as JSONL. Use **Clear embedding cache** in the sidebar to remove all stored vectors. The SQLite cache and downloaded cache exports are Git-ignored and contain no API keys.
 
@@ -156,22 +156,23 @@ The project relies on public clinical and biomedical datasets documented in `dat
 The project is implemented as a multi-agent LLM workflow rather than a single model. The system uses Google's gemini-3.8-flash.
 
 ### Agent roles in the current code
-- Extractor: identifies clinically meaningful facts from a medical source using a structured output schema defined in `agents/extractor.py`.
+- Extractor: identifies clinically meaningful facts and source-grounded medical terms for optional UMLS lookup using the structured schema in `agents/extractor.py`.
 - Simplifier: rewrites medical text into patient-friendly language while preserving meaning; its instruction is in `agents/simplifier.py`.
 - Verifier: checks whether the explanation is faithful to the original report; its instruction is in `agents/verifier.py`.
 - Refiner: makes targeted revisions based on Verifier feedback; its instruction is in `agents/refiner.py`.
-- Readability: rewrites the accepted draft to improve readability while preserving clinical meaning; its instruction is in `agents/readability.py`.
+- Readability: improves the Simplifier draft before final verification while preserving clinical meaning; its instruction is in `agents/readability.py`.
 
 ### Pipeline structure
 The experimental pipeline is assembled in `notebooks/adk_pipeline.py` and the production-style orchestration is implemented in `agents/production_pipeline.py`.
 
 The flow is:
 
-1. Extractor reads the source report and produces structured facts.
-2. Simplifier turns the source and facts into a patient-friendly draft.
-3. Verifier checks the draft against the source.
-4. Refiner revises the draft when the Verifier identifies unsupported claims or omissions.
-5. Readability runs after acceptance to improve readability.
+1. Extractor reads the report once and returns separate `patient_facts` and `lookup_terms` lists.
+2. Python validates the selected terms and optionally retrieves provenance-labeled UMLS definitions without another model call.
+3. Simplifier turns the source, facts, and available definitions into a patient-friendly draft while treating definitions as general background only.
+4. Readability makes surface-level edits before verification and is forbidden from adding definitions or medical background.
+5. Verifier checks the exact readability-edited text: patient-specific claims against the report and general term explanations against either explicit source wording or matching UMLS definitions.
+6. Refiner makes targeted corrections when required, and every revision returns to the Verifier. An independent evaluator then applies the same report-versus-UMLS evidence boundary.
 
 ---
 

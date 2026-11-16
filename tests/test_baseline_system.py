@@ -177,6 +177,53 @@ class BaselineSystemTests(unittest.TestCase):
             self.assertNotEqual(first["run_id"], forced["run_id"])
             self.assertEqual(len(cache.records()), 2)
 
+    def test_factual_only_enrichment_never_generates_or_embeds(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            results = root / "baseline.jsonl"
+            results.write_text(json.dumps(baseline_row()) + "\n", encoding="utf-8")
+            cache = BaselineEnrichmentCache(root / "enriched.jsonl")
+            evaluator_calls = []
+
+            async def evaluator(source, explanation, references, model, on_text=None):
+                evaluator_calls.append((source, explanation, model))
+                return json.dumps({
+                    "status": "scored",
+                    "status_reason": "Assessed.",
+                    "claims": [{
+                        "claim_id": "C1",
+                        "claim_span_id": "E001",
+                        "claim_text": "Patient-friendly claim.",
+                        "classification": "supported",
+                        "clinically_meaningful": True,
+                        "source_span_ids": ["S001"],
+                        "reason": "The source supports the claim.",
+                    }],
+                })
+
+            record = load_baseline_records(
+                "evaluator-model", results_path=results, cache=cache,
+            )[0]
+            enriched = asyncio.run(enrich_baseline_record(
+                record,
+                "evaluator-model",
+                cache=cache,
+                embedding_cache=None,
+                embedding_settings=None,
+                embed_batch=None,
+                include_source_matching=False,
+                evaluator_runner=evaluator,
+            ))
+
+            self.assertEqual(
+                evaluator_calls,
+                [("Source fact.", "Patient-friendly claim.", "evaluator-model")],
+            )
+            self.assertEqual(enriched["final_explanation"], "Patient-friendly claim.")
+            self.assertEqual(enriched["factual_metrics"]["factual_fidelity_estimate"], 100)
+            self.assertNotIn("source_matching", enriched)
+            self.assertEqual(len(cache.records()), 1)
+
     def test_force_new_run_regenerates_answer_and_reuses_source_vector(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

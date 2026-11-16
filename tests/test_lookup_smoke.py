@@ -13,7 +13,7 @@ class LookupSmokeTests(unittest.TestCase):
         report = asyncio.run(run_smoke("mock", env={}))
         self.assertEqual(report["pipeline_status"], "completed")
         self.assertEqual([agent for agent, _ in report["stages"]],
-                         ["Extractor", "TermLookup", "Simplifier", "Verifier", "Readability"])
+                         ["Extractor", "UMLSLookup", "Simplifier", "Readability", "Verifier"])
         for step in ("1", "2", "3a", "3b"):
             with self.subTest(step=step):
                 self.assertIs(report["steps"][step]["pass"], True, report["steps"][step])

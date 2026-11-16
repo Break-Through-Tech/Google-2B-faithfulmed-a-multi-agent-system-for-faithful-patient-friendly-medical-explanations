@@ -34,6 +34,11 @@ CORE RULES
   "history of hypertension" must become "a history of high blood
   pressure," never "you have high blood pressure."
 - Keep numbers, dates, dosages, units, names, and test results accurate.
+- Treat every medication as a separate item. A dose, route, or frequency applies
+  only to the medication it explicitly modifies in the MEDICAL SOURCE. Never
+  carry a modifier such as "daily" or "twice daily" across a comma, conjunction,
+  or neighboring list item to another medication. If a medication's dose, route,
+  or frequency is not stated, omit that detail rather than guessing.
 - Preserve negations. For example, "no evidence of infection" must
   never become "evidence of infection."
 - Do not change who experienced a symptom or who received a treatment.
@@ -41,14 +46,42 @@ CORE RULES
 
 2. SIMPLIFICATION
 - Replace complex words with familiar everyday language when possible.
-- Explain necessary medical terms in plain English when they first appear.
-- Use the glossary when a relevant definition is provided.
+- Explain a medical term only when the MEDICAL SOURCE explicitly explains it or
+  the GLOSSARY contains a matching entry. Otherwise preserve the term as written
+  without defining, expanding, interpreting, or adding a parenthetical gloss.
+- Use only the matching glossary entry when it is provided. Do not complete or
+  improve a definition from your own medical knowledge.
 - Do not blindly replace medical terms if doing so would change their meaning.
 - Use short sentences and active voice where appropriate.
 - Break up long paragraphs and organize related information together.
 - Avoid unnecessary jargon, repetition, and overly technical phrasing.
 - Maintain a respectful, calm, nonjudgmental tone.
 - Do not talk down to the reader.
+
+REFERENCE-DEFINITION BOUNDARY
+- Glossary definitions explain what a matching medical term means in general.
+  They are not evidence about this patient.
+- You may use a matching UMLS definition for a short general explanation of a
+  term that appears in the report.
+- Patient-specific statements must be supported by EXTRACTED FACTS and the
+  MEDICAL SOURCE, never by the glossary alone.
+- Do not infer from a definition that this patient currently has a condition,
+  has its typical symptoms, cause, complications, or severity, received a
+  medication for its usual indication, or should receive a treatment.
+- A medication definition must not be used to infer why this patient takes it.
+- Preserve source qualifiers including "family history of," "history of,"
+  "possible," "suspected," "resolved," and "ruled out" when explaining a term.
+- If a definition cannot be safely connected to the exact term and context,
+  leave the term unexplained rather than guessing.
+- Treat the glossary as closed and exhaustive for externally supplied medical
+  definitions. The absence of a term from the glossary means that no external
+  definition is available.
+- Do not add a definition, parenthetical explanation, typical medication purpose,
+  causal explanation, mechanism, usual symptom, usual complication, medical
+  background fact, or illustrative clinical example unless that exact meaning is
+  explicitly supported by the MEDICAL SOURCE or a matching glossary entry.
+- If the glossary is empty or says no entries are available, preserve unexplained
+  medical terms as written. Never fill the gap from memory or general knowledge.
 
 3. INFORMATION PRESERVATION
 - Retain all clinically important information from the source.

@@ -32,7 +32,7 @@ from typing import Any, Awaitable, Callable, Dict, List, Optional, Tuple
 from agents import run_agent_once
 from agents.baseline import run_baseline
 from agents.factual_evaluator import run_factual_evaluator
-from agents.medical_lookup import MedicalLookup, UMLSClient
+from agents.medical_lookup import MedicalLookup, UMLSClient, reference_definitions_for_prompt
 from agents.production_pipeline import run_production_pipeline
 from agents.verifier import PRODUCTION_VERIFIER_MESSAGE, create_verifier_agent, production_verifier_prompt
 from evals.leaderboard import (
@@ -168,13 +168,19 @@ async def judge_output(attempt: Dict[str, Any], example: Any, evaluator: Dict[st
                                                         Optional[Dict[str, Any]], Optional[str]]:
     """The fixed Gemini factual evaluator. Returns (status, raw, parsed, metrics, error)."""
     final = attempt["final_output"]
+    reference_definitions = reference_definitions_for_prompt(
+        ((((attempt.get("trace") or {}).get("results") or {}).get("reference_definitions")) or {})
+    )
     try:
         raw = await recorder.call("FactualEvaluator", lambda on_usage: run_factual_evaluator(
-            example.source_text, final, example.references, evaluator["model_id"], on_usage=on_usage))
+            example.source_text, final, example.references, evaluator["model_id"],
+            reference_definitions=reference_definitions, on_usage=on_usage))
     except Exception as exc:
         return "failed", None, None, None, f"{type(exc).__name__}: {exc}"[:500]
     try:
-        parsed = parse_factual_evaluation(raw, final, example.source_text)
+        parsed = parse_factual_evaluation(
+            raw, final, example.source_text, reference_definitions,
+        )
     except Exception as exc:
         return "parse_error", raw, None, None, f"{type(exc).__name__}: {exc}"[:500]
     return parsed["status"], raw, parsed, factual_metrics(parsed), None

@@ -19,8 +19,8 @@ Modes:
     python3 -m evals.lookup_smoke --mode umls-live
     python3 -m evals.lookup_smoke --mode live --model <gemini model id>
 
-``--model`` sets the model for every Gemini stage (Extractor, TermFinder,
-Simplifier, Verifier, Refiner, Readability). Without it the pipeline default is used.
+``--model`` sets the model for every Gemini stage (Extractor, Simplifier,
+Verifier, Refiner, Readability). UMLS lookup is deterministic Python and HTTP.
 
 The UMLS key is read only from the environment and is masked in all output.
 Nothing is written to disk.
@@ -47,20 +47,21 @@ CUI = "C0020538"
 MODES = ("auto", "live", "umls-live", "mock")
 
 # ── Mocks (used only where the mode requires them) ─────────────────────
-MOCK_FACTS = json.dumps([
+MOCK_FACTS = [
     {"fact_id": "F-001", "fact_text": "The patient has a history of hypertension.", "fact_type": "diagnosis",
      "source_evidence": ["The patient has a history of hypertension."]},
     {"fact_id": "F-002", "fact_text": "Continue the current treatment plan.", "fact_type": "instruction",
      "source_evidence": ["Continue the current treatment plan."]},
-])
-MOCK_TERMS = json.dumps([{"term": "hypertension", "category": "clinical_concept", "fact_ids": ["F-001"]}])
+]
+MOCK_TERMS = [{"term": "hypertension", "category": "clinical_concept", "fact_ids": ["F-001"]}]
+MOCK_EXTRACTOR = json.dumps({"patient_facts": MOCK_FACTS, "lookup_terms": MOCK_TERMS})
 MOCK_DEFINITION = "[MOCK definition: not real UMLS content]"
 ACCEPT = json.dumps({"overall_decision": "accept", "explanation_accuracy": {"prediction": "yes", "reason": "mock"},
                      "sentences": [], "unsupported_claims": [], "omissions": []})
-MOCK_TEXT = {"Extractor": MOCK_FACTS, "TermFinder": MOCK_TERMS,
+MOCK_TEXT = {"Extractor": MOCK_EXTRACTOR,
              "Simplifier": "PATIENT-FRIENDLY VERSION:\nMock draft.\n\nREVIEW FLAGS:\n- None.",
              "Readability": "Mock final."}
-AGENT_FACTORIES = ("create_extractor_agent", "create_term_finder_agent", "create_simplifier_agent",
+AGENT_FACTORIES = ("create_extractor_agent", "create_simplifier_agent",
                    "create_refiner_agent", "create_readability_agent")
 
 
@@ -109,7 +110,7 @@ async def run_smoke(mode: str = "mock", env: Dict[str, str] | None = None,
 
     with contextlib.ExitStack() as stack:
         if not llm_live:  # stand-in agents: no ADK objects, no model calls
-            names = {"create_extractor_agent": "Extractor", "create_term_finder_agent": "TermFinder",
+            names = {"create_extractor_agent": "Extractor",
                      "create_simplifier_agent": "Simplifier", "create_refiner_agent": "Refiner",
                      "create_readability_agent": "Readability"}
             for factory in AGENT_FACTORIES:
@@ -122,7 +123,7 @@ async def run_smoke(mode: str = "mock", env: Dict[str, str] | None = None,
     steps: Dict[str, Dict[str, Any]] = {}
 
     # Step 1: Extractor fact grounded in the note
-    facts = json.loads(trace["results"]["extractor"] or "[]")
+    facts = (trace["results"].get("extractor_enriched") or {}).get("patient_facts") or []
     htn = [f for f in facts if "hypertension" in f["fact_text"].lower()]
     htn_ids = [f["fact_id"] for f in htn]
     steps["1"] = {"pass": bool(htn) and all(

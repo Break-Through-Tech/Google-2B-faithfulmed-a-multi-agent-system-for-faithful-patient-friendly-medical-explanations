@@ -315,7 +315,7 @@ The input contains a question and a complete machine-generated answer with sente
 
 Assess internally in this order: read the question and complete answer; identify what the question asks; assess whole-answer acceptability and factual accuracy; assess each sentence's relevance in the context of the complete answer; then assess each citation with a non-null evidence_support excerpt against its attached claim. Keep these three judgments separate. Do not return private reasoning; give only the brief reasons requested in the JSON schema.
 
-Answer accuracy:
+Answer accuracy: 
 This is a whole-answer judgment of whether the answer is acceptable, including whether it answers the question at least partially and whether it contains a material factual error.
 
 - Predict "yes" when the answer provides meaningful information responsive to at least one part of the question and does not contain a material factual error that makes the answer unacceptable. The answer may be incomplete; do not require it to cover every possible detail or option.

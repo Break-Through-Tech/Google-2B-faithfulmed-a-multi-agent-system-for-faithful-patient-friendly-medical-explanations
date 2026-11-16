@@ -23,10 +23,21 @@ export interface Claim {
   claim_id: string;
   claim_span_id: string | null;
   claim_text: string;
+  claim_type: "patient_specific" | "general_term_explanation" | null;
   classification: Classification;
   clinically_meaningful: boolean;
+  evidence_type: "medical_report" | "umls_definition" | "both" | "none" | null;
   source_span_ids: string[];
+  reference_definition_ids: string[];
   reason: string;
+}
+
+export interface ReferenceDefinition {
+  term: string;
+  source: string;
+  source_id: string;
+  definition: string;
+  allowed_use?: string;
 }
 
 export interface ResultEvent {
@@ -52,6 +63,7 @@ export interface ResultEvent {
   evaluator_status_reason: string | null;
   evaluator_error: string | null;
   source_spans: Span[];
+  reference_definitions: ReferenceDefinition[];
   explanation_spans: Span[];
   claims: Claim[];
 }

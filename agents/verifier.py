@@ -54,17 +54,48 @@ For every clinical, causal, comparative, or negative claim:
 - Check that the source discusses the same condition, nutrient, medication, anatomical site, population, and relationship.
 - Check that each claim keeps the source's time and status qualifiers, such as "history of," "prior," "suspected," "possible," "resolved," or "ruled out." A claim that drops or changes one (for example, "history of hypertension" becoming "you have hypertension") is unsupported and material.
 - Do not transfer a fact about one entity to another, such as vitamin B12 to vitamin B6, a side effect of warfarin to aspirin, or a finding about the left kidney to the right kidney.
+- Check every mentioned medication's name, dose, route, and frequency independently
+  against the source. A modifier applies only to the medication it explicitly
+  modifies; never carry "daily," "twice daily," a dose, or a route across a comma,
+  conjunction, or neighboring list item. If the draft adds any medication dose,
+  route, or frequency that the source does not attach to that medication, list it
+  as unsupported and return "revise," even if the added detail seems minor.
 - Claims such as "does not cause," "prevents," "improves," or "lowers risk" require explicit source support.
 - If the source does not establish the claim, label it unsupported even when it seems medically plausible.
 - Use contradicted only when the source explicitly conflicts with the claim. An entity mismatch or missing support alone is unsupported, not contradicted.
-- Return "revise" for any clinically meaningful unsupported, contradicted, or unresolved claim.
+- Return "revise" for every unsupported added definition or medical-background
+  claim, even when it seems minor, as well as for any clinically meaningful
+  unsupported, contradicted, or unresolved patient-specific claim.
 
 REFERENCE DEFINITIONS
 reference_definitions, when present, describe what a term means in general. They are not part of the report and are not facts about this patient.
 - Never use a reference definition to support a patient-specific claim, such as a diagnosis, finding, result, dose, cause, plan, or instruction. Those still require support from the report.
 - A plain-language explanation of what a term generally means is not unsupported merely because the report does not define the term, provided it is consistent with the supplied reference definition for that term and does not change the report's meaning.
 - Flag an explanation of a term as unsupported if it conflicts with or materially goes beyond its supplied definition, or if the definition describes a different concept than the one the report uses. Name the definition's source_id in instruction_to_refiner.
-- A missing definition is never an omission.
+- Treat the supplied reference_definitions list as closed and exhaustive. If the
+  draft explains a medical term and the report does not explicitly state that
+  explanation, there must be a matching supplied definition that supports the
+  complete explanation. Never supply or validate missing support from your own
+  medical knowledge.
+- A missing definition is never an omission: the draft may preserve the medical
+  term without explaining it. However, an added definition without source or
+  matching-reference support is an unsupported claim and requires revision.
+- Apply this rule to parenthetical glosses and to claims about what a term means,
+  what a medication is typically used for, what causes a condition, mechanisms,
+  usual symptoms or complications, medical background facts, and illustrative
+  examples. A medically true claim is still unsupported when neither allowed
+  source states it.
+- Split mixed sentences into their patient-specific and general-definition
+  claims before judging support. The patient-specific portion requires report
+  evidence; the general term explanation may use its matching UMLS definition.
+- Never infer from a definition that this patient currently has a condition,
+  has typical symptoms, cause, complications, or severity, or received a
+  medication for its usual indication.
+- For example, a definition saying that lisinopril treats hypertension cannot
+  establish that this patient has hypertension. A definition of diabetes cannot
+  turn "family history of diabetes" into "the patient has diabetes."
+- If a patient-specific claim relies only on a reference definition, list it as
+  unsupported and return "revise."
 
 Unsupported claims
 List material claims in the explanation that the report does not establish or that conflict with it.

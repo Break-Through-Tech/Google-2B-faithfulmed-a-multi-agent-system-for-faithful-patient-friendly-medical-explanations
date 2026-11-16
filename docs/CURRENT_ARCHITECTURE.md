@@ -33,8 +33,8 @@ Dataset files, annotations, manifests, data documentation, `.env.example`, and t
 ## What each Python file does
 
 - `agents/__init__.py` contains `DEFAULT_MODEL` and `run_agent_once()`. The helper creates one isolated ADK session and returns final text.
-- `agents/extractor.py` owns `create_extractor_agent()` and `run_extractor()`. Its final schema is a teammate TODO.
-- `agents/simplifier.py` owns `create_simplifier_agent()` and `run_simplifier()`. Glossary retrieval and its final output contract are TODOs.
+- `agents/extractor.py` owns `create_extractor_agent()` and `run_extractor()`. Its schema separates report-grounded `patient_facts` from source-grounded `lookup_terms`; it never generates definitions.
+- `agents/simplifier.py` owns `create_simplifier_agent()` and `run_simplifier()`. It may use Python-fetched UMLS definitions for general term explanations but not patient-specific claims.
 - `agents/verifier.py` owns answer- and citation-level Verifier builders. Both receive a question, candidate text, and evidence context; the citation form receives the assessed evidence snippets only.
 - `agents/refiner.py` owns `create_refiner_agent()` and `run_refiner()`. The final revision contract remains a TODO.
 - `agents/readability.py` owns `create_readability_agent()` and `run_readability()`. Its owner must decide whether the final result is a score, revised text, or both.
@@ -47,14 +47,14 @@ Dataset files, annotations, manifests, data documentation, `.env.example`, and t
 
 ## Reference definitions (UMLS)
 
-`agents/medical_lookup.py` adds a `TermLookup` stage to the production pipeline, between the Extractor and the Simplifier:
+`agents/medical_lookup.py` adds a Python-only `UMLSLookup` stage to the production pipeline, between the Extractor and the Simplifier:
 
-1. A small `TermFinder` agent lists medical terms and drug names from the extracted facts. Code keeps a term only if it appears word-for-word in the `fact_text` of a fact it cites.
+1. The existing Extractor call returns two separate lists: report-grounded `patient_facts` and source-grounded `lookup_terms`. It does not generate definitions. Code keeps a lookup term only if it appears word-for-word in a cited patient fact or in exact `source_evidence`, allowing general medical documents to request definitions without inventing patient facts.
 2. Every term, including medications, is looked up in UMLS. Lookups are plain code; no model writes or edits a definition. DrugBank is not part of the pipeline.
-3. The result (`faithfulmed_reference_definitions_v1`) is stored in `trace["results"]["reference_definitions"]`, separate from the Extractor's facts. Each entry has the term, its `fact_ids`, the definition, `source` (UMLS), `source_id` (CUI), the definition's source vocabulary, and a reference URL. Unresolved terms record why: `not_found`, `ambiguous`, `no_definition`, `api_error`, or `not_configured`.
-4. The Simplifier receives the definitions as its `{glossary}`. The Verifier receives them as a separate `reference_definitions` key and is told never to treat them as evidence for patient-specific claims.
+3. Every validated term is looked up; there is no silent whole-report term limit. Terms may be grounded through patient `fact_ids` or exact `source_evidence`, so educational documents do not need invented patient facts. When UMLS returns several CUIs, Python ranks and filters them using the Extractor category, nearby source context, and UMLS semantic types so drugs, substances, procedures, abbreviations, and anatomical concepts do not resolve to context-incompatible candidates. Concise MedlinePlus definitions are preferred when available. If a compatible candidate lacks an allowed definition, lookup continues through the ranked candidates. The result (`faithfulmed_reference_definitions_v4`) is stored in `trace["results"]["reference_definitions"]`, separate from the Extractor's facts. Each entry has the term, its grounding, the definition, `source` (UMLS), `source_id` (CUI), semantic types, provenance, and `allowed_use: general_term_explanation_only`. Unresolved terms record why, including `not_found`, `ambiguous`, `context_mismatch`, `no_definition`, `api_error`, or `not_configured`.
+4. The Simplifier receives the definitions as its `{glossary}`. The production Verifier and independent factual evaluator receive them as a separate `reference_definitions` key. A general term explanation may cite UMLS, but every patient-specific claim still requires report evidence.
 
-Any lookup failure is recorded in the trace and the pipeline continues without definitions. With no source configured, the stage is skipped and no extra model call is made.
+Any lookup failure is recorded in the trace and the pipeline continues without definitions. There is no Term Finder call. With no UMLS source configured, the stage is skipped without network access.
 
 Setup (optional):
 
@@ -64,7 +64,7 @@ Setup (optional):
 python3 -m agents.medical_lookup lookup metoprolol --category medication
 ```
 
-UMLS definitions are accepted only from MeSH, NCI, CSP, HPO, and MedlinePlus, in that order. MedlinePlus is last because its entries are long health-topic summaries; after the 600-character cap they can keep only background (for hypertension, a description of blood pressure in general). Short all-caps abbreviations that match several UMLS concepts are left unresolved instead of guessed. Each glossary line the Simplifier sees names the fact IDs it belongs to.
+UMLS definitions are accepted from MedlinePlus, MeSH, NCI, CSP, and HPO. Concise MedlinePlus definitions are preferred for patient-facing language; a truncated MedlinePlus topic page falls behind a complete concise definition. Ambiguous or context-incompatible abbreviations, semantic types, and anatomical matches are left unresolved instead of guessed. Each glossary line records its fact IDs or source-only grounding.
 
 Smoke test for the lookup handoffs on a synthetic note (see `evals/lookup_smoke.py`):
 
@@ -79,9 +79,13 @@ The report includes `accepted` and `final_explanation` so step 4 can be reviewed
 
 ### Recorded live runs
 
+The entries below describe the historical v3/v4 TermFinder implementation and
+are retained as an audit trail. Pipeline v5 removed that separate model call;
+the Extractor now supplies `lookup_terms` in its existing response.
+
 **2026-11-13, `gemini-3.1-flash-lite`, live UMLS** (`python3 -m evals.lookup_smoke --mode live --model gemini-3.1-flash-lite`)
 
-- Steps 1, 2, 3a, 3b: **passed**. Stages Extractor, TermLookup, Simplifier, Verifier, Readability all completed; the Verifier accepted on the first check. UMLS returned C0020538 ("Hypertensive disease", MeSH definition, not truncated) linked to fact F-001, and both the Simplifier glossary and the Verifier's `reference_definitions` received it.
+- Steps 1, 2, 3a, 3b: **passed**. The historical stage order was Extractor, TermLookup, Simplifier, Verifier, Readability; the current order places Readability before the final Verifier loop. UMLS returned C0020538 ("Hypertensive disease", MeSH definition, not truncated) linked to fact F-001, and both the Simplifier glossary and the Verifier's `reference_definitions` received it.
 - Step 4: **manual faithfulness finding**. The source says "The patient has a history of hypertension." The accepted final output said "You have hypertension, which is the medical term for high blood pressure." Dropping "history of" changes the claim from a past condition to a current one, and the Verifier did not flag it. The final output also still contained the Simplifier's `PATIENT-FRIENDLY VERSION:` / `REVIEW FLAGS:` wrapper.
 - Follow-up: the Simplifier and Verifier prompts now name time and status qualifiers ("history of", "prior", "suspected", "possible", "resolved", "ruled out"), and the pipeline now strips the wrapper (see below). Expected meaning on rerun: "You have a history of high blood pressure, also called hypertension. Please continue your current treatment plan."
 
@@ -94,11 +98,11 @@ The report includes `accepted` and `final_explanation` so step 4 can be reviewed
 
 ### Simplifier output boundary
 
-The Simplifier returns two sections, `PATIENT-FRIENDLY VERSION:` and `REVIEW FLAGS:`. `split_simplifier_output()` in `agents/production_pipeline.py` separates them right after the Simplifier stage. Only the patient text goes to the Verifier, Refiner, Readability, and `final_explanation`. The raw output stays in `trace["results"]["simplifier"]` and the flags in `trace["results"]["simplifier_review_flags"]`. Before this, the wrapper could reach `final_explanation`, the demo display, readability metrics, and the factual evaluator's spans (10 of 32 saved runs in `eval_results/system_demo_runs.jsonl` contain it; those saved records are unchanged).
+The Simplifier returns two sections, `PATIENT-FRIENDLY VERSION:` and `REVIEW FLAGS:`. `split_simplifier_output()` in `agents/production_pipeline.py` separates them right after the Simplifier stage. Only the patient text goes to Readability and then the Verifier/Refiner loop; the exact final text must be accepted after all readability edits. The raw output stays in `trace["results"]["simplifier"]` and the flags in `trace["results"]["simplifier_review_flags"]`. Before this, the wrapper could reach `final_explanation`, the demo display, readability metrics, and the factual evaluator's spans (10 of 32 saved runs in `eval_results/system_demo_runs.jsonl` contain it; those saved records are unchanged).
 
 ## Model leaderboard
 
-Six configurations: {Gemini `gemini-3.8-flash`, Gemma `gemma-4-31b-it`, gpt-oss `groq/openai/gpt-oss-120b`} × {single-model baseline, full agentic system}. In a full-system configuration the one model powers every generation agent (Extractor, TermFinder, Simplifier, Verifier, Refiner, Readability). Models, prices, openness, and sources live in `evals/leaderboard_models.json`.
+Six configurations: {Gemini `gemini-3.8-flash`, Gemma `gemma-4-31b-it`, gpt-oss `groq/openai/gpt-oss-120b`} × {single-model baseline, full agentic system}. In a full-system configuration the one model powers every generation agent (Extractor, Simplifier, Verifier, Refiner, Readability); UMLS lookup is Python/HTTP, not an agent call. Models, prices, openness, and sources live in `evals/leaderboard_models.json`.
 
 **The automated faithfulness judge is Gemini** (`gemini-3.8-flash`, existing factual-evaluator prompt) for all six configurations. Gemini is also a contestant, so a blind human review of an equal-sized random sample per configuration is supported; human judgments and judge scores are kept and reported separately.
 

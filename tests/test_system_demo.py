@@ -13,7 +13,11 @@ from agents.factual_evaluator import factual_evaluator_prompt, indexed_text_span
 from agents.production_pipeline import PipelineRunResult
 from evals.system_demo import (
     AppendOnlyRunCache,
+    METRIC_IMPLEMENTATION_VERSION,
+    PIPELINE_IMPLEMENTATION_VERSION,
     SystemExample,
+    V7_MEDICATION_GUARD_PROMPT_HASHES,
+    V7_PRE_MEDICATION_GUARD_PROMPT_HASHES,
     aggregate_metrics,
     cache_key,
     decode_factual_evaluation_json,
@@ -21,6 +25,9 @@ from evals.system_demo import (
     load_mtsamples,
     load_plaba,
     parse_factual_evaluation,
+    prompt_hashes,
+    prompt_hashes_cache_compatible,
+    refresh_cached_factual_evaluation,
     run_system_example,
     select_examples,
 )
@@ -122,6 +129,220 @@ class SystemDemoTests(unittest.TestCase):
         )
         self.assertNotIn("original_source_text", payload)
         self.assertNotIn("final_explanation", payload)
+
+    def test_factual_prompt_keeps_umls_definitions_separate_from_patient_source(self) -> None:
+        definitions = [{
+            "term": "asthma", "source": "UMLS", "source_id": "C0004096",
+            "definition": "A condition affecting the airways.",
+            "allowed_use": "general_term_explanation_only",
+        }]
+        rendered = factual_evaluator_prompt(
+            "History of asthma.", "Asthma affects the airways.", {}, definitions,
+        )
+        payload = json.loads(rendered.split("\n\nINPUT JSON:\n", 1)[1])
+        self.assertEqual(payload["reference_definitions"], definitions)
+        self.assertIn("family history of", rendered)
+        self.assertIn("medication for its usual indication", rendered)
+        self.assertIn("ruled out", rendered)
+
+    def test_general_definition_can_be_supported_by_umls_without_report_span(self) -> None:
+        definitions = [{
+            "term": "asthma", "source": "UMLS", "source_id": "C0004096",
+            "definition": "A condition affecting the airways.",
+        }]
+        parsed = parse_factual_evaluation(json.dumps({
+            "status": "scored", "status_reason": "x",
+            "claims": [{
+                "claim_id": "C1", "claim_span_id": "E001",
+                "claim_text": "Asthma affects the airways.",
+                "claim_type": "general_term_explanation",
+                "classification": "supported", "clinically_meaningful": False,
+                "evidence_type": "umls_definition", "source_span_ids": [],
+                "reference_definition_ids": ["C0004096"],
+                "reason": "The matching UMLS definition supports this general explanation.",
+            }],
+        }), "Asthma affects the airways.", "History of asthma.", definitions)
+        claim = parsed["claims"][0]
+        self.assertEqual(claim["evidence_type"], "umls_definition")
+        self.assertEqual(claim["reference_definitions"][0]["source_id"], "C0004096")
+        self.assertEqual(factual_metrics(parsed)["factual_fidelity_estimate"], 100)
+
+    def test_patient_claim_cannot_be_supported_by_umls_alone(self) -> None:
+        definitions = [{
+            "term": "lisinopril", "source": "UMLS", "source_id": "C0023870",
+            "definition": "A medication used to treat hypertension.",
+        }]
+        parsed = parse_factual_evaluation(json.dumps({
+            "status": "scored", "status_reason": "x",
+            "claims": [{
+                "claim_id": "C1", "claim_span_id": "E001",
+                "claim_text": "The patient has hypertension.",
+                "claim_type": "patient_specific",
+                "classification": "supported", "clinically_meaningful": True,
+                "evidence_type": "umls_definition", "source_span_ids": [],
+                "reference_definition_ids": ["C0023870"],
+                "reason": "Lisinopril commonly treats hypertension.",
+            }],
+        }), "The patient has hypertension.", "The patient takes lisinopril.", definitions)
+        self.assertEqual(parsed["claims"], [])
+        self.assertIn(
+            "patient_specific claims cannot cite UMLS",
+            parsed["skipped_claims"][0]["error"],
+        )
+
+    def test_patient_claim_cannot_cite_umls_even_with_report_evidence(self) -> None:
+        definitions = [{
+            "term": "lisinopril", "source": "UMLS", "source_id": "C0023870",
+            "definition": "A medication used to treat hypertension.",
+        }]
+        parsed = parse_factual_evaluation(json.dumps({
+            "status": "scored", "status_reason": "x",
+            "claims": [{
+                "claim_id": "C1", "claim_span_id": "E001",
+                "claim_text": "The patient takes lisinopril.",
+                "claim_type": "patient_specific",
+                "classification": "supported", "clinically_meaningful": True,
+                "evidence_type": "both", "source_span_ids": ["S001"],
+                "reference_definition_ids": ["C0023870"],
+                "reason": "The report supports use; UMLS describes the medication.",
+            }],
+        }), "The patient takes lisinopril.", "The patient takes lisinopril.", definitions)
+        self.assertEqual(parsed["claims"], [])
+        self.assertIn(
+            "patient_specific claims cannot cite UMLS",
+            parsed["skipped_claims"][0]["error"],
+        )
+
+    def test_missing_reference_ids_default_only_when_umls_is_not_used(self) -> None:
+        report_only = json.dumps({
+            "status": "scored", "status_reason": "x",
+            "claims": [{
+                "claim_id": "C1", "claim_span_id": "E001",
+                "claim_text": "The patient takes aspirin.",
+                "claim_type": "patient_specific",
+                "classification": "supported", "clinically_meaningful": True,
+                "evidence_type": "medical_report", "source_span_ids": ["S001"],
+                "reason": "The report lists aspirin.",
+            }],
+        })
+        parsed = parse_factual_evaluation(
+            report_only, "The patient takes aspirin.", "The patient takes aspirin.",
+        )
+        self.assertEqual(parsed["skipped_claims"], [])
+        self.assertEqual(parsed["claims"][0]["reference_definition_ids"], [])
+
+        umls_without_id = json.dumps({
+            "status": "scored", "status_reason": "x",
+            "claims": [{
+                "claim_id": "C1", "claim_span_id": "E001",
+                "claim_text": "Asthma affects the airways.",
+                "claim_type": "general_term_explanation",
+                "classification": "supported", "clinically_meaningful": False,
+                "evidence_type": "umls_definition", "source_span_ids": [],
+                "reason": "A UMLS definition supports it.",
+            }],
+        })
+        parsed = parse_factual_evaluation(
+            umls_without_id,
+            "Asthma affects the airways.",
+            "History of asthma.",
+            [{"source_id": "C0004096", "definition": "A condition affecting the airways."}],
+        )
+        self.assertEqual(parsed["claims"], [])
+        self.assertIn(
+            "reference_definition_ids must be a list of strings",
+            parsed["skipped_claims"][0]["error"],
+        )
+
+    def test_cached_raw_evaluation_is_reparsed_without_an_api_call(self) -> None:
+        raw = json.dumps({
+            "status": "scored", "status_reason": "x",
+            "claims": [{
+                "claim_id": "C1", "claim_span_id": "E001",
+                "claim_text": "The patient takes aspirin.",
+                "claim_type": "patient_specific",
+                "classification": "supported", "clinically_meaningful": True,
+                "evidence_type": "medical_report", "source_span_ids": ["S001"],
+                "reason": "The report lists aspirin.",
+            }],
+        })
+        record = {
+            "source_text": "The patient takes aspirin.",
+            "final_explanation": "The patient takes aspirin.",
+            "factual_evaluator": {
+                "request": {"reference_definitions": []},
+                "raw_output": raw,
+                "parsed_output": {"status": "scored", "claims": [], "skipped_claims": [{}]},
+                "error": None,
+            },
+            "factual_metrics": {"claims_assessed": 0},
+        }
+
+        refreshed = refresh_cached_factual_evaluation(record)
+
+        self.assertEqual(refreshed["factual_metrics"]["claims_assessed"], 1)
+        self.assertEqual(refreshed["factual_metrics"]["claims_skipped"], 0)
+        self.assertFalse(
+            refreshed["factual_metrics"]["clinically_meaningful_hallucination"]
+        )
+        self.assertTrue(
+            refreshed["factual_evaluator"]["reparsed_from_cached_raw"]
+        )
+
+    def test_system_run_passes_pipeline_umls_evidence_to_independent_evaluator(self) -> None:
+        entry = {
+            "term": "asthma", "fact_ids": ["F-001"], "source": "UMLS",
+            "source_id": "C0004096", "matched_name": "Asthma",
+            "definition_source": "MSH", "definition": "A condition affecting the airways.",
+            "evidence_type": "reference_definition",
+            "allowed_use": "general_term_explanation_only",
+        }
+        seen: dict = {}
+
+        async def pipeline(source, model, on_event=None):
+            return PipelineRunResult({
+                "status": "completed", "stages": [],
+                "results": {
+                    "final_explanation": "Asthma affects the airways.",
+                    "reference_definitions": {"entries": [entry]},
+                },
+            }, "Asthma affects the airways.", True)
+
+        async def evaluator(
+            source, final, references, model, *, reference_definitions=None, on_text=None,
+        ):
+            seen["definitions"] = reference_definitions
+            return json.dumps({
+                "status": "scored", "status_reason": "Scored.",
+                "claims": [{
+                    "claim_id": "C1", "claim_span_id": "E001",
+                    "claim_text": "Asthma affects the airways.",
+                    "claim_type": "general_term_explanation",
+                    "classification": "supported", "clinically_meaningful": False,
+                    "evidence_type": "umls_definition", "source_span_ids": [],
+                    "reference_definition_ids": ["C0004096"],
+                    "reason": "Supported by UMLS.",
+                }],
+            })
+
+        example = SystemExample(
+            "MTSamples", "dev", "M1", "History of asthma.", {}, "sample.json",
+        )
+        readable = {
+            "flesch_kincaid_grade": 7.0, "smog_index": 8.0, "jargon_density": .1,
+            "word_count": 5, "meets_target": True, "is_refusal": False,
+        }
+        with patch("evals.system_demo.output_metrics", return_value=(readable, None)):
+            record = asyncio.run(run_system_example(
+                example, "model", "model", cache=None, persist=False,
+                pipeline_runner=pipeline, evaluator_runner=evaluator,
+            ))
+        self.assertEqual(seen["definitions"][0]["source_id"], "C0004096")
+        self.assertEqual(
+            record["factual_evaluator"]["request"]["reference_definitions"][0]["source_id"],
+            "C0004096",
+        )
+        self.assertEqual(record["factual_metrics"]["factual_fidelity_estimate"], 100)
 
     def test_span_ids_resolve_claim_and_multiple_source_excerpts(self) -> None:
         source = "First source fact. Second source fact."
@@ -241,8 +462,11 @@ class SystemDemoTests(unittest.TestCase):
                 "Final claim.", True,
             )
 
-        async def evaluator(source, final, references, model, on_text=None):
+        async def evaluator(
+            source, final, references, model, *, reference_definitions=None, on_text=None,
+        ):
             calls["evaluator"] += 1
+            self.assertEqual(reference_definitions, [])
             return json.dumps({
                 "status": "scored", "status_reason": "Scored.",
                 "claims": [{
@@ -286,11 +510,57 @@ class SystemDemoTests(unittest.TestCase):
         self.assertNotEqual(cache_key(example, "pipeline-model", "eval-model"),
                             cache_key(example, "different-model", "eval-model"))
 
+    def test_existing_v7_cache_survives_medication_guard_prompt_patch(self) -> None:
+        current = prompt_hashes()
+        self.assertEqual(PIPELINE_IMPLEMENTATION_VERSION, "system-pipeline-v7")
+        self.assertEqual(current, V7_MEDICATION_GUARD_PROMPT_HASHES)
+        self.assertTrue(prompt_hashes_cache_compatible(
+            V7_PRE_MEDICATION_GUARD_PROMPT_HASHES, current,
+        ))
+        future = dict(current)
+        future["simplifier"] = "unreviewed-future-prompt"
+        self.assertFalse(prompt_hashes_cache_compatible(
+            V7_PRE_MEDICATION_GUARD_PROMPT_HASHES, future,
+        ))
+
+        example = SystemExample(
+            "MTSamples", "test", "MTS_TEST_35", "Source text.", {}, "sample.json",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            cache = AppendOnlyRunCache(Path(directory) / "runs.jsonl")
+            cache.append({
+                "run_id": "legacy-v7-run",
+                "run_status": "completed",
+                "source_text": example.source_text,
+                "post_generation_references": example.references,
+                "pipeline_model": "pipeline-model",
+                "evaluator_model": "eval-model",
+                "pipeline_version": PIPELINE_IMPLEMENTATION_VERSION,
+                "metric_version": METRIC_IMPLEMENTATION_VERSION,
+                "prompt_hashes": V7_PRE_MEDICATION_GUARD_PROMPT_HASHES,
+                **example.metadata(),
+            })
+            found = cache.find_compatible(example, "pipeline-model", "eval-model")
+        self.assertEqual(found["run_id"], "legacy-v7-run")
+
+    def test_failed_cache_record_is_not_reused(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            cache = AppendOnlyRunCache(Path(directory) / "runs.jsonl")
+            cache.append({
+                "run_id": "failed-run",
+                "cache_key": "same-key",
+                "run_status": "failed",
+                "pipeline_version": "system-pipeline-v6",
+            })
+            self.assertIsNone(cache.find("same-key"))
+
     def test_invalid_evaluator_keeps_readability_metrics_and_raw_output(self) -> None:
         async def pipeline(source, model, on_event=None):
             return PipelineRunResult({"status": "completed", "stages": []}, "Final claim.", True)
 
-        async def evaluator(source, final, references, model, on_text=None):
+        async def evaluator(
+            source, final, references, model, *, reference_definitions=None, on_text=None,
+        ):
             return "not json"
 
         readable = {"flesch_kincaid_grade": 7.0, "smog_index": 8.0, "jargon_density": .1,

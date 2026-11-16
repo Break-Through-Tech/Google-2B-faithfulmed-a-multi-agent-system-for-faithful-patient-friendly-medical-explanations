@@ -42,9 +42,32 @@ def parse_prediction(raw_prediction):
     if not isinstance(raw_prediction, str):
         raise ValueError("raw_prediction must be a string")
     try:
-        facts = json.loads(raw_prediction)
+        payload = json.loads(raw_prediction)
     except json.JSONDecodeError as exc:
         raise ValueError(f"Invalid JSON: {exc.msg}") from exc
+    if isinstance(payload, dict):
+        if set(payload) != {"patient_facts", "lookup_terms"}:
+            raise ValueError("Extractor object requires patient_facts and lookup_terms only")
+        facts = payload["patient_facts"]
+        terms = payload["lookup_terms"]
+        if not isinstance(facts, list):
+            raise ValueError("patient_facts must be a JSON list")
+        if not isinstance(terms, list):
+            raise ValueError("lookup_terms must be a JSON list")
+        fact_ids = {fact.get("fact_id") for fact in facts if isinstance(fact, dict)}
+        for index, term in enumerate(terms, 1):
+            if not isinstance(term, dict) or set(term) != {"term", "category", "fact_ids"}:
+                raise ValueError(f"Lookup term {index} has an invalid shape")
+            if not isinstance(term["term"], str) or not term["term"].strip():
+                raise ValueError(f"Lookup term {index} must be nonempty")
+            if term["category"] not in {"medication", "clinical_concept"}:
+                raise ValueError(f"Lookup term {index} has an invalid category")
+            if not isinstance(term["fact_ids"], list) or not term["fact_ids"]:
+                raise ValueError(f"Lookup term {index} requires fact_ids")
+            if any(fact_id not in fact_ids for fact_id in term["fact_ids"]):
+                raise ValueError(f"Lookup term {index} cites an unknown fact_id")
+    else:
+        facts = payload  # historical bare-list predictions remain scoreable
     return validate_facts(facts)
 
 

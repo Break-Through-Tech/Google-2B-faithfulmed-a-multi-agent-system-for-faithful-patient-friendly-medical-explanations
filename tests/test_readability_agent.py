@@ -12,6 +12,11 @@ class ReadabilityAgentTests(unittest.TestCase):
         self.assertIn("end every bullet item with a period", READABILITY_INSTRUCTION)
         self.assertIn("no bullet item is missing terminal punctuation", READABILITY_INSTRUCTION)
 
+    def test_instruction_preserves_medication_modifier_scope(self) -> None:
+        self.assertIn("dose, route, and frequency attached only to that medication", READABILITY_INSTRUCTION)
+        self.assertIn("Never copy", READABILITY_INSTRUCTION)
+        self.assertIn("do not add one", READABILITY_INSTRUCTION)
+
 
 if __name__ == "__main__":
     unittest.main()

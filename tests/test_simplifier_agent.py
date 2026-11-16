@@ -32,6 +32,23 @@ class SimplifierAgentTests(unittest.TestCase):
         self.assertIn("REVIEW FLAGS:", SIMPLIFIER_INSTRUCTION)
         self.assertIn("End every bullet item with a period", SIMPLIFIER_INSTRUCTION)
 
+    def test_umls_definitions_cannot_become_patient_facts(self) -> None:
+        self.assertIn("not evidence about this patient", SIMPLIFIER_INSTRUCTION)
+        self.assertIn("medication for its usual indication", SIMPLIFIER_INSTRUCTION)
+        self.assertIn('"family history of,"', SIMPLIFIER_INSTRUCTION)
+        self.assertIn('"ruled out"', SIMPLIFIER_INSTRUCTION)
+
+    def test_missing_glossary_definition_fails_closed(self) -> None:
+        self.assertIn("glossary as closed and exhaustive", SIMPLIFIER_INSTRUCTION)
+        self.assertIn("preserve unexplained\n  medical terms as written", SIMPLIFIER_INSTRUCTION)
+        self.assertIn("Never fill the gap from memory", SIMPLIFIER_INSTRUCTION)
+        self.assertIn("typical medication purpose", SIMPLIFIER_INSTRUCTION)
+
+    def test_medication_modifiers_cannot_move_between_items(self) -> None:
+        self.assertIn("Treat every medication as a separate item", SIMPLIFIER_INSTRUCTION)
+        self.assertIn("across a comma, conjunction", SIMPLIFIER_INSTRUCTION)
+        self.assertIn("omit that detail rather than guessing", SIMPLIFIER_INSTRUCTION)
+
     def test_blank_or_nonstring_inputs_are_rejected_without_a_model_call(self) -> None:
         cases = [
             ("", "[{}]", "No glossary entries provided."),

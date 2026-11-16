@@ -22,6 +22,7 @@ from evals.baseline_system import (
     DEFAULT_BASELINE_RESULTS_PATH,
     DEFAULT_BASELINE_REVIEW_PATH,
     BaselineEnrichmentCache,
+    enrich_baseline_record,
     has_compatible_source_matching,
     has_factual_evaluation,
     load_baseline_records,
@@ -32,10 +33,9 @@ from evals.system_demo import (
     AppendOnlyRunCache,
     SystemExample,
     aggregate_metrics,
-    factual_metrics,
     load_system_examples,
-    parse_factual_evaluation,
     record_for_download,
+    refresh_cached_factual_evaluation,
     run_system_example,
     select_examples,
 )
@@ -142,8 +142,8 @@ def metric_summary(records: list[dict[str, Any]]) -> None:
     summary = aggregate_metrics(records)
     st.subheader("Evaluation metrics")
     st.caption(
-        "Scores use the displayed patient-friendly explanation. Factual fidelity is an automated, "
-        "source-based estimate—not a human agreement score."
+        "Scores use the displayed patient-friendly explanation. Factual fidelity is an automated "
+        "report-and-UMLS evidence estimate—not a human agreement score."
     )
     first = st.columns(4)
     first[0].metric("Outputs ≤ grade 8", fmt(summary["percent_at_or_below_grade_8"], "%"),
@@ -757,6 +757,16 @@ def render_human_claim_review(
                 st.code(claim["source_quote"], wrap_lines=True)
             else:
                 st.caption("The evaluator did not identify a supporting or contradicting source span.")
+            definitions = claim.get("reference_definitions") or []
+            if definitions:
+                st.markdown("**Related UMLS reference definitions**")
+                for definition in definitions:
+                    st.markdown(
+                        f"**{definition.get('source', 'UMLS')} "
+                        f"{definition.get('source_id', '')} · {definition.get('term', '')}**"
+                    )
+                    st.code(definition.get("definition") or "", wrap_lines=True)
+                st.caption("These definitions support general term explanations only, not patient-specific facts.")
             st.markdown(f"**Current decision:** {status_label}")
             buttons = st.columns(3)
             choices = (
@@ -791,19 +801,7 @@ def render_results(
     if not records:
         return
     for record in records:
-        evaluator = record.get("factual_evaluator") or {}
-        if evaluator.get("error") and evaluator.get("raw_output"):
-            try:
-                parsed = parse_factual_evaluation(
-                    evaluator["raw_output"], record.get("final_explanation") or "",
-                    record.get("source_text") or "",
-                )
-            except (ValueError, json.JSONDecodeError):
-                continue
-            evaluator["parsed_output"] = parsed
-            evaluator["error"] = None
-            evaluator["recovered_from_malformed_response"] = True
-            record["factual_metrics"] = factual_metrics(parsed)
+        refresh_cached_factual_evaluation(record)
     trace_label = "Generation provenance" if key_prefix == "baseline" else "Pipeline traces"
     labels = [f"{record['dataset']} · {record['split']} · {record['example_id']}" for record in records]
 
@@ -866,7 +864,7 @@ def render_results(
     elif view == "Automatic factual evaluation":
         evaluator = record.get("factual_evaluator") or {}
         parsed = evaluator.get("parsed_output")
-        st.caption("Automated provisional labels from the independent source-fidelity evaluator.")
+        st.caption("Automated provisional labels using report evidence and allowed UMLS term definitions.")
         if parsed and parsed.get("status") == "scored":
             if parsed.get("claims"):
                 st.dataframe(pd.DataFrame(parsed["claims"]), hide_index=True, use_container_width=True)
@@ -925,7 +923,7 @@ def render_live(
     with container.container():
         st.markdown(f"#### Running {label}")
         display_stages = [
-            "Extractor", "TermLookup", "Simplifier", "Verifier / Refiner", "Readability",
+            "Extractor", "UMLSLookup", "Simplifier", "Readability", "Verifier / Refiner",
             "Factual evaluator",
         ]
         states = {name: "waiting" for name in display_stages}
@@ -946,11 +944,11 @@ def render_live(
             suffix = f" · iteration {iteration}" if iteration is not None else ""
             messages = {
                 "Extractor": "Extractor is reading the source.",
-                "TermLookup": "Looking up UMLS definitions for medical terms.",
+                "UMLSLookup": "Looking up Extractor-selected terms in UMLS.",
                 "Simplifier": "Simplifier is drafting the patient-friendly explanation.",
                 "Verifier": "Verifier is checking the current draft.",
                 "Refiner": "Refiner is applying targeted corrections.",
-                "Readability": "Readability is improving the accepted draft.",
+                "Readability": "Readability is improving the draft before its final verification.",
             }
             st.caption(messages.get(latest.get("agent"), f"{latest.get('agent')} is running."))
             st.markdown(
@@ -958,7 +956,7 @@ def render_live(
                 unsafe_allow_html=True,
             )
         if evaluator_running:
-            st.caption("The independent factual evaluator is checking the final output against the source.")
+            st.caption("The independent factual evaluator is checking the final output against report and allowed UMLS evidence.")
             st.markdown('<div class="fm-status"><strong>Independent factual evaluator</strong><br><small>Running</small></div>', unsafe_allow_html=True)
 
 
@@ -1052,6 +1050,41 @@ async def execute_forced_baseline_runs(
     return completed
 
 
+async def execute_cached_baseline_evaluations(
+    records: list[dict[str, Any]],
+    evaluator_model: str,
+    *,
+    cache: BaselineEnrichmentCache,
+    live_placeholder: Any,
+) -> list[dict[str, Any]]:
+    """Evaluate saved baseline text without regenerating or embedding it."""
+    completed: list[dict[str, Any]] = []
+    progress = st.progress(0, text="Preparing cached baseline evaluations")
+    for position, record in enumerate(records, start=1):
+        label = f"{record.get('split')} · {record.get('example_id')}"
+        if has_factual_evaluation(record):
+            live_placeholder.caption(f"Using cached factual evaluation · {label}")
+        else:
+            live_placeholder.caption(f"Evaluating saved baseline output · {label}")
+        enriched = await enrich_baseline_record(
+            record,
+            evaluator_model,
+            cache=cache,
+            embedding_cache=None,
+            embedding_settings=None,
+            embed_batch=None,
+            include_source_matching=False,
+        )
+        completed.append(enriched)
+        progress.progress(
+            position / len(records),
+            text=f"Completed {position} of {len(records)} cached baseline evaluations",
+        )
+    live_placeholder.empty()
+    progress.empty()
+    return completed
+
+
 def render_baseline_workspace(
     evaluator_model: str,
     source_match_threshold: float,
@@ -1107,9 +1140,10 @@ def render_baseline_workspace(
 
     with st.expander("Run baseline samples", expanded=True):
         st.write(
-            "Run selected samples opens the latest compatible cached results and makes no API "
-            "calls. Force new run asks Gemini for a new simplification, embeds the new answer, "
-            "and runs a new factual evaluation. Unchanged source-report vectors are reused."
+            "Open cached outputs makes no API calls. Evaluate cached baseline outputs keeps the "
+            "saved baseline answer and calls only the independent factual evaluator when a "
+            "compatible evaluation is missing. Force new run also asks Gemini for a new "
+            "simplification and recalculates the other analyses."
         )
         run_all = st.checkbox(
             f"Select all {len(visible)} visible outputs", value=False,
@@ -1137,10 +1171,18 @@ def render_baseline_workspace(
             f"Selected {len(selected)} · cached factual evaluations: {cached_factual} · "
             f"cached source-match records: {cached_matching}."
         )
-        normal_column, force_column = st.columns(2)
+        normal_column, evaluate_column, force_column = st.columns(3)
         normal = normal_column.button(
-            "Run selected samples", type="primary", disabled=not selected,
+            "Open cached outputs", type="primary", disabled=not selected,
             use_container_width=True, key="baseline_run_selected_samples",
+        )
+        evaluate_cached = evaluate_column.button(
+            "Evaluate cached baseline outputs", disabled=not selected,
+            use_container_width=True, key="baseline_evaluate_cached_outputs",
+            help=(
+                "Uses the saved baseline explanations and runs only missing factual evaluations. "
+                "It does not regenerate explanations or calculate source embeddings."
+            ),
         )
         force = force_column.button(
             "Force new run", disabled=not selected, use_container_width=True,
@@ -1154,6 +1196,20 @@ def render_baseline_workspace(
     if normal:
         st.session_state["faithfulmed_baseline_records"] = selected
         st.session_state["faithfulmed_baseline_evaluator_model"] = evaluator_model
+
+    if evaluate_cached:
+        if not os.getenv("GOOGLE_API_KEY"):
+            st.error("GOOGLE_API_KEY is missing. Add it to `.env`, then rerun this page.")
+        else:
+            live_placeholder = st.empty()
+            evaluated_records = asyncio.run(execute_cached_baseline_evaluations(
+                selected,
+                evaluator_model,
+                cache=enrichment_cache,
+                live_placeholder=live_placeholder,
+            ))
+            st.session_state["faithfulmed_baseline_records"] = evaluated_records
+            st.session_state["faithfulmed_baseline_evaluator_model"] = evaluator_model
 
     if force:
         if not os.getenv("GOOGLE_API_KEY"):
@@ -1269,7 +1325,7 @@ def main() -> None:
 
     st.title("End-to-end patient-friendly explanation pipeline")
     st.markdown(
-        '<div class="fm-lead">Run a pasted medical report or a de-identified dataset split through Extractor, Simplifier, the bounded Verifier–Refiner loop, Readability, and an independent factual evaluation.</div>',
+        '<div class="fm-lead">Run a pasted medical report or a de-identified dataset split through Extractor, Simplifier, Readability, the bounded Verifier–Refiner loop, and an independent factual evaluation.</div>',
         unsafe_allow_html=True,
     )
 

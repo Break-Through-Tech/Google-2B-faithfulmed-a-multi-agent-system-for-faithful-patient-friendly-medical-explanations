@@ -196,7 +196,7 @@ async def replay_events(record: dict[str, Any], speed: float) -> AsyncIterator[s
     for stage in trace.get("stages", []):
         yield sse({"type": "stage_started", "stage": public_stage(stage, with_output=False)})
         output = stage.get("output") or ""
-        if output and stage.get("agent") != "TermLookup":
+        if output and stage.get("agent") != "UMLSLookup":
             async for chunk in _stream_text({"type": "stage_chunk", "stage_id": stage["stage_id"]}, output, speed):
                 yield chunk
         yield sse({"type": "stage_completed", "stage": public_stage(stage)})

@@ -40,6 +40,13 @@ class ProductionPipelineTests(unittest.TestCase):
         self.assertIn("a side effect of warfarin to aspirin", PRODUCTION_VERIFIER_PROMPT)
         self.assertIn("the left kidney to the right kidney", PRODUCTION_VERIFIER_PROMPT)
         self.assertIn('"history of hypertension" becoming "you have hypertension"', PRODUCTION_VERIFIER_PROMPT)
+        self.assertIn("lisinopril treats hypertension", PRODUCTION_VERIFIER_PROMPT)
+        self.assertIn("patient-specific portion requires report\n  evidence", PRODUCTION_VERIFIER_PROMPT)
+        self.assertIn("reference_definitions list as closed and exhaustive", PRODUCTION_VERIFIER_PROMPT)
+        self.assertIn("added definition without source", PRODUCTION_VERIFIER_PROMPT)
+        self.assertIn("medication's name, dose, route, and frequency independently", PRODUCTION_VERIFIER_PROMPT)
+        self.assertIn("neighboring list item", PRODUCTION_VERIFIER_PROMPT)
+        self.assertIn('return "revise," even if the added detail seems minor', PRODUCTION_VERIFIER_PROMPT)
 
     def test_split_simplifier_output(self) -> None:
         wrapped = "PATIENT-FRIENDLY VERSION:\n\nYou have a history of high blood pressure.\n\nREVIEW FLAGS:\n- None."
@@ -93,8 +100,10 @@ class ProductionPipelineTests(unittest.TestCase):
             return text
 
         decisions = iter((verdict("revise"), verdict("accept")))
+        verified_drafts = []
 
         async def verifier_runner(source, facts, draft, model, on_text, definitions):
+            verified_drafts.append(draft)
             text = next(decisions)
             on_text(text, text)
             return text
@@ -104,9 +113,10 @@ class ProductionPipelineTests(unittest.TestCase):
             lookup=MedicalLookup.disabled(),
         ))
         self.assertTrue(result.accepted)
-        self.assertEqual(result.final_explanation, "Final explanation.")
+        self.assertEqual(result.final_explanation, "Revised draft.")
+        self.assertEqual(verified_drafts, ["Final explanation.", "Revised draft."])
         self.assertEqual([item["agent"] for item in result.trace["stages"]],
-                         ["Extractor", "TermLookup", "Simplifier", "Verifier", "Refiner", "Verifier", "Readability"])
+                         ["Extractor", "UMLSLookup", "Simplifier", "Readability", "Verifier", "Refiner", "Verifier"])
         self.assertEqual(len(result.trace["results"]["verifier_refiner_iterations"]), 2)
 
     @patch("agents.production_pipeline.create_readability_agent", return_value=SimpleNamespace(name="Readability"))
@@ -145,7 +155,7 @@ class ProductionPipelineTests(unittest.TestCase):
         self.assertEqual(result.trace["status"], "not_accepted")
         self.assertEqual(counts["Refiner"], MAX_REVISION_CYCLES)
         self.assertEqual(counts["Verifier"], MAX_REVISION_CYCLES + 1)
-        self.assertEqual(counts["Readability"], 0)
+        self.assertEqual(counts["Readability"], 1)
         self.assertEqual(result.trace["latest_draft"], "Draft 2.")
 
     @patch("agents.production_pipeline.create_simplifier_agent", return_value=SimpleNamespace(name="Simplifier"))

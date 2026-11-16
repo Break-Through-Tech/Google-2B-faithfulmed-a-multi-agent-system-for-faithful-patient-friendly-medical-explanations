@@ -100,8 +100,8 @@ class DemoServerTests(unittest.TestCase):
         self.assertEqual(types[0], "run_started")
         self.assertEqual(types[-1], "done")
         completed = [event["stage"]["stage_id"] for event in events if event["type"] == "stage_completed"]
-        self.assertEqual(completed, ["extractor", "term_lookup", "simplifier", "verifier-1", "refiner-1",
-                                     "verifier-2", "readability"])
+        self.assertEqual(completed, ["extractor", "umls_lookup", "simplifier", "readability",
+                                     "verifier-1", "refiner-1", "verifier-2"])
         self.assertIn("stage_chunk", types)
         self.assertIn("evaluator_chunk", types)
         # Chunks carry only new text, so concatenating them rebuilds the output.

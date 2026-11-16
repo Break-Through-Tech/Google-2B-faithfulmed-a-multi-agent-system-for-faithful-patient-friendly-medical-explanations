@@ -161,7 +161,7 @@ export function EvidenceView({
                   <Chip className={CLASS_STYLE[claim.classification]?.chip}>{CLASS_STYLE[claim.classification]?.label}</Chip>
                   {claim.clinically_meaningful && <Chip className="bg-white/5 text-slate-300 ring-white/10">clinically meaningful</Chip>}
                   <span className="font-mono text-[10px] text-slate-500">
-                    {claim.claim_id} · {claim.claim_span_id} ← {claim.source_span_ids.join(", ") || "no source span"}
+                    {claim.claim_id} · {claim.claim_span_id} ← {[...claim.source_span_ids, ...claim.reference_definition_ids.map((id) => `UMLS:${id}`)].join(", ") || "no aligned evidence"}
                   </span>
                 </div>
                 <p className="text-sm text-slate-100">{claim.claim_text}</p>

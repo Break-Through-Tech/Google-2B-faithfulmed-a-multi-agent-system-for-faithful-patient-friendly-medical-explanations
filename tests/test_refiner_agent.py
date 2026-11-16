@@ -14,12 +14,18 @@ import unittest
 
 from agents.refiner import (
     RefinerResult,
+    _REFINER_INSTRUCTION,
     _verdict_to_text,
     describe_refinement,
 )
 
 
 class RefinerAgentHelperTests(unittest.TestCase):
+
+    def test_instruction_preserves_medication_modifier_scope(self) -> None:
+        self.assertIn("Treat every medication independently", _REFINER_INSTRUCTION)
+        self.assertIn("Never transfer a modifier", _REFINER_INSTRUCTION)
+        self.assertIn("If a modifier is absent, omit it", _REFINER_INSTRUCTION)
 
     # ---- _verdict_to_text ----
 

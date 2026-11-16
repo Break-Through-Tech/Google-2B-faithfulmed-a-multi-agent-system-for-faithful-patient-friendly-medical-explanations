@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Any, Awaitable, Callable
 
 from agents.extractor import EXTRACTOR_INSTRUCTION
-from agents.medical_lookup import TERM_FINDER_INSTRUCTION, lookup_config_from_env
+from agents.medical_lookup import lookup_config_from_env, reference_definitions_for_prompt
 from agents.factual_evaluator import (
     FACTUAL_EVALUATOR_PROMPT,
     factual_evaluator_request,
@@ -32,10 +32,35 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_CACHE_PATH = ROOT / "eval_results" / "system_demo_runs.jsonl"
 VALID_SPLITS = ("scratch", "dev", "test")
 VALID_DATASETS = ("MTSamples", "PLABA")
-PIPELINE_IMPLEMENTATION_VERSION = "system-pipeline-v4"  # v4: Simplifier review flags stripped before the Verifier
+PIPELINE_IMPLEMENTATION_VERSION = "system-pipeline-v7"  # v7: source-grounded closed glossary + verified final text
 METRIC_IMPLEMENTATION_VERSION = "system-metrics-v3"
+
+# This medication-modifier guard is a backwards-compatible v7 safety patch. The
+# exact before/after hashes make the exception narrow: existing completed v7
+# results stay reusable, but any later prompt change invalidates the cache unless
+# it is reviewed and explicitly added. Force-running a sample still bypasses the
+# cache and saves a result produced with the patched prompts.
+V7_PRE_MEDICATION_GUARD_PROMPT_HASHES = {
+    "extractor": "f298200225e8d4ec236a3961ae8c54af31b058f95eac65385031ba942f991125",
+    "factual_evaluator": "78a730c69f7a6b78afbd12a233ff4d4addf8b07810455c11cf3fd59554e1fba2",
+    "production_verifier": "ece08a8d389e21cb3a543b98d631d7108d27dab5dc8e06b77e034573fa01d4ea",
+    "readability": "bd6cf1c0da4c76f012cb98d45ec28ad5bb6bb68be764d7918b68ef67aca68101",
+    "refiner": "136cc8af3b95e58391e1cdf21c759fc7f3da5ed9090f84f1545362847f378a8c",
+    "simplifier": "4c734f3461c6b9b1da4a841c10102282f8c8340f7fd9bde274d8af9a5bbe7f8c",
+}
+V7_MEDICATION_GUARD_PROMPT_HASHES = {
+    "extractor": "f298200225e8d4ec236a3961ae8c54af31b058f95eac65385031ba942f991125",
+    "factual_evaluator": "78a730c69f7a6b78afbd12a233ff4d4addf8b07810455c11cf3fd59554e1fba2",
+    "production_verifier": "cecc6c05fe890f686e10b224ff1573a284fc949b1b226143bf8cdcde1d323eb4",
+    "readability": "b80a21aa4e04c6a4d68f3b58edb7821af869e94ea887a7297f94677d8953af32",
+    "refiner": "ab9d8804fffa2863370280e1cc4d2ab732108fcc4d5d16ee58977429df974965",
+    "simplifier": "71f9c7e8625b16b938553e9b2a81e9eba2f7abd4632cd0662038a11c8c822a54",
+}
 FACTUAL_LABELS = {"supported", "unsupported", "contradicted", "uncertain"}
 FACTUAL_STATUSES = {"scored", "no_claims", "insufficient_source"}
+FACTUAL_CLAIM_TYPES = {"patient_specific", "general_term_explanation"}
+FACTUAL_EVIDENCE_TYPES = {"medical_report", "umls_definition", "both", "none"}
+FACTUAL_PARSER_VERSION = "factual-parser-v2-safe-empty-reference-ids"
 
 
 @dataclass(frozen=True)
@@ -246,6 +271,7 @@ def parse_factual_evaluation(
     raw: str,
     final_explanation: str,
     source_text: str | None = None,
+    reference_definitions: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     data, _, _ = decode_factual_evaluation_json(raw)
     if not isinstance(data, dict) or data.get("status") not in FACTUAL_STATUSES:
@@ -263,6 +289,11 @@ def parse_factual_evaluation(
     source_spans = {
         item["span_id"]: item["text"]
         for item in indexed_text_spans(source_text or "", "S")
+    }
+    definition_by_id = {
+        item["source_id"]: item
+        for item in reference_definitions or []
+        if isinstance(item, dict) and isinstance(item.get("source_id"), str)
     }
     for index, raw_claim in enumerate(returned_claims, start=1):
         validation_stage = "claim_schema"
@@ -297,7 +328,68 @@ def parse_factual_evaluation(
                 invalid_ids = [item for item in source_ids if item not in source_spans]
                 if invalid_ids:
                     raise ValueError(f"invalid source_span_ids: {invalid_ids}")
-                if claim["classification"] in {"supported", "contradicted"} and not source_ids:
+                uses_typed_evidence = any(
+                    field in raw_claim
+                    for field in ("claim_type", "evidence_type", "reference_definition_ids")
+                )
+                if uses_typed_evidence:
+                    claim_type = raw_claim.get("claim_type")
+                    evidence_type = raw_claim.get("evidence_type")
+                    reference_ids = raw_claim.get("reference_definition_ids")
+                    if claim_type not in FACTUAL_CLAIM_TYPES:
+                        raise ValueError(f"invalid claim_type: {claim_type!r}")
+                    if evidence_type not in FACTUAL_EVIDENCE_TYPES:
+                        raise ValueError(f"invalid evidence_type: {evidence_type!r}")
+                    # Gemini occasionally omits this empty array on claims that
+                    # explicitly use only report evidence (or no evidence). That
+                    # omission is safe to normalize because these evidence types
+                    # assert that no UMLS definition was used. Never infer IDs for
+                    # umls_definition or both: those claims must identify the exact
+                    # supplied definition that grounds them.
+                    if (
+                        reference_ids is None
+                        and evidence_type in {"medical_report", "none"}
+                    ):
+                        reference_ids = []
+                        claim["reference_definition_ids"] = []
+                    if not isinstance(reference_ids, list) or any(
+                        not isinstance(item, str) for item in reference_ids
+                    ):
+                        raise ValueError("reference_definition_ids must be a list of strings")
+                    if len(reference_ids) != len(set(reference_ids)):
+                        raise ValueError("reference_definition_ids contains duplicate IDs")
+                    invalid_reference_ids = [
+                        item for item in reference_ids if item not in definition_by_id
+                    ]
+                    if invalid_reference_ids:
+                        raise ValueError(
+                            f"invalid reference_definition_ids: {invalid_reference_ids}"
+                        )
+                    needs_report = evidence_type in {"medical_report", "both"}
+                    needs_definition = evidence_type in {"umls_definition", "both"}
+                    if needs_report != bool(source_ids):
+                        raise ValueError(
+                            f"evidence_type {evidence_type!r} does not match source_span_ids"
+                        )
+                    if needs_definition != bool(reference_ids):
+                        raise ValueError(
+                            f"evidence_type {evidence_type!r} does not match reference_definition_ids"
+                        )
+                    if claim_type == "patient_specific" and reference_ids:
+                        raise ValueError(
+                            "patient_specific claims cannot cite UMLS definitions"
+                        )
+                    if (
+                        claim["classification"] in {"supported", "contradicted"}
+                        and evidence_type == "none"
+                    ):
+                        raise ValueError(
+                            f"{claim['classification']} claim requires aligned evidence"
+                        )
+                    claim["reference_definitions"] = [
+                        definition_by_id[item] for item in reference_ids
+                    ]
+                elif claim["classification"] in {"supported", "contradicted"} and not source_ids:
                     raise ValueError(f"{claim['classification']} claim requires at least one source span")
                 claim["source_quotes"] = [
                     {"span_id": item, "text": source_spans[item]} for item in source_ids
@@ -416,6 +508,42 @@ def factual_metrics(result: dict[str, Any] | None) -> dict[str, Any]:
     }
 
 
+def refresh_cached_factual_evaluation(record: dict[str, Any]) -> dict[str, Any]:
+    """Reparse cached evaluator JSON with the current deterministic validator.
+
+    This never calls a model. It lets safe parser repairs update cached metrics
+    without regenerating the explanation or rerunning the factual evaluator.
+    """
+    evaluator = record.get("factual_evaluator")
+    if not isinstance(evaluator, dict):
+        return record
+    if evaluator.get("parser_version") == FACTUAL_PARSER_VERSION:
+        return record
+    raw_output = evaluator.get("raw_output")
+    if not isinstance(raw_output, str) or not raw_output.strip():
+        return record
+    request = evaluator.get("request") or {}
+    definitions = request.get("reference_definitions") or []
+    try:
+        parsed = parse_factual_evaluation(
+            raw_output,
+            str(record.get("final_explanation") or ""),
+            str(record.get("source_text") or ""),
+            definitions,
+        )
+    except (ValueError, json.JSONDecodeError) as exc:
+        evaluator["parser_version"] = FACTUAL_PARSER_VERSION
+        evaluator["reparse_error"] = f"{type(exc).__name__}: {exc}"
+        return record
+    evaluator["parsed_output"] = parsed
+    evaluator["error"] = None
+    evaluator.pop("reparse_error", None)
+    evaluator["parser_version"] = FACTUAL_PARSER_VERSION
+    evaluator["reparsed_from_cached_raw"] = True
+    record["factual_metrics"] = factual_metrics(parsed)
+    return record
+
+
 def output_metrics(text: str) -> tuple[dict[str, Any] | None, str | None]:
     try:
         return evaluate_single(text), None
@@ -469,7 +597,6 @@ def _percent(items: list[dict[str, Any]], key: str) -> float | None:
 def prompt_hashes() -> dict[str, str]:
     prompts = {
         "extractor": EXTRACTOR_INSTRUCTION,
-        "term_finder": TERM_FINDER_INSTRUCTION,
         "simplifier": SIMPLIFIER_INSTRUCTION,
         "production_verifier": PRODUCTION_VERIFIER_PROMPT,
         "refiner": _REFINER_INSTRUCTION,
@@ -477,6 +604,19 @@ def prompt_hashes() -> dict[str, str]:
         "factual_evaluator": FACTUAL_EVALUATOR_PROMPT,
     }
     return {name: hashlib.sha256(prompt.encode("utf-8")).hexdigest() for name, prompt in prompts.items()}
+
+
+def prompt_hashes_cache_compatible(
+    stored: dict[str, Any], expected: dict[str, str],
+) -> bool:
+    """Allow only the reviewed pre-guard -> medication-guard v7 transition."""
+    if stored == expected:
+        return True
+    return (
+        PIPELINE_IMPLEMENTATION_VERSION == "system-pipeline-v7"
+        and stored == V7_PRE_MEDICATION_GUARD_PROMPT_HASHES
+        and expected == V7_MEDICATION_GUARD_PROMPT_HASHES
+    )
 
 
 def pipeline_config() -> dict[str, Any]:
@@ -513,7 +653,7 @@ class AppendOnlyRunCache:
                     record = json.loads(line)
                 except json.JSONDecodeError:
                     continue
-                if record.get("cache_key") == key:
+                if record.get("cache_key") == key and record.get("run_status") == "completed":
                     found = record
         return found
 
@@ -538,7 +678,7 @@ class AppendOnlyRunCache:
         pipeline_model: str,
         evaluator_model: str,
     ) -> dict[str, Any] | None:
-        """Reuse a prior run that differs only by the removed extra screener."""
+        """Reuse a prior run covered by an explicit v7 compatibility rule."""
         expected_prompts = prompt_hashes()
         for record in reversed(self.records()):
             metadata_matches = all(
@@ -547,13 +687,14 @@ class AppendOnlyRunCache:
             stored_prompts = record.get("prompt_hashes") or {}
             if (
                 metadata_matches
+                and record.get("run_status") == "completed"
                 and record.get("source_text") == example.source_text
                 and record.get("post_generation_references") == example.references
                 and record.get("pipeline_model") == pipeline_model
                 and record.get("evaluator_model") == evaluator_model
                 and record.get("pipeline_version") == PIPELINE_IMPLEMENTATION_VERSION
                 and record.get("metric_version") == METRIC_IMPLEMENTATION_VERSION
-                and all(stored_prompts.get(name) == digest for name, digest in expected_prompts.items())
+                and prompt_hashes_cache_compatible(stored_prompts, expected_prompts)
             ):
                 return record
         return None
@@ -589,8 +730,11 @@ async def run_system_example(
         )
         if cached:
             result = copy.deepcopy(cached)
+            refresh_cached_factual_evaluation(result)
             result["cached_record_source"] = result.get("result_source")
             result["result_source"] = "cache"
+            if result.get("prompt_hashes") != prompt_hashes():
+                result["cache_compatibility"] = "v7_pre_medication_guard"
             return result
 
     pipeline = await pipeline_runner(example.source_text, pipeline_model, on_event=on_pipeline_event)
@@ -603,8 +747,11 @@ async def run_system_example(
     evaluation_request = None
     if final:
         readability, readability_error = output_metrics(final)
+        reference_definitions = reference_definitions_for_prompt(
+            ((pipeline.trace.get("results") or {}).get("reference_definitions") or {})
+        )
         evaluation_request = factual_evaluator_request(
-            example.source_text, final, example.references
+            example.source_text, final, example.references, reference_definitions,
         )
         try:
             if on_evaluator_start:
@@ -614,9 +761,12 @@ async def run_system_example(
                 final,
                 example.references,
                 evaluator_model,
+                reference_definitions=reference_definitions,
                 on_text=on_evaluator_text,
             )
-            parsed_evaluation = parse_factual_evaluation(raw_evaluation, final, example.source_text)
+            parsed_evaluation = parse_factual_evaluation(
+                raw_evaluation, final, example.source_text, reference_definitions,
+            )
         except Exception as exc:
             evaluator_error = f"{type(exc).__name__}: {exc}"
 
@@ -646,6 +796,7 @@ async def run_system_example(
             "raw_output": raw_evaluation,
             "parsed_output": parsed_evaluation,
             "error": evaluator_error,
+            "parser_version": FACTUAL_PARSER_VERSION,
         },
         "factual_metrics": factual_metrics(parsed_evaluation),
     }

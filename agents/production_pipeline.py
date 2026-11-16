@@ -9,10 +9,10 @@ from datetime import datetime, timezone
 from typing import Any, Awaitable, Callable
 
 from . import run_agent_stream
-from .extractor import ExtractorOutput, create_extractor_agent
+from .extractor import create_extractor_agent, parse_extractor_output, patient_facts_json
 from .medical_lookup import (
-    MedicalLookup, build_reference_definitions, create_term_finder_agent,
-    empty_reference_definitions, reference_definitions_for_prompt, render_glossary,
+    MedicalLookup, build_reference_definitions, empty_reference_definitions,
+    reference_definitions_for_prompt, render_glossary,
 )
 from .readability import create_readability_agent
 from .refiner import create_refiner_agent
@@ -54,8 +54,8 @@ _SIMPLIFIER_FLAGS_HEADER = re.compile(r"\n[ \t]*[*#]*[ \t]*REVIEW FLAGS\s*:?[*#]
 def split_simplifier_output(text: str) -> tuple[str, str | None]:
     """Split the Simplifier's two-section output into (patient text, review flags).
 
-    Only the patient text goes on to the Verifier, Refiner, Readability, and the
-    final explanation; review flags are reviewer notes, not patient text. Output
+    Only the patient text goes on to Readability, the Verifier/Refiner loop, and
+    the final explanation; review flags are reviewer notes, not patient text. Output
     without the expected headers is returned whole.
     """
     flags = _SIMPLIFIER_FLAGS_HEADER.search(text)
@@ -129,14 +129,15 @@ async def run_production_pipeline(
         raise ValueError("source_text must be a nonempty medical report.")
     lookup = lookup if lookup is not None else MedicalLookup.from_env()
     trace: dict[str, Any] = {
-        "schema": "faithfulmed_production_trace_v2",
+        "schema": "faithfulmed_production_trace_v3",
         "started_at_utc": _now(),
         "completed_at_utc": None,
         "model": model,
         "status": "running",
         "original_report": source_text,
         "stages": [],
-        "results": {"extractor": None, "reference_definitions": None, "simplifier": None, "verifier_refiner_iterations": [],
+        "results": {"extractor": None, "extractor_enriched": None,
+                    "reference_definitions": None, "simplifier": None, "verifier_refiner_iterations": [],
                     "simplifier_review_flags": None, "readability": None, "final_explanation": None},
         "error": None,
     }
@@ -193,26 +194,23 @@ async def run_production_pipeline(
         _emit(on_event, {"type": "stage_completed", "record": record})
         return raw, parsed
 
-    async def term_lookup() -> dict[str, Any]:
-        """Pick terms and look them up. Records failures; never raises."""
-        record = {"stage_id": "term_lookup", "agent": "TermLookup", "iteration": None,
+    async def umls_lookup(
+        facts: list[dict[str, Any]],
+        lookup_terms: list[dict[str, Any]],
+    ) -> dict[str, Any]:
+        """Validate Extractor terms and call UMLS in Python; no model call."""
+        record = {"stage_id": "umls_lookup", "agent": "UMLSLookup", "iteration": None,
                   "status": "running", "started_at_utc": _now(), "completed_at_utc": None,
-                  "input": {"extracted_facts": json.loads(atoms), "sources": lookup.sources()},
+                  "input": {"patient_facts": facts, "lookup_terms": lookup_terms,
+                            "sources": lookup.sources()},
                   "output": "", "error": None}
         trace["stages"].append(record)
         _emit(on_event, {"type": "stage_started", "record": record})
 
-        def on_text(delta: str, accumulated: str) -> None:
-            record["output"] = accumulated
-            _emit(on_event, {"type": "stage_chunk", "stage_id": "term_lookup", "agent": "TermLookup",
-                             "iteration": None, "delta": delta, "output": accumulated})
-
-        async def find_terms(facts_json: str) -> str:
-            return await agent_executor(create_term_finder_agent(model), {"atoms": facts_json},
-                                        "List the terms to look up.", on_text)
-
         try:
-            definitions = await build_reference_definitions(atoms, lookup, find_terms)
+            definitions = await build_reference_definitions(
+                facts, lookup_terms, lookup, source_text=source_text,
+            )
         except Exception as exc:  # build_reference_definitions should not raise; stay safe
             definitions = empty_reference_definitions("failed", lookup, [f"{type(exc).__name__}: {exc}"])
         status = {"completed": "completed", "not_configured": "skipped"}.get(definitions["status"], "failed")
@@ -226,15 +224,25 @@ async def run_production_pipeline(
         atoms_raw = await stage(
             "extractor", "Extractor", {"original_report": source_text},
             create_extractor_agent(model), {"source_text": source_text},
-            "Extract the facts from the supplied medical source.",
+            "Extract patient facts when present and independently identify source-grounded medical terms.",
         )
-        atoms = _strip_json_fence(atoms_raw)
-        ExtractorOutput.model_validate_json(atoms)
-        trace["results"]["extractor"] = atoms
+        extractor_json = _strip_json_fence(atoms_raw)
+        extracted = parse_extractor_output(extractor_json)
+        facts = [fact.model_dump() for fact in extracted.patient_facts]
+        lookup_terms = [term.model_dump() for term in extracted.lookup_terms]
+        atoms = patient_facts_json(extracted)
+        trace["results"]["extractor"] = extractor_json
 
         # Reference definitions stay separate from the patient-specific facts.
-        definitions = await term_lookup()
+        definitions = await umls_lookup(facts, lookup_terms)
         trace["results"]["reference_definitions"] = definitions
+        trace["results"]["extractor_enriched"] = {
+            "patient_facts": facts,
+            "lookup_terms": lookup_terms,
+            "reference_definitions": definitions,
+        }
+        extractor_stage = next(item for item in trace["stages"] if item["stage_id"] == "extractor")
+        extractor_stage["parsed_output"] = trace["results"]["extractor_enriched"]
         glossary = render_glossary(definitions)
         verifier_definitions = reference_definitions_for_prompt(definitions)
 
@@ -247,6 +255,16 @@ async def run_production_pipeline(
         )
         trace["results"]["simplifier"] = draft  # raw output, both sections
         draft, trace["results"]["simplifier_review_flags"] = split_simplifier_output(draft)
+
+        # Readability can rewrite text, so it must run before verification. The
+        # exact draft ultimately shown to the user is now always accepted by the
+        # Verifier; no unchecked model stage runs after acceptance.
+        draft = await stage(
+            "readability", "Readability", {"simplified_draft": draft},
+            create_readability_agent(model), {"draft": draft},
+            "Return the improved draft.",
+        )
+        trace["results"]["readability"] = draft
 
         accepted = False
         revisions = 0
@@ -284,12 +302,7 @@ async def run_production_pipeline(
             _emit(on_event, {"type": "pipeline_not_accepted", "trace": trace})
             return PipelineRunResult(trace, None, False)
 
-        final = await stage(
-            "readability", "Readability", {"accepted_draft": draft},
-            create_readability_agent(model), {"draft": draft},
-            "Return the improved the draft.",
-        )
-        trace["results"]["readability"] = final
+        final = draft
         trace["results"]["final_explanation"] = final
         trace.update(status="completed", completed_at_utc=_now())
         _emit(on_event, {"type": "pipeline_completed", "trace": trace})

@@ -66,7 +66,7 @@ export function ScoreBoard({ result, run }: { result: ResultEvent; run: RunState
             <div className="text-slate-200">
               {result.factual?.supported_claims ?? 0}/{result.factual?.claims_assessed ?? 0} claims
             </div>
-            supported by the source
+            supported by allowed evidence
             <div className="mt-1 text-xs text-slate-500">target ≥ 85%</div>
           </div>
         </div>

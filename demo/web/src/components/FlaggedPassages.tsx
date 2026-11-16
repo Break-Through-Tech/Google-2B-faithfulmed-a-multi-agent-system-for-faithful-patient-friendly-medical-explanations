@@ -8,6 +8,7 @@ import { Chip } from "./ui";
 export function FlaggedPassages({ result, onSelect }: { result: ResultEvent; onSelect: (s: Selection) => void }) {
   const spanText = new Map(result.explanation_spans.map((s) => [s.span_id, s.text]));
   const sourceText = new Map(result.source_spans.map((s) => [s.span_id, s.text]));
+  const definitionText = new Map(result.reference_definitions.map((d) => [d.source_id, d]));
   const flagged = result.claims
     .filter((c) => c.classification !== "supported")
     .sort((a, b) => SEVERITY[b.classification] - SEVERITY[a.classification] || Number(b.clinically_meaningful) - Number(a.clinically_meaningful));
@@ -15,7 +16,7 @@ export function FlaggedPassages({ result, onSelect }: { result: ResultEvent; onS
   if (!flagged.length)
     return (
       <div className="glass flex items-center gap-3 p-5 text-sm text-slate-300">
-        <CheckCircle2 className="h-5 w-5 text-emerald-300" /> Every claim in the final explanation traced back to the source.
+        <CheckCircle2 className="h-5 w-5 text-emerald-300" /> Every claim in the final explanation traced to allowed report or UMLS evidence.
       </div>
     );
 
@@ -42,6 +43,14 @@ export function FlaggedPassages({ result, onSelect }: { result: ResultEvent; onS
             {claim.source_span_ids.length > 0 && (
               <p className="mt-2 border-l-2 border-white/10 pl-2 font-serif text-xs text-slate-500">
                 Source: {claim.source_span_ids.map((id) => sourceText.get(id)).join(" ")}
+              </p>
+            )}
+            {claim.reference_definition_ids.length > 0 && (
+              <p className="mt-2 border-l-2 border-sky-400/20 pl-2 font-serif text-xs text-sky-200/70">
+                UMLS: {claim.reference_definition_ids.map((id) => {
+                  const item = definitionText.get(id);
+                  return item ? `${item.term} (${id}): ${item.definition}` : id;
+                }).join(" ")}
               </p>
             )}
           </button>

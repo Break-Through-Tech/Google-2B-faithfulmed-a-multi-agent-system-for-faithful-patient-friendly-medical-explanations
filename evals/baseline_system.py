@@ -28,7 +28,12 @@ from evals.source_matching import (
     build_source_matches,
 )
 from evals.readability_eval import evaluate_single
-from evals.system_demo import factual_metrics, parse_factual_evaluation
+from evals.system_demo import (
+    FACTUAL_PARSER_VERSION,
+    factual_metrics,
+    parse_factual_evaluation,
+    refresh_cached_factual_evaluation,
+)
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -193,7 +198,7 @@ def load_baseline_records(
         if enriched:
             enriched["cached_record_source"] = enriched.get("result_source")
             enriched["result_source"] = "baseline_enrichment_cache"
-            records.append(enriched)
+            records.append(refresh_cached_factual_evaluation(enriched))
         else:
             records.append(provisional)
     return records
@@ -225,11 +230,12 @@ async def enrich_baseline_record(
     evaluator_model: str,
     *,
     cache: BaselineEnrichmentCache,
-    embedding_cache: EmbeddingCache,
-    embedding_settings: EmbeddingSettings,
-    embed_batch: BatchEmbedder,
+    embedding_cache: EmbeddingCache | None,
+    embedding_settings: EmbeddingSettings | None,
+    embed_batch: BatchEmbedder | None,
     force_evaluator: bool = False,
     force_source_matching: bool = False,
+    include_source_matching: bool = True,
     evaluator_runner: EvaluatorRunner = run_factual_evaluator,
     on_evaluator_text: Callable[[str, str], None] | None = None,
 ) -> dict[str, Any]:
@@ -266,11 +272,21 @@ async def enrich_baseline_record(
             "raw_output": raw_output,
             "parsed_output": parsed_output,
             "error": error,
+            "parser_version": FACTUAL_PARSER_VERSION,
         }
         working["factual_metrics"] = factual_metrics(parsed_output)
         changed = True
 
-    if force_source_matching or not has_compatible_source_matching(working, embedding_settings):
+    if include_source_matching:
+        if embedding_cache is None or embedding_settings is None or embed_batch is None:
+            raise ValueError(
+                "Embedding cache, settings, and batch embedder are required when "
+                "source matching is enabled."
+            )
+    if include_source_matching and (
+        force_source_matching
+        or not has_compatible_source_matching(working, embedding_settings)
+    ):
         try:
             matching = build_source_matches(
                 str(working.get("source_text") or ""),

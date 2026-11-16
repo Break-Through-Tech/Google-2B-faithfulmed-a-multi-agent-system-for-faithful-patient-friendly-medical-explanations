@@ -65,6 +65,11 @@ def result_event(record: dict[str, Any]) -> dict[str, Any]:
     explanation_spans = indexed_text_spans(final, "E") if final else []
     evaluator = record.get("factual_evaluator") or {}
     parsed = evaluator.get("parsed_output") or {}
+    reference_definitions = (
+        (evaluator.get("request") or {}).get("reference_definitions")
+        or (((record.get("pipeline_trace") or {}).get("results") or {}).get("reference_definitions") or {}).get("entries")
+        or []
+    )
     claims = []
     for claim in parsed.get("claims") or []:
         claim_span = claim.get("claim_span_id")
@@ -78,9 +83,12 @@ def result_event(record: dict[str, Any]) -> dict[str, Any]:
             "claim_id": claim.get("claim_id"),
             "claim_span_id": claim_span,
             "claim_text": claim.get("claim_text") or claim.get("claim_quote"),
+            "claim_type": claim.get("claim_type"),
             "classification": claim.get("classification"),
             "clinically_meaningful": claim.get("clinically_meaningful"),
+            "evidence_type": claim.get("evidence_type"),
             "source_span_ids": source_ids,
+            "reference_definition_ids": claim.get("reference_definition_ids") or [],
             "reason": claim.get("reason"),
         })
     return {
@@ -93,6 +101,7 @@ def result_event(record: dict[str, Any]) -> dict[str, Any]:
         "evaluator_status_reason": parsed.get("status_reason"),
         "evaluator_error": evaluator.get("error"),
         "source_spans": source_spans,
+        "reference_definitions": reference_definitions,
         "explanation_spans": explanation_spans,
         "claims": claims,
         "references": record.get("post_generation_references") or {},
