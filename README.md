@@ -116,10 +116,10 @@ The collapsible **Embedding source-match summary** reports the percentage of exp
 
 | Name             | GitHub Handle | Contribution                                                             |
 |------------------|---------------|--------------------------------------------------------------------------|
-| Nirmit Bhoyar   | @Nirmit651 | Data preprocessing, Verifier agent, ablation study, overall project coordination |
+| Nirmit Bhoyar   | @Nirmit651 | Data preprocessing, Verifier agent, overall project coordination |
 | Brenda Romero   | @brendaromero3 | Data preprocessing, Readability agent, Baseline agent  |
-| Supriyaa Hejib  | @supriyaahejib | Data preprocessing, Simplifier agent, error analysis |
-| Tabitha Githinji | @GithinjiTabz1 | Data preprocessing, Extractor agent, leaderboard |
+| Supriyaa Hejib  | @supriyaahejib | Data preprocessing, Simplifier agent |
+| Tabitha Githinji | @GithinjiTabz1 | Data preprocessing, Extractor agent |
 | Riya Patel      | @riyampate     | Data preprocessing, Simplifier agent |
 | Sameen Chand    | @sameenchand   | Data preprocessing, Refiner agent, interactive demo |
 
