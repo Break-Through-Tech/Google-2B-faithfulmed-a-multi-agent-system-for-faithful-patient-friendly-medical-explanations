@@ -192,20 +192,19 @@ The flow is:
 
 ## 🚀 **Next Steps**
 
-**You might consider addressing the following (as applicable):**
+Since we were unable to implement most of the Stretch Goals, our next steps would be to implement them. Some of those Stretch Goals include:
 
-* What are some of the limitations of your model?
-* What would you do differently with more time/resources?
-* What additional datasets or techniques would you explore?
+- Multilingual extension: adding Spanish generation with a parallel Verifier.
+- Personalization layer: adjustable target reading level and tone through the Readability agent.
+- Agent-debate variant: replacing the single Verifier agent with two-agent debate.
+- Bias and fairness audit: running a structures audit to figure out if the pipeline performs worse on reports involving non-English names, rare conditions, or specific demographic markers. 
+- Multimodal clinical data intergation: using Gemini's native multimodality to process visual medical assests, such as radiology images, alongside textual records for joint explanations.
 
 ---
 
 ## 📝 **License**
 
-Specify how your project can be used by others. Choose an appropriate license and link it here (e.g., MIT, Apache 2.0). Make sure your Challenge Advisor approves of the selected license type. 
-
-**Example:**
-This project is licensed under the MIT License.
+This project is licensed under the Apache 2.0 License.
 
 ---
 
