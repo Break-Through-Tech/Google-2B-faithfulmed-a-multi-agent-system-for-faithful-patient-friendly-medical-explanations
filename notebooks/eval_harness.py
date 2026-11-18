@@ -14,6 +14,7 @@ This is model-agnostic — it scores text, whatever produced it. Extend, don't t
 Each agent owner plugs their agent's outputs into this harness.
 """
 from __future__ import annotations
+import re
 import json
 from pathlib import Path
 
@@ -22,6 +23,27 @@ from sklearn.metrics import cohen_kappa_score, accuracy_score
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "medaesqa_v1.json"
 
+_ATX_HEADING = re.compile(r"^\s{0,3}#{1,6}\s+(.*?)\s*#*\s*$")
+_BOLD_HEADING = re.compile(r"^\s*(?:\*\*|__)(.+?)(?:\*\*|__)\s*$")
+_HORIZONTAL_RULE = re.compile(r"^\s*(?:-{3,}|\*{3,}|_{3,})\s*$")
+
+
+def normalize_readability_text(text: str) -> str:
+    """Make Markdown headings explicit sentence boundaries for textstat."""
+    normalized = []
+    for line in text.splitlines():
+        if _HORIZONTAL_RULE.fullmatch(line):
+            continue
+        heading = _ATX_HEADING.fullmatch(line) or _BOLD_HEADING.fullmatch(line)
+        if heading:
+            content = heading.group(1).strip().strip("*_`").strip()
+            if content and content[-1] not in ".?!":
+                content += "."
+            normalized.append(content)
+        else:
+            normalized.append(line)
+    return "\n".join(normalized)
+
 
 def readability_scores(text: str) -> dict:
     """Core readability metrics. Jargon density ~ fraction of 'difficult' (non-familiar) words.
@@ -29,6 +51,7 @@ def readability_scores(text: str) -> dict:
     difficult_words() uses the Dale-Chall familiar-word list as a proxy for jargon; swap in a
     UMLS/medical-term lookup later for a clinically grounded jargon score.
     """
+    text = normalize_readability_text(text)
     words = max(textstat.lexicon_count(text, removepunct=True), 1)
     return {
         "flesch_kincaid_grade": textstat.flesch_kincaid_grade(text),
@@ -40,7 +63,7 @@ def readability_scores(text: str) -> dict:
 
 def meets_readability_target(text: str, max_grade: float = 8.0) -> bool:
     """Success criterion: <= 8th-grade reading level (Flesch-Kincaid)."""
-    return textstat.flesch_kincaid_grade(text) <= max_grade
+    return readability_scores(text)["flesch_kincaid_grade"] <= max_grade
 
 
 def load_medaesqa(path: Path = DATA) -> list[dict]:

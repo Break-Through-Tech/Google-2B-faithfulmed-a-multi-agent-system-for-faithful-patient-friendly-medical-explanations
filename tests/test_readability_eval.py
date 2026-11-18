@@ -19,11 +19,24 @@ from readability_eval import (
     compare_scores,
     readability_target_rate,
     find_failures,
+    normalize_readability_text,
     refusal_rate
 )
 
 
 class ReadabilityEvaluationTests(unittest.TestCase):
+
+    def test_markdown_headings_become_sentence_boundaries(self) -> None:
+        markdown = "### Treatment Plan\nTake the medicine with food.\n**Follow Up**\nCall next week."
+
+        self.assertEqual(
+            normalize_readability_text(markdown),
+            "Treatment Plan.\nTake the medicine with food.\nFollow Up.\nCall next week.",
+        )
+        self.assertEqual(
+            evaluate_single(markdown)["flesch_kincaid_grade"],
+            evaluate_single(normalize_readability_text(markdown))["flesch_kincaid_grade"],
+        )
 
     def test_is_refusal_detects_refusal(self) -> None:
         self.assertTrue(is_refusal("I cannot help with that request."))

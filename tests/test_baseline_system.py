@@ -16,6 +16,7 @@ from evals.baseline_system import (
     load_baseline_records,
     run_forced_baseline,
 )
+from evals.readability_eval import evaluate_single
 from evals.source_matching import EmbeddingCache, EmbeddingSettings
 
 
@@ -74,7 +75,10 @@ class BaselineSystemTests(unittest.TestCase):
 
             self.assertEqual(len(records), 1)
             self.assertEqual(records[0]["final_explanation"], "Updated cached explanation.")
-            self.assertEqual(records[0]["readability_metrics"]["flesch_kincaid_grade"], 6.5)
+            self.assertEqual(
+                records[0]["readability_metrics"],
+                evaluate_single("Updated cached explanation."),
+            )
             self.assertEqual(records[0]["result_source"], "baseline_generation_cache")
             self.assertFalse(has_factual_evaluation(records[0]))
 

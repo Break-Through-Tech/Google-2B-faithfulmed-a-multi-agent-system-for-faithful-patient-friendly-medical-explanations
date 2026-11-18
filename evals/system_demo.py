@@ -33,7 +33,7 @@ DEFAULT_CACHE_PATH = ROOT / "eval_results" / "system_demo_runs.jsonl"
 VALID_SPLITS = ("scratch", "dev", "test")
 VALID_DATASETS = ("MTSamples", "PLABA")
 PIPELINE_IMPLEMENTATION_VERSION = "system-pipeline-v7"  # v7: source-grounded closed glossary + verified final text
-METRIC_IMPLEMENTATION_VERSION = "system-metrics-v3"
+METRIC_IMPLEMENTATION_VERSION = "system-metrics-v4-markdown-headings"
 
 # This medication-modifier guard is a backwards-compatible v7 safety patch. The
 # exact before/after hashes make the exception narrow: existing completed v7
@@ -551,7 +551,26 @@ def output_metrics(text: str) -> tuple[dict[str, Any] | None, str | None]:
         return None, f"{type(exc).__name__}: {exc}"
 
 
+def refresh_cached_readability_metrics(record: dict[str, Any]) -> dict[str, Any]:
+    """Recompute cheap deterministic metrics without rerunning generation."""
+    text = record.get("final_explanation") or record.get("final_output")
+    if not isinstance(text, str) or not text.strip():
+        return record
+    if (
+        record.get("metric_version") == METRIC_IMPLEMENTATION_VERSION
+        and isinstance(record.get("readability_metrics"), dict)
+    ):
+        return record
+    metrics, error = output_metrics(text)
+    record["readability_metrics"] = metrics
+    record["readability_error"] = error
+    record["metric_version"] = METRIC_IMPLEMENTATION_VERSION
+    return record
+
+
 def aggregate_metrics(records: list[dict[str, Any]]) -> dict[str, Any]:
+    for record in records:
+        refresh_cached_readability_metrics(record)
     readability = [record["readability_metrics"] for record in records if record.get("readability_metrics")]
     factual = [record.get("factual_metrics") or {} for record in records]
     scored_factual = [item for item in factual if item.get("claims_assessed", 0) > 0]
@@ -634,7 +653,6 @@ def cache_key(example: SystemExample, pipeline_model: str, evaluator_model: str)
         "prompt_hashes": prompt_hashes(),
         "pipeline_version": PIPELINE_IMPLEMENTATION_VERSION,
         "pipeline_config": pipeline_config(),
-        "metric_version": METRIC_IMPLEMENTATION_VERSION,
     }
     return hashlib.sha256(json.dumps(identity, sort_keys=True).encode("utf-8")).hexdigest()
 
@@ -657,7 +675,7 @@ class AppendOnlyRunCache:
                     found = record
         return found
 
-    def records(self) -> list[dict[str, Any]]:
+    def records(self, *, refresh_readability: bool = True) -> list[dict[str, Any]]:
         """Return saved runs in append order, skipping malformed lines."""
         if not self.path.exists():
             return []
@@ -669,6 +687,8 @@ class AppendOnlyRunCache:
                 except json.JSONDecodeError:
                     continue
                 if isinstance(record, dict) and isinstance(record.get("run_id"), str):
+                    if refresh_readability:
+                        refresh_cached_readability_metrics(record)
                     records.append(record)
         return records
 
@@ -680,7 +700,7 @@ class AppendOnlyRunCache:
     ) -> dict[str, Any] | None:
         """Reuse a prior run covered by an explicit v7 compatibility rule."""
         expected_prompts = prompt_hashes()
-        for record in reversed(self.records()):
+        for record in reversed(self.records(refresh_readability=False)):
             metadata_matches = all(
                 record.get(key) == value for key, value in example.metadata().items()
             )
@@ -693,7 +713,6 @@ class AppendOnlyRunCache:
                 and record.get("pipeline_model") == pipeline_model
                 and record.get("evaluator_model") == evaluator_model
                 and record.get("pipeline_version") == PIPELINE_IMPLEMENTATION_VERSION
-                and record.get("metric_version") == METRIC_IMPLEMENTATION_VERSION
                 and prompt_hashes_cache_compatible(stored_prompts, expected_prompts)
             ):
                 return record
@@ -730,6 +749,7 @@ async def run_system_example(
         )
         if cached:
             result = copy.deepcopy(cached)
+            refresh_cached_readability_metrics(result)
             refresh_cached_factual_evaluation(result)
             result["cached_record_source"] = result.get("result_source")
             result["result_source"] = "cache"

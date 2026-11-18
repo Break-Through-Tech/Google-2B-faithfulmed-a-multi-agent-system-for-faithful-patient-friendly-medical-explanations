@@ -33,6 +33,7 @@ from evals.system_demo import (
     factual_metrics,
     parse_factual_evaluation,
     refresh_cached_factual_evaluation,
+    refresh_cached_readability_metrics,
 )
 
 
@@ -198,8 +199,10 @@ def load_baseline_records(
         if enriched:
             enriched["cached_record_source"] = enriched.get("result_source")
             enriched["result_source"] = "baseline_enrichment_cache"
+            refresh_cached_readability_metrics(enriched)
             records.append(refresh_cached_factual_evaluation(enriched))
         else:
+            refresh_cached_readability_metrics(provisional)
             records.append(provisional)
     return records
 

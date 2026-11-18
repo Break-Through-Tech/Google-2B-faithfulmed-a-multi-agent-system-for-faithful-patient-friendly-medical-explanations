@@ -28,6 +28,7 @@ from evals.system_demo import (
     prompt_hashes,
     prompt_hashes_cache_compatible,
     refresh_cached_factual_evaluation,
+    refresh_cached_readability_metrics,
     run_system_example,
     select_examples,
 )
@@ -107,6 +108,19 @@ class SystemDemoTests(unittest.TestCase):
         self.assertEqual(result["factual_outputs_scored"], 2)
         self.assertEqual(result["uncertain_claims"], 1)
         self.assertEqual(result["claim_validation_coverage"], 100)
+
+    def test_cached_readability_is_recomputed_without_generation(self) -> None:
+        record = {
+            "final_explanation": "### Care Plan\nTake the medicine with food.",
+            "metric_version": "system-metrics-v3",
+            "readability_metrics": {"flesch_kincaid_grade": 99},
+        }
+
+        refreshed = refresh_cached_readability_metrics(record)
+
+        self.assertEqual(refreshed["metric_version"], METRIC_IMPLEMENTATION_VERSION)
+        self.assertNotEqual(refreshed["readability_metrics"]["flesch_kincaid_grade"], 99)
+        self.assertIsNone(refreshed["readability_error"])
 
     def test_factual_prompt_uses_exact_numbered_spans_instead_of_copied_quotes(self) -> None:
         source = "First source sentence. Second source sentence."
@@ -536,7 +550,7 @@ class SystemDemoTests(unittest.TestCase):
                 "pipeline_model": "pipeline-model",
                 "evaluator_model": "eval-model",
                 "pipeline_version": PIPELINE_IMPLEMENTATION_VERSION,
-                "metric_version": METRIC_IMPLEMENTATION_VERSION,
+                "metric_version": "system-metrics-v3",
                 "prompt_hashes": V7_PRE_MEDICATION_GUARD_PROMPT_HASHES,
                 **example.metadata(),
             })

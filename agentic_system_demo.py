@@ -36,6 +36,7 @@ from evals.system_demo import (
     load_system_examples,
     record_for_download,
     refresh_cached_factual_evaluation,
+    refresh_cached_readability_metrics,
     run_system_example,
     select_examples,
 )
@@ -801,6 +802,7 @@ def render_results(
     if not records:
         return
     for record in records:
+        refresh_cached_readability_metrics(record)
         refresh_cached_factual_evaluation(record)
     trace_label = "Generation provenance" if key_prefix == "baseline" else "Pipeline traces"
     labels = [f"{record['dataset']} · {record['split']} · {record['example_id']}" for record in records]
@@ -1115,7 +1117,8 @@ def render_baseline_workspace(
     status[2].metric("Factuality scored", factual_scored_count)
     status[3].metric("Embedding matches", matching_count)
     st.caption(
-        "Baseline text and readability scores come directly from `runs/baseline.jsonl`. "
+        "Baseline text comes from `runs/baseline.jsonl`; readability is recalculated from that "
+        "cached text using the current deterministic metric implementation. "
         "The normal run is cache-only; only Force new run calls the baseline model. "
         f"Factual evaluator results are cached for {factual_evaluated_count}/{len(all_records)} outputs."
     )

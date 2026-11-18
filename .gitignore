@@ -70,6 +70,8 @@ data/PLABA/*
 !data/PLABA/dev/
 !data/PLABA/scratch/
 !data/PLABA/test/
+!data/PLABA/unusable/
+!data/PLABA/unusable/**
 !data/PLABA/PLABA_ALL.json
 
 # Model checkpoints / vector indexes

@@ -20,7 +20,8 @@ sys.path.append(str(NOTEBOOKS))
 
 from eval_harness import (
     readability_scores,
-    meets_readability_target
+    meets_readability_target,
+    normalize_readability_text,
 )
 
 
@@ -55,7 +56,7 @@ def evaluate_single(text: str) -> dict:
 
     single = {
         **scores,
-        "meets_target": meets_readability_target(text),
+        "meets_target": scores["flesch_kincaid_grade"] <= 8.0,
         "is_refusal": is_refusal(text)
     }
 
