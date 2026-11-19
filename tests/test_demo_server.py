@@ -12,7 +12,12 @@ from fastapi.testclient import TestClient
 
 from agents.medical_lookup import MedicalLookup
 from demo import server
-from evals.system_demo import SystemExample, run_system_example
+from demo.events import result_event
+from evals.system_demo import (
+    PIPELINE_IMPLEMENTATION_VERSION,
+    SystemExample,
+    run_system_example,
+)
 
 SOURCE = "The patient has a history of hypertension. Continue the current treatment plan."
 FACTS = json.dumps([
@@ -130,8 +135,13 @@ class DemoServerTests(unittest.TestCase):
 
         events = asyncio.run(collect())
         self.assertEqual(events[0]["meta"]["mode"], "replay")
+        self.assertFalse(events[0]["meta"]["umls_lookup"])  # the fake lookup has no UMLS key
         readability = "".join(e["delta"] for e in events if e.get("stage_id") == "readability")
         self.assertEqual(readability, OUTPUTS["Readability"])
+        # Like a live run, a replayed stage is running until its output has streamed.
+        started = [e["stage"] for e in events if e["type"] == "stage_started"]
+        self.assertTrue(started)
+        self.assertTrue(all(s["status"] == "running" and s["completed_at_utc"] is None for s in started))
         self.assertEqual(events[-2]["type"], "result")
         self.assertEqual(events[-1]["type"], "done")
 
@@ -168,6 +178,42 @@ class DemoServerTests(unittest.TestCase):
         with patch.dict(os.environ, {"DEMO_LIVE": "0"}):
             response = TestClient(server.app).post("/api/run", json={"source_text": SOURCE})
         self.assertEqual(response.status_code, 503)
+
+    def test_replays_list_only_the_current_pipeline_version(self) -> None:
+        def record(run_id: str, version: str) -> dict:
+            extractor = json.dumps({"patient_facts": [{"fact_id": "F-001"}, {"fact_id": "F-002"}], "lookup_terms": []})
+            return {"run_id": run_id, "pipeline_version": version, "dataset": "PLABA", "example_id": "P1",
+                    "final_explanation": "Text.", "source_text": SOURCE,
+                    "pipeline_trace": {"stages": [{"agent": "Extractor"}], "results": {"extractor": extractor}}}
+
+        server.saved_runs.cache_clear()
+        try:
+            with patch.object(server, "AppendOnlyRunCache") as cache:
+                # The older version is newer in the file, so it would win without the version filter.
+                cache.return_value.records.return_value = [
+                    record("current", PIPELINE_IMPLEMENTATION_VERSION), record("old", "system-pipeline-v2"),
+                ]
+                runs = server.runs()
+        finally:
+            server.saved_runs.cache_clear()
+        self.assertEqual([run["run_id"] for run in runs], ["current"])
+        self.assertEqual(runs[0]["facts"], 2)
+
+    def test_source_spans_keep_the_report_layout(self) -> None:
+        def layout(source: str) -> list[tuple[str | None, str | None]]:
+            spans = result_event({"source_text": source})["source_spans"]
+            return [(span.get("break"), span.get("heading")) for span in spans]
+
+        # A one-line note gets a paragraph per ALL-CAPS section heading.
+        self.assertEqual(
+            layout("CHIEF COMPLAINT: Cough. HISTORY OF PRESENT ILLNESS: Two weeks. No fever. BP: 120/80."),
+            [(None, "CHIEF COMPLAINT:"), ("paragraph", "HISTORY OF PRESENT ILLNESS:"), (None, None), (None, None)],
+        )
+        # Pasted text keeps its own line and paragraph breaks.
+        self.assertEqual(
+            layout("Title: Cough\nAbstract: First. Second.\n\nMethods: Third."),
+            [(None, None), ("line", None), (None, None), ("paragraph", None)],
+        )
 
 
 if __name__ == "__main__":

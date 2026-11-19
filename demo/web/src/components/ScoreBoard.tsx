@@ -56,43 +56,19 @@ export function ScoreBoard({ result, run }: { result: ResultEvent; run: RunState
   return (
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
       <Tile>
-        <Label>Faithfulness</Label>
-        <div className="mt-2 flex items-center gap-4">
-          <div className="relative">
-            <Ring value={fidelity} target={85} color="var(--color-emerald-400)" />
-            <div className="absolute inset-0 grid place-items-center text-2xl font-bold text-slate-50">{fmt(fidelity, 0, "%")}</div>
-          </div>
-          <div className="text-sm text-slate-400">
-            <div className="text-slate-200">
-              {result.factual?.supported_claims ?? 0}/{result.factual?.claims_assessed ?? 0} claims
-            </div>
-            supported by allowed evidence
-            <div className="mt-1 text-xs text-slate-500">target ≥ 85%</div>
-          </div>
-        </div>
-        <div className="mt-4 flex h-2 overflow-hidden rounded-full bg-ink-700">
-          {counts.map(({ k, n }) => (
-            <div key={k} className={`${barColor[k]} transition-all duration-1000`} style={{ width: `${(n / total) * 100}%` }} title={`${k}: ${n}`} />
-          ))}
-        </div>
-        <div className="mt-2 flex flex-wrap gap-x-3 text-[11px] text-slate-500">
-          {counts.map(({ k, n }) => (
-            <span key={k}>
-              <span className={`mr-1 inline-block h-2 w-2 rounded-full ${barColor[k]}`} />
-              {k} {n}
-            </span>
-          ))}
-        </div>
-      </Tile>
-
-      <Tile>
         <Label>Reading level</Label>
-        <div className="mt-3 flex items-baseline gap-3">
-          <span className="text-2xl font-semibold text-slate-500 line-through decoration-slate-600">{fmt(result.source_grade)}</span>
-          <span className="text-slate-500">→</span>
-          <span className={`text-4xl font-bold ${result.readability?.meets_target ? "text-emerald-300" : "text-amber-300"}`}>{fmt(grade)}</span>
+        <div className="mt-3 flex items-center gap-4">
+          <div>
+            <div className="text-4xl font-bold tabular-nums text-slate-400">{fmt(result.source_grade)}</div>
+            <div className="text-xs text-slate-500">original</div>
+          </div>
+          <span className="pb-4 text-xl text-slate-500">→</span>
+          <div>
+            <div className={`text-4xl font-bold tabular-nums ${result.readability?.meets_target ? "text-emerald-300" : "text-amber-300"}`}>{fmt(grade)}</div>
+            <div className="text-xs text-slate-500">explanation</div>
+          </div>
         </div>
-        <div className="mt-1 text-sm text-slate-400">Flesch–Kincaid grade · source → final</div>
+        <div className="mt-1 text-sm text-slate-400">Flesch–Kincaid grade level</div>
         <div className="relative mt-5 h-2 rounded-full bg-gradient-to-r from-emerald-400/70 via-amber-400/70 to-rose-500/70">
           {[result.source_grade, grade].map((g, i) =>
             g === null ? null : (
@@ -109,6 +85,42 @@ export function ScoreBoard({ result, run }: { result: ResultEvent; run: RunState
         </div>
         <div className="mt-7 text-xs text-slate-500">
           SMOG {fmt(result.readability?.smog_index)} · {result.readability?.word_count ?? "—"} words
+        </div>
+      </Tile>
+
+      <Tile>
+        <Label>Factual fidelity</Label>
+        <div className="mt-2 flex items-center gap-4">
+          <div className="relative">
+            <Ring value={fidelity} target={85} color="var(--color-emerald-400)" />
+            <div className="absolute inset-0 grid place-items-center text-2xl font-bold text-slate-50">{fmt(fidelity, 0, "%")}</div>
+          </div>
+          <div className="text-sm text-slate-400">
+            {fidelity === null ? (
+              "Not scored: the independent fact-check didn't finish for this run."
+            ) : (
+              <>
+                <div className="text-slate-200">
+                  {result.factual?.supported_claims ?? 0}/{result.factual?.claims_assessed ?? 0} claims
+                </div>
+                supported by allowed evidence
+              </>
+            )}
+            <div className="mt-1 text-xs text-slate-500">target ≥ 85%</div>
+          </div>
+        </div>
+        <div className="mt-4 flex h-2 overflow-hidden rounded-full bg-ink-700">
+          {counts.map(({ k, n }) => (
+            <div key={k} className={`${barColor[k]} transition-all duration-1000`} style={{ width: `${(n / total) * 100}%` }} title={`${k}: ${n}`} />
+          ))}
+        </div>
+        <div className="mt-2 flex flex-wrap gap-x-3 text-[11px] text-slate-500">
+          {counts.map(({ k, n }) => (
+            <span key={k}>
+              <span className={`mr-1 inline-block h-2 w-2 rounded-full ${barColor[k]}`} />
+              {k} {n}
+            </span>
+          ))}
         </div>
       </Tile>
 

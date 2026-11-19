@@ -18,9 +18,13 @@ the same way:
 from __future__ import annotations
 
 import json
+import re
 from typing import Any
 
 from agents.factual_evaluator import indexed_text_spans
+
+# "HISTORY OF PRESENT ILLNESS:" and similar headings that open a report section.
+SECTION_HEADING = re.compile(r"^[A-Z][A-Z0-9 ,/&()'-]{2,}:")
 
 STAGE_FIELDS = (
     "stage_id", "agent", "iteration", "status", "started_at_utc", "completed_at_utc",
@@ -57,11 +61,33 @@ def _span_containing(quote: str | None, spans: list[dict[str, str]]) -> list[str
     return hits
 
 
+def _with_layout(text: str, spans: list[dict[str, str]]) -> list[dict[str, str]]:
+    """Mark where each source span starts a new line or paragraph, so the report keeps its shape.
+
+    Reports flattened onto one line (most MTSamples notes) also get a paragraph
+    break before each ALL-CAPS section heading.
+    """
+    position = 0
+    for index, span in enumerate(spans):
+        found = text.find(span["text"], position)
+        newlines = text[position:found].count("\n") if found >= 0 else 0
+        if found >= 0:
+            position = found + len(span["text"])
+        heading = SECTION_HEADING.match(span["text"])
+        if heading:
+            span["heading"] = heading.group(0)
+        if index and (newlines >= 2 or heading):
+            span["break"] = "paragraph"
+        elif index and newlines:
+            span["break"] = "line"
+    return spans
+
+
 def result_event(record: dict[str, Any]) -> dict[str, Any]:
     """Scores plus the span-level evidence attribution for one finished run."""
     source_text = record.get("source_text") or ""
     final = record.get("final_explanation") or ""
-    source_spans = indexed_text_spans(source_text, "S")
+    source_spans = _with_layout(source_text, indexed_text_spans(source_text, "S"))
     explanation_spans = indexed_text_spans(final, "E") if final else []
     evaluator = record.get("factual_evaluator") or {}
     parsed = evaluator.get("parsed_output") or {}

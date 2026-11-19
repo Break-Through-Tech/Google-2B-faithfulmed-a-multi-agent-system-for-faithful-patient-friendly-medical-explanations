@@ -5,7 +5,7 @@ import type { RunState } from "../lib/runState";
 import { seconds } from "../lib/text";
 import type { Stage } from "../lib/types";
 import { Markdown } from "./Markdown";
-import { StageBody, summarize } from "./StageViews";
+import { ExtractorView, StageBody, summarize } from "./StageViews";
 
 const TEXT_STAGES = new Set(["Simplifier", "Refiner", "Readability"]);
 
@@ -50,7 +50,8 @@ function StageCard({
   const info = agentInfo(stage.agent);
   const Icon = info.icon;
   const running = stage.status === "running";
-  const [open, setOpen] = useState(false);
+  // Cards stay open after their agent finishes so viewers can follow the whole run.
+  const [open, setOpen] = useState(true);
   const [raw, setRaw] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const expanded = running || open;
@@ -88,7 +89,9 @@ function StageCard({
       </button>
       {expanded && (
         <div className="border-t border-white/[0.06] px-4 py-4">
-          {running ? (
+          {running && stage.agent === "Extractor" ? (
+            <ExtractorView output={stage.output} streaming />
+          ) : running ? (
             <StreamView text={stage.output} prose={TEXT_STAGES.has(stage.agent)} />
           ) : (
             <>
@@ -111,18 +114,18 @@ function StageCard({
 }
 
 export function Timeline({ run, follow }: { run: RunState; follow: boolean }) {
-  // The draft each Refiner pass received, for its diff view.
+  // The draft each Refiner pass received, for its diff view. In v7 that is the Readability output.
   const draftBefore = (index: number): string | null => {
     for (let i = index - 1; i >= 0; i--) {
       const s = run.stages[i];
-      if (s.agent === "Simplifier" || s.agent === "Refiner") return s.output;
+      if (s.agent === "Simplifier" || s.agent === "Readability" || s.agent === "Refiner") return s.output;
     }
     return null;
   };
   const Eval = AGENTS.Evaluator;
   return (
     <div className="space-y-3">
-      {run.stages.map((stage, index) => (
+      {run.stages.map((stage, index) => (stage.agent === "UMLSLookup" && stage.status === "skipped") ? null : (
         <StageCard
           key={stage.stage_id}
           stage={stage}

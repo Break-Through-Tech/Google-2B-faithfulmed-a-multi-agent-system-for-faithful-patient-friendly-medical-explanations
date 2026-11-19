@@ -28,9 +28,15 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from agents import LITELLM_PROVIDER_PREFIXES
+from agents.medical_lookup import lookup_config_from_env
 from agents.production_pipeline import MAX_REVISION_CYCLES
 from agents.verifier import VERIFIER_DEFAULT_MODEL
-from evals.system_demo import AppendOnlyRunCache, SystemExample, load_system_examples
+from evals.system_demo import (
+    PIPELINE_IMPLEMENTATION_VERSION,
+    AppendOnlyRunCache,
+    SystemExample,
+    load_system_examples,
+)
 
 from .events import pipeline_done_event, public_stage, result_event, sse
 
@@ -99,9 +105,11 @@ def default_model_key() -> str:
 
 @lru_cache(maxsize=1)
 def saved_runs() -> dict[str, dict[str, Any]]:
-    """Latest completed run per example, keyed by run_id."""
+    """Latest completed run per example from the current pipeline version, keyed by run_id."""
     latest: dict[tuple[str, str], dict[str, Any]] = {}
     for record in AppendOnlyRunCache().records():
+        if record.get("pipeline_version") != PIPELINE_IMPLEMENTATION_VERSION:
+            continue
         if record.get("final_explanation") and record.get("pipeline_trace", {}).get("stages"):
             latest[(record.get("dataset", ""), record.get("example_id", ""))] = record
     return {record["run_id"]: record for record in latest.values()}
@@ -110,8 +118,10 @@ def saved_runs() -> dict[str, dict[str, Any]]:
 def _run_summary(record: dict[str, Any]) -> dict[str, Any]:
     stages = record["pipeline_trace"]["stages"]
     try:
-        facts = len(json.loads(record["pipeline_trace"]["results"].get("extractor") or "[]"))
-    except (json.JSONDecodeError, TypeError):
+        extracted = json.loads(record["pipeline_trace"]["results"].get("extractor") or "[]")
+        # v7 returns {"patient_facts": [...], "lookup_terms": [...]}; older versions a bare list.
+        facts = len(extracted.get("patient_facts") or [] if isinstance(extracted, dict) else extracted)
+    except (json.JSONDecodeError, TypeError, AttributeError):
         facts = 0
     readability = record.get("readability_metrics") or {}
     factual = record.get("factual_metrics") or {}
@@ -177,7 +187,7 @@ def examples() -> list[dict[str, Any]]:
 
 async def _stream_text(event: dict[str, Any], text: str, speed: float) -> AsyncIterator[str]:
     """Replay one recorded output in chunks; long outputs play faster, not longer."""
-    duration = min(max(len(text) / 3500, 1.2), 5.0) / speed
+    duration = min(max(len(text) / 2500, 2.0), 8.0) / speed
     ticks = max(1, int(duration / 0.04))
     size = math.ceil(len(text) / ticks)
     for start in range(0, len(text), size):
@@ -192,9 +202,13 @@ async def replay_events(record: dict[str, Any], speed: float) -> AsyncIterator[s
         "split": record.get("split"), "example_id": record.get("example_id"),
         "recorded_at_utc": record.get("created_at_utc"), "model": record.get("pipeline_model"),
         "source_text": record.get("source_text"),
+        "umls_lookup": any(s.get("agent") == "UMLSLookup" and s.get("status") == "completed"
+                           for s in trace.get("stages", [])),
     }})
     for stage in trace.get("stages", []):
-        yield sse({"type": "stage_started", "stage": public_stage(stage, with_output=False)})
+        # The record holds the finished stage; replay it as running until its output has streamed.
+        started = {**public_stage(stage, with_output=False), "status": "running", "completed_at_utc": None, "error": None}
+        yield sse({"type": "stage_started", "stage": started})
         output = stage.get("output") or ""
         if output and stage.get("agent") != "UMLSLookup":
             async for chunk in _stream_text({"type": "stage_chunk", "stage_id": stage["stage_id"]}, output, speed):
@@ -259,6 +273,7 @@ async def live_events(example: SystemExample, model: dict[str, Any]) -> AsyncIte
             "mode": "live", "dataset": example.dataset, "split": example.split,
             "example_id": example.example_id, "model": model["model_id"], "model_label": model["label"],
             "evaluator_model": MODEL, "source_text": example.source_text,
+            "umls_lookup": lookup_config_from_env()["umls"],
         }})
         while True:
             getter = asyncio.ensure_future(queue.get())

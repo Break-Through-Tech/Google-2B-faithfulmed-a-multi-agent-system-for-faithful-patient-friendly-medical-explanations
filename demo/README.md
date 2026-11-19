@@ -11,11 +11,11 @@ A React + Tailwind frontend on a FastAPI backend that imports the real agent cod
 
 | Mode | What runs | Needs |
 |---|---|---|
-| **Recorded** | Replays a saved run from `eval_results/system_demo_runs.jsonl` with compressed timing. Real model outputs, no API calls. | nothing |
+| **Recorded** | Replays the latest saved run of each example from `eval_results/system_demo_runs.jsonl`, current pipeline version only (v7: test-split runs), with compressed timing. Real model outputs, no API calls. | nothing |
 | **Live dataset** | Runs every agent on a de-identified scratch/dev MTSamples or PLABA example. Takes about 1–5 minutes. | `GOOGLE_API_KEY` |
 | **Live paste** | Same, on pasted text (up to 15,000 characters). Nothing is saved on the server. | `GOOGLE_API_KEY` |
 
-Recorded mode is the safe choice for presentations: it can't hit a Gemini outage or quota limit. `PLABA_SCRATCH_74` is listed first because the Verifier catches two unsupported claims and the Refiner removes them.
+Recorded mode is the safe choice for presentations: it can't hit a Gemini outage or quota limit. Runs where the Refiner made fixes are listed first. Recordings from older pipeline versions are hidden, so after a version bump, record new runs before demoing.
 
 ## Run locally
 

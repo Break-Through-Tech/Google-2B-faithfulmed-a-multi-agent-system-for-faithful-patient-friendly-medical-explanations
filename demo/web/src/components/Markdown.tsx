@@ -26,7 +26,8 @@ export function Markdown({ text, className = "" }: { text: string; className?: s
   };
   for (const raw of text.split("\n")) {
     const line = raw.trim();
-    const heading = line.match(/^(#{1,6})\s+(.*)$/);
+    // A line that is all bold, like "**Next Steps**", is a heading too.
+    const heading = line.match(/^(#{1,6})\s+(.*)$/) ?? line.match(/^()\*\*([^*]+)\*\*:?$/);
     const bullet = line.match(/^[-*+]\s+(.*)$/);
     if (!line) flush();
     else if (/^(-{3,}|\*{3,})$/.test(line)) {

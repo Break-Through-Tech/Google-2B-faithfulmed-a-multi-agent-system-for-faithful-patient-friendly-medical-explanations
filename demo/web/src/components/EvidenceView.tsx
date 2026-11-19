@@ -13,10 +13,25 @@ function worst(claims: Claim[]): string | null {
 }
 
 function isHeading(text: string) {
-  return /^#{1,6}\s/.test(text);
+  // Markdown headings, whole-line bold headings, and labels such as "REVIEW FLAGS:".
+  return /^#{1,6}\s/.test(text) || /^\*\*[^*]+\*\*:?$/.test(text) || /^[A-Z][A-Z -]+:$/.test(text);
+}
+/** The Simplifier's output label, which isn't part of the explanation. */
+function isOutputLabel(text: string) {
+  return /^PATIENT-FRIENDLY VERSION:$/i.test(text);
 }
 function isBullet(text: string) {
   return /^[-*+]\s/.test(text);
+}
+
+/** Group source spans into the report's paragraphs. */
+function sourceParagraphs(spans: Span[]): Span[][] {
+  const paragraphs: Span[][] = [];
+  for (const span of spans) {
+    if (!paragraphs.length || span.break === "paragraph") paragraphs.push([span]);
+    else paragraphs[paragraphs.length - 1].push(span);
+  }
+  return paragraphs;
 }
 
 export function EvidenceView({
@@ -73,6 +88,7 @@ export function EvidenceView({
         continue;
       }
       const claims = claimsBySpan.get(span.span_id) ?? [];
+      if (isOutputLabel(span.text) && !claims.length) continue;
       const level = worst(claims);
       const style = level ? CLASS_STYLE[level] : null;
       const selected = selection?.kind === "explanation" && selection.id === span.span_id;
@@ -128,24 +144,32 @@ export function EvidenceView({
         <div>
           <div className="px-5 pt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Original clinical source</div>
           <div className="scroll-thin max-h-[34rem] overflow-y-auto px-5 pb-5 pt-2 font-serif text-[13.5px] leading-relaxed text-slate-400">
-            {result.source_spans.map((span) => {
-              const lit = litSource.has(span.span_id);
-              const selected = selection?.kind === "source" && selection.id === span.span_id;
-              return (
-                <span
-                  key={span.span_id}
-                  ref={(el) => {
-                    sourceRefs.current[span.span_id] = el;
-                  }}
-                  onClick={() => onSelect(selected ? null : { kind: "source", id: span.span_id })}
-                  className={`cursor-pointer rounded px-0.5 transition-colors duration-300 ${
-                    lit || selected ? "bg-cyan-400/20 text-slate-50 ring-1 ring-cyan-400/40" : "hover:bg-white/5"
-                  }`}
-                >
-                  {span.text}{" "}
-                </span>
-              );
-            })}
+            {sourceParagraphs(result.source_spans).map((paragraph) => (
+              <p key={paragraph[0].span_id} className="mb-3 last:mb-0">
+                {paragraph.map((span) => {
+                  const lit = litSource.has(span.span_id);
+                  const selected = selection?.kind === "source" && selection.id === span.span_id;
+                  const heading = span.heading && span.text.startsWith(span.heading) ? span.heading : "";
+                  return (
+                    <span key={span.span_id} className="contents">
+                      {span.break === "line" && <br />}
+                      <span
+                        ref={(el) => {
+                          sourceRefs.current[span.span_id] = el;
+                        }}
+                        onClick={() => onSelect(selected ? null : { kind: "source", id: span.span_id })}
+                        className={`cursor-pointer rounded px-0.5 transition-colors duration-300 ${
+                          lit || selected ? "bg-cyan-400/20 text-slate-50 ring-1 ring-cyan-400/40" : "hover:bg-white/5"
+                        }`}
+                      >
+                        {heading && <span className="font-sans text-[12px] font-semibold tracking-wide text-slate-300">{heading}</span>}
+                        {span.text.slice(heading.length)}
+                      </span>{" "}
+                    </span>
+                  );
+                })}
+              </p>
+            ))}
           </div>
         </div>
       </div>

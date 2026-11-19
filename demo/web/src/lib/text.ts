@@ -9,6 +9,33 @@ export function tryParseJson<T = any>(text: string): T | null {
   }
 }
 
+/** The complete objects so far in a streaming JSON array of objects. */
+export function completedObjects<T = any>(text: string): T[] {
+  const items: T[] = [];
+  let depth = 0;
+  let start = -1;
+  let inString = false;
+  let escaped = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (inString) {
+      if (escaped) escaped = false;
+      else if (ch === "\\") escaped = true;
+      else if (ch === '"') inString = false;
+    } else if (ch === '"') inString = true;
+    else if (ch === "{") {
+      if (depth++ === 0) start = i;
+    } else if (ch === "}" && depth > 0 && --depth === 0) {
+      try {
+        items.push(JSON.parse(text.slice(start, i + 1)) as T);
+      } catch {
+        // Not a complete object after all; the final parse covers it.
+      }
+    }
+  }
+  return items;
+}
+
 /** Split the Simplifier's two-section output. */
 export function splitSimplifier(text: string): { body: string; flags: string } {
   const flagsAt = text.search(/REVIEW FLAGS:/i);
