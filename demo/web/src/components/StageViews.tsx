@@ -1,6 +1,6 @@
-import { AlertTriangle, ArrowRight, CircleSlash, FileWarning, Quote } from "lucide-react";
-import { useMemo, useState } from "react";
-import { friendlyError, splitSimplifier, tryParseJson, wordDiff } from "../lib/text";
+import { AlertTriangle, ArrowRight, CircleSlash, FileWarning, Loader2, Quote } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { completedObjects, friendlyError, splitSimplifier, tryParseJson, wordDiff } from "../lib/text";
 import type { Stage } from "../lib/types";
 import { Markdown } from "./Markdown";
 import { Chip } from "./ui";
@@ -28,12 +28,37 @@ interface Fact {
   source_evidence: string[];
 }
 
+interface LookupTerm {
+  term: string;
+  category?: string;
+}
+
+/**
+ * Patient facts and UMLS lookup terms from the Extractor. v7 returns
+ * {"patient_facts": [...], "lookup_terms": [...]}; older runs a bare fact list.
+ * While streaming, only objects whose JSON has closed are included.
+ */
+function extractorParts(output: string, streaming: boolean): { facts: Fact[]; terms: LookupTerm[] } {
+  if (!streaming) {
+    const parsed = tryParseJson<any>(output);
+    if (Array.isArray(parsed)) return { facts: parsed, terms: [] };
+    return { facts: parsed?.patient_facts ?? [], terms: parsed?.lookup_terms ?? [] };
+  }
+  const termsAt = output.indexOf('"lookup_terms"');
+  const factsText = termsAt >= 0 ? output.slice(0, termsAt) : output;
+  return {
+    facts: completedObjects<Fact>(factsText.slice(Math.max(0, factsText.indexOf("[")))),
+    terms: termsAt >= 0 ? completedObjects<LookupTerm>(output.slice(termsAt)) : [],
+  };
+}
+
 export function summarize(stage: Stage): string {
   if (stage.status === "failed") return "Failed";
   switch (stage.agent) {
     case "Extractor": {
-      const facts = tryParseJson<Fact[]>(stage.output);
-      return facts ? `${facts.length} facts extracted` : "Extracting facts";
+      if (!tryParseJson(stage.output)) return "Extracting facts";
+      const { facts, terms } = extractorParts(stage.output, false);
+      return `${facts.length} facts extracted${terms.length ? ` · ${terms.length} terms to look up` : ""}`;
     }
     case "UMLSLookup": {
       const defs = stage.parsed_output;
@@ -51,42 +76,70 @@ export function summarize(stage: Stage): string {
     case "Simplifier":
       return "Plain-language draft written";
     case "Readability":
-      return "Final explanation polished";
+      return "Polished for readability";
     default:
       return stage.status;
   }
 }
 
-function ExtractorView({ output }: { output: string }) {
-  const facts = tryParseJson<Fact[]>(output) ?? [];
+/** Extracted facts as cards; while streaming, each fact appears as soon as its JSON object closes. */
+export function ExtractorView({ output, streaming = false }: { output: string; streaming?: boolean }) {
+  const { facts, terms } = extractorParts(output, streaming);
   const counts = facts.reduce<Record<string, number>>((acc, f) => ({ ...acc, [f.fact_type]: (acc[f.fact_type] ?? 0) + 1 }), {});
-  if (!facts.length)
+  const grid = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (streaming && grid.current) grid.current.scrollTop = grid.current.scrollHeight;
+  }, [streaming, facts.length]);
+  if (streaming && !facts.length && !terms.length)
     return (
-      <p className="flex items-center gap-2 text-sm text-slate-400">
-        <CircleSlash className="h-4 w-4 shrink-0" />
-        The Extractor returned no patient-level facts for this source, so later agents worked from the source text alone.
-      </p>
+      <div className="flex items-center gap-2 text-sm text-slate-500">
+        <Loader2 className="h-4 w-4 animate-spin" /> Reading the report for patient-level facts…
+      </div>
     );
+  const noFacts = (
+    <p className="flex items-center gap-2 text-sm text-slate-400">
+      <CircleSlash className="h-4 w-4 shrink-0" />
+      The Extractor returned no patient-level facts for this source, so later agents worked from the source text alone.
+    </p>
+  );
+  if (!facts.length && !terms.length) return noFacts;
   return (
     <div>
-      <div className="mb-3 flex flex-wrap gap-1.5">
+      {!facts.length && !streaming && noFacts}
+      <div className={`mb-3 flex flex-wrap gap-1.5 ${facts.length ? "" : "hidden"}`}>
         {Object.entries(counts).map(([type, n]) => (
           <Chip key={type} className={FACT_TYPE[type]}>
             {type.replace("_", " ")} · {n}
           </Chip>
         ))}
       </div>
-      <div className="scroll-thin grid max-h-96 gap-2 overflow-y-auto pr-1 sm:grid-cols-2">
+      <div ref={grid} className="scroll-thin grid max-h-96 gap-2 overflow-y-auto pr-1 sm:grid-cols-2">
         {facts.map((fact) => (
-          <div key={fact.fact_id} className="rounded-xl border border-white/[0.06] bg-ink-850 p-3" title={fact.source_evidence.join("\n")}>
+          <div
+            key={fact.fact_id}
+            className={`rounded-xl border border-white/[0.06] bg-ink-850 p-3 ${streaming ? "animate-fade-up" : ""}`}
+            title={(fact.source_evidence ?? []).join("\n")}
+          >
             <div className="mb-1 flex items-center gap-2">
               <span className="font-mono text-[10px] text-slate-500">{fact.fact_id}</span>
-              <Chip className={FACT_TYPE[fact.fact_type]}>{fact.fact_type.replace("_", " ")}</Chip>
+              <Chip className={FACT_TYPE[fact.fact_type]}>{(fact.fact_type ?? "fact").replace("_", " ")}</Chip>
             </div>
             <p className="text-sm leading-snug text-slate-200">{fact.fact_text}</p>
           </div>
         ))}
       </div>
+      {terms.length > 0 && (
+        <div className="mt-3">
+          <div className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Terms for UMLS lookup</div>
+          <div className="flex flex-wrap gap-1.5">
+            {terms.map((t, i) => (
+              <Chip key={`${t.term}-${i}`} className={`bg-sky-400/10 text-sky-300 ring-sky-400/30 ${streaming ? "animate-fade-up" : ""}`}>
+                {t.term}
+              </Chip>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -278,6 +331,8 @@ export function StageBody({ stage, previousDraft }: { stage: Stage; previousDraf
       return <VerifierView verdict={stage.parsed_output ?? tryParseJson(stage.output)} />;
     case "Refiner":
       return previousDraft ? <RefinerView before={previousDraft} after={stage.output} /> : <Markdown text={stage.output} className="text-sm" />;
+    case "Readability":
+      return <Markdown text={stage.output.replace(/^\s*PATIENT-FRIENDLY VERSION:\s*/i, "")} className="text-sm text-slate-200" />;
     default:
       return <Markdown text={stage.output} className="text-sm text-slate-200" />;
   }

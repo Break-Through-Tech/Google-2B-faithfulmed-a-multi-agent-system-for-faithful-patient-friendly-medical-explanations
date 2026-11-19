@@ -84,8 +84,8 @@ export function PipelineGraph({ run, maxRevisions }: { run: RunState; maxRevisio
     { key: "Loop", status: refiner.length || verifier.length ? (run.pipeline ? "completed" : loopStatus) : "waiting" },
     { key: "Evaluator", status: evaluator },
   ];
-  // Older recorded runs predate the Term Lookup stage.
-  const visible = nodes.filter((n) => !(n.key === "UMLSLookup" && n.status === "waiting" && run.stages.some((s) => s.agent === "Simplifier")));
+  // UMLS Lookup is a Python step with no model call; show it only when this run had a UMLS key.
+  const visible = nodes.filter((n) => n.key !== "UMLSLookup" || run.meta?.umls_lookup);
   const lastVerdict = verifier[verifier.length - 1]?.parsed_output?.overall_decision as string | undefined;
 
   return (

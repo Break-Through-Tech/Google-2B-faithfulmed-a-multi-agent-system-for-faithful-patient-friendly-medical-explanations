@@ -15,6 +15,10 @@ export interface Stage {
 export interface Span {
   span_id: string;
   text: string;
+  /** Source spans only: where the report breaks before this span. */
+  break?: "line" | "paragraph";
+  /** Source spans only: a leading section heading such as "HISTORY:". */
+  heading?: string;
 }
 
 export type Classification = "supported" | "unsupported" | "contradicted" | "uncertain";
@@ -79,6 +83,8 @@ export interface RunMeta {
   evaluator_model?: string;
   recorded_at_utc?: string;
   source_text: string;
+  /** Whether the UMLS Lookup step had a key for this run. */
+  umls_lookup?: boolean;
 }
 
 export interface SavedRun {
