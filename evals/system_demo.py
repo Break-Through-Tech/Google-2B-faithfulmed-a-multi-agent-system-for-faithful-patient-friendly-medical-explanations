@@ -21,7 +21,13 @@ from agents.factual_evaluator import (
     indexed_text_spans,
     run_factual_evaluator,
 )
-from agents.production_pipeline import MAX_REVISION_CYCLES, PipelineRunResult, run_production_pipeline
+from agents.production_pipeline import (
+    MAX_REVISION_CYCLES,
+    READABILITY_POST_VERIFIER,
+    READABILITY_PRE_VERIFIER,
+    PipelineRunResult,
+    run_production_pipeline,
+)
 from agents.readability import READABILITY_INSTRUCTION
 from agents.refiner import _REFINER_INSTRUCTION
 from agents.simplifier import SIMPLIFIER_INSTRUCTION
@@ -33,9 +39,10 @@ DEFAULT_CACHE_PATH = ROOT / "eval_results" / "system_demo_runs.jsonl"
 VALID_SPLITS = ("scratch", "dev", "test")
 VALID_DATASETS = ("MTSamples", "PLABA")
 PIPELINE_IMPLEMENTATION_VERSION = "system-pipeline-v7"  # v7: source-grounded closed glossary + verified final text
+POST_VERIFIER_PIPELINE_VERSION = "system-pipeline-v8-readability-post-verifier"
 METRIC_IMPLEMENTATION_VERSION = "system-metrics-v4-markdown-headings"
 
-# These exact v7 prompt snapshots cover two reviewed safety-only prompt patches:
+# These exact v7 prompt snapshots cover reviewed safety-only prompt patches:
 # medication-modifier grounding and the later Readability preservation rules.
 # Any other prompt change still invalidates the cache unless it is reviewed and
 # explicitly added. Force-running a sample always bypasses compatibility reuse.
@@ -58,6 +65,10 @@ V7_MEDICATION_GUARD_PROMPT_HASHES = {
 V7_READABILITY_REVISION_PROMPT_HASHES = {
     **V7_MEDICATION_GUARD_PROMPT_HASHES,
     "readability": "930534335916bce4ff4d000f5bcb390c52fcbf9299e972efe0168a55b92b50bc",
+}
+V7_CURRENT_PROMPT_HASHES = {
+    **V7_READABILITY_REVISION_PROMPT_HASHES,
+    "readability": "c85dd454dfd51ce1af09be46702a3797b5342466c308ef1d2f56478f02f3dc09",
 }
 FACTUAL_LABELS = {"supported", "unsupported", "contradicted", "uncertain"}
 FACTUAL_STATUSES = {"scored", "no_claims", "insufficient_source"}
@@ -631,7 +642,7 @@ def prompt_hashes() -> dict[str, str]:
 def prompt_hashes_cache_compatible(
     stored: dict[str, Any], expected: dict[str, str],
 ) -> bool:
-    """Allow only the two explicitly reviewed v7 prompt transitions."""
+    """Allow only the explicitly reviewed v7 prompt transitions."""
     if stored == expected:
         return True
     return (
@@ -639,8 +650,9 @@ def prompt_hashes_cache_compatible(
         and stored in (
             V7_PRE_MEDICATION_GUARD_PROMPT_HASHES,
             V7_MEDICATION_GUARD_PROMPT_HASHES,
+            V7_READABILITY_REVISION_PROMPT_HASHES,
         )
-        and expected == V7_READABILITY_REVISION_PROMPT_HASHES
+        and expected == V7_CURRENT_PROMPT_HASHES
     )
 
 
@@ -649,7 +661,14 @@ def pipeline_config() -> dict[str, Any]:
     return {"max_revision_cycles": MAX_REVISION_CYCLES, "reference_lookup": lookup_config_from_env()}
 
 
-def cache_key(example: SystemExample, pipeline_model: str, evaluator_model: str) -> str:
+def cache_key(
+    example: SystemExample,
+    pipeline_model: str,
+    evaluator_model: str,
+    *,
+    pipeline_variant: str = READABILITY_PRE_VERIFIER,
+    reused_from_run_id: str | None = None,
+) -> str:
     identity = {
         **example.metadata(),
         "source_hash": hashlib.sha256(example.source_text.encode("utf-8")).hexdigest(),
@@ -660,6 +679,19 @@ def cache_key(example: SystemExample, pipeline_model: str, evaluator_model: str)
         "pipeline_version": PIPELINE_IMPLEMENTATION_VERSION,
         "pipeline_config": pipeline_config(),
     }
+    if pipeline_variant == READABILITY_POST_VERIFIER:
+        identity.update({
+            "pipeline_variant": pipeline_variant,
+            "pipeline_version": POST_VERIFIER_PIPELINE_VERSION,
+            "reused_from_run_id": reused_from_run_id,
+            "prompt_hashes": {
+                name: value for name, value in prompt_hashes().items()
+                if name in {"production_verifier", "refiner", "readability", "factual_evaluator"}
+            },
+            "pipeline_config": {"max_revision_cycles": MAX_REVISION_CYCLES},
+        })
+    elif pipeline_variant != READABILITY_PRE_VERIFIER:
+        raise ValueError(f"Unknown pipeline variant: {pipeline_variant}")
     return hashlib.sha256(json.dumps(identity, sort_keys=True).encode("utf-8")).hexdigest()
 
 
@@ -724,6 +756,30 @@ class AppendOnlyRunCache:
                 return record
         return None
 
+    def find_reusable_prefix(
+        self,
+        example: SystemExample,
+        pipeline_model: str,
+    ) -> dict[str, Any] | None:
+        """Find the newest completed v7 run with reusable Extractor/Simplifier output."""
+        for record in reversed(self.records(refresh_readability=False)):
+            trace_results = ((record.get("pipeline_trace") or {}).get("results") or {})
+            metadata_matches = all(
+                record.get(key) == value for key, value in example.metadata().items()
+            )
+            if (
+                metadata_matches
+                and record.get("run_status") == "completed"
+                and record.get("source_text") == example.source_text
+                and record.get("pipeline_model") == pipeline_model
+                and record.get("pipeline_version") == PIPELINE_IMPLEMENTATION_VERSION
+                and isinstance(trace_results.get("extractor_enriched"), dict)
+                and isinstance(trace_results.get("reference_definitions"), dict)
+                and isinstance(trace_results.get("simplifier"), str)
+            ):
+                return record
+        return None
+
     def append(self, record: dict[str, Any]) -> None:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         with self.path.open("a", encoding="utf-8") as handle:
@@ -747,12 +803,25 @@ async def run_system_example(
     on_evaluator_text: Callable[[str, str], None] | None = None,
     pipeline_runner: PipelineRunner = run_production_pipeline,
     evaluator_runner: EvaluatorRunner = run_factual_evaluator,
+    pipeline_variant: str = READABILITY_PRE_VERIFIER,
+    reused_prefix: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    key = cache_key(example, pipeline_model, evaluator_model)
+    if pipeline_variant == READABILITY_POST_VERIFIER and reused_prefix is None:
+        raise ValueError("The post-verifier pipeline requires a reusable v7 prefix.")
+    reused_from_run_id = (
+        str(reused_prefix.get("run_id")) if reused_prefix is not None else None
+    )
+    key = cache_key(
+        example,
+        pipeline_model,
+        evaluator_model,
+        pipeline_variant=pipeline_variant,
+        reused_from_run_id=reused_from_run_id,
+    )
     if cache and not force:
-        cached = cache.find(key) or cache.find_compatible(
-            example, pipeline_model, evaluator_model
-        )
+        cached = cache.find(key)
+        if cached is None and pipeline_variant == READABILITY_PRE_VERIFIER:
+            cached = cache.find_compatible(example, pipeline_model, evaluator_model)
         if cached:
             result = copy.deepcopy(cached)
             refresh_cached_readability_metrics(result)
@@ -760,10 +829,18 @@ async def run_system_example(
             result["cached_record_source"] = result.get("result_source")
             result["result_source"] = "cache"
             if result.get("prompt_hashes") != prompt_hashes():
-                result["cache_compatibility"] = "v7_pre_medication_guard"
+                result["cache_compatibility"] = "reviewed_v7_prompt_transition"
             return result
 
-    pipeline = await pipeline_runner(example.source_text, pipeline_model, on_event=on_pipeline_event)
+    pipeline_kwargs: dict[str, Any] = {"on_event": on_pipeline_event}
+    if pipeline_variant == READABILITY_POST_VERIFIER:
+        pipeline_kwargs.update(
+            readability_position=READABILITY_POST_VERIFIER,
+            reused_prefix=reused_prefix,
+        )
+    elif pipeline_variant != READABILITY_PRE_VERIFIER:
+        raise ValueError(f"Unknown pipeline variant: {pipeline_variant}")
+    pipeline = await pipeline_runner(example.source_text, pipeline_model, **pipeline_kwargs)
     final = pipeline.final_explanation
     readability = None
     readability_error = None
@@ -806,7 +883,13 @@ async def run_system_example(
         "pipeline_model": pipeline_model,
         "evaluator_model": evaluator_model,
         "prompt_hashes": prompt_hashes(),
-        "pipeline_version": PIPELINE_IMPLEMENTATION_VERSION,
+        "pipeline_version": (
+            POST_VERIFIER_PIPELINE_VERSION
+            if pipeline_variant == READABILITY_POST_VERIFIER
+            else PIPELINE_IMPLEMENTATION_VERSION
+        ),
+        "pipeline_variant": pipeline_variant,
+        "reused_from_run_id": reused_from_run_id,
         "pipeline_config": pipeline_config(),
         "metric_version": METRIC_IMPLEMENTATION_VERSION,
         "source_text": example.source_text,

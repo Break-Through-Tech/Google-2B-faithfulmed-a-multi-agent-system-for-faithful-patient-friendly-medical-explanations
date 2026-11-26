@@ -10,12 +10,14 @@ from pathlib import Path
 from unittest.mock import patch
 
 from agents.factual_evaluator import factual_evaluator_prompt, indexed_text_spans
-from agents.production_pipeline import PipelineRunResult
+from agents.production_pipeline import READABILITY_POST_VERIFIER, PipelineRunResult
 from evals.system_demo import (
     AppendOnlyRunCache,
     METRIC_IMPLEMENTATION_VERSION,
     PIPELINE_IMPLEMENTATION_VERSION,
+    POST_VERIFIER_PIPELINE_VERSION,
     SystemExample,
+    V7_CURRENT_PROMPT_HASHES,
     V7_MEDICATION_GUARD_PROMPT_HASHES,
     V7_PRE_MEDICATION_GUARD_PROMPT_HASHES,
     V7_READABILITY_REVISION_PROMPT_HASHES,
@@ -528,12 +530,15 @@ class SystemDemoTests(unittest.TestCase):
     def test_existing_v7_cache_survives_reviewed_safety_prompt_patches(self) -> None:
         current = prompt_hashes()
         self.assertEqual(PIPELINE_IMPLEMENTATION_VERSION, "system-pipeline-v7")
-        self.assertEqual(current, V7_READABILITY_REVISION_PROMPT_HASHES)
+        self.assertEqual(current, V7_CURRENT_PROMPT_HASHES)
         self.assertTrue(prompt_hashes_cache_compatible(
             V7_PRE_MEDICATION_GUARD_PROMPT_HASHES, current,
         ))
         self.assertTrue(prompt_hashes_cache_compatible(
             V7_MEDICATION_GUARD_PROMPT_HASHES, current,
+        ))
+        self.assertTrue(prompt_hashes_cache_compatible(
+            V7_READABILITY_REVISION_PROMPT_HASHES, current,
         ))
         future = dict(current)
         future["simplifier"] = "unreviewed-future-prompt"
@@ -560,6 +565,82 @@ class SystemDemoTests(unittest.TestCase):
             })
             found = cache.find_compatible(example, "pipeline-model", "eval-model")
         self.assertEqual(found["run_id"], "legacy-v7-run")
+
+    def test_post_verifier_run_reuses_v7_prefix_and_has_separate_cache(self) -> None:
+        example = SystemExample(
+            "MTSamples", "dev", "M1", "Only source text.", {}, "sample.json",
+        )
+        prefix = {
+            "run_id": "v7-prefix",
+            "run_status": "completed",
+            "source_text": example.source_text,
+            "pipeline_model": "pipeline-model",
+            "pipeline_version": PIPELINE_IMPLEMENTATION_VERSION,
+            "pipeline_trace": {"results": {
+                "extractor_enriched": {"patient_facts": [], "lookup_terms": []},
+                "reference_definitions": {"status": "not_configured", "definitions": []},
+                "simplifier": "Patient draft.",
+            }},
+            **example.metadata(),
+        }
+        calls = {"pipeline": 0, "evaluator": 0}
+
+        async def pipeline(source, model, **kwargs):
+            calls["pipeline"] += 1
+            self.assertEqual(kwargs["readability_position"], READABILITY_POST_VERIFIER)
+            self.assertIs(kwargs["reused_prefix"], prefix)
+            return PipelineRunResult(
+                {"status": "completed", "results": {
+                    "reference_definitions": {"status": "not_configured", "definitions": []},
+                }},
+                "Readable final claim.",
+                True,
+            )
+
+        async def evaluator(
+            source, final, references, model, *, reference_definitions=None, on_text=None,
+        ):
+            calls["evaluator"] += 1
+            return json.dumps({
+                "status": "scored", "status_reason": "Scored.",
+                "claims": [{
+                    "claim_id": "C1", "claim_quote": final,
+                    "classification": "supported", "clinically_meaningful": True,
+                    "source_quote": source, "reason": "Supported.",
+                }],
+            })
+
+        with tempfile.TemporaryDirectory() as directory:
+            cache = AppendOnlyRunCache(Path(directory) / "runs.jsonl")
+            cache.append(prefix)
+            self.assertEqual(
+                cache.find_reusable_prefix(example, "pipeline-model")["run_id"],
+                "v7-prefix",
+            )
+            first = asyncio.run(run_system_example(
+                example, "pipeline-model", "eval-model", cache=cache,
+                pipeline_runner=pipeline, evaluator_runner=evaluator,
+                pipeline_variant=READABILITY_POST_VERIFIER, reused_prefix=prefix,
+            ))
+            cached = asyncio.run(run_system_example(
+                example, "pipeline-model", "eval-model", cache=cache,
+                pipeline_runner=pipeline, evaluator_runner=evaluator,
+                pipeline_variant=READABILITY_POST_VERIFIER, reused_prefix=prefix,
+            ))
+
+        self.assertEqual(calls, {"pipeline": 1, "evaluator": 1})
+        self.assertEqual(first["pipeline_version"], POST_VERIFIER_PIPELINE_VERSION)
+        self.assertEqual(first["pipeline_variant"], READABILITY_POST_VERIFIER)
+        self.assertEqual(first["reused_from_run_id"], "v7-prefix")
+        self.assertEqual(cached["result_source"], "cache")
+        self.assertNotEqual(
+            cache_key(example, "pipeline-model", "eval-model"),
+            cache_key(
+                example, "pipeline-model", "eval-model",
+                pipeline_variant=READABILITY_POST_VERIFIER,
+                reused_from_run_id="v7-prefix",
+            ),
+        )
 
     def test_failed_cache_record_is_not_reused(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

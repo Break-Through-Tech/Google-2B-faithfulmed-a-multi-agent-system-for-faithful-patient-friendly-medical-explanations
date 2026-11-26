@@ -17,6 +17,7 @@ env/
 # caches and human-review decisions, but keep other generated artifacts local.
 eval_results/*
 !eval_results/system_demo_runs.jsonl
+!eval_results/readability_order_runs.jsonl
 !eval_results/system_claim_reviews.jsonl
 *source_embedding_cache*.jsonl
 # Leaderboard manifests, attempts, judge results, blind review items, and reports

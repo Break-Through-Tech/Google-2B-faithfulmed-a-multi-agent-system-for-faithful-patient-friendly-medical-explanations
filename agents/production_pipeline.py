@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import copy
 import json
 import re
 from dataclasses import dataclass
@@ -20,6 +21,9 @@ from .simplifier import create_simplifier_agent
 from .verifier import VERIFIER_DEFAULT_MODEL, run_production_verifier
 
 MAX_REVISION_CYCLES = 2
+READABILITY_PRE_VERIFIER = "readability_pre_verifier"
+READABILITY_POST_VERIFIER = "readability_post_verifier"
+READABILITY_POSITIONS = {READABILITY_PRE_VERIFIER, READABILITY_POST_VERIFIER}
 TraceCallback = Callable[[dict[str, Any]], None]
 AgentExecutor = Callable[[Any, dict[str, Any], str, Callable[[str, str], None]], Awaitable[str]]
 # (source_text, extracted_facts, draft, model, on_text, reference_definitions_json)
@@ -119,6 +123,8 @@ async def run_production_pipeline(
     agent_executor: AgentExecutor = _default_agent_executor,
     verifier_runner: VerifierRunner = _default_verifier_runner,
     lookup: MedicalLookup | None = None,
+    readability_position: str = READABILITY_PRE_VERIFIER,
+    reused_prefix: dict[str, Any] | None = None,
 ) -> PipelineRunResult:
     """Run every production stage while preserving an inspectable in-memory trace.
 
@@ -127,12 +133,18 @@ async def run_production_pipeline(
     """
     if not isinstance(source_text, str) or not source_text.strip():
         raise ValueError("source_text must be a nonempty medical report.")
+    if readability_position not in READABILITY_POSITIONS:
+        raise ValueError(f"Unknown readability position: {readability_position}")
+    if reused_prefix is not None and readability_position != READABILITY_POST_VERIFIER:
+        raise ValueError("A reused prefix is supported only by the post-verifier pipeline.")
     lookup = lookup if lookup is not None else MedicalLookup.from_env()
     trace: dict[str, Any] = {
         "schema": "faithfulmed_production_trace_v3",
         "started_at_utc": _now(),
         "completed_at_utc": None,
         "model": model,
+        "readability_position": readability_position,
+        "reused_from_run_id": reused_prefix.get("run_id") if reused_prefix else None,
         "status": "running",
         "original_report": source_text,
         "stages": [],
@@ -221,50 +233,88 @@ async def run_production_pipeline(
         return definitions
 
     try:
-        atoms_raw = await stage(
-            "extractor", "Extractor", {"original_report": source_text},
-            create_extractor_agent(model), {"source_text": source_text},
-            "Extract patient facts when present and independently identify source-grounded medical terms.",
-        )
-        extractor_json = _strip_json_fence(atoms_raw)
-        extracted = parse_extractor_output(extractor_json)
-        facts = [fact.model_dump() for fact in extracted.patient_facts]
-        lookup_terms = [term.model_dump() for term in extracted.lookup_terms]
-        atoms = patient_facts_json(extracted)
-        trace["results"]["extractor"] = extractor_json
+        if reused_prefix is None:
+            atoms_raw = await stage(
+                "extractor", "Extractor", {"original_report": source_text},
+                create_extractor_agent(model), {"source_text": source_text},
+                "Extract patient facts when present and independently identify source-grounded medical terms.",
+            )
+            extractor_json = _strip_json_fence(atoms_raw)
+            extracted = parse_extractor_output(extractor_json)
+            facts = [fact.model_dump() for fact in extracted.patient_facts]
+            lookup_terms = [term.model_dump() for term in extracted.lookup_terms]
+            atoms = patient_facts_json(extracted)
+            trace["results"]["extractor"] = extractor_json
 
-        # Reference definitions stay separate from the patient-specific facts.
-        definitions = await umls_lookup(facts, lookup_terms)
-        trace["results"]["reference_definitions"] = definitions
-        trace["results"]["extractor_enriched"] = {
-            "patient_facts": facts,
-            "lookup_terms": lookup_terms,
-            "reference_definitions": definitions,
-        }
-        extractor_stage = next(item for item in trace["stages"] if item["stage_id"] == "extractor")
-        extractor_stage["parsed_output"] = trace["results"]["extractor_enriched"]
-        glossary = render_glossary(definitions)
+            # Reference definitions stay separate from the patient-specific facts.
+            definitions = await umls_lookup(facts, lookup_terms)
+            trace["results"]["reference_definitions"] = definitions
+            trace["results"]["extractor_enriched"] = {
+                "patient_facts": facts,
+                "lookup_terms": lookup_terms,
+                "reference_definitions": definitions,
+            }
+            extractor_stage = next(item for item in trace["stages"] if item["stage_id"] == "extractor")
+            extractor_stage["parsed_output"] = trace["results"]["extractor_enriched"]
+            glossary = render_glossary(definitions)
+
+            draft = await stage(
+                "simplifier", "Simplifier", {"original_report": source_text, "extracted_facts": json.loads(atoms),
+                                              "glossary": glossary},
+                create_simplifier_agent(model),
+                {"source_text": source_text, "atoms": atoms, "glossary": glossary},
+                "Create the patient-friendly medical text.",
+            )
+            trace["results"]["simplifier"] = draft  # raw output, both sections
+        else:
+            if reused_prefix.get("source_text") != source_text:
+                raise ValueError("The reused pipeline prefix belongs to a different source report.")
+            reused_results = ((reused_prefix.get("pipeline_trace") or {}).get("results") or {})
+            enriched = reused_results.get("extractor_enriched")
+            raw_simplifier = reused_results.get("simplifier")
+            if not isinstance(enriched, dict) or not isinstance(raw_simplifier, str):
+                raise ValueError("The cached run has no reusable Extractor/Simplifier prefix.")
+            facts = enriched.get("patient_facts")
+            lookup_terms = enriched.get("lookup_terms")
+            definitions = reused_results.get("reference_definitions")
+            if not isinstance(facts, list) or not isinstance(lookup_terms, list) or not isinstance(definitions, dict):
+                raise ValueError("The cached Extractor/Simplifier prefix is incomplete.")
+            atoms = json.dumps(facts, ensure_ascii=False)
+            trace["results"]["extractor"] = reused_results.get("extractor")
+            trace["results"]["extractor_enriched"] = copy.deepcopy(enriched)
+            trace["results"]["reference_definitions"] = copy.deepcopy(definitions)
+            trace["results"]["simplifier"] = raw_simplifier
+            reused_at = _now()
+            for stage_id, agent, output, parsed in (
+                ("extractor", "Extractor", str(reused_results.get("extractor") or ""), enriched),
+                ("umls_lookup", "UMLSLookup", json.dumps(definitions, ensure_ascii=False), definitions),
+                ("simplifier", "Simplifier", raw_simplifier, None),
+            ):
+                record = {
+                    "stage_id": stage_id, "agent": agent, "iteration": None,
+                    "status": "completed", "started_at_utc": reused_at,
+                    "completed_at_utc": reused_at,
+                    "input": {"reused_from_run_id": reused_prefix.get("run_id")},
+                    "output": output, "error": None, "reused": True,
+                }
+                if parsed is not None:
+                    record["parsed_output"] = copy.deepcopy(parsed)
+                trace["stages"].append(record)
+                _emit(on_event, {"type": "stage_completed", "record": record})
+            draft = raw_simplifier
+
         verifier_definitions = reference_definitions_for_prompt(definitions)
-
-        draft = await stage(
-            "simplifier", "Simplifier", {"original_report": source_text, "extracted_facts": json.loads(atoms),
-                                          "glossary": glossary},
-            create_simplifier_agent(model),
-            {"source_text": source_text, "atoms": atoms, "glossary": glossary},
-            "Create the patient-friendly medical text.",
-        )
-        trace["results"]["simplifier"] = draft  # raw output, both sections
         draft, trace["results"]["simplifier_review_flags"] = split_simplifier_output(draft)
 
-        # Readability can rewrite text, so it must run before verification. The
-        # exact draft ultimately shown to the user is now always accepted by the
-        # Verifier; no unchecked model stage runs after acceptance.
-        draft = await stage(
-            "readability", "Readability", {"simplified_draft": draft},
-            create_readability_agent(model), {"draft": draft},
-            "Return the improved draft.",
-        )
-        trace["results"]["readability"] = draft
+        if readability_position == READABILITY_PRE_VERIFIER:
+            # In the production order, the exact draft shown to the user is
+            # accepted by the Verifier; no unchecked model stage follows it.
+            draft = await stage(
+                "readability", "Readability", {"simplified_draft": draft},
+                create_readability_agent(model), {"draft": draft},
+                "Return the improved draft.",
+            )
+            trace["results"]["readability"] = draft
 
         accepted = False
         revisions = 0
@@ -301,6 +351,14 @@ async def run_production_pipeline(
             trace["latest_draft"] = draft
             _emit(on_event, {"type": "pipeline_not_accepted", "trace": trace})
             return PipelineRunResult(trace, None, False)
+
+        if readability_position == READABILITY_POST_VERIFIER:
+            draft = await stage(
+                "readability", "Readability", {"verified_draft": draft},
+                create_readability_agent(model), {"draft": draft},
+                "Return the improved draft.",
+            )
+            trace["results"]["readability"] = draft
 
         final = draft
         trace["results"]["final_explanation"] = final

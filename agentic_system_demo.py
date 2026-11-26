@@ -16,7 +16,11 @@ import streamlit as st
 from markdown_it import MarkdownIt
 
 from agents.factual_evaluator import indexed_text_spans
-from agents.production_pipeline import MAX_REVISION_CYCLES
+from agents.production_pipeline import (
+    MAX_REVISION_CYCLES,
+    READABILITY_POST_VERIFIER,
+    READABILITY_PRE_VERIFIER,
+)
 from agents.verifier import VERIFIER_DEFAULT_MODEL
 from evals.baseline_system import (
     DEFAULT_BASELINE_RESULTS_PATH,
@@ -31,8 +35,10 @@ from evals.baseline_system import (
 from evals.claim_review import ReviewDecisionStore, review_metrics, reviewable_claims
 from evals.system_demo import (
     AppendOnlyRunCache,
+    PIPELINE_IMPLEMENTATION_VERSION,
     SystemExample,
     aggregate_metrics,
+    cache_key,
     load_system_examples,
     record_for_download,
     refresh_cached_factual_evaluation,
@@ -53,6 +59,7 @@ from evals.source_matching import (
 )
 
 ROOT = Path(__file__).resolve().parent
+READABILITY_ORDER_CACHE_PATH = ROOT / "eval_results" / "readability_order_runs.jsonl"
 INLINE_MARKDOWN = MarkdownIt("commonmark", {"html": False})
 AMBIGUOUS_MATCH_MARGIN = 0.05
 
@@ -322,9 +329,14 @@ def per_example_table(records: list[dict[str, Any]]) -> None:
     st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
 
 
-def readability_distributions(records: list[dict[str, Any]]) -> None:
+def readability_distributions(
+    records: list[dict[str, Any]], *, key_prefix: str = "baseline",
+) -> None:
     """Preserve the baseline Workbench distribution views in the combined app."""
-    if not st.toggle("Load readability distributions", value=False, key="baseline_readability_distributions"):
+    if not st.toggle(
+        "Load readability distributions", value=False,
+        key=f"{key_prefix}_readability_distributions",
+    ):
         return
     rows = [
         record["readability_metrics"]
@@ -921,13 +933,20 @@ def render_live(
     label: str,
     stages: dict[str, dict[str, Any]],
     evaluator_running: bool = False,
+    pipeline_variant: str = READABILITY_PRE_VERIFIER,
 ) -> None:
     with container.container():
         st.markdown(f"#### Running {label}")
-        display_stages = [
-            "Extractor", "UMLSLookup", "Simplifier", "Readability", "Verifier / Refiner",
-            "Factual evaluator",
-        ]
+        if pipeline_variant == READABILITY_POST_VERIFIER:
+            display_stages = [
+                "Extractor", "UMLSLookup", "Simplifier", "Verifier / Refiner", "Readability",
+                "Factual evaluator",
+            ]
+        else:
+            display_stages = [
+                "Extractor", "UMLSLookup", "Simplifier", "Readability", "Verifier / Refiner",
+                "Factual evaluator",
+            ]
         states = {name: "waiting" for name in display_stages}
         for record in stages.values():
             name = "Verifier / Refiner" if record.get("agent") in {"Verifier", "Refiner"} else record.get("agent")
@@ -950,7 +969,11 @@ def render_live(
                 "Simplifier": "Simplifier is drafting the patient-friendly explanation.",
                 "Verifier": "Verifier is checking the current draft.",
                 "Refiner": "Refiner is applying targeted corrections.",
-                "Readability": "Readability is improving the draft before its final verification.",
+                "Readability": (
+                    "Readability is improving the verified draft before factual evaluation."
+                    if pipeline_variant == READABILITY_POST_VERIFIER
+                    else "Readability is improving the draft before its final verification."
+                ),
             }
             st.caption(messages.get(latest.get("agent"), f"{latest.get('agent')} is running."))
             st.markdown(
@@ -967,8 +990,11 @@ async def execute_examples(
     force: bool, persist: bool, live_placeholder: Any,
     embedding_cache: EmbeddingCache, embedding_settings: EmbeddingSettings,
     embed_batch: Any, source_match_threshold: float,
+    pipeline_variant: str = READABILITY_PRE_VERIFIER,
+    reused_prefixes: dict[tuple[str, str, str], dict[str, Any]] | None = None,
+    run_cache: AppendOnlyRunCache | None = None,
 ) -> list[dict[str, Any]]:
-    cache = AppendOnlyRunCache() if persist else None
+    cache = (run_cache or AppendOnlyRunCache()) if persist else None
     records: list[dict[str, Any]] = []
     progress = st.progress(0, text="Preparing selected examples")
     for position, example in enumerate(examples, start=1):
@@ -982,16 +1008,26 @@ async def execute_examples(
             record = event.get("record")
             if record:
                 stages[record["stage_id"]] = record
-            render_live(live_placeholder, label, stages, evaluator_running)
+            render_live(
+                live_placeholder, label, stages, evaluator_running,
+                pipeline_variant=pipeline_variant,
+            )
 
         def on_evaluator_start() -> None:
             nonlocal evaluator_running
             evaluator_running = True
-            render_live(live_placeholder, label, stages, evaluator_running)
+            render_live(
+                live_placeholder, label, stages, evaluator_running,
+                pipeline_variant=pipeline_variant,
+            )
 
+        reused_prefix = (reused_prefixes or {}).get(
+            (example.dataset, example.split, example.example_id)
+        )
         record = await run_system_example(
             example, pipeline_model, evaluator_model, cache=cache, force=force, persist=persist,
             on_pipeline_event=on_event, on_evaluator_start=on_evaluator_start,
+            pipeline_variant=pipeline_variant, reused_prefix=reused_prefix,
         )
         final = record.get("final_explanation")
         if final:
@@ -1253,7 +1289,7 @@ def render_baseline_workspace(
         embedding_cache,
         key_prefix="baseline",
     )
-    readability_distributions(current)
+    readability_distributions(current, key_prefix="baseline")
     review_version = review_store.path.stat().st_mtime_ns if review_store.path.exists() else 0
     baseline_ids = ":".join(str(record.get("run_id", "")) for record in current)
     deferred_download(
@@ -1275,6 +1311,299 @@ def render_baseline_workspace(
     )
 
 
+def render_multi_agent_baseline_workspace(
+    pipeline_model: str,
+    evaluator_model: str,
+    source_match_threshold: float,
+    embedding_cache: EmbeddingCache,
+) -> None:
+    """Load all MTSample pipeline outputs through the normal generation cache."""
+    examples = [
+        example
+        for split in ("scratch", "dev", "test")
+        for example in load_system_examples(split, ["MTSamples"])
+    ]
+    cache = AppendOnlyRunCache(READABILITY_ORDER_CACHE_PATH)
+    review_store = ReviewDecisionStore()
+    latest = {}
+    for record in cache.records():
+        if (
+            record.get("dataset") == "MTSamples"
+            and record.get("run_status") == "completed"
+            and record.get("pipeline_version") == PIPELINE_IMPLEMENTATION_VERSION
+            and record.get("pipeline_model") == pipeline_model
+            and record.get("evaluator_model") == evaluator_model
+        ):
+            latest[(record.get("split"), record.get("example_id"))] = record
+    cached_count = sum((example.split, example.example_id) in latest for example in examples)
+
+    status = st.columns(3)
+    status[0].metric("MTSamples", len(examples))
+    status[1].metric("Cached outputs", cached_count)
+    status[2].metric("Missing outputs", len(examples) - cached_count)
+    st.caption(
+        "The batch includes every available MTSample across scratch, dev, and test. This is a "
+        "frozen view of completed v7 pipeline outputs and factual evaluations; opening it makes "
+        "no model or embedding calls."
+    )
+
+    missing = len(examples) - cached_count
+    if missing:
+        st.warning(
+            f"{missing} sample(s) do not have a completed cached v7 output for these models. "
+            "Run them from Full agentic system before opening the complete baseline."
+        )
+
+    run_all = st.button(
+        f"Open all {len(examples)} cached MTSamples",
+        type="primary",
+        use_container_width=True,
+        key="multi_agent_baseline_run_all",
+        disabled=bool(missing),
+    )
+    if run_all:
+        records = []
+        for example in examples:
+            record = json.loads(json.dumps(latest[(example.split, example.example_id)]))
+            record["cached_record_source"] = record.get("result_source")
+            record["result_source"] = "cache"
+            records.append(record)
+        st.session_state["faithfulmed_multi_agent_baseline_records"] = records
+        st.session_state["faithfulmed_multi_agent_baseline_models"] = (
+            pipeline_model,
+            evaluator_model,
+        )
+
+    current = st.session_state.get("faithfulmed_multi_agent_baseline_records", [])
+    if (
+        current
+        and st.session_state.get("faithfulmed_multi_agent_baseline_models")
+        != (pipeline_model, evaluator_model)
+    ):
+        current = []
+        st.info("Run the batch to load results for the selected models.")
+    if not current:
+        st.info("Use the button above to load all cached MTSample results into one aggregate.")
+        return
+
+    st.markdown('<div class="fm-rule"></div>', unsafe_allow_html=True)
+    render_results(
+        current,
+        review_store,
+        source_match_threshold,
+        embedding_cache,
+        key_prefix="multi_agent_baseline",
+    )
+    readability_distributions(current, key_prefix="multi_agent_baseline")
+    review_version = review_store.path.stat().st_mtime_ns if review_store.path.exists() else 0
+    record_ids = ":".join(str(record.get("run_id", "")) for record in current)
+    deferred_download(
+        "Download multi-agent baseline results (JSON)",
+        data_factory=lambda: json.dumps(
+            [
+                record_with_reviews(record, review_store, source_match_threshold)
+                for record in current
+            ],
+            ensure_ascii=False,
+            indent=2,
+        ),
+        file_name="faithfulmed_multi_agent_baseline_results.json",
+        mime="application/json",
+        key="multi_agent_baseline_results_download",
+        cache_token=f"{record_ids}:{source_match_threshold:.4f}:{review_version}",
+    )
+
+
+def render_post_verifier_workspace(
+    pipeline_model: str,
+    evaluator_model: str,
+    source_match_threshold: float,
+    embedding_cache: EmbeddingCache,
+    embedding_settings: EmbeddingSettings,
+) -> None:
+    """Run the post-verifier Readability experiment from cached v7 prefixes."""
+    examples = [
+        example
+        for split in ("scratch", "dev", "test")
+        for example in load_system_examples(split, ["MTSamples"])
+    ]
+    cache = AppendOnlyRunCache(READABILITY_ORDER_CACHE_PATH)
+    review_store = ReviewDecisionStore()
+    saved_records = cache.records(refresh_readability=False)
+    examples_by_identity = {
+        (example.dataset, example.split, example.example_id): example
+        for example in examples
+    }
+    prefixes: dict[tuple[str, str, str], dict[str, Any]] = {}
+    for record in saved_records:
+        identity = (
+            str(record.get("dataset")),
+            str(record.get("split")),
+            str(record.get("example_id")),
+        )
+        example = examples_by_identity.get(identity)
+        results = ((record.get("pipeline_trace") or {}).get("results") or {})
+        if (
+            example is not None
+            and record.get("run_status") == "completed"
+            and record.get("pipeline_version") == PIPELINE_IMPLEMENTATION_VERSION
+            and record.get("pipeline_model") == pipeline_model
+            and record.get("source_text") == example.source_text
+            and isinstance(results.get("extractor_enriched"), dict)
+            and isinstance(results.get("reference_definitions"), dict)
+            and isinstance(results.get("simplifier"), str)
+        ):
+            prefixes[identity] = record
+
+    completed_by_key = {
+        record.get("cache_key"): record
+        for record in saved_records
+        if record.get("run_status") == "completed" and isinstance(record.get("cache_key"), str)
+    }
+
+    def completed_post_record(example: SystemExample) -> dict[str, Any] | None:
+        prefix = prefixes.get((example.dataset, example.split, example.example_id))
+        if prefix is None:
+            return None
+        key = cache_key(
+            example,
+            pipeline_model,
+            evaluator_model,
+            pipeline_variant=READABILITY_POST_VERIFIER,
+            reused_from_run_id=str(prefix.get("run_id")),
+        )
+        return completed_by_key.get(key)
+
+    reusable_count = len(prefixes)
+    completed_count = sum(completed_post_record(example) is not None for example in examples)
+    status = st.columns(4)
+    status[0].metric("MTSamples", len(examples))
+    status[1].metric("Reusable prefixes", reusable_count)
+    status[2].metric("Post-verifier outputs", completed_count)
+    status[3].metric("Missing prefixes", len(examples) - reusable_count)
+    st.caption(
+        "Extractor, UMLS lookup, and Simplifier outputs come from the latest completed v7 run. "
+        "Only the patient-facing Simplifier section is sent forward; REVIEW FLAGS remain stored "
+        "for inspection but are never included in Verifier, Refiner, Readability, or factual-evaluator inputs."
+    )
+
+    labels = {
+        f"{example.split} · {example.example_id}": example
+        for example in examples
+        if (example.dataset, example.split, example.example_id) in prefixes
+    }
+    select_all = st.checkbox(
+        f"Select all {len(labels)} reusable MTSamples",
+        value=False,
+        key="post_verifier_select_all",
+    )
+    if select_all:
+        selected = list(labels.values())
+        st.caption(f"Selected all {len(selected)} reusable samples.")
+    else:
+        chosen = st.multiselect(
+            "Samples to run",
+            list(labels),
+            default=list(labels)[:min(5, len(labels))],
+            key="post_verifier_samples",
+        )
+        selected = [labels[label] for label in chosen]
+
+    uncached = [example for example in selected if completed_post_record(example) is None]
+    st.info(
+        f"Selected {len(selected)} · existing post-verifier results {len(selected) - len(uncached)} · "
+        f"new samples {len(uncached)}. Each new sample needs at least 3 Gemini calls "
+        "(Verifier, Readability, factual evaluator); a requested revision adds one Refiner and "
+        "one follow-up Verifier call per cycle."
+    )
+    normal_column, force_column = st.columns(2)
+    missing_key_for_normal = bool(uncached) and not os.getenv("GOOGLE_API_KEY")
+    normal = normal_column.button(
+        "Run or reuse post-verifier results",
+        type="primary",
+        disabled=not selected or missing_key_for_normal,
+        use_container_width=True,
+        key="post_verifier_run",
+        help="Uses saved post-verifier results when present and runs only missing samples.",
+    )
+    force = force_column.button(
+        "Force fresh post-verifier run",
+        disabled=not selected or not os.getenv("GOOGLE_API_KEY"),
+        use_container_width=True,
+        key="post_verifier_force",
+        help="Reuses Extractor/Simplifier artifacts but reruns Verifier, Readability, and factual evaluation.",
+    )
+    if missing_key_for_normal:
+        st.warning("GOOGLE_API_KEY is required to run the selected samples without cached post-verifier results.")
+
+    if normal and not uncached:
+        records = []
+        for example in selected:
+            record = json.loads(json.dumps(completed_post_record(example)))
+            record["cached_record_source"] = record.get("result_source")
+            record["result_source"] = "cache"
+            records.append(record)
+        st.session_state["faithfulmed_post_verifier_records"] = records
+        st.session_state["faithfulmed_post_verifier_models"] = (pipeline_model, evaluator_model)
+    elif normal or force:
+        from google import genai
+
+        client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
+        live_placeholder = st.empty()
+        records = asyncio.run(execute_examples(
+            selected,
+            pipeline_model,
+            evaluator_model,
+            force,
+            True,
+            live_placeholder,
+            embedding_cache,
+            embedding_settings,
+            google_batch_embedder(client),
+            source_match_threshold,
+            pipeline_variant=READABILITY_POST_VERIFIER,
+            reused_prefixes=prefixes,
+            run_cache=cache,
+        ))
+        st.session_state["faithfulmed_post_verifier_records"] = records
+        st.session_state["faithfulmed_post_verifier_models"] = (pipeline_model, evaluator_model)
+
+    current = st.session_state.get("faithfulmed_post_verifier_records", [])
+    if (
+        current
+        and st.session_state.get("faithfulmed_post_verifier_models")
+        != (pipeline_model, evaluator_model)
+    ):
+        current = []
+        st.info("Run the samples to load results for the selected models.")
+    if not current:
+        st.info("Choose samples above to create or open the post-verifier comparison.")
+        return
+
+    st.markdown('<div class="fm-rule"></div>', unsafe_allow_html=True)
+    render_results(
+        current,
+        review_store,
+        source_match_threshold,
+        embedding_cache,
+        key_prefix="post_verifier",
+    )
+    readability_distributions(current, key_prefix="post_verifier")
+    record_ids = ":".join(str(record.get("run_id", "")) for record in current)
+    deferred_download(
+        "Download post-verifier results (JSON)",
+        data_factory=lambda: json.dumps(
+            [record_for_download(record) for record in current],
+            ensure_ascii=False,
+            indent=2,
+        ),
+        file_name="faithfulmed_readability_post_verifier_results.json",
+        mime="application/json",
+        key="post_verifier_results_download",
+        cache_token=f"{record_ids}:{source_match_threshold:.4f}",
+    )
+
+
 def main() -> None:
     load_env()
     st.set_page_config(page_title="FaithfulMed System Demo", page_icon="🩺", layout="wide")
@@ -1282,7 +1611,12 @@ def main() -> None:
     st.markdown('<div class="fm-kicker">FaithfulMed · system evaluation</div>', unsafe_allow_html=True)
     workspace = st.segmented_control(
         "Evaluation workspace",
-        ["Full agentic system", "Single-agent baseline"],
+        [
+            "Full agentic system",
+            "Readability pre-verifier",
+            "Readability post-verifier",
+            "Single-agent baseline",
+        ],
         default="Full agentic system",
         selection_mode="single",
         label_visibility="collapsed",
@@ -1292,6 +1626,77 @@ def main() -> None:
     matching_config = load_source_matching_config()
     embedding_settings = settings_from_config(matching_config)
     embedding_cache = EmbeddingCache()
+
+    if workspace == "Readability post-verifier":
+        st.title("Readability after the Verifier–Refiner loop")
+        st.markdown(
+            '<div class="fm-lead">Compare the alternate order without regenerating Extractor '
+            'or Simplifier output: cached prefix → Verifier–Refiner loop → Readability → '
+            'independent factual evaluator.</div>',
+            unsafe_allow_html=True,
+        )
+        with st.sidebar:
+            st.subheader("Post-verifier experiment")
+            pipeline_model = st.text_input(
+                "Pipeline model", VERIFIER_DEFAULT_MODEL,
+                key="post_verifier_pipeline_model",
+            )
+            evaluator_model = st.text_input(
+                "Factual evaluator model", VERIFIER_DEFAULT_MODEL,
+                key="post_verifier_evaluator_model",
+            )
+            source_match_threshold = st.slider(
+                "Source match threshold", min_value=0.0, max_value=1.0,
+                value=float(matching_config["embedding_match_threshold"]), step=0.01,
+                key="post_verifier_source_match_threshold",
+                help="This threshold does not change Gemini inputs.",
+            )
+            st.caption(f"Maximum: {MAX_REVISION_CYCLES} Verifier-to-Refiner revision cycles.")
+            st.warning(
+                "Readability runs after acceptance in this experiment, so its rewrite is not "
+                "rechecked by the Verifier. The independent factual evaluator assesses the final rewrite."
+            )
+        render_post_verifier_workspace(
+            pipeline_model,
+            evaluator_model,
+            source_match_threshold,
+            embedding_cache,
+            embedding_settings,
+        )
+        return
+
+    if workspace == "Readability pre-verifier":
+        st.title("Readability before the Verifier–Refiner loop")
+        st.markdown(
+            '<div class="fm-lead">Load all 42 cached MTSample outputs from the full multi-agent '
+            'pipeline where Readability ran before verification. Compare them in one combined '
+            'table, metric summary, review workspace, and download.</div>',
+            unsafe_allow_html=True,
+        )
+        with st.sidebar:
+            st.subheader("Pre-verifier results")
+            pipeline_model = st.text_input(
+                "Pipeline model", VERIFIER_DEFAULT_MODEL,
+                key="multi_agent_baseline_pipeline_model",
+            )
+            evaluator_model = st.text_input(
+                "Factual evaluator model", VERIFIER_DEFAULT_MODEL,
+                key="multi_agent_baseline_evaluator_model",
+            )
+            source_match_threshold = st.slider(
+                "Source match threshold", min_value=0.0, max_value=1.0,
+                value=float(matching_config["embedding_match_threshold"]), step=0.01,
+                key="multi_agent_baseline_source_match_threshold",
+                help="This only relabels source similarities when cached matches are available.",
+            )
+            st.info("Cached pipeline outputs are opened without new model or embedding calls.")
+        render_multi_agent_baseline_workspace(
+            pipeline_model,
+            evaluator_model,
+            source_match_threshold,
+            embedding_cache,
+        )
+        return
 
     if workspace == "Single-agent baseline":
         st.title("Single-agent baseline evaluation")
