@@ -201,11 +201,7 @@ def production_verifier_prompt(
     return PRODUCTION_VERIFIER_PROMPT + "\n\nINPUT JSON:\n" + json.dumps(payload, ensure_ascii=False)
 
 
-def create_verifier_agent(
-    model: str = VERIFIER_DEFAULT_MODEL,
-    *,
-    candidate_state_key: str = "candidate_text",
-) -> Any:
+def create_verifier_agent(model: str = VERIFIER_DEFAULT_MODEL) -> Any:
     """Create the current Verifier without claiming a final project schema."""
 
     try:
@@ -218,28 +214,6 @@ def create_verifier_agent(
         instruction="{evaluation_prompt}",
         output_key="verdict",
     )
-
-
-async def run_verifier(
-    source_text: str,
-    candidate_text: str,
-    model: str = VERIFIER_DEFAULT_MODEL,
-    *,
-    question: str = "",
-    evidence_context: str | None = None,
-) -> str:
-    """Compatibility wrapper for an ad-hoc answer-only Verifier request."""
-    from evals.verifier_workbench import prompt_for
-    payload = {
-        "question_id": "ad_hoc",
-        "question": question,
-        "machine_generated_answer": {
-            "method_id": "ad_hoc",
-            "answer": candidate_text,
-            "answer_sentences": [],
-        },
-    }
-    return await run_medaesqa_verifier(prompt_for(payload), model)
 
 
 async def run_medaesqa_verifier(evaluation_prompt: str, model: str = VERIFIER_DEFAULT_MODEL) -> str:

@@ -112,7 +112,7 @@ Extractor (atoms) → Simplifier (+RAG) → Verifier (LLM-judge) → Refiner →
 
 Two decisions that will save the team weeks — please take these seriously (they come directly from the SME technical review):
 1. **Use a deterministic DAG, not free-form recursive agent loops.** Open-ended "agents call agents until satisfied" designs are hard to debug, blow through rate limits, and produce non-reproducible traces. In **Google ADK** this is a `SequentialAgent` for the main flow plus a `LoopAgent(max_iterations=2)` for the one place you want iteration (Refiner↔Verifier). A plain ordered Python function is a fine v1 too.
-2. **Build the evaluation harness in Week 1–2, before the agents.** You can't improve what you can't measure. A starter lives in `notebooks/eval_harness.py`, and an ADK pipeline skeleton in `notebooks/adk_pipeline.py`.
+2. **Build the evaluation harness in Week 1–2, before the agents.** You can't improve what you can't measure. The implemented evaluation helpers live in `evals/`, and the production pipeline lives in `agents/production_pipeline.py`.
 
 **Recommended stack (GCP-first):**
 - **Models:** **Gemini** (via Google AI Studio — free API key, no billing) as primary; **Gemma-2** open weights (runnable on the free Colab tier) for the open-model comparison; **one external open model** (e.g., Llama-3 via Groq, called through ADK's `LiteLlm`) to keep the leaderboard honest.
@@ -157,7 +157,7 @@ Two decisions that will save the team weeks — please take these seriously (the
 
 **Concepts to search:** LLM-as-a-judge (and its position/verbosity/self-preference biases); faithfulness / hallucination evaluation in summarization (FaithBench as a touchstone); Cohen's κ / inter-annotator agreement; FHIR basics (Condition, MedicationRequest, Procedure, CarePlan).
 
-**Starter code (this repo):** `notebooks/eval_harness.py`, `notebooks/adk_pipeline.py`, and `requirements.txt`.
+**Implemented code (this repo):** `evals/`, `agents/production_pipeline.py`, and `requirements.txt`.
 
 *Explore beyond these, and share anything interesting you find with the team!*
 
@@ -185,7 +185,7 @@ Two decisions that will save the team weeks — please take these seriously (the
 1. Read this overview and note questions for our first meeting.
 2. Clone the repo, install `requirements.txt` in Colab, get a free **Google AI Studio** key, and make one successful Gemini call.
 3. Download MedAESQA (see `data/README.md`); skim MTSamples and generate a few Synthea patients.
-4. Run `notebooks/eval_harness.py` and skim `notebooks/adk_pipeline.py` to see the pipeline shape.
+4. Run the offline tests and skim `agents/production_pipeline.py` to see the pipeline shape.
 5. Read the GitHub Projects docs (https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) and help set up the team board.
 6. Claim an agent — Extractor / Simplifier / Verifier / Refiner / Readability.
 

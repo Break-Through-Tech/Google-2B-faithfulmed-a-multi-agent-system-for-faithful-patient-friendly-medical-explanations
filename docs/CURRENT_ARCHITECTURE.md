@@ -1,29 +1,31 @@
 # FaithfulMed current architecture
 
-FaithfulMed currently has five individual Google ADK agents, one notebook-based integration point, and one small Verifier evaluation module. The complete medical workflow is experimental and is not yet a finished system.
+FaithfulMed has five Google ADK generation agents, a Python production orchestrator, two runtime demos, and offline evaluation tools.
 
 ## Current tree
 
 ```text
 agents/
-├── __init__.py          # one-shot ADK helper
-├── extractor.py         # Extractor agent
-├── simplifier.py        # Simplifier agent
-├── verifier.py          # Verifier agent
-├── refiner.py           # Refiner agent
-└── readability.py       # Readability agent
+├── __init__.py             # ADK execution helpers
+├── extractor.py            # structured facts and lookup terms
+├── medical_lookup.py       # Python UMLS lookup
+├── simplifier.py           # patient-friendly draft
+├── readability.py          # readability rewrite
+├── verifier.py             # MedAESQA and production verification
+├── refiner.py              # targeted corrections
+└── production_pipeline.py  # observable bounded pipeline
 evals/
-├── __init__.py
-└── verifier_eval.py     # offline Verifier scoring
-  #add your evals for your agents here
+├── system_demo.py          # datasets, cache, factual evaluation
+├── readability_eval.py     # shared readability metrics
+├── verifier_workbench.py   # MedAESQA workbench helpers
+└── leaderboard*.py         # model comparison and reports
 tests/
-└── test_verifier_eval.py
-  #add your own tests for your agents here
-notebooks/
-├── adk_pipeline.py      # current integration point
-└── eval_harness.py      # provided starter evaluation script
+└── test_*.py               # offline unit tests
+demo/
+├── server.py               # FastAPI and saved-run replay
+└── web/                    # React frontend
 data/
-└── validate_annotations.py
+└── validate_annotations.py # annotation validator
 docs/
 └── CURRENT_ARCHITECTURE.md
 ```
@@ -32,18 +34,12 @@ Dataset files, annotations, manifests, data documentation, `.env.example`, and t
 
 ## What each Python file does
 
-- `agents/__init__.py` contains `DEFAULT_MODEL` and `run_agent_once()`. The helper creates one isolated ADK session and returns final text.
-- `agents/extractor.py` owns `create_extractor_agent()` and `run_extractor()`. Its schema separates report-grounded `patient_facts` from source-grounded `lookup_terms`; it never generates definitions.
-- `agents/simplifier.py` owns `create_simplifier_agent()` and `run_simplifier()`. It may use Python-fetched UMLS definitions for general term explanations but not patient-specific claims.
-- `agents/verifier.py` owns answer- and citation-level Verifier builders. Both receive a question, candidate text, and evidence context; the citation form receives the assessed evidence snippets only.
-- `agents/refiner.py` owns `create_refiner_agent()` and `run_refiner()`. The final revision contract remains a TODO.
-- `agents/readability.py` owns `create_readability_agent()` and `run_readability()`. Its owner must decide whether the final result is a score, revised text, or both.
-- `evals/__init__.py` exposes the small Verifier evaluation types and scoring function.
-- `evals/verifier_eval.py` flattens real MedAESQA answer or citation records, saves/loads JSONL predictions, and scores each level separately.
-- `tests/test_verifier_eval.py` tests the documented MedAESQA mappings with tiny offline fixtures. It never imports ADK or calls Gemini.
-- `notebooks/adk_pipeline.py` imports the five agent builders and assembles the current sequence plus the bounded Verifier/Refiner loop.
-- `notebooks/eval_harness.py` is provided starter material. It offers readability scores, a target-grade check, a basic loader for the missing full MedAESQA file, and accuracy/Cohen's kappa helpers.
-- `data/validate_annotations.py` is the existing read-only annotation validator and is separate from agent evaluation.
+- `agents/production_pipeline.py` is the single end-to-end generation path used by both demos.
+- `evals/system_demo.py` runs the pipeline, independent factual evaluator, metrics, and append-only cache.
+- `agentic_system_demo.py` is the Streamlit evaluation interface.
+- `demo/server.py` and `demo/web/` provide the hosted FastAPI/React demo.
+- `workbench.py` provides the individual Baseline, Verifier, Refiner, and Readability workbenches.
+- `data/validate_annotations.py` is a separate read-only annotation validator.
 
 ## Reference definitions (UMLS)
 
@@ -123,15 +119,11 @@ The frozen `test_final` manifest runs only with `--final`, after the setup is fi
 ## Agent, pipeline, test, and evaluation
 
 - An **agent** is one ADK `LlmAgent` that performs one job.
-- The **ADK pipeline** connects agents and passes state between them. It currently lives only in `notebooks/adk_pipeline.py`.
+- The **production pipeline** in `agents/production_pipeline.py` connects agents, performs UMLS lookup, bounds the Verifier/Refiner loop, and records every stage.
 - A **unit test** checks deterministic Python behavior with small synthetic inputs and no model call.
 - An **agent evaluation** compares saved model predictions with independent human labels. Verifier metrics can be recalculated without calling Gemini again.
 
-## Why integration stays in the notebook
-
-The team is still developing the individual agents. Keeping integration in `notebooks/adk_pipeline.py` makes the stage order and intermediate ADK state easy to inspect while prompts and outputs are changing. After the workflow is stable, reusable orchestration may move into a normal production module. That module does not exist yet.
-
-The notebook imports the five `create_*_agent()` functions. `build_pipeline()` creates each agent, connects Verifier and Refiner in a loop capped at two passes, then returns the sequential ADK agent. Building these objects does not call Gemini. Running the returned agent through an ADK runner does.
+The production flow is Extractor, optional Python UMLS lookup, Simplifier, Readability, and the bounded Verifier/Refiner loop. The independent factual evaluator runs only after the production pipeline returns an accepted final explanation.
 
 ## Run one agent independently
 
@@ -152,38 +144,15 @@ Use only scratch or development material while building prompts. The same patter
 
 ## Run the Verifier independently
 
-To run a small MedAESQA sample (five answers by default), load no shell variables manually: the command reads `GOOGLE_API_KEY` from the repository `.env` file.
-
-```bash
-# CALLS GEMINI ON FIVE ANSWERS
-python3 -m evals.run_verifier_examples --limit 5
-```
-
-It prints each raw result and writes `verifier_first_5_predictions.jsonl`; use `--output path/to/file.jsonl` to choose another location. This is generation, not scoring, and it never provides gold labels to the Verifier.
-
-```bash
-# CALLS GEMINI AND MAY USE API QUOTA
-python3 - <<'PY'
-import asyncio
-from agents.verifier import run_verifier
-
-raw_prediction = asyncio.run(run_verifier(
-    source_text="Scratch development medical source.",
-    candidate_text="Scratch generated explanation.",
-))
-print(raw_prediction)
-PY
-```
-
-This returns raw response text. Pass it to `evals.verifier_eval.parse_answer_prediction()` before saving it. For MedAESQA answer evaluation, pass `question=` and use the machine answer as `candidate_text`; do not provide the gold label to the agent.
+Start `python -m streamlit run workbench.py`, choose **Verifier**, and select scratch or development records. The workbench keeps human labels out of the model prompt and caches raw responses by model, prompt version, and exact input.
 
 ## Evaluate the Verifier independently
 
 Generation and scoring are separate:
 
-1. Call `agents.verifier.run_verifier()` or `run_citation_verifier()` only when intentionally generating predictions, then parse each raw result with the matching parser.
-2. Use `save_predictions()` to keep raw predictions in JSONL.
-3. Later, use `load_predictions()` and `score_predictions()` with independent human labels. This step is offline and makes no Gemini call.
+1. Generate and cache raw predictions through the Verifier workbench.
+2. Parse the saved output with the matching evaluator.
+3. Recalculate metrics later from saved predictions and independent human labels. This step is offline and makes no Gemini call.
 
 MedAESQA has two distinct Verifier-relevant levels:
 
@@ -206,15 +175,7 @@ Score answer and citation examples in separate calls. Malformed model output and
 
 ## Shared evaluation code
 
-There is no generalized evaluation framework. `evals/verifier_eval.py` contains only what current Verifier work needs. No Extractor, Simplifier, Refiner, Readability, end-to-end, ablation, or system-comparison evaluator exists.
-
-When a teammate is ready to evaluate an agent, they should inspect the real labels available for that task, then create one plainly named evaluator and one offline test file. They should not copy Verifier label meanings or create placeholder scores. Those teammate evaluation files do not exist yet because their data contracts and metrics have not been agreed.
-
-## Starter evaluation notebook
-
-`notebooks/eval_harness.py` currently provides Flesch-Kincaid grade, SMOG, difficult-word fraction, word count, an eighth-grade target check, a simple `data/medaesqa_v1.json` loader, accuracy, and Cohen's kappa.
-
-It is not executable in the current local environment until `textstat` and scikit-learn are installed. The full MedAESQA JSON is also absent. None of its functions were copied into `verifier_eval.py`; the reusable Verifier evaluator uses standard-library-only binary metrics so offline tests stay small.
+Each evaluator has one plainly named module in `evals/`. Shared readability calculations live in `evals/readability_eval.py`; the end-to-end cache and factual metrics live in `evals/system_demo.py`. Offline tests exercise these paths without calling Gemini.
 
 ## Data and test-set safety
 

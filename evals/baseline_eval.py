@@ -222,16 +222,6 @@ async def run_all_splits(
     return all_counts
 
 
-def run_evaluation(
-    split: str,
-    model: str = BASELINE_DEFAULT_MODEL,
-    rerun: bool = False,
-) -> dict[str, int]:
-    """Run evaluation for one split."""
-
-    return asyncio.run(evaluate_split(split, model=model, rerun=rerun))
-
-
 if __name__ == "__main__":
     # Set rerun=True for a fresh evaluation of all splits.
     # Set rerun=False to resume and skip previously successful samples.

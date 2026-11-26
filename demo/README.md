@@ -56,7 +56,7 @@ If the browser disconnects mid-run, the server cancels the pipeline so it stops 
 ## Deploy to Hugging Face Spaces (free)
 
 1. Create a Space with **SDK: Docker** (blank template).
-2. Push this repository to the Space, or copy in at least `Dockerfile`, `.dockerignore`, `agents/`, `evals/`, `notebooks/eval_harness.py`, `demo/`, the scratch/dev folders of `data/MTSamples` and `data/PLABA`, and `eval_results/system_demo_runs.jsonl`.
+2. Push this repository to the Space, or copy in at least `Dockerfile`, `.dockerignore`, `agents/`, `evals/`, `demo/`, the scratch/dev folders of `data/MTSamples` and `data/PLABA`, and `eval_results/system_demo_runs.jsonl`.
 3. The Space's `README.md` must start with this header:
 
    ```yaml

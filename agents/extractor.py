@@ -232,34 +232,6 @@ def create_extractor_agent(model: str = DEFAULT_MODEL) -> Any:
     )
 
 
-_NUMBER_WORDS = r"one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve"
-_NUMBER_RE = re.compile(rf"\d+(?:\.\d+)?|\b(?:{_NUMBER_WORDS})\b", re.I)
-
-
-def _numbers(text: str) -> set[str]:
-    return {m.group().lower() for m in _NUMBER_RE.finditer(text)}
-
-
-def check_grounding(source_text: str, facts: list[dict]) -> list[dict]:
-    """Deterministic hallucination guard. Returns warnings; never edits facts.
-
-    Catches evidence that is not verbatim in the source and numbers in fact_text
-    that the cited evidence does not contain. It does NOT prove the evidence
-    supports the fact (that is the Verifier's job).
-    """
-    warnings = []
-    for fact in facts:
-        for sentence in fact["source_evidence"]:
-            if sentence not in source_text:
-                warnings.append({"fact_id": fact["fact_id"], "issue": "evidence_not_verbatim",
-                                 "detail": sentence})
-        evidence_numbers = _numbers(" ".join(fact["source_evidence"]))
-        for number in sorted(_numbers(fact["fact_text"]) - evidence_numbers):
-            warnings.append({"fact_id": fact["fact_id"], "issue": "number_not_in_evidence",
-                             "detail": number})
-    return warnings
-
-
 def _strip_fences(text: str) -> str:
     text = text.strip()
     match = re.fullmatch(r"```(?:json)?\s*(.*?)\s*```", text, re.S)

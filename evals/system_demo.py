@@ -35,11 +35,10 @@ VALID_DATASETS = ("MTSamples", "PLABA")
 PIPELINE_IMPLEMENTATION_VERSION = "system-pipeline-v7"  # v7: source-grounded closed glossary + verified final text
 METRIC_IMPLEMENTATION_VERSION = "system-metrics-v4-markdown-headings"
 
-# This medication-modifier guard is a backwards-compatible v7 safety patch. The
-# exact before/after hashes make the exception narrow: existing completed v7
-# results stay reusable, but any later prompt change invalidates the cache unless
-# it is reviewed and explicitly added. Force-running a sample still bypasses the
-# cache and saves a result produced with the patched prompts.
+# These exact v7 prompt snapshots cover two reviewed safety-only prompt patches:
+# medication-modifier grounding and the later Readability preservation rules.
+# Any other prompt change still invalidates the cache unless it is reviewed and
+# explicitly added. Force-running a sample always bypasses compatibility reuse.
 V7_PRE_MEDICATION_GUARD_PROMPT_HASHES = {
     "extractor": "f298200225e8d4ec236a3961ae8c54af31b058f95eac65385031ba942f991125",
     "factual_evaluator": "78a730c69f7a6b78afbd12a233ff4d4addf8b07810455c11cf3fd59554e1fba2",
@@ -55,6 +54,10 @@ V7_MEDICATION_GUARD_PROMPT_HASHES = {
     "readability": "b80a21aa4e04c6a4d68f3b58edb7821af869e94ea887a7297f94677d8953af32",
     "refiner": "ab9d8804fffa2863370280e1cc4d2ab732108fcc4d5d16ee58977429df974965",
     "simplifier": "71f9c7e8625b16b938553e9b2a81e9eba2f7abd4632cd0662038a11c8c822a54",
+}
+V7_READABILITY_REVISION_PROMPT_HASHES = {
+    **V7_MEDICATION_GUARD_PROMPT_HASHES,
+    "readability": "930534335916bce4ff4d000f5bcb390c52fcbf9299e972efe0168a55b92b50bc",
 }
 FACTUAL_LABELS = {"supported", "unsupported", "contradicted", "uncertain"}
 FACTUAL_STATUSES = {"scored", "no_claims", "insufficient_source"}
@@ -628,13 +631,16 @@ def prompt_hashes() -> dict[str, str]:
 def prompt_hashes_cache_compatible(
     stored: dict[str, Any], expected: dict[str, str],
 ) -> bool:
-    """Allow only the reviewed pre-guard -> medication-guard v7 transition."""
+    """Allow only the two explicitly reviewed v7 prompt transitions."""
     if stored == expected:
         return True
     return (
         PIPELINE_IMPLEMENTATION_VERSION == "system-pipeline-v7"
-        and stored == V7_PRE_MEDICATION_GUARD_PROMPT_HASHES
-        and expected == V7_MEDICATION_GUARD_PROMPT_HASHES
+        and stored in (
+            V7_PRE_MEDICATION_GUARD_PROMPT_HASHES,
+            V7_MEDICATION_GUARD_PROMPT_HASHES,
+        )
+        and expected == V7_READABILITY_REVISION_PROMPT_HASHES
     )
 
 

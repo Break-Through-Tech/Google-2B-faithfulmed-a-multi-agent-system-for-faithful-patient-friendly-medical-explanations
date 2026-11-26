@@ -8,28 +8,13 @@ google-genai==2.34.0  # unified Gemini SDK (Google AI Studio + Vertex AI); ADK 2
 google-adk==2.14.0    # ADK 2.x — multi-agent orchestration
 litellm==1.106.2      # ADK LiteLlm route to Groq (gpt-oss); ADK 2.14 supports >=1.84,<1.106.3
 
-# ── RAG / retrieval ────────────────────────────────────────────────────
-chromadb
-# sentence-transformers   # optional offline-embeddings fallback
-# faiss-cpu               # optional offline vector index
-
 # ── Evaluation ─────────────────────────────────────────────────────────
 textstat              # Flesch-Kincaid, SMOG readability
 scikit-learn          # Cohen's kappa, agreement metrics
 
 # ── Data / analysis ────────────────────────────────────────────────────
 pandas
-numpy
-datasets
-openpyxl              # read the MedAESQA methods .xlsx
-matplotlib
-seaborn
 
-# ── Demo (December: HF Spaces or Cloud Run) ────────────────────────────
-gradio
+# ── Demo ────────────────────────────────────────────────────────────────
 streamlit>=1.37       # fragments isolate claim-review reruns; dataframe row selection
 markdown-it-py        # safe Markdown rendering inside sentence-level source-match hover spans
-
-# ── Optional alternatives ──────────────────────────────────────────────
-# langgraph            # alternative orchestration to ADK
-# groq                 # not needed: LiteLLM calls Groq directly with GROQ_API_KEY

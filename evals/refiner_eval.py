@@ -65,8 +65,8 @@ def parse_verdict(verdict: Any) -> dict:
     """
     Read Verifier feedback into a predictable dict without inventing fields.
 
-    Accepts either a dict (already parsed) or a JSON string (as run_verifier
-    returns). Missing or malformed feedback yields empty lists and faithful=None
+    Accepts either a dict (already parsed) or a JSON string from the verifier.
+    Missing or malformed feedback yields empty lists and faithful=None
     so scoring can treat it as "no flags" rather than crashing.
     """
     data: Any = verdict

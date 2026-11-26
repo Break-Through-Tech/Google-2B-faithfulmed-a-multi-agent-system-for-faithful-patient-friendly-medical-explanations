@@ -1,5 +1,5 @@
 """
-FaithfulMed — Raedability evaluation harness.
+FaithfulMed — Readability evaluation harness.
 
 Provides:
   - is_refusal(text): whether or not the text is a refusal
@@ -12,17 +12,47 @@ Provides:
   - refusal_rate(texts): percentage of texts that are a refusal
 """
 
-from pathlib import Path
-import sys
+import re
 
-NOTEBOOKS = Path(__file__).resolve().parent.parent / "notebooks"
-sys.path.append(str(NOTEBOOKS))
+import textstat
 
-from eval_harness import (
-    readability_scores,
-    meets_readability_target,
-    normalize_readability_text,
-)
+_ATX_HEADING = re.compile(r"^\s{0,3}#{1,6}\s+(.*?)\s*#*\s*$")
+_BOLD_HEADING = re.compile(r"^\s*(?:\*\*|__)(.+?)(?:\*\*|__)\s*$")
+_HORIZONTAL_RULE = re.compile(r"^\s*(?:-{3,}|\*{3,}|_{3,})\s*$")
+
+
+def normalize_readability_text(text: str) -> str:
+    """Make Markdown headings explicit sentence boundaries for textstat."""
+    normalized = []
+    for line in text.splitlines():
+        if _HORIZONTAL_RULE.fullmatch(line):
+            continue
+        heading = _ATX_HEADING.fullmatch(line) or _BOLD_HEADING.fullmatch(line)
+        if heading:
+            content = heading.group(1).strip().strip("*_`").strip()
+            if content and content[-1] not in ".?!":
+                content += "."
+            normalized.append(content)
+        else:
+            normalized.append(line)
+    return "\n".join(normalized)
+
+
+def readability_scores(text: str) -> dict[str, float | int]:
+    """Calculate the shared readability metrics for one text."""
+    normalized = normalize_readability_text(text)
+    words = max(textstat.lexicon_count(normalized, removepunct=True), 1)
+    return {
+        "flesch_kincaid_grade": textstat.flesch_kincaid_grade(normalized),
+        "smog_index": textstat.smog_index(normalized),
+        "jargon_density": textstat.difficult_words(normalized) / words,
+        "word_count": words,
+    }
+
+
+def meets_readability_target(text: str, max_grade: float = 8.0) -> bool:
+    """Return whether text meets the configured grade-level target."""
+    return readability_scores(text)["flesch_kincaid_grade"] <= max_grade
 
 
 def is_refusal(text: str) -> bool:

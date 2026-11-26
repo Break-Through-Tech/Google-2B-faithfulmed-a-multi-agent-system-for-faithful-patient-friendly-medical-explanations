@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Iterable
 
-import textstat
+from evals.readability_eval import readability_scores
 
 
 @dataclass(frozen=True)
@@ -55,19 +55,6 @@ class SimplifierMetrics:
     mean_simplified_word_count: float | None
     readability_target_rate: float | None
     malformed_ids: tuple[str, ...]
-
-
-def readability_scores(text: str) -> dict[str, float | int]:
-    """Calculate readability metrics for one text."""
-
-    words = max(textstat.lexicon_count(text, removepunct=True), 1)
-
-    return {
-        "flesch_kincaid_grade": textstat.flesch_kincaid_grade(text),
-        "smog_index": textstat.smog_index(text),
-        "jargon_density": textstat.difficult_words(text) / words,
-        "word_count": words,
-    }
 
 
 def evaluate_example(

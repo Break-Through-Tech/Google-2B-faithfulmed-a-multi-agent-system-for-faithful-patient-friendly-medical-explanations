@@ -8,20 +8,6 @@ PROJ_ROOT = Path(__file__).resolve().parent.parent
 RESULTS_FILE = PROJ_ROOT / "runs" / "baseline.jsonl"
 
 
-def load_results():
-    if not RESULTS_FILE.exists():
-        return pd.DataFrame()
-
-    records = []
-
-    with RESULTS_FILE.open("r", encoding="utf-8") as file:
-        for line in file:
-            if line.strip():
-                records.append(json.loads(line))
-
-    return pd.DataFrame(records)
-
-
 def baseline_page():
     """Display saved Baseline evaluation metrics and graphs."""
 
@@ -31,14 +17,6 @@ def baseline_page():
         "the dev, scratch, and test datasets."
     )
 
-    # Load previously saved evaluation results.
-    results_file = (
-        Path(__file__).resolve().parent
-        / "runs"
-        / "baseline.jsonl"
-    )
-    
-    # Load previously saved evaluation results.
     if not RESULTS_FILE.exists():
         st.warning(
             f"No baseline results found at: {RESULTS_FILE}. "

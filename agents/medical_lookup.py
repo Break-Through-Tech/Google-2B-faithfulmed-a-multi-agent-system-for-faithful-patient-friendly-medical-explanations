@@ -37,8 +37,6 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
-from . import DEFAULT_MODEL
-
 REFERENCE_DEFINITIONS_SCHEMA = "faithfulmed_reference_definitions_v4"
 CATEGORIES = ("medication", "clinical_concept")
 MAX_DEFINITION_CHARS = 600
@@ -572,33 +570,6 @@ async def build_reference_definitions(
         return result
     result["entries"], result["unresolved"] = entries, unresolved
     return result
-
-
-async def run_extractor_with_lookups(
-    source_text: str, model: str = DEFAULT_MODEL, *, lookup: Optional[MedicalLookup] = None,
-) -> Dict[str, Any]:
-    """Run one Extractor call, then attach Python-fetched UMLS definitions.
-
-    Definitions remain a separate, provenance-labeled field rather than being
-    mixed into patient facts.
-    """
-    from .extractor import parse_extractor_output, patient_facts_json, run_extractor
-
-    raw = await run_extractor(source_text, model)
-    lookup = lookup if lookup is not None else MedicalLookup.from_env()
-    try:
-        extracted = parse_extractor_output(raw)
-    except ValueError as exc:
-        return {"extractor_output": raw, "facts": raw, "reference_definitions": empty_reference_definitions(
-            "failed", lookup, [f"Extractor output is invalid, so no lookups ran: {exc}"])}
-    facts = [fact.model_dump() for fact in extracted.patient_facts]
-    terms = [term.model_dump() for term in extracted.lookup_terms]
-    definitions = await build_reference_definitions(facts, terms, lookup, source_text=source_text)
-    return {
-        "extractor_output": extracted.model_dump(),
-        "facts": patient_facts_json(extracted),
-        "reference_definitions": definitions,
-    }
 
 
 # ── Formats handed to the downstream agents ────────────────────────────

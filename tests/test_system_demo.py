@@ -18,6 +18,7 @@ from evals.system_demo import (
     SystemExample,
     V7_MEDICATION_GUARD_PROMPT_HASHES,
     V7_PRE_MEDICATION_GUARD_PROMPT_HASHES,
+    V7_READABILITY_REVISION_PROMPT_HASHES,
     aggregate_metrics,
     cache_key,
     decode_factual_evaluation_json,
@@ -524,12 +525,15 @@ class SystemDemoTests(unittest.TestCase):
         self.assertNotEqual(cache_key(example, "pipeline-model", "eval-model"),
                             cache_key(example, "different-model", "eval-model"))
 
-    def test_existing_v7_cache_survives_medication_guard_prompt_patch(self) -> None:
+    def test_existing_v7_cache_survives_reviewed_safety_prompt_patches(self) -> None:
         current = prompt_hashes()
         self.assertEqual(PIPELINE_IMPLEMENTATION_VERSION, "system-pipeline-v7")
-        self.assertEqual(current, V7_MEDICATION_GUARD_PROMPT_HASHES)
+        self.assertEqual(current, V7_READABILITY_REVISION_PROMPT_HASHES)
         self.assertTrue(prompt_hashes_cache_compatible(
             V7_PRE_MEDICATION_GUARD_PROMPT_HASHES, current,
+        ))
+        self.assertTrue(prompt_hashes_cache_compatible(
+            V7_MEDICATION_GUARD_PROMPT_HASHES, current,
         ))
         future = dict(current)
         future["simplifier"] = "unreviewed-future-prompt"

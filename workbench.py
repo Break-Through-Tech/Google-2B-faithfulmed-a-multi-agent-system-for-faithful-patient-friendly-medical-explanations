@@ -392,12 +392,6 @@ def verifier_page() -> None:
                 st.code(prediction.raw_output, language="json")
 
 
-def placeholder_page(agent: str) -> None:
-    st.title(f"{agent} workbench")
-    st.info(f"{agent} does not have a workbench yet. This page is intentionally isolated from the Verifier. Its owner can implement an agent-specific view here without changing Verifier prompts, scoring, cache files, or tests.")
-    # Teammate scaffold: keep each agent's UI and evaluation helpers in a separate module.
-
-
 def main() -> None:
     load_env(); st.set_page_config(page_title="FaithfulMed Workbench", page_icon="🩺", layout="wide")
     agent = st.sidebar.radio("Agent workbench", ["Baseline", "Verifier", "Refiner", "Readability"])
@@ -413,7 +407,6 @@ def main() -> None:
     elif agent == "Baseline":
         from evals.baseline_workbench import baseline_page
         baseline_page()
-    else: placeholder_page(agent)
 
 
 if __name__ == "__main__": main()

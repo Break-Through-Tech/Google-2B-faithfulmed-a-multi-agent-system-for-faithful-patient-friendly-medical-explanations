@@ -2,7 +2,7 @@
 
 FaithfulMed is a project in partnership with Google. It sits at the intersection of two Google-relevant themes — trustworthy generative AI and equitable access to information — and is built on Google's own open stack (Gemini and the Agent Development Kit). FaithfulMed is a Google ADK multi-agent system for turning medical text into faithful, patient-friendly explanations. The project sits at the intersection of health literacy and trustworthy generative AI: it is designed to reduce patient-facing medical jargon while keeping the explanation grounded in the original source material rather than drifting into unsupported or invented claims.
 
-The repository is structured around a small set of specialized agents in `agents/`, an end-to-end pipeline in `notebooks/adk_pipeline.py`, and a runtime demo in `agentic_system_demo.py`.
+The repository is structured around specialized agents in `agents/`, production orchestration in `agents/production_pipeline.py`, and runtime demos in `agentic_system_demo.py` and `demo/`.
 
 ## 🎯 Project Highlights
 
@@ -163,7 +163,7 @@ The project is implemented as a multi-agent LLM workflow rather than a single mo
 - Readability: improves the Simplifier draft before final verification while preserving clinical meaning; its instruction is in `agents/readability.py`.
 
 ### Pipeline structure
-The experimental pipeline is assembled in `notebooks/adk_pipeline.py` and the production-style orchestration is implemented in `agents/production_pipeline.py`.
+The production orchestration is implemented in `agents/production_pipeline.py`.
 
 The flow is:
 

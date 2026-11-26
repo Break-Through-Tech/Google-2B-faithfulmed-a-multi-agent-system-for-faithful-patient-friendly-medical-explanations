@@ -5,13 +5,7 @@ FaithfulMed — Raedability evaluation harness tests
 from __future__ import annotations
 import unittest
 
-from pathlib import Path
-import sys
-
-NOTEBOOKS = Path(__file__).resolve().parent.parent / "evals"
-sys.path.append(str(NOTEBOOKS))
-
-from readability_eval import (
+from evals.readability_eval import (
     is_refusal,
     evaluate_single,
     evaluate_multiple,
